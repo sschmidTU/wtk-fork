@@ -59,7 +59,7 @@ $(function() {
       "brush": "brush",
       "ceremony": "arrow"
     }
-    query += " "; // add space to trigger replacement for first radical
+    query += " "; // add space to trigger replacement for first/last radical
     for (const [key, value] of Object.entries(wk_replacements)) {
       query = query.replace(key + " ", value + " ");
     }
@@ -84,7 +84,7 @@ $(function() {
         $.each(results, function(key, page) {
           entries.append('<article>'+
           '  <h3>'+
-          '    <a href="jisho.org/search/'+page.kanji+'">'+page.kanji+' '+page.keyword+'</a>'+
+          '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+page.keyword+'</a>'+
           '  </h3>'+
           '</article>');
         });
