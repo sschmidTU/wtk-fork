@@ -61,8 +61,8 @@ $(function() {
     }
     for (const [key, value] of Object.entries(wk_replacements)) {
       query = query.replace(key + " ", value + " ");
-      console.log("changed query: " + query);
     }
+    console.log("changed query: " + query);
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
 
