@@ -177,11 +177,14 @@ $(function() {
 
       if (results && results.length > 0) {
         $.each(results, function(key, page) {
-          entries.append('<article>'+
-          '  <h3>'+
+          entries.append(
+            '<div style="position: relative; left: 30%; text-align: center">'+
+            '<article>'+
+          '  <h3 style="text-align: left">'+
+          '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
           '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+page.keyword+'</a>'+
           '  </h3>'+
-          '</article>');
+          '</article></div>');
         });
       } else {
         entries.append('<h4>Kanji not found :-(</h4>');
