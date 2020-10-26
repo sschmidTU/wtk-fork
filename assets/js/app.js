@@ -31,6 +31,7 @@ $(function() {
       "scarecrow": "wealth",
       "window": "mama",
       "triceratops": "little",
+      "big": "large",
       "cliff": "cliff",
       "flood": "flood",
       "river": "stream",
