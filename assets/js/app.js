@@ -122,7 +122,7 @@ $(function() {
       "barracks": "earthworm",
       "spicy": "red pepper",
       "hotpepper": "ketchup",
-      "hot pepper": "ketchup",
+      //"hot pepper": "ketchup",
       "vines": "cornucopia",
       "spring": "bonsai",
       "chinese": "scarecrow",
@@ -140,8 +140,8 @@ $(function() {
       "red": "apple",
       "color": "mosaic",
       "crab": "bushel basket",
-      "top hat": "shelf",
-      "line up": "row", // imperfect, top part missing
+      "tophat": "shelf",
+      "lineup": "row", // imperfect, top part missing
       "lifeguard": "funnel",
       "clan ground": "calling card",
       "wedding": "dog tag",
