@@ -14,6 +14,7 @@ $(function() {
     var wk_replacements = {
       "cross": "ten",
       "moon": "month",
+      "ricepaddy": "rice field",
       "dare": "risk", // not a WK radical, WK: sun + eye
       "products": "goods",
       "crystal": "sparkle",
