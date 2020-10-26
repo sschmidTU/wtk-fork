@@ -12,12 +12,27 @@ $(function() {
     var wk_replacements = {
       "cross": "ten",
       "moon": "month",
-      "net": "eye",
+      "ricepaddy": "rice field",
+      "dare": "risk", // not a WK radical, WK: sun + eye
+      "crystal": "sparkle",
+      "products": "goods",
+      "bathtub": "spine",
+      "world": "generation",
+      "dawn": "nightbreak", // p25
+      "former": "olden times", //p27
+      "self": "oneself",
+      "middle": "in",
+      "grid": "measuring box", // p29, WK: slide+twenty
+      "circle": "round",
+      "toe": "divining rod",
+      //"speciaty": "accupuncturist", // p31, also specialty in another variation in RTK
+      "fortune": "fortune-telling",
+      //"table": "eminent", // p33, collides with WK radical table and kanji table
+      "morning": "mist",
+      // ^ up until here checked with RTK physical edition, at least for WK radicals
+      "net": "eye", // own radical in WK, just horizontal eye in RTK
       "stick": "walking stick",
       "drop": "drop of",
-      "specialty": "acupuncturist",
-      "toe": "divining rod",
-      "morning": "mist",
       "fins": "animal legs",
       "legs": "human legs", // or fenceposts
       "table": "wind", //wind/weather vain
@@ -31,6 +46,7 @@ $(function() {
       "scarecrow": "wealth",
       "window": "mama",
       "triceratops": "little",
+      "big": "large",
       "cliff": "cliff",
       "flood": "flood",
       "river": "stream",
@@ -49,6 +65,7 @@ $(function() {
       "hat": "umbrella",
       "scooter": "road",
       "winter": "walking legs",
+      "deathstar": "convoy",
       "death star": "convoy",
       "forehead": "crown",
       "lid table": "whirlwind",
@@ -60,6 +77,7 @@ $(function() {
       "ceremony": "arrow",
       "drunkard": "fiesta",
       "bar": "float",
+      "coatrack": "mending",
       "coat rack": "mending",
       "yoga": "stretch",
       "kick": "scarf",
@@ -117,9 +135,10 @@ $(function() {
       "limit": "silver",
       //"good": "good alt",
       "treasure": "sheaf",
-      "barracks": "earthworm",
+      "barracks": "earthworm", // or mountain goat
       "spicy": "red pepper",
       "hotpepper": "ketchup",
+      //"hot pepper": "ketchup",
       "vines": "cornucopia",
       "spring": "bonsai",
       "chinese": "scarecrow",
