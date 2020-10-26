@@ -197,6 +197,7 @@ $(function() {
             '<div style="position: relative; left: 30%; text-align: center">'+
             '<article>'+
           '  <h3 style="text-align: left">'+
+          '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
           '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
           '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+page.keyword+'</a>'+
           '  </h3>'+
