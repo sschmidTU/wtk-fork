@@ -59,6 +59,7 @@ $(function() {
       "brush": "brush",
       "ceremony": "arrow"
     }
+    query += " "; // add space to trigger replacement for first radical
     for (const [key, value] of Object.entries(wk_replacements)) {
       query = query.replace(key + " ", value + " ");
     }
