@@ -13,6 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
     var wk_replacements = {
       "cross": "ten",
+      "moon": "month",
       "net": "eye",
       "stick": "walking stick",
       "drop": "drop of",
