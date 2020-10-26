@@ -28796,7 +28796,7 @@ var docs =
   "id" : "2846",
   "kanji" : "朔",
   "keyword" : "first day of the month",
-  "elements" : "",
+  "elements" : "month, mountain goat",
 }
 ,
   
