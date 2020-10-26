@@ -83,7 +83,7 @@ $(function() {
         $.each(results, function(key, page) {
           entries.append('<article>'+
           '  <h3>'+
-          '    <a href="./'+page.kanji.charAt(0)+'/index.html">'+page.kanji+' '+page.keyword+'</a>'+
+          '    <a href="jisho.org/search/'+page.kanji+'">'+page.kanji+' '+page.keyword+'</a>'+
           '  </h3>'+
           '</article>');
         });
