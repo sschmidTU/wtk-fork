@@ -157,6 +157,7 @@ $(function() {
       "village": "computer",
       //"tiger": "tiger",
       //"deer": "deer",
+      "slice": "sign of the hog",
     }
     query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
     var inputRadicals = query.split(" ");
