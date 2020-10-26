@@ -153,9 +153,9 @@ $(function() {
       //"tiger": "tiger",
       //"deer": "deer",
     }
-    query += " "; // add space to trigger replacement for first/last radical
+    query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
     for (const [key, value] of Object.entries(wk_replacements)) {
-      query = query.replace(key + " ", value + " ");
+      query = query.replace(" " + key + " ", " " + value + " ");
     }
     console.log("changed query: " + query);
     var result  = $('#search-results');
