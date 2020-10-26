@@ -16,15 +16,25 @@ $(function() {
       "moon": "month",
       "ricepaddy": "rice field",
       "dare": "risk", // not a WK radical, WK: sun + eye
-      "products": "goods",
       "crystal": "sparkle",
+      "products": "goods",
       "bathtub": "spine",
-      "net": "eye",
+      "world": "generation",
+      "dawn": "nightbreak", // p25
+      "former": "olden times", //p27
+      "self": "oneself",
+      "middle": "in",
+      "grid": "measuring box", // p29, WK: slide+twenty
+      "circle": "round",
+      "toe": "divining rod",
+      //"speciaty": "accupuncturist", // p31, also specialty in another variation in RTK
+      "fortune": "fortune-telling",
+      //"table": "eminent", // p33, collides with WK radical table and kanji table
+      "morning": "mist",
+      // ^ up until here checked with RTK physical edition, at least for WK radicals
+      "net": "eye", // own radical in WK, just horizontal eye in RTK
       "stick": "walking stick",
       "drop": "drop of",
-      "specialty": "acupuncturist",
-      "toe": "divining rod",
-      "morning": "mist",
       "fins": "animal legs",
       "legs": "human legs", // or fenceposts
       "table": "wind", //wind/weather vain
