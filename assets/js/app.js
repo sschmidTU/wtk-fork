@@ -151,6 +151,7 @@ $(function() {
       "grass": "owl",
       "football": "migrating ducks",
       "splinter": "talking cricket",
+      "village": "computer",
       //"tiger": "tiger",
       //"deer": "deer",
     }
