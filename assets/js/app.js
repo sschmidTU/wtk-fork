@@ -12,6 +12,7 @@ $(function() {
   function search() {
     var query   = $('#search-query').val();
     var wk_replacements = {
+      "cross": "ten",
       "net": "eye",
       "stick": "walking stick",
       "drop": "drop of",
@@ -120,7 +121,7 @@ $(function() {
       "limit": "silver",
       //"good": "good alt",
       "treasure": "sheaf",
-      "barracks": "earthworm",
+      "barracks": "earthworm", // or mountain goat
       "spicy": "red pepper",
       "hotpepper": "ketchup",
       //"hot pepper": "ketchup",
