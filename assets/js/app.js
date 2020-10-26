@@ -28,7 +28,7 @@ $(function() {
       //"speciaty": "accupuncturist", // p31, also specialty in another variation in RTK
       "fortune": "fortune-telling",
       //"table": "eminent", // p33, collides with WK radical table and kanji table
-      "morning": "mist",
+      "morning": "mist", // p34
       // ^ up until here checked with RTK physical edition, at least for WK radicals
       "net": "eye", // own radical in WK, just horizontal eye in RTK
       "stick": "walking stick",
