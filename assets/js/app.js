@@ -135,7 +135,7 @@ $(function() {
       "red": "apple",
       "color": "mosaic",
       "crab": "bushel basket",
-      "top hat": "shelf",
+      "tophat": "shelf",
       "line up": "row", // imperfect, top part missing
       "lifeguard": "funnel",
       "clan ground": "calling card",
@@ -154,10 +154,21 @@ $(function() {
       //"deer": "deer",
     }
     query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
-    for (const [key, value] of Object.entries(wk_replacements)) {
-      query = query.replace(" " + key + " ", " " + value + " ");
+    var inputRadicals = query.split(" ");
+    var rtkQuery = "";
+    for (const inputRadical of inputRadicals) {
+      if (wk_replacements[inputRadical]) {
+        rtkQuery += wk_replacements[inputRadical];
+      } else {
+        rtkQuery += inputRadical;
+      }
+      rtkQuery += " ";
     }
-    console.log("changed query: " + query);
+    // for (const [key, value] of Object.entries(wk_replacements)) {
+    //   query = query.replace(" " + key + " ", " " + value + " ");
+    // }
+    console.log("changed query: " + rtkQuery);
+    query = rtkQuery;
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
 
