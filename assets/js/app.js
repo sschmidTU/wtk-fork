@@ -14,6 +14,10 @@ $(function() {
     var wk_replacements = {
       "cross": "ten",
       "moon": "month",
+      "dare": "risk", // not a WK radical, WK: sun + eye
+      "products": "goods",
+      "crystal": "sparkle",
+      "bathtub": "spine",
       "net": "eye",
       "stick": "walking stick",
       "drop": "drop of",
@@ -166,8 +170,9 @@ $(function() {
     var inputRadicals = query.split(" ");
     var rtkQuery = "";
     for (const inputRadical of inputRadicals) {
-      if (wk_replacements[inputRadical]) {
-        rtkQuery += wk_replacements[inputRadical];
+      const radical = inputRadical.toLowerCase();
+      if (wk_replacements[radical]) {
+        rtkQuery += wk_replacements[radical];
       } else {
         rtkQuery += inputRadical;
       }
