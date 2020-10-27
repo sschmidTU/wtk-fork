@@ -122,6 +122,23 @@ $(function() {
       "blackhole": "double back", //p175
       "black hole": "double back",
       "clown": "muzzle", //p178
+      "death": "deceased", //p180
+      //"monk": "boy"
+      "guard": "devil", //p183
+      "mask": "formerly",
+      //"king": "king", // or porter, p185
+      "alligator": "scorpion",
+      "earth": "ground", //only kanji in WK
+      "turtle": "tortoise", //p195
+      "pig": "sow",
+      "wings": "piglets",
+      "easy": "piggy bank", //p197
+      "hard": "harden", //p206
+      "mouth": "pent in", //p206
+      "canopy": "cave",
+      "storage": "warehouse", //p208
+      "skewer": "shish kebab", //p210
+      "feeling": "emotion", //p211
       // ---------------------------------- //
       "stick": "walking stick",
       "small drop": "valentine",
@@ -155,16 +172,9 @@ $(function() {
       //"rain": "rain",
       //"ice": "ice",
       "heaven": "witch",
-      "guard": "devil",
-      "alligator": "scorpion",
       "insect": "gnats",
-      "pig": "sow",
-      "wings": "piglet",
-      "easy": "piggy bank",
       //"turkey": "turkey",
       //"feathers": "feathers",
-      "mouth": "pent in",
-      "canopy": "cave",
       "soul": "state of mind",
       "fingers": "finger",
       "lantern": "two hands",
