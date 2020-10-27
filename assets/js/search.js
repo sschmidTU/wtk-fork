@@ -24366,7 +24366,7 @@ var docs =
   "id" : "2330",
   "kanji" : "淀",
   "keyword" : "eddy",
-  "elements" : "",
+  "elements" : "water, house, correct, mending",
 }
 ,
   
