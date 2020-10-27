@@ -13266,7 +13266,7 @@ var docs =
   "id" : "1239",
   "kanji" : "第",
   "keyword" : "No.",
-  "elements" : "no., bamboo, dollar, bow, stick",
+  "elements" : "no., bamboo, dollar, bow, stick, horns",
 }
 ,
   

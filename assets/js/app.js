@@ -98,7 +98,6 @@ $(function() {
       "drunkard": "fiesta",
       "tocut": "thanksgiving", //p145, "to cut" is not from WK but from Jisho/Phonetic-semantic composition
       "become": "turn into", //p146
-      // ^ up until here checked with RTK physical edition, at least for WK radicals
       "bar": "float", //p148
       "plan": "undertake", //p150, only kanji in WK
       "coatrack": "mending", //p152, or zoo, p155
@@ -187,7 +186,7 @@ $(function() {
       "not": "negative",
       "arrow": "dart", //1305
       "spear": "halberd", //1311
-      "dollar": "dollarsign", //p302
+      //"dollar": "dollar sign", //p302, actually dollar in rtk-search, dollar sign doesn't work
       "beggar": "slingshot", //p304
       "give": "bestow",
       "body": "somebody", //1337
@@ -276,9 +275,15 @@ $(function() {
       "demon": "ghost", //2175
       "rust": "cinnabar",
       "rust colored": "cinnabar",
+      // ---------------------------------- ^^ ------- //
+      // ^ up until here checked with RTK physical edition, at least for WK radicals
+      // ---- some WK radicals not existing in RTK ---- //
       "tombstone": "line spool", // tombstone doesn't exist in RTK
       "root": "silver",
-      // ---------------------------------- ^^ ------- //
+      "business": "in a row upside down", // plus not yet, but doesn't make a difference
+      "youngerbrother": "horns dollar",
+      // --------------------------------------------
+      "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
       "drop": "drop of",
