@@ -302,6 +302,8 @@ $(function() {
       "bully": "ceiling mouth hood human legs street",
       "showy": "flowers silage ten",
       // --------------------------------------------
+      "elf": "daring",
+      "coral": "helping hand",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
