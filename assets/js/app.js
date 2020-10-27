@@ -278,6 +278,7 @@ $(function() {
       "rust": "cinnabar",
       "rust colored": "cinnabar",
       "tombstone": "line spool", // tombstone doesn't exist in RTK
+      "root": "silver",
       // ---------------------------------- ^^ ------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       "stick": "walking stick",
