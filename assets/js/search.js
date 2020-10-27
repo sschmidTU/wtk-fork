@@ -21846,7 +21846,7 @@ var docs =
   "id" : "3030",
   "kanji" : "鬱",
   "keyword" : "gloom",
-  "elements" : "",
+  "elements" : "psychopath",
 }
 ,
   
@@ -30309,6 +30309,13 @@ var docs =
 }
 ,
 
+{
+  "id" : "3032",
+  "kanji" : "墟",
+  "keyword" : "Ruins",
+  "elements" : "cactus",
+}
+,
   
 
   

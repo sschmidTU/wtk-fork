@@ -11,7 +11,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "version") {
-      console.log("1.0.0.2");
+      console.log("1.0.0.6");
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
@@ -293,7 +293,18 @@ $(function() {
       "root": "silver",
       "business": "in a row upside down", // plus not yet, but doesn't make a difference
       "youngerbrother": "horns dollar",
+      "guy": "good city walls",
+      "penguin": "shredder taskmaster",
+      "frostbite": "dirt walking legs",
+      "satellite": "vulture king mountain",
+      "bully": "ceiling mouth hood human legs street",
+      "showy": "flowers silage ten",
       // --------------------------------------------
+      "elf": "daring",
+      "coral": "helping hand",
+      "bear": "maestro without baton",
+      "spikes": "row",
+      "pope": "ten eye",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
