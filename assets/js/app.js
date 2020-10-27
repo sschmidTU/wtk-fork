@@ -281,6 +281,13 @@ $(function() {
       "root": "silver",
       // ---------------------------------- ^^ ------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
+      // ---- some WK radicals not existing in RTK ---- //
+      "tombstone": "line spool", // tombstone doesn't exist in RTK
+      "root": "silver",
+      "business": "in a row upside down", // plus not yet, but doesn't make a difference
+      "youngerbrother": "horns dollar",
+      // --------------------------------------------
+      "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
       "drop": "drop of",
