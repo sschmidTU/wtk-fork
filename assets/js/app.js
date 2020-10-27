@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "version") {
-      console.log("1.0.0.1");
+      console.log("1.0.0.2");
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
@@ -100,7 +100,7 @@ $(function() {
       "lid table": "whirlwind",
       "lid mouth": "tall",
       "lid": "top hat", //p130
-      "samurai": "gentleman", //p134
+      //"samurai": "gentleman", //p134 // actually gentleman is only for the gentleman kanji which also has samurai as element.
       "viking": "schoolhouse",
       "warn": "admonish",
       "ceremony": "arrow", //p143
