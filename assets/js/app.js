@@ -100,7 +100,6 @@ $(function() {
       "drunkard": "fiesta",
       "tocut": "thanksgiving", //p145, "to cut" is not from WK but from Jisho/Phonetic-semantic composition
       "become": "turn into", //p146
-      // ^ up until here checked with RTK physical edition, at least for WK radicals
       "bar": "float", //p148
       "plan": "undertake", //p150, only kanji in WK
       "coatrack": "mending", //p152, or zoo, p155
@@ -279,6 +278,7 @@ $(function() {
       "rust": "cinnabar",
       "rust colored": "cinnabar",
       // ---------------------------------- ^^ ------- //
+      // ^ above checked with RTK physical edition, at least for WK radicals
       "stick": "walking stick",
       "small drop": "valentine",
       "drop": "drop of",
