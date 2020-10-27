@@ -30299,7 +30299,15 @@ var docs =
   "elements" : "",
 }
 ,
-  
+
+//3029 and 3030 exist in html
+{
+  "id" : "3031",
+  "kanji" : "靖",
+  "keyword" : "Peaceful",
+  "elements" : "stand blue",
+}
+,
 
   
 
