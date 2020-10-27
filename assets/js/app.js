@@ -166,7 +166,7 @@ $(function() {
       "dynamite": "third class", //p267
       "shrimp": "shaku", //p276
       "jackhammer": "show", //p1167, lesson30
-      "reason": "wherefore", //1186
+      "reason": "wherefore,sprout", //1186
       "turtleshell": "armor", //1194
       "humble": "speaketh", //1198
       // "axe": "axe", // axe works better with rtk-search anyways
@@ -314,7 +314,7 @@ $(function() {
       "dirt mouth": "lidded crock",
       //"brush": "brush",
       "kick": "scarf",
-      "spirit": "cloak",
+      "spirit": "cloak,altar",
       "cloud": "rising cloud",
       //"rain": "rain",
       //"ice": "ice",
@@ -347,22 +347,35 @@ $(function() {
       //"deer": "deer",
     }
     query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
-    var inputRadicals = query.split(" ");
-    var rtkQuery = "";
+    const inputRadicals = query.split(" ");
+    var rtkQueries = [];
+    //let ambiguities = []; // will be array of arrays, i.e. array of rtkVersion arrays (possible replacements)
     for (const inputRadical of inputRadicals) {
       const radical = inputRadical.toLowerCase();
       if (wk_replacements[radical]) {
-        rtkQuery += wk_replacements[radical];
+        const rtkVersions = wk_replacements[radical].split(",");
+        if (rtkVersions.length === 1) {
+          rtkQueries.forEach((value, index, self) => {
+            self.append(rtkVersions[0]);
+          });
+        } else { // we have multiple possible rtk equaivalents
+          for (const rtkQuery of rtkQueries) {
+            for (const rtkVersion of rtkVersions) {
+              rtkQueries.push(rtkQuery + " " + rtkVersion);
+            }
+          }
+        }
       } else {
         rtkQuery += inputRadical;
       }
       rtkQuery += " ";
     }
+    // add alternative queries from ambiguities
     // for (const [key, value] of Object.entries(wk_replacements)) {
     //   query = query.replace(" " + key + " ", " " + value + " ");
     // }
-    console.log("changed query: " + rtkQuery);
     query = rtkQuery;
+    console.log("changed query: " + rtkQuery);
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
 
