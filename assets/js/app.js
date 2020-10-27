@@ -276,6 +276,7 @@ $(function() {
       "demon": "ghost", //2175
       "rust": "cinnabar",
       "rust colored": "cinnabar",
+      "tombstone": "line spool", // tombstone doesn't exist in RTK
       // ---------------------------------- ^^ ------- //
       "stick": "walking stick",
       "small drop": "valentine",
