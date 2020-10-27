@@ -277,6 +277,7 @@ $(function() {
       "rust": "cinnabar",
       "rust colored": "cinnabar",
       "tombstone": "line spool", // tombstone doesn't exist in RTK
+      "root": "silver",
       // ---------------------------------- ^^ ------- //
       "stick": "walking stick",
       "small drop": "valentine",
