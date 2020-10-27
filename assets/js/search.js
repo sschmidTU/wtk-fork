@@ -24216,7 +24216,7 @@ var docs =
   "id" : "2312",
   "kanji" : "汀",
   "keyword" : "water's edge",
-  "elements" : "",
+  "elements" : "water, street",
 }
 ,
   
