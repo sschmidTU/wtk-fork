@@ -29,7 +29,7 @@ body {
 }
 
 .main {
-  margin-top: 1em;
+  margin-top: 0em;
   max-width: $maxi;
   min-width: $mini;
   background: $color-background;
@@ -37,8 +37,8 @@ body {
 
   @media screen and (min-width: $medi) {
     width: 100%;
-    margin: 2em auto 2em;
-    padding: 3em 4em;
+    margin: 0em auto 2em; /* maybe leave at 2em auto 2em*/
+    padding: 0em 4em; /* maybe leave at 3em 4em */
   }
 }
 
@@ -71,10 +71,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5em;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.0em;
 
   * + & {
-    margin-top: 0.9em;
+    margin-top: 0.0em; /* doesn't do anything? */
   }
 }
 
@@ -271,7 +271,7 @@ th, td {
 /* Search box in index */
 
 #search-box {
-  margin: 5em;
+  margin: 0em;
   text-align: center;
 }
 
@@ -284,7 +284,7 @@ th, td {
 }
 
 #search-results {
-  margin: 3em;
+  margin: 1em;
 }
 
 #kanjiViewer {
