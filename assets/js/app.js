@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "version") {
-      console.log("1.0.0.2");
+      console.log("1.0.0.3");
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
@@ -34,7 +34,7 @@ $(function() {
       "middle": "in",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
-      "toe": "divining rod",
+      "toe": "divining rod,wand",
       //"specialty": "accupuncturist", // p31, also specialty in another variation in RTK. rtk-search doesn't know accupuncturist
       "fortune": "fortune-telling",
       "table": "table,eminent", // p33, collides with WK radical table and kanji table
