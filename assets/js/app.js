@@ -9,10 +9,17 @@ $(function() {
   
   function search() {
     var query   = $('#search-query').val();
+
+    if (query == "version") {
+      console.log("0.6.1.0");
+    }
+
+    // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
+    // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
     var wk_replacements = {
       "cross": "ten",
       "moon": "month",
-      "ricepaddy": "rice field", // or silage, p354
+      "ricepaddy": "rice field,silage,sun", // or silage, p354. RTK says sun for 更 again
       "net": "eye", // own radical in WK, just horizontal eye in RTK
       "dare": "risk", // not a WK radical, WK: sun + eye
       "crystal": "sparkle",
@@ -26,14 +33,14 @@ $(function() {
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
       "toe": "divining rod",
-      //"speciaty": "accupuncturist", // p31, also specialty in another variation in RTK
+      //"specialty": "accupuncturist", // p31, also specialty in another variation in RTK. rtk-search doesn't know accupuncturist
       "fortune": "fortune-telling",
-      //"table": "eminent", // p33, collides with WK radical table and kanji table
+      "table": "table,eminent", // p33, collides with WK radical table and kanji table
       "morning": "mist", // p34
       "table": "wind", //wind/weather vain
       "prison": "bound up", //or bound up small
       //"horns": "horns",
-      //"child": "newborn babe", // conflict: this is the kanji child in WK (former+legs), but there's also the RTK child radical
+      "child": "child,newborn babe", // conflict: this is the kanji child in WK (former+legs), but there's also the RTK child radical
       "shamisensong": "pop song",
       "chastity": "upright",
       "member": "employee",
@@ -67,14 +74,14 @@ $(function() {
       "conserve": "focus", //wk: kanji only
       "odd": "strange", //p63
       "river": "stream",
-      "original": "meadow", //p67, or spring, without the cliff
+      "original": "meadow,spring", //p67, or spring, without the cliff
       "temple": "buddhist temple", //p75
       "flame": "inflammation",
       "head": "hood", //p83, or belt, p161
       "roof": "house", //p85
       "letter": "character", //only kanji in WK
       "protect": "guard",
-      //"mutual": "inter", // conflict with other mutual kanji in WK
+      "mutual": "mutual,inter", // conflict with other mutual kanji in WK
       "omen": "portent", //p104
       "nature": "sort of thing",
       "announce": "revelation",
@@ -85,7 +92,7 @@ $(function() {
       // "reason": "logic", //283, only kanji in WK, conflicgt with WK radical reason
       "master": "lord",
       "scooter": "road", //p122
-      "winter": "walking legs", //p125, or taskmaster, p137
+      "winter": "walking legs,taskmaster", //p125, or taskmaster, p137
       "kiss": "each",
       "forehead": "crown", //p128
       "lid table": "whirlwind",
@@ -100,7 +107,7 @@ $(function() {
       "become": "turn into", //p146
       "bar": "float", //p148
       "plan": "undertake", //p150, only kanji in WK
-      "coatrack": "mending", //p152, or zoo, p155
+      "coatrack": "mending,zoo", //p152, or zoo, p155
       "coat rack": "mending",
       "yoga": "stretch",
       "clothes": "garment", //p156
@@ -123,7 +130,7 @@ $(function() {
       //"monk": "boy"
       "guard": "devil", //p183
       "mask": "formerly",
-      //"king": "king", // or porter, p185
+      "king": "king,porter", // or porter, p185
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise", //p195
@@ -164,7 +171,7 @@ $(function() {
       "dynamite": "third class", //p267
       "shrimp": "shaku", //p276
       "jackhammer": "show", //p1167, lesson30
-      "reason": "wherefore", //1186
+      "reason": "wherefore,sprout", //1186
       "turtleshell": "armor", //1194
       "humble": "speaketh", //1198
       // "axe": "axe", // axe works better with rtk-search anyways
@@ -186,7 +193,7 @@ $(function() {
       "not": "negative",
       "arrow": "dart", //1305
       "spear": "halberd", //1311
-      //"dollar": "dollar sign", //p302, actually dollar in rtk-search, dollar sign doesn't work
+      "dollar": "dollarsign", //p302
       "beggar": "slingshot", //p304
       "give": "bestow",
       "body": "somebody", //1337
@@ -195,8 +202,9 @@ $(function() {
       "foot": "leg", //1372
       "bone": "skeleton", //1383
       "zoom": "jawbone", //p311, doesn't really exist on WK, zoom is a personal mnemonic. could be zoommustache as well
-      "building": "pinnacle", //lesson35, or city walls (p394, when on the right)
-      "pi": "paper punch", //p316, not a perfect match (roof legs instead of ground legs)
+      "mustache": "jawbone,helmet,hood mouth", // mustache in itself seems to be "hood mouth" in RTK, see 尚
+      "building": "pinnacle,city walls", //lesson35, or city walls (p394, when on the right)
+      "pi": "paper punch", //p316, not a perfect match (roof legs instead of ground legs) TODO add alternate replacements
       "syrup": "goods tree", // e.g. 1469, syrup doesn't exist in RTK
       "poop": "cocoon", //p322
       "snake": "fingerprint", //p328
@@ -204,18 +212,18 @@ $(function() {
       "alcohol": "sign of the bird", //1534
       "plate": "dish", //1555
       "peace": "call",
-      "treasure": "sheaf", //p339 or arm maybe, p222
+      "treasure": "sheaf,tucked under the arm", //p339 or arm maybe, p222
       "rocket": "top hat villain", //1605 rocket doesn't exist in RTK. RTK says top hat villain belt elbow, but who knows if all these tags apply
-      "barracks": "earthworm", //p340 or mountain goat (p413), or barracks (2189)
-      //"spicy": "spicy", // or maybe red pepper sometimes
+      "barracks": "earthworm,mountain goat,barracks", //p340 or mountain goat (p413), or barracks (2189)
+      //"spicy": "spicy,red pepper", // spicy or maybe red pepper sometimes
       "hotpepper": "ketchup", //p341
       //"hot pepper": "ketchup",
       "vines": "cornucopia", //p342
-      "womb": "rice seedling", //p343, RTK doesn't have womb as a radical
+      "womb": "rice seedling ground", //p343, RTK doesn't have womb as a radical
       "slice": "sign of the hog", //1637
-      "angel": "resin", //p345, or maybe pole sometimes (missing the drop)
+      "angel": "resin,pole", //p345, or sometimes pole sometimes (missing the drop, e.g. needed for tea)
       "nurse": "grass skirt", //p346
-      // "life": "grow up", //p347, sometimes, e.g. for poison, which is life in WK and group up in RTK. RTK life is 1675
+      "life": "grow up,king,porter", //p347, or king/porter. sometimes grow up e.g. for poison, = life in WK. RTK life is 1675
       "signpost": "walking legs bushes", //p350, signpost doesn't exist in RTK
       "plow": "christmas tree", //p35̂1
       "spring": "bonsai",
@@ -226,7 +234,7 @@ $(function() {
       "injustice": "un-", //1760
       "hook": "key", //p363
       "korea": "locket", //p364
-      //"dry": "dry", 1777, or potato (p366), or cornstalk, p352
+      "dry": "dry,potato,cornstalk", //1777, or potato (p366, needed for eaves/house counter), or cornstalk (p352, needed for dedicate)
       "surplus": "too much", //1786
       "squid": "awl", //p368
       "sick": "sickness", //lesson44
@@ -248,18 +256,19 @@ $(function() {
       "normal": "universal", //1925
       "yen": "circle", //1952
       "lifeguard": "funnel",
-      //"think": "scrapbook", //p391, or think
+      "think": "think,scrapbook", //p391. scrapbook is from semantic-phonetic composition, needed e.g. for theory
+      "energy": "reclining one fishhook", //energy doesn't exist in RTK
+      //"energy treasure": "spirit", //2030, hard to match. there's also vapor for RTK
       "clan": "family name", //1970
       "clan ground": "calling card",
       "peoples": "people",
       "wedding": "dog tag",
       "cape": "clothes hanger",  //p397
-      "energy treasure": "spirit", //2030, hard to match. there's also vapor for RTK
       "pirate": "crown leg", //p402 (2033), pirate doesn't exist in RTK.
       "face": "mask", //2039
       "catapult": "give", //2046
       "fang": "tusk", //2053
-      "sickle": "animal tracks", // or grab, p228
+      "sickle": "animal tracks", // or grab, p228, which is covered by "cleat tree".
       "number": "turn", //2058
       "seven slides": "lock of hair",
       "slide seven": "lock of hair", //p407
@@ -275,8 +284,10 @@ $(function() {
       "demon": "ghost", //2175
       "rust": "cinnabar",
       "rust colored": "cinnabar",
+      "tombstone": "line spool", // tombstone doesn't exist in RTK
+      "root": "silver",
       // ---------------------------------- ^^ ------- //
-      // ^ up until here checked with RTK physical edition, at least for WK radicals
+      // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "tombstone": "line spool", // tombstone doesn't exist in RTK
       "root": "silver",
@@ -288,14 +299,14 @@ $(function() {
       "small drop": "valentine",
       "drop": "drop of",
       "fins": "animal legs",
-      "legs": "human legs", // or fenceposts, p377
+      "legs": "human legs,fenceposts", // or fenceposts, p377
       "lion": "straightened hook",
       "barb": "hook",
-      "ground fins": "tool", // not ideal, this needs to be in combination
+      //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
-      "window": "mama",
+      "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce
       "triceratops": "little",
-      //"cliff": "cliff", // or drag, p396
+      "cliff": "cliff,drag", // or drag, p396
       //"flood": "flood",
       "tsunami": "water",
       "boil": "fire",
@@ -310,7 +321,7 @@ $(function() {
       "dirt mouth": "lidded crock",
       //"brush": "brush",
       "kick": "scarf",
-      "spirit": "cloak",
+      "spirit": "cloak,altar",
       "cloud": "rising cloud",
       //"rain": "rain",
       //"ice": "ice",
@@ -326,7 +337,6 @@ $(function() {
       "water": "grains of rice",
       "leader": "person",
       //"flag": "flag",
-      "mutual": "broom",
       "gambler": "strawman",
       "drop bear": "maestro",
       "hole": "miss universe",
@@ -343,36 +353,67 @@ $(function() {
       //"deer": "deer",
     }
     query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
-    var inputRadicals = query.split(" ");
-    var rtkQuery = "";
+    const inputRadicals = query.split(" ");
+
+    // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
+    //   TODO the current method is crude and could be improved, but works for now.
+    let rtkQueries = [""];
+    //let ambiguities = []; // will be array of arrays, i.e. array of rtkVersion arrays (possible replacements)
     for (const inputRadical of inputRadicals) {
-      if (wk_replacements[inputRadical]) {
-        rtkQuery += wk_replacements[inputRadical];
+      const radical = inputRadical.toLowerCase();
+      if (wk_replacements[radical]) {
+        const rtkVersions = wk_replacements[radical].split(",");
+        if (rtkVersions.length === 1) {
+          for (let i=0; i<rtkQueries.length; i++) {
+            rtkQueries[i] += rtkVersions[0];
+          }
+        } else { // we have multiple possible rtk equaivalents
+          const queryLength = rtkQueries.length;
+          let newQueries = [];
+          for (let i=0; i<queryLength; i++) {
+            for (const rtkVersion of rtkVersions) {
+              newQueries.push(rtkQueries[i] + " " + rtkVersion);
+            }
+          }
+          rtkQueries = newQueries;
+        }
       } else {
-        rtkQuery += inputRadical;
+        for (let i=0; i<rtkQueries.length; i++) {
+          rtkQueries[i] += inputRadical;
+        }
       }
-      rtkQuery += " ";
+      for (let i=0; i<rtkQueries.length; i++) {
+        rtkQueries[i] += " ";
+      }
     }
-    // for (const [key, value] of Object.entries(wk_replacements)) {
-    //   query = query.replace(" " + key + " ", " " + value + " ");
-    // }
-    console.log("changed query: " + rtkQuery);
-    query = rtkQuery;
+    // our rtkQueries are finished
+
+    console.log("");
+    //var displayEntries = [];
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-
-    if (query.length <= 2) {
+    // if (query.trim().length <= 2) {
       result.hide();
       entries.empty();
-    } else {
+    // }
+
+    // search for each rtkQuery
+    for (let i=0; i<rtkQueries.length; i++) {
+      const query = rtkQueries[i];
+      if (query.length < 2) {
+        continue;
+      }
+      console.log("query " + (i+1) + ": " + query);
+
       // retrieve matching result with content
       var results = $.map(idx.search(query), function(result) {
         return $.grep(docs, function(entry) {
+          // TODO handle multiple queries here instead of the query adding below
           return entry.id === result.ref;
         })[0];
       });
 
-      entries.empty();
+      //entries.empty();
 
       if (results && results.length > 0) {
         $.each(results, function(key, page) {
@@ -386,12 +427,12 @@ $(function() {
           '  </h3>'+
           '</article></div>');
         });
-      } else {
-        entries.append('<h4>Kanji not found :-(</h4>');
       }
-
-      result.show();
-    }
+    } // end for query
+    // if (results.length == 0) {
+    //   entries.append('<h4>Kanji not found :-(</h4>'); // sometimes fires too early
+    // }
+    result.show();
 
     return false;
   }
