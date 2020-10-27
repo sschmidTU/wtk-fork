@@ -144,7 +144,7 @@ $(function() {
       "stairs": "from", //p221
       "escalator": "reach out",
       "height": "length",
-      "again": "grow late", //p223
+      "again": "grow late", //p223, or could also be 再      
       "stool": "or again",
       "private": "elbow", //p229
       "machine": "pedestal",
@@ -198,7 +198,7 @@ $(function() {
       "foot": "leg", //1372
       "bone": "skeleton", //1383
       "zoom": "jawbone", //p311, doesn't really exist on WK, zoom is a personal mnemonic. could be zoommustache as well
-      "building": "pinnacle", //lesson35
+      "building": "pinnacle", //lesson35, or city walls (p394, when on the right)
       "pi": "paper punch", //p316, not a perfect match (roof legs instead of ground legs)
       "syrup": "goods tree", // e.g. 1469, syrup doesn't exist in RTK
       "poop": "cocoon", //p322
@@ -209,7 +209,7 @@ $(function() {
       "peace": "call",
       "treasure": "sheaf", //p339 or arm maybe, p222
       "rocket": "top hat villain", //1605 rocket doesn't exist in RTK. RTK says top hat villain belt elbow, but who knows if all these tags apply
-      "barracks": "earthworm", //p340 or mountain goat
+      "barracks": "earthworm", //p340 or mountain goat (p413), or barracks (2189)
       //"spicy": "spicy", // or maybe red pepper sometimes
       "hotpepper": "ketchup", //p341
       //"hot pepper": "ketchup",
@@ -229,23 +229,72 @@ $(function() {
       "injustice": "un-", //1760
       "hook": "key", //p363
       "korea": "locket", //p364
+      //"dry": "dry", 1777, or potato (p366), or cornstalk, p352
+      "surplus": "too much", //1786
+      "squid": "awl", //p368
+      "sick": "sickness", //lesson44
+      "cage": "box", //p371
+      "district": "ward", //1831
+      "tent": "teepee", //p373
+      "hair": "shape", //p374
+      "scene": "scenery", //337
+      "writing": "sentence", //1861
+      "simultaneous": "adjusted", //1866
+      "explosion": "sparkler",
+      //"red: "apple", // just alternate name (?)
+      "bed": "mosaic", //p380
+      "certain": "so-and-so", //1896
+      "crab": "bushel basket",
+      "middle ground": "purse",
+      "tophat": "shelf",
+      "lineup": "row",
+      "normal": "universal", //1925
+      "yen": "circle", //1952
+      "lifeguard": "funnel",
+      //"think": "scrapbook", //p391, or think
+      "clan": "family name", //1970
+      "clan ground": "calling card",
+      "peoples": "people",
+      "wedding": "dog tag",
+      "cape": "clothes hanger",  //p397
+      "energy treasure": "spirit", //2030, hard to match. there's also vapor for RTK
+      "pirate": "crown leg", //p402 (2033), pirate doesn't exist in RTK.
+      "face": "mask", //2039
+      "catapult": "give", //2046
+      "fang": "tusk", //2053
+      "sickle": "animal tracks", // or grab, p228
+      "number": "turn", //2058
+      "seven slides": "lock of hair",
+      "slide seven": "lock of hair", //p407
+      "sake": "do", //2067
+      "ground kick": "hairpin",
+      "grass": "owl",
+      "football": "migrating ducks", //p412
+      "hill": "mount", //2112
+      "can": "tin can",
+      "badger": "skunk", //p416
+      "landslide": "sign of the dragon", //2164
+      "horns heaven": "golden calf",
+      "demon": "ghost", //2175
+      "rust": "cinnabar",
+      "rust colored": "cinnabar",
       // ---------------------------------- ^^ ------- //
       "stick": "walking stick",
       "small drop": "valentine",
       "drop": "drop of",
       "fins": "animal legs",
-      "legs": "human legs", // or fenceposts
+      "legs": "human legs", // or fenceposts, p377
       "lion": "straightened hook",
       "barb": "hook",
       "ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "mama",
       "triceratops": "little",
-      "cliff": "cliff",
-      "flood": "flood",
+      //"cliff": "cliff", // or drag, p396
+      //"flood": "flood",
       "tsunami": "water",
       "boil": "fire",
-      "flower": "flower",
+      //"flower": "flower",
       "greenhouse": "graveyard",
       "icicle": "turtle",
       "animal": "pack of dogs",
@@ -281,29 +330,8 @@ $(function() {
       "limit": "silver",
       //"good": "good alt",
       "helicopter": "old west",
-      "dry": "potato", // or cornstalk, p352
-      "squid": "awl",
-      "sick": "sickness",
-      "cage": "box",
-      "tent": "teepee",
       "charcoal": "pop tent",
-      "hair": "shape",
-      "explosion": "sparkler",
-      "red": "apple",
-      "color": "mosaic",
-      "crab": "bushel basket",
-      "tophat": "shelf",
-      "lineup": "row", // imperfect, top part missing
-      "lifeguard": "funnel",
-      "clan ground": "calling card",
-      "wedding": "dog tag",
-      "cape": "clothes hanger",
-      "seven slides": "lock of hair",
-      "sickle": "animal tracks", // or grab, p228
-      "ground kick": "hairpin",
       "long": "mane hairpin",
-      "grass": "owl",
-      "football": "migrating ducks",
       "splinter": "talking cricket",
       "village": "computer", // or ri, p80. but rtk-search has computer instead of ri
       //"tiger": "tiger",
