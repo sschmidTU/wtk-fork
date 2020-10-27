@@ -32,7 +32,7 @@ $(function() {
       "middle": "in",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
-      "toe": "divining rod",
+      "toe": "divining rod,wand",
       //"specialty": "accupuncturist", // p31, also specialty in another variation in RTK. rtk-search doesn't know accupuncturist
       "fortune": "fortune-telling",
       "table": "table,eminent", // p33, collides with WK radical table and kanji table
