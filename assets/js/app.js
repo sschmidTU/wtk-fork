@@ -295,6 +295,12 @@ $(function() {
       "root": "silver",
       "business": "in a row upside down", // plus not yet, but doesn't make a difference
       "youngerbrother": "horns dollar",
+      "guy": "good city walls",
+      "penguin": "shredder taskmaster",
+      "frostbite": "dirt walking legs",
+      "satellite": "vulture king mountain",
+      "bully": "ceiling mouth hood human legs street",
+      "showy": "flowers silage ten",
       // --------------------------------------------
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
