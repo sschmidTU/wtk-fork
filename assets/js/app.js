@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "version") {
-      console.log("1.0.0.5");
+      console.log("1.0.0.6");
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
@@ -304,6 +304,9 @@ $(function() {
       // --------------------------------------------
       "elf": "daring",
       "coral": "helping hand",
+      "bear": "maestro without baton",
+      "spikes": "row",
+      "pope": "ten eye",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
