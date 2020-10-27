@@ -11,7 +11,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "version") {
-      console.log("0.6.1.2");
+      console.log("0.7.0.0");
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
