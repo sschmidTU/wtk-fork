@@ -6746,7 +6746,7 @@ var docs =
   "id" : "628",
   "kanji" : "愉",
   "keyword" : "pleasure",
-  "elements" : "pleasure, Freud, state of mind, meeting, umbrella, butchers, moon, month, flesh, part of the body, sword, sabre, saber",
+  "elements" : "pleasure, Freud, state of mind, meeting, umbrella, butchers, moon, month, flesh, part of the body, sword, sabre, saber, convoy",
 }
 ,
   
