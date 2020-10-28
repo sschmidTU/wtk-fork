@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.1.8");
+      console.log("version: 1.0.1.9");
     }
 
     var result  = $('#search-results');
@@ -344,6 +344,7 @@ $(function() {
       "creeper": "one mouth",
       "measurement": "glue",
       "commander": "leader",
+      "bookshelf": "scrapbook,tome",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
