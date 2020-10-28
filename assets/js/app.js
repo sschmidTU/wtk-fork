@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.2.3");
+      console.log("version: 1.0.2.4");
     }
 
     var result  = $('#search-results');
@@ -346,13 +346,16 @@ $(function() {
       "commander": "leader",
       "bookshelf": "scrapbook,tome",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
+      // -------- these don't exist in RTK, need to be tagged with elementsWK --------
+      "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
+      "leaf": "leafWK",
+      // -----------------------------------------------------------------------------
       "stick": "walking stick",
       "small drop": "valentine",
       "drop": "drop of",
       "fins": "animal legs",
       "legs": "human legs,fenceposts", // or fenceposts, p377
       "lion": "straightened hook",
-      "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce
