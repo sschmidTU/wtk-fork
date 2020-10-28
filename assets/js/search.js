@@ -8672,6 +8672,7 @@ var docs =
   "kanji" : "皮",
   "keyword" : "pelt",
   "elements" : "pelt, branch, ten, needle, crotch, hook",
+  "elementsWK": "slideWK",
 }
 ,
   

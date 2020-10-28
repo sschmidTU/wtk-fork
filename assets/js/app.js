@@ -20,7 +20,7 @@ $(function() {
     }
 
     if (query == "version") {
-      console.log("1.0.2.5");
+      console.log("1.0.2.7");
     }
 
     // replace spaces in WK radical names
@@ -345,7 +345,7 @@ $(function() {
       "commander": "leader",
       "bookshelf": "scrapbook,tome",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
-      "stick": "walking stick",
+      "stick": "walking stick,stick",
       "small drop": "valentine",
       "drop": "drop of",
       "fins": "animal legs",
@@ -483,7 +483,7 @@ $(function() {
           if (true || hasElementFromQuery) { // TODO WIP, make this optional. not sure about side effects
             const kanjiName = page.keywordWK ? page.keywordWK : page.keyword;
             entries.append(
-              '<div style="position: relative; left: 37%; text-align: center">'+ // left: 37% for alignment with WK, 28% with kanji in chrome
+              '<div style="position: relative; left: 28%; text-align: center">'+ // left: 37% for alignment with WK, 28% with kanji in chrome
               '<article>'+
               '  <h3 style="text-align: left">'+
               '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
