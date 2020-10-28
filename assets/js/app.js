@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.3.4");
+      console.log("version: 1.0.3.5");
     }
 
     var result  = $('#search-results');
@@ -111,7 +111,7 @@ $(function() {
       "original": "meadow,spring", //p67, or spring, without the cliff
       "temple": "buddhist temple", //p75
       "flame": "inflammation",
-      "head": "hood", //p83, or belt, p161
+      "head": "hood,belt,headWK", //p83, or belt, p161, or headWK
       "roof": "house", //p85
       "letter": "character", //only kanji in WK
       "protect": "guard",
