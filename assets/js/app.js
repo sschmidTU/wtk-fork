@@ -474,7 +474,7 @@ $(function() {
           }
           if (true || hasElementFromQuery) { // TODO WIP, make this optional. not sure about side effects
             entries.append(
-              '<div style="position: relative; left: 30%; text-align: center">'+
+              '<div style="position: relative; left: 28%; text-align: center">'+ // left: 37% for alignment with WK in chrome
               '<article>'+
               '  <h3 style="text-align: left">'+
               '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
