@@ -12,14 +12,15 @@ $(function() {
 
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    if (query.length < 2) {
+    // this should have trim(), but maybe this isn't necessary on offline, so let's allow a workaround by adding spaces
+    if (query.length <= 2) {
       result.hide();
       entries.empty();
       return;
     }
 
     if (query == "version") {
-      console.log("1.0.0.11");
+      console.log("1.0.1.0");
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
