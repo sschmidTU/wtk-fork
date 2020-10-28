@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.3.1");
+      console.log("version: 1.0.3.2");
     }
 
     var result  = $('#search-results');
@@ -183,7 +183,7 @@ $(function() {
       "escalator": "reach out",
       "height": "length",
       "again": "grow late", //p223, or could also be 再      
-      "stool": "or again",
+      "stool": "crotch",
       "private": "elbow", //p229
       "machine": "pedestal",
       "past": "gone", //p231
