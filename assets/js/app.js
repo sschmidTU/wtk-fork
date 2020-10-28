@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.2.6");
+      console.log("version: 1.0.2.7");
     }
 
     var result  = $('#search-results');
@@ -351,7 +351,7 @@ $(function() {
       "leaf": "leafWK",
       "slide": "slideWK",
       // -----------------------------------------------------------------------------
-      "stick": "walking stick",
+      "stick": "walking stick,stick",
       "small drop": "valentine",
       "drop": "drop of",
       "fins": "animal legs",
