@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.2.4");
+      console.log("version: 1.0.2.5");
     }
 
     var result  = $('#search-results');
@@ -349,6 +349,7 @@ $(function() {
       // -------- these don't exist in RTK, need to be tagged with elementsWK --------
       "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
       "leaf": "leafWK",
+      "slide": "slideWK",
       // -----------------------------------------------------------------------------
       "stick": "walking stick",
       "small drop": "valentine",
