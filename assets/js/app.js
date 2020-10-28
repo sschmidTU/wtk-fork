@@ -351,7 +351,7 @@ $(function() {
       "fins": "animal legs",
       "legs": "human legs,fenceposts", // or fenceposts, p377
       "lion": "straightened hook",
-      "barb": "barbwk", // not correct apparently. just use barb as elementsWK
+      "barb": "barbwk", // hook not correct apparently. just use barbwk as elementsWK
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce
