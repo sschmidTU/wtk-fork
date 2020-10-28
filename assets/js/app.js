@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.1.7");
+      console.log("version: 1.0.1.8");
     }
 
     var result  = $('#search-results');
@@ -333,6 +333,7 @@ $(function() {
       "satellite": "vulture king mountain",
       "bully": "ceiling mouth hood human legs street",
       "showy": "flowers silage ten",
+      "mantis": "gnats drop insect belt",
       // --------------------------------------------
       "elf": "daring",
       "coral": "helping hand",
