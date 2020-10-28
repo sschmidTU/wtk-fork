@@ -20,7 +20,7 @@ $(function() {
     }
 
     if (query == "version") {
-      console.log("1.0.2.7");
+      console.log("1.0.2.7-offline-only.0");
     }
 
     // replace spaces in WK radical names
@@ -62,7 +62,7 @@ $(function() {
       "dawn": "nightbreak", // p25
       "former": "olden times", //p27
       "self": "oneself",
-      "middle": "in",
+      "middle": "inX",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
       "toe": "divining rod,wand",

@@ -1463,7 +1463,7 @@ var docs =
   "id" : "138",
   "kanji" : "沖",
   "keyword" : "open sea",
-  "elements" : "open sea, water, water droplets, water pistol, in, stick, mouth",
+  "elements" : "open sea, water, water droplets, water pistol, inX, stick, mouth",
 }
 ,
   
@@ -5575,7 +5575,7 @@ var docs =
   "id" : "517",
   "kanji" : "虫",
   "keyword" : "insect",
-  "elements" : "insect, in, stick, mouth",
+  "elements" : "insect, inX, stick, mouth",
 }
 ,
   
@@ -6498,7 +6498,7 @@ var docs =
   "id" : "602",
   "kanji" : "忠",
   "keyword" : "loyalty",
-  "elements" : "loyalty, in, stick, mouth, heart",
+  "elements" : "loyalty, inX, stick, mouth, heart",
 }
 ,
   
@@ -6508,7 +6508,7 @@ var docs =
   "id" : "603",
   "kanji" : "串",
   "keyword" : "shish kebab",
-  "elements" : "shish kebab, kebab, in, stick, mouth, mouth2",
+  "elements" : "shish kebab, kebab, inX, stick, mouth, mouth2",
 }
 ,
   
@@ -6518,7 +6518,7 @@ var docs =
   "id" : "604",
   "kanji" : "患",
   "keyword" : "afflicted",
-  "elements" : "afflicted, kebab, in, stick, mouth, heart, mouth2",
+  "elements" : "afflicted, kebab, inX, stick, mouth, heart, mouth2",
 }
 ,
   
@@ -10314,7 +10314,7 @@ var docs =
   "id" : "956",
   "kanji" : "仲",
   "keyword" : "go-between",
-  "elements" : "go-between, person, in, stick, mouth",
+  "elements" : "go-between, person, inX, stick, mouth",
 }
 ,
   
@@ -19113,7 +19113,7 @@ var docs =
   "id" : "1771",
   "kanji" : "貴",
   "keyword" : "precious",
-  "elements" : "precious, Takanohana, purse, in, one, floor, shellfish, clam, oyster, eye, animal legs, eight",
+  "elements" : "precious, Takanohana, purse, inX, one, floor, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -19123,7 +19123,7 @@ var docs =
   "id" : "1772",
   "kanji" : "遺",
   "keyword" : "bequeath",
-  "elements" : "bequeath, precious, Takanohana, purse, in, one, floor, shellfish, clam, oyster, eye, animal legs, eight, road",
+  "elements" : "bequeath, precious, Takanohana, purse, inX, one, floor, shellfish, clam, oyster, eye, animal legs, eight, road",
 }
 ,
   
@@ -19133,7 +19133,7 @@ var docs =
   "id" : "1773",
   "kanji" : "遣",
   "keyword" : "dispatch",
-  "elements" : "dispatch, purse, in, one, floor, maestro without baton, road",
+  "elements" : "dispatch, purse, inX, one, floor, maestro without baton, road",
 }
 ,
   
@@ -19143,7 +19143,7 @@ var docs =
   "id" : "2319",
   "kanji" : "潰",
   "keyword" : "defile",
-  "elements" : "defile, water, water droplets, water pistol, precious, Takanohana, purse, in, one, floor, shellfish, clam, oyster, eye, animal legs, eight",
+  "elements" : "defile, water, water droplets, water pistol, precious, Takanohana, purse, inX, one, floor, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
