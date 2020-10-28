@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.2.1");
+      console.log("version: 1.0.2.2");
     }
 
     var result  = $('#search-results');
@@ -438,7 +438,7 @@ $(function() {
     }
     // our rtkQueries are finished
 
-    console.log("");
+    console.log(" "); // new line
     //var displayEntries = [];
     // if (query.trim().length <= 2) {
       result.hide();
