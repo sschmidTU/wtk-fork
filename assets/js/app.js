@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.1.6");
+      console.log("version: 1.0.1.7");
     }
 
     var result  = $('#search-results');
@@ -341,6 +341,8 @@ $(function() {
       "pope": "ten eye",
       "ground": "one",
       "creeper": "one mouth",
+      "measurement": "glue",
+      "commander": "leader",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
