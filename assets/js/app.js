@@ -11,7 +11,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "version") {
-      console.log("1.0.0.6");
+      console.log("1.0.0.9");
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
@@ -305,6 +305,7 @@ $(function() {
       "bear": "maestro without baton",
       "spikes": "row",
       "pope": "ten eye",
+      "creeper": "one eye",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
@@ -365,6 +366,7 @@ $(function() {
     }
     query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
     const inputRadicals = query.split(" ");
+    let outputRadicals = [];
 
     // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
     //   TODO the current method is crude and could be improved, but works for now.
@@ -377,6 +379,7 @@ $(function() {
         if (rtkVersions.length === 1) {
           for (let i=0; i<rtkQueries.length; i++) {
             rtkQueries[i] += rtkVersions[0];
+            outputRadicals.push(rtkVersion[0]);
           }
         } else { // we have multiple possible rtk equaivalents
           const queryLength = rtkQueries.length;
@@ -384,6 +387,7 @@ $(function() {
           for (let i=0; i<queryLength; i++) {
             for (const rtkVersion of rtkVersions) {
               newQueries.push(rtkQueries[i] + " " + rtkVersion);
+              outputRadicals.push(rtkVersion);
             }
           }
           rtkQueries = newQueries;
@@ -391,6 +395,7 @@ $(function() {
       } else {
         for (let i=0; i<rtkQueries.length; i++) {
           rtkQueries[i] += inputRadical;
+          outputRadicals.push(inputRadical);
         }
       }
       for (let i=0; i<rtkQueries.length; i++) {
@@ -428,15 +433,25 @@ $(function() {
 
       if (results && results.length > 0) {
         $.each(results, function(key, page) {
-          entries.append(
-            '<div style="position: relative; left: 30%; text-align: center">'+
-            '<article>'+
-          '  <h3 style="text-align: left">'+
-          '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
-          '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
-          '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+page.keyword+'</a>'+
-          '  </h3>'+
-          '</article></div>');
+          let hasElementFromQuery = false;
+          console.dir(page);
+          for (const element of page.elements) {
+            if (true || page.elements.contains(element)) {
+              hasElementFromQuery = true;
+              break;
+            }
+          }
+          if (true || hasElementFromQuery) { // TODO WIP, make this optional. not sure about side effects
+            entries.append(
+              '<div style="position: relative; left: 30%; text-align: center">'+
+              '<article>'+
+              '  <h3 style="text-align: left">'+
+              '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
+              '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
+              '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+page.keyword+'</a>'+
+              '  </h3>'+
+              '</article></div>');
+          }
         });
       }
     } // end for query
