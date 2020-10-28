@@ -351,7 +351,11 @@ $(function() {
       "fins": "animal legs",
       "legs": "human legs,fenceposts", // or fenceposts, p377
       "lion": "straightened hook",
-      "barb": "barbwk", // hook not correct apparently. just use barbwk as elementsWK
+      // -------- these don't exist in RTK, need to be tagged with elementsWK --------
+      "barb": "barbWK", // hook not correct apparently. just use barbwk as elementsWK
+      "leaf": "leafWK",
+      "slide": "slideWK",
+      // -----------------------------------------------------------------------------
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce

@@ -417,6 +417,7 @@ var docs =
   "kanji" : "升",
   "keyword" : "measuring box",
   "elements" : "measuring box, thousand, drop, ten, needle",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -427,6 +428,7 @@ var docs =
   "kanji" : "昇",
   "keyword" : "rise up",
   "elements" : "rise up, sun, day, measuring box, thousand, drop, ten, needle",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -1008,7 +1010,7 @@ var docs =
   "kanji" : "了",
   "keyword" : "complete",
   "elements" : "complete, child with arms wrapped up",
-  "elementsWK": "barbwk",
+  "elementsWK": "barbWK",
 }
 ,
   
@@ -1109,6 +1111,7 @@ var docs =
   "kanji" : "少",
   "keyword" : "few",
   "elements" : "few, little, small, drop",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -2349,6 +2352,7 @@ var docs =
   "kanji" : "朱",
   "keyword" : "vermilion",
   "elements" : "vermillion, drop, not yet, one, tree, wood",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -2359,6 +2363,7 @@ var docs =
   "kanji" : "株",
   "keyword" : "stocks",
   "elements" : "stocks, tree, wood, vermillion, drop, not yet, one, tree, wood",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -2619,6 +2624,7 @@ var docs =
   "kanji" : "告",
   "keyword" : "revelation",
   "elements" : "revelation, cow, mouth",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -2629,6 +2635,7 @@ var docs =
   "kanji" : "先",
   "keyword" : "before",
   "elements" : "before, cow, human legs",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -2739,6 +2746,7 @@ var docs =
   "kanji" : "珠",
   "keyword" : "pearl",
   "elements" : "pearl, king, jewel, ball, vermillion, drop, not yet, one, tree, wood",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -3839,6 +3847,7 @@ var docs =
   "kanji" : "茂",
   "keyword" : "overgrown",
   "elements" : "overgrown, flowers, parade",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -3889,6 +3898,7 @@ var docs =
   "kanji" : "威",
   "keyword" : "intimidate",
   "elements" : "intimidate, march, women, woman",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -3899,6 +3909,7 @@ var docs =
   "kanji" : "滅",
   "keyword" : "destroy",
   "elements" : "destroy, water, water droplets, water pistol, march, fire",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -3919,6 +3930,7 @@ var docs =
   "kanji" : "蔑",
   "keyword" : "revile",
   "elements" : "revile, flowers, eye, cross-eyed, net, march",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -3969,6 +3981,7 @@ var docs =
   "kanji" : "歩",
   "keyword" : "walk",
   "elements" : "walk, stop, footprint, few",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -5509,6 +5522,7 @@ var docs =
   "kanji" : "歳",
   "keyword" : "year-end",
   "elements" : "year end, stop, footprint, one, little, small, march",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -5629,6 +5643,7 @@ var docs =
   "kanji" : "風",
   "keyword" : "wind",
   "elements" : "wind, gnats, drop, insect",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -5929,6 +5944,7 @@ var docs =
   "kanji" : "差",
   "keyword" : "distinction",
   "elements" : "distinction, wool, sheep, craft",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -6099,6 +6115,7 @@ var docs =
   "kanji" : "午",
   "keyword" : "noon",
   "elements" : "noon, horse, pantomime horse, noon, sign of the horse",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -6619,6 +6636,7 @@ var docs =
   "kanji" : "感",
   "keyword" : "emotion",
   "elements" : "emotion, march, mouth, heart",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -6849,6 +6867,7 @@ var docs =
   "kanji" : "必",
   "keyword" : "invariably",
   "elements" : "invariably, heart, stick, drop, fishhook, drop3",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -7359,7 +7378,7 @@ var docs =
   "kanji" : "才",
   "keyword" : "genius",
   "elements" : "genius, genius, genie",
-  "elementsWK": "barbwk",
+  "elementsWK": "barbWK, slideWK",
 }
 ,
   
@@ -8730,6 +8749,7 @@ var docs =
   "kanji" : "殊",
   "keyword" : "particularly",
   "elements" : "particularly, bones, one, ceiling, evening, vermilion, drop, not yet, one, tree, wood",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -9080,6 +9100,7 @@ var docs =
   "kanji" : "失",
   "keyword" : "lose",
   "elements" : "lose, drop, husband",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -10920,6 +10941,7 @@ var docs =
   "kanji" : "久",
   "keyword" : "long time",
   "elements" : "long time, bound up, person, mummy",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -12380,7 +12402,7 @@ var docs =
   "kanji" : "争",
   "keyword" : "contend",
   "elements" : "contend, bound up, rake",
-  "elementsWK": "barbwk",
+  "elementsWK": "barbWK",
 }
 ,
   
@@ -12451,6 +12473,7 @@ var docs =
   "kanji" : "伊",
   "keyword" : "Italy",
   "elements" : "italy, person, mop",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -12461,6 +12484,7 @@ var docs =
   "kanji" : "君",
   "keyword" : "old boy",
   "elements" : "old boy, mop, mouth",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -13281,6 +13305,7 @@ var docs =
   "kanji" : "弟",
   "keyword" : "younger brother",
   "elements" : "younger brother, horns, dollar, bow, stick",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -13371,6 +13396,7 @@ var docs =
   "kanji" : "身",
   "keyword" : "somebody",
   "elements" : "somebody, nose",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -16881,6 +16907,7 @@ var docs =
   "kanji" : "鋳",
   "keyword" : "casting",
   "elements" : "casting, metal, gold, longevity, bushes, glue",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -19911,6 +19938,7 @@ var docs =
   "kanji" : "邦",
   "keyword" : "home country",
   "elements" : "home country, bushes, city walls",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -20841,6 +20869,7 @@ var docs =
   "kanji" : "宅",
   "keyword" : "home",
   "elements" : "home, house, lock of hair",
+  "elementsWK": "slideWK",
 }
 ,
   
@@ -22491,7 +22520,7 @@ var docs =
   "kanji" : "慶",
   "keyword" : "jubilation",
   "elements" : "jubilation, deer, cave, antlers, crown, heart, walking legs",
-  "elementsWK": "barbwk",
+  "elementsWK": "barbWK",
 }
 ,
   
