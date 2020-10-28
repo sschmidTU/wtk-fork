@@ -20,7 +20,7 @@ $(function() {
     }
 
     if (query == "version") {
-      console.log("1.0.1.7");
+      console.log("1.0.1.8");
     }
 
     // replace spaces in WK radical names
@@ -332,6 +332,7 @@ $(function() {
       "satellite": "vulture king mountain",
       "bully": "ceiling mouth hood human legs street",
       "showy": "flowers silage ten",
+      "mantis": "gnats drop insect belt",
       // --------------------------------------------
       "elf": "daring",
       "coral": "helping hand",
