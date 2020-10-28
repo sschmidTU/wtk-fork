@@ -20,7 +20,7 @@ $(function() {
     }
 
     if (query == "version") {
-      console.log("1.0.1.9");
+      console.log("1.0.1.10");
     }
 
     // replace spaces in WK radical names
@@ -351,7 +351,7 @@ $(function() {
       "fins": "animal legs",
       "legs": "human legs,fenceposts", // or fenceposts, p377
       "lion": "straightened hook",
-      "barb": "hook",
+      "barb": "barbwk", // not correct apparently. just use barb as elementsWK
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce

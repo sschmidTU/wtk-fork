@@ -1008,6 +1008,7 @@ var docs =
   "kanji" : "了",
   "keyword" : "complete",
   "elements" : "complete, child with arms wrapped up",
+  "elementsWK": "barbwk",
 }
 ,
   
@@ -7358,6 +7359,7 @@ var docs =
   "kanji" : "才",
   "keyword" : "genius",
   "elements" : "genius, genius, genie",
+  "elementsWK": "barbwk",
 }
 ,
   
@@ -12378,6 +12380,7 @@ var docs =
   "kanji" : "争",
   "keyword" : "contend",
   "elements" : "contend, bound up, rake",
+  "elementsWK": "barbwk",
 }
 ,
   
@@ -22488,6 +22491,7 @@ var docs =
   "kanji" : "慶",
   "keyword" : "jubilation",
   "elements" : "jubilation, deer, cave, antlers, crown, heart, walking legs",
+  "elementsWK": "barbwk",
 }
 ,
   
@@ -30337,6 +30341,7 @@ var docs =
 var idx = lunr(function () {
   this.field('keyword', 10);
   this.field('elements');
+  this.field('elementsWK');
 });
 // add each document to be index
 for(var index in docs) {
