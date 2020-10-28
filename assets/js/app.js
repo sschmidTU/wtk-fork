@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.3.6");
+      console.log("version: 1.0.3.7");
     }
 
     var result  = $('#search-results');
@@ -306,7 +306,7 @@ $(function() {
       "number": "turn", //2058
       "seven slides": "lock of hair",
       "slide seven": "lock of hair", //p407
-      "sake": "do", //2067
+      "sake": "doX", //2067
       "ground kick": "hairpin",
       "grass": "owl",
       "football": "migrating ducks", //p412
