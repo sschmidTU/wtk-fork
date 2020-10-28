@@ -461,7 +461,10 @@ $(function() {
 
       if (results && results.length > 0) {
         $.each(results, function(key, page) {
-          const kanjiName = page.keywordWK ? page.keywordWK : page.keyword;
+          let kanjiName = page.keyword;
+          if (page.heisig && page.heisig.length > 0) {
+            kanjiName = page.heisig;
+          }
           entries.append(
             '<div style="position: relative; left: 30%; text-align: center">'+
             '<article>'+
