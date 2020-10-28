@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.1.5");
+      console.log("version: 1.0.1.6-testing");
     }
 
     var result  = $('#search-results');
@@ -461,6 +461,7 @@ $(function() {
 
       if (results && results.length > 0) {
         $.each(results, function(key, page) {
+          console.dir(page);
           let kanjiName = page.keyword;
           if (page.heisig && page.heisig.length > 0) {
             kanjiName = page.heisig;
