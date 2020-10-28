@@ -20,7 +20,7 @@ $(function() {
     }
 
     if (query == "version") {
-      console.log("1.0.1.1");
+      console.log("1.0.1.4");
     }
 
     // replace spaces in WK radical names
@@ -362,7 +362,7 @@ $(function() {
       "animal": "pack of dogs",
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "convoy",
+      "deathstar": "meeting moon saber,meeting moon flood",
       //"death star": "convoy",
       "dirt mouth": "lidded crock",
       //"brush": "brush",

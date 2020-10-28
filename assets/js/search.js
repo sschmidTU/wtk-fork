@@ -3076,7 +3076,7 @@ var docs =
   "id" : "3009",
   "kanji" : "喩・喻",
   "keyword" : "metaphor",
-  "elements" : "",
+  "elements" : "mouth, meeting, moon, saber", // actually also flood in the other version, but will lead to duplicate. TODO
 }
 ,
   
