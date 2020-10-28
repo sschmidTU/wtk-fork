@@ -20,7 +20,7 @@ $(function() {
     }
 
     if (query == "version") {
-      console.log("1.0.1.4");
+      console.log("1.0.1.5");
     }
 
     // replace spaces in WK radical names
@@ -473,13 +473,14 @@ $(function() {
             }
           }
           if (true || hasElementFromQuery) { // TODO WIP, make this optional. not sure about side effects
+            const kanjiName = page.keywordWK ? page.keywordWK : page.keyword;
             entries.append(
-              '<div style="position: relative; left: 28%; text-align: center">'+ // left: 37% for alignment with WK in chrome
+              '<div style="position: relative; left: 37%; text-align: center">'+ // left: 37% for alignment with WK, 28% with kanji in chrome
               '<article>'+
               '  <h3 style="text-align: left">'+
               '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
               '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
-              '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+page.keyword+'</a>'+
+              '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
               '  </h3>'+
               '</article></div>');
           }

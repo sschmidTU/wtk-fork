@@ -957,6 +957,7 @@ var docs =
   "kanji" : "町",
   "keyword" : "village",
   "elements" : "village, rice field, brains, street, nail, spike",
+  "keywordWK": "Town",
 }
 ,
   
