@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.2.5");
+      console.log("version: 1.0.2.6");
     }
 
     var result  = $('#search-results');
@@ -475,14 +475,17 @@ $(function() {
             kanjiName = page.keywordWK;
           }
           entries.append(
-            '<div style="position: relative; left: 30%; text-align: center">'+
+            // left: 37% for alignment with WK, 28% with kanji in chrome desktop. further left better for mobile.
+            '<div style="position: relative; left: 28%; text-align: center">'+
             '<article>'+
           '  <h3 style="text-align: left">'+
           '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
           '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
           '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
           '  </h3>'+
-          '</article></div>');
+          '</article>'+
+          '</div>'
+          );
         });
       }
     } // end for query
