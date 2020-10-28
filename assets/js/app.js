@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.2.7");
+      console.log("version: 1.0.3.0");
     }
 
     var result  = $('#search-results');
@@ -320,6 +320,7 @@ $(function() {
       "rust colored": "cinnabar",
       "tombstone": "line spool", // tombstone doesn't exist in RTK
       "root": "silver",
+      "umbrella": "fishhook,umbrellaWK",
       // ---------------------------------- ^^ ------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
