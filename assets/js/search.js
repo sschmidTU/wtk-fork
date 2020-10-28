@@ -27947,7 +27947,7 @@ var docs =
   "id" : "2746",
   "kanji" : "醤",
   "keyword" : "soy sauce",
-  "elements" : "",
+  "elements" : "leader, vulture, glue, whiskey bottle",
 }
 ,
   
