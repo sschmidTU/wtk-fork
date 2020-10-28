@@ -20,7 +20,7 @@ $(function() {
     }
 
     if (query == "version") {
-      console.log("1.0.2.0");
+      console.log("1.0.2.5");
     }
 
     // replace spaces in WK radical names

@@ -377,6 +377,7 @@ var docs =
   "kanji" : "百",
   "keyword" : "hundred",
   "elements" : "hundred, one, ceiling, white, dove",
+  "elementsWK": "leafWK",
 }
 ,
   
@@ -679,6 +680,7 @@ var docs =
   "kanji" : "万",
   "keyword" : "ten thousand",
   "elements" : "ten thousand, one, ceiling, bound up",
+  "elementsWK": "leafWK",
 }
 ,
   
@@ -3177,6 +3179,7 @@ var docs =
   "kanji" : "夏",
   "keyword" : "summer",
   "elements" : "summer, one, ceiling, drop, eye, walking legs",
+  "elementsWK": "leafWK",
 }
 ,
   
@@ -12565,6 +12568,7 @@ var docs =
   "kanji" : "画",
   "keyword" : "brush-stroke",
   "elements" : "brush-stroke, one, ceiling, sprout, shoot, shovel",
+  "elementsWK": "leafWK",
 }
 ,
   
@@ -13025,6 +13029,7 @@ var docs =
   "kanji" : "乏",
   "keyword" : "destitution",
   "elements" : "destitution, drop, of, Zorro, building blocks, zig-zag",
+  "elementsWK": "leafWK",
 }
 ,
   
@@ -19588,6 +19593,7 @@ var docs =
   "kanji" : "再",
   "keyword" : "again",
   "elements" : "again, king, jewel, ball, belt",
+  "elementsWK": "leafWK",
 }
 ,
   
@@ -22631,6 +22637,7 @@ var docs =
   "kanji" : "演",
   "keyword" : "performance",
   "elements" : "performance, water, water droplets, water pistol, sign of the tiger, house, caterpillar, one, ceiling, sprout, shoot, animal legs, eight",
+  "elementsWK": "leafWK",
 }
 ,
   
