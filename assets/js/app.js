@@ -379,7 +379,7 @@ $(function() {
         if (rtkVersions.length === 1) {
           for (let i=0; i<rtkQueries.length; i++) {
             rtkQueries[i] += rtkVersions[0];
-            outputRadicals.push(rtkVersion[0]);
+            outputRadicals.push(rtkVersions[0]);
           }
         } else { // we have multiple possible rtk equaivalents
           const queryLength = rtkQueries.length;
