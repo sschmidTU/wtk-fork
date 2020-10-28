@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.3.5");
+      console.log("version: 1.0.3.6");
     }
 
     var result  = $('#search-results');
@@ -63,7 +63,7 @@ $(function() {
       "dawn": "nightbreak", // p25
       "former": "olden times", //p27
       "self": "oneself",
-      "middle": "in",
+      "middle": "inX",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
       "toe": "divining rod,wand",
