@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.3.2");
+      console.log("version: 1.0.3.3");
     }
 
     var result  = $('#search-results');
@@ -172,7 +172,7 @@ $(function() {
       "wings": "not", //p1128 or piglets, p197
       "easy": "piggy bank", //p197
       "hard": "harden", //p206
-      "mouth": "pent in", //p206
+      "mouth": "mouth,pent in", //pent in p206
       "canopy": "cave",
       "storage": "warehouse", //p208
       "skewer": "shish kebab", //p210
