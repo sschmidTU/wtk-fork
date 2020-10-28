@@ -25146,7 +25146,7 @@ var docs =
   "id" : "2418",
   "kanji" : "遥",
   "keyword" : "far off",
-  "elements" : "",
+  "elements" : "road, vulture, king, mountain",
 }
 ,
   
@@ -30305,7 +30305,7 @@ var docs =
   "id" : "3031",
   "kanji" : "靖",
   "keyword" : "Peaceful",
-  "elements" : "stand blue",
+  "elements" : "stand, blue",
 }
 ,
 
