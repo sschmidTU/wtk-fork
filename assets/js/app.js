@@ -10,8 +10,16 @@ $(function() {
   function search() {
     var query   = $('#search-query').val();
 
+    var result  = $('#search-results');
+    var entries = $('#search-results .entries');
+    if (query.length < 2) {
+      result.hide();
+      entries.empty();
+      return;
+    }
+
     if (query == "version") {
-      console.log("1.0.0.9");
+      console.log("1.0.0.11");
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
@@ -305,6 +313,7 @@ $(function() {
       "bear": "maestro without baton",
       "spikes": "row",
       "pope": "ten eye",
+      "ground": "one",
       "creeper": "one mouth",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
@@ -406,8 +415,6 @@ $(function() {
 
     console.log("");
     //var displayEntries = [];
-    var result  = $('#search-results');
-    var entries = $('#search-results .entries');
     // if (query.trim().length <= 2) {
       result.hide();
       entries.empty();
@@ -434,7 +441,6 @@ $(function() {
       if (results && results.length > 0) {
         $.each(results, function(key, page) {
           let hasElementFromQuery = false;
-          console.dir(page);
           for (const element of page.elements) {
             if (true || page.elements.contains(element)) {
               hasElementFromQuery = true;
