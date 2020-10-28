@@ -1886,7 +1886,7 @@ var docs =
   "id" : "177",
   "kanji" : "量",
   "keyword" : "quantity",
-  "elements" : "quantity, nightbreak, sun, day, one, floor, computer",
+  "elements" : "quantity, nightbreak, sun, day, one, floor, computer, rice field",
 }
 ,
   
@@ -5426,7 +5426,7 @@ var docs =
   "id" : "504",
   "kanji" : "東",
   "keyword" : "east",
-  "elements" : "east, sun, day, tree, wood",
+  "elements" : "east, sun, day, tree, wood, rice field",
 }
 ,
   
@@ -5436,7 +5436,7 @@ var docs =
   "id" : "505",
   "kanji" : "棟",
   "keyword" : "ridgepole",
-  "elements" : "ridgepole, tree, wood, east, tree, wood, sun, day, tree2, wood2",
+  "elements" : "ridgepole, tree, wood, east, tree, wood, sun, day, rice field, tree2, wood2",
 }
 ,
   
@@ -5446,7 +5446,7 @@ var docs =
   "id" : "506",
   "kanji" : "凍",
   "keyword" : "frozen",
-  "elements" : "frozen, ice, east, tree, wood, sun, day",
+  "elements" : "frozen, ice, east, tree, wood, sun, day, rice field",
 }
 ,
   
@@ -5726,7 +5726,7 @@ var docs =
   "id" : "534",
   "kanji" : "亀",
   "keyword" : "tortoise",
-  "elements" : "tortoise, bound up, eels, sun, day",
+  "elements" : "tortoise, bound up, eels, sun, day, rice field",
 }
 ,
   
@@ -5736,7 +5736,7 @@ var docs =
   "id" : "535",
   "kanji" : "電",
   "keyword" : "electricity",
-  "elements" : "electricity, rain, weather, eel, sun, day",
+  "elements" : "electricity, rain, weather, eel, sun, day, rice field",
 }
 ,
   
@@ -5746,7 +5746,7 @@ var docs =
   "id" : "536",
   "kanji" : "竜",
   "keyword" : "dragon",
-  "elements" : "dragon, vase, stand up, eel, sun, day",
+  "elements" : "dragon, vase, stand up, eel, sun, day, rice field",
 }
 ,
   
@@ -5756,7 +5756,7 @@ var docs =
   "id" : "537",
   "kanji" : "滝",
   "keyword" : "waterfall",
-  "elements" : "waterfall, water, water droplets, water pistol, dragon, vase, stand up, eel, sun, day",
+  "elements" : "waterfall, water, water droplets, water pistol, dragon, vase, stand up, eel, sun, day, rice field",
 }
 ,
   
@@ -7486,7 +7486,7 @@ var docs =
   "id" : "694",
   "kanji" : "更",
   "keyword" : "grow late",
-  "elements" : "grow late, Ameratasu, one, ceiling, sun, tucked under the arm",
+  "elements" : "grow late, Ameratasu, one, ceiling, sun, rice field, tucked under the arm",
 }
 ,
   
@@ -7496,7 +7496,7 @@ var docs =
   "id" : "695",
   "kanji" : "硬",
   "keyword" : "stiff",
-  "elements" : "stiff, stone, rock, grow late, Ameratasu, one, ceiling, sun, tucked under the arm",
+  "elements" : "stiff, stone, rock, grow late, Ameratasu, one, ceiling, sun, rice field, tucked under the arm",
 }
 ,
   
@@ -7506,7 +7506,7 @@ var docs =
   "id" : "2498",
   "kanji" : "梗",
   "keyword" : "spiny",
-  "elements" : "spiny, tree, wood, grow late, Ameratasu, one, ceiling, sun, tucked under the arm",
+  "elements" : "spiny, tree, wood, grow late, Ameratasu, one, ceiling, sun, rice field, tucked under the arm",
 }
 ,
   
@@ -9946,7 +9946,7 @@ var docs =
   "id" : "926",
   "kanji" : "糧",
   "keyword" : "provisions",
-  "elements" : "provisions, rice, quantity, nightbreak, sun, day, one, floor, computer",
+  "elements" : "provisions, rice, quantity, nightbreak, sun, day, rice field, one, floor, computer",
 }
 ,
   
@@ -10906,7 +10906,7 @@ var docs =
   "id" : "2058",
   "kanji" : "俺",
   "keyword" : "myself",
-  "elements" : "myself, person, dachshund, large, St. Bernard, eel, sun, day",
+  "elements" : "myself, person, dachshund, large, St. Bernard, eel, sun, day, rice field",
 }
 ,
   
@@ -11976,7 +11976,7 @@ var docs =
   "id" : "1117",
   "kanji" : "申",
   "keyword" : "speaketh",
-  "elements" : "speaketh, monkey, sun, day, stick",
+  "elements" : "speaketh, monkey, sun, day, stick, rice field",
 }
 ,
   
@@ -11986,7 +11986,7 @@ var docs =
   "id" : "1118",
   "kanji" : "伸",
   "keyword" : "expand",
-  "elements" : "expand, person, monkey, sun, day, stick",
+  "elements" : "expand, person, monkey, sun, day, rice field, stick",
 }
 ,
   
@@ -11996,7 +11996,7 @@ var docs =
   "id" : "1119",
   "kanji" : "神",
   "keyword" : "gods",
-  "elements" : "gods, altar, monkey, sun, day, stick",
+  "elements" : "gods, altar, monkey, sun, day, rice field, stick",
 }
 ,
   
@@ -12006,7 +12006,7 @@ var docs =
   "id" : "1120",
   "kanji" : "捜",
   "keyword" : "search",
-  "elements" : "search, finger, fingers, Buddha’s hand, monkey, sun, day, stick, crotch",
+  "elements" : "search, finger, fingers, Buddha’s hand, monkey, sun, day, rice field, stick, crotch",
 }
 ,
   
@@ -12576,7 +12576,7 @@ var docs =
   "id" : "1174",
   "kanji" : "遭",
   "keyword" : "encounter",
-  "elements" : "encounter, cadet, one, bend, sun, day, road",
+  "elements" : "encounter, cadet, one, bend, sun, day, rice field, road",
 }
 ,
   
@@ -12586,7 +12586,7 @@ var docs =
   "id" : "1175",
   "kanji" : "漕",
   "keyword" : "rowing",
-  "elements" : "rowing, water, water droplets, water pistol, cadet, one, bend, sun, day",
+  "elements" : "rowing, water, water droplets, water pistol, cadet, one, bend, sun, day, rice field",
 }
 ,
   
@@ -12596,7 +12596,7 @@ var docs =
   "id" : "1176",
   "kanji" : "槽",
   "keyword" : "vat",
-  "elements" : "vat, tree, wood, cadet, one, bend, sun, day",
+  "elements" : "vat, tree, wood, cadet, one, bend, sun, day, rice field",
 }
 ,
   
@@ -13976,7 +13976,7 @@ var docs =
   "id" : "1301",
   "kanji" : "陳",
   "keyword" : "line up",
-  "elements" : "exhibit, line up, pinnacle, parthenon, acropolis, east, tree, wood, sun, day",
+  "elements" : "exhibit, line up, pinnacle, parthenon, acropolis, east, tree, wood, sun, day, rice field",
 }
 ,
   
@@ -14426,7 +14426,7 @@ var docs =
   "id" : "1343",
   "kanji" : "練",
   "keyword" : "practice",
-  "elements" : "practice, thread, spiderman, east, tree, wood, sun, day",
+  "elements" : "practice, thread, spiderman, east, tree, wood, sun, day, rice field",
 }
 ,
   
@@ -14606,7 +14606,7 @@ var docs =
   "id" : "1361",
   "kanji" : "紳",
   "keyword" : "sire",
-  "elements" : "sire, thread, spiderman, monkey, sun, day, stick",
+  "elements" : "sire, thread, spiderman, monkey, sun, day, stick, rice field",
 }
 ,
   
@@ -14766,7 +14766,7 @@ var docs =
   "id" : "1377",
   "kanji" : "縄",
   "keyword" : "straw rope",
-  "elements" : "straw rope, thread, spiderman, eels, sun, day",
+  "elements" : "straw rope, thread, spiderman, eels, sun, day, rice field",
 }
 ,
   
@@ -18176,7 +18176,7 @@ var docs =
   "id" : "2577",
   "kanji" : "痩",
   "keyword" : "lose weight",
-  "elements" : "lose weight, sickness, hospital, Buddha’s hand, monkey, sun, day, stick, crotch",
+  "elements" : "lose weight, sickness, hospital, Buddha’s hand, monkey, sun, day, rice field, stick, crotch",
 }
 ,
   
@@ -23006,7 +23006,7 @@ var docs =
   "id" : "2030",
   "kanji" : "錬",
   "keyword" : "tempering",
-  "elements" : "tempering, metal, gold, east, tree, wood, sun, day",
+  "elements" : "tempering, metal, gold, east, tree, wood, sun, day, rice field",
 }
 ,
   

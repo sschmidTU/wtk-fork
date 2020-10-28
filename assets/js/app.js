@@ -20,7 +20,7 @@ $(function() {
     }
 
     if (query == "version") {
-      console.log("1.0.1.0");
+      console.log("1.0.1.1");
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
@@ -28,7 +28,7 @@ $(function() {
     var wk_replacements = {
       "cross": "ten",
       "moon": "month",
-      "ricepaddy": "rice field,silage,sun", // or silage, p354. RTK says sun for 更 again
+      "ricepaddy": "rice field,silage", // or silage, p354. RTK says sun for 更 again
       "net": "eye", // own radical in WK, just horizontal eye in RTK
       "dare": "risk", // not a WK radical, WK: sun + eye
       "crystal": "sparkle",
