@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.1.2");
+      console.log("version: 1.0.1.3");
     }
 
     var result  = $('#search-results');
@@ -363,7 +363,7 @@ $(function() {
       "animal": "pack of dogs",
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "meeting moon knife,meeting moon flood",
+      "deathstar": "meeting moon saber,meeting moon flood",
       "dirt mouth": "lidded crock",
       //"brush": "brush",
       "kick": "scarf",
