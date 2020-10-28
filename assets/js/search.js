@@ -13,6 +13,7 @@ var docs =
 var idx = lunr(function () {
   this.field('keyword', 10);
   this.field('elements');
+  this.field('elementsWK');
 });
 // add each document to be index
 for(var index in docs) {
