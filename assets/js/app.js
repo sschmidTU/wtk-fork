@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.2.2");
+      console.log("version: 1.0.2.3");
     }
 
     var result  = $('#search-results');
@@ -352,7 +352,7 @@ $(function() {
       "fins": "animal legs",
       "legs": "human legs,fenceposts", // or fenceposts, p377
       "lion": "straightened hook",
-      "barb": "barbwk", // hook not correct apparently. just use barbWK as elementsWK
+      "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce
