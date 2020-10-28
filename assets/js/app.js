@@ -305,7 +305,7 @@ $(function() {
       "bear": "maestro without baton",
       "spikes": "row",
       "pope": "ten eye",
-      "creeper": "one eye",
+      "creeper": "one mouth",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
