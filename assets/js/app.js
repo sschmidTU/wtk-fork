@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.1.7-testing");
+      console.log("version: 1.0.1.6");
     }
 
     var result  = $('#search-results');
@@ -461,10 +461,10 @@ $(function() {
 
       if (results && results.length > 0) {
         $.each(results, function(key, page) {
-          console.dir(page);
+          //console.dir(page);
           let kanjiName = page.keyword;
-          if (page.heisig && page.heisig.length > 0) {
-            kanjiName = page.heisig;
+          if (page.keywordWK && page.keywordWK.length > 0) {
+            kanjiName = page.keywordWK;
           }
           entries.append(
             '<div style="position: relative; left: 30%; text-align: center">'+
