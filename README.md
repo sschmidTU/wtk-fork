@@ -1,6 +1,6 @@
 This is a web-based Kanji search engine for Wanikani radicals, using multi-radical search.
 
-![image](https://user-images.githubusercontent.com/33069673/97363265-9ba54400-18a2-11eb-9497-0bc0823fcde5.png)
+![image](https://user-images.githubusercontent.com/33069673/97390963-5c94e400-18de-11eb-9a58-c97880cdd0d4.png)
 
 ![image](https://user-images.githubusercontent.com/33069673/97358132-15393400-189b-11eb-9e51-6eabce66dfc0.png)
 
