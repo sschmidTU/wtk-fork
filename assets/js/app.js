@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.1.6-testing");
+      console.log("version: 1.0.1.7-testing");
     }
 
     var result  = $('#search-results');

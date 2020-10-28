@@ -3,4 +3,6 @@
   "kanji" : "{{ post.kanji }}",
   "keyword" : "{{ post.keyword | remove:'"' }}",
   "elements" : "{{ post.elements | remove:'"' }}",
+  "keywordWK" : "{{ post.keywordWK }}",
+
 }
