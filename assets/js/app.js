@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.1.0");
+      console.log("version: 1.0.1.1");
     }
 
     var result  = $('#search-results');
@@ -29,7 +29,7 @@ $(function() {
     var wk_replacements = {
       "cross": "ten",
       "moon": "month",
-      "ricepaddy": "rice field,silage,sun", // or silage, p354. RTK says sun for 更 again
+      "ricepaddy": "rice field,silage", // or silage, p354. RTK says sun for 更 again
       "net": "eye", // own radical in WK, just horizontal eye in RTK
       "dare": "risk", // not a WK radical, WK: sun + eye
       "crystal": "sparkle",
