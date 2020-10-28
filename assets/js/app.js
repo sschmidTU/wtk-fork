@@ -12,8 +12,16 @@ $(function() {
   function search() {
     var query   = $('#search-query').val();
 
-    if (query == "version") {
-      console.log("1.0.0.10");
+    if (query == "v" || query == "version") {
+      console.log("version: 1.0.0.11");
+    }
+
+    var result  = $('#search-results');
+    var entries = $('#search-results .entries');
+    if (query.trim().length <= 2) {
+      result.hide();
+      entries.empty();
+      return;
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
@@ -405,8 +413,6 @@ $(function() {
 
     console.log("");
     //var displayEntries = [];
-    var result  = $('#search-results');
-    var entries = $('#search-results .entries');
     // if (query.trim().length <= 2) {
       result.hide();
       entries.empty();
