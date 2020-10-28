@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.1.4");
+      console.log("version: 1.0.1.5");
     }
 
     var result  = $('#search-results');
@@ -461,13 +461,14 @@ $(function() {
 
       if (results && results.length > 0) {
         $.each(results, function(key, page) {
+          const kanjiName = page.keywordWK ? page.keywordWK : page.keyword;
           entries.append(
             '<div style="position: relative; left: 30%; text-align: center">'+
             '<article>'+
           '  <h3 style="text-align: left">'+
           '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
           '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
-          '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+page.keyword+'</a>'+
+          '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
           '  </h3>'+
           '</article></div>');
         });
