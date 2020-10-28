@@ -23,6 +23,30 @@ $(function() {
       console.log("1.0.1.1");
     }
 
+    // replace spaces in WK radical names
+    const space_replacements = {
+      "rice paddy": "ricepaddy",
+      "older brother": "olderbrother",
+      "younger brother": "youngerbrother",
+      "to cut": "tocut",
+      "coat rack": "coatrack",
+      "older sister": "oldersister",
+      "black hole": "blackhole",
+      "turtle shell": "turtleshell",
+      "long ago": "longago",
+      "one sided": "onesided",
+      "hot pepper": "hotpepper",
+      "mona lisa": "monalisa",
+      "top hat": "tophat",
+      "death star": "deathstar",
+      "shamisen song": "shamisensong",
+      "lip ring": "lipring",
+    };
+    for (let [key, value] of Object.entries(space_replacements)) {
+      query = query.replace(key, value);
+    }
+
+
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
     // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
     var wk_replacements = {
@@ -194,7 +218,7 @@ $(function() {
       "ladle": "big dipper",
       "task": "utilize", //1265
       "blackjack": "salad", //lesson32
-      "long ago": "once upon a time", //1268
+      "longago": "once upon a time", //1268
       "yurt": "caverns", //p295
       "gladiator": "quarter", //p297
       "onesided": "one-sided", //1297
@@ -339,7 +363,7 @@ $(function() {
       "slide dirt": "cow",
       "hat ground": "meeting",
       "deathstar": "convoy",
-      "death star": "convoy",
+      //"death star": "convoy",
       "dirt mouth": "lidded crock",
       //"brush": "brush",
       "kick": "scarf",
