@@ -20,7 +20,7 @@ $(function() {
     }
 
     if (query == "version") {
-      console.log("1.0.1.8");
+      console.log("1.0.1.9");
     }
 
     // replace spaces in WK radical names
@@ -343,6 +343,7 @@ $(function() {
       "creeper": "one mouth",
       "measurement": "glue",
       "commander": "leader",
+      "bookshelf": "scrapbook,tome",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "stick": "walking stick",
       "small drop": "valentine",
