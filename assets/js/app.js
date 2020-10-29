@@ -14,6 +14,10 @@ $(function() {
   const checkboxStrictLabelQuery = '#strictModeLabel';
   // checkboxStrict.on('click', function() { // replaces click event completely
   $(checkboxStrictQuery).change(function() {
+    var result  = $('#search-results');
+    var entries = $('#search-results .entries');
+    result.hide();
+    entries.empty();
     return search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
   });
   $(checkboxRTKQuery).change(function() {
@@ -46,12 +50,12 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.1");
+      console.log("version: 1.0.4.0a");
     }
 
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    if (query.length <= 2) {
+    if (query.trim().length <= 2) {
       result.hide();
       entries.empty();
       return;
