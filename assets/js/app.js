@@ -3,9 +3,30 @@ $(function() {
     return search();
   });
   
-  $('#search-query').on('keyup', function() {
+  $('#search-query').on('input', function() {
     return search();
   });
+
+  const checkbox = $('input[name=strictModeCheckbox]');
+  // $('#strictModeCheckbox').on('click', function() { // replaces click event completely
+  checkbox.change(function() {
+    return search();
+    // TODO optimization: don't search again when enabling strict mode, only re-filter
+  });
+
+  // get URL parameters, check checkbox if ?strictMode=1
+  var params = {};
+	var parser = document.createElement('a');
+	parser.href = window.location.href;
+	var query = parser.search.substring(1);
+	var vars = query.split('&');
+	for (var i = 0; i < vars.length; i++) {
+		var pair = vars[i].split('=');
+		params[pair[0]] = decodeURIComponent(pair[1]);
+  }
+  if (params.strictMatch === "1" || params.strictMatch === "true" && !checkbox.checked) {
+    checkbox.click();
+  }
   
   function search() {
     var query   = $('#search-query').val();
@@ -19,8 +40,8 @@ $(function() {
       return;
     }
 
-    if (query == "version") {
-      console.log("1.0.2.7-offline-only.0");
+    if (query === 'v' || query === 'version') {
+      console.log('1.0.2.7-offline-only.1.0');
     }
 
     // replace spaces in WK radical names
@@ -45,7 +66,6 @@ $(function() {
     for (let [key, value] of Object.entries(space_replacements)) {
       query = query.replace(key, value);
     }
-
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
     // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
@@ -472,15 +492,23 @@ $(function() {
       //entries.empty();
 
       if (results && results.length > 0) {
+        const strictModeCheckbox = document.getElementById('strictModeCheckbox');
+        const strictMode = strictModeCheckbox && strictModeCheckbox.checked;
         $.each(results, function(key, page) {
-          let hasElementFromQuery = false;
-          for (const element of page.elements) {
-            if (true || page.elements.contains(element)) {
-              hasElementFromQuery = true;
-              break;
+          let addToResults = !strictMode; // if not strict mode, add all results to query
+          if (strictMode) {
+            const elements = page.elements.split(',').map((val,_,__) => val.trim());
+            for (const outputRadical of outputRadicals) {
+              if (outputRadical !== '' && elements.includes(outputRadical) ||
+                  outputRadical === page.keyword ||
+                  outputRadical === page.keywordWK
+              ) {
+                addToResults = true; // in strict mode, only add result if it has an exact element match
+                break;
+              }
             }
           }
-          if (true || hasElementFromQuery) { // TODO WIP, make this optional. not sure about side effects
+          if (addToResults) {
             const kanjiName = page.keywordWK ? page.keywordWK : page.keyword;
             entries.append(
               '<div style="position: relative; left: 28%; text-align: center">'+ // left: 37% for alignment with WK, 28% with kanji in chrome

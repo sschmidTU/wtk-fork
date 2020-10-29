@@ -961,7 +961,7 @@ var docs =
   "kanji" : "町",
   "keyword" : "village",
   "elements" : "village, rice field, brains, street, nail, spike",
-  "keywordWK": "Town",
+  "keywordWK": "town",
 }
 ,
   
@@ -30377,6 +30377,7 @@ var docs =
 // init lunr
 var idx = lunr(function () {
   this.field('keyword', 10);
+  this.field('keywordWK');
   this.field('elements');
   this.field('elementsWK');
 });
