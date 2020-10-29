@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.3.10");
+      console.log("version: 1.0.3.11");
     }
 
     var result  = $('#search-results');
@@ -349,6 +349,7 @@ $(function() {
       "commander": "leader",
       "bookshelf": "scrapbook,tome",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
+      "coffin": "old man",
       // -------- these don't exist in RTK, need to be tagged with elementsWK --------
       "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
       "leaf": "leafWK",
