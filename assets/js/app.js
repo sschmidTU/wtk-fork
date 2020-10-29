@@ -50,7 +50,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.3");
+      console.log("version: 1.0.4.4");
     }
 
     var result  = $('#search-results');
@@ -527,6 +527,7 @@ $(function() {
         const rtkMode = checked(checkboxRTKQuery);
         // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
         const strictMode = !rtkMode && strictModeCheckbox && checked(checkboxStrictQuery);
+        let matches = 0;
         $.each(results, function(key, page) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
@@ -557,9 +558,14 @@ $(function() {
               '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
               '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
               '  </h3>'+
-              '</article></div>');
+              '</article></div>'
+            );
+            matches++;
           }
         });
+        if (matches > 5) {
+          console.log('matches: ' + matches);
+        }
       }
     } // end for query
     // if (results.length == 0) {
