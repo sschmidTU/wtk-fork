@@ -85,7 +85,8 @@ $(function() {
     // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
     var wk_replacements = {
       "cross": "ten",
-      "moon": "month",
+      //"moon": "moon" or month, but kanji with month always also have moon, and not vice versa
+      "month": "moon", // catch cases where only moon is given, see above
       "ricepaddy": "rice field,silage", // or silage, p354. RTK says sun for 更 again
       "net": "eye", // own radical in WK, just horizontal eye in RTK
       "dare": "risk", // not a WK radical, WK: sun + eye
@@ -144,7 +145,7 @@ $(function() {
       "original": "meadow,spring", //p67, or spring, without the cliff
       "temple": "buddhist temple", //p75
       "flame": "inflammation",
-      "head": "hood", //p83, or belt, p161
+      "head": "hood,belt,headWK", //p83, or belt, p161, or headWK
       "roof": "house", //p85
       "letter": "character", //only kanji in WK
       "protect": "guard",
@@ -191,7 +192,7 @@ $(function() {
       "point": "delicious",
       "gun": "reclining",
       "blackhole": "double back", //p175
-      "black hole": "double back",
+      //"black hole": "double back",
       "clown": "muzzle", //p178
       "death": "deceased", //p180
       //"monk": "boy"
@@ -205,7 +206,7 @@ $(function() {
       "wings": "not", //p1128 or piglets, p197
       "easy": "piggy bank", //p197
       "hard": "harden", //p206
-      "mouth": "pent in", //p206
+      "mouth": "mouth,pent in", //pent in p206
       "canopy": "cave",
       "storage": "warehouse", //p208
       "skewer": "shish kebab", //p210
@@ -216,7 +217,7 @@ $(function() {
       "escalator": "reach out",
       "height": "length",
       "again": "grow late", //p223, or could also be 再      
-      "stool": "or again",
+      "stool": "crotch",
       "private": "elbow", //p229
       "machine": "pedestal",
       "past": "gone", //p231
@@ -339,7 +340,7 @@ $(function() {
       "number": "turn", //2058
       "seven slides": "lock of hair",
       "slide seven": "lock of hair", //p407
-      "sake": "do", //2067
+      "sake": "doX", //2067
       "ground kick": "hairpin",
       "grass": "owl",
       "football": "migrating ducks", //p412
@@ -353,6 +354,8 @@ $(function() {
       "rust colored": "cinnabar",
       "tombstone": "line spool", // tombstone doesn't exist in RTK
       "root": "silver",
+      "umbrella": "fishhook,umbrellaWK",
+	    "spider": "streetwalker",
       // ---------------------------------- ^^ ------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
@@ -379,17 +382,18 @@ $(function() {
       "commander": "leader",
       "bookshelf": "scrapbook,tome",
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
-      "stick": "walking stick,stick",
-      "small drop": "valentine",
-      "drop": "drop of",
-      "fins": "animal legs",
-      "legs": "human legs,fenceposts", // or fenceposts, p377
-      "lion": "straightened hook",
+      "coffin": "old man",
       // -------- these don't exist in RTK, need to be tagged with elementsWK --------
-      "barb": "barbWK", // hook not correct apparently. just use barbwk as elementsWK
+      "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
       "leaf": "leafWK",
       "slide": "slideWK",
       // -----------------------------------------------------------------------------
+      "stick": "walking stick,stick",
+      "small drop": "valentine",
+      "drop": "drop of",
+      "fins": "animal legs,eight",
+      "legs": "human legs,fenceposts", // or fenceposts, p377
+      "lion": "straightened hook",
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce
@@ -405,6 +409,7 @@ $(function() {
       "slide dirt": "cow",
       "hat ground": "meeting",
       "deathstar": "meeting moon saber", // or meeting moon flood, but unnecessary for now
+      // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
       //"death star": "convoy",
       "dirt mouth": "lidded crock",
       //"brush": "brush",
@@ -427,7 +432,9 @@ $(function() {
       //"flag": "flag",
       "gambler": "strawman",
       "drop bear": "maestro",
-      "hole": "miss universe",
+      "pi": "hole",
+      "hole": "hole", // RTK doesn't differentiate between WK's pi and hole (added stick on top) 
+      // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.
       //"stamp": "stamp",
       "mama": "chop-seal small",
       "limit": "silver",
@@ -477,7 +484,7 @@ $(function() {
           }
         }
         for (let i=0; i<rtkQueries.length; i++) {
-          rtkQueries[i] += " ";
+          rtkQueries[i] += ' ';
         }
       }
       // our rtkQueries are finished
@@ -486,7 +493,7 @@ $(function() {
       rtkQueries.push(query);
     }
 
-    console.log("");
+    console.log(" "); // new line
     //var displayEntries = [];
     // if (query.trim().length <= 2) {
       result.hide();
@@ -519,10 +526,14 @@ $(function() {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
+            console.dir(elements);
             for (const outputRadical of outputRadicals) {
-              if (outputRadical !== '' && elements.includes(outputRadical) ||
-                  outputRadical === page.keyword ||
-                  outputRadical === page.keywordWK
+              console.log('outputRadical: ' + outputRadical);
+              if (outputRadical !== '' && (
+                    elements.includes(outputRadical) ||
+                    outputRadical === page.keyword ||
+                    outputRadical === page.keywordWK
+                  )
               ) {
                 addToResults = true; // in strict mode, only add result if it has an exact element match
                 break;

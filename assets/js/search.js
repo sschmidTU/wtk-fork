@@ -20916,7 +20916,7 @@ var docs =
   "id" : "1918",
   "kanji" : "為",
   "keyword" : "do",
-  "elements" : "do, so, strange building, tail feathers",
+  "elements" : "doX, so, strange building, tail feathers",
 }
 ,
   
@@ -20936,7 +20936,7 @@ var docs =
   "id" : "1919",
   "kanji" : "偽",
   "keyword" : "falsehood",
-  "elements" : "falsehood, person, do, so, strange building, tail feathers",
+  "elements" : "falsehood, person, doX, so, strange building, tail feathers",
 }
 ,
   
