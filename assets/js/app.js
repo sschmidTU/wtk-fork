@@ -50,7 +50,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.0e");
+      console.log("version: 1.0.4.0f");
     }
 
     var result  = $('#search-results');
@@ -530,17 +530,16 @@ $(function() {
         $.each(results, function(key, page) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
-            console.dir(page.elements);
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
-            console.dir('split elements: ');
-            console.dir(elements);
             for (const outputRadical of outputRadicals) {
               const trimmedRadical = outputRadical.trim();
-              if (trimmedRadical !== '' && elements.includes(trimmedRadical) ||
-                  trimmedRadical === page.keyword ||
-                  trimmedRadical === page.keywordWK
+              if (trimmedRadical !== '' && (
+                    elements.includes(trimmedRadical) ||
+                    trimmedRadical === page.keyword ||
+                    trimmedRadical === page.keywordWK
+                  )
               ) {
-                console.log('outputRadical: ' + outputRadical);
+                console.log('trimmedRadical: ' + trimmedRadical);
                 addToResults = true; // in strict mode, only add result if it has an exact element match
                 break;
               }
