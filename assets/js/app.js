@@ -9,11 +9,12 @@ $(function() {
   setupHTMLElements(checkboxStrictQuery, checkboxRTKQuery, checkboxStrictLabelQuery, params)
   
   function search() {
-    var query   = $('#search-query').val();
+    let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.4.6');
+      console.log('wtk-search 1.0.4.7');
     }
+    query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
