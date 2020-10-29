@@ -50,7 +50,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.1");
+      console.log("version: 1.0.4.2");
     }
 
     var result  = $('#search-results');
@@ -511,6 +511,7 @@ $(function() {
       if (query.length < 2) {
         continue;
       }
+      query = query.trim(); // maybe do that above, but for now don't restrict queries by length too much
       console.log("query " + (i+1) + ": " + query);
 
       // retrieve matching result with content
