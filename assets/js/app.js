@@ -50,7 +50,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.0a");
+      console.log("version: 1.0.4.0b");
     }
 
     var result  = $('#search-results');
@@ -530,6 +530,7 @@ $(function() {
         $.each(results, function(key, page) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
+            console.dir(page.elements);
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
             for (const outputRadical of outputRadicals) {
               if (outputRadical !== '' && elements.includes(outputRadical) ||
