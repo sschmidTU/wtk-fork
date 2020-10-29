@@ -50,7 +50,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.0d");
+      console.log("version: 1.0.4.0e");
     }
 
     var result  = $('#search-results');
@@ -535,9 +535,10 @@ $(function() {
             console.dir('split elements: ');
             console.dir(elements);
             for (const outputRadical of outputRadicals) {
-              if (outputRadical !== '' && elements.includes(outputRadical) ||
-                  outputRadical === page.keyword ||
-                  outputRadical === page.keywordWK
+              const trimmedRadical = outputRadical.trim();
+              if (trimmedRadical !== '' && elements.includes(trimmedRadical) ||
+                  trimmedRadical === page.keyword ||
+                  trimmedRadical === page.keywordWK
               ) {
                 console.log('outputRadical: ' + outputRadical);
                 addToResults = true; // in strict mode, only add result if it has an exact element match
