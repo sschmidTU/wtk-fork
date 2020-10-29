@@ -50,7 +50,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.0b");
+      console.log("version: 1.0.4.0c");
     }
 
     var result  = $('#search-results');
@@ -532,6 +532,8 @@ $(function() {
           if (strictMode) {
             console.dir(page.elements);
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
+            console.dir('split elements: ');
+            console.dir(elements);
             for (const outputRadical of outputRadicals) {
               if (outputRadical !== '' && elements.includes(outputRadical) ||
                   outputRadical === page.keyword ||
