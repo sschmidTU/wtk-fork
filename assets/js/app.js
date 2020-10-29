@@ -1,55 +1,21 @@
 $(function() {
-  $('#search-button').on('click', function() {
-    return search();
-  });
-  
-  $('#search-query').on('input', function() {
-    return search();
-  });
+  const params = getUrlParameters(); // get URL parameters, e.g. ?strict=1&rtk=0
 
   const checkboxStrictQuery = 'input[name=strictModeCheckbox]';
   const checkboxRTKQuery    = 'input[name=rtkModeCheckbox]';
   const checkboxStrictLabelQuery = '#strictModeLabel';
-  // checkboxStrict.on('click', function() { // replaces click event completely
-  $(checkboxStrictQuery).change(function() {
-    return search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
-  });
-  $(checkboxRTKQuery).change(function() {
-    if (checked(checkboxRTKQuery)) {
-      $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through';
-    } else {
-      $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
-    }
-    return search();
-  })
-
-  // get URL parameters, check checkbox if ?strictMode=1
-  var params = {};
-	var parser = document.createElement('a');
-	parser.href = window.location.href;
-	var query = parser.search.substring(1);
-	var vars = query.split('&');
-	for (var i = 0; i < vars.length; i++) {
-		var pair = vars[i].split('=');
-		params[pair[0]] = decodeURIComponent(pair[1]);
-  }
-  if (params.strict === "1" || params.strict === "true" && !checked(checkboxStrictQuery)) {
-    $(checkboxStrictQuery).click();
-  }
-  if (params.rtk === "1" || params.rtk === "true" && !checked(checkboxRTKQuery)) {
-    $(checkboxRTKQuery).click();
-  }
+  setupHTMLElements(checkboxStrictQuery, checkboxRTKQuery, checkboxStrictLabelQuery, params)
   
   function search() {
     var query   = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('1.0.2.7-offline-only.1.1');
+      console.log('1.0.2.7-offline-only.2.0');
     }
 
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    // this should have trim(), but maybe this isn't necessary on offline, so let's allow a workaround by adding spaces
+    // this should have trim(), but maybe this isn't necessary (offline), so let's allow a workaround of adding spaces
     if (query.length <= 2) {
       result.hide();
       entries.empty();
@@ -355,7 +321,7 @@ $(function() {
       "tombstone": "line spool", // tombstone doesn't exist in RTK
       "root": "silver",
       "umbrella": "fishhook,umbrellaWK",
-	    "spider": "streetwalker",
+      "spider": "streetwalker",
       // ---------------------------------- ^^ ------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
@@ -502,10 +468,11 @@ $(function() {
 
     // search for each rtkQuery
     for (let i=0; i<rtkQueries.length; i++) {
-      const query = rtkQueries[i];
+      let query = rtkQueries[i];
       if (query.length < 2) {
         continue;
       }
+      query = query.trim(); // maybe do that above, but for now don't restrict queries by length too much
       console.log("query " + (i+1) + ": " + query);
 
       // retrieve matching result with content
@@ -522,17 +489,18 @@ $(function() {
         const rtkMode = checked(checkboxRTKQuery);
         // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
         const strictMode = !rtkMode && strictModeCheckbox && checked(checkboxStrictQuery);
+        let matches = 0;
         $.each(results, function(key, page) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
-            console.dir(elements);
             for (const outputRadical of outputRadicals) {
-              console.log('outputRadical: ' + outputRadical);
-              if (outputRadical !== '' && (
-                    elements.includes(outputRadical) ||
-                    outputRadical === page.keyword ||
-                    outputRadical === page.keywordWK
+              const trimmedRadical = outputRadical.trim();
+              console.log('outputRadical: ' + trimmedRadical);
+              if (trimmedRadical !== '' && (
+                    elements.includes(trimmedRadical) ||
+                    trimmedRadical === page.keyword ||
+                    trimmedRadical === page.keywordWK
                   )
               ) {
                 addToResults = true; // in strict mode, only add result if it has an exact element match
@@ -553,9 +521,14 @@ $(function() {
               '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
               '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
               '  </h3>'+
-              '</article></div>');
+              '</article></div>'
+            );
+            matches++;
           }
         });
+        if (matches > 5) {
+          console.log('  matches: ' + matches); // indent under query
+        }
       }
     } // end for query
     // if (results.length == 0) {
@@ -568,5 +541,48 @@ $(function() {
 
   function checked(checkboxQuery) {
     return $(checkboxQuery).prop("checked");
+  }
+
+  function setupHTMLElements(checkboxStrictQuery, checkboxRTKQuery, checkboxStrictLabelQuery) {
+    $('#search-button').on('click', function() {
+      return search();
+    });
+    
+    $('#search-query').on('input', function() {
+      return search();
+    });
+
+    // checkboxStrict.on('click', function() { // replaces click event completely
+    $(checkboxStrictQuery).change(function() {
+      return search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
+    });
+    $(checkboxRTKQuery).change(function() {
+      if (checked(checkboxRTKQuery)) {
+        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through'; // strike-through
+      } else {
+        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
+      }
+      return search();
+    })
+
+    if (params.strict === "1" || params.strict === "true" && !checked(checkboxStrictQuery)) {
+      $(checkboxStrictQuery).click();
+    }
+    if (params.rtk === "1" || params.rtk === "true" && !checked(checkboxRTKQuery)) {
+      $(checkboxRTKQuery).click();
+    }
+  }
+
+  function getUrlParameters() {
+    let params = {};
+    let parser = document.createElement('a');
+    parser.href = window.location.href;
+    const query = parser.search.substring(1);
+    const vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+      const pair = vars[i].split('=');
+      params[pair[0]] = decodeURIComponent(pair[1]);
+    }
+    return params;
   }
 });
