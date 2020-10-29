@@ -50,7 +50,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.2");
+      console.log("version: 1.0.4.3");
     }
 
     var result  = $('#search-results');
@@ -507,7 +507,7 @@ $(function() {
 
     // search for each rtkQuery
     for (let i=0; i<rtkQueries.length; i++) {
-      const query = rtkQueries[i];
+      let query = rtkQueries[i];
       if (query.length < 2) {
         continue;
       }
