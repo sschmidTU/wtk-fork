@@ -12,6 +12,7 @@ var docs =
 // init lunr
 var idx = lunr(function () {
   this.field('keyword', 10);
+  this.field('keywordWK');
   this.field('elements');
   this.field('elementsWK');
 });

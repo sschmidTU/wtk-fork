@@ -11,7 +11,14 @@ type: index
 
 <div id="search-box">
 	<input type="search" id="search-query" name="q" placeholder="Search kanji by keyword..." autocomplete="off" autofocus="autofocus">
-	<button type="submit" id="search-button">Search</button>
+	<button type="submit" id="search-button">Search</button><br>
+
+	<input type="checkbox" id="strictModeCheckbox" name="strictModeCheckbox" value="false">
+	<label for="strictModeCheckbox" id="strictModeLabel" title="Only show exact matches for radicals, elements or kanji names">Strict</label>
+<input type="checkbox" id="rtkModeCheckbox" name ="rtkModeCheckbox" value="false">
+	<label for="rtkModeCheckbox" id="rtkModeLabel" title="Search for RTK elements or kanji names.
+In this mode, the search query is not altered to replace WK radical names with RTK elements.
+RTK Mode is not yet compatible with strict mode.">RTK</label>
 	
 	<div id="search-results" style="display: none;">
 			<div class="entries"></div>
