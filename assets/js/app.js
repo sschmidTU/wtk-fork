@@ -7,12 +7,21 @@ $(function() {
     return search();
   });
 
-  const checkbox = $('input[name=strictModeCheckbox]');
-  // $('#strictModeCheckbox').on('click', function() { // replaces click event completely
-  checkbox.change(function() {
-    return search();
-    // TODO optimization: don't search again when enabling strict mode, only re-filter
+  const checkboxStrictQuery = 'input[name=strictModeCheckbox]';
+  const checkboxRTKQuery    = 'input[name=rtkModeCheckbox]';
+  const checkboxStrictLabelQuery = '#strictModeLabel';
+  // checkboxStrict.on('click', function() { // replaces click event completely
+  $(checkboxStrictQuery).change(function() {
+    return search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
   });
+  $(checkboxRTKQuery).change(function() {
+    if (checked(checkboxRTKQuery)) {
+      $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through';
+    } else {
+      $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
+    }
+    return search();
+  })
 
   // get URL parameters, check checkbox if ?strictMode=1
   var params = {};
@@ -24,12 +33,19 @@ $(function() {
 		var pair = vars[i].split('=');
 		params[pair[0]] = decodeURIComponent(pair[1]);
   }
-  if (params.strictMatch === "1" || params.strictMatch === "true" && !checkbox.checked) {
-    checkbox.click();
+  if (params.strict === "1" || params.strict === "true" && !checked(checkboxStrictQuery)) {
+    $(checkboxStrictQuery).click();
+  }
+  if (params.rtk === "1" || params.rtk === "true" && !checked(checkboxRTKQuery)) {
+    $(checkboxRTKQuery).click();
   }
   
   function search() {
     var query   = $('#search-query').val();
+
+    if (query === 'v' || query === 'version') {
+      console.log('1.0.2.7-offline-only.1.1');
+    }
 
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
@@ -38,10 +54,6 @@ $(function() {
       result.hide();
       entries.empty();
       return;
-    }
-
-    if (query === 'v' || query === 'version') {
-      console.log('1.0.2.7-offline-only.1.0');
     }
 
     // replace spaces in WK radical names
@@ -63,8 +75,10 @@ $(function() {
       "shamisen song": "shamisensong",
       "lip ring": "lipring",
     };
-    for (let [key, value] of Object.entries(space_replacements)) {
-      query = query.replace(key, value);
+    if (!checked(checkboxRTKQuery)) { // only do pre-replacements in WK mode
+      for (let [key, value] of Object.entries(space_replacements)) {
+        query = query.replace(key, value);
+      }
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
@@ -426,45 +440,51 @@ $(function() {
       //"tiger": "tiger",
       //"deer": "deer",
     }
-    query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
-    const inputRadicals = query.split(" ");
+    let rtkQueries = [];
     let outputRadicals = [];
-
-    // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
-    //   TODO the current method is crude and could be improved, but works for now.
-    let rtkQueries = [""];
-    //let ambiguities = []; // will be array of arrays, i.e. array of rtkVersion arrays (possible replacements)
-    for (const inputRadical of inputRadicals) {
-      const radical = inputRadical.toLowerCase();
-      if (wk_replacements[radical]) {
-        const rtkVersions = wk_replacements[radical].split(",");
-        if (rtkVersions.length === 1) {
-          for (let i=0; i<rtkQueries.length; i++) {
-            rtkQueries[i] += rtkVersions[0];
-            outputRadicals.push(rtkVersions[0]);
-          }
-        } else { // we have multiple possible rtk equaivalents
-          const queryLength = rtkQueries.length;
-          let newQueries = [];
-          for (let i=0; i<queryLength; i++) {
-            for (const rtkVersion of rtkVersions) {
-              newQueries.push(rtkQueries[i] + " " + rtkVersion);
-              outputRadicals.push(rtkVersion);
+    if (!checked(checkboxRTKQuery)) {
+      rtkQueries.push(""); // necessary for now - investigate
+      query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
+      const inputRadicals = query.split(" ");
+  
+      // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
+      //   TODO the current method is crude and could be improved, but works for now.
+      //let ambiguities = []; // will be array of arrays, i.e. array of rtkVersion arrays (possible replacements)
+      for (const inputRadical of inputRadicals) {
+        const radical = inputRadical.toLowerCase();
+        if (wk_replacements[radical]) {
+          const rtkVersions = wk_replacements[radical].split(",");
+          if (rtkVersions.length === 1) {
+            for (let i=0; i<rtkQueries.length; i++) {
+              rtkQueries[i] += rtkVersions[0];
+              outputRadicals.push(rtkVersions[0]);
             }
+          } else { // we have multiple possible rtk equaivalents
+            const queryLength = rtkQueries.length;
+            let newQueries = [];
+            for (let i=0; i<queryLength; i++) {
+              for (const rtkVersion of rtkVersions) {
+                newQueries.push(rtkQueries[i] + " " + rtkVersion);
+                outputRadicals.push(rtkVersion);
+              }
+            }
+            rtkQueries = newQueries;
           }
-          rtkQueries = newQueries;
+        } else {
+          for (let i=0; i<rtkQueries.length; i++) {
+            rtkQueries[i] += inputRadical;
+            outputRadicals.push(inputRadical);
+          }
         }
-      } else {
         for (let i=0; i<rtkQueries.length; i++) {
-          rtkQueries[i] += inputRadical;
-          outputRadicals.push(inputRadical);
+          rtkQueries[i] += " ";
         }
       }
-      for (let i=0; i<rtkQueries.length; i++) {
-        rtkQueries[i] += " ";
-      }
+      // our rtkQueries are finished
+      // end if(!checkboxRTK.checked)
+    } else {
+      rtkQueries.push(query);
     }
-    // our rtkQueries are finished
 
     console.log("");
     //var displayEntries = [];
@@ -492,8 +512,9 @@ $(function() {
       //entries.empty();
 
       if (results && results.length > 0) {
-        const strictModeCheckbox = document.getElementById('strictModeCheckbox');
-        const strictMode = strictModeCheckbox && strictModeCheckbox.checked;
+        const rtkMode = checked(checkboxRTKQuery);
+        // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
+        const strictMode = !rtkMode && strictModeCheckbox && checked(checkboxStrictQuery);
         $.each(results, function(key, page) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
@@ -529,5 +550,9 @@ $(function() {
     result.show();
 
     return false;
+  }
+
+  function checked(checkboxQuery) {
+    return $(checkboxQuery).prop("checked");
   }
 });
