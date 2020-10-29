@@ -370,7 +370,7 @@ $(function() {
       "animal": "pack of dogs",
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "meeting moon saber,meeting moon flood",
+      "deathstar": "meeting moon saber", // or meeting moon flood, but unnecessary for now
       //"death star": "convoy",
       "dirt mouth": "lidded crock",
       //"brush": "brush",
