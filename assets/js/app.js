@@ -46,7 +46,8 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.0");
+      console.log("version: 1.0.4.0-test1");
+      console.log("strict checked: " + checked(checkboxStrictQuery));
     }
 
     var result  = $('#search-results');
@@ -523,6 +524,7 @@ $(function() {
         const rtkMode = checked(checkboxRTKQuery);
         // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
         const strictMode = !rtkMode && strictModeCheckbox && checked(checkboxStrictQuery);
+        console.log("strict mode: " + checked(checkboxStrictQuery));
         $.each(results, function(key, page) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
