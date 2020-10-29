@@ -86,7 +86,6 @@ $(function() {
       }
     }
 
-
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
     // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
     var wk_replacements = {
