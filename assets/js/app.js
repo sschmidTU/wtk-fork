@@ -564,7 +564,7 @@ $(function() {
           }
         });
         if (matches > 5) {
-          console.log('matches: ' + matches);
+          console.log('  matches: ' + matches); // indent under query
         }
       }
     } // end for query
