@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.3.7");
+      console.log("version: 1.0.3.8");
     }
 
     var result  = $('#search-results');
@@ -52,7 +52,8 @@ $(function() {
     // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
     var wk_replacements = {
       "cross": "ten",
-      "moon": "month",
+      //"moon": "moon" or month, but kanji with month always also have moon, and not vice versa
+      "month": "moon", // catch cases where only moon is given, see above
       "ricepaddy": "rice field,silage", // or silage, p354. RTK says sun for 更 again
       "net": "eye", // own radical in WK, just horizontal eye in RTK
       "dare": "risk", // not a WK radical, WK: sun + eye
@@ -356,7 +357,7 @@ $(function() {
       "stick": "walking stick,stick",
       "small drop": "valentine",
       "drop": "drop of",
-      "fins": "animal legs",
+      "fins": "animal legs,eight",
       "legs": "human legs,fenceposts", // or fenceposts, p377
       "lion": "straightened hook",
       //"ground fins": "tool", // not ideal, this needs to be in combination
