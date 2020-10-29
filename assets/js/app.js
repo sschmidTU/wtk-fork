@@ -1,61 +1,24 @@
 ---
 ---
 $(function() {
-	$('#search-button').on('click', function() {
-    return search();
-  });
-  
-  $('#search-query').on('input', function() {
-    return search();
-  });
+  const params = getUrlParameters(); // get URL parameters, e.g. ?strict=1&rtk=0
 
   const checkboxStrictQuery = 'input[name=strictModeCheckbox]';
   const checkboxRTKQuery    = 'input[name=rtkModeCheckbox]';
   const checkboxStrictLabelQuery = '#strictModeLabel';
-  // checkboxStrict.on('click', function() { // replaces click event completely
-  $(checkboxStrictQuery).change(function() {
-    var result  = $('#search-results');
-    var entries = $('#search-results .entries');
-    result.hide();
-    entries.empty();
-    return search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
-  });
-  $(checkboxRTKQuery).change(function() {
-    if (checked(checkboxRTKQuery)) {
-      $(checkboxStrictLabelQuery).prop('style')['text-decoration'] = 'line-through'; // strike-through
-    } else {
-      $(checkboxStrictLabelQuery).prop('style')['text-decoration'] = '';
-    }
-    return search();
-  })
-
-  // get URL parameters, check checkboxes
-  var params = {};
-	var parser = document.createElement('a');
-	parser.href = window.location.href;
-	var query = parser.search.substring(1);
-	var vars = query.split('&');
-	for (var i = 0; i < vars.length; i++) {
-		var pair = vars[i].split('=');
-		params[pair[0]] = decodeURIComponent(pair[1]);
-  }
-  if (params.strict === "1" || params.strict === "true" && !checked(checkboxStrictQuery)) {
-    $(checkboxStrictQuery).click();
-  }
-  if (params.rtk === "1" || params.rtk === "true" && !checked(checkboxRTKQuery)) {
-    $(checkboxRTKQuery).click();
-  }
-
+  setupHTMLElements(checkboxStrictQuery, checkboxRTKQuery, checkboxStrictLabelQuery, params)
+  
   function search() {
     var query   = $('#search-query').val();
 
-    if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.4");
+    if (query === 'v' || query === 'version') {
+      console.log('1.0.4.5');
     }
 
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    if (query.trim().length <= 2) {
+    // this should have trim(), but maybe this isn't necessary, so let's allow a workaround of adding spaces
+    if (query.length <= 2) {
       result.hide();
       entries.empty();
       return;
@@ -197,7 +160,7 @@ $(function() {
       "point": "delicious",
       "gun": "reclining",
       "blackhole": "double back", //p175
-      "black hole": "double back",
+      //"black hole": "double back",
       "clown": "muzzle", //p178
       "death": "deceased", //p180
       //"monk": "boy"
@@ -413,8 +376,9 @@ $(function() {
       "animal": "pack of dogs",
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "meeting moon saber",
+      "deathstar": "meeting moon saber", // or meeting moon flood, but unnecessary for now
       // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
+      //"death star": "convoy",
       "dirt mouth": "lidded crock",
       //"brush": "brush",
       "kick": "scarf",
@@ -578,5 +542,48 @@ $(function() {
 
   function checked(checkboxQuery) {
     return $(checkboxQuery).prop("checked");
+  }
+
+  function setupHTMLElements(checkboxStrictQuery, checkboxRTKQuery, checkboxStrictLabelQuery) {
+    $('#search-button').on('click', function() {
+      return search();
+    });
+    
+    $('#search-query').on('input', function() {
+      return search();
+    });
+
+    // checkboxStrict.on('click', function() { // replaces click event completely
+    $(checkboxStrictQuery).change(function() {
+      return search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
+    });
+    $(checkboxRTKQuery).change(function() {
+      if (checked(checkboxRTKQuery)) {
+        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through'; // strike-through
+      } else {
+        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
+      }
+      return search();
+    })
+
+    if (params.strict === "1" || params.strict === "true" && !checked(checkboxStrictQuery)) {
+      $(checkboxStrictQuery).click();
+    }
+    if (params.rtk === "1" || params.rtk === "true" && !checked(checkboxRTKQuery)) {
+      $(checkboxRTKQuery).click();
+    }
+  }
+
+  function getUrlParameters() {
+    let params = {};
+    let parser = document.createElement('a');
+    parser.href = window.location.href;
+    const query = parser.search.substring(1);
+    const vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+      const pair = vars[i].split('=');
+      params[pair[0]] = decodeURIComponent(pair[1]);
+    }
+    return params;
   }
 });
