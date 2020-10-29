@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.3.8");
+      console.log("version: 1.0.3.9");
     }
 
     var result  = $('#search-results');
@@ -374,7 +374,8 @@ $(function() {
       "animal": "pack of dogs",
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "meeting moon saber,meeting moon flood",
+      "deathstar": "meeting moon saber",
+      // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
       "dirt mouth": "lidded crock",
       //"brush": "brush",
       "kick": "scarf",
