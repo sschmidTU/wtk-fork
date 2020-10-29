@@ -12,7 +12,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('1.0.4.5');
+      console.log('wtk-search 1.0.4.6');
     }
 
     var result  = $('#search-results');
