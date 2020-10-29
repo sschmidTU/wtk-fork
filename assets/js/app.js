@@ -530,7 +530,10 @@ $(function() {
             }
           }
           if (addToResults) {
-            const kanjiName = page.keywordWK ? page.keywordWK : page.keyword;
+            let kanjiName = page.keyword;
+            if (!checked(checkboxRTKQuery) && page.keywordWK && page.keywordWK.length > 0) {
+              kanjiName = page.keywordWK
+            }
             entries.append(
               '<div style="position: relative; left: 28%; text-align: center">'+ // left: 37% for alignment with WK, 28% with kanji in chrome
               '<article>'+
