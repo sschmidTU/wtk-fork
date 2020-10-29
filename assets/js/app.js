@@ -50,7 +50,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.4.0c");
+      console.log("version: 1.0.4.0d");
     }
 
     var result  = $('#search-results');
@@ -539,6 +539,7 @@ $(function() {
                   outputRadical === page.keyword ||
                   outputRadical === page.keywordWK
               ) {
+                console.log('outputRadical: ' + outputRadical);
                 addToResults = true; // in strict mode, only add result if it has an exact element match
                 break;
               }
