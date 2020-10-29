@@ -13,7 +13,7 @@ $(function() {
     var query   = $('#search-query').val();
 
     if (query == "v" || query == "version") {
-      console.log("version: 1.0.3.9");
+      console.log("version: 1.0.3.10");
     }
 
     var result  = $('#search-results');
@@ -397,7 +397,9 @@ $(function() {
       //"flag": "flag",
       "gambler": "strawman",
       "drop bear": "maestro",
-      "hole": "miss universe",
+      "pi": "hole",
+      "hole": "hole", // RTK doesn't differentiate between WK's pi and hole (added stick on top) 
+      // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.
       //"stamp": "stamp",
       "mama": "chop-seal small",
       "limit": "silver",
