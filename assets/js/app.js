@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.6');
+      console.log('wtk-search 1.0.5.7');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -26,11 +26,11 @@ $(function() {
     }
 
     // replace spaces in WK radical names
-    const space_replacements = {
+    const space_replacements = { // maybe put into getter method as well
       "rice paddy": "ricepaddy",
       "older brother": "olderbrother",
       "younger brother": "youngerbrother",
-      "to cut": "tocut",
+      "to cut": "tocut", // custom radical from phonetic-semantic composition
       "coat rack": "coatrack",
       "older sister": "oldersister",
       "black hole": "blackhole",
@@ -52,7 +52,208 @@ $(function() {
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
     // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
-    var wk_replacements = {
+    const wk_replacements = get_wk_to_rtk_replacements();
+
+    let rtkQueries = [];
+    let outputRadicals = [];
+    if (!checked(checkboxRTKQuery)) {
+      rtkQueries.push(""); // necessary for now - investigate
+      query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
+      const inputRadicals = query.split(" ");
+  
+      // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
+      //   TODO the current method is crude and could be improved, but works for now.
+      for (const inputRadical of inputRadicals) {
+        const radical = inputRadical.toLowerCase();
+        if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
+          const rtkVersions = wk_replacements[radical].split(",");
+          const rtkKeywordLists = getRtkKeywordLists(rtkVersions);
+          if (rtkKeywordLists.length === 1) {
+            // if we only have one possible replacement, just add it to each query
+            for (let i=0; i<rtkQueries.length; i++) {
+              for (const keywordList of rtkKeywordLists) {
+                for (const keyword of keywordList) {
+                  rtkQueries[i] += keyword + " ";
+                  outputRadicals.push(keyword);
+                }
+              }
+            }
+          } else { // we have multiple possible rtk equaivalents
+            const queryLength = rtkQueries.length; // necessary to not make for loop infinitely
+            // create a new query for every possible replacement of the inputRadical
+            let newQueries = [];
+            for (let i=0; i<queryLength; i++) {
+              const rtkQuery = rtkQueries[i];
+              for (const keywordList of rtkKeywordLists) {
+                // for each keywordList (list of keywords that can replace one WK radical), create a new query
+                let newQuery = rtkQuery;
+                for (const keyword of keywordList) {
+                  newQuery += keyword + " ";
+                  outputRadicals.push(keyword);
+                }
+                newQueries.push(newQuery);
+              }
+            }
+            rtkQueries = newQueries;
+          }
+        } else {
+          // inputRadical doesn't need to be replaced, just add it to each query
+          for (let i=0; i<rtkQueries.length; i++) {
+            rtkQueries[i] += inputRadical + ' ';
+            outputRadicals.push(inputRadical);
+          }
+        }
+      }
+      // our rtkQueries are finished
+      // end if(!checkboxRTK.checked)
+    } else {
+      rtkQueries.push(query);
+    }
+
+    console.log(" "); // new line
+    //var displayEntries = [];
+    // if (query.trim().length <= 2) {
+      result.hide();
+      entries.empty();
+    // }
+
+    let idsAddedToResults = {};
+    // search for each rtkQuery
+    for (let i=0; i<rtkQueries.length; i++) {
+      let query = rtkQueries[i];
+      if (query.length < 2) {
+        continue;
+      }
+      query = query.trim(); // maybe do that above, but for now don't restrict queries by length too much
+      console.log("query " + (i+1) + ": " + query);
+
+      // retrieve matching result with content
+      var results = $.map(idx.search(query), function(result) {
+        return $.grep(docs, function(entry) {
+          // TODO handle multiple queries here instead of the query adding below
+          if (entry.id === result.ref && !idsAddedToResults[entry.id]) {
+            idsAddedToResults[entry.id] = 1; // id was added. use object=hash map instead of array for O(1) performance
+            return true;
+          }
+          return false;
+        })[0];
+      });
+
+      //entries.empty();
+
+      if (results && results.length > 0) {
+        const rtkMode = checked(checkboxRTKQuery);
+        // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
+        const strictMode = !rtkMode && strictModeCheckbox && checked(checkboxStrictQuery);
+        let matches = 0;
+        $.each(results, function(key, page) {
+          let addToResults = !strictMode; // if not strict mode, add all results to query
+          if (strictMode) {
+            const elements = page.elements.split(',').map((val,_,__) => val.trim());
+            const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
+            for (const outputRadical of outputRadicals) {
+              const trimmedRadical = outputRadical.trim();
+              if (trimmedRadical !== '' && (
+                    elements.includes(trimmedRadical) ||
+                    !rtkMode && elementsWK?.includes(trimmedRadical) ||
+                    trimmedRadical === page.keyword ||
+                    trimmedRadical === page.keywordWK
+                  )
+              ) {
+                //console.log('outputRadical: ' + trimmedRadical);
+                addToResults = true; // in strict mode, only add result if it has an exact element match
+                break;
+              }
+            }
+          }
+          if (addToResults) {
+            let kanjiName = page.keyword;
+            if (!checked(checkboxRTKQuery) && page.keywordWK && page.keywordWK.length > 0) {
+              kanjiName = page.keywordWK;
+            }
+            entries.append(
+              '<div style="position: relative; left: 28%; text-align: center">'+ // left: 37% for alignment with WK, 28% with kanji in chrome
+              '<article>'+
+              '  <h3 style="text-align: left">'+
+              '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
+              '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
+              '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
+              '  </h3>'+
+              '</article></div>'
+            );
+            matches++;
+          }
+        }); // end each pages
+        if (matches > 5) {
+          console.log('  matches: ' + matches); // indent under query
+        }
+      }
+    } // end for query
+    // if (results.length == 0) {
+    //   entries.append('<h4>Kanji not found :-(</h4>'); // sometimes fires too early
+    // }
+    result.show();
+
+    return false;
+  }
+
+  function getRtkKeywordLists(rtkVersions) {
+    let keywords = [];
+    for (const rtkVersion of rtkVersions) {
+      keywords.push(rtkVersion.split('&'));
+    }
+    return keywords;
+  }
+
+  function checked(checkboxQuery) {
+    return $(checkboxQuery).prop("checked");
+  }
+
+  function setupHTMLElements(checkboxStrictQuery, checkboxRTKQuery, checkboxStrictLabelQuery) {
+    $('#search-button').on('click', function() {
+      return search();
+    });
+    
+    $('#search-query').on('input', function() {
+      return search();
+    });
+
+    // checkboxStrict.on('click', function() { // replaces click event completely
+    $(checkboxStrictQuery).change(function() {
+      return search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
+    });
+    $(checkboxRTKQuery).change(function() {
+      if (checked(checkboxRTKQuery)) {
+        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through'; // strike-through
+      } else {
+        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
+      }
+      return search();
+    })
+
+    if (params.strict === "1" || params.strict === "true" && !checked(checkboxStrictQuery)) {
+      $(checkboxStrictQuery).click();
+    }
+    if (params.rtk === "1" || params.rtk === "true" && !checked(checkboxRTKQuery)) {
+      $(checkboxRTKQuery).click();
+    }
+  }
+
+  function getUrlParameters() {
+    let params = {};
+    let parser = document.createElement('a');
+    parser.href = window.location.href;
+    const query = parser.search.substring(1);
+    const vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+      const pair = vars[i].split('=');
+      params[pair[0]] = decodeURIComponent(pair[1]);
+    }
+    return params;
+  }
+
+  function get_wk_to_rtk_replacements() {
+    return {
       "cross": "ten",
       //"moon": "moon" or month, but kanji with month always also have moon, and not vice versa
       "month": "moon", // catch cases where only moon is given, see above
@@ -356,7 +557,7 @@ $(function() {
       "leaf": "leafWK",
       "slide": "slideWK",
       // -----------------------------------------------------------------------------
-      "stick": "stick",
+      "stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
       "drop": "drop,drops",
       "fins": "animal legs,eight",
@@ -415,201 +616,5 @@ $(function() {
       //"tiger": "tiger",
       //"deer": "deer",
     }
-    let rtkQueries = [];
-    let outputRadicals = [];
-    if (!checked(checkboxRTKQuery)) {
-      rtkQueries.push(""); // necessary for now - investigate
-      query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
-      const inputRadicals = query.split(" ");
-  
-      // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
-      //   TODO the current method is crude and could be improved, but works for now.
-      for (const inputRadical of inputRadicals) {
-        const radical = inputRadical.toLowerCase();
-        if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
-          const rtkVersions = wk_replacements[radical].split(",");
-          const rtkKeywordLists = getRtkKeywordLists(rtkVersions);
-          if (rtkKeywordLists.length === 1) {
-            // if we only have one possible replacement, just add it to each query
-            for (let i=0; i<rtkQueries.length; i++) {
-              for (const keywordList of rtkKeywordLists) {
-                for (const keyword of keywordList) {
-                  rtkQueries[i] += keyword + " ";
-                  outputRadicals.push(keyword);
-                }
-              }
-            }
-          } else { // we have multiple possible rtk equaivalents
-            const queryLength = rtkQueries.length; // necessary to not make for loop infinitely
-            // create a new query for every possible replacement of the inputRadical
-            let newQueries = [];
-            for (let i=0; i<queryLength; i++) {
-              const rtkQuery = rtkQueries[i];
-              for (const keywordList of rtkKeywordLists) {
-                // for each keywordList (list of keywords that can replace one WK radical), create a new query
-                let newQuery = rtkQuery;
-                for (const keyword of keywordList) {
-                  newQuery += keyword + " ";
-                  outputRadicals.push(keyword);
-                }
-                newQueries.push(newQuery);
-              }
-            }
-            rtkQueries = newQueries;
-          }
-        } else {
-          // inputRadical doesn't need to be replaced, just add it to each query
-          for (let i=0; i<rtkQueries.length; i++) {
-            rtkQueries[i] += inputRadical + ' ';
-            outputRadicals.push(inputRadical);
-          }
-        }
-      }
-      // our rtkQueries are finished
-      // end if(!checkboxRTK.checked)
-    } else {
-      rtkQueries.push(query);
-    }
-
-    console.log(" "); // new line
-    //var displayEntries = [];
-    // if (query.trim().length <= 2) {
-      result.hide();
-      entries.empty();
-    // }
-
-    let idsAddedToResults = {};
-    // search for each rtkQuery
-    for (let i=0; i<rtkQueries.length; i++) {
-      let query = rtkQueries[i];
-      if (query.length < 2) {
-        continue;
-      }
-      query = query.trim(); // maybe do that above, but for now don't restrict queries by length too much
-      console.log("query " + (i+1) + ": " + query);
-
-      // retrieve matching result with content
-      var results = $.map(idx.search(query), function(result) {
-        return $.grep(docs, function(entry) {
-          // TODO handle multiple queries here instead of the query adding below
-          if (entry.id === result.ref && !idsAddedToResults[entry.id]) {
-            idsAddedToResults[entry.id] = 1; // id was added. use object=hash map instead of array for O(1) performance
-            return true;
-          }
-          return false;
-        })[0];
-      });
-
-      //entries.empty();
-
-      if (results && results.length > 0) {
-        const rtkMode = checked(checkboxRTKQuery);
-        // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
-        const strictMode = !rtkMode && strictModeCheckbox && checked(checkboxStrictQuery);
-        let matches = 0;
-        $.each(results, function(key, page) {
-          let addToResults = !strictMode; // if not strict mode, add all results to query
-          if (strictMode) {
-            const elements = page.elements.split(',').map((val,_,__) => val.trim());
-            const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
-            for (const outputRadical of outputRadicals) {
-              const trimmedRadical = outputRadical.trim();
-              if (trimmedRadical !== '' && (
-                    elements.includes(trimmedRadical) ||
-                    !rtkMode && elementsWK?.includes(trimmedRadical) ||
-                    trimmedRadical === page.keyword ||
-                    trimmedRadical === page.keywordWK
-                  )
-              ) {
-                //console.log('outputRadical: ' + trimmedRadical);
-                addToResults = true; // in strict mode, only add result if it has an exact element match
-                break;
-              }
-            }
-          }
-          if (addToResults) {
-            let kanjiName = page.keyword;
-            if (!checked(checkboxRTKQuery) && page.keywordWK && page.keywordWK.length > 0) {
-              kanjiName = page.keywordWK;
-            }
-            entries.append(
-              '<div style="position: relative; left: 28%; text-align: center">'+ // left: 37% for alignment with WK, 28% with kanji in chrome
-              '<article>'+
-              '  <h3 style="text-align: left">'+
-              '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
-              '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
-              '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
-              '  </h3>'+
-              '</article></div>'
-            );
-            matches++;
-          }
-        }); // end each pages
-        if (matches > 5) {
-          console.log('  matches: ' + matches); // indent under query
-        }
-      }
-    } // end for query
-    // if (results.length == 0) {
-    //   entries.append('<h4>Kanji not found :-(</h4>'); // sometimes fires too early
-    // }
-    result.show();
-
-    return false;
-  }
-
-  function getRtkKeywordLists(rtkVersions) {
-    let keywords = [];
-    for (const rtkVersion of rtkVersions) {
-      keywords.push(rtkVersion.split('&'));
-    }
-    return keywords;
-  }
-
-  function checked(checkboxQuery) {
-    return $(checkboxQuery).prop("checked");
-  }
-
-  function setupHTMLElements(checkboxStrictQuery, checkboxRTKQuery, checkboxStrictLabelQuery) {
-    $('#search-button').on('click', function() {
-      return search();
-    });
-    
-    $('#search-query').on('input', function() {
-      return search();
-    });
-
-    // checkboxStrict.on('click', function() { // replaces click event completely
-    $(checkboxStrictQuery).change(function() {
-      return search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
-    });
-    $(checkboxRTKQuery).change(function() {
-      if (checked(checkboxRTKQuery)) {
-        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through'; // strike-through
-      } else {
-        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
-      }
-      return search();
-    })
-
-    if (params.strict === "1" || params.strict === "true" && !checked(checkboxStrictQuery)) {
-      $(checkboxStrictQuery).click();
-    }
-    if (params.rtk === "1" || params.rtk === "true" && !checked(checkboxRTKQuery)) {
-      $(checkboxRTKQuery).click();
-    }
-  }
-
-  function getUrlParameters() {
-    let params = {};
-    let parser = document.createElement('a');
-    parser.href = window.location.href;
-    const query = parser.search.substring(1);
-    const vars = query.split('&');
-    for (var i = 0; i < vars.length; i++) {
-      const pair = vars[i].split('=');
-      params[pair[0]] = decodeURIComponent(pair[1]);
-    }
-    return params;
   }
 });
