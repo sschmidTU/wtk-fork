@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.0');
+      console.log('wtk-search 1.0.5.1');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -359,7 +359,7 @@ $(function() {
       // -----------------------------------------------------------------------------
       "stick": "walking stick,stick",
       "small drop": "valentine",
-      "drop": "drop of",
+      "drop": "drop,drops",
       "fins": "animal legs,eight",
       "legs": "human legs,fenceposts", // or fenceposts, p377
       "lion": "straightened hook",
