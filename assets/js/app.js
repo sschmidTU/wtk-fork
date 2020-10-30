@@ -12,13 +12,13 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.2');
+      console.log('wtk-search 1.0.5.3');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    // this should have trim(), but maybe this isn't necessary, so let's allow a workaround of adding spaces
+    // this should have trim(), but maybe this isn't necessary (offline?), so let's allow a workaround of adding spaces
     if (query.length <= 2) {
       result.hide();
       entries.empty();
@@ -512,10 +512,12 @@ $(function() {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
+            const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
             for (const outputRadical of outputRadicals) {
               const trimmedRadical = outputRadical.trim();
               if (trimmedRadical !== '' && (
                     elements.includes(trimmedRadical) ||
+                    !rtkMode && elementsWK?.includes(trimmedRadical) ||
                     trimmedRadical === page.keyword ||
                     trimmedRadical === page.keywordWK
                   )
