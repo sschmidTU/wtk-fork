@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.4.12');
+      console.log('wtk-search 1.0.5.0');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -239,7 +239,7 @@ $(function() {
       "foot": "leg", //1372
       "bone": "skeleton", //1383
       "zoom": "jawbone", //p311, doesn't really exist on WK, zoom is a personal mnemonic. could be zoommustache as well
-      "mustache": "jawbone,helmet,hood mouth", // mustache in itself seems to be "hood mouth" in RTK, see 尚
+      "mustache": "jawbone,helmet,hood&mouth", // mustache in itself seems to be "hood mouth" in RTK, see 尚
       "building": "pinnacle,city walls", //lesson35, or city walls (p394, when on the right)
       "pi": "paper punch", //p316, not a perfect match (roof legs instead of ground legs) TODO add alternate replacements
       "syrup": "goods tree", // e.g. 1469, syrup doesn't exist in RTK
@@ -333,10 +333,10 @@ $(function() {
       "business": "in a row upside down", // plus not yet, but doesn't make a difference
       "youngerbrother": "horns dollar",
       "guy": "good city walls",
-      "penguin": "shredder taskmaster",
-      "frostbite": "dirt walking legs",
+      "penguin": "shredder&taskmaster",
+      "frostbite": "dirt&walking legs",
       "satellite": "vulture king mountain",
-      "bully": "ceiling mouth hood human legs street",
+      "bully": "ceiling&mouth&hood&human legs&street",
       "showy": "flowers silage ten",
       "mantis": "gnats drop insect belt",
       // --------------------------------------------
@@ -377,7 +377,7 @@ $(function() {
       "animal": "pack of dogs",
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "meeting moon saber", // or meeting moon flood, but unnecessary for now
+      "deathstar": "meeting&moon&saber", // or meeting moon flood, but unnecessary for now
       // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
       //"death star": "convoy",
       "dirt mouth": "lidded crock",
@@ -425,35 +425,45 @@ $(function() {
   
       // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
       //   TODO the current method is crude and could be improved, but works for now.
-      //let ambiguities = []; // will be array of arrays, i.e. array of rtkVersion arrays (possible replacements)
       for (const inputRadical of inputRadicals) {
         const radical = inputRadical.toLowerCase();
-        if (wk_replacements[radical]) {
+        if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(",");
-          if (rtkVersions.length === 1) {
+          const rtkKeywordLists = getRtkKeywordLists(rtkVersions);
+          if (rtkKeywordLists.length === 1) {
+            // if we only have one possible replacement, just add it to each query
             for (let i=0; i<rtkQueries.length; i++) {
-              rtkQueries[i] += rtkVersions[0];
-              outputRadicals.push(rtkVersions[0]);
+              for (const keywordList of rtkKeywordLists) {
+                for (const keyword of keywordList) {
+                  rtkQueries[i] += keyword + " ";
+                  outputRadicals.push(keyword);
+                }
+              }
             }
           } else { // we have multiple possible rtk equaivalents
-            const queryLength = rtkQueries.length;
+            const queryLength = rtkQueries.length; // necessary to not make for loop infinitely
+            // create a new query for every possible replacement of the inputRadical
             let newQueries = [];
             for (let i=0; i<queryLength; i++) {
-              for (const rtkVersion of rtkVersions) {
-                newQueries.push(rtkQueries[i] + " " + rtkVersion);
-                outputRadicals.push(rtkVersion);
+              const rtkQuery = rtkQueries[i];
+              for (const keywordList of rtkKeywordLists) {
+                // for each keywordList (list of keywords that can replace one WK radical), create a new query
+                let newQuery = rtkQuery;
+                for (const keyword of keywordList) {
+                  newQuery += keyword + " ";
+                  outputRadicals.push(keyword);
+                }
+                newQueries.push(newQuery);
               }
             }
             rtkQueries = newQueries;
           }
         } else {
+          // inputRadical doesn't need to be replaced, just add it to each query
           for (let i=0; i<rtkQueries.length; i++) {
-            rtkQueries[i] += inputRadical;
+            rtkQueries[i] += inputRadical + ' ';
             outputRadicals.push(inputRadical);
           }
-        }
-        for (let i=0; i<rtkQueries.length; i++) {
-          rtkQueries[i] += ' ';
         }
       }
       // our rtkQueries are finished
@@ -469,6 +479,7 @@ $(function() {
       entries.empty();
     // }
 
+    let idsAddedToResults = {};
     // search for each rtkQuery
     for (let i=0; i<rtkQueries.length; i++) {
       let query = rtkQueries[i];
@@ -482,7 +493,11 @@ $(function() {
       var results = $.map(idx.search(query), function(result) {
         return $.grep(docs, function(entry) {
           // TODO handle multiple queries here instead of the query adding below
-          return entry.id === result.ref;
+          if (entry.id === result.ref && !idsAddedToResults[entry.id]) {
+            idsAddedToResults[entry.id] = 1; // id was added. use object=hash map instead of array for O(1) performance
+            return true;
+          }
+          return false;
         })[0];
       });
 
@@ -505,6 +520,7 @@ $(function() {
                     trimmedRadical === page.keywordWK
                   )
               ) {
+                //console.log('outputRadical: ' + trimmedRadical);
                 addToResults = true; // in strict mode, only add result if it has an exact element match
                 break;
               }
@@ -527,7 +543,7 @@ $(function() {
             );
             matches++;
           }
-        });
+        }); // end each pages
         if (matches > 5) {
           console.log('  matches: ' + matches); // indent under query
         }
@@ -539,6 +555,14 @@ $(function() {
     result.show();
 
     return false;
+  }
+
+  function getRtkKeywordLists(rtkVersions) {
+    let keywords = [];
+    for (const rtkVersion of rtkVersions) {
+      keywords.push(rtkVersion.split('&'));
+    }
+    return keywords;
   }
 
   function checked(checkboxQuery) {
