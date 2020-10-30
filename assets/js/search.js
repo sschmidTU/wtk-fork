@@ -12679,7 +12679,7 @@ var docs =
   "id" : "1181",
   "kanji" : "用",
   "keyword" : "utilize",
-  "elements" : "utilize, moon, month, flesh, part of the body, walking stick",
+  "elements" : "utilize, moon, month, flesh, part of the body, stick",
 }
 ,
   
@@ -12689,7 +12689,7 @@ var docs =
   "id" : "1182",
   "kanji" : "庸",
   "keyword" : "comfortable",
-  "elements" : "commonplace, comfortable, cave, rake, screwdriver, utilise, utilize, moon, month, flesh, part of the body, walking stick",
+  "elements" : "commonplace, comfortable, cave, rake, screwdriver, utilise, utilize, moon, month, flesh, part of the body, stick",
 }
 ,
   
@@ -12699,7 +12699,7 @@ var docs =
   "id" : "1183",
   "kanji" : "備",
   "keyword" : "equip",
-  "elements" : "equip, person, flowers, cliff, screwdriver, utilise, utilize, moon, month, flesh, part of the body, walking stick",
+  "elements" : "equip, person, flowers, cliff, screwdriver, utilise, utilize, moon, month, flesh, part of the body, stick",
 }
 ,
   
@@ -13220,7 +13220,7 @@ var docs =
   "id" : "1233",
   "kanji" : "弔",
   "keyword" : "condolences",
-  "elements" : "condolences, bow, walking stick",
+  "elements" : "condolences, bow, stick",
 }
 ,
   
@@ -19814,7 +19814,7 @@ var docs =
   "id" : "1836",
   "kanji" : "捕",
   "keyword" : "catch",
-  "elements" : "catch, finger, fingers, dog-tag, arrowhead, screwdriver, utilize, utilise",
+  "elements" : "catch, finger, fingers, dog tag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   
@@ -19834,7 +19834,7 @@ var docs =
   "id" : "1837",
   "kanji" : "浦",
   "keyword" : "bay",
-  "elements" : "bay, water, water droplets, water pistol, dog-tag, arrowhead, screwdriver, utilize, utilise",
+  "elements" : "bay, water, water droplets, water pistol, dog tag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   
@@ -19844,7 +19844,7 @@ var docs =
   "id" : "1838",
   "kanji" : "蒲",
   "keyword" : "bullrush",
-  "elements" : "bulrush, flowers, bay, water, water droplets, water pistol, dog-tag, arrowhead, screwdriver, utilize, utilise",
+  "elements" : "bulrush, flowers, bay, water, water droplets, water pistol, dog tag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   
@@ -19854,7 +19854,7 @@ var docs =
   "id" : "1839",
   "kanji" : "舗",
   "keyword" : "shop",
-  "elements" : "shop, cottage, little-thatch, umbrella, earthenware jar, lidded crock, soil, dirt, ground, mouth, dog-tag, arrowhead, screwdriver, utilize, utilise",
+  "elements" : "shop, cottage, little-thatch, umbrella, earthenware jar, lidded crock, soil, dirt, ground, mouth, dog tag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   
@@ -19864,7 +19864,7 @@ var docs =
   "id" : "1840",
   "kanji" : "補",
   "keyword" : "supplement",
-  "elements" : "supplement, cloak, dog-tag, arrowhead, screwdriver, utilize, utilise",
+  "elements" : "supplement, cloak, dog tag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   

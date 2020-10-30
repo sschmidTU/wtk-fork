@@ -10,13 +10,13 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('1.0.2.7-offline-only.3.0');
+      console.log('1.0.2.7-offline-only.3.1');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    // this should have trim(), but maybe this isn't necessary (offline), so let's allow a workaround of adding spaces
+    // this should have trim(), but maybe this isn't necessary (offline?), so let's allow a workaround of adding spaces
     if (query.length <= 2) {
       result.hide();
       entries.empty();
@@ -143,7 +143,6 @@ $(function() {
       "bar": "float", //p148
       "plan": "undertake", //p150, only kanji in WK
       "coatrack": "mending,zoo", //p152, or zoo, p155
-      "coat rack": "mending",
       "yoga": "stretch",
       "clothes": "garment", //p156
       "cloth": "linen", //only kanji in WK
@@ -237,7 +236,7 @@ $(function() {
       "foot": "leg", //1372
       "bone": "skeleton", //1383
       "zoom": "jawbone", //p311, doesn't really exist on WK, zoom is a personal mnemonic. could be zoommustache as well
-      "mustache": "jawbone,helmet,hood&mouth", // mustache in itself seems to be "hood mouth" in RTK, see 尚
+      "mustache": "hood&mouth", // mustache in itself seems to be "hood mouth" in RTK, see 尚
       "building": "pinnacle,city walls", //lesson35, or city walls (p394, when on the right)
       "pi": "paper punch", //p316, not a perfect match (roof legs instead of ground legs) TODO add alternate replacements
       "syrup": "goods tree", // e.g. 1469, syrup doesn't exist in RTK
@@ -256,7 +255,7 @@ $(function() {
       "vines": "cornucopia", //p342
       "womb": "rice seedling ground", //p343, RTK doesn't have womb as a radical
       "slice": "sign of the hog", //1637
-      "angel": "resin,pole", //p345, or sometimes pole sometimes (missing the drop, e.g. needed for tea)
+      "angel": "resin,pole", //p345, or pole sometimes (missing the drop, e.g. needed for tea)
       "nurse": "grass skirt", //p346
       "life": "grow up,king,porter", //p347, or king/porter. sometimes grow up e.g. for poison, = life in WK. RTK life is 1675
       "signpost": "walking legs bushes", //p350, signpost doesn't exist in RTK
@@ -357,7 +356,7 @@ $(function() {
       // -----------------------------------------------------------------------------
       "stick": "walking stick,stick",
       "small drop": "valentine",
-      "drop": "drop of",
+      "drop": "drop,drops",
       "fins": "animal legs,eight",
       "legs": "human legs,fenceposts", // or fenceposts, p377
       "lion": "straightened hook",
@@ -510,10 +509,12 @@ $(function() {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
+            const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
             for (const outputRadical of outputRadicals) {
               const trimmedRadical = outputRadical.trim();
               if (trimmedRadical !== '' && (
                     elements.includes(trimmedRadical) ||
+                    !rtkMode && elementsWK?.includes(trimmedRadical) ||
                     trimmedRadical === page.keyword ||
                     trimmedRadical === page.keywordWK
                   )
