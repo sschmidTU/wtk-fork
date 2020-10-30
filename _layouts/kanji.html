@@ -32,6 +32,9 @@ layout: default
 
 <h3>On-Yomi: <a>{{ page.on-yomi }}</a> {% if page.kun-yomi %}— Kun-Yomi: <a>{{ page.kun-yomi }}</a>{% endif %}</h3>
 
+  {% if page.v6-kanji %}
+    <h3>v6-Kanji: {{ page.v6-kanji }} (same number)</h3>
+  {% endif %}
 {% comment %}
 	{% if page.primit %}
     <h2>Primitive:</h2>
