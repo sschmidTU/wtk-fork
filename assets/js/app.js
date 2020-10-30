@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.7');
+      console.log('wtk-search 1.0.5.8');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -255,6 +255,7 @@ $(function() {
   function get_wk_to_rtk_replacements() {
     return {
       "cross": "ten",
+      "sun": "sun,mortar", // mortar (臼) is given as sun in WK
       //"moon": "moon" or month, but kanji with month always also have moon, and not vice versa
       "month": "moon", // catch cases where only moon is given, see above
       "ricepaddy": "rice field,silage", // or silage, p354. RTK says sun for 更 again
