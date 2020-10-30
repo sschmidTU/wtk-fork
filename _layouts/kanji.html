@@ -32,7 +32,7 @@ layout: default
 
 <h3>On-Yomi: <a>{{ page.on-yomi }}</a> {% if page.kun-yomi %}— Kun-Yomi: <a>{{ page.kun-yomi }}</a>{% endif %}</h3>
 
-
+{% comment %}
 	{% if page.primit %}
     <h2>Primitive:</h2>
     <p>{{ page.primit }}</p>
@@ -47,6 +47,7 @@ layout: default
     <h2>Heisig comment:</h2>
     <p>{{ page.commen }}</p>
   {% endif %}
+{% endcomment %}
 
 
 <h2>Koohii stories:</h2>
