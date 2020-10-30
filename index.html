@@ -13,19 +13,20 @@
 	<div role="main" class="main">
 			
 	  <h1><img src="assets/img/favicon.ico" height="32"/>  Offline multi-radical WTK Kanji Search</h1>
-	  <div id="subtitle" style="text-align: center">Enter WK radical names, separated by spaces, to search Kanji</div>
+	  <div id="subtitle" style="text-align: center" title="Technically RTK primitives or elements and not 'radicals', as Wanikani calls them.
+But the 'official' radicals are from an 18th century chinese dictionary (Kangxi), let's not get into that ;)">Enter WK or RTK radicals, separated by spaces, to search Kanji</div>
 <hr>
 
 
 <div id="search-box">
-	<input type="search" id="search-query" name="q" placeholder="Enter radicals to search kanji" autocomplete="off" lang="en" autofocus="autofocus">
+	<input type="search" id="search-query" name="q" placeholder="Search - try blue sun" autocomplete="off" autofocus="autofocus">
 	<button type="submit" id="search-button">Search</button><br>
-	
+
 	<input type="checkbox" id="strictModeCheckbox" name="strictModeCheckbox" value="false">
 		<label for="strictModeCheckbox" id="strictModeLabel" title="Only show exact matches for radicals, elements or kanji names">Strict</label>
 	<input type="checkbox" id="rtkModeCheckbox" name ="rtkModeCheckbox" value="false">
-		<label for="rtkModeCheckbox" id="rtkModeLabel" title="Search for RTK elements or kanji names.
-In this mode, the search query is not altered to replace WK radical names with RTK elements.
+		<label for="rtkModeCheckbox" id="rtkModeLabel" title="Search for RTK elements/primitives or kanji names.
+In this mode, the search query is not altered to replace WK 'radical' names with RTK elements.
 RTK Mode is not yet compatible with strict mode.">RTK</label>
 	
 	<div id="search-results" style="display: none;">
