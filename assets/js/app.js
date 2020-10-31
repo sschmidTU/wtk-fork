@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.14');
+      console.log('wtk-search 1.0.5.15');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -548,7 +548,7 @@ $(function() {
       "bear": "maestro without baton",
       "spikes": "row,upside down in a row",
       "pope": "ten eye",
-      "ground": "one",
+      "ground": "one,floor,ceiling",
       "creeper": "one mouth",
       "measurement": "glue",
       "commander": "leader",
