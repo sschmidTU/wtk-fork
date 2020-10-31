@@ -10,7 +10,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('1.0.2.7-offline-only.1.0.5.6');
+      console.log('1.0.2.7-offline-only.1.0.5.13');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -253,6 +253,7 @@ $(function() {
   function get_wk_to_rtk_replacements() {
     return {
       "cross": "ten",
+      "sun": "sun,mortar", // mortar (臼) is given as sun in WK
       //"moon": "moon" or month, but kanji with month always also have moon, and not vice versa
       "month": "moon", // catch cases where only moon is given, see above
       "ricepaddy": "rice field,silage", // or silage, p354. RTK says sun for 更 again
@@ -449,6 +450,7 @@ $(function() {
       "peace": "call",
       "treasure": "sheaf,tucked under the arm", //p339 or arm maybe, p222
       "rocket": "sheik,top hat&villain&belt&elbow", //1605, sheik = 2047* (p12) in rtk3 = top hat villain belt elbow
+      "dance": "ballerina", // or sometimes only sunglasses (right part of WK dance), RTK isn't clear on this (see shoeshine element). or dance in rtk-search
       "barracks": "earthworm,mountain goat,barracks", //p340 or mountain goat (p413), or barracks (2189)
       //"spicy": "spicy,red pepper", // spicy or maybe red pepper sometimes
       "hotpepper": "ketchup", //p341
@@ -554,7 +556,7 @@ $(function() {
       // -------- these don't exist in RTK, need to be tagged with elementsWK --------
       "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
       "leaf": "leafWK",
-      "slide": "slideWK",
+      "slide": "slideWK,fishhook,hook",
       // -----------------------------------------------------------------------------
       "stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
