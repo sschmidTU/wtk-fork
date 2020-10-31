@@ -448,7 +448,7 @@ $(function() {
       "plate": "dish", //1555
       "peace": "call",
       "treasure": "sheaf,tucked under the arm", //p339 or arm maybe, p222
-      "rocket": "top hat villain", //1605 rocket doesn't exist in RTK. RTK says top hat villain belt elbow, but who knows if all these tags apply
+      "rocket": "sheik,top hat&villain&belt&elbow", //1605, sheik = 2047* (p12) in rtk3 = top hat villain belt elbow
       "barracks": "earthworm,mountain goat,barracks", //p340 or mountain goat (p413), or barracks (2189)
       //"spicy": "spicy,red pepper", // spicy or maybe red pepper sometimes
       "hotpepper": "ketchup", //p341
@@ -523,12 +523,13 @@ $(function() {
       "root": "silver",
       "umbrella": "fishhook,umbrellaWK",
       "spider": "streetwalker",
+      "horse": "team of horses",
       // ---------------------------------- ^^ ------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "tombstone": "line spool", // tombstone doesn't exist in RTK
       "root": "silver",
-      "business": "in a row upside down", // plus not yet, but doesn't make a difference
+      "business": "upside down in a row", // plus not yet or tree or husband, but doesn't make a difference for now. also not clear.
       "youngerbrother": "horns dollar",
       "guy": "good city walls",
       "penguin": "shredder&taskmaster",
@@ -541,7 +542,7 @@ $(function() {
       "elf": "daring",
       "coral": "helping hand",
       "bear": "maestro without baton",
-      "spikes": "row",
+      "spikes": "row,upside down in a row",
       "pope": "ten eye",
       "ground": "one",
       "creeper": "one mouth",
@@ -580,7 +581,7 @@ $(function() {
       //"death star": "convoy",
       "dirt mouth": "lidded crock",
       //"brush": "brush",
-      "kick": "scarf",
+      "kick": "scarf", // the left part can also be plow sometimes
       "spirit": "cloak,altar",
       "cloud": "rising cloud",
       //"rain": "rain",
@@ -607,8 +608,8 @@ $(function() {
       "limit": "silver",
       //"good": "good alt",
       "helicopter": "old west",
-      "charcoal": "pop tent",
-      "long": "mane hairpin",
+      "charcoal": "pup tent",
+      "long": "mane&hairpin",
       "splinter": "talking cricket",
       "village": "computer", // or ri, p80. but rtk-search has computer instead of ri
       //"tiger": "tiger",
