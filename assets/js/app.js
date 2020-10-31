@@ -11,6 +11,8 @@ $(function() {
 
     if (query === 'v' || query === 'version') {
       console.log('1.0.2.7-offline-only.1.0.5.13');
+      // offline branch is currently slightly outdated compared to gh-pages
+      // (mostly missing kanji annotations, will be exported from gh-pages and merged later)
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
