@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.15');
+      console.log('wtk-search 1.0.5.16');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -503,7 +503,7 @@ $(function() {
       "peoples": "people",
       "wedding": "dog tag",
       "cape": "clothes hanger",  //p397
-      "pirate": "crown leg", //p402 (2033), pirate doesn't exist in RTK.
+      "pirate": "chihuahua with one human leg", //RTK1v6: p402 (2033), RTK3v4 2087: chihuahua with one human leg
       "face": "mask", //2039
       "catapult": "give", //2046
       "fang": "tusk", //2053
@@ -549,7 +549,7 @@ $(function() {
       "spikes": "row,upside down in a row",
       "pope": "ten eye",
       "ground": "one,floor,ceiling",
-      "creeper": "one mouth",
+      "creeper": "one&mouth,mouth&floor",
       "measurement": "glue",
       "commander": "leader",
       "bookshelf": "scrapbook,tome",
