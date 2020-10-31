@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.12');
+      console.log('wtk-search 1.0.5.13');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -527,6 +527,7 @@ $(function() {
       "root": "silver",
       "umbrella": "fishhook,umbrellaWK",
       "spider": "streetwalker",
+      "horse": "team of horses",
       // ---------------------------------- ^^ ------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
