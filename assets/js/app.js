@@ -533,7 +533,7 @@ $(function() {
       // ---- some WK radicals not existing in RTK ---- //
       "tombstone": "line spool", // tombstone doesn't exist in RTK
       "root": "silver",
-      "business": "in a row upside down", // plus not yet, but doesn't make a difference
+      "business": "upside down in a row", // plus not yet or tree or husband, but doesn't make a difference for now. also not clear.
       "youngerbrother": "horns dollar",
       "guy": "good city walls",
       "penguin": "shredder&taskmaster",
@@ -546,7 +546,7 @@ $(function() {
       "elf": "daring",
       "coral": "helping hand",
       "bear": "maestro without baton",
-      "spikes": "row",
+      "spikes": "row,upside down in a row",
       "pope": "ten eye",
       "ground": "one",
       "creeper": "one mouth",
@@ -558,7 +558,7 @@ $(function() {
       // -------- these don't exist in RTK, need to be tagged with elementsWK --------
       "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
       "leaf": "leafWK",
-      "slide": "slideWK",
+      "slide": "slideWK,fishhook,hook",
       // -----------------------------------------------------------------------------
       "stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
@@ -585,7 +585,7 @@ $(function() {
       //"death star": "convoy",
       "dirt mouth": "lidded crock",
       //"brush": "brush",
-      "kick": "scarf",
+      "kick": "scarf", // the left part can also be plow sometimes
       "spirit": "cloak,altar",
       "cloud": "rising cloud",
       //"rain": "rain",
