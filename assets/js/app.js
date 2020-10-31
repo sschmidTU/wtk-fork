@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.13');
+      console.log('wtk-search 1.0.5.14');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -368,7 +368,7 @@ $(function() {
       //"monk": "boy"
       "guard": "devil", //p183
       "mask": "formerly",
-      "king": "king,porter", // or porter, p185
+      "king": "king,porter,jewel", // or porter, p185
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise", //p195
@@ -590,7 +590,7 @@ $(function() {
       "cloud": "rising cloud",
       //"rain": "rain",
       //"ice": "ice",
-      "heaven": "witch",
+      "heaven": "witch,sapling",
       "insect": "gnats",
       //"turkey": "turkey",
       //"feathers": "feathers",
