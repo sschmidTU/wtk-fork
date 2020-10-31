@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.16');
+      console.log('wtk-search 1.0.6.0');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -278,7 +278,7 @@ $(function() {
       "morning": "mist", // p34
       "table": "wind", //wind/weather vain
       "prison": "bound up", //or bound up small
-      //"horns": "horns",
+      //"horns": "horns", // also animal horns in RTK, but i tagged everything with horns as well
       "child": "child,newborn babe", // conflict: this is the kanji child in WK (former+legs), but there's also the RTK child radical
       "shamisensong": "pop song",
       "chastity": "upright",
