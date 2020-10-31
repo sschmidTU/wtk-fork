@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.5.11');
+      console.log('wtk-search 1.0.5.12');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -451,7 +451,8 @@ $(function() {
       "plate": "dish", //1555
       "peace": "call",
       "treasure": "sheaf,tucked under the arm", //p339 or arm maybe, p222
-      "rocket": "top hat villain", //1605 rocket doesn't exist in RTK. RTK says top hat villain belt elbow, but who knows if all these tags apply
+      "rocket": "sheik,top hat&villain&belt&elbow", //1605, sheik = 2047* (p12) in rtk3 = top hat villain belt elbow
+      "dance": "ballerina", // or sometimes only sunglasses (right part of WK dance), RTK isn't clear on this (see shoeshine element). or dance in rtk-search
       "barracks": "earthworm,mountain goat,barracks", //p340 or mountain goat (p413), or barracks (2189)
       //"spicy": "spicy,red pepper", // spicy or maybe red pepper sometimes
       "hotpepper": "ketchup", //p341
@@ -610,8 +611,8 @@ $(function() {
       "limit": "silver",
       //"good": "good alt",
       "helicopter": "old west",
-      "charcoal": "pop tent",
-      "long": "mane hairpin",
+      "charcoal": "pup tent",
+      "long": "mane&hairpin",
       "splinter": "talking cricket",
       "village": "computer", // or ri, p80. but rtk-search has computer instead of ri
       //"tiger": "tiger",
