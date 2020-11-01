@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.6.9');
+      console.log('wtk-search 1.0.6.10');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -173,8 +173,8 @@ $(function() {
               kanjiName = page.keywordWK;
             }
             let leftPaddingPercent = 28;
-            if (screen.width < 800) {
-              leftPaddingPercent = 5; // less padding on mobile, portrait mode. TODO cleaner solution, adaptive
+            if (document.getElementById('search-box').clientWidth < 500) {
+              leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
             }
             entries.append(
               '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
