@@ -171,8 +171,13 @@ $(function() {
             if (!checked(checkboxRTKQuery) && page.keywordWK && page.keywordWK.length > 0) {
               kanjiName = page.keywordWK;
             }
+            let leftPaddingPercent = 28;
+            if (screen.width < 800) {
+              leftPaddingPercent = 5; // less padding on mobile, portrait mode. TODO cleaner solution, adaptive
+            }
             entries.append(
-              '<div style="position: relative; left: 28%; text-align: center">'+ // left: 37% for alignment with WK, 28% with kanji in chrome
+              '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
+              // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
               '<article>'+
               '  <h3 style="text-align: left">'+
               '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
@@ -278,7 +283,7 @@ $(function() {
       "morning": "mist", // p34
       "table": "wind", //wind/weather vain
       "prison": "bound up", //or bound up small
-      //"horns": "horns",
+      //"horns": "horns", // also animal horns in RTK, but i tagged everything with horns as well
       "child": "child,newborn babe", // conflict: this is the kanji child in WK (former+legs), but there's also the RTK child radical
       "shamisensong": "pop song",
       "chastity": "upright",
