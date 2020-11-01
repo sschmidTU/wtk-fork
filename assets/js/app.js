@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.6.0');
+      console.log('wtk-search 1.0.6.1');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -528,6 +528,7 @@ $(function() {
       "umbrella": "fishhook,umbrellaWK",
       "spider": "streetwalker",
       "horse": "team of horses",
+      "jet": "not yet,extremity", // not yet is with the shorter top stroke, extremity with the longer (末 end kanji)
       // ---------------------------------- ^^ ------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
