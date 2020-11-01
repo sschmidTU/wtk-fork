@@ -10,9 +10,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('1.0.2.7-offline-only.1.0.5.13');
-      // offline branch is currently slightly outdated compared to gh-pages
-      // (mostly missing kanji annotations, will be exported from gh-pages and merged later)
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.9');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -41,6 +39,7 @@ $(function() {
       "mona lisa": "monalisa",
       "top hat": "tophat",
       "death star": "deathstar",
+      "not yet": "notyet", // officially jet in WK, but makes sense to distinguish from end/extremity (both jet in WK)
       "shamisen song": "shamisensong",
       "lip ring": "lipring",
     };
@@ -332,7 +331,7 @@ $(function() {
       "previous": "before", //p108
       "hat": "umbrella", //p109
       "suit": "fit", //p110
-      "all": "whole", //p114, only kanji in WK
+      "all": "all,whole", //p114, only kanji in WK. ambiguous in WK: both 皆 and 全 called 'all'.
       // "reason": "logic", //283, only kanji in WK, conflicgt with WK radical reason
       "master": "lord",
       "scooter": "road", //p122
@@ -373,7 +372,7 @@ $(function() {
       //"monk": "boy"
       "guard": "devil", //p183
       "mask": "formerly",
-      "king": "king,porter", // or porter, p185
+      "king": "king,porter,jewel", // or porter, p185
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise", //p195
@@ -508,7 +507,7 @@ $(function() {
       "peoples": "people",
       "wedding": "dog tag",
       "cape": "clothes hanger",  //p397
-      "pirate": "crown leg", //p402 (2033), pirate doesn't exist in RTK.
+      "pirate": "chihuahua with one human leg", //RTK1v6: p402 (2033), RTK3v4 2087: chihuahua with one human leg
       "face": "mask", //2039
       "catapult": "give", //2046
       "fang": "tusk", //2053
@@ -533,7 +532,11 @@ $(function() {
       "umbrella": "fishhook,umbrellaWK",
       "spider": "streetwalker",
       "horse": "team of horses",
-      // ---------------------------------- ^^ ------- //
+      "jet": "not yet,extremity", // not yet is with the shorter top stroke, extremity with the longer (末 end kanji)
+      "notyet": "not yet", // officially jet in WK, but makes sense to distinguish from end/extremity
+      "end": "extremity", // officially jet in WK, but makes sense to distinguish from not yet
+      "gate": "gates",
+      // ---------------------------------- ^^ -------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "tombstone": "line spool", // tombstone doesn't exist in RTK
@@ -553,8 +556,8 @@ $(function() {
       "bear": "maestro without baton",
       "spikes": "row,upside down in a row",
       "pope": "ten eye",
-      "ground": "one",
-      "creeper": "one mouth",
+      "ground": "one,floor,ceiling",
+      "creeper": "one&mouth,mouth&floor",
       "measurement": "glue",
       "commander": "leader",
       "bookshelf": "scrapbook,tome",
@@ -564,6 +567,13 @@ $(function() {
       "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
       "leaf": "leafWK",
       "slide": "slideWK,fishhook,hook",
+      // -----------------------------------------------------------------------------
+      // -------- some extra WK radicals (Kanji keywords). e.g. 戻 = return kanji in WK, but doesn't exist as radical
+      // -------- see issue #2 -------------------------------------------------------
+      "return": "re-", // enables searching for 涙 with "return" in WK mode
+      // "all": "all,whole", // all exists in RTK
+      // "ash": "ash", // same in RTK
+      // "hemp": "hemp", // same in RTK
       // -----------------------------------------------------------------------------
       "stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
@@ -595,7 +605,7 @@ $(function() {
       "cloud": "rising cloud",
       //"rain": "rain",
       //"ice": "ice",
-      "heaven": "witch",
+      "heaven": "witch,sapling",
       "insect": "gnats",
       //"turkey": "turkey",
       //"feathers": "feathers",
