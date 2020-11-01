@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.6.4');
+      console.log('wtk-search 1.0.6.5');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -563,6 +563,12 @@ $(function() {
       "barb": "barbWK", // hook not correct apparently. just use barbWK as elementsWK
       "leaf": "leafWK",
       "slide": "slideWK,fishhook,hook",
+      // -----------------------------------------------------------------------------
+      // -------- some extra WK radicals (Kanji keywords). e.g. 戻 = return kanji in WK, but doesn't exist as radical
+      "return": "re-", // enables searching for 涙 with "return" in WK mode
+      // "all": "all,whole", // all exists in RTK
+      // "ash": "ash", // same in RTK
+      // "hemp": "hemp", // same in RTK
       // -----------------------------------------------------------------------------
       "stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
