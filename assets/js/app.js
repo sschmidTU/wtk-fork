@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.6.6');
+      console.log('wtk-search 1.0.6.7');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -532,6 +532,7 @@ $(function() {
       "jet": "not yet,extremity", // not yet is with the shorter top stroke, extremity with the longer (末 end kanji)
       "notyet": "not yet", // officially jet in WK, but makes sense to distinguish from end/extremity
       "end": "extremity", // officially jet in WK, but makes sense to distinguish from not yet
+      "gate": "gates",
       // ---------------------------------- ^^ ------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
