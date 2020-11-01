@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.6.3');
+      console.log('wtk-search 1.0.6.4');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -328,7 +328,7 @@ $(function() {
       "previous": "before", //p108
       "hat": "umbrella", //p109
       "suit": "fit", //p110
-      "all": "whole", //p114, only kanji in WK
+      "all": "all,whole", //p114, only kanji in WK. ambiguous in WK: both 皆 and 全 called 'all'.
       // "reason": "logic", //283, only kanji in WK, conflicgt with WK radical reason
       "master": "lord",
       "scooter": "road", //p122
