@@ -533,7 +533,7 @@ $(function() {
       "notyet": "not yet", // officially jet in WK, but makes sense to distinguish from end/extremity
       "end": "extremity", // officially jet in WK, but makes sense to distinguish from not yet
       "gate": "gates",
-      // ---------------------------------- ^^ ------- //
+      // ---------------------------------- ^^ -------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "tombstone": "line spool", // tombstone doesn't exist in RTK
@@ -566,6 +566,7 @@ $(function() {
       "slide": "slideWK,fishhook,hook",
       // -----------------------------------------------------------------------------
       // -------- some extra WK radicals (Kanji keywords). e.g. 戻 = return kanji in WK, but doesn't exist as radical
+      // -------- see issue #2 -------------------------------------------------------
       "return": "re-", // enables searching for 涙 with "return" in WK mode
       // "all": "all,whole", // all exists in RTK
       // "ash": "ash", // same in RTK
