@@ -12,7 +12,7 @@ $(function() {
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.6.8');
+      console.log('wtk-search 1.0.6.9');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -172,8 +172,13 @@ $(function() {
             if (!checked(checkboxRTKQuery) && page.keywordWK && page.keywordWK.length > 0) {
               kanjiName = page.keywordWK;
             }
+            let leftPaddingPercent = 28;
+            if (screen.width < 800) {
+              leftPaddingPercent = 5; // less padding on mobile, portrait mode. TODO cleaner solution, adaptive
+            }
             entries.append(
-              '<div style="position: relative; left: 28%; text-align: center">'+ // left: 37% for alignment with WK, 28% with kanji in chrome
+              '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
+              // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
               '<article>'+
               '  <h3 style="text-align: left">'+
               '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
