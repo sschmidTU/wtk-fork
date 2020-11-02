@@ -3,13 +3,14 @@ class App {
   checkboxStrictQuery      = 'input[name=strictModeCheckbox]';
   checkboxRTKQuery         = 'input[name=rtkModeCheckbox]';
   checkboxStrictLabelQuery = '#strictModeLabel';
+  maxResultSize            = 100;
 
   search() {
     let query = $('#search-query').val();
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.8');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.9');
     }
     
     var result  = $('#search-results');
@@ -191,6 +192,9 @@ class App {
               self.cbCopyButtonClick(page.id, page.kanji);
             }
             matches++;
+            if (matches >= this.maxResultSize) {
+              break; // performance: don't add more than maxResultSize (100) matches
+            }
           }
         } // end for each page
         if (matches > 5) {
