@@ -13,12 +13,14 @@ class App {
     let query = $('#search-query').val().trim();
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
-    if (query === this.lastQuery && this.isStrictMode() === this.lastStrict && this.isRtkMode() === this.lastRTK) {
+    const rtkMode = this.isRtkMode(); // used multiple times
+    const strictMode = !rtkMode && this.isStrictMode(); // TODO fix strict mode for rtk mode, currently disabled in rtk mode.
+    if (query === this.lastQuery && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
       return;
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.16');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.17');
     }
     
     var result  = $('#search-results');
@@ -30,8 +32,8 @@ class App {
     }
     this.lastQuery = query;
     this.lastQueries.push(query);
-    this.lastStrict = this.isStrictMode();
-    this.lastRTK    = this.isRtkMode();
+    this.lastStrict = strictMode;
+    this.lastRTK    = rtkMode;
     if (this.lastQueries.length > 5) {
       // TODO do something with lastQueries, maybe push limit to 10 or so
       this.lastQueries.shift(); // remove oldest query
@@ -57,7 +59,7 @@ class App {
       "shamisen song": "shamisensong",
       "lip ring": "lipring",
     };
-    if (!this.isRtkMode()) { // only do pre-replacements in WK mode
+    if (!rtkMode) { // only do pre-replacements in WK mode
       for (let [key, value] of Object.entries(space_replacements)) {
         query = query.replace(key, value);
       }
@@ -69,7 +71,7 @@ class App {
 
     let rtkQueries = [];
     let outputRadicals = [];
-    if (!this.isRtkMode()) {
+    if (!rtkMode) {
       rtkQueries.push(''); // necessary for now - investigate
       const inputRadicals = query.split(' ');
 
@@ -158,9 +160,7 @@ class App {
 
       const self = this;
       if (results && results.length > 0) {
-        const rtkMode = this.isRtkMode();
         // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
-        const strictMode = !rtkMode && strictModeCheckbox && this.isStrictMode();
         let matches = 0;
         //$.each(results, function(key, page) {
         for (const page of results) {
@@ -187,7 +187,7 @@ class App {
           }
           if (addToResults) {
             let kanjiName = page.keyword;
-            if (!this.isRtkMode() && page.keywordWK && page.keywordWK.length > 0) {
+            if (!rtkMode && page.keywordWK && page.keywordWK.length > 0) {
               kanjiName = page.keywordWK;
             }
             let leftPaddingPercent = 28;
