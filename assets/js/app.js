@@ -10,7 +10,7 @@ class App {
   lastRTK                  = false;
 
   search() {
-    let query = $('#search-query').val();
+    let query = $('#search-query').val().trim();
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     if (query === this.lastQuery && this.isStrictMode() === this.lastStrict && this.isRtkMode() === this.lastRTK) {
@@ -18,12 +18,11 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.12');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.14');
     }
     
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    // this should have trim(), but maybe this isn't necessary (offline?), so let's allow a workaround of adding spaces
     if (query.length <= 2) {
       result.hide();
       entries.empty();
@@ -77,6 +76,9 @@ class App {
       // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
       //   TODO the current method is crude and could be improved, but works for now.
       for (const inputRadical of inputRadicals) {
+        if (inputRadical === '') {
+          continue;
+        }
         const radical = inputRadical.toLowerCase();
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(",");
