@@ -182,6 +182,7 @@ a:active {
   border: 2px solid blue;
 }
 
+/* search box italic placeholder text. All 4 following styles are necessary. */
 ::-webkit-input-placeholder {
   font-style: italic;
 }
