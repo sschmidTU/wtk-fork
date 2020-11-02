@@ -197,8 +197,8 @@ class App {
             }
           }
         } // end for each page
-        const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
         if (matches > 5) {
+          const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
           // indent under query
          console.log('  matches: ' + results.length + (matches === this.maxResultSize ? maxResultsReachedString : ''));
        }
