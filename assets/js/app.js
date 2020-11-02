@@ -149,22 +149,29 @@ class App {
         let matches = 0;
         //$.each(results, function(key, page) {
         for (const page of results) {
-          let addToResults = !strictMode; // if not strict mode, add all results to query
+          let addToResults = true; // if not strict mode, add all results to query
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
             const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
             for (const outputRadical of outputRadicals) {
               const trimmedRadical = outputRadical.trim();
-              if (trimmedRadical !== '' && (
+              if (trimmedRadical !== '' && !(
                     elements.includes(trimmedRadical) ||
                     !rtkMode && elementsWK?.includes(trimmedRadical) ||
                     trimmedRadical === page.keyword ||
                     trimmedRadical === page.keywordWK
                   )
               ) {
-                //console.log('outputRadical: ' + trimmedRadical);
-                addToResults = true; // in strict mode, only add result if it has an exact element match
+                if (page.kanji === '白') {
+                  console.log('bad outputRadical: ' + trimmedRadical);
+                  console.dir(elements);
+                  // TODO try with 'sun drop' in WK mode. the stricter mode would require refactoring to
+                  //   save an array of replacements for each WK radical, because only one needs to apply
+                }
+                addToResults = false; // in strict mode, only add result if it has an exact element match
                 break;
+              } else {
+                //console.log('good outputRadical: ' + trimmedRadical);
               }
             }
           }
