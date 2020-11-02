@@ -232,23 +232,24 @@ class App {
     return $(checkboxQuery).prop("checked");
   }
 
-  setupHTMLElements(app) {
+  setupHTMLElements() {
     const checkboxStrictQuery = this.checkboxStrictQuery;
     const checkboxRTKQuery = this.checkboxRTKQuery;
     const checkboxStrictLabelQuery = this.checkboxStrictLabelQuery;
     const params = this.getUrlParameters();
 
+    const self = this;
     $('#search-button').on('click', function() {
-      return app.search();
+      return self.search();
     });
     
     $('#search-query').on('input', function() {
-      return app.search();
+      return self.search();
     });
 
     // checkboxStrict.on('click', function() { // replaces click event completely
     $(checkboxStrictQuery).change(function() {
-      return app.search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
+      return self.search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
     });
     $(checkboxRTKQuery).change(function() {
       if (this.checked(checkboxRTKQuery)) {
@@ -256,7 +257,7 @@ class App {
       } else {
         $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
       }
-      return app.search();
+      return self.search();
     })
 
     if (params.strict === "1" || params.strict === "true" && !this.checked(checkboxStrictQuery)) {
