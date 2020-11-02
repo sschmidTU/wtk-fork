@@ -12,7 +12,7 @@ class App {
   lastRTK                  = false;
 
   search() {
-    let query = $('#search-query').val();
+    let query = $('#search-query').val().trim();
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     if (query === this.lastQuery && this.isStrictMode() === this.lastStrict && this.isRtkMode() === this.lastRTK) {
