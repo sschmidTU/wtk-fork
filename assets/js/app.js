@@ -4,10 +4,18 @@ class App {
   checkboxRTKQuery         = 'input[name=rtkModeCheckbox]';
   checkboxStrictLabelQuery = '#strictModeLabel';
   maxResultSize            = 50;
+  lastQuery                = '';
+  lastQueries              = [];
+  lastStrict               = false;
+  lastRTK                  = false;
 
   search() {
     let query = $('#search-query').val();
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
+
+    if (query === this.lastQuery && this.isStrictMode() === this.lastStrict && this.isRtkMode() === this.lastRTK) {
+      return;
+    }
 
     if (query === 'v' || query === 'version') {
       console.log('wtk-search 1.0.2.7-offline-only.1.0.6.11');
@@ -21,8 +29,15 @@ class App {
       entries.empty();
       return;
     }
-    const checkboxRTKQuery = this.checkboxRTKQuery;
-    const checkboxStrictQuery = this.checkboxStrictQuery;
+    this.lastQuery = query;
+    this.lastQueries.push(query);
+    this.lastStrict = this.isStrictMode();
+    this.lastRTK    = this.isRtkMode();
+    if (this.lastQueries.length > 5) {
+      // TODO do something with lastQueries, maybe push limit to 10 or so
+      this.lastQueries.shift(); // remove oldest query
+    }
+
 
     // replace spaces in WK radical names
     const space_replacements = { // maybe put into getter method as well
@@ -44,7 +59,7 @@ class App {
       "shamisen song": "shamisensong",
       "lip ring": "lipring",
     };
-    if (!this.checked(checkboxRTKQuery)) { // only do pre-replacements in WK mode
+    if (!this.isRtkMode()) { // only do pre-replacements in WK mode
       for (let [key, value] of Object.entries(space_replacements)) {
         query = query.replace(key, value);
       }
@@ -56,7 +71,7 @@ class App {
 
     let rtkQueries = [];
     let outputRadicals = [];
-    if (!this.checked(checkboxRTKQuery)) {
+    if (!this.isRtkMode()) {
       rtkQueries.push(""); // necessary for now - investigate
       query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
       const inputRadicals = query.split(" ");
@@ -67,7 +82,9 @@ class App {
         const radical = inputRadical.toLowerCase();
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(",");
+          console.log('rtkVersions: ' + rtkVersions);
           const rtkKeywordLists = this.getRtkKeywordLists(rtkVersions);
+          console.log('kedwordlists: ' + rtkKeywordLists);
           if (rtkKeywordLists.length === 1) {
             // if we only have one possible replacement, just add it to each query
             for (let i=0; i<rtkQueries.length; i++) {
@@ -143,9 +160,9 @@ class App {
 
       const self = this;
       if (results && results.length > 0) {
-        const rtkMode = this.checked(checkboxRTKQuery);
+        const rtkMode = this.isRtkMode();
         // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
-        const strictMode = !rtkMode && strictModeCheckbox && this.checked(checkboxStrictQuery);
+        const strictMode = !rtkMode && strictModeCheckbox && this.isStrictMode();
         let matches = 0;
         //$.each(results, function(key, page) {
         for (const page of results) {
@@ -153,6 +170,7 @@ class App {
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
             const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
+            console.log('outputradicals: ' + outputRadicals);
             for (const outputRadical of outputRadicals) {
               const trimmedRadical = outputRadical.trim();
               if (trimmedRadical !== '' && (
@@ -162,7 +180,6 @@ class App {
                     trimmedRadical === page.keywordWK
                   )
               ) {
-                //console.log('outputRadical: ' + trimmedRadical);
                 addToResults = true; // in strict mode, only add result if it has an exact element match
                 break;
               }
@@ -170,7 +187,7 @@ class App {
           }
           if (addToResults) {
             let kanjiName = page.keyword;
-            if (!this.checked(checkboxRTKQuery) && page.keywordWK && page.keywordWK.length > 0) {
+            if (!this.isRtkMode() && page.keywordWK && page.keywordWK.length > 0) {
               kanjiName = page.keywordWK;
             }
             let leftPaddingPercent = 28;
@@ -240,6 +257,14 @@ class App {
     return $(checkboxQuery).prop("checked");
   }
 
+  isStrictMode() {
+    return this.checked(this.checkboxStrictQuery);
+  }
+
+  isRtkMode() {
+    return this.checked(this.checkboxRTKQuery);
+  }
+
   setupHTMLElements() {
     const checkboxStrictQuery = this.checkboxStrictQuery;
     const checkboxRTKQuery = this.checkboxRTKQuery;
@@ -260,7 +285,7 @@ class App {
       return self.search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
     });
     $(checkboxRTKQuery).change(function() {
-      if (self.checked(checkboxRTKQuery)) {
+      if (self.isRtkMode()) {
         $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through'; // strike-through
       } else {
         $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
@@ -268,10 +293,10 @@ class App {
       return self.search();
     })
 
-    if (params.strict === "1" || params.strict === "true" && !this.checked(checkboxStrictQuery)) {
+    if (params.strict === "1" || params.strict === "true" && !this.isStrictMode()) {
       $(checkboxStrictQuery).click();
     }
-    if (params.rtk === "1" || params.rtk === "true" && !this.checked(checkboxRTKQuery)) {
+    if (params.rtk === "1" || params.rtk === "true" && !this.isRtkMode()) {
       $(checkboxRTKQuery).click();
     }
   }
