@@ -18,7 +18,7 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.14');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.15');
     }
     
     var result  = $('#search-results');

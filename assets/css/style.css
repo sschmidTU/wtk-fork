@@ -182,6 +182,19 @@ a:active {
   border: 2px solid blue;
 }
 
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;  
+}
+::-moz-placeholder {
+  font-style: italic;  
+}
+:-ms-input-placeholder {  
+  font-style: italic; 
+}
+
 .pagination {
   margin: 1em auto 0em;
   text-align: center; }
