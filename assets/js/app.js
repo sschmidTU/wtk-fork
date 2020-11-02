@@ -198,7 +198,7 @@ class App {
               '<article>'+
               '  <h3 style="text-align: left">'+
               '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
-              '    <button class="btnClip" id="cbCopyButton'+page.id+'">📋</button>' +
+              '    <button class="btnClip" id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
               '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
               '  </h3>'+
               '</article></div>'
