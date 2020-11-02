@@ -18,7 +18,7 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.11');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.12');
     }
     
     var result  = $('#search-results');
@@ -37,7 +37,6 @@ class App {
       // TODO do something with lastQueries, maybe push limit to 10 or so
       this.lastQueries.shift(); // remove oldest query
     }
-
 
     // replace spaces in WK radical names
     const space_replacements = { // maybe put into getter method as well
@@ -73,7 +72,6 @@ class App {
     let outputRadicals = [];
     if (!this.isRtkMode()) {
       rtkQueries.push(""); // necessary for now - investigate
-      query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
       const inputRadicals = query.split(" ");
 
       // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
@@ -82,9 +80,7 @@ class App {
         const radical = inputRadical.toLowerCase();
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(",");
-          console.log('rtkVersions: ' + rtkVersions);
           const rtkKeywordLists = this.getRtkKeywordLists(rtkVersions);
-          console.log('kedwordlists: ' + rtkKeywordLists);
           if (rtkKeywordLists.length === 1) {
             // if we only have one possible replacement, just add it to each query
             for (let i=0; i<rtkQueries.length; i++) {
@@ -170,7 +166,6 @@ class App {
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
             const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
-            console.log('outputradicals: ' + outputRadicals);
             for (const outputRadical of outputRadicals) {
               const trimmedRadical = outputRadical.trim();
               if (trimmedRadical !== '' && (
@@ -416,7 +411,7 @@ class App {
       "oldersister": "elder sister",
       "belt": "sash", //p161
       "heaven": "heavens", //p164
-      // "stand": "stand up", // makes no difference for rtk-search
+      "stand": "stand up", // only relevant for strict mode
       "chapter": "badge", //p166
       "mohawk": "antique", //p167
       "scent": "aroma",
