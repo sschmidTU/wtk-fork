@@ -10,7 +10,7 @@ class App {
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.9');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.10');
     }
     
     var result  = $('#search-results');
@@ -197,9 +197,11 @@ class App {
             }
           }
         } // end for each page
+        const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
         if (matches > 5) {
-          console.log('  matches: ' + matches); // indent under query
-        }
+          // indent under query
+         console.log('  matches: ' + results.length + (matches === this.maxResultSize ? maxResultsReachedString : ''));
+       }
       }
     } // end for query
     // if (results.length == 0) {
