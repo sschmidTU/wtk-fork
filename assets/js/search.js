@@ -22547,7 +22547,7 @@ var docs =
   "id" : "2158",
   "kanji" : "喋",
   "keyword" : "chatter",
-  "elements" : "",
+  "elements" : "mouth, generation, tree",
 }
 ,
   
@@ -22708,7 +22708,7 @@ var docs =
   "id" : "2167",
   "kanji" : "嘘",
   "keyword" : "fib",
-  "elements" : "",
+  "elements" : "mouth, tiger, row",
 }
 ,
   
