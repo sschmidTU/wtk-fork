@@ -104,17 +104,6 @@ a:active {
 .btn:visited {
   color: #ffffff; }
 
-.btnClip {
-  border-radius: 4px;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.btnClipLastSelected {
-  /* border: 4px solid #00FF00;*/
-  border: 2px solid blue;
-}
-
 .btn:hover,
 .btn.disable,
 .btn.disable:visited,
@@ -181,6 +170,17 @@ a:active {
 .btn-blue.disable:hover {
   color: #308cbc;
   background-color: #ffffff; }
+
+.btnClip {
+  border-radius: 4px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btnClipLastSelected {
+  /* border: 4px solid #00FF00;*/
+  border: 2px solid blue;
+}
 
 .pagination {
   margin: 1em auto 0em;
