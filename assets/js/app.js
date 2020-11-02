@@ -217,7 +217,7 @@ class App {
         if (matches > 5) {
           const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
           // indent under query
-         console.log('  matches: ' + results.length + (matches === this.maxResultSize ? maxResultsReachedString : ''));
+          console.log('  matches: ' + results.length + (matches === this.maxResultSize ? maxResultsReachedString : ''));
        }
       }
     } // end for query
