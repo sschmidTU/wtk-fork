@@ -20,7 +20,7 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.19');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.20');
     }
     
     var result  = $('#search-results');
@@ -173,8 +173,10 @@ class App {
               if (trimmedRadical !== '' && (
                     elements.includes(trimmedRadical) ||
                     !rtkMode && elementsWK?.includes(trimmedRadical) ||
-                    trimmedRadical === page.keyword ||
-                    trimmedRadical === page.keywordWK
+                    // trimmedRadical === page.keyword || // probably too lenient for multiple radicals. for exact keyword hit, query covers it
+                    // trimmedRadical === page.keywordWK ||
+                    query === page.keyword ||
+                    query === page.keywordWK
                   )
               ) {
                 // in strict mode, only add result if it has at least one element match.
