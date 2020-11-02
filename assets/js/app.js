@@ -160,8 +160,10 @@ class App {
                     trimmedRadical === page.keywordWK
                   )
               ) {
-                //console.log('outputRadical: ' + trimmedRadical);
-                addToResults = true; // in strict mode, only add result if it has an exact element match
+                // in strict mode, only add result if it has at least one element match.
+                // we could be even stricter and check that all elements match, but that rarely makes a difference,
+                //   and costs quite a bit of performance and refactoring. see feat/stricterMode branch
+                addToResults = true;
                 break;
               }
             }
