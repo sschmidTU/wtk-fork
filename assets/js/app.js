@@ -5,7 +5,7 @@ class App {
   checkboxStrictQuery      = 'input[name=strictModeCheckbox]';
   checkboxRTKQuery         = 'input[name=rtkModeCheckbox]';
   checkboxStrictLabelQuery = '#strictModeLabel';
-  maxResultSize            = 100;
+  maxResultSize            = 50;
 
   search() {
     let query = $('#search-query').val();
@@ -190,8 +190,8 @@ class App {
               self.cbCopyButtonClick(page.id, page.kanji);
             }
             matches++;
-            if (matches >= this.maxResultSize) {
-              break; // performance: don't add more than maxResultSize (100) matches
+            if (matches === this.maxResultSize) {
+              break; // performance: don't add more than maxResultSize (50) matches
             }
           }
         } // end for each page
