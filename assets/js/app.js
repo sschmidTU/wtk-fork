@@ -252,7 +252,7 @@ class App {
       return self.search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
     });
     $(checkboxRTKQuery).change(function() {
-      if (this.checked(checkboxRTKQuery)) {
+      if (self.checked(checkboxRTKQuery)) {
         $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through'; // strike-through
       } else {
         $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
@@ -665,5 +665,5 @@ class App {
 $(document).ready(function() {
   const app = new App();
 
-  app.setupHTMLElements(app);
+  app.setupHTMLElements();
 });
