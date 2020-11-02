@@ -53,6 +53,7 @@ class App {
 
     let rtkQueries = [];
     let outputRadicals = [];
+    const self = this;
     if (!this.checked(checkboxRTKQuery)) {
       rtkQueries.push(""); // necessary for now - investigate
       query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
@@ -64,7 +65,7 @@ class App {
         const radical = inputRadical.toLowerCase();
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(",");
-          const rtkKeywordLists = this.getRtkKeywordLists(rtkVersions);
+          const rtkKeywordLists = self.getRtkKeywordLists(rtkVersions);
           if (rtkKeywordLists.length === 1) {
             // if we only have one possible replacement, just add it to each query
             for (let i=0; i<rtkQueries.length; i++) {
