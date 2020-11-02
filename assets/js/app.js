@@ -21,7 +21,6 @@ class App {
     
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    // this should have trim(), but maybe this isn't necessary (offline?), so let's allow a workaround of adding spaces
     if (query.length <= 2) {
       result.hide();
       entries.empty();
@@ -69,8 +68,8 @@ class App {
     let rtkQueries = [];
     let outputRadicals = [];
     if (!this.isRtkMode()) {
-      rtkQueries.push(""); // necessary for now - investigate
-      const inputRadicals = query.split(" ");
+      rtkQueries.push(''); // necessary for now - investigate
+      const inputRadicals = query.split(' ');
 
       // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
       //   TODO the current method is crude and could be improved, but works for now.
@@ -80,14 +79,14 @@ class App {
         }
         const radical = inputRadical.toLowerCase();
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
-          const rtkVersions = wk_replacements[radical].split(",");
+          const rtkVersions = wk_replacements[radical].split(',');
           const rtkKeywordLists = this.getRtkKeywordLists(rtkVersions);
           if (rtkKeywordLists.length === 1) {
             // if we only have one possible replacement, just add it to each query
             for (let i=0; i<rtkQueries.length; i++) {
               for (const keywordList of rtkKeywordLists) {
                 for (const keyword of keywordList) {
-                  rtkQueries[i] += keyword + " ";
+                  rtkQueries[i] += keyword + ' ';
                   outputRadicals.push(keyword);
                 }
               }
@@ -102,7 +101,7 @@ class App {
                 // for each keywordList (list of keywords that can replace one WK radical), create a new query
                 let newQuery = rtkQuery;
                 for (const keyword of keywordList) {
-                  newQuery += keyword + " ";
+                  newQuery += keyword + ' ';
                   outputRadicals.push(keyword);
                 }
                 newQueries.push(newQuery);
@@ -124,7 +123,7 @@ class App {
       rtkQueries.push(query);
     }
 
-    console.log(" "); // new line
+    console.log(' '); // new line
     //var displayEntries = [];
     // if (query.trim().length <= 2) {
       result.hide();
@@ -139,7 +138,7 @@ class App {
         continue;
       }
       query = query.trim(); // maybe do that above, but for now don't restrict queries by length too much
-      console.log("query " + (i+1) + ": " + query);
+      console.log('query ' + (i+1) + ': ' + query);
 
       // retrieve matching result with content
       var results = $.map(idx.search(query), function(result) {
@@ -253,7 +252,7 @@ class App {
   }
 
   checked(checkboxQuery) {
-    return $(checkboxQuery).prop("checked");
+    return $(checkboxQuery).prop('checked');
   }
 
   isStrictMode() {
@@ -285,17 +284,17 @@ class App {
     });
     $(checkboxRTKQuery).change(function() {
       if (self.isRtkMode()) {
-        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through'; // strike-through
+        $(checkboxStrictLabelQuery).prop('style')['text-decoration'] = 'line-through'; // strike-through
       } else {
-        $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
+        $(checkboxStrictLabelQuery).prop('style')['text-decoration'] = '';
       }
       return self.search();
     })
 
-    if (params.strict === "1" || params.strict === "true" && !this.isStrictMode()) {
+    if (params.strict === '1' || params.strict === 'true' && !this.isStrictMode()) {
       $(checkboxStrictQuery).click();
     }
-    if (params.rtk === "1" || params.rtk === "true" && !this.isRtkMode()) {
+    if (params.rtk === '1' || params.rtk === 'true' && !this.isRtkMode()) {
       $(checkboxRTKQuery).click();
     }
   }
