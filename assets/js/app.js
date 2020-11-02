@@ -5,8 +5,6 @@ class App {
   checkboxStrictLabelQuery = '#strictModeLabel';
 
   search() {
-    const checkboxRTKQuery = this.checkboxRTKQuery;
-    const checkboxStrictQuery = this.checkboxStrictQuery;
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
@@ -22,6 +20,8 @@ class App {
       entries.empty();
       return;
     }
+    const checkboxRTKQuery = this.checkboxRTKQuery;
+    const checkboxStrictQuery = this.checkboxStrictQuery;
 
     // replace spaces in WK radical names
     const space_replacements = { // maybe put into getter method as well
@@ -217,7 +217,7 @@ class App {
       copyButton.classList.add(selectedClass);
     }
     if (this.lastCopyButtonClickedId !== id && this.lastCopyButtonClickedId > -1) {
-      document.getElementById('cbCopyButton' + this.lastCopyButtonClickedId)?.classList.remove("btnClipLastSelected");
+      document.getElementById('cbCopyButton' + this.lastCopyButtonClickedId)?.classList.remove(selectedClass);
     }
     this.lastCopyButtonClickedId = id;
   }
