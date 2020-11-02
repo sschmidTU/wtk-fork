@@ -196,7 +196,9 @@ class App {
           }
         } // end for each page
         if (matches > 5) {
-          console.log('  matches: ' + matches); // indent under query
+          const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
+           // indent under query
+          console.log('  matches: ' + results.length + (matches === this.maxResultSize ? maxResultsReachedString : ''));
         }
       }
     } // end for query
