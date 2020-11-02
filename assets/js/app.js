@@ -1,16 +1,16 @@
-$(function() {
-  const params = getUrlParameters(); // get URL parameters, e.g. ?strict=1&rtk=0
+class App {
+  lastCopyButtonClickedId  = -1;
+  checkboxStrictQuery      = 'input[name=strictModeCheckbox]';
+  checkboxRTKQuery         = 'input[name=rtkModeCheckbox]';
+  checkboxStrictLabelQuery = '#strictModeLabel';
 
-  const checkboxStrictQuery = 'input[name=strictModeCheckbox]';
-  const checkboxRTKQuery    = 'input[name=rtkModeCheckbox]';
-  const checkboxStrictLabelQuery = '#strictModeLabel';
-  setupHTMLElements(checkboxStrictQuery, checkboxRTKQuery, checkboxStrictLabelQuery, params)
-  
-  function search() {
+  search() {
+    const checkboxRTKQuery = this.checkboxRTKQuery;
+    const checkboxStrictQuery = this.checkboxStrictQuery;
     let query = $('#search-query').val();
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.10b');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.11b');
     }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
@@ -43,7 +43,7 @@ $(function() {
       "shamisen song": "shamisensong",
       "lip ring": "lipring",
     };
-    if (!checked(checkboxRTKQuery)) { // only do pre-replacements in WK mode
+    if (!this.checked(checkboxRTKQuery)) { // only do pre-replacements in WK mode
       for (let [key, value] of Object.entries(space_replacements)) {
         query = query.replace(key, value);
       }
@@ -51,15 +51,15 @@ $(function() {
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
     // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
-    const wk_replacements = get_wk_to_rtk_replacements();
+    const wk_replacements = this.get_wk_to_rtk_replacements();
 
     let rtkQueries = [];
     let outputRadicals = [];
-    if (!checked(checkboxRTKQuery)) {
+    if (!this.checked(checkboxRTKQuery)) {
       rtkQueries.push(""); // necessary for now - investigate
       query = " " + query + " "; // add spaces to trigger replacement for last radical and prevent partial hit ("turkey" -> "tursaw") for first
       const inputRadicals = query.split(" ");
-  
+
       // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
       //   TODO the current method is crude and could be improved, but works for now.
       for (const inputRadical of inputRadicals) {
@@ -140,12 +140,14 @@ $(function() {
 
       //entries.empty();
 
+      const self = this;
       if (results && results.length > 0) {
-        const rtkMode = checked(checkboxRTKQuery);
+        const rtkMode = this.checked(checkboxRTKQuery);
         // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
-        const strictMode = !rtkMode && strictModeCheckbox && checked(checkboxStrictQuery);
+        const strictMode = !rtkMode && strictModeCheckbox && this.checked(checkboxStrictQuery);
         let matches = 0;
-        $.each(results, function(key, page) {
+        //$.each(results, function(key, page) {
+        for (const page of results) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim());
@@ -167,7 +169,7 @@ $(function() {
           }
           if (addToResults) {
             let kanjiName = page.keyword;
-            if (!checked(checkboxRTKQuery) && page.keywordWK && page.keywordWK.length > 0) {
+            if (!this.checked(checkboxRTKQuery) && page.keywordWK && page.keywordWK.length > 0) {
               kanjiName = page.keywordWK;
             }
             let leftPaddingPercent = 28;
@@ -180,14 +182,17 @@ $(function() {
               '<article>'+
               '  <h3 style="text-align: left">'+
               '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
-              '    <button id="cbCopyButton" onclick="navigator.clipboard.writeText(\''+page.kanji+'\')">📋</button>' +
+              '    <button class="btnClip" id="cbCopyButton'+page.id+'">📋</button>' +
               '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
               '  </h3>'+
               '</article></div>'
             );
+            document.getElementById('cbCopyButton'+page.id).onclick = function() {
+              self.cbCopyButtonClick(page.id, page.kanji);
+            }
             matches++;
           }
-        }); // end each pages
+        } // end for each page
         if (matches > 5) {
           console.log('  matches: ' + matches); // indent under query
         }
@@ -201,7 +206,23 @@ $(function() {
     return false;
   }
 
-  function getRtkKeywordLists(rtkVersions) {
+  cbCopyButtonClick(id, kanji) {
+    //console.log("lastId, id: " + this.lastCopyButtonClickedId + "," + id);
+    navigator.clipboard.writeText(kanji);
+    const selectedClass = 'btnClipLastSelected';
+    const copyButton = document.getElementById('cbCopyButton' + id);
+    if (copyButton.classList.contains(selectedClass)) {
+      copyButton.classList.remove(selectedClass);
+    } else {
+      copyButton.classList.add(selectedClass);
+    }
+    if (this.lastCopyButtonClickedId !== id && this.lastCopyButtonClickedId > -1) {
+      document.getElementById('cbCopyButton' + this.lastCopyButtonClickedId)?.classList.remove("btnClipLastSelected");
+    }
+    this.lastCopyButtonClickedId = id;
+  }
+
+  getRtkKeywordLists(rtkVersions) {
     let keywords = [];
     for (const rtkVersion of rtkVersions) {
       keywords.push(rtkVersion.split('&'));
@@ -209,41 +230,46 @@ $(function() {
     return keywords;
   }
 
-  function checked(checkboxQuery) {
+  checked(checkboxQuery) {
     return $(checkboxQuery).prop("checked");
   }
 
-  function setupHTMLElements(checkboxStrictQuery, checkboxRTKQuery, checkboxStrictLabelQuery) {
+  setupHTMLElements(app) {
+    const checkboxStrictQuery = this.checkboxStrictQuery;
+    const checkboxRTKQuery = this.checkboxRTKQuery;
+    const checkboxStrictLabelQuery = this.checkboxStrictLabelQuery;
+    const params = this.getUrlParameters();
+
     $('#search-button').on('click', function() {
-      return search();
+      return app.search();
     });
     
     $('#search-query').on('input', function() {
-      return search();
+      return app.search();
     });
 
     // checkboxStrict.on('click', function() { // replaces click event completely
     $(checkboxStrictQuery).change(function() {
-      return search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
+      return app.search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
     });
     $(checkboxRTKQuery).change(function() {
-      if (checked(checkboxRTKQuery)) {
+      if (this.checked(checkboxRTKQuery)) {
         $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through'; // strike-through
       } else {
         $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
       }
-      return search();
+      return app.search();
     })
 
-    if (params.strict === "1" || params.strict === "true" && !checked(checkboxStrictQuery)) {
+    if (params.strict === "1" || params.strict === "true" && !this.checked(checkboxStrictQuery)) {
       $(checkboxStrictQuery).click();
     }
-    if (params.rtk === "1" || params.rtk === "true" && !checked(checkboxRTKQuery)) {
+    if (params.rtk === "1" || params.rtk === "true" && !this.checked(checkboxRTKQuery)) {
       $(checkboxRTKQuery).click();
     }
   }
 
-  function getUrlParameters() {
+  getUrlParameters() {
     let params = {};
     let parser = document.createElement('a');
     parser.href = window.location.href;
@@ -256,7 +282,7 @@ $(function() {
     return params;
   }
 
-  function get_wk_to_rtk_replacements() {
+  get_wk_to_rtk_replacements() {
     return {
       "cross": "ten",
       "sun": "sun,mortar", // mortar (臼) is given as sun in WK
@@ -635,4 +661,10 @@ $(function() {
       //"deer": "deer",
     }
   }
+}
+
+$(document).ready(function() {
+  const app = new App();
+
+  app.setupHTMLElements(app);
 });
