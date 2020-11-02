@@ -6,12 +6,12 @@ class App {
 
   search() {
     let query = $('#search-query').val();
-
-    if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.11b');
-    }
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
+    if (query === 'v' || query === 'version') {
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.8');
+    }
+    
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
     // this should have trim(), but maybe this isn't necessary (offline?), so let's allow a workaround of adding spaces
@@ -66,7 +66,7 @@ class App {
         const radical = inputRadical.toLowerCase();
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(",");
-          const rtkKeywordLists = getRtkKeywordLists(rtkVersions);
+          const rtkKeywordLists = this.getRtkKeywordLists(rtkVersions);
           if (rtkKeywordLists.length === 1) {
             // if we only have one possible replacement, just add it to each query
             for (let i=0; i<rtkQueries.length; i++) {
@@ -234,31 +234,32 @@ class App {
     return $(checkboxQuery).prop("checked");
   }
 
-  setupHTMLElements(app) {
+  setupHTMLElements() {
     const checkboxStrictQuery = this.checkboxStrictQuery;
     const checkboxRTKQuery = this.checkboxRTKQuery;
     const checkboxStrictLabelQuery = this.checkboxStrictLabelQuery;
     const params = this.getUrlParameters();
 
+    const self = this;
     $('#search-button').on('click', function() {
-      return app.search();
+      return self.search();
     });
     
     $('#search-query').on('input', function() {
-      return app.search();
+      return self.search();
     });
 
     // checkboxStrict.on('click', function() { // replaces click event completely
     $(checkboxStrictQuery).change(function() {
-      return app.search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
+      return self.search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
     });
     $(checkboxRTKQuery).change(function() {
-      if (this.checked(checkboxRTKQuery)) {
+      if (self.checked(checkboxRTKQuery)) {
         $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = 'line-through'; // strike-through
       } else {
         $(checkboxStrictLabelQuery).prop("style")["text-decoration"] = '';
       }
-      return app.search();
+      return self.search();
     })
 
     if (params.strict === "1" || params.strict === "true" && !this.checked(checkboxStrictQuery)) {
@@ -666,5 +667,5 @@ class App {
 $(document).ready(function() {
   const app = new App();
 
-  app.setupHTMLElements(app);
+  app.setupHTMLElements();
 });
