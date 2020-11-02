@@ -64,7 +64,7 @@ class App {
         const radical = inputRadical.toLowerCase();
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(",");
-          const rtkKeywordLists = getRtkKeywordLists(rtkVersions);
+          const rtkKeywordLists = this.getRtkKeywordLists(rtkVersions);
           if (rtkKeywordLists.length === 1) {
             // if we only have one possible replacement, just add it to each query
             for (let i=0; i<rtkQueries.length; i++) {
