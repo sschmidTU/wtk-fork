@@ -75,6 +75,9 @@ class App {
       // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
       //   TODO the current method is crude and could be improved, but works for now.
       for (const inputRadical of inputRadicals) {
+        if (inputRadical === '') { // can also happen for "blue     sun" for example, which won't be trimmed
+          continue;
+        }
         const radical = inputRadical.toLowerCase();
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(",");
