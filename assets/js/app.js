@@ -20,7 +20,7 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.17');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.19');
     }
     
     var result  = $('#search-results');
@@ -200,7 +200,7 @@ class App {
               '<article>'+
               '  <h3 style="text-align: left">'+
               '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
-              '    <button class="btnClip" id="cbCopyButton'+page.id+'">📋</button>' +
+              '    <button class="btnClip" id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
               '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
               '  </h3>'+
               '</article></div>'
