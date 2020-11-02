@@ -22708,7 +22708,7 @@ var docs =
   "id" : "2167",
   "kanji" : "嘘",
   "keyword" : "fib",
-  "elements" : "mouth, tiger, row",
+  "elements" : "mouth, void, tiger, row",
 }
 ,
   
