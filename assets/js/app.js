@@ -29,13 +29,13 @@ class App {
       return;
     }
     this.lastQuery = query;
-    this.lastQueries.push(query);
+    //this.lastQueries.push(query);
     this.lastStrict = strictMode;
     this.lastRTK    = rtkMode;
-    if (this.lastQueries.length > 5) {
+    //if (this.lastQueries.length > 5) {
       // TODO do something with lastQueries, maybe push limit to 10 or so
-      this.lastQueries.shift(); // remove oldest query
-    }
+      //this.lastQueries.shift(); // remove oldest query
+    //}
 
     // replace spaces in WK radical names
     const space_replacements = { // maybe put into getter method as well
