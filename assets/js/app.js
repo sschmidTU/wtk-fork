@@ -1,5 +1,3 @@
----
----
 class App {
   copyButtonsHighlighted   = {};
   copyButtonSelectedClass  = 'btnClipLastSelected';
