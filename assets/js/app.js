@@ -354,6 +354,9 @@ class App {
       document.getElementById(self.vocabInputQuery).value = '';
       self.dehighlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
     }
+    document.getElementById(this.vocabCopyButtonQuery).onclick = function() {
+      self.highlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
+    }
 
     if (params.strict === '1' || params.strict === 'true' && !this.isStrictMode()) {
       $(checkboxStrictQuery).click();
