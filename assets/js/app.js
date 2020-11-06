@@ -520,7 +520,7 @@ class App {
       "hotpepper": "ketchup", //p341
       //"hot pepper": "ketchup",
       "vines": "cornucopia", //p342
-      "womb": "rice seedling ground", //p343, RTK doesn't have womb as a radical
+      "womb": "rice seedling&ground", //p343, RTK doesn't have womb as a radical
       "slice": "sign of the hog", //1637
       "angel": "resin,pole", //p345, or pole sometimes (missing the drop, e.g. needed for tea)
       "nurse": "grass skirt", //p346
@@ -598,6 +598,9 @@ class App {
       "wing": "knot",
       "fix": "straightaway",
       //"dirt": "soil,dirt", // WK dirt is primarily soil in RTK, but up to 2190 all kanji with soil also have dirt
+      //"sweet": "sweet,wicker basket", // the sweet keyword in RTK is the same as the sweet primitive
+      //"wrap": "wrap",
+      "sock": "receive",
       // ---------------------------------- ^^ -------- //
       "stairs": "fist",
       // ^ above checked with RTK physical edition, at least for WK radicals
@@ -637,6 +640,7 @@ class App {
       "common": "commonplace",
       "showy": "splendid",
       "first": "first time",
+      "distinction": "discrimination", // 差
       // "all": "all,whole", // all exists in RTK
       // "ash": "ash", // same in RTK
       // "hemp": "hemp", // same in RTK
