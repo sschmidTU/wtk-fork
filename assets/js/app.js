@@ -597,7 +597,9 @@ class App {
       "tooth": "teeth",
       "wing": "knot",
       "fix": "straightaway",
+      //"dirt": "soil,dirt", // WK dirt is primarily soil in RTK, but up to 2190 all kanji with soil also have dirt
       // ---------------------------------- ^^ -------- //
+      "stairs": "fist",
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "tombstone": "line spool", // tombstone doesn't exist in RTK
@@ -634,6 +636,7 @@ class App {
       "return": "re-", // enables searching for 涙 with "return" in WK mode
       "common": "commonplace",
       "showy": "splendid",
+      "first": "first time",
       // "all": "all,whole", // all exists in RTK
       // "ash": "ash", // same in RTK
       // "hemp": "hemp", // same in RTK
