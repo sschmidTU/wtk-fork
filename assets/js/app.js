@@ -595,6 +595,7 @@ class App {
       "end": "extremity", // officially jet in WK, but makes sense to distinguish from not yet
       "gate": "gates",
       "tooth": "teeth",
+      "wing": "knot",
       // ---------------------------------- ^^ -------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
