@@ -516,7 +516,7 @@ class App {
       "rocket": "sheik,top hat&villain&belt&elbow", //1605, sheik = 2047* (p12) in rtk3 = top hat villain belt elbow
       "dance": "ballerina", // or sometimes only sunglasses (right part of WK dance), RTK isn't clear on this (see shoeshine element). or dance in rtk-search
       "barracks": "earthworm,mountain goat,barracks", //p340 or mountain goat (p413), or barracks (2189)
-      //"spicy": "spicy,red pepper", // spicy or maybe red pepper sometimes
+      "spicy": "spicy,red pepper", // spicy or maybe red pepper sometimes
       "hotpepper": "ketchup", //p341
       //"hot pepper": "ketchup",
       "vines": "cornucopia", //p342
@@ -596,6 +596,7 @@ class App {
       "gate": "gates",
       "tooth": "teeth",
       "wing": "knot",
+      "fix": "straightaway",
       // ---------------------------------- ^^ -------- //
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
