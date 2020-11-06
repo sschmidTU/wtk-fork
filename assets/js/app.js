@@ -25,7 +25,7 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.3');
+      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.6');
     }
     
     var result  = $('#search-results');
@@ -661,7 +661,7 @@ class App {
       "demon": "ghost", //2175
       "rust": "cinnabar",
       "rust colored": "cinnabar",
-      "tombstone": "line spool", // tombstone doesn't exist in RTK
+      "tombstone": "spool", // p240 (rtk1v4)
       "root": "silver",
       "umbrella": "fishhook,umbrellaWK",
       "spider": "streetwalker",
