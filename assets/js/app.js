@@ -657,7 +657,7 @@ class App {
       "demon": "ghost", //2175
       "rust": "cinnabar",
       "rust colored": "cinnabar",
-      "tombstone": "line spool", // tombstone doesn't exist in RTK
+      "tombstone": "spool", // p240 (rtk1v4)
       "root": "silver",
       "umbrella": "fishhook,umbrellaWK",
       "spider": "streetwalker",
