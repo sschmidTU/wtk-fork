@@ -355,6 +355,8 @@ class App {
       self.dehighlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
     }
     document.getElementById(this.vocabCopyButtonQuery).onclick = function() {
+      const compound = document.getElementById(self.vocabInputQuery).value;
+      navigator.clipboard.writeText(compound);
       self.highlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
     }
 
