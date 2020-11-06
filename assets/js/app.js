@@ -629,6 +629,8 @@ class App {
       // -------- some extra WK radicals (Kanji keywords). e.g. 戻 = return kanji in WK, but doesn't exist as radical
       // -------- see issue #2 -------------------------------------------------------
       "return": "re-", // enables searching for 涙 with "return" in WK mode
+      "common": "commonplace",
+      "showy": "splendid",
       // "all": "all,whole", // all exists in RTK
       // "ash": "ash", // same in RTK
       // "hemp": "hemp", // same in RTK
