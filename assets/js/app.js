@@ -473,7 +473,7 @@ class App {
       "jackhammer": "show", //p1167, lesson30
       "reason": "wherefore,sprout", //1186
       "turtleshell": "armor", //1194
-      "humble": "speaketh", //1198
+      "humble": "monkey", //1198
       // "axe": "axe", // axe works better with rtk-search anyways
       "key": "saw", //1221*
       "wolverine": "broom",//1224*
