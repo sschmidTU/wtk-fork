@@ -680,17 +680,17 @@ class App {
       "slideseven": "lock of hair", //p407
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
-      "tombstone": "line spool", // tombstone doesn't exist in RTK
+      "tombstone": "line&spool", // tombstone doesn't exist in RTK
       "root": "silver",
       "business": "upside down in a row", // plus not yet or tree or husband, but doesn't make a difference for now. also not clear.
-      "youngerbrother": "horns dollar",
-      "guy": "good city walls",
+      "youngerbrother": "horns&dollar",
+      "guy": "good&city walls",
       "penguin": "shredder&taskmaster",
       "frostbite": "dirt&walking legs",
-      "satellite": "vulture king mountain",
+      "satellite": "vulture&king&mountain",
       "bully": "ceiling&mouth&hood&human legs&street",
-      "showy": "flowers silage ten",
-      "mantis": "gnats drop insect belt",
+      "showy": "flowers&silage&ten",
+      "mantis": "gnats&drop&insect&belt",
       // --------------------------------------------
       "elf": "daring",
       "coral": "helping hand",
