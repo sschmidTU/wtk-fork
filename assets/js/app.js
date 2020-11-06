@@ -721,7 +721,7 @@ class App {
       // "ashes": "ashes", // same in RTK
       // "hemp": "hemp", // same in RTK
       // -----------------------------------------------------------------------------
-      "stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
+      //"stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
       "drop": "drop,drops",
       "fins": "animal legs,eight",
