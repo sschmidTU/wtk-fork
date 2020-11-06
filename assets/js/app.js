@@ -489,7 +489,7 @@ class App {
       // "towel ground": "market",
       "oldersister": "elder sister",
       "belt": "sash", //p161
-      "heaven": "heavens", //p164
+      "heaven": "heavens,witch,sapling", // heavens p164
       "stand": "stand up", // only relevant for strict mode
       "chapter": "badge", //p166
       "mohawk": "antique", //p167
@@ -750,7 +750,6 @@ class App {
       "cloud": "rising cloud",
       //"rain": "rain",
       //"ice": "ice",
-      "heaven": "witch,sapling",
       "insect": "gnats",
       //"turkey": "turkey",
       //"feathers": "feathers",
