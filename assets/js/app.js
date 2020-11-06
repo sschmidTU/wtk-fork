@@ -25,7 +25,7 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.0');
+      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.1');
     }
     
     var result  = $('#search-results');
@@ -355,6 +355,9 @@ class App {
     document.getElementById(this.deleteVocabButtonQuery).onclick = function() {
       document.getElementById(self.vocabInputQuery).value = '';
       self.dehighlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
+    }
+    document.getElementById(this.vocabCopyButtonQuery).onclick = function() {
+      self.highlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
     }
 
     if (params.strict === '1' || params.strict === 'true' && !this.isStrictMode()) {
