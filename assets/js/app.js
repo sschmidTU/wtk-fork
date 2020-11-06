@@ -56,6 +56,8 @@ class App {
       "not yet": "notyet", // officially jet in WK, but makes sense to distinguish from end/extremity (both jet in WK)
       "shamisen song": "shamisensong",
       "lip ring": "lipring",
+      "slide seven": "slideseven",
+      "seven slide": "slideseven"
     };
     if (!rtkMode) { // only do pre-replacements in WK mode
       for (let [key, value] of Object.entries(space_replacements)) {
@@ -571,8 +573,6 @@ class App {
       "fang": "tusk", //2053
       "sickle": "animal tracks", // or grab, p228, which is covered by "cleat tree".
       "number": "turn", //2058
-      "seven slides": "lock of hair",
-      "slide seven": "lock of hair", //p407
       "sake": "doX", //2067
       "ground kick": "hairpin",
       "grass": "owl",
@@ -602,8 +602,10 @@ class App {
       //"wrap": "wrap",
       "sock": "receive",
       "together": "strung together",
+      //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
       // ---------------------------------- ^^ -------- //
       "stairs": "fist",
+      "slideseven": "lock of hair", //p407
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "tombstone": "line spool", // tombstone doesn't exist in RTK
@@ -644,7 +646,7 @@ class App {
       "distinction": "discrimination", // 差
       "front": "in front",
       // "all": "all,whole", // all exists in RTK
-      // "ash": "ash", // same in RTK
+      // "ashes": "ashes", // same in RTK
       // "hemp": "hemp", // same in RTK
       // -----------------------------------------------------------------------------
       "stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
