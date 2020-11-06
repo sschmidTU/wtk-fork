@@ -601,6 +601,7 @@ class App {
       //"sweet": "sweet,wicker basket", // the sweet keyword in RTK is the same as the sweet primitive
       //"wrap": "wrap",
       "sock": "receive",
+      "together": "strung together",
       // ---------------------------------- ^^ -------- //
       "stairs": "fist",
       // ^ above checked with RTK physical edition, at least for WK radicals
@@ -641,6 +642,7 @@ class App {
       "showy": "splendid",
       "first": "first time",
       "distinction": "discrimination", // 差
+      "front": "in front",
       // "all": "all,whole", // all exists in RTK
       // "ash": "ash", // same in RTK
       // "hemp": "hemp", // same in RTK
