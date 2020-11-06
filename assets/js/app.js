@@ -20,7 +20,7 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.20');
+      console.log('wtk-search 1.0.2.7-offline-only.1.0.6.30');
     }
     
     var result  = $('#search-results');
@@ -31,13 +31,13 @@ class App {
       return;
     }
     this.lastQuery = query;
-    this.lastQueries.push(query);
+    //this.lastQueries.push(query);
     this.lastStrict = strictMode;
     this.lastRTK    = rtkMode;
-    if (this.lastQueries.length > 5) {
+    //if (this.lastQueries.length > 5) {
       // TODO do something with lastQueries, maybe push limit to 10 or so
-      this.lastQueries.shift(); // remove oldest query
-    }
+      //this.lastQueries.shift(); // remove oldest query
+    //}
 
     // replace spaces in WK radical names
     const space_replacements = { // maybe put into getter method as well
@@ -58,6 +58,8 @@ class App {
       "not yet": "notyet", // officially jet in WK, but makes sense to distinguish from end/extremity (both jet in WK)
       "shamisen song": "shamisensong",
       "lip ring": "lipring",
+      "slide seven": "slideseven",
+      "seven slide": "slideseven"
     };
     if (!rtkMode) { // only do pre-replacements in WK mode
       for (let [key, value] of Object.entries(space_replacements)) {
@@ -475,7 +477,7 @@ class App {
       "jackhammer": "show", //p1167, lesson30
       "reason": "wherefore,sprout", //1186
       "turtleshell": "armor", //1194
-      "humble": "speaketh", //1198
+      "humble": "monkey", //1198
       // "axe": "axe", // axe works better with rtk-search anyways
       "key": "saw", //1221*
       "wolverine": "broom",//1224*
@@ -518,11 +520,11 @@ class App {
       "rocket": "sheik,top hat&villain&belt&elbow", //1605, sheik = 2047* (p12) in rtk3 = top hat villain belt elbow
       "dance": "ballerina", // or sometimes only sunglasses (right part of WK dance), RTK isn't clear on this (see shoeshine element). or dance in rtk-search
       "barracks": "earthworm,mountain goat,barracks", //p340 or mountain goat (p413), or barracks (2189)
-      //"spicy": "spicy,red pepper", // spicy or maybe red pepper sometimes
+      "spicy": "spicy,red pepper", // spicy or maybe red pepper sometimes
       "hotpepper": "ketchup", //p341
       //"hot pepper": "ketchup",
       "vines": "cornucopia", //p342
-      "womb": "rice seedling ground", //p343, RTK doesn't have womb as a radical
+      "womb": "rice seedling&ground", //p343, RTK doesn't have womb as a radical
       "slice": "sign of the hog", //1637
       "angel": "resin,pole", //p345, or pole sometimes (missing the drop, e.g. needed for tea)
       "nurse": "grass skirt", //p346
@@ -573,8 +575,6 @@ class App {
       "fang": "tusk", //2053
       "sickle": "animal tracks", // or grab, p228, which is covered by "cleat tree".
       "number": "turn", //2058
-      "seven slides": "lock of hair",
-      "slide seven": "lock of hair", //p407
       "sake": "doX", //2067
       "ground kick": "hairpin",
       "grass": "owl",
@@ -596,7 +596,18 @@ class App {
       "notyet": "not yet", // officially jet in WK, but makes sense to distinguish from end/extremity
       "end": "extremity", // officially jet in WK, but makes sense to distinguish from not yet
       "gate": "gates",
+      "tooth": "teeth",
+      "wing": "knot",
+      "fix": "straightaway",
+      //"dirt": "soil,dirt", // WK dirt is primarily soil in RTK, but up to 2190 all kanji with soil also have dirt
+      //"sweet": "sweet,wicker basket", // the sweet keyword in RTK is the same as the sweet primitive
+      //"wrap": "wrap",
+      "sock": "receive",
+      "together": "strung together",
+      //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
       // ---------------------------------- ^^ -------- //
+      "stairs": "fist",
+      "slideseven": "lock of hair", //p407
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "tombstone": "line spool", // tombstone doesn't exist in RTK
@@ -631,8 +642,13 @@ class App {
       // -------- some extra WK radicals (Kanji keywords). e.g. 戻 = return kanji in WK, but doesn't exist as radical
       // -------- see issue #2 -------------------------------------------------------
       "return": "re-", // enables searching for 涙 with "return" in WK mode
+      "common": "commonplace",
+      "showy": "splendid",
+      "first": "first time",
+      "distinction": "discrimination", // 差
+      "front": "in front",
       // "all": "all,whole", // all exists in RTK
-      // "ash": "ash", // same in RTK
+      // "ashes": "ashes", // same in RTK
       // "hemp": "hemp", // same in RTK
       // -----------------------------------------------------------------------------
       "stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
