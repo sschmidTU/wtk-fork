@@ -25,7 +25,7 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.2');
+      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.3');
     }
     
     var result  = $('#search-results');
@@ -78,9 +78,10 @@ class App {
 
     let rtkQueries = [];
     let outputRadicals = [];
+    let inputRadicals = [];
     if (!rtkMode) {
       rtkQueries.push(''); // necessary for now - investigate
-      const inputRadicals = query.split(' ');
+      inputRadicals = query.split(' ');
 
       // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
       //   TODO the current method is crude and could be improved, but works for now.
@@ -203,7 +204,7 @@ class App {
             if (document.getElementById('search-box').clientWidth < 500) {
               leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
             }
-            entries.append(
+            const newEntry = 
               '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
               // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
               '<article>'+
@@ -213,7 +214,12 @@ class App {
               '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
               '  </h3>'+
               '</article></div>'
-            );
+            ;
+            if (rtkMode && page.keyword === query || !rtkMode && (outputRadicals.includes(page.keyword) || inputRadicals.includes(page.keyword))) {
+              entries.prepend(newEntry);
+            } else {
+              entries.append(newEntry);
+            }
             document.getElementById('cbCopyButton'+page.id).onclick = function() {
               self.cbCopyButtonClick(page.id, page.kanji);
             }
