@@ -1,10 +1,15 @@
 ---
 ---
 class App {
-  lastCopyButtonClickedId  = -1;
+  copyButtonsHighlighted   = {};
+  copyButtonSelectedClass  = 'btnClipLastSelected';
   checkboxStrictQuery      = 'input[name=strictModeCheckbox]';
   checkboxRTKQuery         = 'input[name=rtkModeCheckbox]';
   checkboxStrictLabelQuery = '#strictModeLabel';
+  checkboxVocabQuery       = 'input[name=vocabModeCheckbox'; // also called compound mode
+  vocabInputQuery          = 'vocabInput';
+  vocabCopyButtonQuery     = 'cbCopyButtonVocab';
+  deleteVocabButtonQuery   = 'deleteVocabButton';
   maxResultSize            = 50;
   lastQuery                = '';
   lastQueries              = [];
@@ -232,19 +237,57 @@ class App {
   }
 
   cbCopyButtonClick(id, kanji) {
-    //console.log("lastId, id: " + this.lastCopyButtonClickedId + "," + id);
-    navigator.clipboard.writeText(kanji);
     const selectedClass = 'btnClipLastSelected';
-    const copyButton = document.getElementById('cbCopyButton' + id);
-    if (copyButton.classList.contains(selectedClass)) {
-      copyButton.classList.remove(selectedClass);
+
+    if (this.isVocabMode()) { // vocab/compound mode
+      const vocabInput = document.getElementById(this.vocabInputQuery);
+      if (!vocabInput.value) {
+        document.getElementById(this.vocabInputQuery).value = kanji;
+      } else {
+        vocabInput.value += kanji;
+      }
+      navigator.clipboard.writeText(vocabInput.value);
+      this.highlightButton(this.vocabCopyButtonQuery, this.vocabCopyButtonQuery);
+      return;
     } else {
-      copyButton.classList.add(selectedClass);
+      navigator.clipboard.writeText(kanji);
+      const copyButtonId = 'cbCopyButton' + id;
+      const copyButton = document.getElementById(copyButtonId);
+
+      if (copyButton.classList.contains(selectedClass)) {
+        this.dehighlightButton(copyButtonId, id);
+      } else {
+        this.highlightButton(copyButtonId, id);
+      }
     }
+
+    // remove highlight from last button
     if (this.lastCopyButtonClickedId !== id && this.lastCopyButtonClickedId > -1) {
       document.getElementById('cbCopyButton' + this.lastCopyButtonClickedId)?.classList.remove(selectedClass);
     }
     this.lastCopyButtonClickedId = id;
+  }
+
+  highlightButton(buttonId, hashKey) {
+    // dehighlight all other buttons:
+    const entries = Object.entries(this.copyButtonsHighlighted);
+    for (let i=0; i < entries.length; i++) {
+      const entry = entries[i];
+      const keyValue = entry[1]; // how Object.entries unloads this is weird, but oh well. just console.dir(entries) to see
+      this.dehighlightButton(keyValue.buttonId, keyValue.hashKey);
+    }
+    // highlight this button:
+    document.getElementById(buttonId).classList.add(this.copyButtonSelectedClass);
+    this.copyButtonsHighlighted[hashKey] = {
+      hashKey: hashKey,
+      buttonId: buttonId
+    }
+  }
+
+  dehighlightButton(buttonId, hashKey) {
+    //console.log('dehighlight: ' + hashKey + ', ' + buttonId);
+    document.getElementById(buttonId).classList.remove(this.copyButtonSelectedClass);
+    delete this.copyButtonsHighlighted[hashKey];
   }
 
   getRtkKeywordLists(rtkVersions) {
@@ -267,13 +310,19 @@ class App {
     return this.checked(this.checkboxRTKQuery);
   }
 
+  // vocab/compound mode
+  isVocabMode() {
+    return this.checked(this.checkboxVocabQuery);
+  }
+
   setupHTMLElements() {
     const checkboxStrictQuery = this.checkboxStrictQuery;
     const checkboxRTKQuery = this.checkboxRTKQuery;
     const checkboxStrictLabelQuery = this.checkboxStrictLabelQuery;
+    const checkboxVocabQuery = this.checkboxVocabQuery;
     const params = this.getUrlParameters();
 
-    const self = this;
+    const self = this; // this isn't available in anonymous or dollar ($) functions
     $('#search-button').on('click', function() {
       return self.search();
     });
@@ -294,12 +343,26 @@ class App {
       }
       return self.search();
     })
+    $(checkboxVocabQuery).change(function() {
+      if (self.isVocabMode()) {
+        document.getElementById('vocabModeDiv').style.display = "block";
+      } else {
+        document.getElementById('vocabModeDiv').style.display = "none";
+      }
+    })
+    document.getElementById(this.deleteVocabButtonQuery).onclick = function() {
+      document.getElementById(self.vocabInputQuery).value = '';
+      self.dehighlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
+    }
 
     if (params.strict === '1' || params.strict === 'true' && !this.isStrictMode()) {
       $(checkboxStrictQuery).click();
     }
     if (params.rtk === '1' || params.rtk === 'true' && !this.isRtkMode()) {
       $(checkboxRTKQuery).click();
+    }
+    if (params.compound === '1' || params.compound === 'true') {
+      $(checkboxVocabQuery).click();
     }
   }
 

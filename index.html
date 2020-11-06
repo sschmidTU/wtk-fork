@@ -23,7 +23,13 @@ In this mode, the search query is not altered to replace WK 'radical' names with
 RTK Mode is not yet compatible with strict mode.">RTK</label>
 	<input type="checkbox" id="vocabModeCheckbox" name="vocabModeCheckbox" value="false">
 		<label for="vocabModeCheckbox" id="vocabModeLabel"
-	title="In Compount/Vocab mode, you can choose multiple kanji which will be added together so you can copy all of them to clipboard.">Vocab</label>
+		title="In Compound/Vocab mode, you can choose multiple kanji which will be added together so you can copy all of them to clipboard.">Compound</label>
+	<div id="vocabModeDiv" style="display: none">
+		<button class="btnClip" id="cbCopyButtonVocab" title="Copy these kanji to clipboard.
+Search for kanji and click their clipboard button to add them here.">📋</button>
+		<input type="text" id="vocabInput" spellcheck="false" placeholder="Add Kanji below with 📋">
+		<button class="deleteText" id="deleteVocabButton" title="Delete the vocab on the left (make the box blank again)">×</button>
+	</div>
 	
 	<div id="search-results" style="display: none;">
 			<div class="entries"></div>
