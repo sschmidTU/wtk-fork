@@ -766,7 +766,7 @@ class App {
       "drop bear": "maestro",
       "hole": "hole", // RTK doesn't differentiate between WK's pi and hole (added stick on top) 
       // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.
-      "mama": "chop-seal small",
+      "mama": "chop-seal",
       "limit": "silver",
       //"good": "good alt",
       "helicopter": "old west",
