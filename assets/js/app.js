@@ -62,6 +62,7 @@ class App {
       "slide seven": "slideseven",
       "seven slide": "slideseven",
       "good luck": "goodluck",
+      "pass through": "passthrough",
     };
     if (!rtkMode) { // only do pre-replacements in WK mode
       for (let [key, value] of Object.entries(space_replacements)) {
@@ -567,7 +568,7 @@ class App {
       "arrow": "dart", //1305
       "spear": "halberd", //1311
       "dollar": "dollarsign", //p302
-      "beggar": "slingshot", //p304
+      "beggar": "slingshot,snare", //p304. snare: p327 in rtk1v4, missing stick on top
       "give": "bestow",
       "body": "somebody", //1337
       "come": "scissors", //p307
@@ -687,7 +688,7 @@ class App {
       "frostbite": "dirt&walking legs",
       "satellite": "vulture&king&mountain",
       "bully": "ceiling&mouth&hood&human legs&street",
-      "showy": "flowers&silage&ten,splendid", // WK kanji name showy is splended in RTK
+      "showy": "flowers&silage&ten,splendor", // WK kanji name showy is splendor in RTK
       "mantis": "gnats&drop&insect&belt",
       // --------------------------------------------
       "elf": "daring",
@@ -717,6 +718,9 @@ class App {
       // "all": "all,whole", // all exists in RTK
       // "ashes": "ashes", // same in RTK
       // "hemp": "hemp", // same in RTK
+      "distressed": "quandary",
+      "distress": "quandary", // it's distressed on WK, but maybe someone types distress
+      "passthrough": "traffic",
       // -----------------------------------------------------------------------------
       //"stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
