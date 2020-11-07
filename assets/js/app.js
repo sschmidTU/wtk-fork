@@ -697,6 +697,7 @@ class App {
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
       "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
+      //"cactus": "cactus", // or mountain (split up), but for now no difference. rtk3v4: described in 聯 2676 strung together
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "business": "upside down in a row", // plus not yet or tree or husband, but doesn't make a difference for now. also not clear.
