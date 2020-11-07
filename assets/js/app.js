@@ -25,7 +25,7 @@ class App {
     }
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.6');
+      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.18');
     }
     
     var result  = $('#search-results');
@@ -45,27 +45,7 @@ class App {
     //}
 
     // replace spaces in WK radical names
-    const space_replacements = { // maybe put into getter method as well
-      "rice paddy": "ricepaddy",
-      "older brother": "olderbrother",
-      "younger brother": "youngerbrother",
-      "to cut": "tocut", // custom radical from phonetic-semantic composition
-      "coat rack": "coatrack",
-      "older sister": "oldersister",
-      "black hole": "blackhole",
-      "turtle shell": "turtleshell",
-      "long ago": "longago",
-      "one sided": "onesided",
-      "hot pepper": "hotpepper",
-      "mona lisa": "monalisa",
-      "top hat": "tophat",
-      "death star": "deathstar",
-      "not yet": "notyet", // officially jet in WK, but makes sense to distinguish from end/extremity (both jet in WK)
-      "shamisen song": "shamisensong",
-      "lip ring": "lipring",
-      "slide seven": "slideseven",
-      "seven slide": "slideseven"
-    };
+    const space_replacements = this.get_space_replacements();
     if (!rtkMode) { // only do pre-replacements in WK mode
       for (let [key, value] of Object.entries(space_replacements)) {
         query = query.replace(key, value);
@@ -392,6 +372,33 @@ class App {
     return params;
   }
 
+  // eliminate spaces so that all (input) radicals are separated by white space (" ").
+  get_space_replacements() {
+    return {
+      "rice paddy": "ricepaddy",
+      "older brother": "olderbrother",
+      "younger brother": "youngerbrother",
+      "to cut": "tocut", // custom radical from phonetic-semantic composition
+      "coat rack": "coatrack",
+      "older sister": "oldersister",
+      "black hole": "blackhole",
+      "turtle shell": "turtleshell",
+      "long ago": "longago",
+      "one sided": "onesided",
+      "hot pepper": "hotpepper",
+      "mona lisa": "monalisa",
+      "top hat": "tophat",
+      "death star": "deathstar",
+      "not yet": "notyet", // officially jet in WK, but makes sense to distinguish from end/extremity (both jet in WK)
+      "shamisen song": "shamisensong",
+      "lip ring": "lipring",
+      "slide seven": "slideseven",
+      "seven slide": "slideseven",
+      "good luck": "goodluck",
+      "pass through": "passthrough",
+    }
+  }
+
   get_wk_to_rtk_replacements() {
     return {
       "cross": "ten",
@@ -414,9 +421,8 @@ class App {
       "toe": "divining rod,magic wand",
       //"specialty": "accupuncturist", // p31, also specialty in another variation in RTK. rtk-search doesn't know accupuncturist
       "fortune": "fortune-telling",
-      "table": "table,eminent", // p33, collides with WK radical table and kanji table
+      "table": "wind,eminent", // p33, collides with WK radical table and kanji table (RTK eminent). wind/weather vain? but weather vain not found in elements
       "morning": "mist", // p34
-      "table": "wind", //wind/weather vain
       "prison": "bound up", //or bound up small
       //"horns": "horns", // also animal horns in RTK, but i tagged everything with horns as well
       "child": "child,newborn babe", // conflict: this is the kanji child in WK (former+legs), but there's also the RTK child radical
@@ -430,9 +436,8 @@ class App {
       "pool": "ladle", //p42
       //"neck": "neck",
       "nose": "fish guts", //p44
-      "fix": "straight up",
       "reality": "true", //p46
-      "narwhal": "by ones side",
+      "narwhal": "by one’s side",
       "construction": "craft",
       "have": "possess", //p47
       // sword, blade, cut all same
@@ -444,7 +449,7 @@ class App {
       "like": "fond", //p54, only kanji in WK
       "mother": "mama", //p54, only kanji in WK
       "olderbrother": "elder brother",
-      "small": "little",
+      "small": "little", // triceratops and small are the same in RTK: little (or small)
       "big": "large",
       "sunlight": "ray", //p61
       "fat": "plump",
@@ -493,7 +498,7 @@ class App {
       // "towel ground": "market",
       "oldersister": "elder sister",
       "belt": "sash", //p161
-      "heaven": "heavens", //p164
+      "heaven": "heavens,witch,sapling", // heavens p164
       "stand": "stand up", // only relevant for strict mode
       "chapter": "badge", //p166
       "mohawk": "antique", //p167
@@ -508,7 +513,7 @@ class App {
       //"monk": "boy"
       "guard": "devil", //p183
       "mask": "formerly",
-      "king": "king,porter,jewel", // or porter, p185
+      "king": "king,porter,jewel,bushes", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise", //p195
@@ -521,9 +526,9 @@ class App {
       "storage": "warehouse", //p208
       "skewer": "shish kebab", //p210
       "feeling": "emotion", //p211
-      "certain": "invariably", //p214
+      "certain": "invariably,so-and-so", //p214. so-and-so: 1896
       "lantern": "two hands", //p219
-      "stairs": "from", //p221
+      "stairs": "from", //p221. from is also sometimes called "fist" apparently, but there's also the fist element.
       "escalator": "reach out",
       "height": "length",
       "again": "grow late", //p223, or could also be 再      
@@ -531,7 +536,7 @@ class App {
       "private": "elbow", //p229
       "machine": "pedestal",
       "past": "gone", //p231
-      "meet": "meeting",
+      "meet": "meeting", // meeting in RTK is only the top part (hat/umbrella + one), but mouth is basically always there too
       "mole": "climax",
       "trash": "infant", //p232
       "skin": "pelt", //p239
@@ -549,7 +554,7 @@ class App {
       "dynamite": "third class", //p267
       "shrimp": "shaku", //p276
       "jackhammer": "show", //p1167, lesson30
-      "reason": "wherefore,sprout", //1186
+      "reason": "sprout", //1186 wherefore as kanji, but always also sprout (or shoot, synonym)
       "turtleshell": "armor", //1194
       "humble": "monkey", //1198
       // "axe": "axe", // axe works better with rtk-search anyways
@@ -572,7 +577,7 @@ class App {
       "arrow": "dart", //1305
       "spear": "halberd", //1311
       "dollar": "dollarsign", //p302
-      "beggar": "slingshot", //p304
+      "beggar": "slingshot,snare", //p304. snare: p327 in rtk1v4, missing stick on top
       "give": "bestow",
       "body": "somebody", //1337
       "come": "scissors", //p307
@@ -582,14 +587,14 @@ class App {
       "zoom": "jawbone", //p311, doesn't really exist on WK, zoom is a personal mnemonic. could be zoommustache as well
       "mustache": "hood&mouth", // mustache in itself seems to be "hood mouth" in RTK, see 尚
       "building": "pinnacle,city walls", //lesson35, or city walls (p394, when on the right)
-      "pi": "paper punch", //p316, not a perfect match (roof legs instead of ground legs) TODO add alternate replacements
+      "pi": "paper punch,hole", //p316. RTK doesn't differentiate between WK's pi and hole (added stick on top). though almost all paper punches in elements have hole as well, so far (until 2400)
       "syrup": "goods tree", // e.g. 1469, syrup doesn't exist in RTK
       "poop": "cocoon", //p322
       "snake": "fingerprint", //p328
       "comb": "staples", //p329
       "alcohol": "sign of the bird", //1534
       "plate": "dish", //1555
-      "peace": "call",
+      "peace": "even", // or call, but covered by even
       "treasure": "sheaf,tucked under the arm", //p339 or arm maybe, p222
       "rocket": "sheik,top hat&villain&belt&elbow", //1605, sheik = 2047* (p12) in rtk3 = top hat villain belt elbow
       "dance": "ballerina", // or sometimes only sunglasses (right part of WK dance), RTK isn't clear on this (see shoeshine element). or dance in rtk-search
@@ -627,7 +632,6 @@ class App {
       "explosion": "sparkler",
       //"red: "apple", // just alternate name (?)
       "bed": "mosaic", //p380
-      "certain": "so-and-so", //1896
       "crab": "bushel basket",
       "middle ground": "purse",
       "tophat": "shelf",
@@ -678,13 +682,14 @@ class App {
       "sock": "receive",
       "together": "strung together",
       //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
+      //"beans": "beans,table",
+      "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
       // ---------------------------------- ^^ -------- //
-      "stairs": "fist",
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
+      "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
-      "root": "silver",
       "business": "upside down in a row", // plus not yet or tree or husband, but doesn't make a difference for now. also not clear.
       "youngerbrother": "horns&dollar",
       "guy": "good&city walls",
@@ -692,7 +697,7 @@ class App {
       "frostbite": "dirt&walking legs",
       "satellite": "vulture&king&mountain",
       "bully": "ceiling&mouth&hood&human legs&street",
-      "showy": "flowers&silage&ten",
+      "showy": "flowers&silage&ten,splendor", // WK kanji name showy is splendor in RTK
       "mantis": "gnats&drop&insect&belt",
       // --------------------------------------------
       "elf": "daring",
@@ -716,13 +721,16 @@ class App {
       // -------- see issue #2 -------------------------------------------------------
       "return": "re-", // enables searching for 涙 with "return" in WK mode
       "common": "commonplace",
-      "showy": "splendid",
       "first": "first time",
       "distinction": "discrimination", // 差
       "front": "in front",
       // "all": "all,whole", // all exists in RTK
       // "ashes": "ashes", // same in RTK
       // "hemp": "hemp", // same in RTK
+      "distressed": "quandary",
+      "distress": "quandary", // it's distressed on WK, but maybe someone types distress
+      "passthrough": "traffic",
+      "flat": "even", // WK radical: peace
       // -----------------------------------------------------------------------------
       //"stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
@@ -733,7 +741,7 @@ class App {
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce
-      "triceratops": "little",
+      "triceratops": "little", // triceratops and small are the same in RTK: little (or small)
       "cliff": "cliff,drag", // or drag, p396
       //"flood": "flood",
       "tsunami": "water",
@@ -744,17 +752,15 @@ class App {
       "animal": "pack of dogs",
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "meeting&moon&saber", // or meeting moon flood, but unnecessary for now
+      "deathstar": "meeting&moon&saber", // or meeting of butchers. or meeting moon flood, but unnecessary for now. or convoy
       // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
-      //"death star": "convoy",
       "dirt mouth": "lidded crock",
       //"brush": "brush",
       "kick": "scarf", // the left part can also be plow sometimes
-      "spirit": "cloak,altar",
+      "spirit": "cloak,altar", // cloak has an extra stroke from bottom left to top right in the middle (to the right of the diagonal), altar doesn't.
       "cloud": "rising cloud",
       //"rain": "rain",
       //"ice": "ice",
-      "heaven": "witch,sapling",
       "insect": "gnats",
       //"turkey": "turkey",
       //"feathers": "feathers",
@@ -768,11 +774,9 @@ class App {
       //"flag": "flag",
       "gambler": "strawman",
       "drop bear": "maestro",
-      "pi": "hole",
       "hole": "hole", // RTK doesn't differentiate between WK's pi and hole (added stick on top) 
       // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.
-      //"stamp": "stamp",
-      "mama": "chop-seal small",
+      "mama": "chop-seal",
       "limit": "silver",
       //"good": "good alt",
       "helicopter": "old west",
