@@ -26,7 +26,7 @@ class App {
     this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.22');
+      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.23');
     }
     
     var result  = $('#search-results');
