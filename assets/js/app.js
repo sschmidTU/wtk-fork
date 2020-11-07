@@ -23,19 +23,20 @@ class App {
     if (query === this.lastQuery && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
       return;
     }
+    this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.18');
+      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.22');
     }
     
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    if (query.length <= 2) {
+    const isSmallRtkKeyword = this.is_rtk_keyword_with_length_smaller_three(query);
+    if (query.length <= 2 && !(rtkMode && isSmallRtkKeyword)) {
       result.hide();
       entries.empty();
       return;
     }
-    this.lastQuery = query;
     //this.lastQueries.push(query);
     this.lastStrict = strictMode;
     this.lastRTK    = rtkMode;
@@ -54,12 +55,12 @@ class App {
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
     // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
-    const wk_replacements = this.get_wk_to_rtk_replacements();
-
+    
     let rtkQueries = [];
     let outputRadicals = [];
     let inputRadicals = [];
     if (!rtkMode) {
+      const wk_replacements = this.get_wk_to_rtk_replacements();
       rtkQueries.push(''); // necessary for now - investigate
       inputRadicals = query.split(' ');
 
@@ -126,9 +127,6 @@ class App {
     // search for each rtkQuery
     for (let i=0; i<rtkQueries.length; i++) {
       let query = rtkQueries[i];
-      if (query.length < 2) {
-        continue;
-      }
       query = query.trim(); // maybe do that above, but for now don't restrict queries by length too much
       console.log('query ' + (i+1) + ': ' + query);
 
@@ -195,7 +193,10 @@ class App {
               '  </h3>'+
               '</article></div>'
             ;
-            if (rtkMode && page.keyword === query || !rtkMode && (outputRadicals.includes(page.keyword) || inputRadicals.includes(page.keyword))) {
+            const keywordLower = page.keyword.toLowerCase();
+            if (rtkMode && keywordLower === query ||
+                !rtkMode && (outputRadicals.includes(keywordLower) || inputRadicals.includes(keywordLower))
+               ) {
               entries.prepend(newEntry);
             } else {
               entries.append(newEntry);
@@ -274,7 +275,7 @@ class App {
 
   dehighlightButton(buttonId, hashKey) {
     //console.log('dehighlight: ' + hashKey + ', ' + buttonId);
-    document.getElementById(buttonId).classList.remove(this.copyButtonSelectedClass);
+    document.getElementById(buttonId)?.classList.remove(this.copyButtonSelectedClass);
     delete this.copyButtonsHighlighted[hashKey];
   }
 
@@ -370,6 +371,18 @@ class App {
       params[pair[0]] = decodeURIComponent(pair[1]);
     }
     return params;
+  }
+
+  is_rtk_keyword_with_length_smaller_three(query) {
+    const small_rtk_keywords = [
+      'i', 'in', 'ri', 'he', 'ax', 'of', 'go', 'me', 'do', 'v', 'x'
+    ];
+    for (const keyword of small_rtk_keywords) {
+      if (query === keyword) {
+        return true;
+      }
+    }
+    return false;
   }
 
   // eliminate spaces so that all (input) radicals are separated by white space (" ").
