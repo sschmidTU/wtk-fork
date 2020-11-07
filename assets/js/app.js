@@ -41,29 +41,7 @@ class App {
     //}
 
     // replace spaces in WK radical names
-    const space_replacements = { // maybe put into getter method as well
-      "rice paddy": "ricepaddy",
-      "older brother": "olderbrother",
-      "younger brother": "youngerbrother",
-      "to cut": "tocut", // custom radical from phonetic-semantic composition
-      "coat rack": "coatrack",
-      "older sister": "oldersister",
-      "black hole": "blackhole",
-      "turtle shell": "turtleshell",
-      "long ago": "longago",
-      "one sided": "onesided",
-      "hot pepper": "hotpepper",
-      "mona lisa": "monalisa",
-      "top hat": "tophat",
-      "death star": "deathstar",
-      "not yet": "notyet", // officially jet in WK, but makes sense to distinguish from end/extremity (both jet in WK)
-      "shamisen song": "shamisensong",
-      "lip ring": "lipring",
-      "slide seven": "slideseven",
-      "seven slide": "slideseven",
-      "good luck": "goodluck",
-      "pass through": "passthrough",
-    };
+    const space_replacements = this.get_space_replacements();
     if (!rtkMode) { // only do pre-replacements in WK mode
       for (let [key, value] of Object.entries(space_replacements)) {
         query = query.replace(key, value);
@@ -388,6 +366,33 @@ class App {
       params[pair[0]] = decodeURIComponent(pair[1]);
     }
     return params;
+  }
+
+  // eliminate spaces so that all (input) radicals are separated by white space (" ").
+  get_space_replacements() {
+    return {
+      "rice paddy": "ricepaddy",
+      "older brother": "olderbrother",
+      "younger brother": "youngerbrother",
+      "to cut": "tocut", // custom radical from phonetic-semantic composition
+      "coat rack": "coatrack",
+      "older sister": "oldersister",
+      "black hole": "blackhole",
+      "turtle shell": "turtleshell",
+      "long ago": "longago",
+      "one sided": "onesided",
+      "hot pepper": "hotpepper",
+      "mona lisa": "monalisa",
+      "top hat": "tophat",
+      "death star": "deathstar",
+      "not yet": "notyet", // officially jet in WK, but makes sense to distinguish from end/extremity (both jet in WK)
+      "shamisen song": "shamisensong",
+      "lip ring": "lipring",
+      "slide seven": "slideseven",
+      "seven slide": "slideseven",
+      "good luck": "goodluck",
+      "pass through": "passthrough",
+    }
   }
 
   get_wk_to_rtk_replacements() {
