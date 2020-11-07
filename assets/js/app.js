@@ -60,7 +60,8 @@ class App {
       "shamisen song": "shamisensong",
       "lip ring": "lipring",
       "slide seven": "slideseven",
-      "seven slide": "slideseven"
+      "seven slide": "slideseven",
+      "good luck": "goodluck",
     };
     if (!rtkMode) { // only do pre-replacements in WK mode
       for (let [key, value] of Object.entries(space_replacements)) {
@@ -525,7 +526,7 @@ class App {
       "private": "elbow", //p229
       "machine": "pedestal",
       "past": "gone", //p231
-      "meet": "meeting",
+      "meet": "meeting", // meeting in RTK is only the top part (hat/umbrella + one), but mouth is basically always there too
       "mole": "climax",
       "trash": "infant", //p232
       "skin": "pelt", //p239
@@ -672,9 +673,11 @@ class App {
       "together": "strung together",
       //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
       //"beans": "beans,table",
+      "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
+      "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "business": "upside down in a row", // plus not yet or tree or husband, but doesn't make a difference for now. also not clear.
@@ -735,9 +738,8 @@ class App {
       "animal": "pack of dogs",
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "meeting&moon&saber", // or meeting moon flood, but unnecessary for now
+      "deathstar": "meeting&moon&saber", // or meeting of butchers. or meeting moon flood, but unnecessary for now. or convoy
       // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
-      //"death star": "convoy",
       "dirt mouth": "lidded crock",
       //"brush": "brush",
       "kick": "scarf", // the left part can also be plow sometimes
@@ -760,7 +762,6 @@ class App {
       "drop bear": "maestro",
       "hole": "hole", // RTK doesn't differentiate between WK's pi and hole (added stick on top) 
       // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.
-      //"stamp": "stamp",
       "mama": "chop-seal small",
       "limit": "silver",
       //"good": "good alt",
