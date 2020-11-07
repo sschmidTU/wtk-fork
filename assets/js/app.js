@@ -440,7 +440,7 @@ class App {
       "like": "fond", //p54, only kanji in WK
       "mother": "mama", //p54, only kanji in WK
       "olderbrother": "elder brother",
-      "small": "little",
+      "small": "little", // triceratops and small are the same in RTK: little (or small)
       "big": "large",
       "sunlight": "ray", //p61
       "fat": "plump",
@@ -585,7 +585,7 @@ class App {
       "comb": "staples", //p329
       "alcohol": "sign of the bird", //1534
       "plate": "dish", //1555
-      "peace": "call",
+      "peace": "even", // or call, but covered by even
       "treasure": "sheaf,tucked under the arm", //p339 or arm maybe, p222
       "rocket": "sheik,top hat&villain&belt&elbow", //1605, sheik = 2047* (p12) in rtk3 = top hat villain belt elbow
       "dance": "ballerina", // or sometimes only sunglasses (right part of WK dance), RTK isn't clear on this (see shoeshine element). or dance in rtk-search
@@ -721,6 +721,7 @@ class App {
       "distressed": "quandary",
       "distress": "quandary", // it's distressed on WK, but maybe someone types distress
       "passthrough": "traffic",
+      "flat": "even", // WK radical: peace
       // -----------------------------------------------------------------------------
       //"stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
@@ -731,7 +732,7 @@ class App {
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce
-      "triceratops": "little",
+      "triceratops": "little", // triceratops and small are the same in RTK: little (or small)
       "cliff": "cliff,drag", // or drag, p396
       //"flood": "flood",
       "tsunami": "water",
@@ -747,7 +748,7 @@ class App {
       "dirt mouth": "lidded crock",
       //"brush": "brush",
       "kick": "scarf", // the left part can also be plow sometimes
-      "spirit": "cloak,altar",
+      "spirit": "cloak,altar", // cloak has an extra stroke from bottom left to top right in the middle (to the right of the diagonal), altar doesn't.
       "cloud": "rising cloud",
       //"rain": "rain",
       //"ice": "ice",
