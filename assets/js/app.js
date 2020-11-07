@@ -23,15 +23,15 @@ class App {
     if (query === this.lastQuery && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
       return;
     }
+    this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
     
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    if (query.length <= 2) {
+    if (query.length <= 2 && !(rtkMode && query === 'in')) {
       result.hide();
       entries.empty();
       return;
     }
-    this.lastQuery = query;
     //this.lastQueries.push(query);
     this.lastStrict = strictMode;
     this.lastRTK    = rtkMode;
