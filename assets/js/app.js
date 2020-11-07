@@ -410,7 +410,7 @@ class App {
       "toe": "divining rod,magic wand",
       //"specialty": "accupuncturist", // p31, also specialty in another variation in RTK. rtk-search doesn't know accupuncturist
       "fortune": "fortune-telling",
-      "table": "wind,table,eminent", // p33, collides with WK radical table and kanji table. wind/weather vain? but weather vain not found in elements
+      "table": "wind,eminent", // p33, collides with WK radical table and kanji table (RTK eminent). wind/weather vain? but weather vain not found in elements
       "morning": "mist", // p34
       "prison": "bound up", //or bound up small
       //"horns": "horns", // also animal horns in RTK, but i tagged everything with horns as well
@@ -671,6 +671,7 @@ class App {
       "sock": "receive",
       "together": "strung together",
       //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
+      //"beans": "beans,table",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
