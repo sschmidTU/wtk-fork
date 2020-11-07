@@ -496,7 +496,7 @@ class App {
       "warn": "admonish",
       "ceremony": "arrow", //p143
       "drunkard": "fiesta",
-      "tocut": "thanksgiving", //p145, "to cut" is not from WK but from Jisho/Phonetic-semantic composition
+      "tocut": "thanksgiving", //p145, or ten fiesta. "to cut" is not from WK but from Jisho/Phonetic-semantic composition
       "become": "turn into", //p146
       "bar": "float", //p148
       "plan": "undertake", //p150, only kanji in WK
