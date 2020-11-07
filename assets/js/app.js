@@ -428,7 +428,7 @@ class App {
       //"neck": "neck",
       "nose": "fish guts", //p44
       "reality": "true", //p46
-      "narwhal": "by ones side",
+      "narwhal": "by one’s side",
       "construction": "craft",
       "have": "possess", //p47
       // sword, blade, cut all same
