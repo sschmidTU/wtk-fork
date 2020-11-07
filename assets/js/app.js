@@ -270,7 +270,7 @@ class App {
 
   dehighlightButton(buttonId, hashKey) {
     //console.log('dehighlight: ' + hashKey + ', ' + buttonId);
-    document.getElementById(buttonId).classList.remove(this.copyButtonSelectedClass);
+    document.getElementById(buttonId)?.classList.remove(this.copyButtonSelectedClass);
     delete this.copyButtonsHighlighted[hashKey];
   }
 
