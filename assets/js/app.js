@@ -502,7 +502,7 @@ class App {
       //"monk": "boy"
       "guard": "devil", //p183
       "mask": "formerly",
-      "king": "king,porter,jewel", // or porter, p185
+      "king": "king,porter,jewel,bushes", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise", //p195
@@ -543,7 +543,7 @@ class App {
       "dynamite": "third class", //p267
       "shrimp": "shaku", //p276
       "jackhammer": "show", //p1167, lesson30
-      "reason": "wherefore,sprout", //1186
+      "reason": "sprout", //1186 wherefore as kanji, but always also sprout (or shoot, synonym)
       "turtleshell": "armor", //1194
       "humble": "monkey", //1198
       // "axe": "axe", // axe works better with rtk-search anyways
