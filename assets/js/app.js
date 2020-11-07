@@ -310,7 +310,7 @@ class App {
     const checkboxVocabQuery = this.checkboxVocabQuery;
     const params = this.getUrlParameters();
 
-    const self = this; // this isn't available in anonymous or dollar ($) functions
+    const self = this; // this isn't available in anonymous functions
     $('#search-button').on('click', function() {
       return self.search();
     });
