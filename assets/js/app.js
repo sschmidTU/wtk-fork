@@ -410,9 +410,8 @@ class App {
       "toe": "divining rod,magic wand",
       //"specialty": "accupuncturist", // p31, also specialty in another variation in RTK. rtk-search doesn't know accupuncturist
       "fortune": "fortune-telling",
-      "table": "table,eminent", // p33, collides with WK radical table and kanji table
+      "table": "wind,table,eminent", // p33, collides with WK radical table and kanji table. wind/weather vain? but weather vain not found in elements
       "morning": "mist", // p34
-      "table": "wind", //wind/weather vain
       "prison": "bound up", //or bound up small
       //"horns": "horns", // also animal horns in RTK, but i tagged everything with horns as well
       "child": "child,newborn babe", // conflict: this is the kanji child in WK (former+legs), but there's also the RTK child radical
@@ -426,7 +425,6 @@ class App {
       "pool": "ladle", //p42
       //"neck": "neck",
       "nose": "fish guts", //p44
-      "fix": "straight up",
       "reality": "true", //p46
       "narwhal": "by ones side",
       "construction": "craft",
@@ -517,9 +515,9 @@ class App {
       "storage": "warehouse", //p208
       "skewer": "shish kebab", //p210
       "feeling": "emotion", //p211
-      "certain": "invariably", //p214
+      "certain": "invariably,so-and-so", //p214. so-and-so: 1896
       "lantern": "two hands", //p219
-      "stairs": "from", //p221
+      "stairs": "from", //p221. from is also sometimes called "fist" apparently, but there's also the fist element.
       "escalator": "reach out",
       "height": "length",
       "again": "grow late", //p223, or could also be 再      
@@ -578,7 +576,7 @@ class App {
       "zoom": "jawbone", //p311, doesn't really exist on WK, zoom is a personal mnemonic. could be zoommustache as well
       "mustache": "hood&mouth", // mustache in itself seems to be "hood mouth" in RTK, see 尚
       "building": "pinnacle,city walls", //lesson35, or city walls (p394, when on the right)
-      "pi": "paper punch", //p316, not a perfect match (roof legs instead of ground legs) TODO add alternate replacements
+      "pi": "paper punch,hole", //p316. RTK doesn't differentiate between WK's pi and hole (added stick on top) 
       "syrup": "goods tree", // e.g. 1469, syrup doesn't exist in RTK
       "poop": "cocoon", //p322
       "snake": "fingerprint", //p328
@@ -623,7 +621,6 @@ class App {
       "explosion": "sparkler",
       //"red: "apple", // just alternate name (?)
       "bed": "mosaic", //p380
-      "certain": "so-and-so", //1896
       "crab": "bushel basket",
       "middle ground": "purse",
       "tophat": "shelf",
@@ -675,7 +672,6 @@ class App {
       "together": "strung together",
       //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
       // ---------------------------------- ^^ -------- //
-      "stairs": "fist",
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
       // ^ above checked with RTK physical edition, at least for WK radicals
@@ -687,7 +683,7 @@ class App {
       "frostbite": "dirt&walking legs",
       "satellite": "vulture&king&mountain",
       "bully": "ceiling&mouth&hood&human legs&street",
-      "showy": "flowers&silage&ten",
+      "showy": "flowers&silage&ten,splendid", // WK kanji name showy is splended in RTK
       "mantis": "gnats&drop&insect&belt",
       // --------------------------------------------
       "elf": "daring",
@@ -711,7 +707,6 @@ class App {
       // -------- see issue #2 -------------------------------------------------------
       "return": "re-", // enables searching for 涙 with "return" in WK mode
       "common": "commonplace",
-      "showy": "splendid",
       "first": "first time",
       "distinction": "discrimination", // 差
       "front": "in front",
@@ -762,7 +757,6 @@ class App {
       //"flag": "flag",
       "gambler": "strawman",
       "drop bear": "maestro",
-      "pi": "hole",
       "hole": "hole", // RTK doesn't differentiate between WK's pi and hole (added stick on top) 
       // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.
       //"stamp": "stamp",
