@@ -718,7 +718,7 @@ class App {
       "creeper": "one&mouth,mouth&floor",
       "measurement": "glue",
       "commander": "leader",
-      "bookshelf": "scrapbook,tome",
+      "bookshelf": "scrapbook", // or tome, but scrapbook always has tome as well (after my changes)
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "coffin": "old man",
       // -------- these don't exist in RTK, need to be tagged with elementsWK --------
