@@ -667,7 +667,7 @@ class App {
       "normal": "universal", //1925
       "yen": "circle", //1952
       "lifeguard": "funnel",
-      "think": "think,scrapbook", //p391. scrapbook is from semantic-phonetic composition, needed e.g. for theory
+      "think": "think", //p391
       "energy": "reclining one fishhook", //energy doesn't exist in RTK
       //"energy treasure": "spirit", //2030, hard to match. there's also vapor for RTK
       "clan": "family name", //1970
@@ -736,6 +736,7 @@ class App {
       "shuriken": "mutually",
       "departure": "discharge",
       "valuable": "precious",
+      "preserve": "protect",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
