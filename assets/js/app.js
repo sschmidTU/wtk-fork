@@ -598,7 +598,7 @@ class App {
       "not": "negative",
       "arrow": "dart", //1305
       "spear": "halberd", //1311
-      "dollar": "dollarsign", //p302
+      //"dollar": "dollarsign", //p302. here always dollar
       "beggar": "slingshot,snare", //p304. snare: p327 in rtk1v4, missing stick on top
       "give": "bestow",
       "body": "somebody", //1337
@@ -720,6 +720,8 @@ class App {
       "nothing": "nothingness",
       "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
       "treasure chest": "villain",
+      "allocate": "allot",
+      "cheap": "relax",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
