@@ -28,12 +28,12 @@ class App {
     this.lastRTK    = rtkMode;
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.2.13');
+      console.log('wtk-search 1.0.2.7-offline-only.1.1.2.14');
     }
     
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    const isSmallRtkKeyword = rtkMode && this.is_small_wk_keyword(query);
+    const isSmallRtkKeyword = rtkMode && this.is_small_rtk_keyword(query);
     const isSmallWkKeyword = !rtkMode && this.is_small_wk_keyword(query);
     if (query.length <= 2 && !(isSmallRtkKeyword || isSmallWkKeyword)) {
       result.hide();
@@ -374,7 +374,7 @@ class App {
     return params;
   }
 
-  is_small_wk_keyword(query) {
+  is_small_rtk_keyword(query) {
     const small_rtk_keywords = [
       'i', 'in', 'ri', 'he', 'ax', 'of', 'go', 'me', 'do', 'v', 'x'
     ];
@@ -562,7 +562,7 @@ class App {
       "private": "elbow,receipt", //p229
       "machine": "pedestal",
       "past": "gone", //p231
-      "meet": "meeting", // meeting in RTK is only the top part (hat/umbrella + one), but mouth is basically always there too
+      "meet": "meeting", // more specific/strict: meeting&mouth. meeting in RTK is only the top part (hat/umbrella + one), but mouth is basically always there too
       "mole": "climax",
       "trash": "infant", //p232
       "skin": "pelt", //p239
@@ -711,6 +711,7 @@ class App {
       //"beans": "beans,table",
       "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
       "imperial": "dragon [old]",
+      "twenty": "two hands,measuring box",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
