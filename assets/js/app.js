@@ -18,6 +18,10 @@ class App {
     let query = $('#search-query').val().trim();
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
+    if (query === 'v' || query === 'version') {
+      console.log('wtk-search 1.0.2.7-offline-only.1.2.0.1');
+    }
+
     const rtkMode = this.isRtkMode(); // used multiple times
     const strictMode = !rtkMode && this.isStrictMode(); // TODO fix strict mode for rtk mode, currently disabled in rtk mode.
     if (query === this.lastQuery && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
@@ -26,10 +30,6 @@ class App {
     this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
     this.lastStrict = strictMode;
     this.lastRTK    = rtkMode;
-
-    if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.2.14');
-    }
     
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
@@ -152,18 +152,20 @@ class App {
         //$.each(results, function(key, page) {
         for (const page of results) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
+          const keywordLower = page.keyword.toLowerCase();
+          const keywordWKLower = page.keywordWK?.toLowerCase();
           if (strictMode) {
-            const elements = page.elements.split(',').map((val,_,__) => val.trim());
+            const elements = page.elements.split(',').map((val,_,__) => val.trim().toLowerCase());
             const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
             for (const outputRadical of outputRadicals) {
-              const trimmedRadical = outputRadical.trim();
+              const trimmedRadical = outputRadical.trim().toLowerCase();
               if (trimmedRadical !== '' && (
                     elements.includes(trimmedRadical) ||
                     !rtkMode && elementsWK?.includes(trimmedRadical) ||
                     // trimmedRadical === page.keyword || // probably too lenient for multiple radicals. for exact keyword hit, query covers it
                     // trimmedRadical === page.keywordWK ||
-                    query === page.keyword ||
-                    query === page.keywordWK
+                    query === keywordLower ||
+                    query === keywordWKLower
                   )
               ) {
                 // in strict mode, only add result if it has at least one element match.
@@ -177,7 +179,7 @@ class App {
           if (addToResults) {
             let kanjiName = page.keyword;
             if (!rtkMode && page.keywordWK && page.keywordWK.length > 0) {
-              kanjiName = page.keywordWK;
+              kanjiName = page.keywordWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
             }
             let leftPaddingPercent = 28;
             if (document.getElementById('search-box').clientWidth < 500) {
@@ -211,7 +213,7 @@ class App {
             }
           }
         } // end for each page
-        if (matches > 5) {
+        if (matches > 3) {
           const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
           // indent under query
           console.log('  matches: ' + matches + (matches === this.maxResultSize ? maxResultsReachedString : ''));
@@ -422,6 +424,11 @@ class App {
       "seven slide": "slideseven",
       "good luck": "goodluck",
       "pass through": "passthrough",
+      "treasure chest": "treasurechest",
+      "ten thousand": "tenthousand",
+      "line up": "lineup",
+      "cat pirate": "catpirate",
+      "crab trap": "crabtrap",
     }
   }
 
@@ -542,7 +549,7 @@ class App {
       "king": "king,porter,jewel,bushes,celery", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
-      "turtle": "tortoise", //p195
+      "turtle": "tortoise,turtleWK", //p195
       "pig": "sow",
       "wings": "not", //p1128 or piglets, p197
       "easy": "piggy bank", //p197
@@ -578,7 +585,7 @@ class App {
       "grain": "wheat", //p251
       "attach": "adhere", //p265
       "dynamite": "third class", //p267
-      "shrimp": "shaku", //p276
+      "shrimp": "shaku,shaku-hachi", //p276
       "jackhammer": "show", //p1167, lesson30
       "reason": "sprout", //1186 wherefore as kanji, but always also sprout (or shoot, synonym)
       "turtleshell": "armor", //1194
@@ -586,7 +593,7 @@ class App {
       // "axe": "axe", // axe works better with rtk-search anyways
       "key": "saw", //1221*
       "wolverine": "broom",//1224*
-      "conflict": "content", //1238
+      "conflict": "contend", //1238
       "buddy": "old boy", //1246
       "rake": "comb", //p290
       "box": "shovel", //p291
@@ -602,7 +609,7 @@ class App {
       "not": "negative",
       "arrow": "dart", //1305
       "spear": "halberd", //1311
-      "dollar": "dollarsign", //p302
+      //"dollar": "dollarsign", //p302. here always dollar
       "beggar": "slingshot,snare", //p304. snare: p327 in rtk1v4, missing stick on top
       "give": "bestow",
       "body": "somebody", //1337
@@ -614,11 +621,10 @@ class App {
       "mustache": "hood&mouth", // mustache in itself seems to be "hood mouth" in RTK, see 尚
       "building": "pinnacle,city walls", //lesson35, or city walls (p394, when on the right)
       "pi": "paper punch,hole", //p316. RTK doesn't differentiate between WK's pi and hole (added stick on top). though almost all paper punches in elements have hole as well, so far (until 2400)
-      "syrup": "goods tree", // e.g. 1469, syrup doesn't exist in RTK
       "poop": "cocoon", //p322
       "snake": "fingerprint", //p328
       "comb": "staples", //p329
-      "alcohol": "sign of the bird", //1534
+      "alcohol": "whiskey bottle", // included in sign of the bird: 1534
       "plate": "dish", //1555
       "peace": "even", // or call, but covered by even
       "treasure": "sheaf,tucked under the arm", //p339 or arm maybe, p222
@@ -634,7 +640,7 @@ class App {
       "angel": "resin,pole", //p345, or pole sometimes (missing the drop, e.g. needed for tea)
       "nurse": "grass skirt", //p346
       "life": "grow up,king,porter,celery", //p347, or king/porter. sometimes grow up e.g. for poison, = life in WK. RTK life is 1675. celery = two lives in lifeguard
-      "signpost": "walking legs bushes", //p350, signpost doesn't exist in RTK
+      "signpost": "walking legs&bushes", //p350, signpost doesn't exist in RTK
       "plow": "christmas tree", //p35̂1
       "spring": "bonsai",
       "boot": "cabbage", //p353
@@ -642,6 +648,7 @@ class App {
       "dangle": "droop",
       "monalisa": "concurrently", //1723
       "injustice": "un-", //1760
+      "criminal": "un-",
       "hook": "key", //p363
       "korea": "locket", //p364
       "dry": "dry,potato,cornstalk", //1777, or potato (p366, needed for eaves/house counter), or cornstalk (p352, needed for dedicate)
@@ -665,7 +672,7 @@ class App {
       "normal": "universal", //1925
       "yen": "circle", //1952
       "lifeguard": "funnel",
-      "think": "think,scrapbook", //p391. scrapbook is from semantic-phonetic composition, needed e.g. for theory
+      "think": "think", //p391
       "energy": "reclining one fishhook", //energy doesn't exist in RTK
       //"energy treasure": "spirit", //2030, hard to match. there's also vapor for RTK
       "clan": "family name", //1970
@@ -712,28 +719,60 @@ class App {
       "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
       "imperial": "dragon [old]",
       "twenty": "two hands,measuring box",
+      "city": "market",
+      "oneself": "self",
+      "teacher": "filial piety",
+      //"excuse": "excuse,village stocks", // primitive actually village stocks in RTK, but i annotated all the kanji with excuse as well
+      "saw": "barge", // or craft&mediocre
+      "comfort": "music",
+      "festival": "ritual",
+      "nothing": "nothingness",
+      "treasurechest": "villain",
+      "tenthousand": "ten thousand",
+      "allocate": "allot",
+      "cheap": "relax",
+      "restaurant": "pavilion",
+      "road": "road-way",
+      "control": "system",
+      "warehouse": "godown,warehouse", // warehouse WK radical is godown in RTK, but there's also the RTK warehouse kanji
+      "farming": "agriculture",
+      "catpirate": "stamp album", // or box stamps
+      "syrup": "furniture", // or wooden goods, but that has too much "wood" in it for searching. e.g. 1469, syrup doesn't exist in RTK
+      "shuriken": "mutually",
+      "departure": "discharge",
+      "valuable": "precious",
+      "preserve": "protect",
+      "shop": "roof",
+      "wind": "windWK,wind", // the wk radical wind is the kanji 風, which doesn't have a unique name in rtk (wind is just the external part in rtk)
+      "house": "houseWK,house", // the wk radical house is the kanji 家, which doesn't have a unique name in rtk (house is just the top part in rtk)
+      "form": "contain",
+      "crabtrap": "tremendously",
+      "wild": "wreath", // or "laid waste", same thing basically
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
-      "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
       //"cactus": "cactus", // or mountain (split up), but for now no difference. rtk3v4: described in 聯 2676 strung together
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "business": "upside down in a row", // plus not yet or tree or husband, but doesn't make a difference for now. also not clear.
       "youngerbrother": "horns&dollar",
-      "guy": "good&city walls",
+      "guy": "good&city walls,silver&city walls", // 郷: silver+city walls, also guy in WK
       "penguin": "shredder&taskmaster",
       "frostbite": "dirt&walking legs",
       "satellite": "vulture&king&mountain",
       "bully": "ceiling&mouth&hood&human legs&street",
       "showy": "flowers&silage&ten,splendor", // WK kanji name showy is splendor in RTK
       "mantis": "gnats&drop&insect&belt",
+      "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
+      "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
+      "zombie": "earthenware jar&scarf", // or lidded crock&scarf
+      "library": "flag&scrapbook",
       // --------------------------------------------
       "elf": "daring",
       "coral": "helping hand",
       "bear": "maestro without baton",
       "spikes": "row,upside down in a row",
-      "pope": "ten eye",
+      "pope": "ten&eye",
       "ground": "one,floor,ceiling",
       "creeper": "one&mouth,mouth&floor",
       "measurement": "glue",
@@ -766,7 +805,7 @@ class App {
       "drop": "drop,drops",
       "fins": "animal legs,eight",
       "legs": "human legs,fenceposts", // or fenceposts, p377
-      "lion": "straightened hook",
+      "lion": "straightened hook", // or fishhook sometimes? but all lion kanji from WK now have straightened hook or lionWK
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce
