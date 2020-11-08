@@ -9,7 +9,7 @@ But the 'official' radicals are from an 18th century chinese dictionary (Kangxi)
 <div id="subtitle2" style="text-align: center">Press 📋 to copy the Kanji to clipboard.</div>
 {% assign count = '0' %}
 {% for post in site.pages %}
-{% if post.layout == 'kanji' %}
+{% if post.layout == 'kanji' or post.layout == 'kanji-remain' %}
 {% capture count %}{{ count | plus: '1' }}{% endcapture %}
 {% endif %}
 {% endfor %}
