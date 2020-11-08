@@ -638,6 +638,7 @@ class App {
       "dangle": "droop",
       "monalisa": "concurrently", //1723
       "injustice": "un-", //1760
+      "criminal": "un-",
       "hook": "key", //p363
       "korea": "locket", //p364
       "dry": "dry,potato,cornstalk", //1777, or potato (p366, needed for eaves/house counter), or cornstalk (p352, needed for dedicate)
@@ -714,6 +715,10 @@ class App {
       //"excuse": "excuse,village stocks", // primitive actually village stocks in RTK, but i annotated all the kanji with excuse as well
       "saw": "barge", // or craft&mediocre
       "zombie": "earthenware jar&scarf", // or lidded crock&scarf
+      "comfort": "music",
+      "festival": "ritual",
+      "nothing": "nothingness",
+      "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
