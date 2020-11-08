@@ -154,7 +154,7 @@ class App {
             const elements = page.elements.split(',').map((val,_,__) => val.trim().toLowerCase());
             const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
             for (const outputRadical of outputRadicals) {
-              const trimmedRadical = outputRadical.trim();
+              const trimmedRadical = outputRadical.trim().toLowerCase();
               if (trimmedRadical !== '' && (
                     elements.includes(trimmedRadical) ||
                     !rtkMode && elementsWK?.includes(trimmedRadical) ||
@@ -423,6 +423,7 @@ class App {
       "treasure chest": "treasurechest",
       "ten thousand": "tenthousand",
       "line up": "lineup",
+      "cat pirate": "catpirate",
     }
   }
 
@@ -731,6 +732,8 @@ class App {
       "control": "system",
       "warehouse": "godown,warehouse", // warehouse WK radical is godown in RTK, but there's also the RTK warehouse kanji
       "farming": "agriculture",
+      "catpirate": "stamp album", // or box stamps
+      "syrup": "furniture", // or wooden goods, but that has too much "wood" in it for searching
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
