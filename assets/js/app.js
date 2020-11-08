@@ -148,6 +148,8 @@ class App {
         //$.each(results, function(key, page) {
         for (const page of results) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
+          const keywordLower = page.keyword.toLowerCase();
+          const keywordWKLower = page.keywordWK?.toLowerCase();
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim().toLowerCase());
             const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
@@ -158,8 +160,8 @@ class App {
                     !rtkMode && elementsWK?.includes(trimmedRadical) ||
                     // trimmedRadical === page.keyword || // probably too lenient for multiple radicals. for exact keyword hit, query covers it
                     // trimmedRadical === page.keywordWK ||
-                    query === page.keyword ||
-                    query === page.keywordWK
+                    query === keywordLower ||
+                    query === keywordWKLower
                   )
               ) {
                 // in strict mode, only add result if it has at least one element match.
@@ -173,7 +175,7 @@ class App {
           if (addToResults) {
             let kanjiName = page.keyword;
             if (!rtkMode && page.keywordWK && page.keywordWK.length > 0) {
-              kanjiName = page.keywordWK;
+              kanjiName = page.keywordWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
             }
             let leftPaddingPercent = 28;
             if (document.getElementById('search-box').clientWidth < 500) {
@@ -729,6 +731,7 @@ class App {
       "road": "road-way",
       "control": "system",
       "warehouse": "godown,warehouse", // warehouse WK radical is godown in RTK, but there's also the RTK warehouse kanji
+      "farming": "agriculture",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
