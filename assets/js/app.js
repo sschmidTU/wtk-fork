@@ -419,6 +419,7 @@ class App {
       "good luck": "goodluck",
       "pass through": "passthrough",
       "treasure chest": "treasurechest",
+      "ten thousand": "tenthousand",
     }
   }
 
@@ -721,10 +722,13 @@ class App {
       "nothing": "nothingness",
       "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
       "treasurechest": "villain",
+      "tenthousand": "ten thousand",
       "allocate": "allot",
       "cheap": "relax",
       "restaurant": "pavilion",
       "road": "road-way",
+      "control": "system",
+      "warehouse": "godown,warehouse", // warehouse WK radical is godown in RTK, but there's also the RTK warehouse kanji
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
