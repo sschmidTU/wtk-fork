@@ -33,7 +33,7 @@ class App {
     
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    const isSmallRtkKeyword = rtkMode && this.is_rtk_keyword_with_length_smaller_three(query);
+    const isSmallRtkKeyword = rtkMode && this.is_small_wk_keyword(query);
     const isSmallWkKeyword = !rtkMode && this.is_small_wk_keyword(query);
     if (query.length <= 2 && !(isSmallRtkKeyword || isSmallWkKeyword)) {
       result.hide();
@@ -374,7 +374,7 @@ class App {
     return params;
   }
 
-  is_rtk_keyword_with_length_smaller_three(query) {
+  is_small_wk_keyword(query) {
     const small_rtk_keywords = [
       'i', 'in', 'ri', 'he', 'ax', 'of', 'go', 'me', 'do', 'v', 'x'
     ];
