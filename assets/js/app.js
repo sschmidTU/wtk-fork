@@ -207,7 +207,7 @@ class App {
             }
           }
         } // end for each page
-        if (matches > 5) {
+        if (matches > 3) {
           const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
           // indent under query
           console.log('  matches: ' + matches + (matches === this.maxResultSize ? maxResultsReachedString : ''));
