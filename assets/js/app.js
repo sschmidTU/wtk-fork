@@ -574,7 +574,7 @@ class App {
       "grain": "wheat", //p251
       "attach": "adhere", //p265
       "dynamite": "third class", //p267
-      "shrimp": "shaku", //p276
+      "shrimp": "shaku,shaku-hachi", //p276
       "jackhammer": "show", //p1167, lesson30
       "reason": "sprout", //1186 wherefore as kanji, but always also sprout (or shoot, synonym)
       "turtleshell": "armor", //1194
