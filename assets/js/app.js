@@ -149,6 +149,7 @@ class App {
       if (results && results.length > 0) {
         // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
         let matches = 0;
+        let entriesAdded = 0;
         //$.each(results, function(key, page) {
         for (const page of results) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
@@ -172,11 +173,12 @@ class App {
                 // we could be even stricter and check that all elements match, but that rarely makes a difference,
                 //   and costs quite a bit of performance and refactoring. see feat/stricterMode branch
                 addToResults = true;
+                matches++;
                 break;
               }
             }
           }
-          if (addToResults) {
+          if (addToResults && entriesAdded < this.maxResultSize) { // performance: don't add more than maxResultSize (50) matches
             let kanjiName = page.keyword;
             if (!rtkMode && page.keywordWK && page.keywordWK.length > 0) {
               kanjiName = page.keywordWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
@@ -207,17 +209,15 @@ class App {
             document.getElementById('cbCopyButton'+page.id).onclick = function() {
               self.cbCopyButtonClick(page.id, page.kanji);
             }
-            matches++;
-            if (matches >= this.maxResultSize) {
-              break; // performance: don't add more than maxResultSize (50) matches
-            }
+            entriesAdded++;
           }
         } // end for each page
-        if (matches > 3) {
-          const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
-          // indent under query
-          console.log('  matches: ' + matches + (matches === this.maxResultSize ? maxResultsReachedString : ''));
-       }
+        if (!strictMode) {
+          matches = results.length;
+        }
+        const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
+        // indent under query
+        console.log('  matches: ' + matches + (entriesAdded === this.maxResultSize ? maxResultsReachedString : ''));
       }
     } // end for query
     // if (results.length == 0) {
