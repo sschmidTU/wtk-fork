@@ -732,7 +732,7 @@ class App {
       "coral": "helping hand",
       "bear": "maestro without baton",
       "spikes": "row,upside down in a row",
-      "pope": "ten eye",
+      "pope": "ten&eye",
       "ground": "one,floor,ceiling",
       "creeper": "one&mouth,mouth&floor",
       "measurement": "glue",
