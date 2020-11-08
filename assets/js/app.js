@@ -708,6 +708,9 @@ class App {
       "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
       "imperial": "dragon [old]",
       "twenty": "two hands,measuring box",
+      "city": "market",
+      "oneself": "self",
+      "teacher": "filial piety",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
@@ -762,7 +765,7 @@ class App {
       "drop": "drop,drops",
       "fins": "animal legs,eight",
       "legs": "human legs,fenceposts", // or fenceposts, p377
-      "lion": "straightened hook",
+      "lion": "straightened hook", // or fishhook sometimes? but all lion kanji from WK now have straightened hook or lionWK
       //"ground fins": "tool", // not ideal, this needs to be in combination
       "knife": "saber",
       "window": "breasts,mama", // FYI mama is only used for 2 kanji, mama and pierce
