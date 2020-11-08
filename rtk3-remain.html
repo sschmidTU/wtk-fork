@@ -8,11 +8,9 @@ title: rtk3-remain
 <hr>
 
 <article>
-{% assign count = '0' %}
 {% for post in site.pages %}
 {% if post.layout == 'kanji-remain' %}
-{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-	<h3>{{count}}. <a href="..{{ post.url }}index.html" title="{{ post.title }}">{{ post.kanji }}</a></h3>
+	<h3>{{post.v6}}. <a href="..{{ post.url }}index.html" title="{{ post.title }}">{{ post.kanji }}</a></h3>
 {% endif %}
 {% endfor %}
 </article>
