@@ -635,7 +635,7 @@ class App {
       "angel": "resin,pole", //p345, or pole sometimes (missing the drop, e.g. needed for tea)
       "nurse": "grass skirt", //p346
       "life": "grow up,king,porter,celery", //p347, or king/porter. sometimes grow up e.g. for poison, = life in WK. RTK life is 1675. celery = two lives in lifeguard
-      "signpost": "walking legs bushes", //p350, signpost doesn't exist in RTK
+      "signpost": "walking legs&bushes", //p350, signpost doesn't exist in RTK
       "plow": "christmas tree", //p35̂1
       "spring": "bonsai",
       "boot": "cabbage", //p353
