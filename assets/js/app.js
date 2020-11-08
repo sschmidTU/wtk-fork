@@ -26,7 +26,7 @@ class App {
     this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.0.23');
+      console.log('wtk-search 1.0.2.7-offline-only.1.1.2.12');
     }
     
     var result  = $('#search-results');
@@ -427,7 +427,7 @@ class App {
       "world": "generation",
       "dawn": "nightbreak", // p25
       "former": "olden times", //p27
-      "self": "oneself",
+      "self": "self,oneself", // two self radicals in WK. the self that is 'snake' in RTK can also be 'self' there, but no difference for now
       "middle": "inX",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
@@ -500,7 +500,7 @@ class App {
       "warn": "admonish",
       "ceremony": "arrow", //p143
       "drunkard": "fiesta",
-      "tocut": "thanksgiving", //p145, "to cut" is not from WK but from Jisho/Phonetic-semantic composition
+      "tocut": "thanksgiving", //p145, or ten fiesta. "to cut" is not from WK but from Jisho/Phonetic-semantic composition
       "become": "turn into", //p146
       "bar": "float", //p148
       "plan": "undertake", //p150, only kanji in WK
@@ -526,7 +526,7 @@ class App {
       //"monk": "boy"
       "guard": "devil", //p183
       "mask": "formerly",
-      "king": "king,porter,jewel,bushes", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
+      "king": "king,porter,jewel,bushes,celery", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise", //p195
@@ -546,7 +546,7 @@ class App {
       "height": "length",
       "again": "grow late", //p223, or could also be 再      
       "stool": "crotch",
-      "private": "elbow", //p229
+      "private": "elbow,receipt", //p229
       "machine": "pedestal",
       "past": "gone", //p231
       "meet": "meeting", // meeting in RTK is only the top part (hat/umbrella + one), but mouth is basically always there too
@@ -582,7 +582,7 @@ class App {
       "task": "utilize", //1265
       "blackjack": "salad", //lesson32
       "longago": "once upon a time", //1268
-      "yurt": "caverns", //p295
+      "yurt": "caverns,twenty", //p295, twenty is bottom part of caverns / below canopy
       "gladiator": "quarter", //p297
       "onesided": "one-sided", //1297
       "hills": "building blocks", //1299, also "of"
@@ -620,7 +620,7 @@ class App {
       "slice": "sign of the hog", //1637
       "angel": "resin,pole", //p345, or pole sometimes (missing the drop, e.g. needed for tea)
       "nurse": "grass skirt", //p346
-      "life": "grow up,king,porter", //p347, or king/porter. sometimes grow up e.g. for poison, = life in WK. RTK life is 1675
+      "life": "grow up,king,porter,celery", //p347, or king/porter. sometimes grow up e.g. for poison, = life in WK. RTK life is 1675. celery = two lives in lifeguard
       "signpost": "walking legs bushes", //p350, signpost doesn't exist in RTK
       "plow": "christmas tree", //p35̂1
       "spring": "bonsai",
@@ -697,10 +697,12 @@ class App {
       //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
       //"beans": "beans,table",
       "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
+      "imperial": "dragon [old]",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
       "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
+      //"cactus": "cactus", // or mountain (split up), but for now no difference. rtk3v4: described in 聯 2676 strung together
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "business": "upside down in a row", // plus not yet or tree or husband, but doesn't make a difference for now. also not clear.
@@ -722,7 +724,7 @@ class App {
       "creeper": "one&mouth,mouth&floor",
       "measurement": "glue",
       "commander": "leader",
-      "bookshelf": "scrapbook,tome",
+      "bookshelf": "scrapbook", // or tome, but scrapbook always has tome as well (after my changes)
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
       "coffin": "old man",
       // -------- these don't exist in RTK, need to be tagged with elementsWK --------
@@ -758,7 +760,7 @@ class App {
       "cliff": "cliff,drag", // or drag, p396
       //"flood": "flood",
       "tsunami": "water",
-      "boil": "fire",
+      "boil": "oven-fire", // or barbecue
       //"flower": "flower",
       "greenhouse": "graveyard",
       "icicle": "turtle",
