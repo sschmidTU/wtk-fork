@@ -544,7 +544,7 @@ class App {
       "king": "king,porter,jewel,bushes,celery", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
-      "turtle": "tortoise", //p195
+      "turtle": "tortoise,turtleWK", //p195
       "pig": "sow",
       "wings": "not", //p1128 or piglets, p197
       "easy": "piggy bank", //p197
@@ -616,7 +616,6 @@ class App {
       "mustache": "hood&mouth", // mustache in itself seems to be "hood mouth" in RTK, see 尚
       "building": "pinnacle,city walls", //lesson35, or city walls (p394, when on the right)
       "pi": "paper punch,hole", //p316. RTK doesn't differentiate between WK's pi and hole (added stick on top). though almost all paper punches in elements have hole as well, so far (until 2400)
-      "syrup": "goods tree", // e.g. 1469, syrup doesn't exist in RTK
       "poop": "cocoon", //p322
       "snake": "fingerprint", //p328
       "comb": "staples", //p329
@@ -733,7 +732,10 @@ class App {
       "warehouse": "godown,warehouse", // warehouse WK radical is godown in RTK, but there's also the RTK warehouse kanji
       "farming": "agriculture",
       "catpirate": "stamp album", // or box stamps
-      "syrup": "furniture", // or wooden goods, but that has too much "wood" in it for searching
+      "syrup": "furniture", // or wooden goods, but that has too much "wood" in it for searching. e.g. 1469, syrup doesn't exist in RTK
+      "shuriken": "mutually",
+      "departure": "discharge",
+      "valuable": "precious",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
