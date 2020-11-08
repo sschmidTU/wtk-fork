@@ -711,6 +711,7 @@ class App {
       "city": "market",
       "oneself": "self",
       "teacher": "filial piety",
+      //"excuse": "excuse,village stocks", // primitive actually village stocks in RTK, but i annotated all the kanji with excuse as well
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
