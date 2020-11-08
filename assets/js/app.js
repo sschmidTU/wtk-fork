@@ -755,7 +755,7 @@ class App {
       "cliff": "cliff,drag", // or drag, p396
       //"flood": "flood",
       "tsunami": "water",
-      "boil": "fire",
+      "boil": "oven-fire", // or barbecue
       //"flower": "flower",
       "greenhouse": "graveyard",
       "icicle": "turtle",
