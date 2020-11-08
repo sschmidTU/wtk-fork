@@ -424,6 +424,7 @@ class App {
       "ten thousand": "tenthousand",
       "line up": "lineup",
       "cat pirate": "catpirate",
+      "crab trap": "crabtrap",
     }
   }
 
@@ -740,6 +741,9 @@ class App {
       "shop": "roof",
       "wind": "windWK,wind", // the wk radical wind is the kanji 風, which doesn't have a unique name in rtk (wind is just the external part in rtk)
       "house": "houseWK,house", // the wk radical house is the kanji 家, which doesn't have a unique name in rtk (house is just the top part in rtk)
+      "form": "contain",
+      "crabtrap": "tremendously",
+      "wild": "wreath", // or "laid waste", same thing basically
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
