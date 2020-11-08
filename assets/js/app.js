@@ -19,7 +19,7 @@ class App {
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.2.0.1');
+      console.log('wtk-search 1.0.2.7-offline-only.1.2.0.2');
     }
 
     const rtkMode = this.isRtkMode(); // used multiple times
@@ -380,24 +380,14 @@ class App {
     const small_rtk_keywords = [
       'i', 'in', 'ri', 'he', 'ax', 'of', 'go', 'me', 'do', 'v', 'x'
     ];
-    for (const keyword of small_rtk_keywords) {
-      if (query === keyword) {
-        return true;
-      }
-    }
-    return false;
+    return small_rtk_keywords.includes(query);
   }
 
   is_small_wk_keyword(query) {
     const small_wk_keywords = [
       'pi', 'go', 
     ]
-    for (const radical of small_wk_keywords) {
-      if (query === radical) {
-        return true;
-      }
-    }
-    return false;
+    return small_wk_keywords.includes(query);
   }
 
   // eliminate spaces so that all (input) radicals are separated by white space (" ").
