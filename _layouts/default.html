@@ -19,7 +19,7 @@
 <!-- see 404.md, the missing kanji -->
 <div id='debug' style="display: none">Kanji searchable: {{kanjicount}}</div>
   <div id="foot">
-    <p>@ {{ site.time | date: "%Y" }} <a href="https://github.com/sschmidTU/mr-kanji-search-wtk">wtk-search v{{ site.version }}</a> by <a href="https://community.wanikani.com/t/multi-radical-kanji-search-web/46781">Saimin@WK</a>, based on rtk-search</p>
+    <p>@ {{ site.time | date: "%Y" }} <a href="https://github.com/sschmidTU/mr-kanji-search-wtk">wtk-search v{{ site.version }}</a> by <a href="https://community.wanikani.com/t/multi-radical-kanji-search-web/46781">Saimin@WK</a>, based on rtk-search
     {% if page.type == 'index' %}
       {% assign kanjicount = '0' %}
       {% for post in site.pages %}
@@ -27,8 +27,8 @@
       {% capture kanjicount %}{{ kanjicount | plus: '1' }}{% endcapture %}
       {% endif %}
       {% endfor %}
-      <p>Kanji searchable: {{kanjicount}}</p>
-    {% endif %}
+Kanji searchable: {{kanjicount}}
+    {% endif %}</p>
     
   </div>
 
