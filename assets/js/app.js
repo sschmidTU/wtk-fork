@@ -149,7 +149,7 @@ class App {
         for (const page of results) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           if (strictMode) {
-            const elements = page.elements.split(',').map((val,_,__) => val.trim());
+            const elements = page.elements.split(',').map((val,_,__) => val.trim().toLowerCase());
             const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
             for (const outputRadical of outputRadicals) {
               const trimmedRadical = outputRadical.trim();
