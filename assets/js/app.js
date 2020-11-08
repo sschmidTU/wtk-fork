@@ -737,6 +737,7 @@ class App {
       "departure": "discharge",
       "valuable": "precious",
       "preserve": "protect",
+      "shop": "roof",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
