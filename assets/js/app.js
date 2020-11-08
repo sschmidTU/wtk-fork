@@ -723,6 +723,8 @@ class App {
       "treasurechest": "villain",
       "allocate": "allot",
       "cheap": "relax",
+      "restaurant": "pavilion",
+      "road": "road-way",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
