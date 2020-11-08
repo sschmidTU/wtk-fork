@@ -422,6 +422,7 @@ class App {
       "pass through": "passthrough",
       "treasure chest": "treasurechest",
       "ten thousand": "tenthousand",
+      "line up": "lineup",
     }
   }
 
@@ -718,11 +719,9 @@ class App {
       "teacher": "filial piety",
       //"excuse": "excuse,village stocks", // primitive actually village stocks in RTK, but i annotated all the kanji with excuse as well
       "saw": "barge", // or craft&mediocre
-      "zombie": "earthenware jar&scarf", // or lidded crock&scarf
       "comfort": "music",
       "festival": "ritual",
       "nothing": "nothingness",
-      "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
       "treasurechest": "villain",
       "tenthousand": "ten thousand",
       "allocate": "allot",
@@ -735,19 +734,22 @@ class App {
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
-      "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
       //"cactus": "cactus", // or mountain (split up), but for now no difference. rtk3v4: described in 聯 2676 strung together
       // ^ above checked with RTK physical edition, at least for WK radicals
       // ---- some WK radicals not existing in RTK ---- //
       "business": "upside down in a row", // plus not yet or tree or husband, but doesn't make a difference for now. also not clear.
       "youngerbrother": "horns&dollar",
-      "guy": "good&city walls",
+      "guy": "good&city walls,silver&city walls", // 郷: silver+city walls, also guy in WK
       "penguin": "shredder&taskmaster",
       "frostbite": "dirt&walking legs",
       "satellite": "vulture&king&mountain",
       "bully": "ceiling&mouth&hood&human legs&street",
       "showy": "flowers&silage&ten,splendor", // WK kanji name showy is splendor in RTK
       "mantis": "gnats&drop&insect&belt",
+      "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
+      "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
+      "zombie": "earthenware jar&scarf", // or lidded crock&scarf
+      "library": "flag&scrapbook",
       // --------------------------------------------
       "elf": "daring",
       "coral": "helping hand",
