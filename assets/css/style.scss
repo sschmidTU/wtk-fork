@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.0em; /* TODO set in .mainTitleH1 */
   margin-bottom: 0em;
 
   * + & {
@@ -79,7 +79,7 @@ h1 {
 }
 
 .mainTitleH1 {
-  font-size: 2.0em;
+  font-size: 1.8em;
 }
 
 h1 > a:visited {
