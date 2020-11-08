@@ -558,7 +558,7 @@ class App {
       "private": "elbow,receipt", //p229
       "machine": "pedestal",
       "past": "gone", //p231
-      "meet": "meeting", // meeting in RTK is only the top part (hat/umbrella + one), but mouth is basically always there too
+      "meet": "meeting", // more specific/strict: meeting&mouth. meeting in RTK is only the top part (hat/umbrella + one), but mouth is basically always there too
       "mole": "climax",
       "trash": "infant", //p232
       "skin": "pelt", //p239
@@ -707,6 +707,7 @@ class App {
       //"beans": "beans,table",
       "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
       "imperial": "dragon [old]",
+      "twenty": "two hands,measuring box",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
