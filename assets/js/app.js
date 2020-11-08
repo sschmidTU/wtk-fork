@@ -582,7 +582,7 @@ class App {
       // "axe": "axe", // axe works better with rtk-search anyways
       "key": "saw", //1221*
       "wolverine": "broom",//1224*
-      "conflict": "content", //1238
+      "conflict": "contend", //1238
       "buddy": "old boy", //1246
       "rake": "comb", //p290
       "box": "shovel", //p291
@@ -719,6 +719,7 @@ class App {
       "festival": "ritual",
       "nothing": "nothingness",
       "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
+      "treasure chest": "villain",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
