@@ -693,6 +693,7 @@ class App {
       //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
       //"beans": "beans,table",
       "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
+      "imperial": "dragon [old]",
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
