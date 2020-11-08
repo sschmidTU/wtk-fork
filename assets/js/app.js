@@ -24,22 +24,23 @@ class App {
       return;
     }
     this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
+    this.lastStrict = strictMode;
+    this.lastRTK    = rtkMode;
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.1.2.12');
+      console.log('wtk-search 1.0.2.7-offline-only.1.1.2.13');
     }
     
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    const isSmallRtkKeyword = this.is_rtk_keyword_with_length_smaller_three(query);
-    if (query.length <= 2 && !(rtkMode && isSmallRtkKeyword)) {
+    const isSmallRtkKeyword = rtkMode && this.is_rtk_keyword_with_length_smaller_three(query);
+    const isSmallWkKeyword = !rtkMode && this.is_small_wk_keyword(query);
+    if (query.length <= 2 && !(isSmallRtkKeyword || isSmallWkKeyword)) {
       result.hide();
       entries.empty();
       return;
     }
     //this.lastQueries.push(query);
-    this.lastStrict = strictMode;
-    this.lastRTK    = rtkMode;
     //if (this.lastQueries.length > 5) {
       // TODO do something with lastQueries, maybe push limit to 10 or so
       //this.lastQueries.shift(); // remove oldest query
@@ -213,7 +214,7 @@ class App {
         if (matches > 5) {
           const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
           // indent under query
-          console.log('  matches: ' + results.length + (matches === this.maxResultSize ? maxResultsReachedString : ''));
+          console.log('  matches: ' + matches + (matches === this.maxResultSize ? maxResultsReachedString : ''));
        }
       }
     } // end for query
@@ -379,6 +380,18 @@ class App {
     ];
     for (const keyword of small_rtk_keywords) {
       if (query === keyword) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  is_small_wk_keyword(query) {
+    const small_wk_keywords = [
+      'pi', 'go', 
+    ]
+    for (const radical of small_wk_keywords) {
+      if (query === radical) {
         return true;
       }
     }
@@ -776,7 +789,7 @@ class App {
       "cloud": "rising cloud",
       //"rain": "rain",
       //"ice": "ice",
-      "insect": "gnats",
+      "insect": "insect", // not gnats, which is mantis
       //"turkey": "turkey",
       //"feathers": "feathers",
       "soul": "state of mind",
