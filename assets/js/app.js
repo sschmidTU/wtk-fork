@@ -614,7 +614,7 @@ class App {
       "poop": "cocoon", //p322
       "snake": "fingerprint", //p328
       "comb": "staples", //p329
-      "alcohol": "sign of the bird", //1534
+      "alcohol": "whiskey bottle", // included in sign of the bird: 1534
       "plate": "dish", //1555
       "peace": "even", // or call, but covered by even
       "treasure": "sheaf,tucked under the arm", //p339 or arm maybe, p222
