@@ -418,6 +418,7 @@ class App {
       "seven slide": "slideseven",
       "good luck": "goodluck",
       "pass through": "passthrough",
+      "treasure chest": "treasurechest",
     }
   }
 
@@ -719,7 +720,7 @@ class App {
       "festival": "ritual",
       "nothing": "nothingness",
       "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
-      "treasure chest": "villain",
+      "treasurechest": "villain",
       "allocate": "allot",
       "cheap": "relax",
       // ---------------------------------- ^^ -------- //
