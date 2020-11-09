@@ -420,7 +420,7 @@ class App {
 
   get_wk_to_rtk_replacements() {
     return {
-      "cross": "ten",
+      "cross": "ten,needle",
       "sun": "sun,mortar", // mortar (臼) is given as sun in WK
       //"moon": "moon" or month, but kanji with month always also have moon, and not vice versa
       "month": "moon", // catch cases where only moon is given, see above
