@@ -30,6 +30,14 @@ body {
       width: 88.8%;
       margin: 1em auto 2em; } }
 
+#foot p, #foot a {
+  color: #cecece;
+}
+
+#foot a:hover {
+  color: #595959;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, Georgia, "Times New Roman", serif;
   font-weight: normal;
