@@ -145,8 +145,8 @@ class WTKSearch {
 
     let idsAddedToResults = {};
     let searchResults = {
-      list: [],
       length: 0,
+      list: [],
     };
     // search for each rtkQuery
     for (let i=0; i<rtkQueries.length; i++) {
