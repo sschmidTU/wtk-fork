@@ -19,7 +19,7 @@ class App {
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.2.0.2');
+      console.log('wtk-search 1.0.2.7-offline-only.1.2.0.3');
     }
 
     const rtkMode = this.isRtkMode(); // used multiple times
@@ -424,7 +424,7 @@ class App {
 
   get_wk_to_rtk_replacements() {
     return {
-      "cross": "ten",
+      "cross": "ten,needle",
       "sun": "sun,mortar", // mortar (臼) is given as sun in WK
       //"moon": "moon" or month, but kanji with month always also have moon, and not vice versa
       "month": "moon", // catch cases where only moon is given, see above
