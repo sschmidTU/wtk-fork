@@ -1,4 +1,4 @@
-class App {
+class WTKSearch {
   copyButtonsHighlighted   = {};
   copyButtonSelectedClass  = 'btnClipLastSelected';
   checkboxStrictQuery      = 'input[name=strictModeCheckbox]';
@@ -914,8 +914,8 @@ class App {
 }
 
 $(document).ready(function() {
-  const app = new App();
+  const wtk = new WTKSearch();
 
-  app.setupHTMLElements();
-  app.logLevel = app.LogLevels.Info; // use LogLevels.Silent to silence console.logs
+  wtk.setupHTMLElements();
+  wtk.logLevel = wtk.LogLevels.Info; // use LogLevels.Silent to silence console.logs
 });
