@@ -15,14 +15,36 @@ class App {
   lastRTK                  = false;
   logLevel                 = 0; // silent by default
 
-  search() {
-    let query = $('#search-query').val().trim();
-    query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
+  searchBoxSearch() {
+    let query = $('#search-query').val();
+    this.search(query, false, false, true);
+  }
+
+  /** Search for kanji using Wanikani or RTK names for elements/Kanji.
+   * 
+   * @param {string} query a search query (string), using Wanikani radicals or RTK names (elements/primitives/kanji names) 
+   * @param {boolean} returnResults whether the return value of this function should contain the length and
+   * @param {boolean} forceSearch whether to force executing the search, or, if false, cancel the search if it was searched before, the query is too short etc.
+   * @param {boolean} updateHTMLElements whether to update
+   * @returns {Object} object with the properties:
+   *  length: number of results
+   *  list: ordered list of results. the first one is the top one on the website.
+   *  $kanji: $page
+   *   where the page for each page has the properties id, kanji (same as $kanji), keyword,
+   *   keywordWK (optional), elements, elementsWK (optional).
+   *   If !returnResults, only the length property will be included in the returned object.
+   */
+  search(query, returnResults = true, forceSearch = true, updateHTMLElements = false) {
+    if (!query?.trim) {
+      return { length: 0 };
+    }
+    query = query.trim().toLowerCase();
+    // trim is useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     const rtkMode = this.isRtkMode(); // used multiple times
     const strictMode = !rtkMode && this.isStrictMode(); // TODO fix strict mode for rtk mode, currently disabled in rtk mode.
-    if (query === this.lastQuery && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
-      return;
+    if (!forceSearch && query === this.lastQuery && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
+      return { length: 0 };
     }
     this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
     this.lastStrict = strictMode;
@@ -32,10 +54,10 @@ class App {
     var entries = $('#search-results .entries');
     const isSmallRtkKeyword = rtkMode && this.is_small_rtk_keyword(query);
     const isSmallWkKeyword = !rtkMode && this.is_small_wk_keyword(query);
-    if (query.length <= 2 && !(isSmallRtkKeyword || isSmallWkKeyword)) {
+    if (!forceSearch && query.length <= 2 && !(isSmallRtkKeyword || isSmallWkKeyword)) {
       result.hide();
       entries.empty();
-      return;
+      return { length: 0 };
     }
     //this.lastQueries.push(query);
     //if (this.lastQueries.length > 5) {
@@ -122,6 +144,10 @@ class App {
     // }
 
     let idsAddedToResults = {};
+    let searchResults = {
+      list: [],
+      length: 0,
+    };
     // search for each rtkQuery
     for (let i=0; i<rtkQueries.length; i++) {
       let query = rtkQueries[i];
@@ -175,7 +201,33 @@ class App {
               }
             }
           }
-          if (addToResults && entriesAdded < this.maxResultSize) { // performance: don't add more than maxResultSize (50) matches
+          if (addToResults) {
+            searchResults.length = searchResults.length + 1;
+            if (returnResults) {
+              searchResults[page.kanji] = page;
+            }
+
+            // prepend the result to the list of results if keyword match, otherwise append
+            const keywordLower = page.keyword.toLowerCase();
+            let prepend = false;
+            if (rtkMode && keywordLower === query ||
+              !rtkMode && (outputRadicals.includes(keywordLower) ||
+              inputRadicals.includes(keywordLower))
+            ) {
+               prepend = true
+            }
+            if (returnResults) {
+              if (prepend) {
+                searchResults.list.unshift(page);
+              } else {
+                searchResults.list.push(page);
+              }
+            }
+
+            if (!updateHTMLElements || entriesAdded >= this.maxResultSize) {
+              // performance: don't add more than maxResultSize (50) matches (divs) to entries 
+              continue;
+            }
             let kanjiName = page.keyword;
             if (!rtkMode && page.keywordWK && page.keywordWK.length > 0) {
               kanjiName = page.keywordWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
@@ -195,10 +247,7 @@ class App {
               '  </h3>'+
               '</article></div>'
             ;
-            const keywordLower = page.keyword.toLowerCase();
-            if (rtkMode && keywordLower === query ||
-                !rtkMode && (outputRadicals.includes(keywordLower) || inputRadicals.includes(keywordLower))
-               ) {
+            if (prepend) {
               entries.prepend(newEntry);
             } else {
               entries.append(newEntry);
@@ -223,7 +272,7 @@ class App {
     // }
     result.show();
 
-    return false;
+    return searchResults;
   }
 
   cbCopyButtonClick(id, kanji) {
@@ -313,16 +362,16 @@ class App {
 
     const self = this; // this isn't available in anonymous functions
     $('#search-button').on('click', function() {
-      return self.search();
+      return self.searchBoxSearch();
     });
     
     $('#search-query').on('input', function() {
-      return self.search();
+      return self.searchBoxSearch();
     });
 
     // checkboxStrict.on('click', function() { // replaces click event completely
     $(checkboxStrictQuery).change(function() {
-      return self.search(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
+      return self.searchBoxSearch(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
     });
     $(checkboxRTKQuery).change(function() {
       if (self.isRtkMode()) {
@@ -330,7 +379,7 @@ class App {
       } else {
         $(checkboxStrictLabelQuery).prop('style')['text-decoration'] = '';
       }
-      return self.search();
+      return self.searchBoxSearch();
     })
     $(checkboxVocabQuery).change(function() {
       if (self.isVocabMode()) {
