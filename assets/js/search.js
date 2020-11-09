@@ -206,7 +206,7 @@ var docs =
   "id" : "21",
   "kanji" : "唱",
   "keyword" : "chant",
-  "elements" : "chant, mouth, prosperous, sun, day, tongue wagging, sun2, day2, tongue wagging2",
+  "elements" : "chant, mouth, prosperous, sun, day, tongue wagging, wagging tongue, sun2, day2, tongue wagging2",
 }
 ,
   
@@ -226,7 +226,7 @@ var docs =
   "id" : "23",
   "kanji" : "品",
   "keyword" : "goods",
-  "elements" : "goods, mouth, mouth3",
+  "elements" : "goods, mouth, mouth3, three mouths",
 }
 ,
   
@@ -276,7 +276,7 @@ var docs =
   "id" : "28",
   "kanji" : "世",
   "keyword" : "generation",
-  "elements" : "generation, ten, twenty",
+  "elements" : "generation, generations, ten, twenty",
 }
 ,
   
@@ -296,7 +296,7 @@ var docs =
   "id" : "30",
   "kanji" : "旦",
   "keyword" : "nightbreak",
-  "elements" : "nightbreak, sun, one, floor",
+  "elements" : "nightbreak, sun, day, one, floor",
 }
 ,
   
@@ -377,7 +377,7 @@ var docs =
   "kanji" : "百",
   "keyword" : "hundred",
   "elements" : "hundred, one, ceiling, white, dove",
-  "elementsWK": "leafWK",
+  "elementsWK" : "leafWK",
 }
 ,
   
@@ -387,7 +387,7 @@ var docs =
   "id" : "39",
   "kanji" : "中",
   "keyword" : "in",
-  "elements" : "in, stick, mouth",
+  "elements" : "in, inx, stick, mouth",
 }
 ,
   
@@ -397,7 +397,7 @@ var docs =
   "id" : "40",
   "kanji" : "千",
   "keyword" : "thousand",
-  "elements" : "thousand, drop, ten, needle",
+  "elements" : "thousand, one thousand, drop, ten, needle",
 }
 ,
   
@@ -418,7 +418,7 @@ var docs =
   "kanji" : "升",
   "keyword" : "measuring box",
   "elements" : "measuring box, thousand, drop, ten, needle",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -429,7 +429,7 @@ var docs =
   "kanji" : "昇",
   "keyword" : "rise up",
   "elements" : "rise up, sun, day, measuring box, thousand, drop, ten, needle",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -489,7 +489,7 @@ var docs =
   "id" : "48",
   "kanji" : "占",
   "keyword" : "fortune-telling",
-  "elements" : "fortune-telling, magic wand, augury, divining rod, mouth",
+  "elements" : "fortune-telling, fortunetelling, magic wand, wand, augury, divining rod, mouth",
 }
 ,
   
@@ -499,7 +499,7 @@ var docs =
   "id" : "49",
   "kanji" : "上",
   "keyword" : "above",
-  "elements" : "above, magic wand, augury, divining rod, one, floor",
+  "elements" : "above, magic wand, wand, augury, divining rod, one, floor",
 }
 ,
   
@@ -509,7 +509,7 @@ var docs =
   "id" : "50",
   "kanji" : "下",
   "keyword" : "below",
-  "elements" : "below, one, ceiling, magic wand, augury, divining rod",
+  "elements" : "below, one, ceiling, magic wand, wand, augury, divining rod",
 }
 ,
   
@@ -559,7 +559,7 @@ var docs =
   "id" : "54",
   "kanji" : "貝",
   "keyword" : "shellfish",
-  "elements" : "shellfish, shellfish, clam, oyster, eye, animal legs, eight",
+  "elements" : "shellfish, shell, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -680,7 +680,7 @@ var docs =
   "kanji" : "万",
   "keyword" : "ten thousand",
   "elements" : "ten thousand, one, ceiling, bound up",
-  "elementsWK": "leafWK",
+  "elementsWK" : "leafWK",
 }
 ,
   
@@ -780,7 +780,7 @@ var docs =
   "id" : "74",
   "kanji" : "具",
   "keyword" : "tool",
-  "elements" : "tool, eye, tool, one, animal legs, eight",
+  "elements" : "tool, eye, one, animal legs, eight",
 }
 ,
   
@@ -810,7 +810,7 @@ var docs =
   "id" : "77",
   "kanji" : "左",
   "keyword" : "left",
-  "elements" : "left, by one’s side, craft",
+  "elements" : "left, by one's side, by one’s side, craft",
 }
 ,
   
@@ -820,7 +820,7 @@ var docs =
   "id" : "78",
   "kanji" : "右",
   "keyword" : "right",
-  "elements" : "right, by one’s side, mouth",
+  "elements" : "right, by one's side, by one’s side, mouth",
 }
 ,
   
@@ -830,7 +830,7 @@ var docs =
   "id" : "79",
   "kanji" : "有",
   "keyword" : "possess",
-  "elements" : "possess, by one’s side, moon, month, flesh, part of the body",
+  "elements" : "possess, possession, by one's side, by one’s side, moon, month, flesh, part of the body",
 }
 ,
   
@@ -840,7 +840,7 @@ var docs =
   "id" : "80",
   "kanji" : "賄",
   "keyword" : "bribe",
-  "elements" : "bribe, shellfish, clam, oyster, eye, animal legs, eight, possess, by one’s side, moon, month, flesh, part of the body",
+  "elements" : "bribe, shellfish, clam, oyster, eye, animal legs, eight, possess, by one's side, by one’s side, moon, month, flesh, part of the body",
 }
 ,
   
@@ -901,6 +901,7 @@ var docs =
   "kanji" : "召",
   "keyword" : "seduce",
   "elements" : "seduce, sword, dagger, mouth",
+  "keywordWK" : "Call",
 }
 ,
   
@@ -950,7 +951,7 @@ var docs =
   "id" : "91",
   "kanji" : "丁",
   "keyword" : "street",
-  "elements" : "street, street, nail, spike",
+  "elements" : "street, nail, spike",
 }
 ,
   
@@ -961,7 +962,7 @@ var docs =
   "kanji" : "町",
   "keyword" : "village",
   "elements" : "village, rice field, brains, street, nail, spike",
-  "keywordWK": "town",
+  "keywordWK" : "Town",
 }
 ,
   
@@ -1012,7 +1013,7 @@ var docs =
   "kanji" : "了",
   "keyword" : "complete",
   "elements" : "complete, child with arms wrapped up",
-  "elementsWK": "barbWK",
+  "elementsWK" : "barbWK",
 }
 ,
   
@@ -1113,7 +1114,7 @@ var docs =
   "kanji" : "少",
   "keyword" : "few",
   "elements" : "few, little, small, drop",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -1334,6 +1335,7 @@ var docs =
   "kanji" : "奇",
   "keyword" : "strange",
   "elements" : "strange, large, St. Bernard, can, mouth, street, nail, spike",
+  "keywordWK" : "Odd",
 }
 ,
   
@@ -1373,7 +1375,7 @@ var docs =
   "id" : "130",
   "kanji" : "水",
   "keyword" : "water",
-  "elements" : "water",
+  "elements" : "water, walking stick, stick, water droplets, droplets",
 }
 ,
   
@@ -1703,7 +1705,7 @@ var docs =
   "id" : "158",
   "kanji" : "寺",
   "keyword" : "Buddhist temple",
-  "elements" : "buddhist temple, soil, dirt, ground, glue",
+  "elements" : "buddhist temple, temple, soil, dirt, ground, glue",
 }
 ,
   
@@ -1733,7 +1735,7 @@ var docs =
   "id" : "161",
   "kanji" : "火",
   "keyword" : "fire",
-  "elements" : "fire",
+  "elements" : "fire, person, drops, drop",
 }
 ,
   
@@ -1853,7 +1855,7 @@ var docs =
   "id" : "173",
   "kanji" : "里",
   "keyword" : "ri",
-  "elements" : "ri, computer, rice field, brains, soil, dirt, ground",
+  "elements" : "ri, computer, village, rice field, brains, soil, dirt, ground",
 }
 ,
   
@@ -1863,7 +1865,7 @@ var docs =
   "id" : "174",
   "kanji" : "黒",
   "keyword" : "black",
-  "elements" : "black, computer, oven-fire, barbecue",
+  "elements" : "black, computer, ri, oven-fire, barbecue",
 }
 ,
   
@@ -1893,7 +1895,7 @@ var docs =
   "id" : "177",
   "kanji" : "量",
   "keyword" : "quantity",
-  "elements" : "quantity, nightbreak, sun, day, one, floor, computer, rice field",
+  "elements" : "quantity, nightbreak, sun, day, one, rice field, floor, computer",
 }
 ,
   
@@ -2033,7 +2035,7 @@ var docs =
   "id" : "191",
   "kanji" : "宴",
   "keyword" : "banquet",
-  "elements" : "banquet, relax, house, sun, day, tongue wagging, woman",
+  "elements" : "banquet, relax, house, sun, day, tongue wagging, wagging tongue, woman",
 }
 ,
   
@@ -2053,7 +2055,7 @@ var docs =
   "id" : "193",
   "kanji" : "富",
   "keyword" : "wealth",
-  "elements" : "wealth, house, wealth, one, ceiling, mouth, rice field, brains",
+  "elements" : "wealth, house, one, ceiling, mouth, rice field, brains",
 }
 ,
   
@@ -2284,6 +2286,7 @@ var docs =
   "kanji" : "燥",
   "keyword" : "parch",
   "elements" : "parch, fire, furniture, wooden goods, mouth, tree, wood, mouth3",
+  "keywordWK" : "Dry Up",
 }
 ,
   
@@ -2313,7 +2316,7 @@ var docs =
   "id" : "2445",
   "kanji" : "昧",
   "keyword" : "obscure",
-  "elements" : "obscure, sun, not yet, one, tree, wood",
+  "elements" : "obscure, sun, day, not yet, one, tree, wood",
 }
 ,
   
@@ -2354,7 +2357,7 @@ var docs =
   "kanji" : "朱",
   "keyword" : "vermilion",
   "elements" : "vermillion, drop, not yet, one, tree, wood",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -2365,7 +2368,7 @@ var docs =
   "kanji" : "株",
   "keyword" : "stocks",
   "elements" : "stocks, tree, wood, vermillion, drop, not yet, one, tree, wood",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -2375,7 +2378,7 @@ var docs =
   "id" : "223",
   "kanji" : "若",
   "keyword" : "young",
-  "elements" : "young, flowers, right, by one’s side, mouth",
+  "elements" : "young, flowers, right, by one's side, by one’s side, mouth",
 }
 ,
   
@@ -2505,7 +2508,7 @@ var docs =
   "id" : "235",
   "kanji" : "兆",
   "keyword" : "portent",
-  "elements" : "portent, turtle, portent",
+  "elements" : "portent, turtle",
 }
 ,
   
@@ -2626,7 +2629,7 @@ var docs =
   "kanji" : "告",
   "keyword" : "revelation",
   "elements" : "revelation, cow, mouth",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -2637,7 +2640,7 @@ var docs =
   "kanji" : "先",
   "keyword" : "before",
   "elements" : "before, cow, human legs",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -2687,7 +2690,7 @@ var docs =
   "id" : "2071",
   "kanji" : "脊",
   "keyword" : "spinal column",
-  "elements" : "spinal column, I Ching, Master Po, umbrella, moon, month, flesh, part of the body",
+  "elements" : "spinal column, I Ching, two, Master Po, umbrella, moon, month, flesh, part of the body",
 }
 ,
   
@@ -2748,7 +2751,7 @@ var docs =
   "kanji" : "珠",
   "keyword" : "pearl",
   "elements" : "pearl, king, jewel, ball, vermillion, drop, not yet, one, tree, wood",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -2968,7 +2971,7 @@ var docs =
   "id" : "278",
   "kanji" : "導",
   "keyword" : "guidance",
-  "elements" : "guidance, neck, horns, drop, eye, road, glue",
+  "elements" : "guidance, road-way, neck, horns, drop, eye, road, glue",
 }
 ,
   
@@ -3048,7 +3051,7 @@ var docs =
   "id" : "286",
   "kanji" : "車",
   "keyword" : "car",
-  "elements" : "car, sun, ten, needle",
+  "elements" : "car, sun, day, ten, needle",
 }
 ,
   
@@ -3058,7 +3061,7 @@ var docs =
   "id" : "287",
   "kanji" : "連",
   "keyword" : "take along",
-  "elements" : "take along, car, road",
+  "elements" : "take along, carry along, car, road",
 }
 ,
   
@@ -3078,7 +3081,7 @@ var docs =
   "id" : "289",
   "kanji" : "輸",
   "keyword" : "transport",
-  "elements" : "transport, car, meeting of butchers, umbrella, one, moon, month, flesh, part of the body, sword, sabre, saber",
+  "elements" : "transport, car, meeting of butchers, butchers, meeting, umbrella, one, moon, month, flesh, part of the body, sword, sabre, saber",
 }
 ,
   
@@ -3088,7 +3091,7 @@ var docs =
   "id" : "3009",
   "kanji" : "喩・喻",
   "keyword" : "metaphor",
-  "elements" : "mouth, meeting, moon, month, saber, flood",
+  "elements" : "mouth, meeting, moon, flood, saber",
 }
 ,
   
@@ -3098,7 +3101,7 @@ var docs =
   "id" : "290",
   "kanji" : "前",
   "keyword" : "in front",
-  "elements" : "in front, horns, butcher, moon, month, flesh, part of the body, sword, sabre, saber",
+  "elements" : "in front, front, horns, butcher, moon, month, flesh, part of the body, sword, sabre, saber",
 }
 ,
   
@@ -3179,7 +3182,7 @@ var docs =
   "kanji" : "夏",
   "keyword" : "summer",
   "elements" : "summer, one, ceiling, drop, eye, walking legs",
-  "elementsWK": "leafWK",
+  "elementsWK" : "leafWK",
 }
 ,
   
@@ -3229,7 +3232,7 @@ var docs =
   "id" : "2841",
   "kanji" : "冥",
   "keyword" : "Hades",
-  "elements" : "hades, crown, sun, day, six",
+  "elements" : "hades, crown, sun, day, six, top hat, animal legs",
 }
 ,
   
@@ -3309,7 +3312,7 @@ var docs =
   "id" : "308",
   "kanji" : "享",
   "keyword" : "receive",
-  "elements" : "receive, tall, top hat, mouth, children",
+  "elements" : "receive, tall, top hat, mouth, child, children",
 }
 ,
   
@@ -3469,7 +3472,7 @@ var docs =
   "id" : "324",
   "kanji" : "学",
   "keyword" : "study",
-  "elements" : "study, schoolhouse, owl, crown, child",
+  "elements" : "study, schoolhouse, owl, one, animal legs, crown, child",
 }
 ,
   
@@ -3479,7 +3482,7 @@ var docs =
   "id" : "325",
   "kanji" : "覚",
   "keyword" : "memorize",
-  "elements" : "memorize, schoolhouse, owl, crown, see, telescope, eye, human legs",
+  "elements" : "memorize, schoolhouse, owl, one, animal legs, crown, see, telescope, eye, human legs",
 }
 ,
   
@@ -3489,7 +3492,7 @@ var docs =
   "id" : "326",
   "kanji" : "栄",
   "keyword" : "flourish",
-  "elements" : "flourish, schoolhouse, owl, crown, tree, wood",
+  "elements" : "flourish, schoolhouse, owl, one, animal legs, crown, tree, wood",
 }
 ,
   
@@ -3499,7 +3502,8 @@ var docs =
   "id" : "327",
   "kanji" : "書",
   "keyword" : "write",
-  "elements" : "write, brush, tongue wagging, sun, day",
+  "elements" : "write, brush, broom, tongue wagging, wagging tongue, sun, day",
+  "elementsWK" : "wolverineWK",
 }
 ,
   
@@ -3759,7 +3763,7 @@ var docs =
   "id" : "351",
   "kanji" : "諾",
   "keyword" : "consent",
-  "elements" : "consent, say, words, keitai, mouth, young, flowers, by one’s side, mouth, mouth2",
+  "elements" : "consent, say, words, keitai, mouth, young, flowers, by one's side, by one’s side, mouth, mouth2",
 }
 ,
   
@@ -3769,7 +3773,7 @@ var docs =
   "id" : "352",
   "kanji" : "諭",
   "keyword" : "rebuke",
-  "elements" : "rebuke, say, words, keitai, mouth, meeting of butchers, moon, month, flesh, part of the body, sword, sabre, saber",
+  "elements" : "rebuke, say, words, keitai, mouth, meeting of butchers, butchers, meeting, umbrella, moon, month, flesh, part of the body, sword, sabre, saber",
 }
 ,
   
@@ -3850,7 +3854,7 @@ var docs =
   "kanji" : "茂",
   "keyword" : "overgrown",
   "elements" : "overgrown, flowers, parade",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -3860,7 +3864,7 @@ var docs =
   "id" : "2882",
   "kanji" : "戚",
   "keyword" : "relatives",
-  "elements" : "relatives, half-uncle, above, small, little, parade",
+  "elements" : "relatives, half-uncle, uncle, cliff, above, small, little, parade, fiesta",
 }
 ,
   
@@ -3901,7 +3905,7 @@ var docs =
   "kanji" : "威",
   "keyword" : "intimidate",
   "elements" : "intimidate, march, women, woman",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -3912,7 +3916,7 @@ var docs =
   "kanji" : "滅",
   "keyword" : "destroy",
   "elements" : "destroy, water, water droplets, water pistol, march, fire",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -3933,7 +3937,7 @@ var docs =
   "kanji" : "蔑",
   "keyword" : "revile",
   "elements" : "revile, flowers, eye, cross-eyed, net, march",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -3984,7 +3988,7 @@ var docs =
   "kanji" : "歩",
   "keyword" : "walk",
   "elements" : "walk, stop, footprint, few",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -4124,7 +4128,7 @@ var docs =
   "id" : "385",
   "kanji" : "超",
   "keyword" : "transcend",
-  "elements" : "transcend, run, soil, dirt, ground, mend, summon, seduce, sword, dagger, mouth",
+  "elements" : "transcend, run, soil, dirt, ground, mending, mend, summon, seduce, sword, dagger, mouth",
 }
 ,
   
@@ -4134,7 +4138,7 @@ var docs =
   "id" : "386",
   "kanji" : "赴",
   "keyword" : "proceed",
-  "elements" : "proceed, run, soil, dirt, ground, mend, magic wand, augury",
+  "elements" : "proceed, run, soil, dirt, ground, mending, mend, magic wand, augury",
 }
 ,
   
@@ -4144,7 +4148,7 @@ var docs =
   "id" : "387",
   "kanji" : "越",
   "keyword" : "surpass",
-  "elements" : "surpass, run, soil, dirt, ground, mend, parade",
+  "elements" : "surpass, run, soil, dirt, ground, mending, mend, parade",
 }
 ,
   
@@ -4164,7 +4168,7 @@ var docs =
   "id" : "389",
   "kanji" : "題",
   "keyword" : "topic",
-  "elements" : "topic, just so, sun, day, mend, head, page, one, ceiling, drop, shellfish, clam, oyster, eye, animal legs, eight",
+  "elements" : "topic, just so, sun, day, mending, mend, head, page, one, ceiling, drop, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -4184,7 +4188,7 @@ var docs =
   "id" : "391",
   "kanji" : "建",
   "keyword" : "build",
-  "elements" : "build, brush, stretch",
+  "elements" : "build, brush, broom, stretch",
 }
 ,
   
@@ -4194,7 +4198,7 @@ var docs =
   "id" : "2761",
   "kanji" : "鍵",
   "keyword" : "key",
-  "elements" : "key, metal, gold, build, brush, stretch",
+  "elements" : "key, metal, gold, build, brush, broom, stretch",
 }
 ,
   
@@ -4244,7 +4248,7 @@ var docs =
   "id" : "396",
   "kanji" : "衣",
   "keyword" : "garment",
-  "elements" : "garment, top hat, scarf, cloth, clothes, clothing, garment",
+  "elements" : "garment, cloak, scarf, top hat, cloth, clothes, clothing",
 }
 ,
   
@@ -4314,7 +4318,7 @@ var docs =
   "id" : "403",
   "kanji" : "猿",
   "keyword" : "monkey",
-  "elements" : "monkey, pack of wild dogs, earthenware jar, lidded crock, soil, dirt, ground, mouth, scarf",
+  "elements" : "pack of wild dogs, earthenware jar, lidded crock, soil, dirt, ground, mouth, scarf",
 }
 ,
   
@@ -4344,7 +4348,7 @@ var docs =
   "id" : "405",
   "kanji" : "布",
   "keyword" : "linen",
-  "elements" : "linen, by one’s side, towel",
+  "elements" : "linen, by one's side, by one’s side, towel",
 }
 ,
   
@@ -4475,6 +4479,7 @@ var docs =
   "kanji" : "刺",
   "keyword" : "thorn",
   "elements" : "thorn, tree, wood, belt, sword, sabre, saber",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -4485,6 +4490,7 @@ var docs =
   "kanji" : "制",
   "keyword" : "system",
   "elements" : "system, cow, belt, sword, sabre, saber",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -4524,7 +4530,7 @@ var docs =
   "id" : "422",
   "kanji" : "雨",
   "keyword" : "rain",
-  "elements" : "rain, rain, weather",
+  "elements" : "rain, weather",
 }
 ,
   
@@ -4595,6 +4601,7 @@ var docs =
   "kanji" : "妖",
   "keyword" : "bewitched",
   "elements" : "bewitched, woman, sapling",
+  "elementsWK" : "heavenWK",
 }
 ,
   
@@ -4605,6 +4612,7 @@ var docs =
   "kanji" : "沃",
   "keyword" : "irrigate",
   "elements" : "irrigate, water, water droplets, water pistol, sapling",
+  "elementsWK" : "heavenWK",
 }
 ,
   
@@ -5064,7 +5072,7 @@ var docs =
   "id" : "466",
   "kanji" : "欠",
   "keyword" : "lack",
-  "elements" : "lack, yawn",
+  "elements" : "lack, yawn, bound up, person",
 }
 ,
   
@@ -5304,7 +5312,7 @@ var docs =
   "id" : "490",
   "kanji" : "方",
   "keyword" : "direction",
-  "elements" : "direction, compass, direction",
+  "elements" : "direction, compass",
 }
 ,
   
@@ -5444,7 +5452,7 @@ var docs =
   "id" : "504",
   "kanji" : "東",
   "keyword" : "east",
-  "elements" : "east, sun, day, tree, wood, rice field",
+  "elements" : "east, sun, day, rice field, tree, wood",
 }
 ,
   
@@ -5525,7 +5533,7 @@ var docs =
   "kanji" : "歳",
   "keyword" : "year-end",
   "elements" : "year end, stop, footprint, one, little, small, march",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -5535,7 +5543,8 @@ var docs =
   "id" : "513",
   "kanji" : "県",
   "keyword" : "prefecture",
-  "elements" : "prefecture, eye, fishhook, small, little",
+  "elements" : "prefecture, eye, fishhook, small, little, straightened hook",
+  "elementsWK" : "lionWK",
 }
 ,
   
@@ -5585,7 +5594,7 @@ var docs =
   "id" : "518",
   "kanji" : "蛍",
   "keyword" : "lightning bug",
-  "elements" : "lightning-bug, schoolhouse, owl, crown, insect",
+  "elements" : "lightning-bug, schoolhouse, owl, one, animal legs, crown, insect",
 }
 ,
   
@@ -5595,7 +5604,7 @@ var docs =
   "id" : "519",
   "kanji" : "蛇",
   "keyword" : "snake",
-  "elements" : "snake, insect, wind chimes, house, spoon, sitting on the ground",
+  "elements" : "snake, self, insect, wind chimes, house, spoon, sitting on the ground",
 }
 ,
   
@@ -5646,7 +5655,7 @@ var docs =
   "kanji" : "風",
   "keyword" : "wind",
   "elements" : "wind, gnats, drop, insect",
-  "elementsWK": "slideWK",
+  "elementsWK" : "windWK, slideWK",
 }
 ,
   
@@ -5656,7 +5665,7 @@ var docs =
   "id" : "525",
   "kanji" : "己",
   "keyword" : "self",
-  "elements" : "self, snake, self",
+  "elements" : "self, snake",
 }
 ,
   
@@ -5666,7 +5675,7 @@ var docs =
   "id" : "526",
   "kanji" : "起",
   "keyword" : "rouse",
-  "elements" : "rouse, run, soil, dirt, ground, mend, snake, self",
+  "elements" : "rouse, run, soil, dirt, ground, mending, mend, snake, self",
 }
 ,
   
@@ -5746,7 +5755,8 @@ var docs =
   "id" : "534",
   "kanji" : "亀",
   "keyword" : "tortoise",
-  "elements" : "tortoise, bound up, eels, sun, day, rice field",
+  "elements" : "tortoise, bound up, eel, eels, sun, day, rice field, fishhook",
+  "elementsWK" : "umbrellaWK",
 }
 ,
   
@@ -5756,7 +5766,8 @@ var docs =
   "id" : "535",
   "kanji" : "電",
   "keyword" : "electricity",
-  "elements" : "electricity, rain, weather, eel, sun, day, rice field",
+  "elements" : "electricity, rain, weather, eel, sun, day, rice field, fishhook",
+  "elementsWK" : "umbrellaWK",
 }
 ,
   
@@ -5766,7 +5777,8 @@ var docs =
   "id" : "536",
   "kanji" : "竜",
   "keyword" : "dragon",
-  "elements" : "dragon, vase, stand up, eel, sun, day, rice field",
+  "elements" : "dragon, vase, stand up, eel, sun, day, rice field, fishhook",
+  "elementsWK" : "umbrellaWK",
 }
 ,
   
@@ -5776,7 +5788,8 @@ var docs =
   "id" : "537",
   "kanji" : "滝",
   "keyword" : "waterfall",
-  "elements" : "waterfall, water, water droplets, water pistol, dragon, vase, stand up, eel, sun, day, rice field",
+  "elements" : "waterfall, water, water droplets, water pistol, dragon, vase, stand up, eel, sun, day, rice field, fishhook",
+  "elementsWK" : "umbrellaWK",
 }
 ,
   
@@ -5817,6 +5830,7 @@ var docs =
   "kanji" : "家",
   "keyword" : "house",
   "elements" : "house, sow, pig",
+  "elementsWK" : "houseWK",
 }
 ,
   
@@ -5827,6 +5841,7 @@ var docs =
   "kanji" : "嫁",
   "keyword" : "marry into",
   "elements" : "marry into, woman, house, sow, pig",
+  "elementsWK" : "houseWK",
 }
 ,
   
@@ -5876,7 +5891,7 @@ var docs =
   "id" : "547",
   "kanji" : "羊",
   "keyword" : "sheep",
-  "elements" : "sheep, horns",
+  "elements" : "sheep, horns, king, stick",
 }
 ,
   
@@ -5886,7 +5901,7 @@ var docs =
   "id" : "548",
   "kanji" : "美",
   "keyword" : "beauty",
-  "elements" : "beauty, sheep, large, St. Bernard",
+  "elements" : "beauty, beautiful, sheep, horns, large, St. Bernard",
 }
 ,
   
@@ -5947,7 +5962,7 @@ var docs =
   "kanji" : "差",
   "keyword" : "distinction",
   "elements" : "distinction, wool, sheep, craft",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -6117,8 +6132,8 @@ var docs =
   "id" : "568",
   "kanji" : "午",
   "keyword" : "noon",
-  "elements" : "noon, horse, pantomime horse, noon, sign of the horse",
-  "elementsWK": "slideWK",
+  "elements" : "noon, horse, pantomime horse, sign of the horse",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -6328,7 +6343,7 @@ var docs =
   "id" : "587",
   "kanji" : "壇",
   "keyword" : "podium",
-  "elements" : "podium, soil, dirt, ground, Churchill, top hat, -times, pent in, mouth, nightbreak, sun, day, one, floor",
+  "elements" : "podium, soil, dirt, ground, Churchill, top hat, -times, times, pent in, mouth, nightbreak, sun, day, one, floor",
 }
 ,
   
@@ -6639,7 +6654,7 @@ var docs =
   "kanji" : "感",
   "keyword" : "emotion",
   "elements" : "emotion, march, mouth, heart",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -6719,7 +6734,7 @@ var docs =
   "id" : "623",
   "kanji" : "怖",
   "keyword" : "dreadful",
-  "elements" : "dreadful, Freud, state of mind, linen, by one’s side, towel",
+  "elements" : "dreadful, Freud, state of mind, linen, by one's side, by one’s side, towel",
 }
 ,
   
@@ -6730,6 +6745,7 @@ var docs =
   "kanji" : "慌",
   "keyword" : "disconcerted",
   "elements" : "disconcerted, Freud, state of mind, laid waste, wreath, flowers, deceased, perish, top hat, fishhook, stream, flood",
+  "keywordWK" : "Confused",
 }
 ,
   
@@ -6769,7 +6785,7 @@ var docs =
   "id" : "628",
   "kanji" : "愉",
   "keyword" : "pleasure",
-  "elements" : "pleasure, Freud, state of mind, meeting, umbrella, butchers, moon, month, flesh, part of the body, sword, sabre, saber, convoy",
+  "elements" : "pleasure, Freud, state of mind, meeting, umbrella, meeting of butchers, butchers, moon, month, flesh, part of the body, sword, sabre, saber, convoy",
 }
 ,
   
@@ -6779,7 +6795,7 @@ var docs =
   "id" : "629",
   "kanji" : "惰",
   "keyword" : "lazy",
-  "elements" : "lazy, Freud, state of mind, left-handed, left, by one’s side, craft, moon, month, flesh, part of the body",
+  "elements" : "lazy, Freud, state of mind, left-handed, left, by one's side, by one’s side, craft, moon, month, flesh, part of the body",
 }
 ,
   
@@ -6870,7 +6886,7 @@ var docs =
   "kanji" : "必",
   "keyword" : "invariably",
   "elements" : "invariably, heart, stick, drop, fishhook, drop3",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -7380,8 +7396,8 @@ var docs =
   "id" : "681",
   "kanji" : "才",
   "keyword" : "genius",
-  "elements" : "genius, genius, genie",
-  "elementsWK": "barbWK, slideWK",
+  "elements" : "genius, genie",
+  "elementsWK" : "barbWK, slideWK",
 }
 ,
   
@@ -7391,7 +7407,7 @@ var docs =
   "id" : "682",
   "kanji" : "財",
   "keyword" : "property",
-  "elements" : "property, shellfish, clam, oyster, eye, animal legs, eight, genie",
+  "elements" : "property, shellfish, clam, oyster, eye, animal legs, eight, genius, genie",
 }
 ,
   
@@ -7401,7 +7417,7 @@ var docs =
   "id" : "683",
   "kanji" : "材",
   "keyword" : "lumber",
-  "elements" : "lumber, tree, wood, genie",
+  "elements" : "lumber, tree, wood, genius, genie",
 }
 ,
   
@@ -7411,7 +7427,7 @@ var docs =
   "id" : "684",
   "kanji" : "存",
   "keyword" : "suppose",
-  "elements" : "suppose, genie, child",
+  "elements" : "suppose, genius, genie, child",
 }
 ,
   
@@ -7421,7 +7437,7 @@ var docs =
   "id" : "685",
   "kanji" : "在",
   "keyword" : "exist",
-  "elements" : "exist, genie, soil, dirt, ground",
+  "elements" : "exist, genius, genie, soil, dirt, ground",
 }
 ,
   
@@ -7431,7 +7447,7 @@ var docs =
   "id" : "686",
   "kanji" : "乃",
   "keyword" : "from",
-  "elements" : "from, fist, from",
+  "elements" : "from, fist",
 }
 ,
   
@@ -7511,7 +7527,7 @@ var docs =
   "id" : "694",
   "kanji" : "更",
   "keyword" : "grow late",
-  "elements" : "grow late, Ameratasu, one, ceiling, sun, rice field, tucked under the arm",
+  "elements" : "grow late, Ameratasu, one, ceiling, sun, day, rice field, tucked under the arm",
 }
 ,
   
@@ -7521,7 +7537,7 @@ var docs =
   "id" : "695",
   "kanji" : "硬",
   "keyword" : "stiff",
-  "elements" : "stiff, stone, rock, grow late, Ameratasu, one, ceiling, sun, rice field, tucked under the arm",
+  "elements" : "stiff, stone, rock, grow late, Ameratasu, one, ceiling, sun, day, rice field, tucked under the arm",
 }
 ,
   
@@ -7531,7 +7547,7 @@ var docs =
   "id" : "2498",
   "kanji" : "梗",
   "keyword" : "spiny",
-  "elements" : "spiny, tree, wood, grow late, Ameratasu, one, ceiling, sun, rice field, tucked under the arm",
+  "elements" : "spiny, tree, wood, grow late, Ameratasu, one, ceiling, sun, day, rice field, tucked under the arm",
 }
 ,
   
@@ -7621,7 +7637,7 @@ var docs =
   "id" : "704",
   "kanji" : "友",
   "keyword" : "friend",
-  "elements" : "friend, by one’s side, crotch",
+  "elements" : "friend, by one's side, by one’s side, crotch",
 }
 ,
   
@@ -7811,7 +7827,7 @@ var docs =
   "id" : "722",
   "kanji" : "反",
   "keyword" : "anti-",
-  "elements" : "anti-, demonstation, cliff, crotch",
+  "elements" : "anti-, anti, demonstation, cliff, crotch",
 }
 ,
   
@@ -7991,7 +8007,7 @@ var docs =
   "id" : "2437",
   "kanji" : "曖",
   "keyword" : "unclear",
-  "elements" : "equivocal, sun, love, birdhouse, birdcage, claw, vulture, crown, love birds, heart, walking legs",
+  "elements" : "equivocal, sun, day, love, birdhouse, birdcage, claw, vulture, crown, love birds, heart, walking legs",
 }
 ,
   
@@ -8061,7 +8077,7 @@ var docs =
   "id" : "743",
   "kanji" : "雄",
   "keyword" : "male",
-  "elements" : "masculine, Yamanote, by one’s side, elbow, turkey",
+  "elements" : "masculine, Yamanote, by one's side, by one’s side, elbow, turkey",
 }
 ,
   
@@ -8161,7 +8177,7 @@ var docs =
   "id" : "752",
   "kanji" : "会",
   "keyword" : "meeting",
-  "elements" : "meeting, meeting, one, wall, umbrella, rising cloud, two, elbow, wall",
+  "elements" : "meeting, one, wall, umbrella, rising cloud, two, elbow, wall",
 }
 ,
   
@@ -8212,6 +8228,7 @@ var docs =
   "kanji" : "互",
   "keyword" : "mutually",
   "elements" : "mutually, one, ceiling, one, floor",
+  "keywordWK" : "Mutual",
 }
 ,
   
@@ -8311,7 +8328,7 @@ var docs =
   "id" : "767",
   "kanji" : "出",
   "keyword" : "exit",
-  "elements" : "exit",
+  "elements" : "exit, leave",
 }
 ,
   
@@ -8412,6 +8429,7 @@ var docs =
   "kanji" : "嵐",
   "keyword" : "storm",
   "elements" : "storm, mountain, wind, gnats, drop, insect",
+  "elementsWK" : "windWK",
 }
 ,
   
@@ -8552,6 +8570,7 @@ var docs =
   "kanji" : "容",
   "keyword" : "contain",
   "elements" : "contain, house, valley, eight, umbrella, mouth",
+  "keywordWK" : "Form",
 }
 ,
   
@@ -8672,7 +8691,7 @@ var docs =
   "kanji" : "皮",
   "keyword" : "pelt",
   "elements" : "pelt, branch, ten, needle, crotch, hook",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -8692,7 +8711,7 @@ var docs =
   "id" : "804",
   "kanji" : "婆",
   "keyword" : "old woman",
-  "elements" : "old woman, wave, water, water droplets, water pistol, pelt, branch, ten, needle, crotch, hook, woman",
+  "elements" : "old woman, waves, wave, water, water droplets, water pistol, pelt, branch, ten, needle, crotch, hook, woman",
 }
 ,
   
@@ -8753,7 +8772,7 @@ var docs =
   "kanji" : "殊",
   "keyword" : "particularly",
   "elements" : "particularly, bones, one, ceiling, evening, vermilion, drop, not yet, one, tree, wood",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -8853,7 +8872,7 @@ var docs =
   "id" : "820",
   "kanji" : "趣",
   "keyword" : "gist",
-  "elements" : "gist, run, soil, dirt, ground, mend, take, ear, crotch",
+  "elements" : "gist, run, soil, dirt, ground, mending, mend, take, ear, crotch",
 }
 ,
   
@@ -9063,7 +9082,7 @@ var docs =
   "id" : "841",
   "kanji" : "規",
   "keyword" : "standard",
-  "elements" : "standard, husband, see, telescope, eye, human legs",
+  "elements" : "standard, protocol, husband, see, telescope, eye, human legs",
 }
 ,
   
@@ -9073,7 +9092,7 @@ var docs =
   "id" : "842",
   "kanji" : "替",
   "keyword" : "exchange",
-  "elements" : "exchange, husband, sun, day, tongue wagging, husband2",
+  "elements" : "exchange, husband, sun, day, tongue wagging, wagging tongue, husband2",
 }
 ,
   
@@ -9083,7 +9102,7 @@ var docs =
   "id" : "843",
   "kanji" : "賛",
   "keyword" : "approve",
-  "elements" : "approve, husband, shellfish, clam, oyster, eye, animal legs, eight, husband2",
+  "elements" : "approve, approval, husband, shellfish, clam, oyster, eye, animal legs, eight, husband2",
 }
 ,
   
@@ -9093,7 +9112,7 @@ var docs =
   "id" : "844",
   "kanji" : "潜",
   "keyword" : "submerge",
-  "elements" : "submerge, water, water droplets, water pistol, exchange, husband, sun, day, tongue wagging, husband2",
+  "elements" : "submerge, water, water droplets, water pistol, exchange, husband, sun, day, tongue wagging, wagging tongue, husband2",
 }
 ,
   
@@ -9104,7 +9123,7 @@ var docs =
   "kanji" : "失",
   "keyword" : "lose",
   "elements" : "lose, drop, husband",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -9135,6 +9154,7 @@ var docs =
   "kanji" : "臣",
   "keyword" : "retainer",
   "elements" : "retainer, slave",
+  "keywordWK" : "Servant",
 }
 ,
   
@@ -9225,6 +9245,7 @@ var docs =
   "kanji" : "巨",
   "keyword" : "gigantic",
   "elements" : "gigantic, Fafner",
+  "keywordWK" : "Giant",
 }
 ,
   
@@ -9254,7 +9275,7 @@ var docs =
   "id" : "859",
   "kanji" : "男",
   "keyword" : "man",
-  "elements" : "male, rice field, brains, power, muscle, arnold",
+  "elements" : "man, male, rice field, brains, power, muscle, arnold",
 }
 ,
   
@@ -9264,7 +9285,7 @@ var docs =
   "id" : "860",
   "kanji" : "労",
   "keyword" : "labor",
-  "elements" : "labor, schoolhouse, owl, crown, power, muscle, arnold",
+  "elements" : "labor, schoolhouse, owl, one, animal legs, crown, power, muscle, arnold",
 }
 ,
   
@@ -9324,7 +9345,7 @@ var docs =
   "id" : "2858",
   "kanji" : "勃",
   "keyword" : "uprising",
-  "elements" : "erection, bishop, cross, ten, needle, crown, child, power, muscle, arnold",
+  "elements" : "erection, bishop, cross, ten, needle, crown, child, power, muscle, muscles, arnold",
 }
 ,
   
@@ -9615,6 +9636,7 @@ var docs =
   "kanji" : "稼",
   "keyword" : "earnings",
   "elements" : "earnings, wheat, cereal, house, sow, pig",
+  "elementsWK" : "houseWK",
 }
 ,
   
@@ -9684,7 +9706,7 @@ var docs =
   "id" : "900",
   "kanji" : "秋",
   "keyword" : "autumn",
-  "elements" : "autumn, wheat, cereal, fire",
+  "elements" : "autumn, wheat, cereal, fire, person, drops, drop",
 }
 ,
   
@@ -9995,6 +10017,7 @@ var docs =
   "kanji" : "奥",
   "keyword" : "core",
   "elements" : "core, drop, pent in, rice, large, St. Bernard",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -10164,7 +10187,7 @@ var docs =
   "id" : "943",
   "kanji" : "筆",
   "keyword" : "writing brush",
-  "elements" : "writing brush, bamboo, brush",
+  "elements" : "writing brush, bamboo, brush, broom",
 }
 ,
   
@@ -10215,6 +10238,7 @@ var docs =
   "kanji" : "策",
   "keyword" : "scheme",
   "elements" : "scheme, bamboo, tree, wood, belt",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -10244,7 +10268,8 @@ var docs =
   "id" : "2638",
   "kanji" : "篭・籠",
   "keyword" : "basket",
-  "elements" : "cage, bamboo, dragon, vase, stand up, eel, sun, day",
+  "elements" : "cage, bamboo, dragon, vase, stand up, eel, sun, day, fishhook",
+  "elementsWK" : "umbrellaWK",
 }
 ,
   
@@ -10264,7 +10289,7 @@ var docs =
   "id" : "952",
   "kanji" : "佐",
   "keyword" : "assistant",
-  "elements" : "assistant, person, left, by one’s side, craft",
+  "elements" : "assistant, person, left, by one's side, by one’s side, craft",
 }
 ,
   
@@ -10504,7 +10529,7 @@ var docs =
   "id" : "974",
   "kanji" : "健",
   "keyword" : "healthy",
-  "elements" : "healthy, person, build, brush, stretch",
+  "elements" : "healthy, person, build, brush, broom, stretch",
 }
 ,
   
@@ -10684,7 +10709,7 @@ var docs =
   "id" : "991",
   "kanji" : "便",
   "keyword" : "convenience",
-  "elements" : "convenience, person, grow late, Ameratasu, one, ceiling, sun, tucked under the arm",
+  "elements" : "convenience, person, grow late, Ameratasu, one, ceiling, sun, day, tucked under the arm",
 }
 ,
   
@@ -10714,7 +10739,7 @@ var docs =
   "id" : "994",
   "kanji" : "伐",
   "keyword" : "fell",
-  "elements" : "fell, person, fiesta",
+  "elements" : "fell, to fell, person, fiesta",
 }
 ,
   
@@ -10745,6 +10770,7 @@ var docs =
   "kanji" : "保",
   "keyword" : "protect",
   "elements" : "protect, person, dumbfounded, mouth, tree, wood",
+  "keywordWK" : "Preserve",
 }
 ,
   
@@ -10774,7 +10800,7 @@ var docs =
   "id" : "1000",
   "kanji" : "付",
   "keyword" : "adhere",
-  "elements" : "adhere, person, glue",
+  "elements" : "adhere, adhere to, person, glue",
 }
 ,
   
@@ -10934,7 +10960,8 @@ var docs =
   "id" : "2058",
   "kanji" : "俺",
   "keyword" : "myself",
-  "elements" : "myself, person, dachshund, large, St. Bernard, eel, sun, day, rice field",
+  "elements" : "myself, person, dachshund, large, St. Bernard, eel, inX, rice field, fishhook",
+  "elementsWK" : "umbrellaWK",
 }
 ,
   
@@ -10945,7 +10972,7 @@ var docs =
   "kanji" : "久",
   "keyword" : "long time",
   "elements" : "long time, bound up, person, mummy",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -10976,6 +11003,7 @@ var docs =
   "kanji" : "内",
   "keyword" : "inside",
   "elements" : "inside, person, belt",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -11006,6 +11034,7 @@ var docs =
   "kanji" : "肉",
   "keyword" : "meat",
   "elements" : "meat, person, inside, belt, person, person2",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -11075,7 +11104,8 @@ var docs =
   "id" : "1028",
   "kanji" : "以",
   "keyword" : "by means of",
-  "elements" : "by means of, plow, drop, person",
+  "elements" : "by means of, plow, drop, person, straightened hook",
+  "elementsWK" : "lionWK",
 }
 ,
   
@@ -11085,7 +11115,8 @@ var docs =
   "id" : "1029",
   "kanji" : "似",
   "keyword" : "similar",
-  "elements" : "becoming, similar, person, by means of, plow, drop, person",
+  "elements" : "becoming, similar, person, by means of, plow, drop, person, fishhook, straightened hook",
+  "elementsWK" : "lionWK",
 }
 ,
   
@@ -11105,7 +11136,7 @@ var docs =
   "id" : "1031",
   "kanji" : "瓦",
   "keyword" : "tile",
-  "elements" : "tile, one, ceiling, cane, stick, drop, fishhook, ice",
+  "elements" : "tile, ten thousand, one, ceiling, cane, stick, drop, fishhook, ice",
 }
 ,
   
@@ -11135,7 +11166,7 @@ var docs =
   "id" : "1034",
   "kanji" : "営",
   "keyword" : "occupation",
-  "elements" : "occupation, schoolhouse, owl, crown, spine, mouth, drop, mouth2",
+  "elements" : "occupation, schoolhouse, owl, one, animal legs, crown, spine, mouth, drop, mouth2",
 }
 ,
   
@@ -11595,7 +11626,7 @@ var docs =
   "id" : "1076",
   "kanji" : "戸",
   "keyword" : "door",
-  "elements" : "door, one, flag",
+  "elements" : "door, ceiling, one, flag",
 }
 ,
   
@@ -11695,7 +11726,7 @@ var docs =
   "id" : "1086",
   "kanji" : "示",
   "keyword" : "show",
-  "elements" : "show, altar, show, two, small",
+  "elements" : "show, altar, two, small",
 }
 ,
   
@@ -11785,7 +11816,7 @@ var docs =
   "id" : "1095",
   "kanji" : "尉",
   "keyword" : "military officer",
-  "elements" : "military officer, flag, altar, show, two, small, glue",
+  "elements" : "military officer, lieutenant, flag, altar, show, two, small, glue",
 }
 ,
   
@@ -11795,7 +11826,7 @@ var docs =
   "id" : "1096",
   "kanji" : "慰",
   "keyword" : "consolation",
-  "elements" : "consolation, military officer, flag, altar, show, two, small, glue, heart",
+  "elements" : "consolation, military officer, lieutenant, flag, altar, show, two, small, glue, heart",
 }
 ,
   
@@ -12005,7 +12036,7 @@ var docs =
   "id" : "1117",
   "kanji" : "申",
   "keyword" : "speaketh",
-  "elements" : "speaketh, monkey, sun, day, stick, rice field",
+  "elements" : "speaketh, monkey, sun, day, rice field, stick",
 }
 ,
   
@@ -12035,7 +12066,7 @@ var docs =
   "id" : "1120",
   "kanji" : "捜",
   "keyword" : "search",
-  "elements" : "search, finger, fingers, Buddha’s hand, monkey, sun, day, rice field, stick, crotch",
+  "elements" : "search, finger, fingers, Buddha’s hand, monkey, sun, day, stick, crotch",
 }
 ,
   
@@ -12205,7 +12236,8 @@ var docs =
   "id" : "1136",
   "kanji" : "断",
   "keyword" : "severance",
-  "elements" : "severance, fishhook, rice, axe",
+  "elements" : "severance, fishhook, rice, axe, straightened hook",
+  "elementsWK" : "lionWK",
 }
 ,
   
@@ -12395,7 +12427,7 @@ var docs =
   "id" : "2997",
   "kanji" : "彙",
   "keyword" : "glossary",
-  "elements" : "glossary, broken broom, mutual, crown, fruit, rice field, brains, tree, wood, broom*",
+  "elements" : "glossary, broken broom, mutual, mutually, crown, fruit, rice field, brains, tree, wood, broom*",
 }
 ,
   
@@ -12406,7 +12438,7 @@ var docs =
   "kanji" : "争",
   "keyword" : "contend",
   "elements" : "contend, bound up, rake",
-  "elementsWK": "barbWK",
+  "elementsWK" : "barbWK",
 }
 ,
   
@@ -12477,7 +12509,7 @@ var docs =
   "kanji" : "伊",
   "keyword" : "Italy",
   "elements" : "italy, person, mop",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -12488,7 +12520,7 @@ var docs =
   "kanji" : "君",
   "keyword" : "old boy",
   "elements" : "old boy, mop, mouth",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -12549,6 +12581,7 @@ var docs =
   "kanji" : "両",
   "keyword" : "both",
   "elements" : "both, street, nail, spike, belt, shovel",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -12569,7 +12602,7 @@ var docs =
   "kanji" : "画",
   "keyword" : "brush-stroke",
   "elements" : "brush-stroke, one, ceiling, sprout, shoot, shovel",
-  "elementsWK": "leafWK",
+  "elementsWK" : "leafWK",
 }
 ,
   
@@ -12599,7 +12632,7 @@ var docs =
   "id" : "1173",
   "kanji" : "曹",
   "keyword" : "cadet",
-  "elements" : "cadet, one, bend, sun, day",
+  "elements" : "cadet, one, bend, sun, day, rice field",
 }
 ,
   
@@ -12609,7 +12642,7 @@ var docs =
   "id" : "1174",
   "kanji" : "遭",
   "keyword" : "encounter",
-  "elements" : "encounter, cadet, one, bend, sun, day, rice field, road",
+  "elements" : "encounter, cadet, one, bend, sun, day, road",
 }
 ,
   
@@ -12639,7 +12672,7 @@ var docs =
   "id" : "1177",
   "kanji" : "斗",
   "keyword" : "Big Dipper",
-  "elements" : "big dipper, measuring cup, big dipper, The Plough, drop, ten, needle",
+  "elements" : "big dipper, measuring cup, The Plough, drop, ten, needle",
 }
 ,
   
@@ -12769,7 +12802,7 @@ var docs =
   "id" : "1190",
   "kanji" : "廿",
   "keyword" : "twenty",
-  "elements" : "twenty",
+  "elements" : "twenty, one, shovel",
 }
 ,
   
@@ -12879,7 +12912,7 @@ var docs =
   "id" : "1201",
   "kanji" : "暁",
   "keyword" : "daybreak",
-  "elements" : "daybreak, sun, lofty, strawman, wickerman, haystack, ten, needle, one, human legs, needle3, ten3",
+  "elements" : "daybreak, sun, day, lofty, strawman, wickerman, haystack, ten, needle, one, human legs, needle3, ten3",
 }
 ,
   
@@ -13000,6 +13033,7 @@ var docs =
   "kanji" : "片",
   "keyword" : "one-sided",
   "elements" : "one-sided, waiter with wine on tray",
+  "keywordWK" : "One Sided",
 }
 ,
   
@@ -13030,7 +13064,7 @@ var docs =
   "kanji" : "乏",
   "keyword" : "destitution",
   "elements" : "destitution, drop, of, Zorro, building blocks, zig-zag",
-  "elementsWK": "leafWK",
+  "elementsWK" : "leafWK",
 }
 ,
   
@@ -13050,7 +13084,7 @@ var docs =
   "id" : "1217",
   "kanji" : "不",
   "keyword" : "negative",
-  "elements" : "negative, one, ceiling, person, drop",
+  "elements" : "negative, negation, one, ceiling, person, drop",
 }
 ,
   
@@ -13311,7 +13345,7 @@ var docs =
   "kanji" : "弟",
   "keyword" : "younger brother",
   "elements" : "younger brother, horns, dollar, bow, stick",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -13401,8 +13435,8 @@ var docs =
   "id" : "1248",
   "kanji" : "身",
   "keyword" : "somebody",
-  "elements" : "somebody, nose",
-  "elementsWK": "slideWK",
+  "elements" : "somebody, nose, drop",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -13432,7 +13466,7 @@ var docs =
   "id" : "1251",
   "kanji" : "老",
   "keyword" : "old man",
-  "elements" : "old man, old man, soil, dirt, ground, spoon, sitting on the ground",
+  "elements" : "old man, soil, dirt, ground, spoon, sitting on the ground",
 }
 ,
   
@@ -13662,7 +13696,7 @@ var docs =
   "id" : "1271",
   "kanji" : "官",
   "keyword" : "bureaucrat",
-  "elements" : "bureaucrat, house, maestro without baton",
+  "elements" : "bureaucrat, house, maestro, maestro without baton",
 }
 ,
   
@@ -13713,6 +13747,7 @@ var docs =
   "kanji" : "交",
   "keyword" : "mingle",
   "elements" : "mingle, top hat, father",
+  "keywordWK" : "Mix",
 }
 ,
   
@@ -13752,7 +13787,7 @@ var docs =
   "id" : "1279",
   "kanji" : "足",
   "keyword" : "leg",
-  "elements" : "leg, mouth, mending, mend",
+  "elements" : "leg, wooden leg, mouth, mending, mend",
 }
 ,
   
@@ -13792,7 +13827,7 @@ var docs =
   "id" : "1282",
   "kanji" : "路",
   "keyword" : "path",
-  "elements" : "path, wooden leg, mouth, stop, footprint, each, walking legs, mouth, mouth2",
+  "elements" : "path, wooden leg, leg, mouth, stop, footprint, each, walking legs, mouth, mouth2",
 }
 ,
   
@@ -13882,7 +13917,7 @@ var docs =
   "id" : "1290",
   "kanji" : "髄",
   "keyword" : "marrow",
-  "elements" : "marrow, skeleton, joint, moon, month, flesh, part of the body, highwayman, possess, by one’s side, road, moon2, month2, flesh2, part of the body2",
+  "elements" : "marrow, skeleton, joint, moon, month, flesh, part of the body, highwayman, possess, by one's side, by one’s side, road, moon2, month2, flesh2, part of the body2",
 }
 ,
   
@@ -13982,7 +14017,7 @@ var docs =
   "id" : "1298",
   "kanji" : "随",
   "keyword" : "follow",
-  "elements" : "follow, pinnacle, parthenon, acropolis, highwayman, possess, by one’s side, moon, month, flesh, part of the body, road",
+  "elements" : "follow, pinnacle, parthenon, acropolis, highwayman, possess, by one's side, by one’s side, moon, month, flesh, part of the body, road",
 }
 ,
   
@@ -14062,7 +14097,7 @@ var docs =
   "id" : "1306",
   "kanji" : "隊",
   "keyword" : "regiment",
-  "elements" : "regiment, pinnacle, parthenon, acropolis, animal horns, sow, pig, wart hog, regimental mascot",
+  "elements" : "regiment, pinnacle, parthenon, acropolis, animal horns, horns, sow, pig, wart hog, regimental mascot",
 }
 ,
   
@@ -14072,7 +14107,7 @@ var docs =
   "id" : "1307",
   "kanji" : "墜",
   "keyword" : "crash",
-  "elements" : "crash, regiment, pinnacle, parthenon, acropolis, animal horns, sow, pig, wart hog, regimental mascot, soil, dirt, ground",
+  "elements" : "crash, regiment, pinnacle, parthenon, acropolis, animal horns, horns, sow, pig, wart hog, regimental mascot, soil, dirt, ground",
 }
 ,
   
@@ -14142,7 +14177,7 @@ var docs =
   "id" : "1314",
   "kanji" : "堕",
   "keyword" : "degenerate",
-  "elements" : "degenerate, pinnacle, parthenon, acropolis, possess, by one’s side, moon, month, flesh, part of the body, ground, soil, dirt, ground",
+  "elements" : "degenerate, pinnacle, parthenon, acropolis, possess, by one's side, by one’s side, moon, month, flesh, part of the body, ground, soil, dirt, ground",
 }
 ,
   
@@ -14152,7 +14187,7 @@ var docs =
   "id" : "1315",
   "kanji" : "陥",
   "keyword" : "collapse",
-  "elements" : "collapse, pinnacle, parthenon, acropolis, straight-jacket, bound up, olden times, old days, stick, sun, day",
+  "elements" : "collapse, pinnacle, parthenon, acropolis, straight-jacket, bound up, olden times, olden days, old days, stick, sun, day",
 }
 ,
   
@@ -14172,7 +14207,8 @@ var docs =
   "id" : "1317",
   "kanji" : "空",
   "keyword" : "empty",
-  "elements" : "empty, hole, house, human legs, craft",
+  "elements" : "empty, sky, hole, house, human legs, craft",
+  "keywordWK" : "Sky",
 }
 ,
   
@@ -14542,7 +14578,7 @@ var docs =
   "id" : "1351",
   "kanji" : "結",
   "keyword" : "tie",
-  "elements" : "tie, thread, spiderman, aerosol, samurai, mouth",
+  "elements" : "tie, thread, spiderman, aerosol, good luck, samurai, mouth",
 }
 ,
   
@@ -14642,7 +14678,7 @@ var docs =
   "id" : "1361",
   "kanji" : "紳",
   "keyword" : "sire",
-  "elements" : "sire, thread, spiderman, monkey, sun, day, stick, rice field",
+  "elements" : "sire, thread, spiderman, monkey, sun, day, rice field, stick",
 }
 ,
   
@@ -14732,7 +14768,8 @@ var docs =
   "id" : "1370",
   "kanji" : "継",
   "keyword" : "inherit",
-  "elements" : "inherit, thread, spiderman, rice, fishhook",
+  "elements" : "inherit, thread, spiderman, rice, fishhook, straightened hook",
+  "elementsWK" : "lionWK",
 }
 ,
   
@@ -14802,7 +14839,8 @@ var docs =
   "id" : "1377",
   "kanji" : "縄",
   "keyword" : "straw rope",
-  "elements" : "straw rope, thread, spiderman, eels, sun, day, rice field",
+  "elements" : "straw rope, thread, spiderman, eel, eels, sun, day, rice field, fishhook",
+  "elementsWK" : "umbrellaWK, turtleWK",
 }
 ,
   
@@ -14842,7 +14880,7 @@ var docs =
   "id" : "1381",
   "kanji" : "幾",
   "keyword" : "how many",
-  "elements" : "how many, cocoon, person, fiesta, cocoon2",
+  "elements" : "how many, how much, cocoon, cocoon2, person, fiesta",
 }
 ,
   
@@ -14862,7 +14900,7 @@ var docs =
   "id" : "2887",
   "kanji" : "畿",
   "keyword" : "capital suburbs",
-  "elements" : "capital suburbs, cocoon, rice field, brains, fiesta, cocoon2",
+  "elements" : "capital suburbs, two cocoons, cocoon, rice field, brains, fiesta, cocoon2",
 }
 ,
   
@@ -15122,7 +15160,7 @@ var docs =
   "id" : "1407",
   "kanji" : "勇",
   "keyword" : "courage",
-  "elements" : "courage, chop-seal, hanko, male, rice field, brains, power, muscle, arnold",
+  "elements" : "courage, chop-seal, hanko, man, male, rice field, brains, power, muscle, arnold",
 }
 ,
   
@@ -15132,7 +15170,7 @@ var docs =
   "id" : "2284",
   "kanji" : "湧",
   "keyword" : "bubble up",
-  "elements" : "bubble up, water, water droplets, water pistol, courageous, courage, chop-seal, hanko, male, rice field, brains, power, muscle, arnold",
+  "elements" : "bubble up, water, water droplets, water pistol, courageous, courage, chop-seal, hanko, man, male, rice field, brains, power, muscle, arnold",
 }
 ,
   
@@ -15232,7 +15270,7 @@ var docs =
   "id" : "1416",
   "kanji" : "危",
   "keyword" : "dangerous",
-  "elements" : "dangerous, bound up, unlucky, cliff, fingerprint",
+  "elements" : "dangerous, danger, bound up, unlucky, cliff, fingerprint",
 }
 ,
   
@@ -15362,7 +15400,7 @@ var docs =
   "id" : "1426",
   "kanji" : "興",
   "keyword" : "entertain",
-  "elements" : "entertain, staples, same, monks, hood, one, mouth, tool, animal legs, eight",
+  "elements" : "entertain, entertainment, staples, same, monks, hood, one, mouth, tool, animal legs, eight",
 }
 ,
   
@@ -15492,7 +15530,7 @@ var docs =
   "id" : "1438",
   "kanji" : "猶",
   "keyword" : "waver",
-  "elements" : "furthermore, waver, pack of wild dogs, chieftain, Molotov cocktail, animal horns, whiskey bottle",
+  "elements" : "furthermore, waver, pack of wild dogs, chieftain, Molotov cocktail, animal horns, horns, whiskey bottle",
 }
 ,
   
@@ -15502,7 +15540,7 @@ var docs =
   "id" : "1439",
   "kanji" : "尊",
   "keyword" : "revered",
-  "elements" : "revered, chieftain, Molotov cocktail, animal horns, whiskey bottle, glue",
+  "elements" : "revered, chieftain, Molotov cocktail, animal horns, horns, whiskey bottle, glue",
 }
 ,
   
@@ -15512,7 +15550,7 @@ var docs =
   "id" : "1440",
   "kanji" : "豆",
   "keyword" : "beans",
-  "elements" : "beans, table, one, mouth",
+  "elements" : "beans, table, ceiling, one, mouth",
 }
 ,
   
@@ -15722,7 +15760,7 @@ var docs =
   "id" : "1459",
   "kanji" : "銀",
   "keyword" : "silver",
-  "elements" : "silver, metal, gold, silver",
+  "elements" : "silver, metal, gold",
 }
 ,
   
@@ -16052,7 +16090,7 @@ var docs =
   "id" : "1489",
   "kanji" : "希",
   "keyword" : "hope",
-  "elements" : "hope, sheaf, linen, by one’s side, towel",
+  "elements" : "hope, sheaf, linen, by one's side, by one’s side, towel",
 }
 ,
   
@@ -16632,7 +16670,7 @@ var docs =
   "id" : "1540",
   "kanji" : "静",
   "keyword" : "quiet",
-  "elements" : "quiet, blue, grow up, moon, flesh, contend, bound up, rake",
+  "elements" : "quiet, silent, blue, grow up, moon, flesh, contend, bound up, rake",
 }
 ,
   
@@ -16913,7 +16951,7 @@ var docs =
   "kanji" : "鋳",
   "keyword" : "casting",
   "elements" : "casting, metal, gold, longevity, bushes, glue",
-  "elementsWK": "slideWK",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -17263,7 +17301,7 @@ var docs =
   "id" : "1597",
   "kanji" : "兼",
   "keyword" : "concurrently",
-  "elements" : "concurrently, animal horns, rake, stick, stick2",
+  "elements" : "concurrently, animal horns, horns, rake, stick, stick2",
 }
 ,
   
@@ -17273,7 +17311,7 @@ var docs =
   "id" : "1598",
   "kanji" : "嫌",
   "keyword" : "dislike",
-  "elements" : "dislike, woman, concurrently, animal horns, rake",
+  "elements" : "dislike, woman, concurrently, animal horns, horns, rake",
 }
 ,
   
@@ -17283,7 +17321,7 @@ var docs =
   "id" : "1599",
   "kanji" : "鎌",
   "keyword" : "sickle",
-  "elements" : "sickle, metal, gold, concurrently, animal horns, rake",
+  "elements" : "sickle, metal, gold, concurrently, animal horns, horns, rake",
 }
 ,
   
@@ -17293,7 +17331,7 @@ var docs =
   "id" : "1600",
   "kanji" : "謙",
   "keyword" : "self-effacing",
-  "elements" : "self-effacing, say, words, keitai, mouth, concurrently, animal horns, rake",
+  "elements" : "self-effacing, say, words, keitai, mouth, concurrently, animal horns, horns, rake",
 }
 ,
   
@@ -17303,7 +17341,7 @@ var docs =
   "id" : "1601",
   "kanji" : "廉",
   "keyword" : "bargain",
-  "elements" : "bargain, cave, concurrently, animal horns, rake",
+  "elements" : "bargain, cave, concurrently, animal horns, horns, rake",
 }
 ,
   
@@ -17333,7 +17371,7 @@ var docs =
   "id" : "1604",
   "kanji" : "要",
   "keyword" : "need",
-  "elements" : "need, old west, woman",
+  "elements" : "need, old west, mouth, ceiling, woman",
 }
 ,
   
@@ -17434,6 +17472,7 @@ var docs =
   "kanji" : "南",
   "keyword" : "south",
   "elements" : "south, ten, needle, belt, happiness, ten, needle, stand up, vase, ten2, needle2",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -17543,7 +17582,7 @@ var docs =
   "id" : "1623",
   "kanji" : "閉",
   "keyword" : "closed",
-  "elements" : "closed, gates, genie",
+  "elements" : "closed, gates, genius, genie",
 }
 ,
   
@@ -17733,7 +17772,7 @@ var docs =
   "id" : "1641",
   "kanji" : "決",
   "keyword" : "decide",
-  "elements" : "decide, water, water droplets, water pistol, guillotine, key, St. Bernard",
+  "elements" : "decide, water, water droplets, water pistol, guillotine, key, St. Bernard, large, person",
 }
 ,
   
@@ -17743,7 +17782,7 @@ var docs =
   "id" : "1642",
   "kanji" : "快",
   "keyword" : "cheerful",
-  "elements" : "cheerful, Freud, state of mind, guillotine, key, St. Bernard",
+  "elements" : "cheerful, Freud, state of mind, guillotine, key, St. Bernard, large, person",
 }
 ,
   
@@ -17894,6 +17933,7 @@ var docs =
   "kanji" : "余",
   "keyword" : "too much",
   "elements" : "too much, umbrella, potato, small",
+  "keywordWK" : "Surplus",
 }
 ,
   
@@ -18043,7 +18083,7 @@ var docs =
   "id" : "1671",
   "kanji" : "剣",
   "keyword" : "saber",
-  "elements" : "sabre, saber, awl, fit, meeting, umbrella, mouth, person, sword, sabre, saber",
+  "elements" : "sabre, saber, awl, fit, meeting, umbrella, one, mouth, person, sword",
 }
 ,
   
@@ -18303,7 +18343,7 @@ var docs =
   "id" : "1692",
   "kanji" : "匿",
   "keyword" : "hide",
-  "elements" : "hide, box, young, flowers, right, by one’s side, mouth",
+  "elements" : "hide, box, young, flowers, right, by one's side, by one’s side, mouth",
 }
 ,
   
@@ -18403,7 +18443,7 @@ var docs =
   "id" : "1702",
   "kanji" : "迎",
   "keyword" : "welcome",
-  "elements" : "welcome, stamp album, box, stamps, road",
+  "elements" : "welcome, stamp album, box, stamp, stamps, road",
 }
 ,
   
@@ -18443,7 +18483,7 @@ var docs =
   "id" : "1706",
   "kanji" : "廃",
   "keyword" : "abolish",
-  "elements" : "abolish, cave, dicharge, teepee, wigwam, two, human legs",
+  "elements" : "abolish, cave, discharge, teepee, wigwam, two, human legs",
 }
 ,
   
@@ -18643,7 +18683,7 @@ var docs =
   "id" : "1725",
   "kanji" : "文",
   "keyword" : "sentence",
-  "elements" : "sentence, plaid, kilt, Billy Connolly",
+  "elements" : "sentence, plaid, kilt, Billy Connolly, crotch",
 }
 ,
   
@@ -18804,6 +18844,7 @@ var docs =
   "kanji" : "央",
   "keyword" : "center",
   "elements" : "center, large, St. Bernard, box body",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -18833,7 +18874,7 @@ var docs =
   "id" : "1743",
   "kanji" : "赤",
   "keyword" : "red",
-  "elements" : "red, soil, dirt, ground, sword, dagger, small",
+  "elements" : "red, soil, dirt, ground, sword, dagger, small, little, eight, human legs",
 }
 ,
   
@@ -18994,6 +19035,7 @@ var docs =
   "kanji" : "某",
   "keyword" : "so-and-so",
   "elements" : "so-and-so, sweet, wicker basket, picnic basket, tree, wood",
+  "keywordWK" : "Certain",
 }
 ,
   
@@ -19023,7 +19065,7 @@ var docs =
   "id" : "1762",
   "kanji" : "欺",
   "keyword" : "deceit",
-  "elements" : "deceit, bushel basket, hamper, animal legs, eight, lack, yawn",
+  "elements" : "deceit, bushel basket, hamper, animal legs, eight, lack, yawn, bound up, person",
 }
 ,
   
@@ -19084,6 +19126,7 @@ var docs =
   "kanji" : "甚",
   "keyword" : "tremendously",
   "elements" : "tremendously, bushel basket, hamper, equal, human legs",
+  "keywordWK" : "Very",
 }
 ,
   
@@ -19113,7 +19156,7 @@ var docs =
   "id" : "1771",
   "kanji" : "貴",
   "keyword" : "precious",
-  "elements" : "precious, Takanohana, purse, inX, one, floor, shellfish, clam, oyster, eye, animal legs, eight",
+  "elements" : "precious, Takanohana, purse, in, one, floor, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -19163,7 +19206,7 @@ var docs =
   "id" : "1775",
   "kanji" : "無",
   "keyword" : "nothingness",
-  "elements" : "nothingness, reclining, lying down, tub, oven-fire, barbecue",
+  "elements" : "nothingness, nothing, reclining, lying down, tub, oven-fire, barbecue",
 }
 ,
   
@@ -19343,7 +19386,7 @@ var docs =
   "id" : "1792",
   "kanji" : "業",
   "keyword" : "profession",
-  "elements" : "business, profession, upside down in a row, not yet, tree, wood",
+  "elements" : "business, profession, upside down in a row, row, not yet, tree, wood",
 }
 ,
   
@@ -19503,7 +19546,7 @@ var docs =
   "id" : "2884",
   "kanji" : "丼",
   "keyword" : "donburi",
-  "elements" : "domburi, well, drop",
+  "elements" : "donburi, domburi, well, drop",
 }
 ,
   
@@ -19554,6 +19597,7 @@ var docs =
   "kanji" : "円",
   "keyword" : "circle",
   "elements" : "circle, yen",
+  "elementsWK" : "headWK",
 }
 ,
   
@@ -19594,7 +19638,7 @@ var docs =
   "kanji" : "再",
   "keyword" : "again",
   "elements" : "again, king, jewel, ball, belt",
-  "elementsWK": "leafWK",
+  "elementsWK" : "leafWK",
 }
 ,
   
@@ -19644,7 +19688,7 @@ var docs =
   "id" : "1820",
   "kanji" : "論",
   "keyword" : "argument",
-  "elements" : "argument, say, words, keitai, mouth, post-it note, meeting, scrapbook, glass canopy, hood, flowers",
+  "elements" : "argument, say, words, keitai, mouth, post-it note, meeting, tome, scrapbook, scrapbooks, glass canopy, hood, flowers",
 }
 ,
   
@@ -19654,7 +19698,7 @@ var docs =
   "id" : "1821",
   "kanji" : "倫",
   "keyword" : "ethics",
-  "elements" : "ethics, person, post-it note, meeting, scrapbook, glass canopy, hood, flowers",
+  "elements" : "ethics, person, post-it note, meeting, tome, scrapbook, glass canopy, hood, flowers",
 }
 ,
   
@@ -19664,7 +19708,7 @@ var docs =
   "id" : "1822",
   "kanji" : "輪",
   "keyword" : "wheel",
-  "elements" : "wheel, car, post-it note, meeting, scrapbook, glass canopy, hood, flowers",
+  "elements" : "wheel, car, post-it note, meeting, tome, scrapbook, glass canopy, hood, flowers",
 }
 ,
   
@@ -19674,7 +19718,7 @@ var docs =
   "id" : "1823",
   "kanji" : "偏",
   "keyword" : "partial",
-  "elements" : "partial, person, fishfinger, door, one, ceiling, flag, scrapbook, glass canopy, hood, flowers",
+  "elements" : "partial, person, fishfinger, door, one, ceiling, flag, tome, scrapbook, glass canopy, hood, flowers",
 }
 ,
   
@@ -19684,7 +19728,7 @@ var docs =
   "id" : "1824",
   "kanji" : "遍",
   "keyword" : "everywhere",
-  "elements" : "everywhere, fishfinger, door, one, ceiling, flag, scrapbook, glass canopy, hood, flowers, road",
+  "elements" : "everywhere, fishfinger, door, one, ceiling, flag, tome, scrapbook, glass canopy, hood, flowers, road",
 }
 ,
   
@@ -19694,7 +19738,7 @@ var docs =
   "id" : "1825",
   "kanji" : "編",
   "keyword" : "compilation",
-  "elements" : "compilation, thread, spiderman, fishfinger, door, one, ceiling, flag, scrapbook, glass canopy, hood, flowers",
+  "elements" : "compilation, thread, spiderman, fishfinger, door, one, ceiling, flag, tome, scrapbook, glass canopy, hood, flowers",
 }
 ,
   
@@ -19704,7 +19748,7 @@ var docs =
   "id" : "1826",
   "kanji" : "冊",
   "keyword" : "tome",
-  "elements" : "tome",
+  "elements" : "tome, scrapbook, scrapbooks",
 }
 ,
   
@@ -19714,7 +19758,7 @@ var docs =
   "id" : "2507",
   "kanji" : "柵",
   "keyword" : "palisade",
-  "elements" : "palisade, tree, wood, tome",
+  "elements" : "palisade, tree, wood, tome, scrapbook, scrapbooks",
 }
 ,
   
@@ -19814,7 +19858,7 @@ var docs =
   "id" : "1836",
   "kanji" : "捕",
   "keyword" : "catch",
-  "elements" : "catch, finger, fingers, dog tag, arrowhead, screwdriver, utilize, utilise",
+  "elements" : "catch, finger, fingers, dog tag, dogtag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   
@@ -19944,8 +19988,8 @@ var docs =
   "id" : "1848",
   "kanji" : "邦",
   "keyword" : "home country",
-  "elements" : "home country, bushes, city walls",
-  "elementsWK": "slideWK",
+  "elements" : "home country, bushes, hook, city walls",
+  "elementsWK" : "slideWK, lifeWK, kingWK",
 }
 ,
   
@@ -20065,7 +20109,7 @@ var docs =
   "id" : "1859",
   "kanji" : "段",
   "keyword" : "grade",
-  "elements" : "grade, staple gun, cruise missile, missile, wind, crotch",
+  "elements" : "grade, staple gun, staples, cruise missile, missile, wind, crotch",
 }
 ,
   
@@ -20075,7 +20119,7 @@ var docs =
   "id" : "1860",
   "kanji" : "鍛",
   "keyword" : "forge",
-  "elements" : "forge, metal, gold, grade, staple gun, cruise missile, missile, wind, crotch",
+  "elements" : "forge, metal, gold, grade, staple gun, staples, cruise missile, missile, wind, crotch",
 }
 ,
   
@@ -20145,7 +20189,7 @@ var docs =
   "id" : "1867",
   "kanji" : "嗣",
   "keyword" : "heir",
-  "elements" : "heir, mouth, scrapbook, glass canopy, hood, flowers, director, Ken Russel, clothes hanger, coat hanger, one, mouth",
+  "elements" : "heir, mouth, tome, scrapbook, glass canopy, hood, flowers, director, Ken Russel, clothes hanger, coat hanger, one, mouth",
 }
 ,
   
@@ -20165,7 +20209,7 @@ var docs =
   "id" : "1869",
   "kanji" : "舶",
   "keyword" : "liner",
-  "elements" : "liner, boat, white, dove",
+  "elements" : "liner, boat, wind, drop, white, dove",
 }
 ,
   
@@ -20295,7 +20339,7 @@ var docs =
   "id" : "1881",
   "kanji" : "益",
   "keyword" : "benefit",
-  "elements" : "benefit, animal horns, one, floor, animal legs, eight, dish",
+  "elements" : "benefit, animal horns, horns, one, floor, animal legs, eight, dish",
 }
 ,
   
@@ -20305,7 +20349,7 @@ var docs =
   "id" : "1882",
   "kanji" : "暇",
   "keyword" : "spare time",
-  "elements" : "spare time, sun, day, hobby, staples, mouth, box, crotch, box2",
+  "elements" : "spare time, hobby, sun, day, staples, mouth, box, crotch, box2",
 }
 ,
   
@@ -20325,7 +20369,7 @@ var docs =
   "id" : "1884",
   "kanji" : "来",
   "keyword" : "come",
-  "elements" : "come, not yet, animal horns",
+  "elements" : "come, not yet, animal horns, horns",
 }
 ,
   
@@ -20365,7 +20409,7 @@ var docs =
   "id" : "1888",
   "kanji" : "沈",
   "keyword" : "sink",
-  "elements" : "sink, water, water droplets, water pistol, garter, crown, human legs",
+  "elements" : "sink, water, water droplets, water pistol, chihuahua with one human leg, garter, crown, human legs",
 }
 ,
   
@@ -20405,7 +20449,7 @@ var docs =
   "id" : "1890",
   "kanji" : "衰",
   "keyword" : "decline",
-  "elements" : "decline, pathetic, stick, top hat, scarf, mouth",
+  "elements" : "decline, declining, pathetic, stick, top hat, scarf, mouth",
 }
 ,
   
@@ -20475,7 +20519,7 @@ var docs =
   "id" : "2043",
   "kanji" : "此",
   "keyword" : "this here",
-  "elements" : "",
+  "elements" : "stop, footprint, spoon",
 }
 ,
   
@@ -20495,7 +20539,7 @@ var docs =
   "id" : "2044",
   "kanji" : "柴",
   "keyword" : "brushwood",
-  "elements" : "",
+  "elements" : "stop, footprint, spoon, tree, this here",
 }
 ,
   
@@ -20515,17 +20559,7 @@ var docs =
   "id" : "2045",
   "kanji" : "砦",
   "keyword" : "fort",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2046",
-  "kanji" : "些",
-  "keyword" : "whit",
-  "elements" : "",
+  "elements" : "this here, stop, footprint, spoon, stone",
 }
 ,
   
@@ -20536,6 +20570,16 @@ var docs =
   "kanji" : "呉",
   "keyword" : "give",
   "elements" : "give, mouth, chair, tool, animal legs",
+}
+,
+  
+
+
+  {
+  "id" : "2046",
+  "kanji" : "些",
+  "keyword" : "whit",
+  "elements" : "this here, stop, spoon, two",
 }
 ,
   
@@ -20555,7 +20599,7 @@ var docs =
   "id" : "2047",
   "kanji" : "髭",
   "keyword" : "beard",
-  "elements" : "",
+  "elements" : "mane, hairpin, shape, this here, stop, footprint, spoon",
 }
 ,
   
@@ -20565,7 +20609,7 @@ var docs =
   "id" : "1899",
   "kanji" : "誤",
   "keyword" : "mistake",
-  "elements" : "mistake, say, words, keitai, mouth, give, mouth, chair, tool, animal legs, mouth2",
+  "elements" : "mistake, say, words, keitai, mouth, give, chair, tool, animal legs, mouth2",
 }
 ,
   
@@ -20585,7 +20629,7 @@ var docs =
   "id" : "2049",
   "kanji" : "禽",
   "keyword" : "fowl",
-  "elements" : "",
+  "elements" : "umbrella, sheik, top hat, villain, sheaf, belt, elbow",
 }
 ,
   
@@ -20605,7 +20649,7 @@ var docs =
   "id" : "2050",
   "kanji" : "檎",
   "keyword" : "apple",
-  "elements" : "",
+  "elements" : "tree, fowl, umbrella, sheik, top hat, villain, sheaf, belt, elbow",
 }
 ,
   
@@ -20632,16 +20676,6 @@ var docs =
 
 
   {
-  "id" : "2052",
-  "kanji" : "燐",
-  "keyword" : "phosphorus",
-  "elements" : "",
-}
-,
-  
-
-
-  {
   "id" : "1903",
   "kanji" : "極",
   "keyword" : "poles",
@@ -20652,10 +20686,10 @@ var docs =
 
 
   {
-  "id" : "2053",
-  "kanji" : "麟",
-  "keyword" : "camelopard",
-  "elements" : "",
+  "id" : "2052",
+  "kanji" : "燐",
+  "keyword" : "phosphorus",
+  "elements" : "fire, rice, dance, ballerina, shoeshine",
 }
 ,
   
@@ -20672,10 +20706,10 @@ var docs =
 
 
   {
-  "id" : "2054",
-  "kanji" : "鱗",
-  "keyword" : "scaled",
-  "elements" : "",
+  "id" : "2053",
+  "kanji" : "麟",
+  "keyword" : "camelopard",
+  "elements" : "deer, cave, old west, compare, rice, dance, ballerina",
 }
 ,
   
@@ -20686,6 +20720,16 @@ var docs =
   "kanji" : "芽",
   "keyword" : "bud",
   "elements" : "bud, flowers, tusk",
+}
+,
+  
+
+
+  {
+  "id" : "2054",
+  "kanji" : "鱗",
+  "keyword" : "scaled",
+  "elements" : "fish, shoeshine, rice, dance, ballerina",
 }
 ,
   
@@ -20705,17 +20749,8 @@ var docs =
   "id" : "2055",
   "kanji" : "奄",
   "keyword" : "encompassing",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2056",
-  "kanji" : "庵",
-  "keyword" : "hermitage",
-  "elements" : "",
+  "elements" : "large, eel, rice field, fishhook, speaketh, monkey, inX",
+  "elementsWK" : "umbrellaWK",
 }
 ,
   
@@ -20732,10 +20767,11 @@ var docs =
 
 
   {
-  "id" : "2057",
-  "kanji" : "掩",
-  "keyword" : "shrouded",
-  "elements" : "",
+  "id" : "2056",
+  "kanji" : "庵",
+  "keyword" : "hermitage",
+  "elements" : "cave, dachshund, large, eel, rice field, speaketh, inX, fishhook",
+  "elementsWK" : "umbrellaWK",
 }
 ,
   
@@ -20752,6 +20788,17 @@ var docs =
 
 
   {
+  "id" : "2057",
+  "kanji" : "掩",
+  "keyword" : "shrouded",
+  "elements" : "fingers, dachshund, large, eel, speaketh, rice field, inX, fishhook",
+  "elementsWK" : "umbrellaWK",
+}
+,
+  
+
+
+  {
   "id" : "1909",
   "kanji" : "番",
   "keyword" : "turn",
@@ -20762,20 +20809,21 @@ var docs =
 
 
   {
-  "id" : "2059",
-  "kanji" : "悛",
-  "keyword" : "make amends",
-  "elements" : "",
+  "id" : "1910",
+  "kanji" : "審",
+  "keyword" : "hearing",
+  "elements" : "hearing, house, dice, animal tracks, drop, rice, rice field, brains",
 }
 ,
   
 
 
   {
-  "id" : "1910",
-  "kanji" : "審",
-  "keyword" : "hearing",
-  "elements" : "hearing, house, dice, animal tracks, drop, rice, rice field, brains",
+  "id" : "2059",
+  "kanji" : "悛",
+  "keyword" : "make amends",
+  "elements" : "state of mind, streetwalker, Ministry of silly walks, John Cleese, license, elbow, human legs, walking legs",
+  "elementsWK" : "soulWK, spiderWK",
 }
 ,
   
@@ -20795,17 +20843,8 @@ var docs =
   "id" : "2060",
   "kanji" : "駿",
   "keyword" : "steed",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2061",
-  "kanji" : "峻",
-  "keyword" : "steep",
-  "elements" : "",
+  "elements" : "team of horses, horse, streetwalker, elbow, human legs, walking legs",
+  "keywordWK" : "Speed",
 }
 ,
   
@@ -20816,6 +20855,16 @@ var docs =
   "kanji" : "藩",
   "keyword" : "clan",
   "elements" : "clan, flowers, water, water droplets, water pistol, dice, animal tracks, drop, rice, rice field, brains",
+}
+,
+  
+
+
+  {
+  "id" : "2061",
+  "kanji" : "峻",
+  "keyword" : "steep",
+  "elements" : "mountain, streetwalker, elbow, human legs, walking legs",
 }
 ,
   
@@ -20835,7 +20884,7 @@ var docs =
   "id" : "2062",
   "kanji" : "竣",
   "keyword" : "complete a job",
-  "elements" : "",
+  "elements" : "stand, streetwalker, elbow, human legs, walking legs",
 }
 ,
   
@@ -20852,16 +20901,6 @@ var docs =
 
 
   {
-  "id" : "2064",
-  "kanji" : "舅",
-  "keyword" : "father-in-law",
-  "elements" : "",
-}
-,
-  
-
-
-  {
   "id" : "1915",
   "kanji" : "尾",
   "keyword" : "tail",
@@ -20872,11 +20911,22 @@ var docs =
 
 
   {
+  "id" : "2064",
+  "kanji" : "舅",
+  "keyword" : "father-in-law",
+  "elements" : "mortar, man, male, rice field, power",
+  "elementsWK" : "sunWK, combWK, wolverineWK",
+}
+,
+  
+
+
+  {
   "id" : "1916",
   "kanji" : "宅",
   "keyword" : "home",
-  "elements" : "home, house, lock of hair",
-  "elementsWK": "slideWK",
+  "elements" : "home, house, lock of hair, seven",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -20886,7 +20936,8 @@ var docs =
   "id" : "2065",
   "kanji" : "鼠",
   "keyword" : "mouse",
-  "elements" : "",
+  "elements" : "mortar, plow, straightened hook, drop, drops, hook, fishhook",
+  "elementsWK" : "sunWK, wolverineWK, lionWK",
 }
 ,
   
@@ -20896,7 +20947,7 @@ var docs =
   "id" : "1917",
   "kanji" : "託",
   "keyword" : "consign",
-  "elements" : "consign, say, words, keitai, mouth, lock of hair",
+  "elements" : "consign, say, words, keitai, mouth, lock of hair, seven",
 }
 ,
   
@@ -20906,7 +20957,8 @@ var docs =
   "id" : "2066",
   "kanji" : "鑿",
   "keyword" : "bore",
-  "elements" : "",
+  "elements" : "row, owl, upside down in a row, mortar, missile, metal, gold, wind, crotch, cornstalk",
+  "elementsWK" : "sunWK",
 }
 ,
   
@@ -20923,20 +20975,21 @@ var docs =
 
 
   {
-  "id" : "2068",
-  "kanji" : "艘",
-  "keyword" : "small craft",
-  "elements" : "",
+  "id" : "1919",
+  "kanji" : "偽",
+  "keyword" : "falsehood",
+  "elements" : "falsehood, person, doX, so, strange building, tail feathers",
 }
 ,
   
 
 
   {
-  "id" : "1919",
-  "kanji" : "偽",
-  "keyword" : "falsehood",
-  "elements" : "falsehood, person, doX, so, strange building, tail feathers",
+  "id" : "2068",
+  "kanji" : "艘",
+  "keyword" : "small craft",
+  "elements" : "boat, mortar, crotch, stick",
+  "elementsWK" : "sunWK",
 }
 ,
   
@@ -20956,17 +21009,7 @@ var docs =
   "id" : "2069",
   "kanji" : "犀",
   "keyword" : "rhinoceros",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2070",
-  "kanji" : "皐",
-  "keyword" : "lunar month",
-  "elements" : "",
+  "elements" : "flag, I Ching, two, cow",
 }
 ,
   
@@ -20983,20 +21026,20 @@ var docs =
 
 
   {
-  "id" : "1921",
-  "kanji" : "張",
-  "keyword" : "lengthen",
-  "elements" : "lengthen, bow, long",
+  "id" : "2070",
+  "kanji" : "皐",
+  "keyword" : "lunar month",
+  "elements" : "white, I Ching, two, ten",
 }
 ,
   
 
 
   {
-  "id" : "2072",
-  "kanji" : "畷",
-  "keyword" : "rice-field footpath",
-  "elements" : "",
+  "id" : "1921",
+  "kanji" : "張",
+  "keyword" : "lengthen",
+  "elements" : "lengthen, bow, long",
 }
 ,
   
@@ -21013,10 +21056,10 @@ var docs =
 
 
   {
-  "id" : "2073",
-  "kanji" : "綴",
-  "keyword" : "mend",
-  "elements" : "",
+  "id" : "2072",
+  "kanji" : "畷",
+  "keyword" : "rice-field footpath",
+  "elements" : "rice field, stitching, crotch",
 }
 ,
   
@@ -21033,10 +21076,10 @@ var docs =
 
 
   {
-  "id" : "2074",
-  "kanji" : "爾",
-  "keyword" : "let it be",
-  "elements" : "",
+  "id" : "2073",
+  "kanji" : "綴",
+  "keyword" : "mend",
+  "elements" : "spike, thread, stitching, crotch",
 }
 ,
   
@@ -21053,20 +21096,20 @@ var docs =
 
 
   {
-  "id" : "1925",
-  "kanji" : "展",
-  "keyword" : "unfold",
-  "elements" : "unfold, flag, salad, hairpin, safety-pin",
+  "id" : "2074",
+  "kanji" : "爾",
+  "keyword" : "let it be",
+  "elements" : "spike, eight, one, hood, belt, stitching, crotch, sheaf",
 }
 ,
   
 
 
   {
-  "id" : "2076",
-  "kanji" : "鎧",
-  "keyword" : "suit of armor",
-  "elements" : "",
+  "id" : "1925",
+  "kanji" : "展",
+  "keyword" : "unfold",
+  "elements" : "unfold, flag, salad, hairpin, safety-pin",
 }
 ,
   
@@ -21083,10 +21126,10 @@ var docs =
 
 
   {
-  "id" : "2077",
-  "kanji" : "凱",
-  "keyword" : "triumph",
-  "elements" : "",
+  "id" : "2076",
+  "kanji" : "鎧",
+  "keyword" : "suit of armor",
+  "elements" : "metal, gold, hill of beans, mountain, one, beans",
 }
 ,
   
@@ -21096,7 +21139,17 @@ var docs =
   "id" : "1927",
   "kanji" : "巣",
   "keyword" : "nest",
-  "elements" : "nest, owl, fruit, rice field, brains, tree, wood",
+  "elements" : "nest, owl, one, animal legs, fruit, rice field, brains, tree, wood",
+}
+,
+  
+
+
+  {
+  "id" : "2077",
+  "kanji" : "凱",
+  "keyword" : "triumph",
+  "elements" : "hill of beans, mountain, one, beans, wind",
 }
 ,
   
@@ -21106,7 +21159,7 @@ var docs =
   "id" : "1928",
   "kanji" : "単",
   "keyword" : "simple",
-  "elements" : "simple, owl, rice field, brains, ten, needle",
+  "elements" : "simple, owl, one, animal legs, rice field, brains, ten, needle",
 }
 ,
   
@@ -21116,17 +21169,7 @@ var docs =
   "id" : "1929",
   "kanji" : "戦",
   "keyword" : "war",
-  "elements" : "war, simple, owl, rice field, brains, ten, needle, fiesta",
-}
-,
-  
-
-
-  {
-  "id" : "2080",
-  "kanji" : "呑",
-  "keyword" : "quaff",
-  "elements" : "",
+  "elements" : "war, simple, owl, one, animal legs, rice field, brains, ten, needle, fiesta",
 }
 ,
   
@@ -21136,7 +21179,18 @@ var docs =
   "id" : "1930",
   "kanji" : "禅",
   "keyword" : "Zen",
-  "elements" : "zen, altar, simple, owl, rice field, brains, ten, needle",
+  "elements" : "zen, altar, simple, owl, one, animal legs, rice field, brains, ten, needle",
+}
+,
+  
+
+
+  {
+  "id" : "2080",
+  "kanji" : "呑",
+  "keyword" : "quaff",
+  "elements" : "sapling, mouth",
+  "elementsWK" : "heavenWK",
 }
 ,
   
@@ -21146,7 +21200,7 @@ var docs =
   "id" : "1931",
   "kanji" : "弾",
   "keyword" : "bullet",
-  "elements" : "bullet, bow, simple, owl, rice field, brains, ten, needle",
+  "elements" : "bullet, bow, simple, owl, one, animal legs, rice field, brains, ten, needle",
 }
 ,
   
@@ -21156,7 +21210,7 @@ var docs =
   "id" : "2081",
   "kanji" : "韮",
   "keyword" : "leek",
-  "elements" : "",
+  "elements" : "flowers, green onion, un-, floor",
 }
 ,
   
@@ -21166,7 +21220,7 @@ var docs =
   "id" : "1932",
   "kanji" : "桜",
   "keyword" : "cherry tree",
-  "elements" : "cherry tree, tree, wood, owl, woman",
+  "elements" : "cherry tree, tree, wood, owl, one, animal legs, woman",
 }
 ,
   
@@ -21176,7 +21230,7 @@ var docs =
   "id" : "2082",
   "kanji" : "籤",
   "keyword" : "lottery",
-  "elements" : "",
+  "elements" : "bamboo, assembly line, person, green onion, un-, floor, fiesta",
 }
 ,
   
@@ -21186,7 +21240,7 @@ var docs =
   "id" : "1933",
   "kanji" : "獣",
   "keyword" : "animal",
-  "elements" : "animal, owl, rice field, brains, one, mouth, chihuahua, dog, large, drop",
+  "elements" : "animal, owl, rice field, brains, one, animal legs, mouth, chihuahua, dog, large, drop",
 }
 ,
   
@@ -21196,7 +21250,7 @@ var docs =
   "id" : "2083",
   "kanji" : "懺",
   "keyword" : "penitential",
-  "elements" : "",
+  "elements" : "state of mind, assembly line, person, green onion, un-, floor, fiesta",
 }
 ,
   
@@ -21206,7 +21260,7 @@ var docs =
   "id" : "1934",
   "kanji" : "脳",
   "keyword" : "brain",
-  "elements" : "brain, moon, month, flesh, part of the body, owl, villain, sheaf, shovel",
+  "elements" : "brain, moon, month, flesh, part of the body, owl, one, animal legs, villain, sheaf, shovel",
 }
 ,
   
@@ -21216,17 +21270,8 @@ var docs =
   "id" : "2084",
   "kanji" : "芻",
   "keyword" : "hay",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2085",
-  "kanji" : "雛",
-  "keyword" : "chick",
-  "elements" : "",
+  "elements" : "bound up, mountain",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -21236,17 +21281,18 @@ var docs =
   "id" : "1935",
   "kanji" : "悩",
   "keyword" : "trouble",
-  "elements" : "trouble, Freud, state of mind, owl, villain, sheaf, shovel",
+  "elements" : "trouble, Freud, state of mind, owl, one, animal legs, villain, sheaf, shovel",
 }
 ,
   
 
 
   {
-  "id" : "2086",
-  "kanji" : "趨",
-  "keyword" : "scurry",
-  "elements" : "",
+  "id" : "2085",
+  "kanji" : "雛",
+  "keyword" : "chick",
+  "elements" : "hay, bound up, mountain, turkey",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -21256,17 +21302,18 @@ var docs =
   "id" : "1936",
   "kanji" : "厳",
   "keyword" : "stern",
-  "elements" : "stern, owl, cliff, daring, spike, ear, taskmaster",
+  "elements" : "stern, owl, one, animal legs, cliff, daring, spike, ear, taskmaster",
 }
 ,
   
 
 
   {
-  "id" : "2087",
-  "kanji" : "尤",
-  "keyword" : "understandably",
-  "elements" : "",
+  "id" : "2086",
+  "kanji" : "趨",
+  "keyword" : "scurry",
+  "elements" : "run, hay, bound up, mountain",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -21283,10 +21330,21 @@ var docs =
 
 
   {
+  "id" : "2087",
+  "kanji" : "尤",
+  "keyword" : "understandably",
+  "elements" : "chihuahua with one human leg, crown, leg, drop, sink",
+  "elementsWK" : "pirateWK",
+}
+,
+  
+
+
+  {
   "id" : "1938",
   "kanji" : "挙",
   "keyword" : "raise",
-  "elements" : "raise, owl, tool, hand",
+  "elements" : "raise, owl, one, animal legs, tool, hand",
 }
 ,
   
@@ -21296,7 +21354,7 @@ var docs =
   "id" : "1939",
   "kanji" : "誉",
   "keyword" : "reputation",
-  "elements" : "reputation, owl, tool, say, words, keitai, mouth",
+  "elements" : "reputation, owl, one, animal legs, tool, say, words, keitai, mouth",
 }
 ,
   
@@ -21306,7 +21364,8 @@ var docs =
   "id" : "2089",
   "kanji" : "厖",
   "keyword" : "immense",
-  "elements" : "",
+  "elements" : "cliff, chihuahua with one human leg, crown, leg, shape",
+  "elementsWK" : "pirateWK",
 }
 ,
   
@@ -21316,7 +21375,7 @@ var docs =
   "id" : "1940",
   "kanji" : "猟",
   "keyword" : "game hunting",
-  "elements" : "game hunting, pack of wild dogs, anemometer, owl, wind, cornstalk",
+  "elements" : "game hunting, pack of wild dogs, anemometer, owl, one, animal legs, wind, cornstalk",
 }
 ,
   
@@ -21335,8 +21394,9 @@ var docs =
   {
   "id" : "2091",
   "kanji" : "或",
-  "keyword" : "a",
-  "elements" : "",
+  "keyword" : "a certain",
+  "elements" : "a, a certain, mouth, floor, one, fiesta",
+  "elementsWK" : "creeperWK",
 }
 ,
   
@@ -21353,20 +21413,21 @@ var docs =
 
 
   {
-  "id" : "2093",
-  "kanji" : "兎",
-  "keyword" : "rabbit",
-  "elements" : "",
+  "id" : "1943",
+  "kanji" : "鶴",
+  "keyword" : "crane",
+  "elements" : "crane, turkey house, bird",
 }
 ,
   
 
 
   {
-  "id" : "1943",
-  "kanji" : "鶴",
-  "keyword" : "crane",
-  "elements" : "crane, turkey house, bird",
+  "id" : "2093",
+  "kanji" : "兎",
+  "keyword" : "rabbit",
+  "elements" : "drop, mouth, stick, human legs",
+  "elementsWK" : "leafWK",
 }
 ,
   
@@ -21386,17 +21447,8 @@ var docs =
   "id" : "2094",
   "kanji" : "也",
   "keyword" : "est",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2095",
-  "kanji" : "尭",
-  "keyword" : "lofty",
-  "elements" : "",
+  "elements" : "scorpion, fishhook, stick",
+  "elementsWK" : "alligatorWK",
 }
 ,
   
@@ -21407,6 +21459,16 @@ var docs =
   "kanji" : "蔦",
   "keyword" : "vine",
   "elements" : "vine, flowers, bird",
+}
+,
+  
+
+
+  {
+  "id" : "2095",
+  "kanji" : "尭",
+  "keyword" : "lofty",
+  "elements" : "strawman, ten, salad, human legs",
 }
 ,
   
@@ -21426,17 +21488,7 @@ var docs =
   "id" : "2096",
   "kanji" : "巴",
   "keyword" : "comma-design",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2097",
-  "kanji" : "甫",
-  "keyword" : "offspring",
-  "elements" : "",
+  "elements" : "mosaic, stick",
 }
 ,
   
@@ -21447,6 +21499,17 @@ var docs =
   "kanji" : "鶏",
   "keyword" : "chicken",
   "elements" : "chicken, claw, vulture, husband, bird",
+}
+,
+  
+
+
+  {
+  "id" : "2097",
+  "kanji" : "甫",
+  "keyword" : "offspring",
+  "elements" : "dog tag",
+  "elementsWK" : "weddingWK",
 }
 ,
   
@@ -21466,17 +21529,8 @@ var docs =
   "id" : "2098",
   "kanji" : "疋",
   "keyword" : "critters",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2099",
-  "kanji" : "菫",
-  "keyword" : "violet",
-  "elements" : "",
+  "elements" : "zoo",
+  "elementsWK" : "coat rackWK",
 }
 ,
   
@@ -21493,10 +21547,11 @@ var docs =
 
 
   {
-  "id" : "2100",
-  "kanji" : "曼",
-  "keyword" : "mandala",
+  "id" : "2099",
+  "kanji" : "菫",
+  "keyword" : "violet",
   "elements" : "",
+  "elementsWK" : "cabbage, flowers, one, inX, mouth, stick, king",
 }
 ,
   
@@ -21513,6 +21568,17 @@ var docs =
 
 
   {
+  "id" : "2100",
+  "kanji" : "曼",
+  "keyword" : "mandala",
+  "elements" : "mandala, sun, day, net, eye, crotch",
+  "elementsWK" : "sunWK, netWK, stoolWK",
+}
+,
+  
+
+
+  {
   "id" : "1951",
   "kanji" : "援",
   "keyword" : "abet",
@@ -21523,20 +21589,21 @@ var docs =
 
 
   {
-  "id" : "2102",
-  "kanji" : "云",
-  "keyword" : "quote",
-  "elements" : "",
+  "id" : "1952",
+  "kanji" : "緩",
+  "keyword" : "slacken",
+  "elements" : "slacken, thread, spiderman, migrating ducks, claw, vulture, one, friend",
 }
 ,
   
 
 
   {
-  "id" : "1952",
-  "kanji" : "緩",
-  "keyword" : "slacken",
-  "elements" : "slacken, thread, spiderman, migrating ducks, claw, vulture, one, friend",
+  "id" : "2102",
+  "kanji" : "云",
+  "keyword" : "quote",
+  "elements" : "rising cloud",
+  "elementsWK" : "cloudWK",
 }
 ,
   
@@ -21556,17 +21623,8 @@ var docs =
   "id" : "2103",
   "kanji" : "卜",
   "keyword" : "augury",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2104",
-  "kanji" : "喬",
-  "keyword" : "heaven-high",
-  "elements" : "",
+  "elements" : "magic wand, divining rod",
+  "elementsWK" : "toeWK",
 }
 ,
   
@@ -21583,10 +21641,11 @@ var docs =
 
 
   {
-  "id" : "2105",
-  "kanji" : "莫",
-  "keyword" : "shalt",
-  "elements" : "",
+  "id" : "2104",
+  "kanji" : "喬",
+  "keyword" : "heaven-high",
+  "elements" : "angel, heavens, sapling, hood, mouth",
+  "elementsWK" : "leafWK",
 }
 ,
   
@@ -21603,10 +21662,11 @@ var docs =
 
 
   {
-  "id" : "2106",
-  "kanji" : "倭",
-  "keyword" : "Yamato",
-  "elements" : "",
+  "id" : "2105",
+  "kanji" : "莫",
+  "keyword" : "shalt",
+  "elements" : "flowers, sun, day, large",
+  "elementsWK" : "greenhouseWK",
 }
 ,
   
@@ -21617,6 +21677,16 @@ var docs =
   "kanji" : "遇",
   "keyword" : "interview",
   "elements" : "interview, talking cricket, brains, insect, belt, road",
+}
+,
+  
+
+
+  {
+  "id" : "2106",
+  "kanji" : "倭",
+  "keyword" : "Yamato",
+  "elements" : "person, committee, wheat, woman",
 }
 ,
   
@@ -21636,17 +21706,8 @@ var docs =
   "id" : "2107",
   "kanji" : "侠",
   "keyword" : "chivalry",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2108",
-  "kanji" : "倦",
-  "keyword" : "fed up",
-  "elements" : "",
+  "elements" : "person, scissors, husband, animal horns, horns",
+  "elementsWK" : "husbandWK, hornsWK",
 }
 ,
   
@@ -21657,6 +21718,16 @@ var docs =
   "kanji" : "隅",
   "keyword" : "corner",
   "elements" : "corner, pinnacle, parthenon, acropolis, talking cricket, brains, insect, belt",
+}
+,
+  
+
+
+  {
+  "id" : "2108",
+  "kanji" : "倦",
+  "keyword" : "fed up",
+  "elements" : "person, scroll, quarter, snake, self",
 }
 ,
   
@@ -21676,7 +21747,7 @@ var docs =
   "id" : "2109",
   "kanji" : "佼",
   "keyword" : "comely",
-  "elements" : "",
+  "elements" : "person, mingle, top hat, father",
 }
 ,
   
@@ -21696,17 +21767,7 @@ var docs =
   "id" : "2110",
   "kanji" : "俄",
   "keyword" : "abrupt",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2111",
-  "kanji" : "佃",
-  "keyword" : "work a field",
-  "elements" : "",
+  "elements" : "person, ego, arrow, drop",
 }
 ,
   
@@ -21723,10 +21784,10 @@ var docs =
 
 
   {
-  "id" : "2112",
-  "kanji" : "伶",
-  "keyword" : "minstrel",
-  "elements" : "",
+  "id" : "2111",
+  "kanji" : "佃",
+  "keyword" : "work a field",
+  "elements" : "person, field",
 }
 ,
   
@@ -21737,6 +21798,17 @@ var docs =
   "kanji" : "岡",
   "keyword" : "Mount",
   "elements" : "mount, glass canopy, hood, mountain goat, horns, mountain",
+  "elementsWK" : "headWK",
+}
+,
+  
+
+
+  {
+  "id" : "2112",
+  "kanji" : "伶",
+  "keyword" : "minstrel",
+  "elements" : "person, orders",
 }
 ,
   
@@ -21756,17 +21828,7 @@ var docs =
   "id" : "2113",
   "kanji" : "仔",
   "keyword" : "animal offspring",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2114",
-  "kanji" : "仇",
-  "keyword" : "foe",
-  "elements" : "",
+  "elements" : "person, child",
 }
 ,
   
@@ -21783,10 +21845,10 @@ var docs =
 
 
   {
-  "id" : "2115",
-  "kanji" : "伽",
-  "keyword" : "look after",
-  "elements" : "",
+  "id" : "2114",
+  "kanji" : "仇",
+  "keyword" : "foe",
+  "elements" : "person, nine",
 }
 ,
   
@@ -21797,6 +21859,16 @@ var docs =
   "kanji" : "剛",
   "keyword" : "sturdy",
   "elements" : "sturdy, mount, sword, sabre, saber",
+}
+,
+  
+
+
+  {
+  "id" : "2115",
+  "kanji" : "伽",
+  "keyword" : "look after",
+  "elements" : "person, add, power, mouth",
 }
 ,
   
@@ -21826,7 +21898,7 @@ var docs =
   "id" : "2117",
   "kanji" : "僻",
   "keyword" : "biased",
-  "elements" : "",
+  "elements" : "person, ketchup, spicy, flag, mouth",
 }
 ,
   
@@ -21846,17 +21918,7 @@ var docs =
   "id" : "2118",
   "kanji" : "儲",
   "keyword" : "make a profit",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2119",
-  "kanji" : "倖",
-  "keyword" : "bliss",
-  "elements" : "",
+  "elements" : "person, various, say, words, puppet, someone",
 }
 ,
   
@@ -21873,10 +21935,10 @@ var docs =
 
 
   {
-  "id" : "2120",
-  "kanji" : "僑",
-  "keyword" : "emigrant",
-  "elements" : "",
+  "id" : "2119",
+  "kanji" : "倖",
+  "keyword" : "bliss",
+  "elements" : "person, happiness",
 }
 ,
   
@@ -21886,7 +21948,17 @@ var docs =
   "id" : "3030",
   "kanji" : "鬱",
   "keyword" : "gloom",
-  "elements" : "psychopath",
+  "elements" : "psychopath, gloom",
+}
+,
+  
+
+
+  {
+  "id" : "2120",
+  "kanji" : "僑",
+  "keyword" : "emigrant",
+  "elements" : "person, angel, wheat, hood, mouth",
 }
 ,
   
@@ -21906,17 +21978,7 @@ var docs =
   "id" : "2742",
   "kanji" : "蹴",
   "keyword" : "kick",
-  "elements" : "kick, wooden leg, mouth, stop, footprint, concerning, capital, tall, top hat, mouth, small, little, understandably, chihuahua with one human leg, mouth2",
-}
-,
-  
-
-
-  {
-  "id" : "2123",
-  "kanji" : "侃",
-  "keyword" : "integrity",
-  "elements" : "",
+  "elements" : "kick, wooden leg, leg, mouth, stop, footprint, concerning, capital, tall, top hat, mouth, small, little, understandably, chihuahua with one human leg, mouth2",
 }
 ,
   
@@ -21927,6 +21989,16 @@ var docs =
   "kanji" : "懇",
   "keyword" : "sociable",
   "elements" : "sociable, skunk, silver, heart",
+}
+,
+  
+
+
+  {
+  "id" : "2123",
+  "kanji" : "侃",
+  "keyword" : "integrity",
+  "elements" : "person, mouth, flood",
 }
 ,
   
@@ -21946,17 +22018,7 @@ var docs =
   "id" : "2124",
   "kanji" : "倶",
   "keyword" : "mate",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2125",
-  "kanji" : "侭",
-  "keyword" : "as is",
-  "elements" : "",
+  "elements" : "person, tool, eye, one, animal legs, eight",
 }
 ,
   
@@ -21973,10 +22035,10 @@ var docs =
 
 
   {
-  "id" : "2126",
-  "kanji" : "佑",
-  "keyword" : "adjutant",
-  "elements" : "",
+  "id" : "2125",
+  "kanji" : "侭",
+  "keyword" : "as is",
+  "elements" : "person, exhaust, shaku-hachi, flag, stick, ice",
 }
 ,
   
@@ -21993,10 +22055,10 @@ var docs =
 
 
   {
-  "id" : "2127",
-  "kanji" : "俣",
-  "keyword" : "fork in a road",
-  "elements" : "",
+  "id" : "2126",
+  "kanji" : "佑",
+  "keyword" : "adjutant",
+  "elements" : "person, right",
 }
 ,
   
@@ -22006,17 +22068,17 @@ var docs =
   "id" : "1973",
   "kanji" : "逸",
   "keyword" : "elude",
-  "elements" : "deviate, elude, village stocks, rabbit, bound up, human legs, road",
+  "elements" : "deviate, elude, excuse, village stocks, rabbit, bound up, human legs, road",
 }
 ,
   
 
 
   {
-  "id" : "2128",
-  "kanji" : "傭",
-  "keyword" : "hire",
-  "elements" : "",
+  "id" : "2127",
+  "kanji" : "俣",
+  "keyword" : "fork in a road",
+  "elements" : "person, mouth, heavens",
 }
 ,
   
@@ -22026,7 +22088,17 @@ var docs =
   "id" : "1974",
   "kanji" : "晩",
   "keyword" : "nightfall",
-  "elements" : "nightfall, sun, day, village stocks, rabbit, bound up, human legs",
+  "elements" : "nightfall, sun, day, excuse, village stocks, rabbit, bound up, human legs",
+}
+,
+  
+
+
+  {
+  "id" : "2128",
+  "kanji" : "傭",
+  "keyword" : "hire",
+  "elements" : "person, commonplace, common, cave, brush, broom, utilize",
 }
 ,
   
@@ -22036,7 +22108,7 @@ var docs =
   "id" : "1975",
   "kanji" : "勉",
   "keyword" : "exertion",
-  "elements" : "exertion, village stocks, rabbit, bound up, human legs, power, muscle, arnold",
+  "elements" : "exertion, excuse, village stocks, rabbit, bound up, human legs, power, muscle, arnold",
 }
 ,
   
@@ -22046,7 +22118,7 @@ var docs =
   "id" : "2129",
   "kanji" : "偲",
   "keyword" : "memorial",
-  "elements" : "",
+  "elements" : "person, think, rice field, heart",
 }
 ,
   
@@ -22066,17 +22138,7 @@ var docs =
   "id" : "2130",
   "kanji" : "脩",
   "keyword" : "dried meat",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2131",
-  "kanji" : "倅",
-  "keyword" : "my son",
-  "elements" : "",
+  "elements" : "person, walking stick, stick, taskmaster, meat, moon",
 }
 ,
   
@@ -22093,10 +22155,10 @@ var docs =
 
 
   {
-  "id" : "2132",
-  "kanji" : "做",
-  "keyword" : "make do",
-  "elements" : "",
+  "id" : "2131",
+  "kanji" : "倅",
+  "keyword" : "my son",
+  "elements" : "person, graduate, top hat, assembly line, ten",
 }
 ,
   
@@ -22113,6 +22175,16 @@ var docs =
 
 
   {
+  "id" : "2132",
+  "kanji" : "做",
+  "keyword" : "make do",
+  "elements" : "person, happenstance, old, taskmaster",
+}
+,
+  
+
+
+  {
   "id" : "1979",
   "kanji" : "駒",
   "keyword" : "pony",
@@ -22123,20 +22195,20 @@ var docs =
 
 
   {
-  "id" : "2134",
-  "kanji" : "冴",
-  "keyword" : "sharp",
-  "elements" : "",
+  "id" : "1980",
+  "kanji" : "験",
+  "keyword" : "verification",
+  "elements" : "verification, team of horses, awl, fit, meeting, umbrella, mouth, person",
 }
 ,
   
 
 
   {
-  "id" : "1980",
-  "kanji" : "験",
-  "keyword" : "verification",
-  "elements" : "verification, team of horses, awl, fit, meeting, umbrella, mouth, person",
+  "id" : "2134",
+  "kanji" : "冴",
+  "keyword" : "sharp",
+  "elements" : "ice, tusk",
 }
 ,
   
@@ -22156,7 +22228,7 @@ var docs =
   "id" : "2135",
   "kanji" : "凋",
   "keyword" : "wilt",
-  "elements" : "",
+  "elements" : "ice, circumference",
 }
 ,
   
@@ -22176,7 +22248,7 @@ var docs =
   "id" : "2136",
   "kanji" : "凌",
   "keyword" : "pull through",
-  "elements" : "",
+  "elements" : "dirt, walking legs, ice",
 }
 ,
   
@@ -22193,16 +22265,6 @@ var docs =
 
 
   {
-  "id" : "2138",
-  "kanji" : "凛",
-  "keyword" : "stately",
-  "elements" : "",
-}
-,
-  
-
-
-  {
   "id" : "1984",
   "kanji" : "駅",
   "keyword" : "station",
@@ -22213,10 +22275,10 @@ var docs =
 
 
   {
-  "id" : "2139",
-  "kanji" : "凧",
-  "keyword" : "kite",
-  "elements" : "",
+  "id" : "2138",
+  "kanji" : "凛",
+  "keyword" : "stately",
+  "elements" : "ice, -times, times, altar",
 }
 ,
   
@@ -22227,6 +22289,16 @@ var docs =
   "kanji" : "騒",
   "keyword" : "boisterous",
   "elements" : "boisterous, team of horses, crotch, insect",
+}
+,
+  
+
+
+  {
+  "id" : "2139",
+  "kanji" : "凧",
+  "keyword" : "kite",
+  "elements" : "wind, towel",
 }
 ,
   
@@ -22246,17 +22318,7 @@ var docs =
   "id" : "2140",
   "kanji" : "凪",
   "keyword" : "lull",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2141",
-  "kanji" : "夙",
-  "keyword" : "earlybird",
-  "elements" : "",
+  "elements" : "wind, stop",
 }
 ,
   
@@ -22273,10 +22335,10 @@ var docs =
 
 
   {
-  "id" : "2142",
-  "kanji" : "鳳",
-  "keyword" : "phoenix",
-  "elements" : "",
+  "id" : "2141",
+  "kanji" : "夙",
+  "keyword" : "earlybird",
+  "elements" : "wind, bone",
 }
 ,
   
@@ -22287,6 +22349,16 @@ var docs =
   "kanji" : "篤",
   "keyword" : "fervent",
   "elements" : "fervent, bamboo, team of horses",
+}
+,
+  
+
+
+  {
+  "id" : "2142",
+  "kanji" : "鳳",
+  "keyword" : "phoenix",
+  "elements" : "wind, ceiling, bird",
 }
 ,
   
@@ -22306,7 +22378,7 @@ var docs =
   "id" : "2143",
   "kanji" : "劉",
   "keyword" : "slaughter",
-  "elements" : "",
+  "elements" : "receipt, sword, metal, gold, sabre, saber",
 }
 ,
   
@@ -22326,17 +22398,7 @@ var docs =
   "id" : "1990",
   "kanji" : "虎",
   "keyword" : "tiger",
-  "elements" : "tiger, magic wand, augury, cliff, hook, diced, seven, human legs",
-}
-,
-  
-
-
-  {
-  "id" : "2146",
-  "kanji" : "剃",
-  "keyword" : "shave",
-  "elements" : "",
+  "elements" : "tiger, magic wand, wand, augury, divining rod, cliff, hook, diced, seven, human legs",
 }
 ,
   
@@ -22346,7 +22408,17 @@ var docs =
   "id" : "1991",
   "kanji" : "虜",
   "keyword" : "captive",
-  "elements" : "captive, tiger, male, rice field, brains, power, muscle, arnold",
+  "elements" : "captive, tiger, man, male, rice field, brains, power, muscle, arnold",
+}
+,
+  
+
+
+  {
+  "id" : "2146",
+  "kanji" : "剃",
+  "keyword" : "shave",
+  "elements" : "younger brother, horns, dollar, bow, stick, saber",
 }
 ,
   
@@ -22386,17 +22458,7 @@ var docs =
   "id" : "2149",
   "kanji" : "厭",
   "keyword" : "despondent",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2150",
-  "kanji" : "雁",
-  "keyword" : "wild goose",
-  "elements" : "",
+  "elements" : "cliff, wagging tongue, tongue wagging, mouth, sun",
 }
 ,
   
@@ -22413,10 +22475,10 @@ var docs =
 
 
   {
-  "id" : "2151",
-  "kanji" : "贋",
-  "keyword" : "counterfeit",
-  "elements" : "",
+  "id" : "2150",
+  "kanji" : "雁",
+  "keyword" : "wild goose",
+  "elements" : "cliff, person, turkey",
 }
 ,
   
@@ -22427,6 +22489,16 @@ var docs =
   "kanji" : "慮",
   "keyword" : "prudence",
   "elements" : "prudence, tiger, think, rice field, brains, heart",
+}
+,
+  
+
+
+  {
+  "id" : "2151",
+  "kanji" : "贋",
+  "keyword" : "counterfeit",
+  "elements" : "wild goose, cliff, person, turkey, money",
 }
 ,
   
@@ -22446,7 +22518,7 @@ var docs =
   "id" : "2152",
   "kanji" : "厨",
   "keyword" : "kitchen",
-  "elements" : "",
+  "elements" : "cliff, table, ceiling, mouth, glue",
 }
 ,
   
@@ -22466,7 +22538,7 @@ var docs =
   "id" : "2153",
   "kanji" : "仄",
   "keyword" : "insinuate",
-  "elements" : "",
+  "elements" : "cliff, person",
 }
 ,
   
@@ -22486,7 +22558,7 @@ var docs =
   "id" : "2154",
   "kanji" : "哨",
   "keyword" : "scout",
-  "elements" : "",
+  "elements" : "mouth, candle, resemblance, little, small, moon",
 }
 ,
   
@@ -22496,17 +22568,7 @@ var docs =
   "id" : "2839",
   "kanji" : "麓",
   "keyword" : "foot of a mountain",
-  "elements" : "foot of a mountain, grove, tree, wood, deer, cave, antlers, compare, spoon, sitting on the ground, spoon2, sitting on the ground2",
-}
-,
-  
-
-
-  {
-  "id" : "2156",
-  "kanji" : "咎",
-  "keyword" : "reprehend",
-  "elements" : "",
+  "elements" : "foot of a mountain, foothills, grove, tree, wood, deer, cave, antlers, compare, spoon, sitting on the ground, spoon2, sitting on the ground2",
 }
 ,
   
@@ -22523,11 +22585,21 @@ var docs =
 
 
   {
+  "id" : "2156",
+  "kanji" : "咎",
+  "keyword" : "reprehend",
+  "elements" : "walking legs, person, mouth",
+}
+,
+  
+
+
+  {
   "id" : "2001",
   "kanji" : "慶",
   "keyword" : "jubilation",
   "elements" : "jubilation, deer, cave, antlers, crown, heart, walking legs",
-  "elementsWK": "barbWK",
+  "elementsWK" : "barbWK",
 }
 ,
   
@@ -22537,17 +22609,7 @@ var docs =
   "id" : "2157",
   "kanji" : "囁",
   "keyword" : "whisper",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2158",
-  "kanji" : "喋",
-  "keyword" : "chatter",
-  "elements" : "mouth, generation, tree",
+  "elements" : "mouth, three ears, ear",
 }
 ,
   
@@ -22564,20 +22626,20 @@ var docs =
 
 
   {
-  "id" : "2003",
-  "kanji" : "熊",
-  "keyword" : "bear",
-  "elements" : "bear, ability, elbow, moon, month, flesh, part of the body, spoon, sitting on the ground, oven-fire, barbecue, spoon2, sitting on the ground2",
+  "id" : "2158",
+  "kanji" : "喋",
+  "keyword" : "chatter",
+  "elements" : "mouth, generation, tree",
 }
 ,
   
 
 
   {
-  "id" : "2160",
-  "kanji" : "嘩",
-  "keyword" : "quarrel",
-  "elements" : "",
+  "id" : "2003",
+  "kanji" : "熊",
+  "keyword" : "bear",
+  "elements" : "bear, ability, elbow, moon, month, flesh, part of the body, spoon, sitting on the ground, oven-fire, barbecue, spoon2, sitting on the ground2",
 }
 ,
   
@@ -22594,10 +22656,10 @@ var docs =
 
 
   {
-  "id" : "2161",
-  "kanji" : "噂",
-  "keyword" : "gossip",
-  "elements" : "",
+  "id" : "2160",
+  "kanji" : "嘩",
+  "keyword" : "quarrel",
+  "elements" : "mouth, splendor, splendid, flowers, silage, ten",
 }
 ,
   
@@ -22608,6 +22670,16 @@ var docs =
   "kanji" : "態",
   "keyword" : "attitude",
   "elements" : "attitude, ability, elbow, moon, month, flesh, part of the body, spoon, sitting on the ground, heart, spoon2, sitting on the ground2",
+}
+,
+  
+
+
+  {
+  "id" : "2161",
+  "kanji" : "噂",
+  "keyword" : "gossip",
+  "elements" : "mouth, revered, horns, alcohol, glue",
 }
 ,
   
@@ -22627,7 +22699,7 @@ var docs =
   "id" : "2162",
   "kanji" : "咳",
   "keyword" : "cough",
-  "elements" : "",
+  "elements" : "mouth, acorn, top hat, sign of the hog",
 }
 ,
   
@@ -22638,7 +22710,7 @@ var docs =
   "kanji" : "演",
   "keyword" : "performance",
   "elements" : "performance, water, water droplets, water pistol, sign of the tiger, house, caterpillar, one, ceiling, sprout, shoot, animal legs, eight",
-  "elementsWK": "leafWK",
+  "elementsWK" : "leafWK",
 }
 ,
   
@@ -22648,7 +22720,7 @@ var docs =
   "id" : "2163",
   "kanji" : "喧",
   "keyword" : "clamor",
-  "elements" : "",
+  "elements" : "mouth, proclaim, house, ceiling, nightbreak",
 }
 ,
   
@@ -22688,7 +22760,7 @@ var docs =
   "id" : "2166",
   "kanji" : "叩",
   "keyword" : "bash",
-  "elements" : "",
+  "elements" : "mouth, stamp",
 }
 ,
   
@@ -22728,7 +22800,7 @@ var docs =
   "id" : "2168",
   "kanji" : "啄",
   "keyword" : "peck at",
-  "elements" : "",
+  "elements" : "mouth, sow",
 }
 ,
   
@@ -22745,20 +22817,20 @@ var docs =
 
 
   {
-  "id" : "2170",
-  "kanji" : "吠",
-  "keyword" : "barking",
-  "elements" : "",
+  "id" : "2014",
+  "kanji" : "農",
+  "keyword" : "agriculture",
+  "elements" : "agriculture, bend, sign of the dragon, cliff, two, hairpin, safety-pin",
 }
 ,
   
 
 
   {
-  "id" : "2014",
-  "kanji" : "農",
-  "keyword" : "agriculture",
-  "elements" : "agriculture, bend, sign of the dragon, cliff, two, hairpin, safety-pin",
+  "id" : "2170",
+  "kanji" : "吠",
+  "keyword" : "barking",
+  "elements" : "mouth, chihuahua",
 }
 ,
   
@@ -22778,17 +22850,7 @@ var docs =
   "id" : "2171",
   "kanji" : "吊",
   "keyword" : "dangle",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2172",
-  "kanji" : "噛",
-  "keyword" : "chew",
-  "elements" : "",
+  "elements" : "mouth, towel",
 }
 ,
   
@@ -22799,6 +22861,16 @@ var docs =
   "kanji" : "送",
   "keyword" : "send off",
   "elements" : "escort, send off, golden calf, horns, heavens, road",
+}
+,
+  
+
+
+  {
+  "id" : "2172",
+  "kanji" : "噛",
+  "keyword" : "chew",
+  "elements" : "mouth, teeth",
 }
 ,
   
@@ -22818,17 +22890,8 @@ var docs =
   "id" : "2173",
   "kanji" : "叶",
   "keyword" : "within my ability",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2174",
-  "kanji" : "吻",
-  "keyword" : "sides of the mouth",
-  "elements" : "",
+  "elements" : "mouth, ten, needle",
+  "keywordWK" : "grant",
 }
 ,
   
@@ -22845,9 +22908,9 @@ var docs =
 
 
   {
-  "id" : "2175",
-  "kanji" : "吃",
-  "keyword" : "stammer",
+  "id" : "2174",
+  "kanji" : "吻",
+  "keyword" : "sides of the mouth, mouth, knot",
   "elements" : "",
 }
 ,
@@ -22865,10 +22928,10 @@ var docs =
 
 
   {
-  "id" : "2176",
-  "kanji" : "噺",
-  "keyword" : "spin a tale",
-  "elements" : "",
+  "id" : "2175",
+  "kanji" : "吃",
+  "keyword" : "stammer",
+  "elements" : "mouth, beg, reclining, lying down, fishhook, fish guts",
 }
 ,
   
@@ -22879,6 +22942,16 @@ var docs =
   "kanji" : "醜",
   "keyword" : "ugly",
   "elements" : "ugly, whiskey bottle, ghost, oni, drop, brains, rice field, human legs, elbow",
+}
+,
+  
+
+
+  {
+  "id" : "2176",
+  "kanji" : "噺",
+  "keyword" : "spin a tale",
+  "elements" : "mouth, new, red pepper, axe",
 }
 ,
   
@@ -22898,7 +22971,7 @@ var docs =
   "id" : "2177",
   "kanji" : "噌",
   "keyword" : "miso",
-  "elements" : "",
+  "elements" : "mouth, increase, horns, rice field, sun",
 }
 ,
   
@@ -22925,20 +22998,20 @@ var docs =
 
 
   {
-  "id" : "2180",
-  "kanji" : "邑",
-  "keyword" : "city walls",
-  "elements" : "",
+  "id" : "2024",
+  "kanji" : "塊",
+  "keyword" : "clod",
+  "elements" : "clod, soil, dirt, ground, ghost, oni, drop, brains, rice field, human legs, elbow",
 }
 ,
   
 
 
   {
-  "id" : "2024",
-  "kanji" : "塊",
-  "keyword" : "clod",
-  "elements" : "clod, soil, dirt, ground, ghost, oni, drop, brains, rice field, human legs, elbow",
+  "id" : "2180",
+  "kanji" : "邑",
+  "keyword" : "city walls",
+  "elements" : "mouth, mosaic",
 }
 ,
   
@@ -22958,17 +23031,7 @@ var docs =
   "id" : "2181",
   "kanji" : "呆",
   "keyword" : "dumbfounded",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2182",
-  "kanji" : "喰",
-  "keyword" : "ingest",
-  "elements" : "",
+  "elements" : "mouth, tree",
 }
 ,
   
@@ -22979,6 +23042,16 @@ var docs =
   "kanji" : "嚇",
   "keyword" : "upbraid",
   "elements" : "menacing, upbraid, mouth, incandescent, red, red2",
+}
+,
+  
+
+
+  {
+  "id" : "2182",
+  "kanji" : "喰",
+  "keyword" : "ingest",
+  "elements" : "mouth, eat",
 }
 ,
   
@@ -22998,17 +23071,7 @@ var docs =
   "id" : "2183",
   "kanji" : "埴",
   "keyword" : "clay",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2184",
-  "kanji" : "坤",
-  "keyword" : "authochthonous",
-  "elements" : "",
+  "elements" : "soil, dirt, straightaway, needle, eye, straightened hook",
 }
 ,
   
@@ -23025,20 +23088,20 @@ var docs =
 
 
   {
-  "id" : "2029",
-  "kanji" : "箇",
-  "keyword" : "item",
-  "elements" : "item, bamboo, harden, pent in, old, tombstone, gravestone, church, ten, needle, mouth",
+  "id" : "2184",
+  "kanji" : "坤",
+  "keyword" : "authochthonous",
+  "elements" : "soil, dirt, monkey, rice field, stick",
 }
 ,
   
 
 
   {
-  "id" : "2186",
-  "kanji" : "壕",
-  "keyword" : "dugout",
-  "elements" : "",
+  "id" : "2029",
+  "kanji" : "箇",
+  "keyword" : "item",
+  "elements" : "item, bamboo, harden, pent in, old, tombstone, gravestone, church, ten, needle, mouth",
 }
 ,
   
@@ -23055,10 +23118,10 @@ var docs =
 
 
   {
-  "id" : "2187",
-  "kanji" : "垢",
-  "keyword" : "blemish",
-  "elements" : "",
+  "id" : "2186",
+  "kanji" : "壕",
+  "keyword" : "dugout",
+  "elements" : "soil, dirt, overpowering, top hat, mouth, crown, sow",
 }
 ,
   
@@ -23068,7 +23131,17 @@ var docs =
   "id" : "2031",
   "kanji" : "遵",
   "keyword" : "abide by",
-  "elements" : "abide by, revered, Mother Teresa, chieftain, Molotov cocktail, animal horns, whiskey bottle, glue, road",
+  "elements" : "abide by, revered, Mother Teresa, chieftain, Molotov cocktail, animal horns, horns, whiskey bottle, glue, road",
+}
+,
+  
+
+
+  {
+  "id" : "2187",
+  "kanji" : "垢",
+  "keyword" : "blemish",
+  "elements" : "soil, dirt, empress, cliff, ceiling, mouth",
 }
 ,
   
@@ -23088,7 +23161,7 @@ var docs =
   "id" : "2188",
   "kanji" : "坦",
   "keyword" : "flat",
-  "elements" : "",
+  "elements" : "soil, dirt, nightbreak, sun, day, floor",
 }
 ,
   
@@ -23108,7 +23181,7 @@ var docs =
   "id" : "2189",
   "kanji" : "埠",
   "keyword" : "wharf",
-  "elements" : "",
+  "elements" : "soil, dirt, large city, maestro, needle",
 }
 ,
   
@@ -23125,20 +23198,20 @@ var docs =
 
 
   {
-  "id" : "2191",
-  "kanji" : "堰",
-  "keyword" : "dam",
-  "elements" : "",
+  "id" : "2035",
+  "kanji" : "藻",
+  "keyword" : "seaweed",
+  "elements" : "seaweed, flowers, water, water droplets, water pistol, furniture, wooden goods, goods, mouth, tree, wood, mouth3",
 }
 ,
   
 
 
   {
-  "id" : "2035",
-  "kanji" : "藻",
-  "keyword" : "seaweed",
-  "elements" : "seaweed, flowers, water, water droplets, water pistol, furniture, goods, mouth, tree, wood, mouth3",
+  "id" : "2191",
+  "kanji" : "堰",
+  "keyword" : "dam",
+  "elements" : "soil, dirt, box, sun, day, woman",
 }
 ,
   
@@ -23158,17 +23231,7 @@ var docs =
   "id" : "2192",
   "kanji" : "堵",
   "keyword" : "railing",
-  "elements" : "",
-}
-,
-  
-
-
-  {
-  "id" : "2193",
-  "kanji" : "嬰",
-  "keyword" : "suckling infant",
-  "elements" : "",
+  "elements" : "soil, dirt, puppet, someone",
 }
 ,
   
@@ -23178,7 +23241,17 @@ var docs =
   "id" : "2037",
   "kanji" : "癒",
   "keyword" : "healing",
-  "elements" : "healing, sickness, hospital, in the nick of time, meeting of butchers, moon, month, flesh, part of the body, sword, sabre, saber, heart",
+  "elements" : "healing, sickness, hospital, in the nick of time, meeting of butchers, butchers, meeting, umbrella, moon, month, flesh, part of the body, sword, sabre, saber, heart",
+}
+,
+  
+
+
+  {
+  "id" : "2193",
+  "kanji" : "嬰",
+  "keyword" : "suckling infant",
+  "elements" : "suckling infant, suckling babe, two shells, shellfish, shell, woman",
 }
 ,
   
@@ -23188,7 +23261,8 @@ var docs =
   "id" : "2075",
   "kanji" : "璽",
   "keyword" : "imperial seal",
-  "elements" : "imperial seal, let it be, noren, one, ceiling, eight, towel, stitching, patchwork quilt, jewel, earring",
+  "elements" : "imperial seal, let it be, noren, one, ceiling, eight, towel, stitching, crotch, sheaf, patchwork quilt, jewel, earring, drop",
+  "elementsWK" : "kingWK",
 }
 ,
   
@@ -23198,7 +23272,7 @@ var docs =
   "id" : "2194",
   "kanji" : "姦",
   "keyword" : "violate",
-  "elements" : "",
+  "elements" : "three women, woman",
 }
 ,
   
@@ -23215,16 +23289,6 @@ var docs =
 
 
   {
-  "id" : "2196",
-  "kanji" : "婢",
-  "keyword" : "handmaiden",
-  "elements" : "",
-}
-,
-  
-
-
-  {
   "id" : "2038",
   "kanji" : "丹",
   "keyword" : "cinnabar",
@@ -23235,10 +23299,10 @@ var docs =
 
 
   {
-  "id" : "2197",
-  "kanji" : "婉",
-  "keyword" : "well finished",
-  "elements" : "",
+  "id" : "2196",
+  "kanji" : "婢",
+  "keyword" : "handmaiden",
+  "elements" : "woman, lowly, drop, rice field, needle, hook",
 }
 ,
   
@@ -23255,10 +23319,10 @@ var docs =
 
 
   {
-  "id" : "2198",
-  "kanji" : "娼",
-  "keyword" : "harlot",
-  "elements" : "",
+  "id" : "2197",
+  "kanji" : "婉",
+  "keyword" : "well finished",
+  "elements" : "woman, address, house, mailbox, evening, fingerprint",
 }
 ,
   
@@ -23275,10 +23339,10 @@ var docs =
 
 
   {
-  "id" : "2199",
-  "kanji" : "妓",
-  "keyword" : "courtesan",
-  "elements" : "",
+  "id" : "2198",
+  "kanji" : "娼",
+  "keyword" : "harlot",
+  "elements" : "woman, prosperous, sun",
 }
 ,
   
@@ -23288,17 +23352,17 @@ var docs =
   "id" : "2041",
   "kanji" : "卯",
   "keyword" : "sign of the hare",
-  "elements" : "sign of the hare, blown eggs",
+  "elements" : "sign of the hare, blown eggs, egg, receipt, stamp",
 }
 ,
   
 
 
   {
-  "id" : "2200",
-  "kanji" : "娃",
-  "keyword" : "fair",
-  "elements" : "",
+  "id" : "2199",
+  "kanji" : "妓",
+  "keyword" : "courtesan",
+  "elements" : "woman, branch",
 }
 ,
   
@@ -23308,7 +23372,17 @@ var docs =
   "id" : "2042",
   "kanji" : "巳",
   "keyword" : "sign of the snake",
-  "elements" : "sign of the snake, mosaic with bit missing",
+  "elements" : "sign of the snake, mosaic, mosaic with bit missing",
+}
+,
+  
+
+
+  {
+  "id" : "2200",
+  "kanji" : "娃",
+  "keyword" : "fair",
+  "elements" : "woman, ivy, soil, dirt, ground",
 }
 ,
   
@@ -23318,7 +23392,7 @@ var docs =
   "id" : "2201",
   "kanji" : "姪",
   "keyword" : "niece",
-  "elements" : "",
+  "elements" : "woman, climax, infant, soil, dirt",
 }
 ,
   
@@ -23328,7 +23402,7 @@ var docs =
   "id" : "2203",
   "kanji" : "嬬",
   "keyword" : "mistress",
-  "elements" : "",
+  "elements" : "woman, demand, rain, comb",
 }
 ,
   
@@ -23338,7 +23412,7 @@ var docs =
   "id" : "2204",
   "kanji" : "姥",
   "keyword" : "aged woman",
-  "elements" : "",
+  "elements" : "woman, old man, soil, dirt, hook, spoon",
 }
 ,
   
@@ -23348,7 +23422,7 @@ var docs =
   "id" : "2205",
   "kanji" : "姑",
   "keyword" : "mother-in-law",
-  "elements" : "",
+  "elements" : "woman, old",
 }
 ,
   
@@ -23358,7 +23432,7 @@ var docs =
   "id" : "2206",
   "kanji" : "姐",
   "keyword" : "young miss",
-  "elements" : "",
+  "elements" : "woman, shelf",
 }
 ,
   
@@ -23368,7 +23442,7 @@ var docs =
   "id" : "2207",
   "kanji" : "嬉",
   "keyword" : "overjoyed",
-  "elements" : "",
+  "elements" : "woman, rejoice, samurai, beans, mouth",
 }
 ,
   
@@ -23378,7 +23452,7 @@ var docs =
   "id" : "2208",
   "kanji" : "孕",
   "keyword" : "expecting",
-  "elements" : "",
+  "elements" : "fist, from, child",
 }
 ,
   
@@ -23388,7 +23462,7 @@ var docs =
   "id" : "2209",
   "kanji" : "孜",
   "keyword" : "assiduous",
-  "elements" : "",
+  "elements" : "child, taskmaster",
 }
 ,
   
@@ -23398,7 +23472,7 @@ var docs =
   "id" : "2210",
   "kanji" : "宥",
   "keyword" : "soothe",
-  "elements" : "",
+  "elements" : "house, possess",
 }
 ,
   
@@ -23408,7 +23482,7 @@ var docs =
   "id" : "2211",
   "kanji" : "寓",
   "keyword" : "imply",
-  "elements" : "",
+  "elements" : "house, talking cricket, rice field, hood",
 }
 ,
   
@@ -23418,7 +23492,7 @@ var docs =
   "id" : "2212",
   "kanji" : "宏",
   "keyword" : "extensive",
-  "elements" : "",
+  "elements" : "house, by one's side, by one’s side, elbow",
 }
 ,
   
@@ -23428,7 +23502,7 @@ var docs =
   "id" : "2213",
   "kanji" : "牢",
   "keyword" : "jail",
-  "elements" : "",
+  "elements" : "house, cow",
 }
 ,
   
@@ -23438,7 +23512,7 @@ var docs =
   "id" : "2215",
   "kanji" : "宋",
   "keyword" : "Sung dynasty",
-  "elements" : "",
+  "elements" : "house, tree",
 }
 ,
   
@@ -23448,7 +23522,7 @@ var docs =
   "id" : "2216",
   "kanji" : "宍",
   "keyword" : "venison",
-  "elements" : "",
+  "elements" : "house, six",
 }
 ,
   
@@ -23458,7 +23532,7 @@ var docs =
   "id" : "2217",
   "kanji" : "屠",
   "keyword" : "butchering",
-  "elements" : "",
+  "elements" : "flag, puppet, someone",
 }
 ,
   
@@ -23468,7 +23542,7 @@ var docs =
   "id" : "2218",
   "kanji" : "屁",
   "keyword" : "fart",
-  "elements" : "",
+  "elements" : "flag, compare",
 }
 ,
   
@@ -23478,7 +23552,7 @@ var docs =
   "id" : "2219",
   "kanji" : "屑",
   "keyword" : "rubbish",
-  "elements" : "",
+  "elements" : "flag, candle, moon",
 }
 ,
   
@@ -23488,7 +23562,7 @@ var docs =
   "id" : "2221",
   "kanji" : "屡",
   "keyword" : "frequently",
-  "elements" : "",
+  "elements" : "flag, rice, woman",
 }
 ,
   
@@ -23498,7 +23572,7 @@ var docs =
   "id" : "2222",
   "kanji" : "屍",
   "keyword" : "corpse",
-  "elements" : "",
+  "elements" : "flag, death, evening, spoon",
 }
 ,
   
@@ -23508,7 +23582,7 @@ var docs =
   "id" : "2223",
   "kanji" : "屏",
   "keyword" : "folding screen",
-  "elements" : "",
+  "elements" : "flag, puzzle, horns, two hands",
 }
 ,
   
@@ -23518,7 +23592,7 @@ var docs =
   "id" : "2224",
   "kanji" : "嵩",
   "keyword" : "high-reaching",
-  "elements" : "",
+  "elements" : "mountain, tall, top hat, mouth, hood",
 }
 ,
   
@@ -23528,7 +23602,7 @@ var docs =
   "id" : "2225",
   "kanji" : "崚",
   "keyword" : "rugged mountains",
-  "elements" : "",
+  "elements" : "mountain, rice seedlings, walking legs",
 }
 ,
   
@@ -23538,7 +23612,7 @@ var docs =
   "id" : "2226",
   "kanji" : "峨",
   "keyword" : "high mountain",
-  "elements" : "",
+  "elements" : "mountain, ego",
 }
 ,
   
@@ -23548,7 +23622,7 @@ var docs =
   "id" : "2228",
   "kanji" : "嶺",
   "keyword" : "mountaintop",
-  "elements" : "",
+  "elements" : "mountain, jurisdiction, orders, page",
 }
 ,
   
@@ -23558,7 +23632,7 @@ var docs =
   "id" : "2229",
   "kanji" : "嵌",
   "keyword" : "fit into",
-  "elements" : "",
+  "elements" : "mountain, wicker basket, sweet, yawn",
 }
 ,
   
@@ -23568,7 +23642,7 @@ var docs =
   "id" : "2230",
   "kanji" : "嵯",
   "keyword" : "rocky",
-  "elements" : "",
+  "elements" : "mountain, discrimination, horns, king, hook, craft",
 }
 ,
   
@@ -23578,7 +23652,7 @@ var docs =
   "id" : "2231",
   "kanji" : "帖",
   "keyword" : "quire",
-  "elements" : "",
+  "elements" : "towel, fortune-telling, magic wand, augury, divining rod, mouth",
 }
 ,
   
@@ -23588,7 +23662,7 @@ var docs =
   "id" : "2232",
   "kanji" : "幡",
   "keyword" : "banner",
-  "elements" : "",
+  "elements" : "towel, dice, turn, animal tracks, rice field",
 }
 ,
   
@@ -23598,7 +23672,7 @@ var docs =
   "id" : "2233",
   "kanji" : "幟",
   "keyword" : "pennant",
-  "elements" : "",
+  "elements" : "towel, kazoo, sound, vase, stand up, sun, day, fiesta",
 }
 ,
   
@@ -23608,7 +23682,7 @@ var docs =
   "id" : "2234",
   "kanji" : "庖",
   "keyword" : "cleaver",
-  "elements" : "",
+  "elements" : "cave, wrap, bound up, snake, self",
 }
 ,
   
@@ -23618,7 +23692,7 @@ var docs =
   "id" : "2235",
   "kanji" : "廓",
   "keyword" : "licensed quarters",
-  "elements" : "",
+  "elements" : "cave, enclosure, receive, top hat, mouth, child, city walls",
 }
 ,
   
@@ -23628,7 +23702,7 @@ var docs =
   "id" : "2236",
   "kanji" : "庇",
   "keyword" : "overhang",
-  "elements" : "",
+  "elements" : "cave, compare",
 }
 ,
   
@@ -23638,7 +23712,7 @@ var docs =
   "id" : "2237",
   "kanji" : "鷹",
   "keyword" : "hawk",
-  "elements" : "",
+  "elements" : "cave, person, turkey, bird",
 }
 ,
   
@@ -23648,7 +23722,7 @@ var docs =
   "id" : "2238",
   "kanji" : "庄",
   "keyword" : "shire",
-  "elements" : "",
+  "elements" : "cave, soil, dirt",
 }
 ,
   
@@ -23658,7 +23732,7 @@ var docs =
   "id" : "2239",
   "kanji" : "廟",
   "keyword" : "tomb sanctuary",
-  "elements" : "",
+  "elements" : "cave, morning, ten, sun, day, moon",
 }
 ,
   
@@ -23668,7 +23742,7 @@ var docs =
   "id" : "2240",
   "kanji" : "彊",
   "keyword" : "strengthen",
-  "elements" : "",
+  "elements" : "bow, rice field, floor, ceiling",
 }
 ,
   
@@ -23678,7 +23752,7 @@ var docs =
   "id" : "2242",
   "kanji" : "弛",
   "keyword" : "loosen",
-  "elements" : "",
+  "elements" : "bow, scorpion",
 }
 ,
   
@@ -23688,7 +23762,7 @@ var docs =
   "id" : "2243",
   "kanji" : "粥",
   "keyword" : "rice gruel",
-  "elements" : "",
+  "elements" : "rice, bow, two bows",
 }
 ,
   
@@ -23698,7 +23772,7 @@ var docs =
   "id" : "2244",
   "kanji" : "挽",
   "keyword" : "lathe",
-  "elements" : "",
+  "elements" : "fingers, rabbit, drop, mouth, stick, human legs",
 }
 ,
   
@@ -23708,7 +23782,7 @@ var docs =
   "id" : "2245",
   "kanji" : "撞",
   "keyword" : "bump into",
-  "elements" : "",
+  "elements" : "fingers, juvenile, stand, computer",
 }
 ,
   
@@ -23718,7 +23792,7 @@ var docs =
   "id" : "2246",
   "kanji" : "扮",
   "keyword" : "disguise",
-  "elements" : "",
+  "elements" : "fingers, part, eight, sword, dagger",
 }
 ,
   
@@ -23728,7 +23802,7 @@ var docs =
   "id" : "2247",
   "kanji" : "掠",
   "keyword" : "pillage",
-  "elements" : "",
+  "elements" : "fingers, capital, top hat, mouth, small, litte",
 }
 ,
   
@@ -23738,7 +23812,7 @@ var docs =
   "id" : "2249",
   "kanji" : "掴",
   "keyword" : "clutch",
-  "elements" : "",
+  "elements" : "fingers, country, pent in, jewel",
 }
 ,
   
@@ -23748,7 +23822,7 @@ var docs =
   "id" : "2250",
   "kanji" : "捺",
   "keyword" : "impress",
-  "elements" : "",
+  "elements" : "fingers, nara, large, show",
 }
 ,
   
@@ -23758,7 +23832,7 @@ var docs =
   "id" : "2252",
   "kanji" : "掻",
   "keyword" : "scratch",
-  "elements" : "",
+  "elements" : "fingers, crotch, insect",
 }
 ,
   
@@ -23768,7 +23842,7 @@ var docs =
   "id" : "2253",
   "kanji" : "撰",
   "keyword" : "assortment",
-  "elements" : "",
+  "elements" : "fingers, snake, strung together",
 }
 ,
   
@@ -23778,7 +23852,7 @@ var docs =
   "id" : "2255",
   "kanji" : "揃",
   "keyword" : "muster",
-  "elements" : "",
+  "elements" : "fingers, in front",
 }
 ,
   
@@ -23788,7 +23862,7 @@ var docs =
   "id" : "2256",
   "kanji" : "捌",
   "keyword" : "deal with",
-  "elements" : "",
+  "elements" : "fingers, separate, mouth, bound up, sword, sabre, saber",
 }
 ,
   
@@ -23798,7 +23872,7 @@ var docs =
   "id" : "2257",
   "kanji" : "撹",
   "keyword" : "churn up",
-  "elements" : "",
+  "elements" : "fingers, memorize, owl, crown, see",
 }
 ,
   
@@ -23808,7 +23882,7 @@ var docs =
   "id" : "2258",
   "kanji" : "摺",
   "keyword" : "rubbing",
-  "elements" : "",
+  "elements" : "fingers, learn, feathers, white",
 }
 ,
   
@@ -23818,7 +23892,7 @@ var docs =
   "id" : "2259",
   "kanji" : "按",
   "keyword" : "press down on",
-  "elements" : "",
+  "elements" : "fingers, relax, roof, woman",
 }
 ,
   
@@ -23828,7 +23902,7 @@ var docs =
   "id" : "2262",
   "kanji" : "播",
   "keyword" : "disseminate",
-  "elements" : "",
+  "elements" : "fingers, dice, turn",
 }
 ,
   
@@ -23838,7 +23912,7 @@ var docs =
   "id" : "2263",
   "kanji" : "揖",
   "keyword" : "interpretation",
-  "elements" : "",
+  "elements" : "fingers, mouth, ear",
 }
 ,
   
@@ -23848,7 +23922,7 @@ var docs =
   "id" : "2264",
   "kanji" : "托",
   "keyword" : "receptable",
-  "elements" : "",
+  "elements" : "fingers, lock of hair, hook, seven",
 }
 ,
   
@@ -23858,7 +23932,7 @@ var docs =
   "id" : "2265",
   "kanji" : "捧",
   "keyword" : "dedicate (RTK3)",
-  "elements" : "",
+  "elements" : "fingers, observance, bonsai, cornstalk",
 }
 ,
   
@@ -23868,7 +23942,7 @@ var docs =
   "id" : "2266",
   "kanji" : "撚",
   "keyword" : "twirl",
-  "elements" : "",
+  "elements" : "fingers, sort of thing, moon, crescent moon, month, flesh, part of the body, chihuahua, dog, large, drop, oven-fire, barbecue",
 }
 ,
   
@@ -23878,7 +23952,7 @@ var docs =
   "id" : "2267",
   "kanji" : "挺",
   "keyword" : "counter for tools",
-  "elements" : "",
+  "elements" : "fingers, courts, stretch, porter",
 }
 ,
   
@@ -23888,7 +23962,7 @@ var docs =
   "id" : "2268",
   "kanji" : "擾",
   "keyword" : "commotion",
-  "elements" : "",
+  "elements" : "fingers, melancholy, summer, head, page, crown, heart, walking legs",
 }
 ,
   
@@ -23898,7 +23972,7 @@ var docs =
   "id" : "2270",
   "kanji" : "撫",
   "keyword" : "petting",
-  "elements" : "",
+  "elements" : "fingers, char, turkey, oven-fire, barbecue",
 }
 ,
   
@@ -23908,7 +23982,7 @@ var docs =
   "id" : "2271",
   "kanji" : "撒",
   "keyword" : "sprinkle",
-  "elements" : "",
+  "elements" : "fingers, scatter, salad, moon, month, flesh, part of the body, taskmaster",
 }
 ,
   
@@ -23918,7 +23992,7 @@ var docs =
   "id" : "2272",
   "kanji" : "擢",
   "keyword" : "outstanding",
-  "elements" : "",
+  "elements" : "fingers, feathers, turkey",
 }
 ,
   
@@ -23928,7 +24002,7 @@ var docs =
   "id" : "2273",
   "kanji" : "捷",
   "keyword" : "spoils",
-  "elements" : "",
+  "elements" : "fingers, broom run, broom, run",
 }
 ,
   
@@ -23938,7 +24012,7 @@ var docs =
   "id" : "2274",
   "kanji" : "抉",
   "keyword" : "gouge out",
-  "elements" : "",
+  "elements" : "fingers, guillotine, key, St. Bernard, large",
 }
 ,
   
@@ -23948,7 +24022,7 @@ var docs =
   "id" : "2275",
   "kanji" : "怯",
   "keyword" : "wince",
-  "elements" : "",
+  "elements" : "state of mind, gone, soil, dirt, elbow",
 }
 ,
   
@@ -23958,7 +24032,7 @@ var docs =
   "id" : "2276",
   "kanji" : "惟",
   "keyword" : "ponder",
-  "elements" : "",
+  "elements" : "state of mind, turkey",
 }
 ,
   
@@ -23968,7 +24042,7 @@ var docs =
   "id" : "2277",
   "kanji" : "惚",
   "keyword" : "infatuation",
-  "elements" : "",
+  "elements" : "state of mind, knot, heart",
 }
 ,
   
@@ -23978,7 +24052,7 @@ var docs =
   "id" : "2278",
   "kanji" : "怜",
   "keyword" : "quickwitted",
-  "elements" : "",
+  "elements" : "state of mind, orders, umbrella",
 }
 ,
   
@@ -23988,7 +24062,7 @@ var docs =
   "id" : "2279",
   "kanji" : "惇",
   "keyword" : "considerate",
-  "elements" : "",
+  "elements" : "stafe of mind, juvenile, stand up, computer",
 }
 ,
   
@@ -23998,7 +24072,7 @@ var docs =
   "id" : "2281",
   "kanji" : "恰",
   "keyword" : "as if",
-  "elements" : "",
+  "elements" : "state of mind, fit, umbrella, ceiling, mouth",
 }
 ,
   
@@ -24008,7 +24082,7 @@ var docs =
   "id" : "2282",
   "kanji" : "恢",
   "keyword" : "enlarge",
-  "elements" : "",
+  "elements" : "state of mind, ashes",
 }
 ,
   
@@ -24018,7 +24092,7 @@ var docs =
   "id" : "2283",
   "kanji" : "悌",
   "keyword" : "respect for elders",
-  "elements" : "",
+  "elements" : "state of mind, younger brother",
 }
 ,
   
@@ -24028,7 +24102,7 @@ var docs =
   "id" : "2285",
   "kanji" : "澪",
   "keyword" : "canal",
-  "elements" : "",
+  "elements" : "water, rain, orders, umbrella",
 }
 ,
   
@@ -24038,7 +24112,7 @@ var docs =
   "id" : "2286",
   "kanji" : "洸",
   "keyword" : "glistening",
-  "elements" : "",
+  "elements" : "water, ray, ray, small, little, human legs",
 }
 ,
   
@@ -24048,7 +24122,7 @@ var docs =
   "id" : "2287",
   "kanji" : "滉",
   "keyword" : "bounding main",
-  "elements" : "",
+  "elements" : "water, sun, day, ray, small, little, human legs",
 }
 ,
   
@@ -24058,7 +24132,7 @@ var docs =
   "id" : "2288",
   "kanji" : "漱",
   "keyword" : "gargle",
-  "elements" : "",
+  "elements" : "water, bundle, yawn, lack",
 }
 ,
   
@@ -24068,7 +24142,7 @@ var docs =
   "id" : "2289",
   "kanji" : "洲",
   "keyword" : "continent",
-  "elements" : "",
+  "elements" : "water, state, stream, flood, drops",
 }
 ,
   
@@ -24078,7 +24152,7 @@ var docs =
   "id" : "2290",
   "kanji" : "洵",
   "keyword" : "swirling waters",
-  "elements" : "",
+  "elements" : "water, decameron, bound up, sun",
 }
 ,
   
@@ -24088,7 +24162,7 @@ var docs =
   "id" : "2291",
   "kanji" : "滲",
   "keyword" : "seep",
-  "elements" : "",
+  "elements" : "water, nonplussed, elbow, umbrella, shape",
 }
 ,
   
@@ -24098,7 +24172,7 @@ var docs =
   "id" : "2292",
   "kanji" : "洒",
   "keyword" : "rinse",
-  "elements" : "",
+  "elements" : "water, west",
 }
 ,
   
@@ -24108,7 +24182,7 @@ var docs =
   "id" : "2293",
   "kanji" : "沐",
   "keyword" : "douse",
-  "elements" : "",
+  "elements" : "water, tree",
 }
 ,
   
@@ -24118,7 +24192,7 @@ var docs =
   "id" : "2294",
   "kanji" : "泪",
   "keyword" : "teardrops",
-  "elements" : "",
+  "elements" : "water, eye",
 }
 ,
   
@@ -24128,7 +24202,7 @@ var docs =
   "id" : "2295",
   "kanji" : "渾",
   "keyword" : "gushing",
-  "elements" : "",
+  "elements" : "water, army, chariot, crown, car",
 }
 ,
   
@@ -24138,7 +24212,7 @@ var docs =
   "id" : "2297",
   "kanji" : "涜",
   "keyword" : "blaspheme",
-  "elements" : "",
+  "elements" : "water, sell, samurai, crown, human legs",
 }
 ,
   
@@ -24148,7 +24222,7 @@ var docs =
   "id" : "2299",
   "kanji" : "梁",
   "keyword" : "roofbeam",
-  "elements" : "",
+  "elements" : "water, sword, drops, drop, tree",
 }
 ,
   
@@ -24158,7 +24232,7 @@ var docs =
   "id" : "2300",
   "kanji" : "澱",
   "keyword" : "sediment",
-  "elements" : "",
+  "elements" : "water, Mr, flag, strung together, salad, animal legs, eight, cruise missile, missile, wind, crotch",
 }
 ,
   
@@ -24168,7 +24242,7 @@ var docs =
   "id" : "2302",
   "kanji" : "洛",
   "keyword" : "old Kyoto",
-  "elements" : "",
+  "elements" : "water, each, walking legs, mouth",
 }
 ,
   
@@ -24178,7 +24252,7 @@ var docs =
   "id" : "2303",
   "kanji" : "汝",
   "keyword" : "thou",
-  "elements" : "",
+  "elements" : "water, woman",
 }
 ,
   
@@ -24188,7 +24262,7 @@ var docs =
   "id" : "2304",
   "kanji" : "漉",
   "keyword" : "filter",
-  "elements" : "",
+  "elements" : "water, deer, cave, old west, compare, rice, dance, ballerina",
 }
 ,
   
@@ -24198,7 +24272,7 @@ var docs =
   "id" : "2305",
   "kanji" : "瀕",
   "keyword" : "on the verge of",
-  "elements" : "",
+  "elements" : "water, repeatedly, walk, stop, footprint, few, head, page, one, ceiling, drop, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -24208,7 +24282,7 @@ var docs =
   "id" : "2306",
   "kanji" : "濠",
   "keyword" : "moat",
-  "elements" : "",
+  "elements" : "water, overpowering, tall, top hat, mouth, crown, sow, pig",
 }
 ,
   
@@ -24218,7 +24292,7 @@ var docs =
   "id" : "2307",
   "kanji" : "溌",
   "keyword" : "spray",
-  "elements" : "",
+  "elements" : "water, discharge, teepee, wigwam, two, human legs",
 }
 ,
   
@@ -24228,7 +24302,7 @@ var docs =
   "id" : "2309",
   "kanji" : "湊",
   "keyword" : "port",
-  "elements" : "",
+  "elements" : "water, play music, bonsai, heavens, wheat",
 }
 ,
   
@@ -24238,7 +24312,7 @@ var docs =
   "id" : "2310",
   "kanji" : "淋",
   "keyword" : "solitude",
-  "elements" : "",
+  "elements" : "water, grove, tree",
 }
 ,
   
@@ -24248,7 +24322,7 @@ var docs =
   "id" : "2311",
   "kanji" : "浩",
   "keyword" : "abounding",
-  "elements" : "",
+  "elements" : "water, revelation, cow, mouth",
 }
 ,
   
@@ -24258,7 +24332,7 @@ var docs =
   "id" : "2312",
   "kanji" : "汀",
   "keyword" : "water's edge",
-  "elements" : "water, street",
+  "elements" : "water, street, nail, spike",
 }
 ,
   
@@ -24268,7 +24342,7 @@ var docs =
   "id" : "2313",
   "kanji" : "鴻",
   "keyword" : "large goose",
-  "elements" : "",
+  "elements" : "water, craft, bird",
 }
 ,
   
@@ -24278,7 +24352,7 @@ var docs =
   "id" : "2314",
   "kanji" : "潅",
   "keyword" : "souse",
-  "elements" : "",
+  "elements" : "water, pegasus, horse, pantomime horse, noon, sign of the horse, turkey",
 }
 ,
   
@@ -24288,7 +24362,7 @@ var docs =
   "id" : "2315",
   "kanji" : "溢",
   "keyword" : "brimming",
-  "elements" : "",
+  "elements" : "water, benefit, animal horns, horns, one, floor, animal legs, eight, dish",
 }
 ,
   
@@ -24298,7 +24372,7 @@ var docs =
   "id" : "2317",
   "kanji" : "湛",
   "keyword" : "inundate",
-  "elements" : "",
+  "elements" : "water, tremendously, bushel basket, hamper, equal, human legs",
 }
 ,
   
@@ -24308,7 +24382,7 @@ var docs =
   "id" : "2318",
   "kanji" : "淳",
   "keyword" : "immaculate",
-  "elements" : "",
+  "elements" : "water, receive, tall, top hat, mouth, child, children",
 }
 ,
   
@@ -24318,7 +24392,7 @@ var docs =
   "id" : "2320",
   "kanji" : "渥",
   "keyword" : "moisten",
-  "elements" : "",
+  "elements" : "water, roof, flag, climax, wall, one, ceiling, elbow, soil, dirt, ground",
 }
 ,
   
@@ -24328,7 +24402,7 @@ var docs =
   "id" : "2321",
   "kanji" : "灘",
   "keyword" : "rough seas",
-  "elements" : "",
+  "elements" : "water, difficult, scarecrow, flowers, mouth, husband, turkey",
 }
 ,
   
@@ -24338,7 +24412,7 @@ var docs =
   "id" : "2322",
   "kanji" : "汲",
   "keyword" : "draw water",
-  "elements" : "",
+  "elements" : "water, reach out",
 }
 ,
   
@@ -24348,7 +24422,7 @@ var docs =
   "id" : "2323",
   "kanji" : "瀞",
   "keyword" : "river pool",
-  "elements" : "",
+  "elements" : "water, quiet, silent, blue, grow up, moon, flesh, contend, bound up, rake",
 }
 ,
   
@@ -24358,7 +24432,7 @@ var docs =
   "id" : "2324",
   "kanji" : "溜",
   "keyword" : "cumulation",
-  "elements" : "",
+  "elements" : "water, detain, receipt, sword, dagger, rice field, brains",
 }
 ,
   
@@ -24368,7 +24442,7 @@ var docs =
   "id" : "2325",
   "kanji" : "渕",
   "keyword" : "abyss",
-  "elements" : "",
+  "elements" : "water, golden calf, horns, heavens, sabre, saber",
 }
 ,
   
@@ -24378,7 +24452,7 @@ var docs =
   "id" : "2326",
   "kanji" : "沌",
   "keyword" : "chaos",
-  "elements" : "",
+  "elements" : "water, earthworm, drop, shovel, fishhook",
 }
 ,
   
@@ -24388,7 +24462,7 @@ var docs =
   "id" : "2328",
   "kanji" : "濾",
   "keyword" : "strainer",
-  "elements" : "",
+  "elements" : "water, prudence, tiger, think, rice field, brains, heart",
 }
 ,
   
@@ -24398,7 +24472,7 @@ var docs =
   "id" : "2329",
   "kanji" : "濡",
   "keyword" : "drench",
-  "elements" : "",
+  "elements" : "water, demand, rain, weather, comb",
 }
 ,
   
@@ -24408,7 +24482,7 @@ var docs =
   "id" : "2330",
   "kanji" : "淀",
   "keyword" : "eddy",
-  "elements" : "water, house, correct, mending",
+  "elements" : "water, house, mending, mend, correct",
 }
 ,
   
@@ -24418,7 +24492,7 @@ var docs =
   "id" : "2331",
   "kanji" : "涅",
   "keyword" : "fabrication",
-  "elements" : "",
+  "elements" : "water, sun, day, soil, dirt",
 }
 ,
   
@@ -24428,7 +24502,7 @@ var docs =
   "id" : "2333",
   "kanji" : "斧",
   "keyword" : "hatchet",
-  "elements" : "",
+  "elements" : "father, axe, ax",
 }
 ,
   
@@ -24438,7 +24512,7 @@ var docs =
   "id" : "2334",
   "kanji" : "爺",
   "keyword" : "grandpa",
-  "elements" : "",
+  "elements" : "father, ear, city walls",
 }
 ,
   
@@ -24448,7 +24522,7 @@ var docs =
   "id" : "2335",
   "kanji" : "猾",
   "keyword" : "sly",
-  "elements" : "",
+  "elements" : "pack of wild dogs, skeleton, joint, moon, month, flesh, part of the body",
 }
 ,
   
@@ -24458,7 +24532,7 @@ var docs =
   "id" : "2336",
   "kanji" : "猥",
   "keyword" : "indecent",
-  "elements" : "",
+  "elements" : "pack of wild dogs, apprehensive, rice field, brains, hairpin, safety-pin",
 }
 ,
   
@@ -24468,7 +24542,7 @@ var docs =
   "id" : "2337",
   "kanji" : "狡",
   "keyword" : "cunning",
-  "elements" : "",
+  "elements" : "pack of wild dogs, mingle, top hat, father",
 }
 ,
   
@@ -24478,7 +24552,7 @@ var docs =
   "id" : "2338",
   "kanji" : "狸",
   "keyword" : "racoon dog",
-  "elements" : "",
+  "elements" : "raccoon, pack of wild dogs, computer, rice field, soil, dirt",
 }
 ,
   
@@ -24488,7 +24562,7 @@ var docs =
   "id" : "2339",
   "kanji" : "狼",
   "keyword" : "wolf",
-  "elements" : "",
+  "elements" : "pack of wild dogs, halo, drop, silver, moon, month, flesh, part of the body",
 }
 ,
   
@@ -24498,7 +24572,7 @@ var docs =
   "id" : "2340",
   "kanji" : "狽",
   "keyword" : "flustered",
-  "elements" : "",
+  "elements" : "pack of wild dogs, shellfish, eye, animal legs",
 }
 ,
   
@@ -24508,7 +24582,7 @@ var docs =
   "id" : "2341",
   "kanji" : "狗",
   "keyword" : "pup",
-  "elements" : "",
+  "elements" : "pack of wild dogs, phrase, bound up, mouth",
 }
 ,
   
@@ -24518,7 +24592,7 @@ var docs =
   "id" : "2342",
   "kanji" : "狐",
   "keyword" : "fox",
-  "elements" : "",
+  "elements" : "pack of wild dogs, melon, claw, vulture, elbow",
 }
 ,
   
@@ -24528,7 +24602,7 @@ var docs =
   "id" : "2343",
   "kanji" : "狛",
   "keyword" : "a-un",
-  "elements" : "",
+  "elements" : "pack of wild dogs, white",
 }
 ,
   
@@ -24538,7 +24612,7 @@ var docs =
   "id" : "2345",
   "kanji" : "獅",
   "keyword" : "lion",
-  "elements" : "",
+  "elements" : "pack of wild dogs, expert, maestro, noren, one, ceiling, towel",
 }
 ,
   
@@ -24548,7 +24622,7 @@ var docs =
   "id" : "2346",
   "kanji" : "狒",
   "keyword" : "baboon",
-  "elements" : "",
+  "elements" : "pack of wild dogs, dollar, dollar sign",
 }
 ,
   
@@ -24558,7 +24632,7 @@ var docs =
   "id" : "2347",
   "kanji" : "莨",
   "keyword" : "tobacco",
-  "elements" : "",
+  "elements" : "flowers, good, drop, silver",
 }
 ,
   
@@ -24568,7 +24642,7 @@ var docs =
   "id" : "2348",
   "kanji" : "茉",
   "keyword" : "jasmine",
-  "elements" : "",
+  "elements" : "flowers, extremity, tree, wood, one",
 }
 ,
   
@@ -24578,7 +24652,7 @@ var docs =
   "id" : "2349",
   "kanji" : "莉",
   "keyword" : "hawthorn",
-  "elements" : "",
+  "elements" : "flowers, profit, wheat, cereal, sword, sabre, saber",
 }
 ,
   
@@ -24588,7 +24662,7 @@ var docs =
   "id" : "2350",
   "kanji" : "苺",
   "keyword" : "strawberry",
-  "elements" : "",
+  "elements" : "flowers, mama, mother, breasts",
 }
 ,
   
@@ -24598,7 +24672,7 @@ var docs =
   "id" : "2351",
   "kanji" : "萩",
   "keyword" : "bush clover",
-  "elements" : "",
+  "elements" : "flowers, autumn, wheat, cereal, fire",
 }
 ,
   
@@ -24608,7 +24682,7 @@ var docs =
   "id" : "2352",
   "kanji" : "藝",
   "keyword" : "technique [old]",
-  "elements" : "",
+  "elements" : "flowers, rice-seedlings, human legs, soil, dirt, fat man, musashimaru, round, nine, baseball, rising cloud, two, elbow, wall",
 }
 ,
   
@@ -24618,7 +24692,7 @@ var docs =
   "id" : "2353",
   "kanji" : "薙",
   "keyword" : "trim",
-  "elements" : "",
+  "elements" : "flowers, pheasant, dart, turkey",
 }
 ,
   
@@ -24628,7 +24702,7 @@ var docs =
   "id" : "2354",
   "kanji" : "蓑",
   "keyword" : "straw raincoat",
-  "elements" : "",
+  "elements" : "flowers, decline, declining, pathetic, stick, top hat, scarf, mouth",
 }
 ,
   
@@ -24638,7 +24712,7 @@ var docs =
   "id" : "2356",
   "kanji" : "苔",
   "keyword" : "moss",
-  "elements" : "",
+  "elements" : "flowers, pedestal, elbow, mouth",
 }
 ,
   
@@ -24648,7 +24722,7 @@ var docs =
   "id" : "2357",
   "kanji" : "蕩",
   "keyword" : "prodigal",
-  "elements" : "",
+  "elements" : "flowers, hot water, water, water droplets, water pistol, piggy bank, sun, day, piglets",
 }
 ,
   
@@ -24658,7 +24732,7 @@ var docs =
   "id" : "2359",
   "kanji" : "蔓",
   "keyword" : "tendril",
-  "elements" : "",
+  "elements" : "flowers, mandala, sun, day, eye, cross-eyed, net, crotch",
 }
 ,
   
@@ -24668,7 +24742,7 @@ var docs =
   "id" : "2360",
   "kanji" : "蓮",
   "keyword" : "lotus",
-  "elements" : "",
+  "elements" : "flowers, take along, carry along, car, road",
 }
 ,
   
@@ -24678,7 +24752,7 @@ var docs =
   "id" : "2361",
   "kanji" : "芙",
   "keyword" : "lotus flower",
-  "elements" : "",
+  "elements" : "flowers, husband",
 }
 ,
   
@@ -24688,7 +24762,7 @@ var docs =
   "id" : "2362",
   "kanji" : "蓉",
   "keyword" : "lotus blossom",
-  "elements" : "",
+  "elements" : "flowers, contain, house, valley, eight, umbrella, mouth",
 }
 ,
   
@@ -24698,7 +24772,7 @@ var docs =
   "id" : "2363",
   "kanji" : "蘭",
   "keyword" : "orchid",
-  "elements" : "",
+  "elements" : "flowers, gates, east",
 }
 ,
   
@@ -24708,7 +24782,7 @@ var docs =
   "id" : "2364",
   "kanji" : "芦",
   "keyword" : "hollow reed",
-  "elements" : "",
+  "elements" : "flowers, door, ceiling, one, flag",
 }
 ,
   
@@ -24718,7 +24792,7 @@ var docs =
   "id" : "2365",
   "kanji" : "薯",
   "keyword" : "yam",
-  "elements" : "",
+  "elements" : "flowers, signature, eye, cross-eyed, net, someone, puppet, sooty, old man, sun, day",
 }
 ,
   
@@ -24728,7 +24802,7 @@ var docs =
   "id" : "2366",
   "kanji" : "菖",
   "keyword" : "iris",
-  "elements" : "",
+  "elements" : "flowers, prosperous, sun, day, tongue wagging, wagging tongue, sun2, day2, tongue wagging2",
 }
 ,
   
@@ -24738,7 +24812,7 @@ var docs =
   "id" : "2367",
   "kanji" : "蕉",
   "keyword" : "banana",
-  "elements" : "",
+  "elements" : "flowers, char, turkey, oven-fire, barbecue",
 }
 ,
   
@@ -24748,7 +24822,7 @@ var docs =
   "id" : "2369",
   "kanji" : "蕎",
   "keyword" : "buckwheat",
-  "elements" : "",
+  "elements" : "flowers, heaven-high, angel, heavens, sapling, hood, mouth",
 }
 ,
   
@@ -24758,7 +24832,7 @@ var docs =
   "id" : "2370",
   "kanji" : "蕗",
   "keyword" : "butterbur",
-  "elements" : "",
+  "elements" : "flowers, path, wooden leg, mouth, stop, footprint, each, walking legs, mouth, mouth2",
 }
 ,
   
@@ -24768,7 +24842,7 @@ var docs =
   "id" : "2372",
   "kanji" : "茄",
   "keyword" : "eggplant",
-  "elements" : "",
+  "elements" : "flowers, add, power, muscle, arnold, mouth",
 }
 ,
   
@@ -24778,7 +24852,7 @@ var docs =
   "id" : "2374",
   "kanji" : "蔭",
   "keyword" : "behind the scenes",
-  "elements" : "",
+  "elements" : "flowers, shade, pinnacle, parthenon, acropolis, now, clock, rising cloud, two, elbow, wall",
 }
 ,
   
@@ -24788,7 +24862,7 @@ var docs =
   "id" : "2375",
   "kanji" : "蓬",
   "keyword" : "wormwood",
-  "elements" : "",
+  "elements" : "flowers, tryst, Segway, Macbeth, walking legs, bushes, road",
 }
 ,
   
@@ -24798,7 +24872,7 @@ var docs =
   "id" : "2376",
   "kanji" : "芥",
   "keyword" : "mustard",
-  "elements" : "",
+  "elements" : "flowers, jammed in, umbrella, stick, walking cane",
 }
 ,
   
@@ -24808,7 +24882,7 @@ var docs =
   "id" : "2377",
   "kanji" : "萌",
   "keyword" : "germinate",
-  "elements" : "",
+  "elements" : "flowers, bright, sun, day, moon, month, flesh, part of the body",
 }
 ,
   
@@ -24818,7 +24892,7 @@ var docs =
   "id" : "2378",
   "kanji" : "葡",
   "keyword" : "grape",
-  "elements" : "",
+  "elements" : "flowers, bound up, dog tag, dogtag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   
@@ -24828,7 +24902,7 @@ var docs =
   "id" : "2379",
   "kanji" : "萄",
   "keyword" : "grape vine",
-  "elements" : "",
+  "elements" : "flowers, bound up, tin can, noon, sign of the horse, shovel",
 }
 ,
   
@@ -24838,7 +24912,7 @@ var docs =
   "id" : "2380",
   "kanji" : "蘇",
   "keyword" : "resurrect",
-  "elements" : "",
+  "elements" : "flowers, fish, wheat",
 }
 ,
   
@@ -24848,7 +24922,7 @@ var docs =
   "id" : "2381",
   "kanji" : "蕃",
   "keyword" : "grow wild",
-  "elements" : "",
+  "elements" : "flowers, turn, dice, animal tracks, drop, rice, rice field, brains",
 }
 ,
   
@@ -24858,7 +24932,7 @@ var docs =
   "id" : "2382",
   "kanji" : "苓",
   "keyword" : "cocklebur",
-  "elements" : "",
+  "elements" : "flowers, orders, meeting, chop-seal, hanko",
 }
 ,
   
@@ -24868,7 +24942,7 @@ var docs =
   "id" : "2383",
   "kanji" : "菰",
   "keyword" : "rush mat",
-  "elements" : "",
+  "elements" : "flowers, orphan, child, melon, claw, vulture, elbow",
 }
 ,
   
@@ -24878,7 +24952,7 @@ var docs =
   "id" : "2384",
   "kanji" : "蒙",
   "keyword" : "darken",
-  "elements" : "",
+  "elements" : "flowers, crown, ceiling, sow",
 }
 ,
   
@@ -24888,7 +24962,7 @@ var docs =
   "id" : "2385",
   "kanji" : "茅",
   "keyword" : "grassy reed",
-  "elements" : "",
+  "elements" : "flowers, halberd, beforehand",
 }
 ,
   
@@ -24898,7 +24972,7 @@ var docs =
   "id" : "2386",
   "kanji" : "芭",
   "keyword" : "plantain",
-  "elements" : "",
+  "elements" : "flowers, mosaic",
 }
 ,
   
@@ -24908,7 +24982,7 @@ var docs =
   "id" : "2387",
   "kanji" : "苅",
   "keyword" : "mow",
-  "elements" : "",
+  "elements" : "flowers, reap, sheaf, sword, sabre, saber",
 }
 ,
   
@@ -24918,7 +24992,7 @@ var docs =
   "id" : "2389",
   "kanji" : "葱",
   "keyword" : "onion",
-  "elements" : "",
+  "elements" : "flowers, double knot, knot, drop, heart",
 }
 ,
   
@@ -24928,7 +25002,7 @@ var docs =
   "id" : "2391",
   "kanji" : "葵",
   "keyword" : "hollyhock",
-  "elements" : "",
+  "elements" : "flowers, teepee, heavens",
 }
 ,
   
@@ -24938,7 +25012,7 @@ var docs =
   "id" : "2392",
   "kanji" : "葺",
   "keyword" : "shingling",
-  "elements" : "",
+  "elements" : "flowers, mouth, ear",
 }
 ,
   
@@ -24948,7 +25022,7 @@ var docs =
   "id" : "2393",
   "kanji" : "蕊",
   "keyword" : "stamen",
-  "elements" : "",
+  "elements" : "flowers, three hearts, heart",
 }
 ,
   
@@ -24958,7 +25032,7 @@ var docs =
   "id" : "2394",
   "kanji" : "茸",
   "keyword" : "mushroom",
-  "elements" : "",
+  "elements" : "flowers, ear",
 }
 ,
   
@@ -24968,7 +25042,7 @@ var docs =
   "id" : "2395",
   "kanji" : "蒔",
   "keyword" : "sowing",
-  "elements" : "",
+  "elements" : "flowers, time, sun, day, Buddhist temple, soil, dirt, ground, glue",
 }
 ,
   
@@ -24978,7 +25052,7 @@ var docs =
   "id" : "2396",
   "kanji" : "芹",
   "keyword" : "parsley",
-  "elements" : "",
+  "elements" : "flowers, axe, ax",
 }
 ,
   
@@ -24988,7 +25062,7 @@ var docs =
   "id" : "2397",
   "kanji" : "苫",
   "keyword" : "thatching",
-  "elements" : "",
+  "elements" : "flowers, fortune-telling, magic wand, augury, divining rod, mouth",
 }
 ,
   
@@ -24998,7 +25072,7 @@ var docs =
   "id" : "2399",
   "kanji" : "蒼",
   "keyword" : "pale blue",
-  "elements" : "",
+  "elements" : "flowers, godown, meeting, single gate, umbrella, stable door, mouth",
 }
 ,
   
@@ -25008,7 +25082,7 @@ var docs =
   "id" : "2400",
   "kanji" : "藁",
   "keyword" : "straw",
-  "elements" : "",
+  "elements" : "flowers, tall, top hat, mouth, alien, hood, mouth, mouth2",
 }
 ,
   
@@ -25018,7 +25092,7 @@ var docs =
   "id" : "2401",
   "kanji" : "蕪",
   "keyword" : "turnip",
-  "elements" : "",
+  "elements" : "flowers, nothingness, reclining, lying down, tub, oven-fire, barbecue",
 }
 ,
   
@@ -25028,7 +25102,7 @@ var docs =
   "id" : "2402",
   "kanji" : "藷",
   "keyword" : "sweet potato",
-  "elements" : "",
+  "elements" : "flowers, say, words, puppet, someone, sun",
 }
 ,
   
@@ -25038,7 +25112,7 @@ var docs =
   "id" : "2403",
   "kanji" : "薮",
   "keyword" : "quack",
-  "elements" : "",
+  "elements" : "flowers, number, rice, woman, taskmaster",
 }
 ,
   
@@ -25048,7 +25122,7 @@ var docs =
   "id" : "2404",
   "kanji" : "蒜",
   "keyword" : "garlic",
-  "elements" : "",
+  "elements" : "flowers, two altars, show, altar, two, small",
 }
 ,
   
@@ -25058,7 +25132,7 @@ var docs =
   "id" : "2405",
   "kanji" : "蕨",
   "keyword" : "bracken",
-  "elements" : "",
+  "elements" : "flowers, cliff, mountain goat, horns, mountain, lack, yawn",
 }
 ,
   
@@ -25068,7 +25142,7 @@ var docs =
   "id" : "2406",
   "kanji" : "蔚",
   "keyword" : "grow plentiful",
-  "elements" : "",
+  "elements" : "flower, lieutenant, military officer, flag, altar, show, two, small, glue",
 }
 ,
   
@@ -25078,7 +25152,7 @@ var docs =
   "id" : "2407",
   "kanji" : "茜",
   "keyword" : "madder red",
-  "elements" : "",
+  "elements" : "flowers, west, one, four",
 }
 ,
   
@@ -25088,7 +25162,7 @@ var docs =
   "id" : "2408",
   "kanji" : "莞",
   "keyword" : "candle rush",
-  "elements" : "",
+  "elements" : "flowers, perfect, house, beginning, two, human legs",
 }
 ,
   
@@ -25098,7 +25172,7 @@ var docs =
   "id" : "2409",
   "kanji" : "蒐",
   "keyword" : "collector",
-  "elements" : "",
+  "elements" : "flowers, ghost, oni, drop, brains, rice field, human legs, elbow",
 }
 ,
   
@@ -25108,7 +25182,7 @@ var docs =
   "id" : "2410",
   "kanji" : "菅",
   "keyword" : "sedge",
-  "elements" : "",
+  "elements" : "flowers, bureaucrat, house, maestro without baton",
 }
 ,
   
@@ -25118,7 +25192,7 @@ var docs =
   "id" : "2411",
   "kanji" : "葦",
   "keyword" : "ditch reed",
-  "elements" : "",
+  "elements" : "flowers, locket, stick, key, mouth, monocle, sunglasses with one lens missing, road",
 }
 ,
   
@@ -25128,7 +25202,7 @@ var docs =
   "id" : "2412",
   "kanji" : "迪",
   "keyword" : "Way",
-  "elements" : "",
+  "elements" : "road, wherefore, sprout, shoot",
 }
 ,
   
@@ -25138,7 +25212,7 @@ var docs =
   "id" : "2413",
   "kanji" : "辿",
   "keyword" : "track down",
-  "elements" : "",
+  "elements" : "mountain, road",
 }
 ,
   
@@ -25148,7 +25222,7 @@ var docs =
   "id" : "2414",
   "kanji" : "這",
   "keyword" : "crawl",
-  "elements" : "",
+  "elements" : "say, words, road",
 }
 ,
   
@@ -25158,7 +25232,7 @@ var docs =
   "id" : "2415",
   "kanji" : "迂",
   "keyword" : "detour",
-  "elements" : "",
+  "elements" : "potato, road",
 }
 ,
   
@@ -25168,7 +25242,7 @@ var docs =
   "id" : "2416",
   "kanji" : "遁",
   "keyword" : "elude (RTK3)",
-  "elements" : "",
+  "elements" : "road, shield, drag, ten, needle, eye",
 }
 ,
   
@@ -25178,7 +25252,7 @@ var docs =
   "id" : "2417",
   "kanji" : "逢",
   "keyword" : "tryst",
-  "elements" : "",
+  "elements" : "walking legs, bushes, hook, road",
 }
 ,
   
@@ -25188,7 +25262,7 @@ var docs =
   "id" : "2418",
   "kanji" : "遥",
   "keyword" : "far off",
-  "elements" : "road, vulture, king, mountain",
+  "elements" : "condor, claw, vulture, king, mountain, road",
 }
 ,
   
@@ -25198,7 +25272,8 @@ var docs =
   "id" : "2419",
   "kanji" : "遼",
   "keyword" : "remote (RTK3)",
-  "elements" : "",
+  "elements" : "road, pup tent, large, St. Bernard, sun, day, small, little",
+  "keywordWK" : "Distant",
 }
 ,
   
@@ -25208,7 +25283,7 @@ var docs =
   "id" : "2420",
   "kanji" : "逼",
   "keyword" : "pressing",
-  "elements" : "",
+  "elements" : "wealth, house, wealth, one, ceiling, mouth, rice field, brains",
 }
 ,
   
@@ -25218,7 +25293,7 @@ var docs =
   "id" : "2421",
   "kanji" : "迄",
   "keyword" : "until",
-  "elements" : "",
+  "elements" : "beg, reclining, lying down, fishhook",
 }
 ,
   
@@ -25228,7 +25303,7 @@ var docs =
   "id" : "2423",
   "kanji" : "逗",
   "keyword" : "standstill",
-  "elements" : "",
+  "elements" : "beans, table, one, ceiling, mouth, road",
 }
 ,
   
@@ -25238,7 +25313,7 @@ var docs =
   "id" : "2424",
   "kanji" : "郁",
   "keyword" : "cultured",
-  "elements" : "",
+  "elements" : "possess, by one's side, by one’s side, moon, month, flesh, part of the body, city walls",
 }
 ,
   
@@ -25248,7 +25323,7 @@ var docs =
   "id" : "2425",
   "kanji" : "鄭",
   "keyword" : "courtesy",
-  "elements" : "",
+  "elements" : "animal horns, sign of the bird, whiskey bottle, west, one, St. Bernard, large, city walls",
 }
 ,
   
@@ -25258,7 +25333,7 @@ var docs =
   "id" : "2427",
   "kanji" : "隈",
   "keyword" : "nook",
-  "elements" : "",
+  "elements" : "pinnacle, rice field, hairpin, safety-pin",
 }
 ,
   
@@ -25268,7 +25343,7 @@ var docs =
   "id" : "2428",
   "kanji" : "憑",
   "keyword" : "possessed",
-  "elements" : "",
+  "elements" : "ice, team of horses, heart",
 }
 ,
   
@@ -25278,7 +25353,7 @@ var docs =
   "id" : "2429",
   "kanji" : "惹",
   "keyword" : "attract",
-  "elements" : "",
+  "elements" : "young, flowers, right, by one's side, by one’s side, mouth, heart",
 }
 ,
   
@@ -25288,7 +25363,7 @@ var docs =
   "id" : "2430",
   "kanji" : "悉",
   "keyword" : "without exception",
-  "elements" : "",
+  "elements" : "animal tracks, drop, rice, heart",
 }
 ,
   
@@ -25298,7 +25373,7 @@ var docs =
   "id" : "2431",
   "kanji" : "忽",
   "keyword" : "instantaneously",
-  "elements" : "",
+  "elements" : "knot, heart",
 }
 ,
   
@@ -25308,7 +25383,7 @@ var docs =
   "id" : "2432",
   "kanji" : "惣",
   "keyword" : "firstborn son",
-  "elements" : "",
+  "elements" : "thing, cow, knot, piglet’s tail, heart",
 }
 ,
   
@@ -25318,7 +25393,7 @@ var docs =
   "id" : "2433",
   "kanji" : "愈",
   "keyword" : "in the nick of time",
-  "elements" : "",
+  "elements" : "meeting of butchers, butchers, meeting, umbrella, one, moon, month, flesh, part of the body, sword, sabre, saber, heart",
 }
 ,
   
@@ -25328,7 +25403,7 @@ var docs =
   "id" : "2434",
   "kanji" : "恕",
   "keyword" : "sensitive",
-  "elements" : "",
+  "elements" : "likeness, woman, mouth, heart",
 }
 ,
   
@@ -25338,7 +25413,7 @@ var docs =
   "id" : "2435",
   "kanji" : "昴",
   "keyword" : "overarching",
-  "elements" : "",
+  "elements" : "sun, receipt, sword, dagger, stamp",
 }
 ,
   
@@ -25348,7 +25423,7 @@ var docs =
   "id" : "2436",
   "kanji" : "晋",
   "keyword" : "progress",
-  "elements" : "",
+  "elements" : "row, sun, day, horns",
 }
 ,
   
@@ -25358,7 +25433,7 @@ var docs =
   "id" : "2438",
   "kanji" : "晟",
   "keyword" : "aglow",
-  "elements" : "",
+  "elements" : "sun, turn into, parade, sword, dagger",
 }
 ,
   
@@ -25368,7 +25443,7 @@ var docs =
   "id" : "2439",
   "kanji" : "暈",
   "keyword" : "halo",
-  "elements" : "",
+  "elements" : "sun, army, chariot, crown, vehicle, car",
 }
 ,
   
@@ -25378,7 +25453,7 @@ var docs =
   "id" : "2440",
   "kanji" : "暉",
   "keyword" : "glitter",
-  "elements" : "",
+  "elements" : "sun, army, chariot, crown, vehicle, car",
 }
 ,
   
@@ -25388,7 +25463,7 @@ var docs =
   "id" : "2441",
   "kanji" : "旱",
   "keyword" : "dry weather",
-  "elements" : "",
+  "elements" : "sun, dry, clothesline",
 }
 ,
   
@@ -25398,7 +25473,7 @@ var docs =
   "id" : "2442",
   "kanji" : "晏",
   "keyword" : "clear skies",
-  "elements" : "",
+  "elements" : "sun, relax, house, woman",
 }
 ,
   
@@ -25408,7 +25483,7 @@ var docs =
   "id" : "2443",
   "kanji" : "晨",
   "keyword" : "morrow",
-  "elements" : "",
+  "elements" : "sun, sign of the dragon, cliff, two, hairpin, safety-pin",
 }
 ,
   
@@ -25418,7 +25493,7 @@ var docs =
   "id" : "2444",
   "kanji" : "晒",
   "keyword" : "bleaching",
-  "elements" : "",
+  "elements" : "sun, west, one, four",
 }
 ,
   
@@ -25428,7 +25503,7 @@ var docs =
   "id" : "2446",
   "kanji" : "晃",
   "keyword" : "limpid",
-  "elements" : "",
+  "elements" : "sun, ray, small, little, human legs",
 }
 ,
   
@@ -25438,7 +25513,7 @@ var docs =
   "id" : "2447",
   "kanji" : "曝",
   "keyword" : "air out",
-  "elements" : "",
+  "elements" : "sun, outburst, sun, day, strung together, salad, animal legs, eight, grains of rice",
 }
 ,
   
@@ -25448,7 +25523,7 @@ var docs =
   "id" : "2448",
   "kanji" : "曙",
   "keyword" : "dawn",
-  "elements" : "",
+  "elements" : "sun, signature, eye, cross-eyed, net, someone, puppet, sooty, old man, sun, day",
 }
 ,
   
@@ -25458,7 +25533,7 @@ var docs =
   "id" : "2449",
   "kanji" : "昂",
   "keyword" : "elevate",
-  "elements" : "",
+  "elements" : "sun, craft, seal",
 }
 ,
   
@@ -25468,7 +25543,7 @@ var docs =
   "id" : "2451",
   "kanji" : "昏",
   "keyword" : "dusk",
-  "elements" : "",
+  "elements" : "family name, sun",
 }
 ,
   
@@ -25478,7 +25553,7 @@ var docs =
   "id" : "2452",
   "kanji" : "晦",
   "keyword" : "last day of the month",
-  "elements" : "",
+  "elements" : "sun, every, reclining, lying down, mother",
 }
 ,
   
@@ -25488,7 +25563,7 @@ var docs =
   "id" : "2455",
   "kanji" : "膿",
   "keyword" : "pus",
-  "elements" : "",
+  "elements" : "flesh, moon, month, agriculture, bend, sign of the dragon, cliff, two, hairpin, safety-pin",
 }
 ,
   
@@ -25498,7 +25573,7 @@ var docs =
   "id" : "2456",
   "kanji" : "腑",
   "keyword" : "viscera",
-  "elements" : "",
+  "elements" : "flesh, moon, month, borough, municipality, cave, adhere, sellotape, person, glue",
 }
 ,
   
@@ -25508,7 +25583,7 @@ var docs =
   "id" : "2457",
   "kanji" : "胱",
   "keyword" : "bladder",
-  "elements" : "",
+  "elements" : "flesh, moon, month, ray, small, little, human legs",
 }
 ,
   
@@ -25518,7 +25593,7 @@ var docs =
   "id" : "2458",
   "kanji" : "胚",
   "keyword" : "embryo",
-  "elements" : "",
+  "elements" : "flesh, moon, month, negative, one, ceiling, person, drop",
 }
 ,
   
@@ -25528,7 +25603,7 @@ var docs =
   "id" : "2459",
   "kanji" : "肛",
   "keyword" : "anus",
-  "elements" : "",
+  "elements" : "flesh, moon, month, craft",
 }
 ,
   
@@ -25538,7 +25613,7 @@ var docs =
   "id" : "2462",
   "kanji" : "脆",
   "keyword" : "fragile",
-  "elements" : "",
+  "elements" : "flesh, moon, month, dangerous, bound up, unlucky, cliff, fingerprint",
 }
 ,
   
@@ -25548,7 +25623,7 @@ var docs =
   "id" : "2463",
   "kanji" : "肋",
   "keyword" : "rib",
-  "elements" : "",
+  "elements" : "flesh, moon, month, power",
 }
 ,
   
@@ -25558,7 +25633,7 @@ var docs =
   "id" : "2465",
   "kanji" : "腔",
   "keyword" : "body cavity",
-  "elements" : "",
+  "elements" : "flesh, moon, month, empty, hole, house, human legs, craft",
 }
 ,
   
@@ -25568,7 +25643,7 @@ var docs =
   "id" : "2469",
   "kanji" : "肱",
   "keyword" : "armrest",
-  "elements" : "",
+  "elements" : "flesh, moon, month, by one's side, by one’s side, elbow",
 }
 ,
   
@@ -25578,7 +25653,7 @@ var docs =
   "id" : "2470",
   "kanji" : "胡",
   "keyword" : "uncivilized",
-  "elements" : "",
+  "elements" : "old, moon, month",
 }
 ,
   
@@ -25588,7 +25663,8 @@ var docs =
   "id" : "2471",
   "kanji" : "楓",
   "keyword" : "maple tree",
-  "elements" : "",
+  "elements" : "tree, wind, gnats, drop, insect",
+  "elementsWK" : "windWK",
 }
 ,
   
@@ -25598,7 +25674,7 @@ var docs =
   "id" : "2473",
   "kanji" : "楊",
   "keyword" : "purple willow",
-  "elements" : "",
+  "elements" : "tree, piggy bank, sun, day, piglets",
 }
 ,
   
@@ -25608,7 +25684,7 @@ var docs =
   "id" : "2474",
   "kanji" : "椋",
   "keyword" : "Oriental elm",
-  "elements" : "",
+  "elements" : "tree, capital, capitol, tall, top hat, mouth, small, little",
 }
 ,
   
@@ -25618,7 +25694,7 @@ var docs =
   "id" : "2475",
   "kanji" : "榛",
   "keyword" : "hazel",
-  "elements" : "",
+  "elements" : "tree, bonsai, wheat",
 }
 ,
   
@@ -25628,7 +25704,7 @@ var docs =
   "id" : "2476",
   "kanji" : "櫛",
   "keyword" : "comb",
-  "elements" : "",
+  "elements" : "tree, node, bamboo, instant, silver, stamp",
 }
 ,
   
@@ -25638,7 +25714,7 @@ var docs =
   "id" : "2477",
   "kanji" : "槌",
   "keyword" : "wooden hammer",
-  "elements" : "",
+  "elements" : "tree, chase, maestro, road",
 }
 ,
   
@@ -25648,7 +25724,7 @@ var docs =
   "id" : "2478",
   "kanji" : "樵",
   "keyword" : "mallet",
-  "elements" : "",
+  "elements" : "tree, char, turkey, oven-fire, barbecue",
 }
 ,
   
@@ -25658,7 +25734,7 @@ var docs =
   "id" : "2479",
   "kanji" : "梯",
   "keyword" : "ladder",
-  "elements" : "",
+  "elements" : "tree, younger brother, horns, dollar, bow, stick",
 }
 ,
   
@@ -25668,7 +25744,7 @@ var docs =
   "id" : "2482",
   "kanji" : "柑",
   "keyword" : "citrus tree",
-  "elements" : "",
+  "elements" : "tree, sweet, wicker basket, picnic basket",
 }
 ,
   
@@ -25678,7 +25754,7 @@ var docs =
   "id" : "2484",
   "kanji" : "杭",
   "keyword" : "picket",
-  "elements" : "",
+  "elements" : "tree, whirlwind, top hat, wind",
 }
 ,
   
@@ -25688,7 +25764,7 @@ var docs =
   "id" : "2485",
   "kanji" : "柊",
   "keyword" : "holly",
-  "elements" : "",
+  "elements" : "tree, winter, walking legs, ice",
 }
 ,
   
@@ -25698,7 +25774,7 @@ var docs =
   "id" : "2486",
   "kanji" : "柚",
   "keyword" : "citron",
-  "elements" : "",
+  "elements" : "tree, wherefore, sprout, shoot",
 }
 ,
   
@@ -25708,7 +25784,7 @@ var docs =
   "id" : "2487",
   "kanji" : "椀",
   "keyword" : "wooden bowl",
-  "elements" : "",
+  "elements" : "tree, address, house, mailbox, evening, fingerprint",
 }
 ,
   
@@ -25718,7 +25794,7 @@ var docs =
   "id" : "2488",
   "kanji" : "栂",
   "keyword" : "hemlock",
-  "elements" : "",
+  "elements" : "tree, mother, mama, breasts",
 }
 ,
   
@@ -25728,7 +25804,7 @@ var docs =
   "id" : "2489",
   "kanji" : "柾",
   "keyword" : "spindle tree",
-  "elements" : "",
+  "elements" : "tree, correct, one, ceiling, stop, footprint",
 }
 ,
   
@@ -25738,7 +25814,7 @@ var docs =
   "id" : "2490",
   "kanji" : "榊",
   "keyword" : "sacred Shinto tree",
-  "elements" : "",
+  "elements" : "tree, gods, altar, monkey, sun, day, rice field, stick",
 }
 ,
   
@@ -25748,7 +25824,7 @@ var docs =
   "id" : "2491",
   "kanji" : "樫",
   "keyword" : "evergreen oak",
-  "elements" : "",
+  "elements" : "tree, strict, loincloth, retainer, slave, crotch, soil, dirt, ground",
 }
 ,
   
@@ -25758,7 +25834,7 @@ var docs =
   "id" : "2492",
   "kanji" : "槙",
   "keyword" : "Chinese black pine",
-  "elements" : "",
+  "elements" : "tree, true, ten, needle, eye, tool, one, animal legs, eight",
 }
 ,
   
@@ -25768,7 +25844,7 @@ var docs =
   "id" : "2493",
   "kanji" : "楢",
   "keyword" : "Japanese oak",
-  "elements" : "",
+  "elements" : "tree, animal horns, whiskey bottle, west, one",
 }
 ,
   
@@ -25778,7 +25854,7 @@ var docs =
   "id" : "2494",
   "kanji" : "橘",
   "keyword" : "mandarin orange",
-  "elements" : "",
+  "elements" : "tree, halberd, halbard, beforehand, alien, hood, human legs, mouth",
 }
 ,
   
@@ -25788,7 +25864,7 @@ var docs =
   "id" : "2495",
   "kanji" : "桧",
   "keyword" : "Japanese cypress",
-  "elements" : "",
+  "elements" : "tree, meeting, one, elbow",
 }
 ,
   
@@ -25798,7 +25874,7 @@ var docs =
   "id" : "2496",
   "kanji" : "棲",
   "keyword" : "roost",
-  "elements" : "",
+  "elements" : "tree, wife, ten, needle, rake, woman",
 }
 ,
   
@@ -25808,7 +25884,7 @@ var docs =
   "id" : "2497",
   "kanji" : "栖",
   "keyword" : "nestle",
-  "elements" : "",
+  "elements" : "tree, west, one, four",
 }
 ,
   
@@ -25818,7 +25894,7 @@ var docs =
   "id" : "2499",
   "kanji" : "桔",
   "keyword" : "bellflower",
-  "elements" : "",
+  "elements" : "tree, good luck, samurai, mouth",
 }
 ,
   
@@ -25828,7 +25904,7 @@ var docs =
   "id" : "2500",
   "kanji" : "杜",
   "keyword" : "temple grove",
-  "elements" : "",
+  "elements" : "tree, soil, dirt, ground",
 }
 ,
   
@@ -25838,7 +25914,7 @@ var docs =
   "id" : "2501",
   "kanji" : "杷",
   "keyword" : "grain rake",
-  "elements" : "",
+  "elements" : "tree, mosaic",
 }
 ,
   
@@ -25848,7 +25924,7 @@ var docs =
   "id" : "2502",
   "kanji" : "梶",
   "keyword" : "oar",
-  "elements" : "",
+  "elements" : "tree, tail, flag, fur",
 }
 ,
   
@@ -25858,7 +25934,7 @@ var docs =
   "id" : "2503",
   "kanji" : "杵",
   "keyword" : "wooden pestle",
-  "elements" : "",
+  "elements" : "tree, noon, horse, pantomime horse, sign of the horse",
 }
 ,
   
@@ -25868,7 +25944,7 @@ var docs =
   "id" : "2504",
   "kanji" : "杖",
   "keyword" : "cane",
-  "elements" : "",
+  "elements" : "tree, length, stick, tucked under the arm",
 }
 ,
   
@@ -25878,7 +25954,7 @@ var docs =
   "id" : "2506",
   "kanji" : "樽",
   "keyword" : "barrel",
-  "elements" : "",
+  "elements" : "tree, revered, chieftain, Molotov cocktail, animal horns, horns, whiskey bottle, glue",
 }
 ,
   
@@ -25888,7 +25964,7 @@ var docs =
   "id" : "2508",
   "kanji" : "櫓",
   "keyword" : "turret",
-  "elements" : "",
+  "elements" : "tree, fish, bound up, rice field, brains, oven-fire, barbecue, sun",
 }
 ,
   
@@ -25898,7 +25974,7 @@ var docs =
   "id" : "2509",
   "kanji" : "橿",
   "keyword" : "sturdy oak",
-  "elements" : "",
+  "elements" : "tree, rice field, floor, ceiling, one",
 }
 ,
   
@@ -25908,7 +25984,7 @@ var docs =
   "id" : "2510",
   "kanji" : "杓",
   "keyword" : "wooden ladle",
-  "elements" : "",
+  "elements" : "tree, ladle, bound up, drop",
 }
 ,
   
@@ -25918,7 +25994,7 @@ var docs =
   "id" : "2511",
   "kanji" : "李",
   "keyword" : "damson",
-  "elements" : "",
+  "elements" : "tree, child",
 }
 ,
   
@@ -25928,7 +26004,7 @@ var docs =
   "id" : "2512",
   "kanji" : "棉",
   "keyword" : "raw cotton",
-  "elements" : "",
+  "elements" : "tree, white, drop, sun, day, towel",
 }
 ,
   
@@ -25938,7 +26014,7 @@ var docs =
   "id" : "2513",
   "kanji" : "楯",
   "keyword" : "escutcheon",
-  "elements" : "",
+  "elements" : "tree, shield, drag, ten, needle, eye",
 }
 ,
   
@@ -25948,7 +26024,7 @@ var docs =
   "id" : "2514",
   "kanji" : "榎",
   "keyword" : "hackberry",
-  "elements" : "",
+  "elements" : "tree, summer, one, ceiling, drop, eye, walking legs",
 }
 ,
   
@@ -25958,7 +26034,7 @@ var docs =
   "id" : "2515",
   "kanji" : "樺",
   "keyword" : "birch",
-  "elements" : "",
+  "elements" : "tree, splendor, splendid, flowers, silage, ten, needle",
 }
 ,
   
@@ -25968,7 +26044,7 @@ var docs =
   "id" : "2516",
   "kanji" : "槍",
   "keyword" : "lance",
-  "elements" : "",
+  "elements" : "tree, godown, meeting, single gate, umbrella, stable door, mouth",
 }
 ,
   
@@ -25978,7 +26054,7 @@ var docs =
   "id" : "2517",
   "kanji" : "柘",
   "keyword" : "wild mulberry",
-  "elements" : "",
+  "elements" : "tree, rock, stone",
 }
 ,
   
@@ -25988,7 +26064,7 @@ var docs =
   "id" : "2518",
   "kanji" : "梱",
   "keyword" : "bale",
-  "elements" : "",
+  "elements" : "tree, quandary, pent in, tree, wood",
 }
 ,
   
@@ -25998,7 +26074,7 @@ var docs =
   "id" : "2519",
   "kanji" : "枇",
   "keyword" : "loquat",
-  "elements" : "",
+  "elements" : "tree, compare, spoon, sitting on the ground, spoon2, sitting on the ground2",
 }
 ,
   
@@ -26008,7 +26084,7 @@ var docs =
   "id" : "2520",
   "kanji" : "樋",
   "keyword" : "downspout",
-  "elements" : "",
+  "elements" : "tree, traffic, pogo stick, chop-seal, hanko, utilise, utilize, road",
 }
 ,
   
@@ -26018,7 +26094,7 @@ var docs =
   "id" : "2521",
   "kanji" : "橇",
   "keyword" : "sled",
-  "elements" : "",
+  "elements" : "tree, three furs, fur",
 }
 ,
   
@@ -26028,7 +26104,7 @@ var docs =
   "id" : "2522",
   "kanji" : "槃",
   "keyword" : "enjoyment",
-  "elements" : "",
+  "elements" : "carrier, boat, cruise missile, missile, wind, crotch, tree",
 }
 ,
   
@@ -26038,7 +26114,7 @@ var docs =
   "id" : "2523",
   "kanji" : "栞",
   "keyword" : "bookmark",
-  "elements" : "",
+  "elements" : "two clotheslines, clothesline, dry, tree",
 }
 ,
   
@@ -26048,7 +26124,7 @@ var docs =
   "id" : "2524",
   "kanji" : "椰",
   "keyword" : "coconut tree",
-  "elements" : "",
+  "elements" : "tree, ear, city walls",
 }
 ,
   
@@ -26058,7 +26134,7 @@ var docs =
   "id" : "2525",
   "kanji" : "檀",
   "keyword" : "sandalwood",
-  "elements" : "",
+  "elements" : "tree, top hat, times, rotation, pent in, mouth, nightbreak, sun, day, one, floor",
 }
 ,
   
@@ -26068,7 +26144,7 @@ var docs =
   "id" : "2526",
   "kanji" : "樗",
   "keyword" : "plotosid",
-  "elements" : "",
+  "elements" : "tree, rain, ceiling, snare",
 }
 ,
   
@@ -26078,7 +26154,7 @@ var docs =
   "id" : "2527",
   "kanji" : "槻",
   "keyword" : "zelkova",
-  "elements" : "",
+  "elements" : "tree, standard, husband, see, telescope, eye, human legs",
 }
 ,
   
@@ -26088,7 +26164,7 @@ var docs =
   "id" : "2528",
   "kanji" : "椙",
   "keyword" : "cryptomeria",
-  "elements" : "",
+  "elements" : "tree, prosperous, sun, day, sun2, day2",
 }
 ,
   
@@ -26098,7 +26174,7 @@ var docs =
   "id" : "2529",
   "kanji" : "彬",
   "keyword" : "copious",
-  "elements" : "",
+  "elements" : "tree, cedar, tree, wood, shape",
 }
 ,
   
@@ -26108,7 +26184,7 @@ var docs =
   "id" : "2530",
   "kanji" : "桶",
   "keyword" : "bucket",
-  "elements" : "",
+  "elements" : "tree, chop-seal, utilize",
 }
 ,
   
@@ -26118,7 +26194,7 @@ var docs =
   "id" : "2531",
   "kanji" : "楕",
   "keyword" : "ellipse",
-  "elements" : "",
+  "elements" : "tree, possess, left, by one's side, by one’s side, craft, flesh, moon, month",
 }
 ,
   
@@ -26128,7 +26204,7 @@ var docs =
   "id" : "2532",
   "kanji" : "樒",
   "keyword" : "star-anise",
-  "elements" : "",
+  "elements" : "tree, secrecy, house, invariably, heart, mountain",
 }
 ,
   
@@ -26138,7 +26214,7 @@ var docs =
   "id" : "2533",
   "kanji" : "毬",
   "keyword" : "furball",
-  "elements" : "",
+  "elements" : "fur, request, arrow, grains of rice",
 }
 ,
   
@@ -26148,7 +26224,7 @@ var docs =
   "id" : "2534",
   "kanji" : "燿",
   "keyword" : "twinkle",
-  "elements" : "",
+  "elements" : "fire, feathers, turkey",
 }
 ,
   
@@ -26158,7 +26234,7 @@ var docs =
   "id" : "2535",
   "kanji" : "燎",
   "keyword" : "watchfire",
-  "elements" : "",
+  "elements" : "fire, pup tent, large, St. Bernard, sun, day, small, little",
 }
 ,
   
@@ -26168,7 +26244,7 @@ var docs =
   "id" : "2536",
   "kanji" : "炬",
   "keyword" : "torch",
-  "elements" : "",
+  "elements" : "fire, gigantic, Fafner",
 }
 ,
   
@@ -26178,7 +26254,7 @@ var docs =
   "id" : "2537",
   "kanji" : "焚",
   "keyword" : "kindle",
-  "elements" : "",
+  "elements" : "grove, tree, fire",
 }
 ,
   
@@ -26188,7 +26264,7 @@ var docs =
   "id" : "2538",
   "kanji" : "灸",
   "keyword" : "moxa",
-  "elements" : "",
+  "elements" : "mummy, bound up, person, fire",
 }
 ,
   
@@ -26198,7 +26274,7 @@ var docs =
   "id" : "2539",
   "kanji" : "燭",
   "keyword" : "candlelight",
-  "elements" : "",
+  "elements" : "fire, net, eye, bound up, insect",
 }
 ,
   
@@ -26208,7 +26284,7 @@ var docs =
   "id" : "2540",
   "kanji" : "煽",
   "keyword" : "fanning",
-  "elements" : "",
+  "elements" : "fire, fan, door, one, ceiling, flag, feathers, wings",
 }
 ,
   
@@ -26218,7 +26294,7 @@ var docs =
   "id" : "2541",
   "kanji" : "煤",
   "keyword" : "soot",
-  "elements" : "",
+  "elements" : "fire, so-and-so, sweet, wicker basket, picnic basket, tree, wood",
 }
 ,
   
@@ -26228,7 +26304,7 @@ var docs =
   "id" : "2542",
   "kanji" : "煉",
   "keyword" : "firing",
-  "elements" : "",
+  "elements" : "fire, east",
 }
 ,
   
@@ -26238,7 +26314,7 @@ var docs =
   "id" : "2543",
   "kanji" : "燦",
   "keyword" : "dazzling",
-  "elements" : "",
+  "elements" : "fire, magic wand, wand, augury, divining rod, evening, crotch, rice",
 }
 ,
   
@@ -26248,7 +26324,7 @@ var docs =
   "id" : "2544",
   "kanji" : "灼",
   "keyword" : "refulgent",
-  "elements" : "",
+  "elements" : "fire, ladle, bound up, drop",
 }
 ,
   
@@ -26258,7 +26334,7 @@ var docs =
   "id" : "2545",
   "kanji" : "烙",
   "keyword" : "branding",
-  "elements" : "",
+  "elements" : "fire, each, walking legs, mouth",
 }
 ,
   
@@ -26268,7 +26344,7 @@ var docs =
   "id" : "2546",
   "kanji" : "焔",
   "keyword" : "flames",
-  "elements" : "",
+  "elements" : "fire, bound up, olden times, olden days, old days, stick, sun, day",
 }
 ,
   
@@ -26278,7 +26354,7 @@ var docs =
   "id" : "2547",
   "kanji" : "熔",
   "keyword" : "fuse metal",
-  "elements" : "",
+  "elements" : "fire, contain, house, valley, eight, umbrella, mouth",
 }
 ,
   
@@ -26288,7 +26364,7 @@ var docs =
   "id" : "2549",
   "kanji" : "烹",
   "keyword" : "stew",
-  "elements" : "",
+  "elements" : "top lid, mouth, tall, complete, child with arms wrapped up, oven-fire, barbecue",
 }
 ,
   
@@ -26298,7 +26374,7 @@ var docs =
   "id" : "2550",
   "kanji" : "牽",
   "keyword" : "tug",
-  "elements" : "",
+  "elements" : "mysterious, top hat, cocoon, crown, elbow, cow",
 }
 ,
   
@@ -26308,7 +26384,7 @@ var docs =
   "id" : "2551",
   "kanji" : "牝",
   "keyword" : "female animal",
-  "elements" : "",
+  "elements" : "cow, spoon",
 }
 ,
   
@@ -26318,7 +26394,7 @@ var docs =
   "id" : "2552",
   "kanji" : "牡",
   "keyword" : "male animal",
-  "elements" : "",
+  "elements" : "cow, soil, dirt, ground",
 }
 ,
   
@@ -26328,7 +26404,7 @@ var docs =
   "id" : "2553",
   "kanji" : "瑶",
   "keyword" : "precious stone",
-  "elements" : "",
+  "elements" : "jewel, condor, claw, vulture, king, mountain, road",
 }
 ,
   
@@ -26338,7 +26414,7 @@ var docs =
   "id" : "2554",
   "kanji" : "琳",
   "keyword" : "chime",
-  "elements" : "",
+  "elements" : "jewel, grove, tree, wood",
 }
 ,
   
@@ -26348,7 +26424,7 @@ var docs =
   "id" : "2557",
   "kanji" : "琉",
   "keyword" : "lapis lazuli",
-  "elements" : "",
+  "elements" : "jewel, infant, toddler, top hat, elbow, flood, stream",
 }
 ,
   
@@ -26358,7 +26434,7 @@ var docs =
   "id" : "2559",
   "kanji" : "瑳",
   "keyword" : "burnish",
-  "elements" : "",
+  "elements" : "jewel, distinction, wool, sheep, craft",
 }
 ,
   
@@ -26368,7 +26444,7 @@ var docs =
   "id" : "2560",
   "kanji" : "琢",
   "keyword" : "hone",
-  "elements" : "",
+  "elements" : "jewel, sow",
 }
 ,
   
@@ -26378,7 +26454,7 @@ var docs =
   "id" : "2561",
   "kanji" : "珊",
   "keyword" : "coral",
-  "elements" : "",
+  "elements" : "jewel, tome, scrapbook, scrapbooks, glass canopy, hood, flowers",
 }
 ,
   
@@ -26388,7 +26464,7 @@ var docs =
   "id" : "2562",
   "kanji" : "瑚",
   "keyword" : "coral reef",
-  "elements" : "",
+  "elements" : "jewel, old, moon, month, flesh",
 }
 ,
   
@@ -26398,7 +26474,7 @@ var docs =
   "id" : "2563",
   "kanji" : "瑞",
   "keyword" : "fortunate",
-  "elements" : "",
+  "elements" : "jewel, mountain, comb",
 }
 ,
   
@@ -26408,7 +26484,7 @@ var docs =
   "id" : "2564",
   "kanji" : "珪",
   "keyword" : "silicon",
-  "elements" : "",
+  "elements" : "jewel, ivy, soil, dirt, ground",
 }
 ,
   
@@ -26418,7 +26494,7 @@ var docs =
   "id" : "2565",
   "kanji" : "玖",
   "keyword" : "jet",
-  "elements" : "",
+  "elements" : "jewel, mummy, bound up, person, fire",
 }
 ,
   
@@ -26428,7 +26504,7 @@ var docs =
   "id" : "2566",
   "kanji" : "瑛",
   "keyword" : "crystal stone",
-  "elements" : "",
+  "elements" : "jewel, England, flowers, centre, center, large, St. Bernard",
 }
 ,
   
@@ -26438,7 +26514,7 @@ var docs =
   "id" : "2568",
   "kanji" : "玲",
   "keyword" : "tinkling",
-  "elements" : "",
+  "elements" : "jewel, orders, meeting, chop-seal, hanko",
 }
 ,
   
@@ -26448,7 +26524,7 @@ var docs =
   "id" : "2570",
   "kanji" : "畢",
   "keyword" : "lastly",
-  "elements" : "",
+  "elements" : "rice field, silage, ten",
 }
 ,
   
@@ -26458,7 +26534,7 @@ var docs =
   "id" : "2571",
   "kanji" : "畦",
   "keyword" : "paddy-field ridge",
-  "elements" : "",
+  "elements" : "field, ivy, soil, dirt, ground",
 }
 ,
   
@@ -26468,7 +26544,7 @@ var docs =
   "id" : "2572",
   "kanji" : "痒",
   "keyword" : "itch",
-  "elements" : "",
+  "elements" : "sickness, sheep, horns, king, stick",
 }
 ,
   
@@ -26478,7 +26554,7 @@ var docs =
   "id" : "2573",
   "kanji" : "痰",
   "keyword" : "phlegm",
-  "elements" : "",
+  "elements" : "sickness, inflammation, fire, fire2",
 }
 ,
   
@@ -26488,7 +26564,7 @@ var docs =
   "id" : "2574",
   "kanji" : "疹",
   "keyword" : "measles",
-  "elements" : "",
+  "elements" : "sickness, umbrella, shape",
 }
 ,
   
@@ -26498,7 +26574,7 @@ var docs =
   "id" : "2575",
   "kanji" : "痔",
   "keyword" : "hemorrhoids",
-  "elements" : "",
+  "elements" : "sickness, buddhist temple, temple, soil, dirt, ground, glue",
 }
 ,
   
@@ -26508,7 +26584,7 @@ var docs =
   "id" : "2576",
   "kanji" : "癌",
   "keyword" : "cancer",
-  "elements" : "",
+  "elements" : "sickness, goods, mouth, mouth3, mountain",
 }
 ,
   
@@ -26518,7 +26594,7 @@ var docs =
   "id" : "2579",
   "kanji" : "痺",
   "keyword" : "paralysis",
-  "elements" : "",
+  "elements" : "sickness, lowly, Wayne Slob, drop, rice field, brains, cornucopia, ten, needle",
 }
 ,
   
@@ -26528,7 +26604,7 @@ var docs =
   "id" : "2580",
   "kanji" : "眸",
   "keyword" : "apple of the eye",
-  "elements" : "",
+  "elements" : "eye, moo, elbow, cow",
 }
 ,
   
@@ -26538,7 +26614,7 @@ var docs =
   "id" : "2581",
   "kanji" : "眩",
   "keyword" : "dizzy",
-  "elements" : "",
+  "elements" : "eye, mysterious, top hat, cocoon",
 }
 ,
   
@@ -26548,7 +26624,7 @@ var docs =
   "id" : "2584",
   "kanji" : "雉",
   "keyword" : "pheasant",
-  "elements" : "",
+  "elements" : "pheasant, arrow, dart, turkey",
 }
 ,
   
@@ -26558,7 +26634,7 @@ var docs =
   "id" : "2585",
   "kanji" : "矩",
   "keyword" : "carpenter's square",
-  "elements" : "",
+  "elements" : "arrow, dart, gigantic",
 }
 ,
   
@@ -26568,7 +26644,7 @@ var docs =
   "id" : "2586",
   "kanji" : "磐",
   "keyword" : "crag",
-  "elements" : "",
+  "elements" : "carrier, boat, cruise missile, missile, wind, crotch, rock, stone",
 }
 ,
   
@@ -26578,7 +26654,7 @@ var docs =
   "id" : "2587",
   "kanji" : "碇",
   "keyword" : "grapnel",
-  "elements" : "",
+  "elements" : "rock, stone, determine, determined, house, mend",
 }
 ,
   
@@ -26588,7 +26664,7 @@ var docs =
   "id" : "2588",
   "kanji" : "碧",
   "keyword" : "blue-green",
-  "elements" : "",
+  "elements" : "jewel, white, drop, sun, day, stone, rock",
 }
 ,
   
@@ -26598,7 +26674,7 @@ var docs =
   "id" : "2589",
   "kanji" : "硯",
   "keyword" : "inkstone",
-  "elements" : "",
+  "elements" : "rock, stone, see, eye, human legs",
 }
 ,
   
@@ -26608,7 +26684,7 @@ var docs =
   "id" : "2590",
   "kanji" : "砥",
   "keyword" : "grindstone",
-  "elements" : "",
+  "elements" : "rock, stone, calling card, family name, one, floor",
 }
 ,
   
@@ -26618,7 +26694,7 @@ var docs =
   "id" : "2591",
   "kanji" : "碗",
   "keyword" : "teacup",
-  "elements" : "",
+  "elements" : "rock, stone, address, house, mailbox, evening, fingerprint",
 }
 ,
   
@@ -26628,7 +26704,7 @@ var docs =
   "id" : "2592",
   "kanji" : "碍",
   "keyword" : "obstacle",
-  "elements" : "",
+  "elements" : "rock, stone, nightbreak, sun, day, one, floor, glue",
 }
 ,
   
@@ -26638,7 +26714,7 @@ var docs =
   "id" : "2593",
   "kanji" : "碩",
   "keyword" : "illustrious",
-  "elements" : "",
+  "elements" : "rock, stone, tribute, craft, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -26648,7 +26724,7 @@ var docs =
   "id" : "2594",
   "kanji" : "磯",
   "keyword" : "rocky beach",
-  "elements" : "",
+  "elements" : "rock, stone, how many, how much, cocoon, cocoon2, person, fiesta,",
 }
 ,
   
@@ -26658,7 +26734,7 @@ var docs =
   "id" : "2595",
   "kanji" : "砺",
   "keyword" : "whetstone",
-  "elements" : "",
+  "elements" : "rock, stone, cliff, ten thousand, one, ceiling, bound up",
 }
 ,
   
@@ -26668,7 +26744,7 @@ var docs =
   "id" : "2596",
   "kanji" : "碓",
   "keyword" : "mill",
-  "elements" : "",
+  "elements" : "rock, stone, turkey",
 }
 ,
   
@@ -26678,7 +26754,7 @@ var docs =
   "id" : "2597",
   "kanji" : "禦",
   "keyword" : "fend off",
-  "elements" : "",
+  "elements" : "honorable, Nelson, column, going, line, wholesale, horseshoe, pantomime horse, noon, sign of the horse, stop, footprint, stamp, show, altar, two, small",
 }
 ,
   
@@ -26688,7 +26764,7 @@ var docs =
   "id" : "2598",
   "kanji" : "祷",
   "keyword" : "beseech",
-  "elements" : "",
+  "elements" : "show, altar, longevity, bushes, glue",
 }
 ,
   
@@ -26698,7 +26774,7 @@ var docs =
   "id" : "2599",
   "kanji" : "祐",
   "keyword" : "ancestral tablet",
-  "elements" : "",
+  "elements" : "altar, right, by one's side, by one’s side, mouth",
 }
 ,
   
@@ -26708,7 +26784,7 @@ var docs =
   "id" : "2600",
   "kanji" : "祇",
   "keyword" : "local god",
-  "elements" : "",
+  "elements" : "show, altar, two, small, family name",
 }
 ,
   
@@ -26718,7 +26794,7 @@ var docs =
   "id" : "2601",
   "kanji" : "祢",
   "keyword" : "ancestral shrine",
-  "elements" : "",
+  "elements" : "altar, reclining, lying down, small, little",
 }
 ,
   
@@ -26728,7 +26804,7 @@ var docs =
   "id" : "2602",
   "kanji" : "禄",
   "keyword" : "salarium",
-  "elements" : "",
+  "elements" : "altar, broom, arrow, grains of rice, rice grains",
 }
 ,
   
@@ -26738,7 +26814,7 @@ var docs =
   "id" : "2603",
   "kanji" : "禎",
   "keyword" : "felicitation",
-  "elements" : "",
+  "elements" : "altar, upright, magic wand, augury, divining rod, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -26748,7 +26824,7 @@ var docs =
   "id" : "2604",
   "kanji" : "秤",
   "keyword" : "balancing scales",
-  "elements" : "",
+  "elements" : "wheat, cereal, even, water-lily, lily pad",
 }
 ,
   
@@ -26758,7 +26834,7 @@ var docs =
   "id" : "2605",
   "kanji" : "黍",
   "keyword" : "millet",
-  "elements" : "",
+  "elements" : "wheat, umbrella, grains of rice, rice grains",
 }
 ,
   
@@ -26768,7 +26844,7 @@ var docs =
   "id" : "2606",
   "kanji" : "禿",
   "keyword" : "bald",
-  "elements" : "",
+  "elements" : "wheat, human legs",
 }
 ,
   
@@ -26778,7 +26854,7 @@ var docs =
   "id" : "2607",
   "kanji" : "稔",
   "keyword" : "bear fruit",
-  "elements" : "",
+  "elements" : "wheat, wish, now, clock, heart",
 }
 ,
   
@@ -26788,7 +26864,7 @@ var docs =
   "id" : "2608",
   "kanji" : "稗",
   "keyword" : "crabgrass",
-  "elements" : "",
+  "elements" : "wheat, lowly, Wayne Slob, drop, rice field, brains, cornucopia, ten, needle",
 }
 ,
   
@@ -26798,7 +26874,7 @@ var docs =
   "id" : "2609",
   "kanji" : "穣",
   "keyword" : "bumper crop",
-  "elements" : "",
+  "elements" : "wheat, grass skirt, top hat, eight, six, animal legs, celery, scarf",
 }
 ,
   
@@ -26808,7 +26884,7 @@ var docs =
   "id" : "2610",
   "kanji" : "稜",
   "keyword" : "imperial authority",
-  "elements" : "",
+  "elements" : "wheat, rice seedlings, soil, dirt, ground, human legs, walking legs",
 }
 ,
   
@@ -26818,7 +26894,7 @@ var docs =
   "id" : "2611",
   "kanji" : "稀",
   "keyword" : "sparse",
-  "elements" : "",
+  "elements" : "wheat, hope, sheaf, linen, by one's side, by one’s side, towel",
 }
 ,
   
@@ -26828,7 +26904,7 @@ var docs =
   "id" : "2612",
   "kanji" : "穆",
   "keyword" : "obeisant",
-  "elements" : "",
+  "elements" : "wheat, spring, white, dove, water, shape",
 }
 ,
   
@@ -26838,7 +26914,7 @@ var docs =
   "id" : "2613",
   "kanji" : "窺",
   "keyword" : "peep",
-  "elements" : "",
+  "elements" : "hole, house, human legs, standard, protocol, husband, see, telescope, eye, human legs",
 }
 ,
   
@@ -26848,7 +26924,7 @@ var docs =
   "id" : "2614",
   "kanji" : "窄",
   "keyword" : "tight",
-  "elements" : "",
+  "elements" : "hole, house, human legs, saw",
 }
 ,
   
@@ -26858,7 +26934,7 @@ var docs =
   "id" : "2616",
   "kanji" : "穿",
   "keyword" : "drill",
-  "elements" : "",
+  "elements" : "hole, house, human legs, tusk",
 }
 ,
   
@@ -26868,7 +26944,8 @@ var docs =
   "id" : "2617",
   "kanji" : "竃",
   "keyword" : "kitchen stove",
-  "elements" : "",
+  "elements" : "hole, soil, dirt, ground, eel, eels, sun, day, rice field, fishhook",
+  "elementsWK" : "umbrellaWK",
 }
 ,
   
@@ -26878,7 +26955,7 @@ var docs =
   "id" : "2618",
   "kanji" : "竪",
   "keyword" : "longness",
-  "elements" : "",
+  "elements" : "loincloth, retainer, slave, crotch, vase, stand up",
 }
 ,
   
@@ -26888,7 +26965,8 @@ var docs =
   "id" : "2619",
   "kanji" : "颯",
   "keyword" : "rustling",
-  "elements" : "",
+  "elements" : "vase, stand up, wind, gnats, drop, insect",
+  "elementsWK" : "windWK",
 }
 ,
   
@@ -26898,7 +26976,7 @@ var docs =
   "id" : "2620",
   "kanji" : "站",
   "keyword" : "outpost",
-  "elements" : "",
+  "elements" : "vase, stand up, fortune-telling, magic wand, wand, augury, divining rod, mouth",
 }
 ,
   
@@ -26908,7 +26986,8 @@ var docs =
   "id" : "2621",
   "kanji" : "靖",
   "keyword" : "repose",
-  "elements" : "",
+  "elements" : "vase, stand up, blue, grow up, moon, flesh",
+  "keywordWK" : "Peaceful",
 }
 ,
   
@@ -26918,7 +26997,7 @@ var docs =
   "id" : "2622",
   "kanji" : "妾",
   "keyword" : "concubine",
-  "elements" : "",
+  "elements" : "vase, stand up, woman",
 }
 ,
   
@@ -26928,7 +27007,7 @@ var docs =
   "id" : "2623",
   "kanji" : "衿",
   "keyword" : "lapel",
-  "elements" : "",
+  "elements" : "cloak, now, clock",
 }
 ,
   
@@ -26938,7 +27017,7 @@ var docs =
   "id" : "2625",
   "kanji" : "袷",
   "keyword" : "lined kimono",
-  "elements" : "",
+  "elements" : "cloak, fit, meeting, umbrella, one, mouth",
 }
 ,
   
@@ -26948,7 +27027,7 @@ var docs =
   "id" : "2626",
   "kanji" : "袴",
   "keyword" : "pleated skirt",
-  "elements" : "",
+  "elements" : "cloak, St. Bernard, large, ceiling, one, snare",
 }
 ,
   
@@ -26958,7 +27037,7 @@ var docs =
   "id" : "2627",
   "kanji" : "襖",
   "keyword" : "sliding door",
-  "elements" : "",
+  "elements" : "cloak, core, drop, pent in, rice, large, St. Bernard",
 }
 ,
   
@@ -26968,7 +27047,7 @@ var docs =
   "id" : "2628",
   "kanji" : "笙",
   "keyword" : "Chinese panpipe",
-  "elements" : "",
+  "elements" : "bamboo, life, This is Your Life, cell, drop, grow up",
 }
 ,
   
@@ -26978,7 +27057,7 @@ var docs =
   "id" : "2629",
   "kanji" : "筏",
   "keyword" : "raft",
-  "elements" : "",
+  "elements" : "bamboo, fell, to fell, person, fiesta",
 }
 ,
   
@@ -26988,7 +27067,7 @@ var docs =
   "id" : "2630",
   "kanji" : "簾",
   "keyword" : "bamboo blinds",
-  "elements" : "",
+  "elements" : "bamboo, bargain, cave, concurrently, animal horns, horns, rake",
 }
 ,
   
@@ -26998,7 +27077,7 @@ var docs =
   "id" : "2631",
   "kanji" : "箪",
   "keyword" : "rattan box",
-  "elements" : "",
+  "elements" : "bamboo, simple, owl, one, animal legs, rice field, brains, ten, needle",
 }
 ,
   
@@ -27008,7 +27087,7 @@ var docs =
   "id" : "2632",
   "kanji" : "竿",
   "keyword" : "pole",
-  "elements" : "",
+  "elements" : "bamboo, dry, clothesline",
 }
 ,
   
@@ -27018,7 +27097,7 @@ var docs =
   "id" : "2633",
   "kanji" : "箆",
   "keyword" : "spatula",
-  "elements" : "",
+  "elements" : "bamboo, hood, umbrella, person, compare, spoon",
 }
 ,
   
@@ -27028,7 +27107,7 @@ var docs =
   "id" : "2634",
   "kanji" : "箔",
   "keyword" : "foil",
-  "elements" : "",
+  "elements" : "bamboo, overnight, water, water droplets, water pistol, white, dove",
 }
 ,
   
@@ -27038,7 +27117,7 @@ var docs =
   "id" : "2635",
   "kanji" : "笥",
   "keyword" : "wardrobe",
-  "elements" : "",
+  "elements" : "bamboo, director, clothes hanger, coat hanger, one, mouth",
 }
 ,
   
@@ -27048,7 +27127,7 @@ var docs =
   "id" : "2636",
   "kanji" : "箭",
   "keyword" : "arrow shaft",
-  "elements" : "",
+  "elements" : "bamboo, in front, front, horns, butcher, moon, month, flesh, part of the body, sword, sabre, saber",
 }
 ,
   
@@ -27058,7 +27137,7 @@ var docs =
   "id" : "2637",
   "kanji" : "筑",
   "keyword" : "ancient harp",
-  "elements" : "",
+  "elements" : "bamboo, craft, mediocre, drop, wind",
 }
 ,
   
@@ -27068,7 +27147,7 @@ var docs =
   "id" : "2639",
   "kanji" : "篠",
   "keyword" : "slender bamboo",
-  "elements" : "",
+  "elements" : "bamboo, person, walking stick, stick, taskmaster, tree",
 }
 ,
   
@@ -27078,7 +27157,7 @@ var docs =
   "id" : "2641",
   "kanji" : "纂",
   "keyword" : "redaction",
-  "elements" : "",
+  "elements" : "bamboo, eyeball, eye, silver, St. Bernard, large, thread, spiderman",
 }
 ,
   
@@ -27088,7 +27167,7 @@ var docs =
   "id" : "2642",
   "kanji" : "竺",
   "keyword" : "bamboo cane",
-  "elements" : "",
+  "elements" : "bamboo, two",
 }
 ,
   
@@ -27098,7 +27177,7 @@ var docs =
   "id" : "2643",
   "kanji" : "箕",
   "keyword" : "winnowing fan",
-  "elements" : "",
+  "elements" : "bamboo, bushel basket, hamper, animal legs, eight",
 }
 ,
   
@@ -27108,7 +27187,7 @@ var docs =
   "id" : "2644",
   "kanji" : "笈",
   "keyword" : "backpack",
-  "elements" : "",
+  "elements" : "bamboo, reach out, fist, from, drop",
 }
 ,
   
@@ -27118,7 +27197,7 @@ var docs =
   "id" : "2645",
   "kanji" : "篇",
   "keyword" : "livraison",
-  "elements" : "",
+  "elements" : "bamboo, door, ceiling, one, flag, tome, scrapbook, scrapbooks",
 }
 ,
   
@@ -27128,7 +27207,7 @@ var docs =
   "id" : "2646",
   "kanji" : "筈",
   "keyword" : "should",
-  "elements" : "",
+  "elements" : "bamboo, tongue, thousand, drop, ten, needle, mouth",
 }
 ,
   
@@ -27138,7 +27217,7 @@ var docs =
   "id" : "2647",
   "kanji" : "簸",
   "keyword" : "winnow",
-  "elements" : "",
+  "elements" : "bamboo, bushel basket, hamper, animal legs, eight, pelt, branch, ten, needle, crotch, hook",
 }
 ,
   
@@ -27148,7 +27227,7 @@ var docs =
   "id" : "2648",
   "kanji" : "粕",
   "keyword" : "settlings",
-  "elements" : "",
+  "elements" : "rice, white, drop, sun, day",
 }
 ,
   
@@ -27158,7 +27237,7 @@ var docs =
   "id" : "2649",
   "kanji" : "糟",
   "keyword" : "lees",
-  "elements" : "",
+  "elements" : "rice, cadet, one, bend, sun, day, rice field",
 }
 ,
   
@@ -27168,7 +27247,7 @@ var docs =
   "id" : "2650",
   "kanji" : "糊",
   "keyword" : "paste",
-  "elements" : "",
+  "elements" : "rice, old, moon, month, flesh",
 }
 ,
   
@@ -27178,7 +27257,7 @@ var docs =
   "id" : "2651",
   "kanji" : "籾",
   "keyword" : "unhulled rice",
-  "elements" : "",
+  "elements" : "rice, blade, drop, sword, dagger",
 }
 ,
   
@@ -27188,7 +27267,7 @@ var docs =
   "id" : "2652",
   "kanji" : "糠",
   "keyword" : "rice bran",
-  "elements" : "",
+  "elements" : "rice, ease, sane, cave, sieve, rake, grains of rice",
 }
 ,
   
@@ -27198,7 +27277,7 @@ var docs =
   "id" : "2653",
   "kanji" : "糞",
   "keyword" : "excrement",
-  "elements" : "",
+  "elements" : "rice, uncommon, rice field, brains, strung together, salad, animal legs, eight",
 }
 ,
   
@@ -27208,7 +27287,7 @@ var docs =
   "id" : "2654",
   "kanji" : "粟",
   "keyword" : "foxtail millet",
-  "elements" : "",
+  "elements" : "old west, mouth, ceiling, rice",
 }
 ,
   
@@ -27218,7 +27297,7 @@ var docs =
   "id" : "2655",
   "kanji" : "繋",
   "keyword" : "link up",
-  "elements" : "",
+  "elements" : "car, sun, day, ten, needle, cruise missile, missile, wind, crotch, thread, spiderman",
 }
 ,
   
@@ -27228,7 +27307,7 @@ var docs =
   "id" : "2656",
   "kanji" : "綸",
   "keyword" : "twine",
-  "elements" : "",
+  "elements" : "thread, meeting, umbrella, one, mouth, tome, scrapbook, scrapbooks, glass canopy, hood, flowers",
 }
 ,
   
@@ -27238,7 +27317,7 @@ var docs =
   "id" : "2657",
   "kanji" : "絨",
   "keyword" : "carpet yarn",
-  "elements" : "",
+  "elements" : "thread, spiderman, ten, fiesta",
 }
 ,
   
@@ -27248,7 +27327,7 @@ var docs =
   "id" : "2658",
   "kanji" : "絆",
   "keyword" : "ties",
-  "elements" : "",
+  "elements" : "thread, spiderman, half, small, ten, needle",
 }
 ,
   
@@ -27258,7 +27337,7 @@ var docs =
   "id" : "2659",
   "kanji" : "緋",
   "keyword" : "scarlet",
-  "elements" : "",
+  "elements" : "thread, spiderman, un-, jail cell, prison bars",
 }
 ,
   
@@ -27268,7 +27347,7 @@ var docs =
   "id" : "2660",
   "kanji" : "綜",
   "keyword" : "synthesis",
-  "elements" : "",
+  "elements" : "thread, spiderman, religion, house, altar, show, two, small",
 }
 ,
   
@@ -27278,7 +27357,7 @@ var docs =
   "id" : "2661",
   "kanji" : "紐",
   "keyword" : "string",
-  "elements" : "",
+  "elements" : "thread, spiderman, sign of the cow, dagger, two",
 }
 ,
   
@@ -27288,7 +27367,7 @@ var docs =
   "id" : "2662",
   "kanji" : "紘",
   "keyword" : "chinstrap",
-  "elements" : "",
+  "elements" : "thread, spiderman, by one's side, by one’s side, by his side, elbow",
 }
 ,
   
@@ -27298,7 +27377,7 @@ var docs =
   "id" : "2663",
   "kanji" : "纏",
   "keyword" : "summarize",
-  "elements" : "",
+  "elements" : "thread, cave, ri, computer, rice field, brains, soil, dirt, ground, animal legs, earth",
 }
 ,
   
@@ -27308,7 +27387,7 @@ var docs =
   "id" : "2664",
   "kanji" : "絢",
   "keyword" : "gorgeous",
-  "elements" : "",
+  "elements" : "thread, spiderman, decameron, bound up, sun, day",
 }
 ,
   
@@ -27318,7 +27397,7 @@ var docs =
   "id" : "2665",
   "kanji" : "繍",
   "keyword" : "embroidery",
-  "elements" : "",
+  "elements" : "thread, spiderman, solemn, rake, fenceposts, cabers, rice",
 }
 ,
   
@@ -27328,7 +27407,7 @@ var docs =
   "id" : "2666",
   "kanji" : "紬",
   "keyword" : "pongee",
-  "elements" : "",
+  "elements" : "thread, spiderman, wherefore, sprout, shoot",
 }
 ,
   
@@ -27338,7 +27417,7 @@ var docs =
   "id" : "2667",
   "kanji" : "綺",
   "keyword" : "ornate",
-  "elements" : "",
+  "elements" : "thread, spiderman, strange, large, St. Bernard, can, mouth, street, nail, spike",
 }
 ,
   
@@ -27348,7 +27427,7 @@ var docs =
   "id" : "2668",
   "kanji" : "綾",
   "keyword" : "damask",
-  "elements" : "",
+  "elements" : "thread, spiderman, rice seedlings, soil, dirt, ground, human legs, soil2, dirt2, ground2, walking legs",
 }
 ,
   
@@ -27358,7 +27437,7 @@ var docs =
   "id" : "2669",
   "kanji" : "絃",
   "keyword" : "catgut",
-  "elements" : "",
+  "elements" : "thread, spiderman, mysterious, top hat, cocoon",
 }
 ,
   
@@ -27368,7 +27447,7 @@ var docs =
   "id" : "2671",
   "kanji" : "縞",
   "keyword" : "stripe",
-  "elements" : "",
+  "elements" : "thread, spiderman, tall, top hat, mouth, alien, hood, mouth, mouth2",
 }
 ,
   
@@ -27378,7 +27457,7 @@ var docs =
   "id" : "2672",
   "kanji" : "綬",
   "keyword" : "gimp",
-  "elements" : "",
+  "elements" : "thread, spiderman, accept, birdhouse, birdcage, claw, vulture, crown, crotch",
 }
 ,
   
@@ -27388,7 +27467,7 @@ var docs =
   "id" : "2673",
   "kanji" : "紗",
   "keyword" : "gossamer",
-  "elements" : "",
+  "elements" : "thread, spiderman, few, little, small, drop",
 }
 ,
   
@@ -27398,7 +27477,7 @@ var docs =
   "id" : "2674",
   "kanji" : "舵",
   "keyword" : "rudder",
-  "elements" : "",
+  "elements" : "boat, wind, drop, house, spoon",
 }
 ,
   
@@ -27408,7 +27487,7 @@ var docs =
   "id" : "2676",
   "kanji" : "聯",
   "keyword" : "strung together",
-  "elements" : "",
+  "elements" : "ear, two cocoons, cocoon, cactus, mountain",
 }
 ,
   
@@ -27418,7 +27497,7 @@ var docs =
   "id" : "2677",
   "kanji" : "聡",
   "keyword" : "attentive",
-  "elements" : "",
+  "elements" : "ear, public, eight, elbow, heart",
 }
 ,
   
@@ -27428,7 +27507,7 @@ var docs =
   "id" : "2678",
   "kanji" : "聘",
   "keyword" : "summons",
-  "elements" : "",
+  "elements" : "ear, wherefore, sprout, shoot, snare",
 }
 ,
   
@@ -27438,7 +27517,7 @@ var docs =
   "id" : "2679",
   "kanji" : "耽",
   "keyword" : "addiction",
-  "elements" : "",
+  "elements" : "ear, crown, human legs, chihuahua with one human leg, drop",
 }
 ,
   
@@ -27448,7 +27527,7 @@ var docs =
   "id" : "2680",
   "kanji" : "耶",
   "keyword" : "exclamation",
-  "elements" : "",
+  "elements" : "ear, city walls",
 }
 ,
   
@@ -27458,7 +27537,7 @@ var docs =
   "id" : "2681",
   "kanji" : "蚤",
   "keyword" : "flea",
-  "elements" : "",
+  "elements" : "crotch, two drops, drops, drop, insect",
 }
 ,
   
@@ -27468,7 +27547,7 @@ var docs =
   "id" : "2682",
   "kanji" : "蟹",
   "keyword" : "crab",
-  "elements" : "",
+  "elements" : "unravel, angle, bound up, glass canopy, hood, walking cane, stick, two, sword, dagger, cow, insect",
 }
 ,
   
@@ -27478,7 +27557,7 @@ var docs =
   "id" : "2683",
   "kanji" : "蛋",
   "keyword" : "protein",
-  "elements" : "",
+  "elements" : "zoo, mending, mend, insect",
 }
 ,
   
@@ -27488,7 +27567,7 @@ var docs =
   "id" : "2684",
   "kanji" : "蟄",
   "keyword" : "hibernation",
-  "elements" : "",
+  "elements" : "tenacious, happiness, ten, needle, stand up, vase, fat man, musashimaru, nine, baseball, drop, ten2, needle2, insect",
 }
 ,
   
@@ -27498,7 +27577,7 @@ var docs =
   "id" : "2685",
   "kanji" : "蝿",
   "keyword" : "housefly",
-  "elements" : "",
+  "elements" : "insect, eel, eels, sun, day, rice field, fishhook",
 }
 ,
   
@@ -27508,7 +27587,7 @@ var docs =
   "id" : "2686",
   "kanji" : "蟻",
   "keyword" : "ant",
-  "elements" : "",
+  "elements" : "insect, righteousness, sheep, ego, hand, fiesta",
 }
 ,
   
@@ -27518,7 +27597,7 @@ var docs =
   "id" : "2688",
   "kanji" : "蝋",
   "keyword" : "wax",
-  "elements" : "",
+  "elements" : "insect, owl, anemometer, owl, one, animal legs, wind, cornstalk, corncob",
 }
 ,
   
@@ -27528,7 +27607,7 @@ var docs =
   "id" : "2689",
   "kanji" : "蝦",
   "keyword" : "shrimp",
-  "elements" : "",
+  "elements" : "insect, staples, mouth, box, crotch",
 }
 ,
   
@@ -27538,7 +27617,7 @@ var docs =
   "id" : "2690",
   "kanji" : "蛸",
   "keyword" : "octopus",
-  "elements" : "",
+  "elements" : "insect, candle, resemblance, little, small, moon",
 }
 ,
   
@@ -27548,7 +27627,7 @@ var docs =
   "id" : "2691",
   "kanji" : "螺",
   "keyword" : "screw",
-  "elements" : "",
+  "elements" : "insect, accumulate, rice field, brains, thread, spiderman",
 }
 ,
   
@@ -27558,7 +27637,7 @@ var docs =
   "id" : "2692",
   "kanji" : "蝉",
   "keyword" : "cicada",
-  "elements" : "",
+  "elements" : "insect, simple, owl, one, animal legs, rice field, brains, ten, needle",
 }
 ,
   
@@ -27568,7 +27647,7 @@ var docs =
   "id" : "2693",
   "kanji" : "蛙",
   "keyword" : "frog",
-  "elements" : "",
+  "elements" : "insect, ivy, square jewel, soil, dirt, ground, soil2, dirt2, ground2",
 }
 ,
   
@@ -27578,7 +27657,7 @@ var docs =
   "id" : "2694",
   "kanji" : "蛾",
   "keyword" : "moth",
-  "elements" : "",
+  "elements" : "insect, ego, hand, fiesta",
 }
 ,
   
@@ -27588,7 +27667,7 @@ var docs =
   "id" : "2695",
   "kanji" : "蛤",
   "keyword" : "clam",
-  "elements" : "",
+  "elements" : "insect, fit, meeting, umbrella, one, mouth",
 }
 ,
   
@@ -27598,7 +27677,7 @@ var docs =
   "id" : "2696",
   "kanji" : "蛭",
   "keyword" : "leech",
-  "elements" : "",
+  "elements" : "insect, climax, wall, one, ceiling, elbow, soil, dirt, ground",
 }
 ,
   
@@ -27608,7 +27687,7 @@ var docs =
   "id" : "2697",
   "kanji" : "蛎",
   "keyword" : "oyster",
-  "elements" : "",
+  "elements" : "insect, cliff, ten thousand, one, ceiling, bound up",
 }
 ,
   
@@ -27618,7 +27697,7 @@ var docs =
   "id" : "2698",
   "kanji" : "罫",
   "keyword" : "ruled lines",
-  "elements" : "",
+  "elements" : "net, eye, ivy, square jewel, soil, dirt, ground, soil2, dirt2, ground2, magic wand, wand, augury, divining rod",
 }
 ,
   
@@ -27628,7 +27707,7 @@ var docs =
   "id" : "2700",
   "kanji" : "袈",
   "keyword" : "stole",
-  "elements" : "",
+  "elements" : "add, power, muscle, arnold, mouth, garment, top hat, scarf, cloth, clothes, clothing",
 }
 ,
   
@@ -27638,7 +27717,7 @@ var docs =
   "id" : "2701",
   "kanji" : "裟",
   "keyword" : "monk's sash",
-  "elements" : "",
+  "elements" : "water, few, litte, small, drop, garment, top hat, scarf, cloth, clothes, clothing",
 }
 ,
   
@@ -27648,7 +27727,7 @@ var docs =
   "id" : "2703",
   "kanji" : "截",
   "keyword" : "incision",
-  "elements" : "",
+  "elements" : "Thanksgiving, harvest festival, ten, needle, fiesta, turkey",
 }
 ,
   
@@ -27658,7 +27737,7 @@ var docs =
   "id" : "2704",
   "kanji" : "哉",
   "keyword" : "I wonder",
-  "elements" : "",
+  "elements" : "plantation, Thanksgiving, harvest festival, ten, needle, fiesta, mouth",
 }
 ,
   
@@ -27668,7 +27747,7 @@ var docs =
   "id" : "2705",
   "kanji" : "詢",
   "keyword" : "counsel",
-  "elements" : "",
+  "elements" : "say, words, decameron, bound up, sun, day",
 }
 ,
   
@@ -27678,7 +27757,7 @@ var docs =
   "id" : "2706",
   "kanji" : "諄",
   "keyword" : "polite",
-  "elements" : "",
+  "elements" : "say, words, receive, tall, top hat, mouth, child, children",
 }
 ,
   
@@ -27688,7 +27767,7 @@ var docs =
   "id" : "2707",
   "kanji" : "讐",
   "keyword" : "vendetta",
-  "elements" : "",
+  "elements" : "two turkeys, turkey, say, words",
 }
 ,
   
@@ -27698,7 +27777,7 @@ var docs =
   "id" : "2708",
   "kanji" : "諌",
   "keyword" : "remonstrate",
-  "elements" : "",
+  "elements" : "say, words, east",
 }
 ,
   
@@ -27708,7 +27787,7 @@ var docs =
   "id" : "2710",
   "kanji" : "諒",
   "keyword" : "verify",
-  "elements" : "",
+  "elements" : "say, words, capital, tall, top hat, mouth, small, little",
 }
 ,
   
@@ -27718,7 +27797,7 @@ var docs =
   "id" : "2711",
   "kanji" : "讃",
   "keyword" : "compliment",
-  "elements" : "",
+  "elements" : "say, words, approve, approval, husband, shellfish, clam, oyster, eye, animal legs, eight, husband2",
 }
 ,
   
@@ -27728,7 +27807,7 @@ var docs =
   "id" : "2713",
   "kanji" : "訊",
   "keyword" : "query",
-  "elements" : "",
+  "elements" : "say, words, blade, drop, sword, dagger, ten, wind, fishhook",
 }
 ,
   
@@ -27738,7 +27817,7 @@ var docs =
   "id" : "2714",
   "kanji" : "訣",
   "keyword" : "split up",
-  "elements" : "",
+  "elements" : "say, words, guillotine, key, St. Bernard, large, person",
 }
 ,
   
@@ -27748,7 +27827,7 @@ var docs =
   "id" : "2718",
   "kanji" : "詑",
   "keyword" : "prevarication",
-  "elements" : "",
+  "elements" : "say, words, house, spoon",
 }
 ,
   
@@ -27758,7 +27837,7 @@ var docs =
   "id" : "2719",
   "kanji" : "誼",
   "keyword" : "familiarity",
-  "elements" : "",
+  "elements" : "say, words, best regards, house, shelf, my bookshelves",
 }
 ,
   
@@ -27768,7 +27847,7 @@ var docs =
   "id" : "2720",
   "kanji" : "謬",
   "keyword" : "fallible",
-  "elements" : "",
+  "elements" : "say, words, feathers, wings, umbrella, shape",
 }
 ,
   
@@ -27778,7 +27857,7 @@ var docs =
   "id" : "2721",
   "kanji" : "詫",
   "keyword" : "beg pardon",
-  "elements" : "",
+  "elements" : "say, words, home, house, lock of hair, seven",
 }
 ,
   
@@ -27788,7 +27867,7 @@ var docs =
   "id" : "2722",
   "kanji" : "諏",
   "keyword" : "advise",
-  "elements" : "",
+  "elements" : "say, words, take, ear, crotch",
 }
 ,
   
@@ -27798,7 +27877,7 @@ var docs =
   "id" : "2723",
   "kanji" : "諺",
   "keyword" : "proverb",
-  "elements" : "",
+  "elements" : "say, words, lad, vase, stand up, cliff, shape",
 }
 ,
   
@@ -27808,7 +27887,7 @@ var docs =
   "id" : "2724",
   "kanji" : "誹",
   "keyword" : "slander",
-  "elements" : "",
+  "elements" : "say, words, un-, jail cell, prison bars",
 }
 ,
   
@@ -27818,7 +27897,7 @@ var docs =
   "id" : "2725",
   "kanji" : "謂",
   "keyword" : "so-called",
-  "elements" : "",
+  "elements" : "say, words, stomach, rice field, brains, moon, month, flesh, part of the body",
 }
 ,
   
@@ -27828,7 +27907,7 @@ var docs =
   "id" : "2726",
   "kanji" : "諜",
   "keyword" : "secret agent",
-  "elements" : "",
+  "elements" : "say, words, generation, generations, ten, twenty, tree, wood",
 }
 ,
   
@@ -27838,7 +27917,7 @@ var docs =
   "id" : "2727",
   "kanji" : "註",
   "keyword" : "footnote",
-  "elements" : "",
+  "elements" : "say, words, candlestick, lord, drop, king, jewel, ball",
 }
 ,
   
@@ -27848,7 +27927,7 @@ var docs =
   "id" : "2728",
   "kanji" : "譬",
   "keyword" : "parable",
-  "elements" : "",
+  "elements" : "ketchup, flag, mouth, spicy, stand up, vase, ten, needle, say, words",
 }
 ,
   
@@ -27858,7 +27937,7 @@ var docs =
   "id" : "2729",
   "kanji" : "轟",
   "keyword" : "rumble",
-  "elements" : "",
+  "elements" : "three cars, car, sun, day, ten, needle",
 }
 ,
   
@@ -27868,7 +27947,7 @@ var docs =
   "id" : "2730",
   "kanji" : "輔",
   "keyword" : "reinforce",
-  "elements" : "",
+  "elements" : "car, sun, day, ten, needle, dog tag, dogtag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   
@@ -27878,7 +27957,7 @@ var docs =
   "id" : "2731",
   "kanji" : "輻",
   "keyword" : "spoke",
-  "elements" : "",
+  "elements" : "car, sun, day, ten, needle, wealth, house, one, ceiling, mouth, rice field, brains",
 }
 ,
   
@@ -27888,7 +27967,7 @@ var docs =
   "id" : "2732",
   "kanji" : "輯",
   "keyword" : "assemble",
-  "elements" : "",
+  "elements" : "car, sun, day, ten, needle, mouth, ear",
 }
 ,
   
@@ -27898,7 +27977,7 @@ var docs =
   "id" : "2734",
   "kanji" : "豹",
   "keyword" : "panther",
-  "elements" : "",
+  "elements" : "skunk, badger, ladle, bound up, drop",
 }
 ,
   
@@ -27908,7 +27987,7 @@ var docs =
   "id" : "2735",
   "kanji" : "賎",
   "keyword" : "despicable",
-  "elements" : "",
+  "elements" : "shellfish, shell, clam, oyster, eye, animal legs, eight, fortune-telling, fortuneteller, magic wand, wand, augury, divining rod, mouth",
 }
 ,
   
@@ -27918,7 +27997,7 @@ var docs =
   "id" : "2737",
   "kanji" : "貰",
   "keyword" : "get",
-  "elements" : "",
+  "elements" : "generation, generations, ten, twenty, shellfish, shell, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -27928,7 +28007,7 @@ var docs =
   "id" : "2739",
   "kanji" : "賑",
   "keyword" : "bustling",
-  "elements" : "",
+  "elements" : "shellfish, shell, shells, clam, oyster, eye, animal legs, eight, sign of the dragon, cliff, two, hairpin, safety-pin",
 }
 ,
   
@@ -27938,7 +28017,7 @@ var docs =
   "id" : "2740",
   "kanji" : "躓",
   "keyword" : "stumble",
-  "elements" : "",
+  "elements" : "leg, wooden leg, mouth, mending, mend, substance, axe, shellfish, clam, oyster, eye, animal legs, eight, axe2",
 }
 ,
   
@@ -27948,7 +28027,7 @@ var docs =
   "id" : "2741",
   "kanji" : "蹄",
   "keyword" : "hoof",
-  "elements" : "",
+  "elements" : "leg, wooden leg, mouth, mending, mend, sovereign, vase, stand up, apron, crown, towel",
 }
 ,
   
@@ -27958,7 +28037,7 @@ var docs =
   "id" : "2743",
   "kanji" : "蹟",
   "keyword" : "vestiges",
-  "elements" : "",
+  "elements" : "leg, wooden leg, mouth, mending, mend, concerning, capital, tall, top hat, mouth, small, little, understandably, chihuahua with one human leg",
 }
 ,
   
@@ -27968,7 +28047,7 @@ var docs =
   "id" : "2744",
   "kanji" : "跨",
   "keyword" : "straddle",
-  "elements" : "",
+  "elements" : "leg, wooden leg, mouth, mending, mend, St. Bernard, large, ceiling, snare",
 }
 ,
   
@@ -27978,7 +28057,7 @@ var docs =
   "id" : "2745",
   "kanji" : "跪",
   "keyword" : "kneel",
-  "elements" : "",
+  "elements" : "leg, wooden leg, mouth, mending, mend, dangerous, danger, bound up, unlucky, cliff, fingerprint",
 }
 ,
   
@@ -27988,7 +28067,7 @@ var docs =
   "id" : "2746",
   "kanji" : "醤",
   "keyword" : "soy sauce",
-  "elements" : "leader, vulture, glue, whiskey bottle",
+  "elements" : "leader, turtle, claw, vulture, glue, whiskey bottle",
 }
 ,
   
@@ -27998,7 +28077,7 @@ var docs =
   "id" : "2747",
   "kanji" : "醍",
   "keyword" : "whey",
-  "elements" : "",
+  "elements" : "whiskey bottle, just so, sun, day, mend",
 }
 ,
   
@@ -28008,7 +28087,7 @@ var docs =
   "id" : "2749",
   "kanji" : "醐",
   "keyword" : "ghee",
-  "elements" : "",
+  "elements" : "whiskey bottle, old, moon, month",
 }
 ,
   
@@ -28018,7 +28097,7 @@ var docs =
   "id" : "2751",
   "kanji" : "醇",
   "keyword" : "strong saké",
-  "elements" : "",
+  "elements" : "whiskey bottle, receive, tall, top hat, mouth, child, children",
 }
 ,
   
@@ -28028,7 +28107,7 @@ var docs =
   "id" : "2753",
   "kanji" : "麹",
   "keyword" : "malt",
-  "elements" : "",
+  "elements" : "barley, grow up, walking legs, bound up, rice",
 }
 ,
   
@@ -28038,7 +28117,7 @@ var docs =
   "id" : "2754",
   "kanji" : "釦",
   "keyword" : "button",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, mouth",
 }
 ,
   
@@ -28048,7 +28127,7 @@ var docs =
   "id" : "2755",
   "kanji" : "銚",
   "keyword" : "keg",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, portent, turtle",
 }
 ,
   
@@ -28058,7 +28137,7 @@ var docs =
   "id" : "2756",
   "kanji" : "鋤",
   "keyword" : "plow",
-  "elements" : "",
+  "elements" : "sukiyaki, gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, help, shelf, my bookshelves, power, muscle, arnold",
 }
 ,
   
@@ -28068,7 +28147,7 @@ var docs =
   "id" : "2758",
   "kanji" : "鏑",
   "keyword" : "arrowhead",
-  "elements" : "",
+  "elements" : "gold, metal, antique, vase, stand up, hood, old, tombstone, gravestone, church, ten, needle, mouth",
 }
 ,
   
@@ -28078,7 +28157,7 @@ var docs =
   "id" : "2759",
   "kanji" : "鋸",
   "keyword" : "handsaw",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, reside, flag, old, tombstone, gravestone, church, ten, needle, mouth",
 }
 ,
   
@@ -28088,7 +28167,7 @@ var docs =
   "id" : "2760",
   "kanji" : "錐",
   "keyword" : "awl",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, turkey",
 }
 ,
   
@@ -28098,7 +28177,7 @@ var docs =
   "id" : "2762",
   "kanji" : "鍬",
   "keyword" : "hoe",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, autumn, wheat, cereal, fire",
 }
 ,
   
@@ -28108,7 +28187,7 @@ var docs =
   "id" : "2763",
   "kanji" : "鋲",
   "keyword" : "rivet",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, soldier, hill, axe, one, floor, animal legs, eight",
 }
 ,
   
@@ -28118,7 +28197,7 @@ var docs =
   "id" : "2764",
   "kanji" : "錫",
   "keyword" : "tin",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, piggy bank, sun, day, piglets",
 }
 ,
   
@@ -28128,7 +28207,7 @@ var docs =
   "id" : "2765",
   "kanji" : "錨",
   "keyword" : "anchor",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, seedlings, flowers, rice field, brains",
 }
 ,
   
@@ -28138,7 +28217,7 @@ var docs =
   "id" : "2766",
   "kanji" : "釘",
   "keyword" : "nail",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, street, nail, spike",
 }
 ,
   
@@ -28148,7 +28227,7 @@ var docs =
   "id" : "2767",
   "kanji" : "鑓",
   "keyword" : "javelin",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, dispatch, purse, inX, one, floor, maestro without baton, road",
 }
 ,
   
@@ -28158,7 +28237,7 @@ var docs =
   "id" : "2768",
   "kanji" : "鋒",
   "keyword" : "sword's point",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, walking legs, bushes",
 }
 ,
   
@@ -28168,7 +28247,7 @@ var docs =
   "id" : "2769",
   "kanji" : "鎚",
   "keyword" : "hammer",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, chase, chase after, maestro, road",
 }
 ,
   
@@ -28178,7 +28257,7 @@ var docs =
   "id" : "2770",
   "kanji" : "鉦",
   "keyword" : "carillion",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, correct, one, ceiling, stop, footprint",
 }
 ,
   
@@ -28188,7 +28267,7 @@ var docs =
   "id" : "2771",
   "kanji" : "錆",
   "keyword" : "rust",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, blue, grow up, moon, flesh",
 }
 ,
   
@@ -28198,7 +28277,7 @@ var docs =
   "id" : "2772",
   "kanji" : "鍾",
   "keyword" : "cluster",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, heavy, thousand, computer, rice field, brains, soil, dirt, ground",
 }
 ,
   
@@ -28208,7 +28287,7 @@ var docs =
   "id" : "2773",
   "kanji" : "鋏",
   "keyword" : "scissors",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, St. Bernard dog, large, assembly line, person",
 }
 ,
   
@@ -28218,7 +28297,7 @@ var docs =
   "id" : "2774",
   "kanji" : "閃",
   "keyword" : "flash",
-  "elements" : "",
+  "elements" : "gates, person",
 }
 ,
   
@@ -28228,7 +28307,7 @@ var docs =
   "id" : "2775",
   "kanji" : "悶",
   "keyword" : "agony",
-  "elements" : "",
+  "elements" : "gates, heart",
 }
 ,
   
@@ -28238,7 +28317,7 @@ var docs =
   "id" : "2776",
   "kanji" : "閤",
   "keyword" : "side gate",
-  "elements" : "",
+  "elements" : "gates, fit, meeting, umbrella, one, mouth",
 }
 ,
   
@@ -28248,7 +28327,7 @@ var docs =
   "id" : "2778",
   "kanji" : "雫",
   "keyword" : "trickle",
-  "elements" : "",
+  "elements" : "rain, weather, below, one, ceiling, magic wand, wand, augury, divining rod",
 }
 ,
   
@@ -28258,7 +28337,7 @@ var docs =
   "id" : "2779",
   "kanji" : "霞",
   "keyword" : "haze",
-  "elements" : "",
+  "elements" : "rain, weather, spare time, hobby, sun, day, staples, mouth, box, crotch, box2",
 }
 ,
   
@@ -28268,7 +28347,7 @@ var docs =
   "id" : "2780",
   "kanji" : "翰",
   "keyword" : "quill",
-  "elements" : "",
+  "elements" : "morning, mist, ten, needle, early, sun, day, umbrella, feathers, wings",
 }
 ,
   
@@ -28278,7 +28357,7 @@ var docs =
   "id" : "2781",
   "kanji" : "斡",
   "keyword" : "auspices",
-  "elements" : "",
+  "elements" : "morning, mist, ten, needle, early, sun, day, umbrella, big dipper, measuring cup, The Plough, drop, ten, needle",
 }
 ,
   
@@ -28288,7 +28367,7 @@ var docs =
   "id" : "2782",
   "kanji" : "鞍",
   "keyword" : "saddle",
-  "elements" : "",
+  "elements" : "leather, flowers, car, mouth, ten, needle, relax, house, woman",
 }
 ,
   
@@ -28298,7 +28377,7 @@ var docs =
   "id" : "2783",
   "kanji" : "鞭",
   "keyword" : "whip",
-  "elements" : "",
+  "elements" : "leather, flowers, car, mouth, ten, needle, convenience, person, grow late, Ameratasu, one, ceiling, sun, day, tucked under the arm",
 }
 ,
   
@@ -28308,7 +28387,7 @@ var docs =
   "id" : "2784",
   "kanji" : "鞘",
   "keyword" : "saddle straps",
-  "elements" : "",
+  "elements" : "leather, flowers, car, mouth, ten, needle, candle, resemblance, little, small, moon",
 }
 ,
   
@@ -28318,7 +28397,7 @@ var docs =
   "id" : "2785",
   "kanji" : "鞄",
   "keyword" : "briefcase",
-  "elements" : "",
+  "elements" : "leather, flowers, car, mouth, ten, needle, wrap, bound up, snake, self",
 }
 ,
   
@@ -28328,7 +28407,7 @@ var docs =
   "id" : "2786",
   "kanji" : "靭",
   "keyword" : "pliable",
-  "elements" : "",
+  "elements" : "leather, flowers, car, mouth, ten, needle, blade, drop, sword, dagger",
 }
 ,
   
@@ -28338,7 +28417,7 @@ var docs =
   "id" : "2787",
   "kanji" : "鞠",
   "keyword" : "terminate",
-  "elements" : "",
+  "elements" : "leather, flowers, car, mouth, ten, needle, bound up, rice",
 }
 ,
   
@@ -28348,7 +28427,7 @@ var docs =
   "id" : "2789",
   "kanji" : "顛",
   "keyword" : "overturn",
-  "elements" : "",
+  "elements" : "true, ten, needle, eye, tool, one, animal legs, eight, head, beans, table, one, mouth, head, page, one, ceiling, drop, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -28358,7 +28437,7 @@ var docs =
   "id" : "2790",
   "kanji" : "穎",
   "keyword" : "brush tip",
-  "elements" : "",
+  "elements" : "spoon, wheat, cereal, head, beans, table, one, mouth, head, page, one, ceiling, drop, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -28368,7 +28447,8 @@ var docs =
   "id" : "2793",
   "kanji" : "頗",
   "keyword" : "exceedingly",
-  "elements" : "",
+  "elements" : "pelt, branch, ten, needle, crotch, hook, head, beans, table, one, mouth, head, page, one, ceiling, drop, shellfish, clam, oyster, eye, animal legs, eight",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -28378,7 +28458,7 @@ var docs =
   "id" : "2794",
   "kanji" : "頌",
   "keyword" : "accolade",
-  "elements" : "",
+  "elements" : "public, eight, elbow, head, beans, table, one, mouth, head, page, one, ceiling, drop, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -28388,7 +28468,7 @@ var docs =
   "id" : "2796",
   "kanji" : "頚",
   "keyword" : "neck and throat",
-  "elements" : "",
+  "elements" : "spool, clod, toilet paper, crotch, soil, dirt, ground, head, beans, table, one, mouth, head, page, one, ceiling, drop, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -28398,7 +28478,7 @@ var docs =
   "id" : "2798",
   "kanji" : "餐",
   "keyword" : "repast",
-  "elements" : "",
+  "elements" : "magic wand, wand, divining rod, augury, evening, crotch, eat, food, umbrella, good, halo, drop, silver",
 }
 ,
   
@@ -28408,7 +28488,7 @@ var docs =
   "id" : "2799",
   "kanji" : "饗",
   "keyword" : "feast",
-  "elements" : "",
+  "elements" : "home town, cocoon, silver, city walls, eat, food, umbrella, good, halo, drop, silver",
 }
 ,
   
@@ -28418,7 +28498,7 @@ var docs =
   "id" : "2800",
   "kanji" : "蝕",
   "keyword" : "eclipse",
-  "elements" : "",
+  "elements" : "eat, food, umbrella, good, halo, drop, silver, insect",
 }
 ,
   
@@ -28428,7 +28508,7 @@ var docs =
   "id" : "2801",
   "kanji" : "飴",
   "keyword" : "sweets",
-  "elements" : "",
+  "elements" : "eat, food, umbrella, good, halo, drop, silver, pedestal, elbow, mouth",
 }
 ,
   
@@ -28438,7 +28518,7 @@ var docs =
   "id" : "2803",
   "kanji" : "駕",
   "keyword" : "stretcher",
-  "elements" : "",
+  "elements" : "add, power, muscle, arnold, mouth, team of horses",
 }
 ,
   
@@ -28448,7 +28528,7 @@ var docs =
   "id" : "2804",
   "kanji" : "騨",
   "keyword" : "piebald",
-  "elements" : "",
+  "elements" : "team of horses, simple, owl, one, animal legs, rice field, brains, ten, needle",
 }
 ,
   
@@ -28458,7 +28538,7 @@ var docs =
   "id" : "2805",
   "kanji" : "馳",
   "keyword" : "rush",
-  "elements" : "",
+  "elements" : "team of horses, scorpion, fishhook, stick",
 }
 ,
   
@@ -28468,7 +28548,7 @@ var docs =
   "id" : "2806",
   "kanji" : "騙",
   "keyword" : "cheat",
-  "elements" : "",
+  "elements" : "team of horses, door, ceiling, flag, mouth, tome, scrapbook, scrapbooks, glass canopy, hood, flowers",
 }
 ,
   
@@ -28478,7 +28558,7 @@ var docs =
   "id" : "2807",
   "kanji" : "馴",
   "keyword" : "tame",
-  "elements" : "",
+  "elements" : "team of horses, stream, flood",
 }
 ,
   
@@ -28488,7 +28568,7 @@ var docs =
   "id" : "2808",
   "kanji" : "駁",
   "keyword" : "rebuttal",
-  "elements" : "",
+  "elements" : "team of horses, two sheaves, sheaf",
 }
 ,
   
@@ -28498,7 +28578,7 @@ var docs =
   "id" : "2809",
   "kanji" : "駈",
   "keyword" : "gallop",
-  "elements" : "",
+  "elements" : "team of horses, hill, axe, one, floor",
 }
 ,
   
@@ -28508,7 +28588,7 @@ var docs =
   "id" : "2810",
   "kanji" : "驢",
   "keyword" : "donkey",
-  "elements" : "",
+  "elements" : "team of horses, tiger, magic wand, augury, cliff, hook, diced, seven, human legs, rice field, field, dish",
 }
 ,
   
@@ -28518,7 +28598,7 @@ var docs =
   "id" : "2811",
   "kanji" : "鰻",
   "keyword" : "eel",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, mandala, sun, day, net, eye, crotch",
 }
 ,
   
@@ -28528,7 +28608,7 @@ var docs =
   "id" : "2812",
   "kanji" : "鯛",
   "keyword" : "sea bream",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, circumference, glass hood, earthenware jar, lidded crock, soil, dirt, ground, mouth",
 }
 ,
   
@@ -28538,7 +28618,7 @@ var docs =
   "id" : "2813",
   "kanji" : "鰯",
   "keyword" : "sardine",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, weak, bow, ice, bow2, ice2",
 }
 ,
   
@@ -28548,7 +28628,7 @@ var docs =
   "id" : "2814",
   "kanji" : "鱒",
   "keyword" : "trout",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, revered, chieftain, Molotov cocktail, animal horns, horns, whiskey bottle, glue",
 }
 ,
   
@@ -28558,7 +28638,7 @@ var docs =
   "id" : "2815",
   "kanji" : "鮭",
   "keyword" : "salmon",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, ivy, square jewel, soil, dirt, ground, soil2, dirt2, ground2",
 }
 ,
   
@@ -28568,7 +28648,7 @@ var docs =
   "id" : "2816",
   "kanji" : "鮪",
   "keyword" : "tuna",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, possess, possession, by one's side, by one’s side, moon, month, flesh, part of the body",
 }
 ,
   
@@ -28578,7 +28658,7 @@ var docs =
   "id" : "2817",
   "kanji" : "鮎",
   "keyword" : "sweet smelt",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, fortune-telling, fortunetelling, magic wand, wand, augury, divining rod, mouth",
 }
 ,
   
@@ -28588,7 +28668,7 @@ var docs =
   "id" : "2818",
   "kanji" : "鯵",
   "keyword" : "horse mackerel",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, nonplussed, visit, elbow, large, St. Bernard, shape",
 }
 ,
   
@@ -28598,7 +28678,7 @@ var docs =
   "id" : "2819",
   "kanji" : "鱈",
   "keyword" : "cod",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, snow, rain, weather, broom",
 }
 ,
   
@@ -28608,7 +28688,7 @@ var docs =
   "id" : "2820",
   "kanji" : "鯖",
   "keyword" : "mackerel",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, blue, grow up, moon, flesh",
 }
 ,
   
@@ -28618,7 +28698,7 @@ var docs =
   "id" : "2821",
   "kanji" : "鮫",
   "keyword" : "shark",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, mingle, top hat, father",
 }
 ,
   
@@ -28628,7 +28708,7 @@ var docs =
   "id" : "2822",
   "kanji" : "鰹",
   "keyword" : "bonito",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, strict, loincloth, retainer, slave, crotch, soil, dirt, ground",
 }
 ,
   
@@ -28638,7 +28718,7 @@ var docs =
   "id" : "2823",
   "kanji" : "鰍",
   "keyword" : "bullhead",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, autumn, wheat, cereal, fire, person, drops, drop",
 }
 ,
   
@@ -28648,7 +28728,7 @@ var docs =
   "id" : "2824",
   "kanji" : "鰐",
   "keyword" : "alligator",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, two mouths, mouth, ceiling, snare",
 }
 ,
   
@@ -28658,7 +28738,7 @@ var docs =
   "id" : "2825",
   "kanji" : "鮒",
   "keyword" : "crucian",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, adhere, adhere to, person, glue",
 }
 ,
   
@@ -28668,7 +28748,7 @@ var docs =
   "id" : "2826",
   "kanji" : "鮨",
   "keyword" : "sushi",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, delicious, spoon, sitting on the ground, sun, day",
 }
 ,
   
@@ -28678,7 +28758,7 @@ var docs =
   "id" : "2827",
   "kanji" : "鰭",
   "keyword" : "fish fin",
-  "elements" : "",
+  "elements" : "fish, bound up, rice field, brains, oven-fire, barbecue, old man, soil, dirt, ground, spoon, sitting on the ground",
 }
 ,
   
@@ -28688,7 +28768,7 @@ var docs =
   "id" : "2828",
   "kanji" : "鴎",
   "keyword" : "seagull",
-  "elements" : "",
+  "elements" : "ward, box, sheaf, bird, white, dove, one, tail feathers",
 }
 ,
   
@@ -28698,7 +28778,7 @@ var docs =
   "id" : "2829",
   "kanji" : "鵬",
   "keyword" : "roc",
-  "elements" : "",
+  "elements" : "companion, moon, month, flesh, part of the body, moon2, month2, flesh2, part of the body2, bird, white, dove, one, tail feathers",
 }
 ,
   
@@ -28708,7 +28788,7 @@ var docs =
   "id" : "2830",
   "kanji" : "鸚",
   "keyword" : "parakeet",
-  "elements" : "",
+  "elements" : "suckling infant, suckling babe, two shells, shellfish, shell, woman, bird, white, dove, one, tail feathers",
 }
 ,
   
@@ -28718,7 +28798,7 @@ var docs =
   "id" : "2831",
   "kanji" : "鵡",
   "keyword" : "parrot",
-  "elements" : "",
+  "elements" : "warrior, one, arrow, stop, footprint, bird, white, dove, one, tail feathers",
 }
 ,
   
@@ -28728,7 +28808,7 @@ var docs =
   "id" : "2832",
   "kanji" : "鵜",
   "keyword" : "cormorant",
-  "elements" : "",
+  "elements" : "younger brother, horns, dollar, bow, stick, bird, white, dove, one, tail feathers",
 }
 ,
   
@@ -28738,7 +28818,7 @@ var docs =
   "id" : "2833",
   "kanji" : "鷺",
   "keyword" : "heron",
-  "elements" : "",
+  "elements" : "path, wooden leg, leg, mouth, stop, footprint, each, walking legs, mouth, mouth2, bird, white, dove, one, tail feathers",
 }
 ,
   
@@ -28748,7 +28828,7 @@ var docs =
   "id" : "2834",
   "kanji" : "鷲",
   "keyword" : "eagle",
-  "elements" : "",
+  "elements" : "concerning, capital, tall, top hat, mouth, small, little, understandably, chihuahua with one human leg, bird, white, dove, one, tail feathers",
 }
 ,
   
@@ -28758,7 +28838,7 @@ var docs =
   "id" : "2835",
   "kanji" : "鴨",
   "keyword" : "wild duck",
-  "elements" : "",
+  "elements" : "push, finger, fingers, armour, armor, roots, bird, white, dove, one, tail feathers",
 }
 ,
   
@@ -28768,7 +28848,7 @@ var docs =
   "id" : "2836",
   "kanji" : "鳶",
   "keyword" : "kite falcon",
-  "elements" : "",
+  "elements" : "arrow, dart, bird, white, dove, one, tail feathers",
 }
 ,
   
@@ -28778,7 +28858,7 @@ var docs =
   "id" : "2837",
   "kanji" : "梟",
   "keyword" : "owl",
-  "elements" : "",
+  "elements" : "bird, white, dove, one, tail feathers, tree, wood",
 }
 ,
   
@@ -28788,7 +28868,7 @@ var docs =
   "id" : "2838",
   "kanji" : "塵",
   "keyword" : "dust",
-  "elements" : "",
+  "elements" : "cave, old west, flowers, compare, spoon, soil, dirt, ground",
 }
 ,
   
@@ -28798,7 +28878,7 @@ var docs =
   "id" : "2840",
   "kanji" : "麒",
   "keyword" : "giraffe",
-  "elements" : "",
+  "elements" : "cave, old west, flowers, compare, spoon, shellfish, shell, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -28808,7 +28888,7 @@ var docs =
   "id" : "2842",
   "kanji" : "瞑",
   "keyword" : "close the eyes",
-  "elements" : "",
+  "elements" : "eye, hades, crown, sun, day, six, top hat, animal legs",
 }
 ,
   
@@ -28818,7 +28898,7 @@ var docs =
   "id" : "2843",
   "kanji" : "暝",
   "keyword" : "murky",
-  "elements" : "",
+  "elements" : "sun, day, hades, crown, sun, day, six, top hat, animal legs",
 }
 ,
   
@@ -28828,7 +28908,7 @@ var docs =
   "id" : "2844",
   "kanji" : "坐",
   "keyword" : "sitting in mediation",
-  "elements" : "",
+  "elements" : "assembly line, person, soil, dirt, ground, stick",
 }
 ,
   
@@ -28838,7 +28918,7 @@ var docs =
   "id" : "2846",
   "kanji" : "朔",
   "keyword" : "first day of the month",
-  "elements" : "month, mountain goat",
+  "elements" : "mountain goat, horns, mountain, moon, month",
 }
 ,
   
@@ -28848,7 +28928,7 @@ var docs =
   "id" : "2848",
   "kanji" : "曳",
   "keyword" : "drag",
-  "elements" : "",
+  "elements" : "drag, sun, day, tucked under the arm, under one's arm, rice field",
 }
 ,
   
@@ -28858,7 +28938,7 @@ var docs =
   "id" : "2849",
   "kanji" : "洩",
   "keyword" : "dribble out",
-  "elements" : "",
+  "elements" : "water, water droplets, water pistol, drag, sun, day, tucked under the arm, under one's arm, rice field",
 }
 ,
   
@@ -28868,7 +28948,7 @@ var docs =
   "id" : "2850",
   "kanji" : "彗",
   "keyword" : "comet",
-  "elements" : "",
+  "elements" : "two bushes, bushes, broom",
 }
 ,
   
@@ -28878,7 +28958,7 @@ var docs =
   "id" : "2851",
   "kanji" : "慧",
   "keyword" : "astute",
-  "elements" : "",
+  "elements" : "comet, two bushes, bushes, broom, heart",
 }
 ,
   
@@ -28888,7 +28968,7 @@ var docs =
   "id" : "2852",
   "kanji" : "嘉",
   "keyword" : "applaud",
-  "elements" : "",
+  "elements" : "drum, samurai, beans, table, one, mouth, branch, ten, needle, crotch, add, power, muscle, arnold, mouth",
 }
 ,
   
@@ -28898,7 +28978,7 @@ var docs =
   "id" : "2853",
   "kanji" : "兇",
   "keyword" : "evil",
-  "elements" : "",
+  "elements" : "villain, sheaf, shovel, human legs",
 }
 ,
   
@@ -28908,7 +28988,7 @@ var docs =
   "id" : "2854",
   "kanji" : "兜",
   "keyword" : "helmet",
-  "elements" : "",
+  "elements" : "two boxes, box, white, drop, sun, day, human legs",
 }
 ,
   
@@ -28918,7 +28998,7 @@ var docs =
   "id" : "2856",
   "kanji" : "欝",
   "keyword" : "depressed",
-  "elements" : "",
+  "elements" : "two trees, tree, wood, two sheaves, sheaf, net, eye, silver, glue",
 }
 ,
   
@@ -28928,7 +29008,7 @@ var docs =
   "id" : "2857",
   "kanji" : "劫",
   "keyword" : "kalpa",
-  "elements" : "",
+  "elements" : "gone, soil, dirt, ground, elbow, power, muscle, muscles, arnold",
 }
 ,
   
@@ -28938,7 +29018,7 @@ var docs =
   "id" : "2859",
   "kanji" : "歎",
   "keyword" : "bemoan",
-  "elements" : "",
+  "elements" : "scarecrow, flowers, mouth, husband, strawman, ten, flowers, salad, mouth, lack, yawn, bound up, person",
 }
 ,
   
@@ -28948,7 +29028,7 @@ var docs =
   "id" : "2860",
   "kanji" : "輿",
   "keyword" : "palanquin",
-  "elements" : "",
+  "elements" : "entertain, entertainment, staples, car, tool, eye, one, animal legs, eight",
 }
 ,
   
@@ -28958,7 +29038,7 @@ var docs =
   "id" : "2861",
   "kanji" : "巽",
   "keyword" : "southeast",
-  "elements" : "",
+  "elements" : "two snakes, snake, self, strung together, salad, animal legs, eight",
 }
 ,
   
@@ -28968,7 +29048,7 @@ var docs =
   "id" : "2862",
   "kanji" : "歪",
   "keyword" : "warped",
-  "elements" : "",
+  "elements" : "negative, negation, one, ceiling, person, drop, correct, one, ceiling, stop, footprint",
 }
 ,
   
@@ -28978,7 +29058,7 @@ var docs =
   "id" : "2863",
   "kanji" : "翠",
   "keyword" : "jade green",
-  "elements" : "",
+  "elements" : "feathers, wings, graduate, top hat, assembly line, person, ten, needle, person2",
 }
 ,
   
@@ -28988,7 +29068,7 @@ var docs =
   "id" : "2864",
   "kanji" : "黛",
   "keyword" : "blue-black",
-  "elements" : "",
+  "elements" : "substitute, person, arrow, black, computer, ri, village, oven-fire, barbecue",
 }
 ,
   
@@ -28998,7 +29078,7 @@ var docs =
   "id" : "2865",
   "kanji" : "鼎",
   "keyword" : "tripod",
-  "elements" : "",
+  "elements" : "one-sided, waiter with wine on tray, eye, straightened hook, axe, ax",
 }
 ,
   
@@ -29008,7 +29088,7 @@ var docs =
   "id" : "2866",
   "kanji" : "鹵",
   "keyword" : "rocksalt",
-  "elements" : "",
+  "elements" : "magic wand, wand, augury, divining rod, pent up, sheave, drops, drop, four dots, dot",
 }
 ,
   
@@ -29018,7 +29098,7 @@ var docs =
   "id" : "2867",
   "kanji" : "鹸",
   "keyword" : "lye",
-  "elements" : "",
+  "elements" : "rocksalt, magic wand, wand, augury, divining rod, pent up, sheave, drops, drop, four dots, dot, awl, fit, meeting, umbrella, one, mouth, person",
 }
 ,
   
@@ -29028,7 +29108,7 @@ var docs =
   "id" : "2868",
   "kanji" : "虔",
   "keyword" : "reserved",
-  "elements" : "",
+  "elements" : "tiger, magic wand, wand, augury, divining rod, cliff, hook, diced, seven, human legs, sentence, plaid, kilt, Billy Connolly, crotch",
 }
 ,
   
@@ -29038,7 +29118,7 @@ var docs =
   "id" : "2869",
   "kanji" : "燕",
   "keyword" : "swallow",
-  "elements" : "",
+  "elements" : "twenty, one, shovel, north, ice, spoon, mouth, oven-fire, barbecue",
 }
 ,
   
@@ -29048,7 +29128,7 @@ var docs =
   "id" : "2870",
   "kanji" : "嘗",
   "keyword" : "lick",
-  "elements" : "",
+  "elements" : "outhouse, small, little, crown, mouth, delicious, spoon, sitting on the ground, sun, day",
 }
 ,
   
@@ -29058,7 +29138,7 @@ var docs =
   "id" : "2871",
   "kanji" : "殆",
   "keyword" : "almost",
-  "elements" : "",
+  "elements" : "bones, one, ceiling, evening, pedestal, elbow, mouth",
 }
 ,
   
@@ -29068,7 +29148,7 @@ var docs =
   "id" : "2872",
   "kanji" : "孟",
   "keyword" : "start",
-  "elements" : "",
+  "elements" : "child, dish",
 }
 ,
   
@@ -29078,7 +29158,7 @@ var docs =
   "id" : "2873",
   "kanji" : "牌",
   "keyword" : "mahjong tiles",
-  "elements" : "",
+  "elements" : "one-sided, waiter with wine on tray, lowly, Wayne Slob, drop, rice field, brains, cornucopia, ten, needle",
 }
 ,
   
@@ -29088,7 +29168,7 @@ var docs =
   "id" : "2875",
   "kanji" : "覗",
   "keyword" : "peek",
-  "elements" : "",
+  "elements" : "director, clothes hanger, coat hanger, one, mouth, see, eye, human legs",
 }
 ,
   
@@ -29098,7 +29178,7 @@ var docs =
   "id" : "2876",
   "kanji" : "彪",
   "keyword" : "mottled",
-  "elements" : "",
+  "elements" : "tiger, magic wand, wand, augury, divining rod, cliff, hook, diced, seven, human legs, shape, form",
 }
 ,
   
@@ -29108,7 +29188,7 @@ var docs =
   "id" : "2877",
   "kanji" : "秦",
   "keyword" : "Manchu dynasty",
-  "elements" : "",
+  "elements" : "bonsai, wheat",
 }
 ,
   
@@ -29118,7 +29198,8 @@ var docs =
   "id" : "2878",
   "kanji" : "雀",
   "keyword" : "sparrow",
-  "elements" : "",
+  "elements" : "few, little, small, drop, turkey",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -29128,7 +29209,7 @@ var docs =
   "id" : "2879",
   "kanji" : "隼",
   "keyword" : "peregrine falcon",
-  "elements" : "",
+  "elements" : "turkey, needle, ten",
 }
 ,
   
@@ -29138,7 +29219,7 @@ var docs =
   "id" : "2880",
   "kanji" : "耀",
   "keyword" : "shimmering",
-  "elements" : "",
+  "elements" : "ray, ray of light, small, little, human legs, feathers, wings, turkey",
 }
 ,
   
@@ -29148,7 +29229,7 @@ var docs =
   "id" : "2881",
   "kanji" : "夷",
   "keyword" : "ebisu",
-  "elements" : "",
+  "elements" : "great, large, St. Bernard, bow, self, snake",
 }
 ,
   
@@ -29158,7 +29239,7 @@ var docs =
   "id" : "2883",
   "kanji" : "嚢",
   "keyword" : "cyst",
-  "elements" : "",
+  "elements" : "needle, ten, middle, in, crown, eight, celery, garment, cloak, scarf, top hat, cloth, clothes, clothing",
 }
 ,
   
@@ -29168,7 +29249,7 @@ var docs =
   "id" : "2885",
   "kanji" : "暢",
   "keyword" : "carefree",
-  "elements" : "",
+  "elements" : "speaketh, monkey, sun, day, rice field, stick, piggy bank, sun, day, piglets",
 }
 ,
   
@@ -29178,7 +29259,7 @@ var docs =
   "id" : "2886",
   "kanji" : "廻",
   "keyword" : "circling",
-  "elements" : "",
+  "elements" : "stretch, -times, times",
 }
 ,
   
@@ -29188,7 +29269,7 @@ var docs =
   "id" : "2888",
   "kanji" : "欣",
   "keyword" : "elation",
-  "elements" : "",
+  "elements" : "axe, ax, lack, yawn, bound up, person",
 }
 ,
   
@@ -29198,7 +29279,7 @@ var docs =
   "id" : "2889",
   "kanji" : "毅",
   "keyword" : "stalwart",
-  "elements" : "",
+  "elements" : "vase, stand up, sow, cruise missile, missile, wind, crotch",
 }
 ,
   
@@ -29208,7 +29289,7 @@ var docs =
   "id" : "2890",
   "kanji" : "斯",
   "keyword" : "this",
-  "elements" : "",
+  "elements" : "bushel basket, hamper, animal legs, eight, axe, ax",
 }
 ,
   
@@ -29218,7 +29299,7 @@ var docs =
   "id" : "2891",
   "kanji" : "匙",
   "keyword" : "wooden spoon",
-  "elements" : "",
+  "elements" : "just so, sun, day, mending, mend, spoon",
 }
 ,
   
@@ -29228,7 +29309,7 @@ var docs =
   "id" : "2892",
   "kanji" : "匡",
   "keyword" : "set straight",
-  "elements" : "",
+  "elements" : "box, king",
 }
 ,
   
@@ -29238,7 +29319,7 @@ var docs =
   "id" : "2893",
   "kanji" : "肇",
   "keyword" : "founding",
-  "elements" : "",
+  "elements" : "door, ceiling, flag, taskmaster, brush",
 }
 ,
   
@@ -29248,7 +29329,7 @@ var docs =
   "id" : "2894",
   "kanji" : "麿",
   "keyword" : "Utamaro",
-  "elements" : "",
+  "elements" : "hemp, cave, grove, tree, wood, tree2, wood2, spine, mouth, drop, mouth2",
 }
 ,
   
@@ -29258,7 +29339,7 @@ var docs =
   "id" : "2895",
   "kanji" : "叢",
   "keyword" : "conglomerate",
-  "elements" : "",
+  "elements" : "upside down in a row, row, soil, dirt, ground, king, take, ear, crotch",
 }
 ,
   
@@ -29268,7 +29349,7 @@ var docs =
   "id" : "2896",
   "kanji" : "肴",
   "keyword" : "entreat",
-  "elements" : "",
+  "elements" : "sheaf, possess, possession, by one's side, by one’s side, moon, month, flesh, part of the body",
 }
 ,
   
@@ -29278,7 +29359,7 @@ var docs =
   "id" : "2897",
   "kanji" : "斐",
   "keyword" : "symmetrically patterned",
-  "elements" : "",
+  "elements" : "un-, jail cell, prison bars, sentence, plaid, kilt, Billy Connolly, crotch",
 }
 ,
   
@@ -29288,7 +29369,7 @@ var docs =
   "id" : "2898",
   "kanji" : "卿",
   "keyword" : "magistrate",
-  "elements" : "",
+  "elements" : "sign of the hare, blown eggs, egg, receipt, stamp, drop, silver",
 }
 ,
   
@@ -29298,7 +29379,7 @@ var docs =
   "id" : "2899",
   "kanji" : "翫",
   "keyword" : "fiddle with",
-  "elements" : "",
+  "elements" : "learn, feathers, wings, white, dove, beginning, two, human legs",
 }
 ,
   
@@ -29308,7 +29389,7 @@ var docs =
   "id" : "2900",
   "kanji" : "於",
   "keyword" : "within",
-  "elements" : "",
+  "elements" : "direction, compass, umbrella, two drops, drops, drop, two",
 }
 ,
   
@@ -29318,7 +29399,7 @@ var docs =
   "id" : "2901",
   "kanji" : "套",
   "keyword" : "hackneyed",
-  "elements" : "",
+  "elements" : "St. Bernard, large, long, hair, hairpin, safety-pin",
 }
 ,
   
@@ -29328,7 +29409,7 @@ var docs =
   "id" : "2902",
   "kanji" : "叛",
   "keyword" : "rebellion",
-  "elements" : "",
+  "elements" : "half, small, ten, needle, anti-, anti, demonstation, cliff, crotch",
 }
 ,
   
@@ -29338,7 +29419,7 @@ var docs =
   "id" : "2903",
   "kanji" : "尖",
   "keyword" : "sharp point",
-  "elements" : "",
+  "elements" : "small, little, St. Bernard, large",
 }
 ,
   
@@ -29348,7 +29429,7 @@ var docs =
   "id" : "2904",
   "kanji" : "壷",
   "keyword" : "crock",
-  "elements" : "",
+  "elements" : "samurai, crown, Asia, roman two, mouth",
 }
 ,
   
@@ -29358,7 +29439,7 @@ var docs =
   "id" : "2905",
   "kanji" : "叡",
   "keyword" : "sapience",
-  "elements" : "",
+  "elements" : "magic wand, wand, augury, divining rod, crown, ceiling, valley with eye, valley, eye, umbrella, eight, crotch",
 }
 ,
   
@@ -29368,7 +29449,7 @@ var docs =
   "id" : "2906",
   "kanji" : "酋",
   "keyword" : "chieftain",
-  "elements" : "",
+  "elements" : "horns, whiskey bottle",
 }
 ,
   
@@ -29378,7 +29459,7 @@ var docs =
   "id" : "2907",
   "kanji" : "鴬",
   "keyword" : "nightingale",
-  "elements" : "",
+  "elements" : "schoolhouse, owl, one, animal legs, crown, bird",
 }
 ,
   
@@ -29388,7 +29469,7 @@ var docs =
   "id" : "2908",
   "kanji" : "赫",
   "keyword" : "incandescent",
-  "elements" : "",
+  "elements" : "two reds, red, soil, dirt, ground, human legs, eight, sword, dagger, small, little",
 }
 ,
   
@@ -29398,7 +29479,7 @@ var docs =
   "id" : "2909",
   "kanji" : "臥",
   "keyword" : "supinate",
-  "elements" : "",
+  "elements" : "loincloth, retainer, slave, person",
 }
 ,
   
@@ -29408,7 +29489,7 @@ var docs =
   "id" : "2910",
   "kanji" : "甥",
   "keyword" : "nephew",
-  "elements" : "",
+  "elements" : "life, This is Your Life, cell, drop, grow up, man, male, rice field, brains, power, muscle, arnold",
 }
 ,
   
@@ -29418,7 +29499,7 @@ var docs =
   "id" : "2911",
   "kanji" : "瓢",
   "keyword" : "gourd",
-  "elements" : "",
+  "elements" : "ballot, old west, altar, show, two, small, melon, claw, vulture, elbow",
 }
 ,
   
@@ -29428,7 +29509,7 @@ var docs =
   "id" : "2912",
   "kanji" : "琵",
   "keyword" : "biwa",
-  "elements" : "",
+  "elements" : "two jewels, jewel, this here, compare, spoon, sitting on the ground,",
 }
 ,
   
@@ -29438,7 +29519,7 @@ var docs =
   "id" : "2913",
   "kanji" : "琶",
   "keyword" : "lute",
-  "elements" : "",
+  "elements" : "two jewels, jewel, mosaic",
 }
 ,
   
@@ -29448,7 +29529,7 @@ var docs =
   "id" : "2914",
   "kanji" : "叉",
   "keyword" : "forked",
-  "elements" : "",
+  "elements" : "crotch, drop",
 }
 ,
   
@@ -29458,7 +29539,7 @@ var docs =
   "id" : "2915",
   "kanji" : "舜",
   "keyword" : "rose of Sharon",
-  "elements" : "",
+  "elements" : "birdhouse, birdcage, claw, vulture, crown, sunglasses, dancing legs, ballerina, evening",
 }
 ,
   
@@ -29468,7 +29549,7 @@ var docs =
   "id" : "2916",
   "kanji" : "畠",
   "keyword" : "dry field",
-  "elements" : "",
+  "elements" : "white, dove, sun, drop, rice field, field",
 }
 ,
   
@@ -29478,7 +29559,7 @@ var docs =
   "id" : "2918",
   "kanji" : "圃",
   "keyword" : "vegetable patch",
-  "elements" : "",
+  "elements" : "pent in, dog tag, dogtag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   
@@ -29488,7 +29569,7 @@ var docs =
   "id" : "2919",
   "kanji" : "丞",
   "keyword" : "helping hand",
-  "elements" : "",
+  "elements" : "complete, water, walking stick, stick, water droplets, droplets, floor",
 }
 ,
   
@@ -29498,7 +29579,7 @@ var docs =
   "id" : "2920",
   "kanji" : "亮",
   "keyword" : "translucent",
-  "elements" : "",
+  "elements" : "tall, top hat, mouth, crown, human legs",
 }
 ,
   
@@ -29508,7 +29589,8 @@ var docs =
   "id" : "2921",
   "kanji" : "胤",
   "keyword" : "blood relative",
-  "elements" : "",
+  "elements" : "human legs, cocoon, flesh, moon, month",
+  "elementsWK" : "slideWK, barbWK",
 }
 ,
   
@@ -29518,7 +29600,7 @@ var docs =
   "id" : "2922",
   "kanji" : "疏",
   "keyword" : "transcription",
-  "elements" : "",
+  "elements" : "zoo, infant, toddler, top hat, elbow, flood, stream",
 }
 ,
   
@@ -29528,7 +29610,7 @@ var docs =
   "id" : "2923",
   "kanji" : "膏",
   "keyword" : "ointment",
-  "elements" : "",
+  "elements" : "tall, top hat, mouth, crown, mouth, flesh, moon, month",
 }
 ,
   
@@ -29538,7 +29620,7 @@ var docs =
   "id" : "2924",
   "kanji" : "魁",
   "keyword" : "pioneer",
-  "elements" : "",
+  "elements" : "ghost, oni, drop, brains, rice field, human legs, elbow, big dipper, measuring cup, The Plough, drop, ten, needle",
 }
 ,
   
@@ -29548,7 +29630,7 @@ var docs =
   "id" : "2925",
   "kanji" : "馨",
   "keyword" : "ambrosial",
-  "elements" : "",
+  "elements" : "voice, samurai, flag, stick, cruise missile, missile, wind, crotch, incense, wheat, cereal, sun, day",
 }
 ,
   
@@ -29558,7 +29640,7 @@ var docs =
   "id" : "2926",
   "kanji" : "牒",
   "keyword" : "label",
-  "elements" : "",
+  "elements" : "one-sided, waiter with wine on tray, generation, generations, tree, wood",
 }
 ,
   
@@ -29568,7 +29650,7 @@ var docs =
   "id" : "2927",
   "kanji" : "瞥",
   "keyword" : "glimpse",
-  "elements" : "",
+  "elements" : "shredder, small, little, belt, taskmaster, eye",
 }
 ,
   
@@ -29578,7 +29660,7 @@ var docs =
   "id" : "2929",
   "kanji" : "睾",
   "keyword" : "testicle",
-  "elements" : "",
+  "elements" : "blood, drop, dish, happiness, ten, needle, stand up, vase, ten, needle, ten2, needle2",
 }
 ,
   
@@ -29588,7 +29670,7 @@ var docs =
   "id" : "2930",
   "kanji" : "巫",
   "keyword" : "sorceress",
-  "elements" : "",
+  "elements" : "craft, assembly line, person",
 }
 ,
   
@@ -29598,7 +29680,7 @@ var docs =
   "id" : "2931",
   "kanji" : "敦",
   "keyword" : "empathetic",
-  "elements" : "",
+  "elements" : "receive, tall, top hat, mouth, child, children, taskmaster",
 }
 ,
   
@@ -29608,7 +29690,7 @@ var docs =
   "id" : "2932",
   "kanji" : "奎",
   "keyword" : "Andromeda",
-  "elements" : "",
+  "elements" : "St. Bernard, large, square jewel, ivy, soil, dirt, ground, soil2, dirt2, ground2",
 }
 ,
   
@@ -29618,7 +29700,8 @@ var docs =
   "id" : "2933",
   "kanji" : "翔",
   "keyword" : "soar",
-  "elements" : "",
+  "elements" : "sheep, horns, king, stick, mountain goat, feathers, wings",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -29628,7 +29711,7 @@ var docs =
   "id" : "2934",
   "kanji" : "皓",
   "keyword" : "beaming",
-  "elements" : "",
+  "elements" : "white, dove, drop, sun, day, revelation, cow, mouth",
 }
 ,
   
@@ -29638,7 +29721,7 @@ var docs =
   "id" : "2935",
   "kanji" : "黎",
   "keyword" : "tenebrous",
-  "elements" : "",
+  "elements" : "wheat, knot, slipknot, umbrella, grains of rice, rice grains",
 }
 ,
   
@@ -29648,7 +29731,7 @@ var docs =
   "id" : "2936",
   "kanji" : "赳",
   "keyword" : "bold",
-  "elements" : "",
+  "elements" : "run, soil, dirt, ground, mending, mend, cornucopia",
 }
 ,
   
@@ -29658,7 +29741,7 @@ var docs =
   "id" : "2937",
   "kanji" : "已",
   "keyword" : "stop short",
-  "elements" : "",
+  "elements" : "sign of the snake, mosaic, mosaic with bit missing, stops short",
 }
 ,
   
@@ -29668,7 +29751,7 @@ var docs =
   "id" : "2938",
   "kanji" : "棘",
   "keyword" : "thornbush",
-  "elements" : "",
+  "elements" : "thorn, tree, wood, belt, two thorns",
 }
 ,
   
@@ -29678,7 +29761,7 @@ var docs =
   "id" : "2939",
   "kanji" : "聚",
   "keyword" : "crowd",
-  "elements" : "",
+  "elements" : "ear, crotch, two drops, drops, drop, person, rag",
 }
 ,
   
@@ -29687,8 +29770,8 @@ var docs =
   {
   "id" : "2940",
   "kanji" : "甦",
-  "keyword" : "resucitate",
-  "elements" : "",
+  "keyword" : "resuscitate",
+  "elements" : "resucitate, grow late, Ameratasu, one, ceiling, sun, day, rice field, tucked under the arm, life, This is Your Life, cell, drop, grow up",
 }
 ,
   
@@ -29698,7 +29781,7 @@ var docs =
   "id" : "2941",
   "kanji" : "剪",
   "keyword" : "pruning",
-  "elements" : "",
+  "elements" : "in front, front, horns, butcher, moon, month, flesh, part of the body, sword, sabre, saber, dagger",
 }
 ,
   
@@ -29708,7 +29791,8 @@ var docs =
   "id" : "2942",
   "kanji" : "躾",
   "keyword" : "upbringing",
-  "elements" : "",
+  "elements" : "somebody, nose, drop, beauty, beautiful, sheep, horns, large, St. Bernard",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -29718,7 +29802,7 @@ var docs =
   "id" : "2943",
   "kanji" : "夥",
   "keyword" : "plentiful",
-  "elements" : "",
+  "elements" : "fruit, rice field, brains, tree, wood, many, evening, evening2",
 }
 ,
   
@@ -29728,7 +29812,7 @@ var docs =
   "id" : "2944",
   "kanji" : "鼾",
   "keyword" : "snore",
-  "elements" : "",
+  "elements" : "nose, drop, eye, rice field, brains, two hands, dry, clothesline",
 }
 ,
   
@@ -29738,7 +29822,7 @@ var docs =
   "id" : "2945",
   "kanji" : "祟",
   "keyword" : "cast a spell",
-  "elements" : "",
+  "elements" : "exit, leave, show, altar, two, small",
 }
 ,
   
@@ -29748,7 +29832,7 @@ var docs =
   "id" : "2946",
   "kanji" : "粁",
   "keyword" : "kilometer",
-  "elements" : "",
+  "elements" : "rice, thousand, one thousand, drop, ten, needle",
 }
 ,
   
@@ -29758,7 +29842,7 @@ var docs =
   "id" : "2947",
   "kanji" : "糎",
   "keyword" : "centimeter",
-  "elements" : "",
+  "elements" : "rice, one rin, rin, cliff, computer, ri, village",
 }
 ,
   
@@ -29768,7 +29852,7 @@ var docs =
   "id" : "2948",
   "kanji" : "粍",
   "keyword" : "millimeter",
-  "elements" : "",
+  "elements" : "rice, fur, one ri, computer, ri, village",
 }
 ,
   
@@ -29778,7 +29862,7 @@ var docs =
   "id" : "2949",
   "kanji" : "噸",
   "keyword" : "ton",
-  "elements" : "",
+  "elements" : "mouth, immediate, earthworm, drop, shovel, fishhook, head, page, one, ceiling, drop, shellfish, clam, oyster, eye, animal legs, eight",
 }
 ,
   
@@ -29788,7 +29872,7 @@ var docs =
   "id" : "2950",
   "kanji" : "哩",
   "keyword" : "mile",
-  "elements" : "",
+  "elements" : "mouth, one ri, computer, ri, village",
 }
 ,
   
@@ -29798,7 +29882,7 @@ var docs =
   "id" : "2951",
   "kanji" : "浬",
   "keyword" : "nautical mile",
-  "elements" : "",
+  "elements" : "water, water droplets, water pistol, one ri, computer, ri, village",
 }
 ,
   
@@ -29808,7 +29892,7 @@ var docs =
   "id" : "2952",
   "kanji" : "吋",
   "keyword" : "inch",
-  "elements" : "",
+  "elements" : "mouth, glue",
 }
 ,
   
@@ -29818,7 +29902,7 @@ var docs =
   "id" : "2953",
   "kanji" : "呎",
   "keyword" : "feet",
-  "elements" : "",
+  "elements" : "mouth, shaku",
 }
 ,
   
@@ -29828,7 +29912,7 @@ var docs =
   "id" : "2954",
   "kanji" : "梵",
   "keyword" : "brahman",
-  "elements" : "",
+  "elements" : "grove, tree, wood, mediocre, drop, wind",
 }
 ,
   
@@ -29838,7 +29922,7 @@ var docs =
   "id" : "2955",
   "kanji" : "陀",
   "keyword" : "Shakyamuni Buddha",
-  "elements" : "",
+  "elements" : "pinnacle, house, spoon",
 }
 ,
   
@@ -29848,7 +29932,7 @@ var docs =
   "id" : "2956",
   "kanji" : "薩",
   "keyword" : "bodhisattva",
-  "elements" : "",
+  "elements" : "flowers, pinnacle, products, vase, stand up, cliff, life, This is Your Life, cell, drop, grow up",
 }
 ,
   
@@ -29858,7 +29942,7 @@ var docs =
   "id" : "2957",
   "kanji" : "菩",
   "keyword" : "bo tree",
-  "elements" : "",
+  "elements" : "flowers, muzzle, vase, stand up, mouth",
 }
 ,
   
@@ -29868,7 +29952,7 @@ var docs =
   "id" : "2958",
   "kanji" : "唖",
   "keyword" : "babble",
-  "elements" : "",
+  "elements" : "mouth, Asia, roman two, mouth",
 }
 ,
   
@@ -29878,7 +29962,7 @@ var docs =
   "id" : "2959",
   "kanji" : "迦",
   "keyword" : "Sanskrit ka",
-  "elements" : "",
+  "elements" : "add, power, muscle, arnold, mouth, road, drop",
 }
 ,
   
@@ -29888,7 +29972,7 @@ var docs =
   "id" : "2961",
   "kanji" : "牟",
   "keyword" : "moo",
-  "elements" : "",
+  "elements" : "moo, elbow, cow",
 }
 ,
   
@@ -29898,7 +29982,7 @@ var docs =
   "id" : "2962",
   "kanji" : "珈",
   "keyword" : "jeweled hairpin",
-  "elements" : "",
+  "elements" : "jewel, add, power, muscle, arnold, mouth",
 }
 ,
   
@@ -29908,7 +29992,7 @@ var docs =
   "id" : "2963",
   "kanji" : "琲",
   "keyword" : "beaded hairpin",
-  "elements" : "",
+  "elements" : "jewel, un-, jail cell, prison bars",
 }
 ,
   
@@ -29918,7 +30002,7 @@ var docs =
   "id" : "2964",
   "kanji" : "檜",
   "keyword" : "Japanese cypress [old]",
-  "elements" : "",
+  "elements" : "tree, wood, meeting, umbrella, one, pent in, small, little, horns, sun",
 }
 ,
   
@@ -29928,7 +30012,7 @@ var docs =
   "id" : "2965",
   "kanji" : "轡",
   "keyword" : "bridle's bit",
-  "elements" : "",
+  "elements" : "thread, spiderman, two threads, car, cart, house, mouth",
 }
 ,
   
@@ -29938,7 +30022,7 @@ var docs =
   "id" : "2966",
   "kanji" : "淵",
   "keyword" : "abyss [old]",
-  "elements" : "",
+  "elements" : "water, water droplets, water pistol, one-sided, waiter with wine on tray",
 }
 ,
   
@@ -29948,7 +30032,7 @@ var docs =
   "id" : "2967",
   "kanji" : "伍",
   "keyword" : "V",
-  "elements" : "",
+  "elements" : "person, five",
 }
 ,
   
@@ -29958,7 +30042,7 @@ var docs =
   "id" : "2968",
   "kanji" : "什",
   "keyword" : "X",
-  "elements" : "",
+  "elements" : "person, ten",
 }
 ,
   
@@ -29968,7 +30052,7 @@ var docs =
   "id" : "2969",
   "kanji" : "萬",
   "keyword" : "ten thousand [old]",
-  "elements" : "",
+  "elements" : "flowers, flower, talking cricket, brains, insect, belt,",
 }
 ,
   
@@ -29978,7 +30062,7 @@ var docs =
   "id" : "2970",
   "kanji" : "邁",
   "keyword" : "pass through",
-  "elements" : "",
+  "elements" : "ten thousand, ten thousand [old], flowers, flower, talking cricket, brains, insect, belt, road, drop",
 }
 ,
   
@@ -29988,7 +30072,7 @@ var docs =
   "id" : "2971",
   "kanji" : "逞",
   "keyword" : "tough",
-  "elements" : "",
+  "elements" : "display, mouth, king, jewel, ball, road, drop",
 }
 ,
   
@@ -29998,7 +30082,7 @@ var docs =
   "id" : "2972",
   "kanji" : "燈",
   "keyword" : "lamp [old]",
-  "elements" : "",
+  "elements" : "fire, ascend, teepee, wigwam, beans, table, one, mouth",
 }
 ,
   
@@ -30008,7 +30092,7 @@ var docs =
   "id" : "2973",
   "kanji" : "裡",
   "keyword" : "back [old]",
-  "elements" : "",
+  "elements" : "cloak, ri, computer, village, rice field, brains, soil, dirt, ground",
 }
 ,
   
@@ -30018,7 +30102,7 @@ var docs =
   "id" : "2974",
   "kanji" : "薗",
   "keyword" : "park [alternate]",
-  "elements" : "",
+  "elements" : "flowers, flower, park, pent in, earthenware jar, lidded crock, soil, dirt, ground, mouth, scarf",
 }
 ,
   
@@ -30028,7 +30112,7 @@ var docs =
   "id" : "2975",
   "kanji" : "鋪",
   "keyword" : "shop [alternate]",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, dog tag, dogtag, arrowhead, screwdriver, utilize, utilise",
 }
 ,
   
@@ -30038,7 +30122,7 @@ var docs =
   "id" : "2976",
   "kanji" : "嶋",
   "keyword" : "island [alternate]",
-  "elements" : "",
+  "elements" : "mountain, bird",
 }
 ,
   
@@ -30048,7 +30132,7 @@ var docs =
   "id" : "2977",
   "kanji" : "峯",
   "keyword" : "summit [alternate]",
-  "elements" : "",
+  "elements" : "mountain, walking legs, bushes",
 }
 ,
   
@@ -30058,7 +30142,7 @@ var docs =
   "id" : "2978",
   "kanji" : "巌",
   "keyword" : "boulder [old]",
-  "elements" : "",
+  "elements" : "mountain, stern, owl, one, animal legs, cliff, daring, spike, ear, taskmaster",
 }
 ,
   
@@ -30068,7 +30152,7 @@ var docs =
   "id" : "2979",
   "kanji" : "埜",
   "keyword" : "plains [old]",
-  "elements" : "",
+  "elements" : "grove, tree, wood, soil, dirt, ground",
 }
 ,
   
@@ -30078,7 +30162,7 @@ var docs =
   "id" : "2980",
   "kanji" : "舘",
   "keyword" : "Bldg. [old]",
-  "elements" : "",
+  "elements" : "umbrella, tongue, thousand, drop, ten, needle, mouth, bureaucrat, house, maestro, maestro without baton",
 }
 ,
   
@@ -30088,7 +30172,7 @@ var docs =
   "id" : "2981",
   "kanji" : "龍",
   "keyword" : "dragon [old]",
-  "elements" : "",
+  "elements" : "dragon [old], vase, stand up, meat, moon, month, flesh, slingshot, snake, self, three, clothes hanger",
 }
 ,
   
@@ -30098,7 +30182,7 @@ var docs =
   "id" : "2982",
   "kanji" : "寵",
   "keyword" : "patronage",
-  "elements" : "",
+  "elements" : "house, dragon [old], vase, stand up, meat, moon, month, flesh, slingshot, snake, self, three, clothes hanger",
 }
 ,
   
@@ -30108,7 +30192,7 @@ var docs =
   "id" : "2983",
   "kanji" : "聾",
   "keyword" : "deafness",
-  "elements" : "",
+  "elements" : "dragon [old], vase, stand up, meat, moon, month, flesh, slingshot, snake, self, three, clothes hanger, ear",
 }
 ,
   
@@ -30118,7 +30202,7 @@ var docs =
   "id" : "2984",
   "kanji" : "慾",
   "keyword" : "longing [old]",
-  "elements" : "",
+  "elements" : "longing, valley, eight, umbrella, mouth, lack, yawn, heart",
 }
 ,
   
@@ -30128,7 +30212,7 @@ var docs =
   "id" : "2985",
   "kanji" : "亙",
   "keyword" : "span [old]",
-  "elements" : "",
+  "elements" : "tile, ten thousand, one, ceiling, cane, stick, drop, fishhook, ice, floor",
 }
 ,
   
@@ -30138,7 +30222,7 @@ var docs =
   "id" : "2986",
   "kanji" : "躯",
   "keyword" : "body [old]",
-  "elements" : "",
+  "elements" : "somebody, nose, drop, ward, box, sheaf",
 }
 ,
   
@@ -30148,7 +30232,7 @@ var docs =
   "id" : "2987",
   "kanji" : "嶽",
   "keyword" : "Point [old]",
-  "elements" : "",
+  "elements" : "mountain, prison, pack of wild dogs, say, words, keitai, mouth, chihuahua, dog, large, drop",
 }
 ,
   
@@ -30158,7 +30242,7 @@ var docs =
   "id" : "2988",
   "kanji" : "國",
   "keyword" : "country [old]",
-  "elements" : "",
+  "elements" : "pent up, a, a certain, mouth, floor, one, fiesta",
 }
 ,
   
@@ -30168,7 +30252,7 @@ var docs =
   "id" : "2989",
   "kanji" : "脛",
   "keyword" : "shin",
-  "elements" : "",
+  "elements" : "flesh, moon, month, ceiling, flood, craft",
 }
 ,
   
@@ -30178,7 +30262,7 @@ var docs =
   "id" : "2990",
   "kanji" : "勁",
   "keyword" : "formidable",
-  "elements" : "",
+  "elements" : "ceiling, flood, craft, power, muscle, arnold",
 }
 ,
   
@@ -30188,7 +30272,7 @@ var docs =
   "id" : "2992",
   "kanji" : "祀",
   "keyword" : "enshrine",
-  "elements" : "",
+  "elements" : "show, altar, two, small, sign of the snake, mosaic, snake",
 }
 ,
   
@@ -30198,7 +30282,8 @@ var docs =
   "id" : "2993",
   "kanji" : "祓",
   "keyword" : "exorcism",
-  "elements" : "",
+  "elements" : "show, altar, two, small,chihuahua, chihuahua with an extra leg",
+  "elementsWK" : "slideWK",
 }
 ,
   
@@ -30208,7 +30293,7 @@ var docs =
   "id" : "2994",
   "kanji" : "躇",
   "keyword" : "dither",
-  "elements" : "",
+  "elements" : "wooden leg, leg, mouth, stop, footprint, renowned, flowers, someone, puppet, sooty, old man, sun, day",
 }
 ,
   
@@ -30218,7 +30303,7 @@ var docs =
   "id" : "2995",
   "kanji" : "壽",
   "keyword" : "longevity [old]",
-  "elements" : "",
+  "elements" : "samurai, one, ceiling, floor, craft, mouth, glue, earthenware jar, lidded crock, soil, dirt, ground",
 }
 ,
   
@@ -30228,7 +30313,7 @@ var docs =
   "id" : "2996",
   "kanji" : "躊",
   "keyword" : "hesitate",
-  "elements" : "",
+  "elements" : "wooden leg, leg, mouth, stop, footprint, longevity [old], samurai, one, ceiling, floor, craft, mouth, glue, earthenware jar, lidded crock, soil, dirt, ground",
 }
 ,
   
@@ -30238,7 +30323,7 @@ var docs =
   "id" : "2998",
   "kanji" : "饅",
   "keyword" : "bean jam",
-  "elements" : "",
+  "elements" : "eat, food, umbrella, good, halo, drop, silver, mandala, sun, day, net, eye, crotch",
 }
 ,
   
@@ -30248,7 +30333,7 @@ var docs =
   "id" : "2999",
   "kanji" : "嘔",
   "keyword" : "retch",
-  "elements" : "",
+  "elements" : "mouth, ward, box, goods, mouth, mouth3, three mouths",
 }
 ,
   
@@ -30258,7 +30343,7 @@ var docs =
   "id" : "3000",
   "kanji" : "鼈",
   "keyword" : "snapping turtle",
-  "elements" : "",
+  "elements" : "turtle shell, shredder, small, little, belt, taskmaster, eel [old form], eels [old form], mouth, sun, day, straightened hook, floor",
 }
 ,
   
@@ -30268,7 +30353,7 @@ var docs =
   "id" : "3001",
   "kanji" : "亨",
   "keyword" : "go smoothly",
-  "elements" : "",
+  "elements" : "top hat, mouth, complete",
 }
 ,
   
@@ -30278,7 +30363,7 @@ var docs =
   "id" : "3002",
   "kanji" : "侑",
   "keyword" : "condone",
-  "elements" : "",
+  "elements" : "person, possess, possession, by one's side, by one’s side, moon, month, flesh, part of the body",
 }
 ,
   
@@ -30288,7 +30373,7 @@ var docs =
   "id" : "3003",
   "kanji" : "梧",
   "keyword" : "parasol tree",
-  "elements" : "",
+  "elements" : "tree, wood, I, five, mouth",
 }
 ,
   
@@ -30298,7 +30383,7 @@ var docs =
   "id" : "3004",
   "kanji" : "欽",
   "keyword" : "circumspect",
-  "elements" : "",
+  "elements" : "gold, metal, gold, umbrella, drop, king, jewel, ball, drop2, lack, yawn, bound up, person",
 }
 ,
   
@@ -30308,7 +30393,7 @@ var docs =
   "id" : "3005",
   "kanji" : "煕",
   "keyword" : "cheer",
-  "elements" : "",
+  "elements" : "servant, box, stick, sign of the snake, mosaic, snake, oven-fire, barbecue",
 }
 ,
   
@@ -30318,7 +30403,7 @@ var docs =
   "id" : "3006",
   "kanji" : "而",
   "keyword" : "and then",
-  "elements" : "",
+  "elements" : "and then, comb",
 }
 ,
   
@@ -30328,7 +30413,7 @@ var docs =
   "id" : "3007",
   "kanji" : "掟",
   "keyword" : "mandate",
-  "elements" : "",
+  "elements" : "fingers, finger, determine, house, mend",
 }
 ,
   
@@ -30338,24 +30423,38 @@ var docs =
   "id" : "3028",
   "kanji" : "籠",
   "keyword" : "cage [old]",
-  "elements" : "",
+  "elements" : "bamboo, dragon [old], vase, stand up, meat, moon, month, flesh, slingshot, snake, self, three, clothes hanger",
 }
 ,
+  
+
+
+  {
+  "id" : "",
+  "kanji" : "墟",
+  "keyword" : "ruins",
+  "elements" : "soil, dirt, ground, tiger, cactus, mountain",
+  "keywordWK" : "Ruins",
+}
+,
+  
 
 //3029 and 3030 exist in html
-{
+  {
   "id" : "3031",
-  "kanji" : "靖",
-  "keyword" : "Peaceful",
-  "elements" : "stand, blue",
+  "kanji" : "杳",
+  "keyword" : "dimly",
+  "elements" : "dimly, darkness, tree, wood, sun, day",
 }
 ,
+  
 
-{
+
+  {
   "id" : "3032",
-  "kanji" : "墟",
-  "keyword" : "Ruins",
-  "elements" : "cactus",
+  "kanji" : "睫",
+  "keyword" : "eyelashes",
+  "elements" : "eyelashes, eye, one, ceiling, brush, broom, run, soil, dirt, ground, mend",
 }
 ,
   

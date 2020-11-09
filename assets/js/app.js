@@ -19,7 +19,7 @@ class App {
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.0.2.7-offline-only.1.2.0.3');
+      console.log('wtk-search 1.2.0.4');
     }
 
     const rtkMode = this.isRtkMode(); // used multiple times
