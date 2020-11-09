@@ -19197,6 +19197,7 @@ var docs =
   "kanji" : "舞",
   "keyword" : "dance",
   "elements" : "dance, reclining, lying down, tub, sunglasses, dancing legs, ballerina, evening",
+  "elementsWK" : "nothingWK",
 }
 ,
   

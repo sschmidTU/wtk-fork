@@ -10,16 +10,17 @@ class App {
   deleteVocabButtonQuery   = 'deleteVocabButton';
   maxResultSize            = 50;
   lastQuery                = '';
-  lastQueries              = [];
+  //lastQueries            = []; // currently unused
   lastStrict               = false;
   lastRTK                  = false;
+  logLevel                 = 0; // silent by default
 
   search() {
     let query = $('#search-query').val().trim();
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
-    if (query === 'v' || query === 'version') {
-      console.log('wtk-search 1.2.0.4');
+    if (query == 'v' || query == 'version') {
+      this.log(this.LogLevels.Info, "1.2.0.4-ghpages_appjs-1.2.0.6");
     }
 
     const rtkMode = this.isRtkMode(); // used multiple times
@@ -117,7 +118,7 @@ class App {
       rtkQueries.push(query);
     }
 
-    console.log(' '); // new line
+    this.log(this.LogLevels.Info, ' '); // new line
     //var displayEntries = [];
     // if (query.trim().length <= 2) {
       result.hide();
@@ -129,7 +130,7 @@ class App {
     for (let i=0; i<rtkQueries.length; i++) {
       let query = rtkQueries[i];
       query = query.trim(); // maybe do that above, but for now don't restrict queries by length too much
-      console.log('query ' + (i+1) + ': ' + query);
+      this.log(this.LogLevels.Info, 'query ' + (i+1) + ': ' + query);
 
       // retrieve matching result with content
       var results = $.map(idx.search(query), function(result) {
@@ -216,8 +217,9 @@ class App {
           matches = results.length;
         }
         const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
-        // indent under query
-        console.log('  matches: ' + matches + (entriesAdded === this.maxResultSize ? maxResultsReachedString : ''));
+        this.log(this.LogLevels.Info,
+          '  matches: ' + matches + (entriesAdded === this.maxResultSize ? maxResultsReachedString : ''));
+          // indent under query
       }
     } // end for query
     // if (results.length == 0) {
@@ -277,7 +279,6 @@ class App {
   }
 
   dehighlightButton(buttonId, hashKey) {
-    //console.log('dehighlight: ' + hashKey + ', ' + buttonId);
     document.getElementById(buttonId)?.classList.remove(this.copyButtonSelectedClass);
     delete this.copyButtonsHighlighted[hashKey];
   }
@@ -846,10 +847,26 @@ class App {
       //"deer": "deer",
     }
   }
+
+  LogLevels = {
+    Silent: 0,
+    Error: 1,
+    Warn: 2,
+    Info: 3,
+    Debug: 4,
+    Trace: 5,
+  };
+
+  log(logLevel, msg) {
+    if (logLevel <= this.logLevel) {
+      console.log(msg);
+    }
+  }
 }
 
 $(document).ready(function() {
   const app = new App();
 
   app.setupHTMLElements();
+  app.logLevel = app.LogLevels.Info; // use LogLevels.Silent to silence console.logs
 });
