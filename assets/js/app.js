@@ -20,7 +20,7 @@ class App {
     query = query.toLowerCase(); // useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
 
     if (query == 'v' || query == 'version') {
-      this.log(this.LogLevels.Info, "1.2.0.4-ghpages_appjs-1.2.0.6");
+      this.log(this.LogLevels.Info, "1.2.0.4-ghpages_appjs-1.2.0.7");
     }
 
     const rtkMode = this.isRtkMode(); // used multiple times
@@ -361,6 +361,10 @@ class App {
     }
     if (params.compound === '1' || params.compound === 'true') {
       $(checkboxVocabQuery).click();
+    }
+    if (params.console === '1') {
+      window.wtk = this; // make wtk available in the console
+      // could also be window.wtksearch to avoid conflicts. but shorter/easier for now (debug)
     }
   }
 
