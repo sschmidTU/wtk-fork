@@ -15,4 +15,4 @@ https://community.wanikani.com/t/multi-radical-kanji-search-web/46781
 
 adapted from rtk-search, code by Học hành / Mạnh Tài: https://hochanh.github.io/rtk/index.html <br>
 adapted for WK radicals and extra features like copy, compounds.<br>
-also, extended dataset: rtk-search only had ~2200 of ~3000 Kanji indexed by elements, this has 2300+ and constantly growing (also adding new non-RTK kanji)
+also, extended dataset: rtk-search only had ~2200 of ~3000 Kanji indexed by elements, this has 3030+ and constantly growing (also adding new non-RTK kanji)
