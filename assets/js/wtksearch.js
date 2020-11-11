@@ -461,6 +461,7 @@ class WTKSearch {
       "shamisen song": "shamisensong",
       "lip ring": "lipring",
       "slide seven": "slideseven",
+      "seven slides": "slideseven",
       "seven slide": "slideseven",
       "good luck": "goodluck",
       "pass through": "passthrough",
