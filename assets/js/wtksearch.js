@@ -17,7 +17,11 @@ class WTKSearch {
 
   searchBoxSearch() {
     let query = $('#search-query').val();
-    this.search(query, false, false, true);
+    this.search(query, {
+      returnResults: false,
+      forceSearch: false,
+      updateHTMLElements: true
+    });
   }
 
   /** Search for kanji using Wanikani or RTK names for elements/Kanji.
@@ -34,7 +38,11 @@ class WTKSearch {
    *   keywordWK (optional), elements, elementsWK (optional).
    *   If !returnResults, only the length property will be included in the returned object.
    */
-  search(query, returnResults = true, forceSearch = true, updateHTMLElements = false) {
+  search(query, {
+    returnResults = true,
+    forceSearch = true,
+    updateHTMLElements = false
+  } = {}) {
     if (!query?.trim) {
       return { length: 0 };
     }
@@ -169,10 +177,10 @@ class WTKSearch {
       //entries.empty();
 
       const self = this;
+      let matches = 0;
+      let entriesAdded = 0;
       if (results && results.length > 0) {
         // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
-        let matches = 0;
-        let entriesAdded = 0;
         //$.each(results, function(key, page) {
         for (const page of results) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
@@ -257,16 +265,22 @@ class WTKSearch {
             }
             entriesAdded++;
           }
-        } // end for each page
-        if (!strictMode) {
-          matches = results.length;
-        }
-        const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
-        this.log(this.LogLevels.Info,
-          '  matches: ' + matches + (entriesAdded === this.maxResultSize ? maxResultsReachedString : ''));
-          // indent under query
+      } // end for each page
+      if (!strictMode) {
+        matches = results.length;
       }
     } // end for query
+    const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
+    this.log(this.LogLevels.Info,
+      '  matches: ' + matches + (entriesAdded === this.maxResultSize ? maxResultsReachedString : ''));
+      // indent under query
+    }
+    const elementsNames = rtkMode ? 'elements' : 'radicals';
+    if (searchResults.length === 0 && updateHTMLElements) {
+      entries.append(
+        '<h3><i> No results found. (check typo / try other '+elementsNames+')</i></h3>'
+      );
+    }
     // if (results.length == 0) {
     //   entries.append('<h4>Kanji not found :-(</h4>'); // sometimes fires too early
     // }
