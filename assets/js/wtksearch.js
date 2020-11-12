@@ -60,8 +60,8 @@ class WTKSearch {
     
     var result  = $('#search-results');
     var entries = $('#search-results .entries');
-    const isSmallRtkKeyword = rtkMode && this.is_small_rtk_keyword(query);
-    const isSmallWkKeyword = !rtkMode && this.is_small_wk_keyword(query);
+    const isSmallRtkKeyword = rtkMode && this.is_short_rtk_keyword(query);
+    const isSmallWkKeyword = !rtkMode && this.is_short_wk_keyword(query);
     if (!forceSearch && query.length <= 2 && !(isSmallRtkKeyword || isSmallWkKeyword)) {
       result.hide();
       entries.empty();
@@ -440,16 +440,16 @@ class WTKSearch {
     return params;
   }
 
-  is_small_rtk_keyword(query) {
+  is_short_rtk_keyword(query) {
     const small_rtk_keywords = [
       'i', 'in', 'ri', 'he', 'ax', 'of', 'go', 'me', 'do', 'v', 'x'
     ];
     return small_rtk_keywords.includes(query);
   }
 
-  is_small_wk_keyword(query) {
+  is_short_wk_keyword(query) {
     const small_wk_keywords = [
-      'pi', 'go', 
+      'i', 'he', 'pi', 'go', 'do'
     ]
     return small_wk_keywords.includes(query);
   }
