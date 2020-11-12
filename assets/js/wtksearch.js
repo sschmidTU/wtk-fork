@@ -278,7 +278,7 @@ class WTKSearch {
     const elementsNames = rtkMode ? 'elements' : 'radicals';
     if (searchResults.length === 0 && updateHTMLElements) {
       entries.append(
-        '<h3><i> No results found. (check typo / try other '+elementsNames+')</i></h3>'
+        '<h3><i> No results found. (typo? try other '+elementsNames+'?)</i></h3>'
       );
     }
     // if (results.length == 0) {
