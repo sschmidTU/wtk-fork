@@ -327,7 +327,7 @@ class WTKSearch {
         this.result.show();
       } else {
         this.entries.append(
-          '<h3><i> The kanji ' + kanji + ' is not in our dataset.</i></h3>'
+          '<h3><i> The kanji ' + kanji + ' is not yet in our dataset.</i></h3>'
         );
         this.result.show();
       }
