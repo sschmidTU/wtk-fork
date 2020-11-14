@@ -66,6 +66,14 @@ h3 {
   * + h3 {
     margin-top: 0.6em; }
 
+h4 {
+  font-size: 0.8em;
+  margin-bottom: 0.0em;
+}
+  * + h4 {
+    margin-top: 0.0em;
+  }
+
 p {
   line-height: 2em;
   margin-top: 0;
