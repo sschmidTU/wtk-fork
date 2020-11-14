@@ -8,6 +8,7 @@ class WTKSearch {
   vocabInputQuery          = 'vocabInput';
   vocabCopyButtonQuery     = 'cbCopyButtonVocab';
   deleteVocabButtonQuery   = 'deleteVocabButton';
+  versionElementQuery      = 'wtkVersionFooterElement';
   maxResultSize            = 50;
   lastQuery                = '';
   //lastQueries            = []; // currently unused
@@ -329,6 +330,16 @@ class WTKSearch {
         this.entries.append(
           '<h3><i> The kanji ' + kanji + ' is not yet in our dataset.</i></h3>'
         );
+        let mailSubjectString = '[wtksearch] Kanji not found'.replace(' ', '%20');
+        let mailBodyString = 'Hello,\n\nthis kanji was missing on wtksearch.\n\n'+
+        'Kanji: ' + kanji + '\n'+
+        'Version: ' + document.getElementById(this.versionElementQuery).text + '\n' +
+        '\n';
+        mailBodyString = mailBodyString.replace(' ', '%20').replaceAll('\n', '%0A');
+        this.entries.append(
+          '<h4><a href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
+          '">Report missing Kanji in a (quick) mail? ^.^ </a><a href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>'
+        )
         this.result.show();
       }
     }
