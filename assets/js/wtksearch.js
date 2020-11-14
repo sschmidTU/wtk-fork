@@ -60,7 +60,7 @@ class WTKSearch {
     const kanjiMatch = query.match(/[\u4e00-\u9faf\u3400-\u4dbf]/); // kanji, or CJK chinese-japanese unified ideograph/symbol
     // TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
     if (kanjiMatch && kanjiMatch[0]) {
-      return this.searchKanji(kanjiMatch[0], {
+      return this.searchByKanji(kanjiMatch[0], {
         updateHTMLElements: updateHTMLElements
       });
     }
@@ -307,10 +307,9 @@ class WTKSearch {
     return entry;
   }
 
-  searchKanji(kanji, {
+  searchByKanji(kanji, {
     updateHTMLElements = false
   } = {}) {
-    this.entries?.empty();
     let kanjiPage;
     let resultLength = 0;
     for (const doc of docs) {
@@ -321,6 +320,7 @@ class WTKSearch {
       }
     }
     if (updateHTMLElements) {
+      this.entries?.empty();
       if (kanjiPage != null) {
         const entry = this.createEntry(kanjiPage);
         this.entries.append(entry);
