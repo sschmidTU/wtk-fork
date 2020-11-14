@@ -286,7 +286,7 @@ class WTKSearch {
       this.entries.append(
         '<h4><a class="h4link" ' +
         'href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
-        '">Report missing Kanji in a (quick) mail? ^.^ </a>' +
+        '">Report missing Kanji in a (quick) mail? ^.^</a> ' +
         '<a class="h4link" href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>' +
         '</h4>'
       )
@@ -353,7 +353,7 @@ class WTKSearch {
         mailBodyString = mailBodyString.replace(' ', '%20').replaceAll('\n', '%0A');
         this.entries.append(
           '<h4><a href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
-          '">Report missing Kanji in a (quick) mail? ^.^ </a><a href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>'
+          '">Report missing Kanji in a (quick) mail? ^.^</a> <a href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>'
         )
         this.result.show();
       }
