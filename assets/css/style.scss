@@ -132,7 +132,7 @@ li {
   margin-bottom: 1em;
 }
 
-a {
+a:not(.h4link) {
   color: $color-highlight;
   text-decoration: none;
 }
