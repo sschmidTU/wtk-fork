@@ -74,6 +74,14 @@ h4 {
     margin-top: 0.0em;
   }
 
+.h4link {
+  font-family: Verdana, Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  color: #024277;
+  text-align: center;
+  margin-top: 0;
+}
+
 p {
   line-height: 2em;
   margin-top: 0;
@@ -88,7 +96,7 @@ a {
   color: #9b3732;
   text-decoration: none; }
 
-a:visited {
+a:visited:not(.h4link) {
   color: #262626; }
 
 a:hover {

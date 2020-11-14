@@ -275,6 +275,21 @@ class WTKSearch {
       entries.append(
         '<h3><i> No results found. (typo? try other '+elementsNames+'?)</i></h3>'
       );
+      let mailSubjectString = '[wtksearch] My Search had no results'.replace(' ', '%20');
+      let mailBodyString = 'Hello,\n\nmy wtk-search was unfortunately unsuccessful.\n\n'+
+      'Query: ' + query + '\n' +
+      'Kanji: ' + '\n' +
+      'Version: ' + document.getElementById(this.versionElementQuery).text + '\n' +
+      '\n[Please add the kanji you were looking for above, if you can find it elsewhere]\n' +
+      '\n';
+      mailBodyString = mailBodyString.replace(' ', '%20').replaceAll('\n', '%0A');
+      this.entries.append(
+        '<h4><a class="h4link" ' +
+        'href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
+        '">Report missing Kanji in a (quick) mail? ^.^ </a>' +
+        '<a class="h4link" href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>' +
+        '</h4>'
+      )
     }
     // if (results.length == 0) {
     //   entries.append('<h4>Kanji not found :-(</h4>'); // sometimes fires too early
