@@ -83,6 +83,10 @@ h4 {
   text-decoration: none;
 }
 
+.h4link:hover {
+  color: rgb(6, 108, 190);
+}
+
 p {
   line-height: 2em;
   margin-top: 0;
@@ -93,15 +97,15 @@ li {
   margin-top: 0;
   margin-bottom: 1em; }
 
-a {
+a:not(.h4link) {
   color: #9b3732;
   text-decoration: none; }
 
 a:visited:not(.h4link) {
   color: #262626; }
 
-a:hover {
-  color: #e2e2e2; }
+a:hover:not(.h4link) {
+  color: #d8281e; }
 
 a:focus {
   color: #000000;

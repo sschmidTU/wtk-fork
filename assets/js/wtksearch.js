@@ -352,8 +352,11 @@ class WTKSearch {
         '\n';
         mailBodyString = mailBodyString.replace(' ', '%20').replaceAll('\n', '%0A');
         this.entries.append(
-          '<h4><a href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
-          '">Report missing Kanji in a mail (using template)? ^.^</a> <a href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>'
+          '<h4><a class="h4link" ' +
+          'href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
+          '">Report missing Kanji in a mail (using template)? ^.^</a> ' +
+          '<a class="h4link" href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>' +
+          '</h4>'
         )
         this.result.show();
       }
