@@ -276,11 +276,11 @@ class WTKSearch {
         '<h3><i> No results found. (typo? try other '+elementsNames+'?)</i></h3>'
       );
       let mailSubjectString = '[wtksearch] My Search had no results'.replace(' ', '%20');
-      let mailBodyString = 'Hello,\n\nmy wtk-search was unfortunately unsuccessful.\n\n'+
+      let mailBodyString = 'Hello,\n\nunfortunately my query did not find the kanji i was looking for.\n\n'+
       'Query: ' + query + '\n' +
       'Kanji: ' + '\n' +
       'Version: ' + document.getElementById(this.versionElementQuery).text + '\n' +
-      '\n[Please add the kanji you were looking for above, if you can find it elsewhere]\n' +
+      '\n[Please add the kanji you were looking for above, if you can find it elsewhere, or an image of it]\n' +
       '\n';
       mailBodyString = mailBodyString.replace(' ', '%20').replaceAll('\n', '%0A');
       this.entries.append(
