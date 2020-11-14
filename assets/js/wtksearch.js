@@ -14,6 +14,10 @@ class WTKSearch {
   lastStrict               = false;
   lastRTK                  = false;
   logLevel                 = 0; // silent by default
+  rtkMode                  = false; // save isRtkMode() for a while so it doesn't have to be called every time
+  strictMode               = false;
+  result                   = null; // save $('#search-results')
+  entries                  = null; // save $('#search-results .entries')
 
   searchBoxSearch() {
     let query = $('#search-query').val();
@@ -48,9 +52,19 @@ class WTKSearch {
     }
     query = query.trim().toLowerCase();
     // trim is useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
+    var result  = this.result  = $('#search-results');
+    var entries = this.entries = $('#search-results .entries');
+    const rtkMode = this.rtkMode = this.isRtkMode(); // used multiple times
+    const strictMode = this.strictMode = !rtkMode && this.isStrictMode(); // TODO fix strict mode for rtk mode, currently disabled in rtk mode.
 
-    const rtkMode = this.isRtkMode(); // used multiple times
-    const strictMode = !rtkMode && this.isStrictMode(); // TODO fix strict mode for rtk mode, currently disabled in rtk mode.
+    const kanjiMatch = query.match(/[\u4e00-\u9faf\u3400-\u4dbf]/); // kanji, or CJK chinese-japanese unified ideograph/symbol
+    // TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
+    if (kanjiMatch && kanjiMatch[0]) {
+      return this.searchKanji(kanjiMatch[0], {
+        updateHTMLElements: updateHTMLElements
+      });
+    }
+
     if (!forceSearch && query === this.lastQuery && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
       return { length: 0 };
     }
@@ -58,8 +72,6 @@ class WTKSearch {
     this.lastStrict = strictMode;
     this.lastRTK    = rtkMode;
     
-    var result  = $('#search-results');
-    var entries = $('#search-results .entries');
     const isSmallRtkKeyword = rtkMode && this.is_short_rtk_keyword(query);
     const isSmallWkKeyword = !rtkMode && this.is_short_wk_keyword(query);
     if (!forceSearch && query.length <= 2 && !(isSmallRtkKeyword || isSmallWkKeyword)) {
@@ -236,25 +248,7 @@ class WTKSearch {
               // performance: don't add more than maxResultSize (50) matches (divs) to entries 
               continue;
             }
-            let kanjiName = page.keyword;
-            if (!rtkMode && page.keywordWK && page.keywordWK.length > 0) {
-              kanjiName = page.keywordWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
-            }
-            let leftPaddingPercent = 28;
-            if (document.getElementById('search-box').clientWidth < 500) {
-              leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
-            }
-            const newEntry = 
-              '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
-              // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
-              '<article>'+
-              '  <h3 style="text-align: left">'+
-              '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
-              '    <button class="btnClip" id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
-              '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
-              '  </h3>'+
-              '</article></div>'
-            ;
+            const newEntry = this.createEntry(page);
             if (prepend) {
               entries.prepend(newEntry);
             } else {
@@ -287,6 +281,64 @@ class WTKSearch {
     result.show();
 
     return searchResults;
+  }
+
+  createEntry(page) {
+    let kanjiName = page.keyword;
+    // this.rtkMode needs to have been saved before, otherwise use !this.rtkMode()
+    if (!this.rtkMode && page.keywordWK && page.keywordWK.length > 0) {
+      kanjiName = page.keywordWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
+    }
+    let leftPaddingPercent = 28;
+    if (document.getElementById('search-box').clientWidth < 500) {
+      leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
+    }
+    const entry =
+      '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
+      // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
+      '<article>'+
+      '  <h3 style="text-align: left">'+
+      '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
+      '    <button class="btnClip" id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
+      '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
+      '  </h3>'+
+      '</article></div>'
+    ;
+    return entry;
+  }
+
+  searchKanji(kanji, {
+    updateHTMLElements = false
+  } = {}) {
+    this.entries?.empty();
+    let kanjiPage;
+    let resultLength = 0;
+    for (const doc of docs) {
+      if (doc.kanji?.includes(kanji)) { // see 喩・喻
+        kanjiPage = doc;
+        resultLength = 1;
+        break;
+      }
+    }
+    if (updateHTMLElements) {
+      if (kanjiPage != null) {
+        const entry = this.createEntry(kanjiPage);
+        this.entries.append(entry);
+        this.result.show();
+      } else {
+        this.entries.append(
+          '<h3><i> The kanji ' + kanji + ' is not in our dataset.</i></h3>'
+        );
+        this.result.show();
+      }
+    }
+    let returnValue = {
+      length: resultLength,
+      list  : [kanjiPage],
+    }
+    returnValue[kanji] = kanjiPage;
+    this.lastQuery = kanji;
+    return returnValue;
   }
 
   cbCopyButtonClick(id, kanji) {
