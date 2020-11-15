@@ -130,7 +130,7 @@ h4 {
 }
 
 .btnWKNonWKKanji:hover {
-  color: #d8281e;
+  color: rgb(216, 40, 30);
 }
 
 .btnResultKanjiWK {
@@ -167,7 +167,7 @@ a:focus {
   outline: thin dotted;
 }
 
-a:hover:not(.btnWKNonWKKanji),
+a:hover,
   a:active {
   outline: 0;
 }
