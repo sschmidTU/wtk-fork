@@ -22,7 +22,7 @@ adapted from rtk-search, code by Học hành / Mạnh Tài: https://hochanh.gith
 adapted for WK radicals and extra features like copy buttons, compounds, etc.<br>
 also, extended dataset: rtk-search only had ~2200 of ~3000 Kanji indexed/searchable by elements, this has 3030+ and constantly growing (also adding new non-RTK kanji)
 
-The website uses [Jekyll](https://jekyllrb.com/) (scripts) in html, css and js files to generate code/HTML.<br>
+The website uses [Jekyll](https://jekyllrb.com/)/[Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) (scripts) in html, css and js files to generate code/HTML.<br>
 The search indexer is [lunr](https://lunrjs.com/).
 
 Contributions and feedback welcome!
