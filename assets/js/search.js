@@ -2,11 +2,11 @@
 ---
 var docs =
 [
-{% for post in site.pages %}
-{% if post.layout == 'kanji' or post.layout == 'kanji-remain' %}
+{%- for post in site.pages -%}
+{%- if post.layout == 'kanji' or post.layout == 'kanji-remain' -%}
   {% include post.json %},
-{% endif %}  
-{% endfor %}
+{%- endif -%}  
+{%- endfor -%}
 ];
 
 // init lunr
