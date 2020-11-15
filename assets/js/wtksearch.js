@@ -558,7 +558,7 @@ class WTKSearch {
   }
 
   focusSearchBar() {
-    document.getElementById(this.searchBarId).focus();
+    document.getElementById(this.searchBarId).focus({preventScroll: true});
   }
 
   getUrlParameters() {
