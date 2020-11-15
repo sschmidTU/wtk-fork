@@ -320,9 +320,9 @@ class WTKSearch {
       wkButtonTextDecoration = 'line-through';
       wkButtonClass = 'btnWKNonWKKanji';
       //resultKanjiButtonClass = 'btnResultKanjiRTK';
-      if (!this.rtkMode) {
-        resultKanjiButtonClass = 'btnResultKanjiWK';
-      }
+    }
+    if (!this.rtkMode) {
+      resultKanjiButtonClass = 'btnResultKanjiWK'; // lower case for all keywords/meanings, more consistent and universal (e.g. Blue-black looks bad)
     }
     let leftPaddingPercent = 28;
     if (document.getElementById('search-box').clientWidth < 500) {
