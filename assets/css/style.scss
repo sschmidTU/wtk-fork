@@ -127,11 +127,14 @@ h4 {
 
 .btnWKNonWKKanji {
   color: rgb(220, 234, 245);
+  .btnWKNonWKKanji:hover {
+    color: #d8281e;
+  }
 }
 
-a.btnWKNonWKKanji:hover {
+/*a.btnWKNonWKKanji:hover {
   color: #d8281e;
-}
+}*/
 
 .btnResultKanjiWK {
   text-transform: lowercase;
