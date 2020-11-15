@@ -125,6 +125,14 @@ h4 {
   color: rgb(6, 108, 190);
 }
 
+.btnWKNonWKKanji {
+  color: rgb(220, 234, 245);
+}
+
+.btnResultKanjiWK {
+  text-transform: capitalize;
+}
+
 p {
   line-height: 2em;
   margin-top: 0;
@@ -137,12 +145,12 @@ li {
   margin-bottom: 1em;
 }
 
-a:not(.h4link) {
+a:not(.h4link):not(.btnWKNonWKKanji) {
   color: $color-highlight;
   text-decoration: none;
 }
 
-a:visited:not(.h4link) {
+a:visited:not(.h4link):not(.btnWKNonWKKanji) {
   color: $color-primary;
 }
 
