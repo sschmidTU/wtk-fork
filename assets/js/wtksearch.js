@@ -311,7 +311,7 @@ class WTKSearch {
     let wkButtonTextDecoration = '';
     let wkButtonClass = 'h4link';
     let resultKanjiButtonClass = 'btnResultKanji';
-    let wkButtonHoverText = 'View this Kanji on wanikani.com';
+    let wkButtonHoverText = 'View this kanji on wanikani.com';
     if (wk_kanji && wk_kanji[page.kanji]) {
       if (!this.rtkMode) { // wk mode
         kanjiName = wk_kanji[page.kanji].meanings[0].meaning;
