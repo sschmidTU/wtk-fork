@@ -15,6 +15,9 @@ If you have suggestions, if you can't find your Kanji using WK radicals or RTK n
 or comment on the Wanikani thread:
 https://community.wanikani.com/t/multi-radical-kanji-search-web/46781
 
+The [offline branch](https://github.com/sschmidTU/mr-kanji-search-wtk/tree/offline) can be used completely offline,<br>
+though the kanji information is usually slightly outdated, see the footer in the offline version.
+
 adapted from rtk-search, code by Học hành / Mạnh Tài: https://hochanh.github.io/rtk/index.html <br>
 adapted for WK radicals and extra features like copy buttons, compounds, etc.<br>
 also, extended dataset: rtk-search only had ~2200 of ~3000 Kanji indexed/searchable by elements, this has 3030+ and constantly growing (also adding new non-RTK kanji)
