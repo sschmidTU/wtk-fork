@@ -189,7 +189,6 @@ class WTKSearch {
 
       //entries.empty();
 
-      const self = this;
       let matches = 0;
       let entriesAdded = 0;
       if (results && results.length > 0) {
@@ -258,9 +257,7 @@ class WTKSearch {
             } else {
               entries.append(newEntry);
             }
-            document.getElementById('cbCopyButton'+page.id).onclick = function() {
-              self.cbCopyButtonClick(page.id, page.kanji);
-            }
+            this.addCopyFunctionToEntry(page);
             entriesAdded++;
           }
       } // end for each page
@@ -348,6 +345,13 @@ class WTKSearch {
     return entry;
   }
 
+  addCopyFunctionToEntry(page) {
+    const self = this;
+    document.getElementById('cbCopyButton'+page.id).onclick = function() {
+      self.cbCopyButtonClick(page.id, page.kanji);
+    }
+  }
+
   searchByKanji(kanji, {
     updateHTMLElements = false
   } = {}) {
@@ -361,10 +365,16 @@ class WTKSearch {
       }
     }
     if (updateHTMLElements) {
-      this.entries?.empty();
+      if (this.entries) {
+        this.entries.empty();
+      } else { // this.entries is uninitialized before first search
+        this.result  = $('#search-results');
+        this.entries = $('#search-results .entries');
+      }
       if (kanjiPage != null) {
         const entry = this.createEntry(kanjiPage);
         this.entries.append(entry);
+        this.addCopyFunctionToEntry(kanjiPage);
         this.result.show();
       } else {
         this.entries.append(
@@ -530,6 +540,13 @@ class WTKSearch {
     if (params.console === '1') {
       window.wtk = this; // make wtk available in the console
       // could also be window.wtksearch to avoid conflicts. but shorter/easier for now (debug)
+    }
+
+    const btnLatestKanji = document.getElementById('btnSearchLatestKanji');
+    if (btnLatestKanji) {
+      btnLatestKanji.onclick = function() {
+        self.searchByKanji(btnLatestKanji.text, { updateHTMLElements: true });
+      }
     }
   }
 
