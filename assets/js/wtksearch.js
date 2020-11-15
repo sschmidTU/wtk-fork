@@ -554,6 +554,7 @@ class WTKSearch {
       btnLatestKanji.onclick = function() {
         const searchBar = document.getElementById(self.searchBarId);
         searchBar.value = btnLatestKanji?.text;
+        self.focusSearchBar();
         self.searchBarSearch();
         //self.searchByKanji(btnLatestKanji.text, { updateHTMLElements: true });
       };
