@@ -311,6 +311,7 @@ class WTKSearch {
     let wkButtonTextDecoration = '';
     let wkButtonClass = 'h4link';
     let resultKanjiButtonClass = 'btnResultKanji';
+    let wkButtonHoverText = 'View this Kanji on wanikani.com';
     if (wk_kanji && wk_kanji[page.kanji]) {
       if (!this.rtkMode) { // wk mode
         kanjiName = wk_kanji[page.kanji].meanings[0].meaning;
@@ -319,6 +320,7 @@ class WTKSearch {
     } else { // kanji doesn't exist on WK
       wkButtonTextDecoration = 'line-through';
       wkButtonClass = 'btnWKNonWKKanji';
+      wkButtonHoverText = 'This kanji does not exist on wanikani.com.';
       //resultKanjiButtonClass = 'btnResultKanjiRTK';
     }
     if (!this.rtkMode) {
@@ -335,6 +337,7 @@ class WTKSearch {
       '  <h3 style="text-align: left">'+
       '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'" ' +
              'style="text-decoration: '+wkButtonTextDecoration + '" ' +
+             'title="'+wkButtonHoverText+'"' +
              'class="'+wkButtonClass+'" ' +
             '>WK</a>'+
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
