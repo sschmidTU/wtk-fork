@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/33069673/99188880-882d2080-275e-11eb-9016-ff7fa09f4826.png)
 https://sschmidtu.github.io/mr-kanji-search-wtk/ <br>
-This is a web-based Kanji search engine for Wanikani radicals or RTK names, using multi-radical search.
+wtk-search is a web-based Kanji search engine for Wanikani radicals or RTK names, using multi-radical search.
 
 ![image](https://user-images.githubusercontent.com/33069673/99188399-04723480-275c-11eb-89fe-1e953056957a.png)
 
