@@ -198,7 +198,10 @@ class WTKSearch {
         for (const page of results) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
           const keywordLower = page.keyword.toLowerCase();
-          const keywordWKLower = page.keywordWK?.toLowerCase();
+          let keywordWKLower = page.keywordWK?.toLowerCase();
+          if (!rtkMode && wk_kanji && wk_kanji[page.kanji]) {
+            keywordWKLower = wk_kanji[page.kanji].meanings[0].meaning.toLowerCase();
+          }
           if (strictMode) {
             const elements = page.elements.split(',').map((val,_,__) => val.trim().toLowerCase());
             const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
@@ -305,6 +308,22 @@ class WTKSearch {
     if (!this.rtkMode && page.keywordWK && page.keywordWK.length > 0) {
       kanjiName = page.keywordWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
     }
+    let wkButtonTextDecoration = '';
+    let wkButtonClass = 'h4link';
+    let resultKanjiButtonClass = 'btnResultKanji';
+    if (wk_kanji && wk_kanji[page.kanji]) {
+      if (!this.rtkMode) { // wk mode
+        kanjiName = wk_kanji[page.kanji].meanings[0].meaning;
+        //resultKanjiButtonClass = 'btnResultKanjiWKExists';
+      }
+    } else { // kanji doesn't exist on WK
+      wkButtonTextDecoration = 'line-through';
+      wkButtonClass = 'btnWKNonWKKanji';
+      //resultKanjiButtonClass = 'btnResultKanjiRTK';
+      if (!this.rtkMode) {
+        resultKanjiButtonClass = 'btnResultKanjiWK';
+      }
+    }
     let leftPaddingPercent = 28;
     if (document.getElementById('search-box').clientWidth < 500) {
       leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
@@ -314,9 +333,12 @@ class WTKSearch {
       // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
       '<article>'+
       '  <h3 style="text-align: left">'+
-      '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'">WK</a>'+
-      '    <button class="btnClip" id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
-      '    <a href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
+      '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'" ' +
+             'style="text-decoration: '+wkButtonTextDecoration + '" ' +
+             'class="'+wkButtonClass+'" ' +
+            '>WK</a>'+
+      '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
+      '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
       '  </h3>'+
       '</article></div>'
     ;
