@@ -14,7 +14,7 @@ wtk-search is a web-based Kanji search engine for Wanikani radicals or RTK names
 
 
 
-Live at: https://sschmidtu.github.io/mr-kanji-search-wtk/
+Live at: https://sschmidtu.github.io/mr-kanji-search-wtk/?rtk=0
 
 If you have suggestions, if you can't find your Kanji using WK radicals or RTK names, please [open an issue](https://github.com/sschmidTU/mr-kanji-search-wtk/issues)
 or comment on the Wanikani thread:
