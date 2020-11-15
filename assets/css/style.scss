@@ -112,7 +112,7 @@ h4 {
     margin-top: 0.0em;
   }
 
-.h4link {
+.h4link, .btnWK {
   font-family: Verdana, Georgia, "Times New Roman", serif;
   font-weight: normal;
   color: #024277;
@@ -121,7 +121,7 @@ h4 {
   text-decoration: none;
 }
 
-.h4link:hover {
+.h4link:hover, .btnWK:hover {
   color: rgb(6, 108, 190);
 }
 
@@ -149,16 +149,16 @@ li {
   margin-bottom: 1em;
 }
 
-a:not(.h4link):not(.btnWKNonWKKanji) {
+a:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji) {
   color: $color-highlight;
   text-decoration: none;
 }
 
-a:visited:not(.h4link):not(.btnWKNonWKKanji) {
+a:visited:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji) {
   color: $color-primary;
 }
 
-a:hover:not(.h4link):not(.btnWKNonWKKanji) {
+a:hover:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji) {
   color: $color-tertiary;
 }
 

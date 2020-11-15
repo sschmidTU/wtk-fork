@@ -309,7 +309,7 @@ class WTKSearch {
       kanjiName = page.keywordWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
     }
     let wkButtonTextDecoration = '';
-    let wkButtonClass = 'h4link';
+    let wkButtonClass = 'btnWK';
     let resultKanjiButtonClass = 'btnResultKanji';
     let wkButtonHoverText = 'View this kanji on wanikani.com';
     if (wk_kanji && wk_kanji[page.kanji]) {
