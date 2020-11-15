@@ -27,7 +27,7 @@
         {% capture latestkanji%}{{ post.kanji }}{% endcapture %}
       {% endif %}
       {% endfor %}
-<br>{{kanjicount}} Kanji searchable (latest: {{latestkanji}})
+<br>{{kanjicount}} Kanji searchable (latest: <a id='btnSearchLatestKanji'>{{latestkanji}}</a>)
     {% endif %}</p>
     
   </div>
