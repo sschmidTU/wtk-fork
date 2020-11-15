@@ -1,6 +1,5 @@
 class WTKSearch {
-  copyButtonsHighlighted   = {};
-  copyButtonSelectedClass  = 'btnClipLastSelected';
+  searchBarId              = 'searchBar';
   checkboxStrictQuery      = 'input[name=strictModeCheckbox]';
   checkboxRTKQuery         = 'input[name=rtkModeCheckbox]';
   checkboxStrictLabelQuery = '#strictModeLabel';
@@ -9,6 +8,8 @@ class WTKSearch {
   vocabCopyButtonQuery     = 'cbCopyButtonVocab';
   deleteVocabButtonQuery   = 'deleteVocabButton';
   versionElementQuery      = 'wtkVersionFooterElement';
+  copyButtonsHighlighted   = {};
+  copyButtonSelectedClass  = 'btnClipLastSelected';
   maxResultSize            = 50;
   lastQuery                = '';
   //lastQueries            = []; // currently unused
@@ -20,8 +21,8 @@ class WTKSearch {
   result                   = null; // save $('#search-results')
   entries                  = null; // save $('#search-results .entries')
 
-  searchBoxSearch() {
-    let query = $('#search-query').val();
+  searchBarSearch() {
+    let query = document.getElementById(this.searchBarId).value;
     this.search(query, {
       returnResults: false,
       forceSearch: false,
@@ -407,6 +408,7 @@ class WTKSearch {
 
   cbCopyButtonClick(id, kanji) {
     const selectedClass = 'btnClipLastSelected';
+    this.focusSearchBar();
 
     if (this.isVocabMode()) { // vocab/compound mode
       const vocabInput = document.getElementById(this.vocabInputQuery);
@@ -492,16 +494,17 @@ class WTKSearch {
 
     const self = this; // this isn't available in anonymous functions
     $('#search-button').on('click', function() {
-      return self.searchBoxSearch();
+      return self.searchBarSearch();
     });
     
-    $('#search-query').on('input', function() {
-      return self.searchBoxSearch();
-    });
+    document.getElementById(this.searchBarId).oninput = function() {
+      return self.searchBarSearch();
+    };
 
     // checkboxStrict.on('click', function() { // replaces click event completely
     $(checkboxStrictQuery).change(function() {
-      return self.searchBoxSearch(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
+      self.focusSearchBar();
+      return self.searchBarSearch(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
     });
     $(checkboxRTKQuery).change(function() {
       if (self.isRtkMode()) {
@@ -509,7 +512,8 @@ class WTKSearch {
       } else {
         $(checkboxStrictLabelQuery).prop('style')['text-decoration'] = '';
       }
-      return self.searchBoxSearch();
+      self.focusSearchBar();
+      return self.searchBarSearch();
     })
     $(checkboxVocabQuery).change(function() {
       if (self.isVocabMode()) {
@@ -517,15 +521,18 @@ class WTKSearch {
       } else {
         document.getElementById('vocabModeDiv').style.display = "none";
       }
+      self.focusSearchBar();
     })
     document.getElementById(this.deleteVocabButtonQuery).onclick = function() {
       document.getElementById(self.vocabInputQuery).value = '';
       self.dehighlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
+      self.focusSearchBar();
     }
     document.getElementById(this.vocabCopyButtonQuery).onclick = function() {
       const compound = document.getElementById(self.vocabInputQuery).value;
       navigator.clipboard.writeText(compound);
       self.highlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
+      self.focusSearchBar();
     }
 
     if (params.strict === '1' || params.strict === 'true' && !this.isStrictMode()) {
@@ -546,8 +553,12 @@ class WTKSearch {
     if (btnLatestKanji) {
       btnLatestKanji.onclick = function() {
         self.searchByKanji(btnLatestKanji.text, { updateHTMLElements: true });
-      }
+      };
     }
+  }
+
+  focusSearchBar() {
+    document.getElementById(this.searchBarId).focus();
   }
 
   getUrlParameters() {
