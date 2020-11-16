@@ -380,31 +380,38 @@ class WTKSearch {
         this.entries = $('#search-results .entries');
       }
     }
-    let missingCount = 0;
-    for (const kanji of kanjiList) {
-      if (kanjisFound[kanji]) {
-        if (updateHTMLElements && !showOnlyMissingKanji) {
-          const kanjiPage = kanjisFound[kanji];
-          const entry = this.createEntry(kanjiPage);
-          this.entries.append(entry);
-          this.addCopyFunctionToEntry(kanjiPage);
+    let kanjiEntriesShown = {};
+    if (updateHTMLElements) {
+      for (const kanji of kanjiList) {
+        if (kanjiEntriesShown[kanji]) {
+          continue; // don't repeat kanji entries
         }
-      } else {
-        missingCount++;
-        missingKanjiList += kanji;
-        if (updateHTMLElements) {
-          this.entries.append(
-            '<h3><i> The kanji ' + kanji + ' is not yet in our dataset.</i></h3>'
-          );
+        if (kanjisFound[kanji]) {
+          if (!showOnlyMissingKanji) {
+            const kanjiPage = kanjisFound[kanji];
+            const entry = this.createEntry(kanjiPage);
+            this.entries.append(entry);
+            this.addCopyFunctionToEntry(kanjiPage);
+          }
+        } else {
+          missingKanjiList += kanji;
+          if (updateHTMLElements) {
+            this.entries.append(
+              '<h3><i> The kanji ' + kanji + ' is not yet in our dataset.</i></h3>'
+            );
+          }
+          //console.log(`${kanji} (aozora #${aozoraNumbers[kanji]} not in dataset`);
         }
-        //console.log(`${kanji} (aozora #${aozoraNumbers[kanji]} not in dataset`);
+        kanjiEntriesShown[kanji] = 1;
       }
     }
     const kanjisFoundList = Object.keys(kanjisFound);
-    this.log(this.LogLevels.Debug, `kanjisFound: ${kanjisFoundList}`);
-    this.log(this.LogLevels.Debug, `missing: ${missingKanjiList}`);
-    this.log(this.LogLevels.Debug, `total found: ${kanjisFoundList.length} of ${kanjiList.length}`);
-    this.log(this.LogLevels.Debug, 'total missing: ' + missingCount);
+    const missingCount = missingKanjiList.length;
+    const uniqueKanji = kanjisFoundList.length + missingCount;
+    this.log(this.LogLevels.Debug, `found kanji (unique): ${kanjisFoundList}`);
+    this.log(this.LogLevels.Debug, `missing (unique): ${missingKanjiList}`);
+    this.log(this.LogLevels.Debug, `total found (unique): ${kanjisFoundList.length} of ${uniqueKanji} kanji (${kanjiList.length} total)`);
+    this.log(this.LogLevels.Debug, `total missing (unique): ${missingCount}`);
 
     if (missingCount > 0 && updateHTMLElements) {
       let mailSubjectString = '[wtksearch] Kanji not found'.replace(' ', '%20');
