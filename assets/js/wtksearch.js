@@ -67,7 +67,7 @@ class WTKSearch {
     this.lastRTK    = rtkMode;
 
     const kanjiMatches = query.match(/[\u4e00-\u9faf\u3400-\u4dbf]/g); // kanji, or CJK chinese-japanese unified ideograph/symbol
-    // /g returns all matches instead of just the first
+    //   /g returns all matches instead of just the first
     // TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
     if (kanjiMatches && kanjiMatches[0]) {
       return this.searchByKanji(kanjiMatches, {
