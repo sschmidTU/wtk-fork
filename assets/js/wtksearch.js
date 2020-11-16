@@ -59,20 +59,21 @@ class WTKSearch {
     const rtkMode = this.rtkMode = this.isRtkMode(); // used multiple times
     const strictMode = this.strictMode = !rtkMode && this.isStrictMode(); // TODO fix strict mode for rtk mode, currently disabled in rtk mode.
 
-    const kanjiMatch = query.match(/[\u4e00-\u9faf\u3400-\u4dbf]/); // kanji, or CJK chinese-japanese unified ideograph/symbol
-    // TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
-    if (kanjiMatch && kanjiMatch[0]) {
-      return this.searchByKanji(kanjiMatch[0], {
-        updateHTMLElements: updateHTMLElements
-      });
-    }
-
     if (!forceSearch && query === this.lastQuery && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
       return { length: 0 };
     }
     this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
     this.lastStrict = strictMode;
     this.lastRTK    = rtkMode;
+
+    const kanjiMatches = query.match(/[\u4e00-\u9faf\u3400-\u4dbf]/g); // kanji, or CJK chinese-japanese unified ideograph/symbol
+    // /g returns all matches instead of just the first
+    // TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
+    if (kanjiMatches && kanjiMatches[0]) {
+      return this.searchByKanji(kanjiMatches, {
+        updateHTMLElements: updateHTMLElements
+      });
+    }
     
     const isSmallRtkKeyword = rtkMode && this.is_short_rtk_keyword(query);
     const isSmallWkKeyword = !rtkMode && this.is_short_wk_keyword(query);
@@ -353,18 +354,24 @@ class WTKSearch {
     }
   }
 
-  searchByKanji(kanji, {
-    updateHTMLElements = false
+  searchByKanji(kanjiList, {
+    updateHTMLElements = false,
+    showOnlyMissingKanji = false,
+    maxKanjiToCheck = 10000,
   } = {}) {
-    let kanjiPage;
-    let resultLength = 0;
+    //let aozoraNumbers = {};
+    let kanjisFound = {};
     for (const doc of docs) {
-      if (doc.kanji?.includes(kanji)) { // see 喩・喻
-        kanjiPage = doc;
-        resultLength = 1;
-        break;
+      for (let i=0; i<kanjiList.length && i<maxKanjiToCheck; i++) {
+        const kanji = kanjiList[i];
+        //aozoraNumbers[kanji] = i;
+        if (doc.kanji?.includes(kanji)) { // see 喩・喻
+          kanjisFound[kanji] = doc;
+          // we could remove the kanji from kanjiList here, but perhaps similarly expensive to keeping to check it
+        }
       }
     }
+    let missingKanjiList = '';
     if (updateHTMLElements) {
       if (this.entries) {
         this.entries.empty();
@@ -372,37 +379,56 @@ class WTKSearch {
         this.result  = $('#search-results');
         this.entries = $('#search-results .entries');
       }
-      if (kanjiPage != null) {
-        const entry = this.createEntry(kanjiPage);
-        this.entries.append(entry);
-        this.addCopyFunctionToEntry(kanjiPage);
-        this.result.show();
+    }
+    let missingCount = 0;
+    for (const kanji of kanjiList) {
+      if (kanjisFound[kanji]) {
+        if (updateHTMLElements && !showOnlyMissingKanji) {
+          const kanjiPage = kanjisFound[kanji];
+          const entry = this.createEntry(kanjiPage);
+          this.entries.append(entry);
+          this.addCopyFunctionToEntry(kanjiPage);
+        }
       } else {
-        this.entries.append(
-          '<h3><i> The kanji ' + kanji + ' is not yet in our dataset.</i></h3>'
-        );
-        let mailSubjectString = '[wtksearch] Kanji not found'.replace(' ', '%20');
-        let mailBodyString = 'Hello,\n\nthis kanji was missing on wtksearch.\n\n'+
-        'Kanji: ' + kanji + '\n'+
-        'Version: ' + document.getElementById(this.versionElementQuery).text + '\n' +
-        '\n';
-        mailBodyString = mailBodyString.replace(' ', '%20').replaceAll('\n', '%0A');
-        this.entries.append(
-          '<h4><a class="h4link" ' +
-          'href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
-          '">Report missing Kanji in a mail (using template)? ^.^</a> ' +
-          '<a class="h4link" href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>' +
-          '</h4>'
-        )
-        this.result.show();
+        missingCount++;
+        missingKanjiList += kanji;
+        if (updateHTMLElements) {
+          this.entries.append(
+            '<h3><i> The kanji ' + kanji + ' is not yet in our dataset.</i></h3>'
+          );
+        }
+        //console.log(`${kanji} (aozora #${aozoraNumbers[kanji]} not in dataset`);
       }
     }
-    let returnValue = {
-      length: resultLength,
-      list  : [kanjiPage],
+    const kanjisFoundList = Object.keys(kanjisFound);
+    this.log(this.LogLevels.Debug, `kanjisFound: ${kanjisFoundList}`);
+    this.log(this.LogLevels.Debug, `missing: ${missingKanjiList}`);
+    this.log(this.LogLevels.Debug, `total found: ${kanjisFoundList.length} of ${kanjiList.length}`);
+    this.log(this.LogLevels.Debug, 'total missing: ' + missingCount);
+
+    if (missingCount > 0 && updateHTMLElements) {
+      let mailSubjectString = '[wtksearch] Kanji not found'.replace(' ', '%20');
+      const missingKanjiString = missingCount > 1 ? "these kanji were missing" : "this kanji was missing";
+      let mailBodyString = 'Hello,\n\n'+missingKanjiString+' on wtksearch.\n\n'+
+      'Kanji: ' + missingKanjiList + '\n'+
+      'Version: ' + document.getElementById(this.versionElementQuery).text + '\n' +
+      '\n';
+      mailBodyString = mailBodyString.replace(' ', '%20').replaceAll('\n', '%0A');
+      this.entries.append(
+        '<h4><a class="h4link" ' +
+        'href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
+        '">Report missing Kanji in a mail (using template)? ^.^</a> ' +
+        '<a class="h4link" href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>' +
+        '</h4>'
+      )
     }
-    returnValue[kanji] = kanjiPage;
-    this.lastQuery = kanji;
+    if (updateHTMLElements) {
+      this.result.show();
+    }
+    let returnValue = {
+      length: kanjisFoundList.length,
+      list  : kanjisFoundList,
+    }
     return returnValue;
   }
 
