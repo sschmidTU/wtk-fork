@@ -15301,7 +15301,7 @@ var docs =
 // add keywordWK info from wk_kanji data (wk_kanji_short_min.js)
 for (const doc of docs) {
   if (wk_kanji[doc.kanji]) {
-    doc.keywordWK = wk_kanji[doc.kanji].meanings[0].meaning;
+    doc.keywordWK = wk_kanji[doc.kanji].meanings[0].meaning; // see wk_kanji_short_min.js
   }
 }
 // TODO put all the keywordWK directly into the data so we don't have to do this every time.
