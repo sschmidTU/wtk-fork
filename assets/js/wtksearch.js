@@ -71,7 +71,8 @@ class WTKSearch {
     // TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
     if (kanjiMatches && kanjiMatches[0]) {
       return this.searchByKanji(kanjiMatches, {
-        updateHTMLElements: updateHTMLElements
+        updateHTMLElements: updateHTMLElements,
+        showOnlyMissingKanji: false,
       });
     }
     
