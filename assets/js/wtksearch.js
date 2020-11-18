@@ -110,10 +110,17 @@ class WTKSearch {
 
       // create queries with each alternate RTK replacement (e.g. ricepaddy can be rice field, silage or sun)
       //   TODO the current method is crude and could be improved, but works for now.
-      for (const inputRadical of inputRadicals) {
+      for (let inputRadical of inputRadicals) {
         if (inputRadical === '') { // can also happen for "blue     sun" for example, which won't be trimmed
           continue;
         }
+        // check for number (of occurences) at he end, e.g. 'tree3' or 'jackhammer2' (WK)
+        const lastChar = inputRadical.charAt(inputRadical.length - 1);
+        const occurences = Number.parseInt(lastChar, 10);
+        if (!isNaN(occurences)) {
+          inputRadical = inputRadical.replace(lastChar, ''); // remove occurences for now, add again later
+        }
+
         const radical = inputRadical.toLowerCase();
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(',');
@@ -123,8 +130,12 @@ class WTKSearch {
             for (let i=0; i<rtkQueries.length; i++) {
               for (const keywordList of rtkKeywordLists) {
                 for (const keyword of keywordList) {
-                  rtkQueries[i] += keyword + ' ';
-                  outputRadicals.push(keyword);
+                  let outputKeyword = keyword;
+                  if (!isNaN(occurences)) {
+                    outputKeyword += occurences;
+                  }
+                  rtkQueries[i] += outputKeyword + ' ';
+                  outputRadicals.push(outputKeyword);
                 }
               }
             }
@@ -138,8 +149,12 @@ class WTKSearch {
                 // for each keywordList (list of keywords that can replace one WK radical), create a new query
                 let newQuery = rtkQuery;
                 for (const keyword of keywordList) {
-                  newQuery += keyword + ' ';
-                  outputRadicals.push(keyword);
+                  let outputKeyword = keyword;
+                  if (!isNaN(occurences)) {
+                    outputKeyword += occurences;
+                  }
+                  newQuery += outputKeyword + ' ';
+                  outputRadicals.push(outputKeyword);
                 }
                 newQueries.push(newQuery);
               }
