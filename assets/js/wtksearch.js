@@ -164,8 +164,12 @@ class WTKSearch {
         } else {
           // inputRadical doesn't need to be replaced, just add it to each query
           for (let i=0; i<rtkQueries.length; i++) {
-            rtkQueries[i] += inputRadical + ' ';
-            outputRadicals.push(inputRadical);
+            let outputRadical = inputRadical;
+            if (!isNaN(occurences)) {
+              outputRadical += occurences;
+            }
+            rtkQueries[i] += outputRadical + ' ';
+            outputRadicals.push(outputRadical);
           }
         }
       }
