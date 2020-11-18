@@ -12621,7 +12621,7 @@ var docs =
   id: "2404",
   kanji: "蒜",
   keyword: "garlic",
-  elements: "flowers, two altars, show, altar, two, small",
+  elements: "flowers, two altars, altar2, altar, show, show2, two, small",
 },{
   id: "2405",
   kanji: "蕨",
@@ -13118,7 +13118,7 @@ var docs =
   id: "2523",
   kanji: "栞",
   keyword: "bookmark",
-  elements: "two clotheslines, clothesline, dry, tree",
+  elements: "two clotheslines, clothesline2, clothesline, dry, dry2, tree",
 },{
   id: "2524",
   kanji: "椰",
