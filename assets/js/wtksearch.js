@@ -115,10 +115,14 @@ class WTKSearch {
           continue;
         }
         // check for number (of occurences) at he end, e.g. 'tree3' or 'jackhammer2' (WK)
-        const lastChar = inputRadical.charAt(inputRadical.length - 1);
-        const occurences = Number.parseInt(lastChar, 10);
+        let numberChar = inputRadical.charAt(inputRadical.length - 1);
+        let occurences = Number.parseInt(numberChar, 10);
+        if (isNaN(occurences)) {
+          numberChar = inputRadical.charAt(0);
+          occurences = Number.parseInt(numberChar, 10); // also check prefix number, e.g. '2tree'
+        }
         if (!isNaN(occurences)) {
-          inputRadical = inputRadical.replace(lastChar, ''); // remove occurences for now, add again later
+          inputRadical = inputRadical.replace(numberChar, ''); // remove occurences for now, add again later
         }
 
         const radical = inputRadical.toLowerCase();
