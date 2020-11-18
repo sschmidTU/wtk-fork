@@ -1049,6 +1049,7 @@ class WTKSearch {
       "distress": "quandary", // it's distressed on WK, but maybe someone types distress
       "passthrough": "traffic",
       "flat": "even", // WK radical: peace
+      "damage": "harm,damage", // 害 is damage in WK and harm in RTK, though 損 (loss) can also be damage
       // -----------------------------------------------------------------------------
       //"stick": "stick", // or 'walking stick', but all kanji are just annotated with stick right now.
       "small drop": "valentine",
