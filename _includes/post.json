@@ -5,5 +5,4 @@
   "elements" : "{{ post.elements | remove:'"' }}",
   "elementsWK" : "{{ post.elementsWK }}",
   "keywordWK" : "{{ post.keywordWK }}",
-
 }
