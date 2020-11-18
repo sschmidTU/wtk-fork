@@ -15305,7 +15305,7 @@ for (const doc of docs) {
   }
 }
 // TODO put all the keywordWK directly into the data so we don't have to do this every time.
-//   though this just takes 1ms
+//   though this just takes 1ms. Also it would increase the size of search.js by quite a bit.
 
 // init lunr
 var idx = lunr(function () {
