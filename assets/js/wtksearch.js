@@ -12,6 +12,7 @@ class WTKSearch {
   copyButtonSelectedClass  = 'btnClipLastSelected';
   maxResultSize            = 50;
   lastQuery                = '';
+  lastSearchResults        = {};
   //lastQueries            = []; // currently unused
   lastStrict               = false;
   lastRTK                  = false;
@@ -24,7 +25,7 @@ class WTKSearch {
   searchBarSearch() {
     let query = document.getElementById(this.searchBarId).value;
     this.search(query, {
-      returnResults: false,
+      returnResults: true,
       forceSearch: false,
       updateHTMLElements: true
     });
@@ -322,6 +323,7 @@ class WTKSearch {
     // }
     result.show();
 
+    this.lastSearchResults = searchResults;
     return searchResults;
   }
 
@@ -554,9 +556,22 @@ class WTKSearch {
       return self.searchBarSearch();
     });
     
-    document.getElementById(this.searchBarId).oninput = function() {
+    const searchBar = document.getElementById(this.searchBarId);
+    searchBar.oninput = function() {
       return self.searchBarSearch();
     };
+
+    searchBar.addEventListener("keypress", event => {
+      if (event.isComposing || event.key !== 'Enter') {
+        return;
+      }
+      if (self.lastSearchResults?.list?.length >= 1) {
+        const topKanji = self.lastSearchResults.list[0];
+        if (topKanji) {
+          self.cbCopyButtonClick(topKanji.id, topKanji.kanji);
+        }
+      }
+    });
 
     // checkboxStrict.on('click', function() { // replaces click event completely
     $(checkboxStrictQuery).change(function() {
