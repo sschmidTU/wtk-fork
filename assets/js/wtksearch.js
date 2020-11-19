@@ -13,6 +13,7 @@ class WTKSearch {
   maxResultSize            = 50;
   lastQuery                = '';
   lastSearchResults        = {};
+  resultSelectedByKeyboard = 1;
   //lastQueries            = []; // currently unused
   lastStrict               = false;
   lastRTK                  = false;
@@ -66,12 +67,13 @@ class WTKSearch {
     this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
     this.lastStrict = strictMode;
     this.lastRTK    = rtkMode;
+    this.resultSelectedByKeyboard = 1; // reset
 
     const kanjiMatches = query.match(/[\u4e00-\u9faf\u3400-\u4dbf]/g); // kanji, or CJK chinese-japanese unified ideograph/symbol
     //   /g returns all matches instead of just the first
     // TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
     if (kanjiMatches && kanjiMatches[0]) {
-      return this.searchByKanji(kanjiMatches, {
+      return this.lastSearchResults = this.searchByKanji(kanjiMatches, {
         updateHTMLElements: updateHTMLElements,
         showOnlyMissingKanji: false,
       });
@@ -387,6 +389,7 @@ class WTKSearch {
   } = {}) {
     //let aozoraNumbers = {};
     let kanjisFound = {};
+    let searchResultsList = [];
     for (const doc of docs) {
       for (let i=0; i<kanjiList.length && i<maxKanjiToCheck; i++) {
         const kanji = kanjiList[i];
@@ -415,6 +418,7 @@ class WTKSearch {
         if (kanjisFound[kanji]) {
           if (!showOnlyMissingKanji) {
             const kanjiPage = kanjisFound[kanji];
+            searchResultsList.push(kanjiPage);
             const entry = this.createEntry(kanjiPage);
             this.entries.append(entry);
             this.addCopyFunctionToEntry(kanjiPage);
@@ -431,12 +435,12 @@ class WTKSearch {
         kanjiEntriesShown[kanji] = 1;
       }
     }
-    const kanjisFoundList = Object.keys(kanjisFound);
     const missingCount = missingKanjiList.length;
-    const uniqueKanji = kanjisFoundList.length + missingCount;
-    this.log(this.LogLevels.Debug, `found kanji (unique): ${kanjisFoundList}`);
+    const uniqueKanji = searchResultsList.length + missingCount;
+    this.log(this.LogLevels.Debug, `found kanji (unique):`);
+    this.logDir(this.LogLevels.Debug, searchResultsList);
     this.log(this.LogLevels.Debug, `missing (unique): ${missingKanjiList}`);
-    this.log(this.LogLevels.Debug, `total found (unique): ${kanjisFoundList.length} of ${uniqueKanji} kanji (${kanjiList.length} total)`);
+    this.log(this.LogLevels.Debug, `total found (unique): ${searchResultsList.length} of ${uniqueKanji} kanji (${kanjiList.length} total)`);
     this.log(this.LogLevels.Debug, `total missing (unique): ${missingCount}`);
 
     if (missingCount > 0 && updateHTMLElements) {
@@ -458,14 +462,13 @@ class WTKSearch {
     if (updateHTMLElements) {
       this.result.show();
     }
-    let returnValue = {
-      length: kanjisFoundList.length,
-      list  : kanjisFoundList,
+    return {
+      length: searchResultsList.length,
+      list  : searchResultsList,
     }
-    return returnValue;
   }
 
-  cbCopyButtonClick(id, kanji) {
+  cbCopyButtonClick(id, kanji, stayHighlighted = false) {
     const selectedClass = 'btnClipLastSelected';
     this.focusSearchBar();
 
@@ -485,7 +488,9 @@ class WTKSearch {
       const copyButton = document.getElementById(copyButtonId);
 
       if (copyButton.classList.contains(selectedClass)) {
-        this.dehighlightButton(copyButtonId, id);
+        if (!stayHighlighted) {
+          this.dehighlightButton(copyButtonId, id);
+        }
       } else {
         this.highlightButton(copyButtonId, id);
       }
@@ -562,13 +567,34 @@ class WTKSearch {
     };
 
     searchBar.addEventListener("keypress", event => {
-      if (event.isComposing || event.key !== 'Enter') {
+      if (event.isComposing) {
         return;
       }
-      if (self.lastSearchResults?.list?.length >= 1) {
-        const topKanji = self.lastSearchResults.list[0];
-        if (topKanji) {
-          self.cbCopyButtonClick(topKanji.id, topKanji.kanji);
+      if (event.key === 'Enter') {
+        if (self.lastSearchResults?.list?.length >= 1) {
+          const topKanji = self.lastSearchResults.list[self.resultSelectedByKeyboard - 1];
+          if (topKanji) {
+            self.cbCopyButtonClick(topKanji.id, topKanji.kanji, true);
+          }
+        }
+      }
+    });
+
+    searchBar.addEventListener("keyup", event => {
+      let resultSelectedChanged = false;
+      if (event.key === 'ArrowDown') {
+        self.resultSelectedByKeyboard = Math.min(self.resultSelectedByKeyboard + 1, self.lastSearchResults.length);
+        resultSelectedChanged = true;
+      } else if (event.key === 'ArrowUp') {
+        self.resultSelectedByKeyboard = Math.max(self.resultSelectedByKeyboard - 1, 1);
+        resultSelectedChanged = true;
+      }
+      if (resultSelectedChanged) {
+        const selectedEntry = self.lastSearchResults.list[self.resultSelectedByKeyboard - 1];
+        const buttonId = 'cbCopyButton' + selectedEntry.id;
+        self.highlightButton(buttonId, selectedEntry.id);
+        if (!self.isVocabMode()) {
+          navigator.clipboard.writeText(selectedEntry.kanji);
         }
       }
     });
@@ -1013,6 +1039,7 @@ class WTKSearch {
       "form": "contain",
       "crabtrap": "tremendously",
       "wild": "wreath", // or "laid waste", same thing basically
+      "lifestock": "livestock", // "lifestock" is just a typo ("livestock" is correct), but why not catch it.
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
@@ -1135,6 +1162,12 @@ class WTKSearch {
   log(logLevel, msg) {
     if (logLevel <= this.logLevel) {
       console.log(msg);
+    }
+  }
+
+  logDir(logLevel, object) {
+    if (logLevel <= this.logLevel) {
+      console.dir(object);
     }
   }
 }
