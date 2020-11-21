@@ -720,6 +720,7 @@ class WTKSearch {
       "line up": "lineup",
       "cat pirate": "catpirate",
       "crab trap": "crabtrap",
+      "drop bear": "dropbear",
     }
   }
 
@@ -1062,7 +1063,7 @@ class WTKSearch {
       // --------------------------------------------
       "elf": "daring",
       "coral": "helping hand",
-      "bear": "maestro without baton",
+      "bear": "maestro without baton,maestro",
       "spikes": "row,upside down in a row",
       "pope": "ten&eye",
       "ground": "one,floor,ceiling",
@@ -1134,7 +1135,7 @@ class WTKSearch {
       "leader": "person",
       //"flag": "flag",
       "gambler": "strawman",
-      "drop bear": "maestro",
+      "dropbear": "maestro",
       "hole": "hole", // RTK doesn't differentiate between WK's pi and hole (added stick on top) 
       // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.
       "mama": "chop-seal",
