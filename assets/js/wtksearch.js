@@ -815,7 +815,7 @@ class WTKSearch {
       "tocut": "thanksgiving", //p145, or ten fiesta. "to cut" is not from WK but from Jisho/Phonetic-semantic composition
       "become": "turn into", //p146
       "bar": "float", //p148
-      "plan": "undertake,plan", //p150, only kanji in WK. another kanji named plan in WK
+      //"plan": "undertake,plan", //p150, only kanji in WK. 企 undertake is never used as element though. another kanji 案 named plan in WK
       "coatrack": "mending,zoo", //p152, or zoo, p155. zoo has downward stroke (drop) after the top line
       "yoga": "stretch",
       "clothes": "garment", //p156
