@@ -254,21 +254,20 @@ class WTKSearch {
             }
           }
           if (addToResults) {
-            searchResults.length = searchResults.length + 1;
+            searchResults.length++;
             if (returnResults) {
               searchResults[page.kanji] = page;
             }
 
             // prepend the result to the list of results if keyword match, otherwise append
-            const keywordLower = page.keyword.toLowerCase();
             let prepend = false;
             if (rtkMode && keywordLower === query ||
-              !rtkMode && (outputRadicals.includes(keywordLower) ||
-              inputRadicals.includes(keywordLower))
+              !rtkMode && outputRadicals.includes(keywordLower) ||
+              !rtkMode && inputRadicals.includes(keywordWKLower) ||
+              inputRadicals.includes(keywordLower)
             ) {
-              if (!(page.varOf?.length > 0)) {
-                prepend = true; // if there are no (more common) variants, we can always prepend
-              } else {
+              prepend = true;
+              if (page.varOf?.length > 0) {
                 for (const result of searchResults.list) {
                   if (result.kanji === page.varOf) {
                     // don't prepend if it's a (rarer) variant (TODO this might break if we add variant info to common kanji)
