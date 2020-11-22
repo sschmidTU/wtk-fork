@@ -357,6 +357,7 @@ class WTKSearch {
     if (document.getElementById('search-box').clientWidth < 500) {
       leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
     }
+    const variantOf = page.varOf?.length > 0 ? ` (variant of ${page.varOf})` : '';
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
       // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
@@ -368,7 +369,8 @@ class WTKSearch {
              'class="'+wkButtonClass+'" ' +
             '>WK</a>'+
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
-      '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">'+page.kanji+' '+kanjiName+'</a>'+
+      '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">' +
+            page.kanji+' '+kanjiName+variantOf+'</a>'+
       '  </h3>'+
       '</article></div>'
     ;
@@ -815,7 +817,7 @@ class WTKSearch {
       "tocut": "thanksgiving", //p145, or ten fiesta. "to cut" is not from WK but from Jisho/Phonetic-semantic composition
       "become": "turn into", //p146
       "bar": "float", //p148
-      "plan": "undertake", //p150, only kanji in WK
+      //"plan": "undertake,plan", //p150, only kanji in WK. 企 undertake is never used as element though. another kanji 案 named plan in WK
       "coatrack": "mending,zoo", //p152, or zoo, p155. zoo has downward stroke (drop) after the top line
       "yoga": "stretch",
       "clothes": "garment", //p156
@@ -884,7 +886,7 @@ class WTKSearch {
       "humble": "monkey", //1198
       // "axe": "axe", // axe works better with rtk-search anyways
       "key": "saw", //1221*
-      "wolverine": "broom",//1224*
+      "wolverine": "broom,rake",//1224* // or rake, or sieve, but all sieves also have rake
       "conflict": "contend", //1238
       "buddy": "old boy", //1246
       "rake": "comb", //p290
@@ -892,7 +894,7 @@ class WTKSearch {
       "music": "bend", //1256
       "ladle": "big dipper",
       "task": "utilize", //1265
-      "blackjack": "salad", //lesson32
+      "blackjack": "salad,celery", //lesson32. celery: 寒, 醸, etc
       "longago": "once upon a time", //1268
       "yurt": "caverns,twenty", //p295, twenty is bottom part of caverns / below canopy
       "gladiator": "quarter", //p297
@@ -979,7 +981,7 @@ class WTKSearch {
       "sickle": "animal tracks", // or grab, p228, which is covered by "cleat tree".
       "number": "turn", //2058
       "sake": "doX", //2067
-      "ground kick": "hairpin",
+      //"ground kick": "hairpin", // TODO doesn't make sense to me anymore. this was before i realized kick could be scarf and hairpin
       "grass": "owl",
       "football": "migrating ducks", //p412
       "hill": "mount", //2112
@@ -1005,7 +1007,7 @@ class WTKSearch {
       //"sweet": "sweet,wicker basket", // the sweet keyword in RTK is the same as the sweet primitive
       //"wrap": "wrap",
       "sock": "receive",
-      "together": "strung together",
+      "together": "strung together,together", // 緒 meaning is together on WK
       //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
       //"beans": "beans,table",
       "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
@@ -1118,7 +1120,7 @@ class WTKSearch {
       // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
       "dirt mouth": "lidded crock",
       //"brush": "brush",
-      "kick": "scarf", // the left part can also be plow sometimes
+      "kick": "scarf,hairpin", // the left part can also be plow sometimes. hairpin: bottom part of 畏
       "spirit": "cloak,altar", // cloak has an extra stroke from bottom left to top right in the middle (to the right of the diagonal), altar doesn't.
       "cloud": "rising cloud",
       //"rain": "rain",
