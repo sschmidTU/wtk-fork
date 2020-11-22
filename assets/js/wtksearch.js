@@ -1118,7 +1118,7 @@ class WTKSearch {
       // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
       "dirt mouth": "lidded crock",
       //"brush": "brush",
-      "kick": "scarf", // the left part can also be plow sometimes
+      "kick": "scarf,hairpin", // the left part can also be plow sometimes. hairpin: bottom part of 畏
       "spirit": "cloak,altar", // cloak has an extra stroke from bottom left to top right in the middle (to the right of the diagonal), altar doesn't.
       "cloud": "rising cloud",
       //"rain": "rain",
