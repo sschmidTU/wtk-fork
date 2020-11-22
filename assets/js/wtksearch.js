@@ -168,6 +168,11 @@ class WTKSearch {
             }
             rtkQueries = newQueries;
           }
+          // add a query for kanji names that are also radical names and wouldn't be found otherwise
+          if (inputRadicals.length === 1 && this.get_wk_radicals_that_are_also_kanji_names()[inputRadical]) {
+            outputRadicals.push(inputRadical);
+            rtkQueries.push(inputRadical);
+          }
         } else {
           // inputRadical doesn't need to be replaced, just add it to each query
           for (let i=0; i<rtkQueries.length; i++) {
@@ -744,7 +749,7 @@ class WTKSearch {
       "ricepaddy": "rice field,silage", // or silage, p354. RTK says sun for 更 again
       "net": "eye", // own radical in WK, just horizontal eye in RTK
       "dare": "risk", // not a WK radical, WK: sun + eye
-      "crystal": "sparkle",
+      "crystal": "sparkle", // or crystal kanji, see wk_radicals_that_are_also_kanji_names()
       "products": "goods",
       "bathtub": "spine",
       "world": "generation",
@@ -761,7 +766,7 @@ class WTKSearch {
       "morning": "mist", // p34
       "prison": "bound up", //or bound up small
       //"horns": "horns", // also animal horns in RTK, but i tagged everything with horns as well
-      "child": "child,newborn babe", // conflict: this is the kanji child in WK (former+legs), but there's also the RTK child radical
+      //"child": "child,newborn babe", // conflict: this is the kanji child in WK (former+legs), but there's also the RTK child radical
       "shamisensong": "pop song",
       "chastity": "upright",
       "member": "employee",
@@ -801,7 +806,7 @@ class WTKSearch {
       "roof": "house", //p85
       "letter": "character", //only kanji in WK
       "protect": "guard",
-      "mutual": "mutual,inter", // conflict with other mutual kanji in WK
+      "mutual": "mutual,inter", // or mutually in RTK, but same results. conflict with other mutual kanji in WK
       "omen": "portent", //p104
       "nature": "sort of thing",
       "announce": "revelation",
@@ -1159,6 +1164,92 @@ class WTKSearch {
       "village": "computer", // or ri, p80. but rtk-search has computer instead of ri
       //"tiger": "tiger",
       //"deer": "deer",
+    }
+  }
+
+  // wk radicals that are also kanji names and can't be found if just replaced by wk_replacements
+  //   this list was algorithmically generated (see WTKUtil.find_wk_kanji_unfindable_by_name()).
+  get_wk_radicals_that_are_also_kanji_names() {
+    return {
+      "crystal": 1,
+      "world": 1,
+      "dawn": 1,
+      "prison": 1,
+      "origin": 1,
+      "paragraph": 1,
+      "season": 1,
+      "nose": 1,
+      "call": 1,
+      "fat": 1,
+      "river": 1,
+      "head": 1,
+      "roof": 1,
+      "previous": 1,
+      "hat": 1,
+      "ceremony": 1,
+      "clothes": 1,
+      "point": 1,
+      "gun": 1,
+      "death": 1,
+      "alligator": 1,
+      "easy": 1,
+      "feeling": 1,
+      "certain": 1,
+      "again": 1,
+      "machine": 1,
+      "skin": 1,
+      "servant": 1,
+      "reason": 1,
+      "humble": 1,
+      "key": 1,
+      "box": 1,
+      "task": 1,
+      "give": 1,
+      "body": 1,
+      "come": 1,
+      "mix": 1,
+      "snake": 1,
+      "peace": 1,
+      "treasure": 1,
+      "dance": 1,
+      "womb": 1,
+      "slice": 1,
+      "nurse": 1,
+      "signpost": 1,
+      "spring": 1,
+      "criminal": 1,
+      "surplus": 1,
+      "crab": 1,
+      "cape": 1,
+      "face": 1,
+      "sickle": 1,
+      "number": 1,
+      "sake": 1,
+      "grass": 1,
+      "hill": 1,
+      "umbrella": 1,
+      "end": 1,
+      "tooth": 1,
+      "wing": 1,
+      "teacher": 1,
+      "road": 1,
+      "control": 1,
+      "shop": 1,
+      "tombstone": 1,
+      "bear": 1,
+      "commander": 1,
+      "leaf": 1,
+      "distinction": 1,
+      "window": 1,
+      "boil": 1,
+      "kick": 1,
+      "spirit": 1,
+      "soul": 1,
+      "grave": 1,
+      "water": 1,
+      "charcoal": 1,
+      "long": 1,
+      "village": 1
     }
   }
 
