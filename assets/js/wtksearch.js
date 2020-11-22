@@ -884,7 +884,7 @@ class WTKSearch {
       "humble": "monkey", //1198
       // "axe": "axe", // axe works better with rtk-search anyways
       "key": "saw", //1221*
-      "wolverine": "broom",//1224*
+      "wolverine": "broom,rake",//1224* // or rake, or sieve, but all sieves also have rake
       "conflict": "contend", //1238
       "buddy": "old boy", //1246
       "rake": "comb", //p290
