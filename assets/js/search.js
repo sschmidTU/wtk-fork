@@ -23,8 +23,8 @@ for (const doc of docs) {
 var idx = lunr(function () {
   this.field('kw', 10);
   this.field('kwWK');
-  this.field('elements');
-  this.field('elementsWK');
+  this.field('el');
+  this.field('elWK');
 });
 // add each document to be index
 for(var index in docs) {

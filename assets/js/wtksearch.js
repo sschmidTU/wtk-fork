@@ -231,8 +231,8 @@ class WTKSearch {
             keywordWKLower = wk_kanji[page.kanji].meanings[0].meaning.toLowerCase();
           }
           if (strictMode) {
-            const elements = page.elements.split(',').map((val,_,__) => val.trim().toLowerCase());
-            const elementsWK = page.elementsWK?.split('.').map((val,_,__) => val.trim());
+            const elements = page.el.split(',').map((val,_,__) => val.trim().toLowerCase());
+            const elementsWK = page.elWK?.split('.').map((val,_,__) => val.trim());
             for (const outputRadical of outputRadicals) {
               const trimmedRadical = outputRadical.trim().toLowerCase();
               if (trimmedRadical !== '' && (
