@@ -225,8 +225,8 @@ class WTKSearch {
         //$.each(results, function(key, page) {
         for (const page of results) {
           let addToResults = !strictMode; // if not strict mode, add all results to query
-          const keywordLower = page.keyword.toLowerCase();
-          let keywordWKLower = page.keywordWK?.toLowerCase();
+          const keywordLower = page.kw.toLowerCase();
+          let keywordWKLower = page.kwWK?.toLowerCase();
           if (!rtkMode && wk_kanji && wk_kanji[page.kanji]) {
             keywordWKLower = wk_kanji[page.kanji].meanings[0].meaning.toLowerCase();
           }
@@ -238,8 +238,8 @@ class WTKSearch {
               if (trimmedRadical !== '' && (
                     elements.includes(trimmedRadical) ||
                     !rtkMode && elementsWK?.includes(trimmedRadical) ||
-                    // trimmedRadical === page.keyword || // probably too lenient for multiple radicals. for exact keyword hit, query covers it
-                    // trimmedRadical === page.keywordWK ||
+                    // trimmedRadical === page.kw || // probably too lenient for multiple radicals. for exact keyword hit, query covers it
+                    // trimmedRadical === page.kwWK ||
                     query === keywordLower ||
                     query === keywordWKLower
                   )
@@ -339,10 +339,10 @@ class WTKSearch {
   }
 
   createEntry(page) {
-    let kanjiName = page.keyword;
+    let kanjiName = page.kw;
     // this.rtkMode needs to have been saved before, otherwise use !this.rtkMode()
-    if (!this.rtkMode && page.keywordWK && page.keywordWK.length > 0) {
-      kanjiName = page.keywordWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
+    if (!this.rtkMode && page.kwWK && page.kwWK.length > 0) {
+      kanjiName = page.kwWK; // maybe lower case for consistency and principle, but this makes clear it's the WK name
     }
     let wkButtonTextDecoration = '';
     let wkButtonClass = 'btnWK';

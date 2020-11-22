@@ -10,10 +10,10 @@ var docs =
 ];
 
 
-// add keywordWK info from wk_kanji data (wk_kanji_short_min.js)
+// add keywordWK (kwWK) info from wk_kanji data (wk_kanji_short_min.js)
 for (const doc of docs) {
   if (wk_kanji[doc.kanji]) {
-    doc.keywordWK = wk_kanji[doc.kanji].meanings[0].meaning; // see wk_kanji_short_min.js
+    doc.kwWK = wk_kanji[doc.kanji].meanings[0].meaning; // see wk_kanji_short_min.js
   }
 }
 // TODO put all the keywordWK directly into the data so we don't have to do this every time.
@@ -21,8 +21,8 @@ for (const doc of docs) {
 
 // init lunr
 var idx = lunr(function () {
-  this.field('keyword', 10);
-  this.field('keywordWK');
+  this.field('kw', 10);
+  this.field('kwWK');
   this.field('elements');
   this.field('elementsWK');
 });
