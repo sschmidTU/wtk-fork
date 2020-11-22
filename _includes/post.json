@@ -1,1 +1,1 @@
-{"id":"{{ post.v4 }}","kanji":"{{ post.kanji }}","keyword":"{{ post.keyword | remove:'"' }}","elements":"{{ post.elements | remove:'"' }}","elementsWK":"{{ post.elementsWK }},"varOf":"{{ post.variantOf }}"}
+{"id":"{{ post.v4 }}","kanji":"{{ post.kanji }}","keyword":"{{ post.keyword | remove:'"' }}","elements":"{{ post.elements | remove:'"' }}","elementsWK":"{{ post.elementsWK }}","varOf":"{{ post.variantOf }}"}
