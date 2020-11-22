@@ -1005,7 +1005,7 @@ class WTKSearch {
       //"sweet": "sweet,wicker basket", // the sweet keyword in RTK is the same as the sweet primitive
       //"wrap": "wrap",
       "sock": "receive",
-      "together": "strung together",
+      "together": "strung together,together", // 緒 meaning is together on WK
       //"lack": "lack,yawn", // all kanji up to 2288 have both lack and yawn
       //"beans": "beans,table",
       "stamp": "stamp,seal", // rarely seal, but e.g. for 昂 bottom right part
