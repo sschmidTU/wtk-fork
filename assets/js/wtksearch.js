@@ -892,7 +892,7 @@ class WTKSearch {
       "music": "bend", //1256
       "ladle": "big dipper",
       "task": "utilize", //1265
-      "blackjack": "salad", //lesson32
+      "blackjack": "salad,celery", //lesson32. celery: 寒, 醸, etc
       "longago": "once upon a time", //1268
       "yurt": "caverns,twenty", //p295, twenty is bottom part of caverns / below canopy
       "gladiator": "quarter", //p297
