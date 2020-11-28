@@ -1057,6 +1057,7 @@ class WTKSearch {
       "crabtrap": "tremendously",
       "wild": "wreath", // or "laid waste", same thing basically
       "lifestock": "livestock", // "lifestock" is just a typo ("livestock" is correct), but why not catch it.
+      "gentle": "gentle,tender", // gentle in WK is tender in RTK. tender in RTK is (also) gentle in WK. RTK's tender is also an element.
       // ---------------------------------- ^^ -------- //
       "slideseven": "lock of hair", //p407
       "tombstone": "spool", // p240 (rtk1v4)
