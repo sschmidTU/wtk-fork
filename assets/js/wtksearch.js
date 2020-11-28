@@ -1254,7 +1254,8 @@ class WTKSearch {
       "water": 1,
       "charcoal": 1,
       "long": 1,
-      "village": 1
+      "village": 1,
+      "no": 1,
     }
   }
 
