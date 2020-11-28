@@ -21,24 +21,24 @@ In compound mode, hit Enter (⏎) to add the Kanji to the compound.">By keyboard
 
 
 <div id="search-box">
-	<input type="search" id="searchBar" name="q" placeholder="Search - try blue sun" autocomplete="off" autofocus="autofocus" spellcheck="false">
+	<input type="search" id="searchBar" name="q" placeholder="Search - try blue sun" autocomplete="off" autofocus="autofocus" spellcheck="false" tabindex=1>
 	<button type="submit" id="search-button">Search</button><br>
 
-	<input type="checkbox" id="strictModeCheckbox" name="strictModeCheckbox" value="false">
+	<input type="checkbox" id="strictModeCheckbox" name="strictModeCheckbox" value="false" tabindex=4>
 		<label for="strictModeCheckbox" id="strictModeLabel" title="Only show exact matches for radicals, elements or kanji names">Strict</label>
-	<input type="checkbox" id="rtkModeCheckbox" name ="rtkModeCheckbox" value="false">
+	<input type="checkbox" id="rtkModeCheckbox" name ="rtkModeCheckbox" value="false" tabindex=5>
 		<label for="rtkModeCheckbox" id="rtkModeLabel" title="Search for RTK elements/primitives or kanji names.
 In this mode, the search query is not altered to replace WK 'radical' names with RTK elements.
 RTK Mode is not yet compatible with strict mode.">RTK</label>
-	<input type="checkbox" id="vocabModeCheckbox" name="vocabModeCheckbox" value="false">
+	<input type="checkbox" id="vocabModeCheckbox" name="vocabModeCheckbox" value="false" tabindex=6>
 		<label for="vocabModeCheckbox" id="vocabModeLabel"
 		title="In Compound/Vocab mode, you can choose multiple kanji which will be added together so you can copy all of them to clipboard.
 Just check compound mode, search for individual kanji as usual, and press the clipboard button on kanji you want to add.">Compound</label>
 	<div id="vocabModeDiv" style="display: none">
 		<button class="btnClip" id="cbCopyButtonVocab" title="Copy these kanji to clipboard.
 Search for kanji and click their clipboard button to add them here.">📋</button>
-		<input type="text" id="vocabInput" spellcheck="false" placeholder="Add Kanji below with 📋">
-		<button class="deleteText" id="deleteVocabButton" title="Delete the vocab on the left (make the box blank again)">×</button>
+		<input type="text" id="vocabInput" spellcheck="false" placeholder="Add Kanji below with 📋" tabindex=2>
+		<button class="deleteText" id="deleteVocabButton" title="Delete the vocab on the left (make the box blank again)" tabindex=3>×</button>
 	</div>
 	
 	<div id="search-results" style="display: none;">
@@ -53,7 +53,7 @@ Search for kanji and click their clipboard button to add them here.">📋</butto
 </nav>
 
 <div id="foot">
-    <p>@ 2020 <a href="https://github.com/sschmidTU/mr-kanji-search-wtk" id="wtkVersionFooterElement">wtk-search v1.3.5.10-offline</a> by <a href="https://community.wanikani.com/t/multi-radical-kanji-search-web/46781">Saimin@WK</a>, based on rtk-search
+    <p>@ 2020 <a href="https://github.com/sschmidTU/mr-kanji-search-wtk" id="wtkVersionFooterElement">wtk-search v1.3.5.11-offline</a> by <a href="https://community.wanikani.com/t/multi-radical-kanji-search-web/46781">Saimin@WK</a>, based on rtk-search
 <br>3050 Kanji searchable (latest: <a id='btnSearchLatestKanji'>躙</a>)</p>
 
 <script src="assets/js/jquery.min.js"></script> 
