@@ -646,7 +646,7 @@ class WTKSearch {
       const compound = document.getElementById(self.vocabInputQuery).value;
       navigator.clipboard.writeText(compound);
       self.highlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
-      self.focusSearchBar();
+      self.focusElement(self.vocabInputQuery);
     }
 
     if (params.strict === '1' || params.strict === 'true' && !this.isStrictMode()) {
@@ -676,7 +676,11 @@ class WTKSearch {
   }
 
   focusSearchBar() {
-    document.getElementById(this.searchBarId).focus({preventScroll: true});
+    this.focusElement(this.searchBarId);
+  }
+
+  focusElement(elementId) {
+    document.getElementById(elementId).focus({preventScroll: true});
   }
 
   getUrlParameters() {
