@@ -97,16 +97,15 @@ class WTKSearch {
     //}
 
     // replace spaces in WK radical names
-    const space_replacements = this.get_space_replacements();
     if (!rtkMode) { // only do pre-replacements in WK mode
+      const space_replacements = this.get_space_replacements();
       for (let [key, value] of Object.entries(space_replacements)) {
         query = query.replace(key, value);
       }
     }
 
     // mapping from WK radicals to RTK elements. (format of the values is comma separated, no spaces between values)
-    // WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
-    
+    //   WK radical input should be without spaces inside radicals, so "ricepaddy" instead of "rice paddy".
     let rtkQueries = [];
     let outputRadicals = [];
     let inputRadicals = [];
@@ -294,7 +293,7 @@ class WTKSearch {
               }
             }
 
-            if (!updateHTMLElements || entriesAdded >= this.maxResultSize) {
+            if (!prepend && (!updateHTMLElements || entriesAdded >= this.maxResultSize)) {
               // performance: don't add more than maxResultSize (50) matches (divs) to entries 
               continue;
             }
