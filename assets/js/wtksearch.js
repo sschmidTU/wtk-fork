@@ -28,7 +28,8 @@ class WTKSearch {
     this.search(query, {
       returnResults: true,
       forceSearch: false,
-      updateHTMLElements: true
+      updateHTMLElements: true,
+      allowRepeatedQueries: false,
     });
   }
 
@@ -49,7 +50,8 @@ class WTKSearch {
   search(query, {
     returnResults = true,
     forceSearch = true,
-    updateHTMLElements = false
+    updateHTMLElements = false,
+    allowRepeatedQueries = true,
   } = {}) {
     if (!query?.trim) {
       return { length: 0 };
@@ -61,7 +63,8 @@ class WTKSearch {
     const rtkMode = this.rtkMode = this.isRtkMode(); // used multiple times
     const strictMode = this.strictMode = !rtkMode && this.isStrictMode(); // TODO fix strict mode for rtk mode, currently disabled in rtk mode.
 
-    if (!forceSearch && query === this.lastQuery && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
+    const maybeCancelSearch = !forceSearch && !allowRepeatedQueries && query === this.lastQuery;
+    if (maybeCancelSearch && strictMode === this.lastStrict && rtkMode === this.lastRTK) {
       return { length: 0 };
     }
     this.lastQuery = query; // also needs to be applied if query.length <= 2, e.g. inx -> in -> inx
@@ -69,9 +72,10 @@ class WTKSearch {
     this.lastRTK    = rtkMode;
     this.resultSelectedByKeyboard = 1; // reset
 
-    const kanjiMatches = query.match(/[\u4e00-\u9faf\u3400-\u4dbf]/g); // kanji, or CJK chinese-japanese unified ideograph/symbol
-    //   /g returns all matches instead of just the first
-    // TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
+    let kanjiMatches = query.match(/[\u4e00-\u9faf\u3400-\u4dbf\u3005]/g); // /g returns all matches instead of just the first
+    // kanji, or CJK chinese-japanese unified ideograph/symbol
+    //   \u3005 is 々, which is not considered a kanji by some sources, but it is by WK.
+    //   TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
     if (kanjiMatches && kanjiMatches[0]) {
       return this.lastSearchResults = this.searchByKanji(kanjiMatches, {
         updateHTMLElements: updateHTMLElements,
@@ -705,7 +709,7 @@ class WTKSearch {
 
   is_short_wk_keyword(query) {
     const small_wk_keywords = [
-      'i', 'he', 'pi', 'go', 'do'
+      'i', 'he', 'pi', 'go', 'do', 'no'
     ]
     return small_wk_keywords.includes(query);
   }
@@ -1254,8 +1258,7 @@ class WTKSearch {
       "water": 1,
       "charcoal": 1,
       "long": 1,
-      "village": 1,
-      "no": 1,
+      "village": 1
     }
   }
 
@@ -1280,6 +1283,7 @@ class WTKSearch {
     }
   }
 }
+
 
 $(document).ready(function() {
   const wtk = new WTKSearch();
