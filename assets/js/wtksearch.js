@@ -745,6 +745,25 @@ class WTKSearch {
       "cat pirate": "catpirate",
       "crab trap": "crabtrap",
       "drop bear": "dropbear",
+      // kanji names that wouldn't be found because parts of them are replaced:
+      "long time": "longtime",
+      "ordinal number prefix": "ordinalnumberprefix",
+      "hot water": "hotwater",
+      "public building": "publicbuilding",
+      "flat objects counter": "flatobjectscounter",
+      "give birth": "givebirth",
+      "come to an end": "cometoanend",
+      "writing brush": "writingbrush",
+      "play music": "playmusic",
+      "send back": "sendback",
+      "small animal": "smallanimal",
+      "conical hat": "conicalhat",
+      "lantern festival": "lanternfestival",
+      "head of plant": "headofplant",
+      "front door": "frontdoor",
+      "horse chestnut": "horsechestnut",
+      "long for": "longfor",
+      "give up": "giveup",
     }
   }
 
@@ -1173,6 +1192,26 @@ class WTKSearch {
       "village": "computer", // or ri, p80. but rtk-search has computer instead of ri
       //"tiger": "tiger",
       //"deer": "deer",
+      //
+      // kanji names that wouldn't be found because parts of them are replaced:
+      "longtime": "long time",
+      "ordinalnumberprefix": "ordinal number prefix",
+      "hotwater": "hot water",
+      "publicbuilding": "public building",
+      "flatobjectscounter": "flat objects counter",
+      "givebirth": "give birth",
+      "cometoanend": "come to an end",
+      "writingbrush": "writing brush",
+      "playmusic": "play music",
+      "sendback": "send back",
+      "smallanimal": "small animal",
+      "conicalhat": "conical hat",
+      "lanternfestival": "lantern festival",
+      "headofplant": "head of plant",
+      "frontdoor": "front door",
+      "horsechestnut": "horse chestnut",
+      "longfor": "long for",
+      "giveup": "give up",
     }
   }
 
@@ -1290,4 +1329,6 @@ $(document).ready(function() {
 
   wtk.setupHTMLElements();
   wtk.logLevel = wtk.LogLevels.Info; // use LogLevels.Silent to silence console.logs
+
+  //wtk.find_unfindable_WK_Kanji(wtk, true);
 });
