@@ -1,7 +1,9 @@
 class WTKUtil {
     // @speed: this is super slow and unoptimized, algorithmically speaking, but over 2055 entries fast enough.
-    findUnfindableKanji(wtk, printUnifiedLogOutput = true) {
-      // 
+    find_unfindable_WK_Kanji(wtk, printUnifiedLogOutput = true) {
+      const oldLogLevel = wtk.logLevel;
+      wtk.logLevel = wtk.LogLevels.Silent;
+  
       let notFound = {};
       let notFoundString = '';
       let logOutput = '';
@@ -14,12 +16,15 @@ class WTKUtil {
           console.log(logMsg);
           logOutput += logMsg + '\n';
           notFound[meaning] = 1;
-          notFoundString
+          notFoundString += page.kanji;
         }
       }
       if (printUnifiedLogOutput) {
         let jsonString = JSON.stringify(notFound, null, 2); // 2: pretty print
         console.log(jsonString + '\n' + logOutput);
+        console.log('not found concatenated: ' + notFoundString);
       }
+      
+      wtk.logLevel = oldLogLevel;
     }
 }
