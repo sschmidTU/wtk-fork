@@ -1186,7 +1186,7 @@ class WTKSearch {
       //"good": "good alt",
       "helicopter": "old west",
       "charcoal": "pup tent",
-      "long": "mane&hairpin",
+      "long": "long,mane&hairpin",
       "splinter": "talking cricket",
       "village": "computer", // or ri, p80. but rtk-search has computer instead of ri
       //"tiger": "tiger",
