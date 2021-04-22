@@ -135,6 +135,12 @@ class WTKSearch {
         if (wk_replacements[radical]) { // this is a WK radical that needs to be replaced
           const rtkVersions = wk_replacements[radical].split(',');
           const rtkKeywordLists = this.getRtkKeywordLists(rtkVersions);
+
+          // add a keyword/query for kanji names that are also radical names and wouldn't be found otherwise
+          if (this.get_wk_radicals_that_are_also_kanji_names()[inputRadical]) {
+            rtkKeywordLists.push([inputRadical]);
+          }
+          
           if (rtkKeywordLists.length === 1) {
             // if we only have one possible replacement, just add it to each query
             for (let i=0; i<rtkQueries.length; i++) {
@@ -170,11 +176,6 @@ class WTKSearch {
               }
             }
             rtkQueries = newQueries;
-          }
-          // add a query for kanji names that are also radical names and wouldn't be found otherwise
-          if (inputRadicals.length === 1 && this.get_wk_radicals_that_are_also_kanji_names()[inputRadical]) {
-            outputRadicals.push(inputRadical);
-            rtkQueries.push(inputRadical);
           }
         } else {
           // inputRadical doesn't need to be replaced, just add it to each query
@@ -1186,7 +1187,7 @@ class WTKSearch {
       //"good": "good alt",
       "helicopter": "old west",
       "charcoal": "pup tent",
-      "long": "mane&hairpin",
+      "long": "mane&hairpin", // also long, see get_wk_radicals_that_are_also_kanji_names()
       "splinter": "talking cricket",
       "village": "computer", // or ri, p80. but rtk-search has computer instead of ri
       //"tiger": "tiger",
