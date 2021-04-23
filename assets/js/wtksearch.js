@@ -821,6 +821,7 @@ class WTKSearch {
       "small": "little", // triceratops and small are the same in RTK: little (or small)
       "big": "large",
       "sunlight": "ray", //p61
+      "light": "ray", // convenience replacement, as "light" doesn't exist, and one may remember it instead of "sunlight" for 光
       "fat": "plump",
       "container": "utensil", //wk: kanji only
       "strange": "exquisite", //wk: kanji only
