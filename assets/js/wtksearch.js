@@ -888,7 +888,7 @@ class WTKSearch {
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise,turtleWK", //p195
       "pig": "sow",
-      "wings": "not", //p1128 or piglets, p197
+      "wings": "not, piglets, piglet's tail", //p1128. piglets: p197. seems like piglet's tail and piglets have subtle difference
       "easy": "piggy bank", //p197
       "hard": "harden", //p206
       "mouth": "mouth,pent in", //pent in p206
