@@ -889,6 +889,7 @@ class WTKSearch {
       "turtle": "tortoise,turtleWK", //p195
       "pig": "sow",
       "wing": "knot,piglets,piglet's tail", //p1128. piglets: p197. seems like piglet's tail and piglets have subtle difference
+      "wings": "knot,piglets,piglet's tail", // synonym to wing, for convenience
       "easy": "piggy bank", //p197
       "hard": "harden", //p206
       "mouth": "mouth,pent in", //pent in p206
