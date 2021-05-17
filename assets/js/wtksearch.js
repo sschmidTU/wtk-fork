@@ -888,7 +888,7 @@ class WTKSearch {
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise,turtleWK", //p195
       "pig": "sow",
-      "wings": "not,piglets,piglet's tail", //p1128. piglets: p197. seems like piglet's tail and piglets have subtle difference
+      "wing": "knot,piglets,piglet's tail", //p1128. piglets: p197. seems like piglet's tail and piglets have subtle difference
       "easy": "piggy bank", //p197
       "hard": "harden", //p206
       "mouth": "mouth,pent in", //pent in p206
@@ -1044,7 +1044,6 @@ class WTKSearch {
       "end": "extremity", // officially jet in WK, but makes sense to distinguish from not yet
       "gate": "gates",
       "tooth": "teeth",
-      "wing": "knot",
       "fix": "straightaway",
       //"dirt": "soil,dirt", // WK dirt is primarily soil in RTK, but up to 2190 all kanji with soil also have dirt
       //"sweet": "sweet,wicker basket", // the sweet keyword in RTK is the same as the sweet primitive
