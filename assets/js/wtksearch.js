@@ -312,7 +312,9 @@ class WTKSearch {
       if (!strictMode) {
         matches = results.length;
       }
-    } // end for query
+    } // end if results
+
+    // log and display results
     const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
     this.log(this.LogLevels.Info,
       '  matches: ' + matches + (entriesAdded === this.maxResultSize ? maxResultsReachedString : ''));
@@ -504,6 +506,7 @@ class WTKSearch {
       this.highlightButton(this.vocabCopyButtonQuery, this.vocabCopyButtonQuery);
       return;
     } else {
+      // not vocab mode: copy single kanji to clipboard, highlight button
       navigator.clipboard.writeText(kanji);
       const copyButtonId = 'cbCopyButton' + id;
       const copyButton = document.getElementById(copyButtonId);
@@ -577,7 +580,7 @@ class WTKSearch {
     const checkboxVocabQuery = this.checkboxVocabQuery;
     const params = this.getUrlParameters();
 
-    const self = this; // this isn't available in anonymous functions
+    const self = this; // `this` isn't available in anonymous functions
     $('#search-button').on('click', function() {
       return self.searchBarSearch();
     });
