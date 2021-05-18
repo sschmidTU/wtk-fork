@@ -1333,7 +1333,7 @@ $(document).ready(function() {
   const wtk = new WTKSearch();
 
   wtk.setupHTMLElements();
-  wtk.logLevel = wtk.LogLevels.Info; // use LogLevels.Silent to silence console.logs
+  wtk.logLevel = wtk.LogLevels.Info; // use LogLevels.Silent to silence console.logs or LogLevels.Debug for detailed reports
 
   //wtk.find_unfindable_WK_Kanji(wtk, true);
 });
