@@ -35,6 +35,6 @@ also, extended dataset: rtk-search only had ~2200 of ~3000 Kanji indexed/searcha
 The website uses [Jekyll](https://jekyllrb.com/)/[Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) (scripts) in html, css and js files to generate code/HTML.<br>
 The search indexer is [lunr](https://lunrjs.com/).
 
-The kanji's elements (radicals) are internally catalogued (and in the end searched for) by the RTK names.
+The kanji's elements (radicals) are internally catalogued by the RTK names, which in the end are used for searching. (in WK mode, WK names are converted to RTK names)
 
 Contributions and feedback welcome!
