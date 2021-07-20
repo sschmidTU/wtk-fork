@@ -137,6 +137,7 @@ class WTKSearch {
           const rtkKeywordLists = this.getRtkKeywordLists(rtkVersions);
 
           // add a keyword/query for kanji names that are also radical names and wouldn't be found otherwise
+          //  e.g. "long" in "bow long" should search not only "bow mane hairpin" but also "bow long".
           if (this.get_wk_radicals_that_are_also_kanji_names()[inputRadical]) {
             rtkKeywordLists.push([inputRadical]);
           }
@@ -311,7 +312,9 @@ class WTKSearch {
       if (!strictMode) {
         matches = results.length;
       }
-    } // end for query
+    } // end if results
+
+    // log and display results
     const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
     this.log(this.LogLevels.Info,
       '  matches: ' + matches + (entriesAdded === this.maxResultSize ? maxResultsReachedString : ''));
@@ -503,6 +506,7 @@ class WTKSearch {
       this.highlightButton(this.vocabCopyButtonQuery, this.vocabCopyButtonQuery);
       return;
     } else {
+      // not vocab mode: copy single kanji to clipboard, highlight button
       navigator.clipboard.writeText(kanji);
       const copyButtonId = 'cbCopyButton' + id;
       const copyButton = document.getElementById(copyButtonId);
@@ -576,7 +580,7 @@ class WTKSearch {
     const checkboxVocabQuery = this.checkboxVocabQuery;
     const params = this.getUrlParameters();
 
-    const self = this; // this isn't available in anonymous functions
+    const self = this; // `this` isn't available in anonymous functions
     $('#search-button').on('click', function() {
       return self.searchBarSearch();
     });
@@ -820,6 +824,7 @@ class WTKSearch {
       "small": "little", // triceratops and small are the same in RTK: little (or small)
       "big": "large",
       "sunlight": "ray", //p61
+      "light": "ray", // convenience replacement, as "light" doesn't exist, and one may remember it instead of "sunlight" for 光
       "fat": "plump",
       "container": "utensil", //wk: kanji only
       "strange": "exquisite", //wk: kanji only
@@ -886,7 +891,8 @@ class WTKSearch {
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise,turtleWK", //p195
       "pig": "sow",
-      "wings": "not", //p1128 or piglets, p197
+      "wing": "knot,piglets,piglet's tail", //p1128. piglets: p197. seems like piglet's tail and piglets have subtle difference
+      "wings": "knot,piglets,piglet's tail", // synonym to wing, for convenience
       "easy": "piggy bank", //p197
       "hard": "harden", //p206
       "mouth": "mouth,pent in", //pent in p206
@@ -1042,7 +1048,6 @@ class WTKSearch {
       "end": "extremity", // officially jet in WK, but makes sense to distinguish from not yet
       "gate": "gates",
       "tooth": "teeth",
-      "wing": "knot",
       "fix": "straightaway",
       //"dirt": "soil,dirt", // WK dirt is primarily soil in RTK, but up to 2190 all kanji with soil also have dirt
       //"sweet": "sweet,wicker basket", // the sweet keyword in RTK is the same as the sweet primitive
@@ -1328,7 +1333,7 @@ $(document).ready(function() {
   const wtk = new WTKSearch();
 
   wtk.setupHTMLElements();
-  wtk.logLevel = wtk.LogLevels.Info; // use LogLevels.Silent to silence console.logs
+  wtk.logLevel = wtk.LogLevels.Info; // use LogLevels.Silent to silence console.logs or LogLevels.Debug for detailed reports
 
   //wtk.find_unfindable_WK_Kanji(wtk, true);
 });
