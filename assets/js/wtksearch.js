@@ -72,10 +72,8 @@ class WTKSearch {
     this.lastRTK    = rtkMode;
     this.resultSelectedByKeyboard = 1; // reset
 
-    let kanjiMatches = query.match(/[\u4e00-\u9faf\u3400-\u4dbf\u3005]/g); // /g returns all matches instead of just the first
-    // kanji, or CJK chinese-japanese unified ideograph/symbol
-    //   \u3005 is 々, which is not considered a kanji by some sources, but it is by WK.
-    //   TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
+    let kanjiMatches = this.kanjiMatches(query);
+    // TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
     if (kanjiMatches && kanjiMatches[0]) {
       return this.lastSearchResults = this.searchByKanji(kanjiMatches, {
         updateHTMLElements: updateHTMLElements,
@@ -447,13 +445,15 @@ class WTKSearch {
             this.addCopyFunctionToEntry(kanjiPage);
           }
         } else {
-          missingKanjiList += kanji;
-          if (updateHTMLElements) {
-            this.entries.append(
-              '<h3><i> The kanji ' + kanji + ' is not yet in our dataset.</i></h3>'
-            );
+          if (this.kanjiMatches(kanji)) { // check that this is actually a kanji and not の or sth. not kanji: returns null
+            missingKanjiList += kanji;
+            if (updateHTMLElements) {
+              this.entries.append(
+                '<h3><i> The kanji ' + kanji + ' is not yet in our dataset.</i></h3>'
+              );
+            }
+            //console.log(`${kanji} (aozora #${aozoraNumbers[kanji]} not in dataset`);
           }
-          //console.log(`${kanji} (aozora #${aozoraNumbers[kanji]} not in dataset`);
         }
         kanjiEntriesShown[kanji] = 1;
       }
@@ -489,6 +489,16 @@ class WTKSearch {
       length: searchResultsList.length,
       list  : searchResultsList,
     }
+  }
+
+  /** Returns a list of kanji contained in the query string, or null if there are none. */
+  kanjiMatches(query) {
+    const kanjiMatches = query.match(/[\u4e00-\u9faf\u3400-\u4dbf\u3005]/g); // /g returns all matches instead of just the first
+    // kanji, or CJK chinese-japanese unified ideograph/symbol
+    //   \u3005 is 々, which is not considered a kanji by some sources, but it is by WK.
+    //   TODO filter chinese kanji that aren't used in japanese and display a message that it's chinese
+    return kanjiMatches;
+    //return kanjiMatches ? kanjiMatches : []; // for no matches, match() returns null. empty list may be nicer in this case
   }
 
   cbCopyButtonClick(id, kanji, stayHighlighted = false) {
