@@ -1199,7 +1199,7 @@ class WTKSearch {
       // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.
       "mama": "chop-seal",
       "limit": "silver",
-      //"good": "good alt",
+      "good": "good,halo", // good = 良, halo = left part of 朗, on the left of a kanji, missing one stroke on the bottom
       "helicopter": "old west",
       "charcoal": "pup tent",
       "long": "mane&hairpin", // also long, see get_wk_radicals_that_are_also_kanji_names()
