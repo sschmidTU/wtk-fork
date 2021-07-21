@@ -1170,7 +1170,7 @@ class WTKSearch {
       //"flower": "flower",
       "greenhouse": "graveyard",
       "icicle": "turtle",
-      "animal": "pack of dogs",
+      "animal": "pack of wild dogs", // some koohii users write just 'pack of dogs', which also works with lunr btw
       "slide dirt": "cow",
       "hat ground": "meeting",
       "deathstar": "meeting&moon&saber", // or meeting of butchers. or meeting moon flood, but unnecessary for now. or convoy
