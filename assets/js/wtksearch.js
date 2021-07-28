@@ -304,6 +304,7 @@ class WTKSearch {
               entries.append(newEntry);
             }
             this.addCopyFunctionToEntry(page);
+            this.addCopyFunctionToTextKanji(page);
             entriesAdded++;
           }
       } // end for each page
@@ -376,8 +377,8 @@ class WTKSearch {
     if (document.getElementById('search-box').clientWidth < 500) {
       leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
     }
-    const variantOf = page.var?.length > 0 ? ` (variant of ${page.var})` : ''; // TODO make clickable
-    const alternateFor = page.alt?.length > 0 ? ` (alternate for ${page.alt})` : '';
+    const variantOf = page.var?.length > 0 ? ` (variant of <a id="btnSearchKanji${page.var}">${page.var}</a>)` : '';
+    const alternateFor = page.alt?.length > 0 ? ` (alternate for <a id="btnSearchKanji${page.alt}">${page.alt}</a>)` : '';
 
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
@@ -402,6 +403,21 @@ class WTKSearch {
     const self = this;
     document.getElementById('cbCopyButton'+page.id).onclick = function() {
       self.cbCopyButtonClick(page.id, page.kanji);
+    }
+  }
+
+  addCopyFunctionToTextKanji(page) {
+    const self = this;
+    const buttonSources = [page.alt,page.var]; // possible clickable kanji
+    for (const buttonSource of buttonSources) {
+      const aElem = document.getElementById('btnSearchKanji' + buttonSource);
+      if (aElem) { // does this kanji link actually exist?
+        aElem.onclick = function() {
+          self.searchByKanji([buttonSource], {
+            updateHTMLElements: true
+          });
+        };
+      }
     }
   }
 
@@ -445,6 +461,7 @@ class WTKSearch {
             const entry = this.createEntry(kanjiPage);
             this.entries.append(entry);
             this.addCopyFunctionToEntry(kanjiPage);
+            this.addCopyFunctionToTextKanji(kanjiPage);
           }
         } else {
           if (this.kanjiMatches(kanji)) { // check that this is actually a kanji and not の or sth. not kanji: returns null
