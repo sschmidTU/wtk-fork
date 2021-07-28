@@ -275,9 +275,9 @@ class WTKSearch {
               inputRadicals.includes(keywordLower)
             ) {
               prepend = true;
-              if (page.varOf?.length > 0) {
+              if (page.var?.length > 0) { // variant of another kanji
                 for (const result of searchResults.list) {
-                  if (result.kanji === page.varOf) {
+                  if (result.kanji === page.var) {
                     // don't prepend if it's a (rarer) variant (TODO this might break if we add variant info to common kanji)
                     prepend = false;
                     break;
@@ -376,7 +376,9 @@ class WTKSearch {
     if (document.getElementById('search-box').clientWidth < 500) {
       leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
     }
-    const variantOf = page.varOf?.length > 0 ? ` (variant of ${page.varOf})` : '';
+    const variantOf = page.var?.length > 0 ? ` (variant of ${page.var})` : ''; // TODO make clickable
+    const alternateFor = page.alt?.length > 0 ? ` (alternate for ${page.alt})` : '';
+
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
       // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
@@ -389,7 +391,7 @@ class WTKSearch {
             '>WK</a>'+
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
       '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">' +
-            page.kanji+' '+kanjiName+variantOf+'</a>'+
+            page.kanji+' '+kanjiName+'</a>'+variantOf+alternateFor+
       '  </h3>'+
       '</article></div>'
     ;
