@@ -46,9 +46,10 @@
         let processedItems = {};
         for (const item of items) {
             const data = item.data;
+            const kanji = data.characters;
             const newItem = {
-                id: data.id,
-                kanji: data.characters,
+                //id: data.id, // not used for now, and apparently empty
+                //kanji: kanji, // unnecessary, the key in processedItems is the kanji.
                 level: data.level,
                 meanings: data.meanings,
                 //readings: data.readings,
@@ -56,7 +57,7 @@
 			for (const meaning of newItem.meanings) {
 				delete meaning.accepted_answer; // we don't need this
 			}
-            processedItems[newItem.kanji] = newItem;
+            processedItems[kanji] = newItem;
         }
         console.log('processed items: ');
         const stringified = JSON.stringify(processedItems)
