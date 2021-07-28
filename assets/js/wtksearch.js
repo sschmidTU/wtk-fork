@@ -28,7 +28,6 @@ class WTKSearch {
   searchBarSearch() {
     let query = document.getElementById(this.searchBarId).value;
     this.search(query, {
-      returnResults: true,
       forceSearch: false,
       updateHTMLElements: true,
       allowRepeatedQueries: false,
@@ -38,19 +37,16 @@ class WTKSearch {
   /** Search for kanji using Wanikani or RTK names for elements/Kanji.
    * 
    * @param {string} query a search query (string), using Wanikani radicals or RTK names (elements/primitives/kanji names) 
-   * @param {boolean} returnResults whether the return value of this function should contain the length and
    * @param {boolean} forceSearch whether to force executing the search, or, if false, cancel the search if it was searched before, the query is too short etc.
    * @param {boolean} updateHTMLElements whether to update
    * @returns {Object} object with the properties:
    *  length: number of results
-   *  list: ordered list of results. the first one is the top one on the website.
+   *  list: ordered list of results. the first one is the top result.
    *  $kanji: $page
    *   where the page for each page has the properties id, kanji (same as $kanji), keyword,
    *   keywordWK (optional), elements, elementsWK (optional).
-   *   If !returnResults, only the length property will be included in the returned object.
    */
   search(query, {
-    returnResults = true,
     forceSearch = true,
     updateHTMLElements = false,
     allowRepeatedQueries = true,
@@ -265,9 +261,7 @@ class WTKSearch {
           }
           if (addToResults) {
             searchResults.length++;
-            if (returnResults) {
-              searchResults[page.kanji] = page;
-            }
+            searchResults[page.kanji] = page;
 
             // prepend the result to the list of results if keyword match, otherwise append
             let prepend = false;
@@ -287,12 +281,10 @@ class WTKSearch {
                 }
               }
             }
-            if (returnResults) {
-              if (prepend) {
-                searchResults.list.unshift(page);
-              } else {
-                searchResults.list.push(page);
-              }
+            if (prepend) {
+              searchResults.list.unshift(page);
+            } else {
+              searchResults.list.push(page);
             }
 
             if (!prepend && (!updateHTMLElements || entriesAdded >= this.maxResultSize)) {
