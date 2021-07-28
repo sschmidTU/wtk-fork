@@ -396,9 +396,6 @@ class WTKSearch {
   addCopyFunctionToEntry(page) {
     const self = this;
     document.getElementById('cbCopyButton'+page.id).onclick = function() {
-      if (self.dragged) {
-        return;
-      }
       self.cbCopyButtonClick(page.id, page.kanji);
     }
   }
