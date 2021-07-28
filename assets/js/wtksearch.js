@@ -1,15 +1,4 @@
 class WTKSearch {
-  searchBarId              = 'searchBar';
-  checkboxStrictQuery      = 'input[name=strictModeCheckbox]';
-  checkboxRTKQuery         = 'input[name=rtkModeCheckbox]';
-  checkboxStrictLabelQuery = '#strictModeLabel';
-  checkboxVocabQuery       = 'input[name=vocabModeCheckbox'; // also called compound mode
-  vocabInputQuery          = 'vocabInput';
-  vocabCopyButtonQuery     = 'cbCopyButtonVocab';
-  deleteVocabButtonQuery   = 'deleteVocabButton';
-  versionElementQuery      = 'wtkVersionFooterElement';
-  copyButtonsHighlighted   = {};
-  copyButtonSelectedClass  = 'btnClipLastSelected';
   maxResultSize            = 50;
   lastQuery                = '';
   lastSearchResults        = {};
@@ -20,8 +9,21 @@ class WTKSearch {
   logLevel                 = 0; // silent by default
   rtkMode                  = false; // save isRtkMode() for a while so it doesn't have to be called every time
   strictMode               = false;
+  // HTML things
   result                   = null; // save $('#search-results')
   entries                  = null; // save $('#search-results .entries')
+  copyButtonsHighlighted   = {};
+  copyButtonSelectedClass  = 'btnClipLastSelected';
+  searchBarId              = 'searchBar';
+  checkboxStrictQuery      = 'input[name=strictModeCheckbox]';
+  checkboxRTKQuery         = 'input[name=rtkModeCheckbox]';
+  checkboxStrictLabelQuery = '#strictModeLabel';
+  checkboxVocabQuery       = 'input[name=vocabModeCheckbox'; // also called compound mode
+  vocabInputQuery          = 'vocabInput';
+  vocabCopyButtonQuery     = 'cbCopyButtonVocab';
+  deleteVocabButtonQuery   = 'deleteVocabButton';
+  versionElementQuery      = 'wtkVersionFooterElement';
+  dragged                  = false; // has an event listener. to check if it was a click or drag
 
   searchBarSearch() {
     let query = document.getElementById(this.searchBarId).value;
@@ -402,6 +404,9 @@ class WTKSearch {
   addCopyFunctionToEntry(page) {
     const self = this;
     document.getElementById('cbCopyButton'+page.id).onclick = function() {
+      if (self.dragged) {
+        return;
+      }
       self.cbCopyButtonClick(page.id, page.kanji);
     }
   }
@@ -413,6 +418,9 @@ class WTKSearch {
       const aElem = document.getElementById('btnSearchKanji' + buttonSource);
       if (aElem) { // does this kanji link actually exist?
         aElem.onclick = function() {
+          if (self.dragged) {
+            return;
+          }
           self.searchByKanji([buttonSource], {
             updateHTMLElements: true
           });
@@ -710,6 +718,10 @@ class WTKSearch {
         //self.searchByKanji(btnLatestKanji.text, { updateHTMLElements: true });
       };
     }
+
+    // set up mouse drag check to prevent drag-selecting clicking on a kanji when you just want to copy it
+    window.addEventListener('mousedown', function () { self.dragged = false });
+    window.addEventListener('mousemove', function () { self.dragged = true });
   }
 
   focusSearchBar() {
