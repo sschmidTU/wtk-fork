@@ -377,7 +377,7 @@ class WTKSearch {
       leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
     }
     const variantOf = page.var?.length > 0 ? ` (variant of ${page.var})` : ''; // TODO make clickable
-    const alternateFor = page.alt?.length > 0 ? ` (variant of ${page.alt}` : '';
+    const alternateFor = page.alt?.length > 0 ? ` (alternate for ${page.alt})` : '';
 
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
