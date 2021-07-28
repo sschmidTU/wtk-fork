@@ -1,4 +1,4 @@
 {"id":"{{ post.v4 }}","kanji":"{{ post.kanji }}","kw":"{{ post.keyword | remove:'"' }}","kwWK":"{{ post.keywordWK }}","el":"{{ post.elements | remove:'"' }}"{%
-if post.elementsWK.size > 0 %},"elWK":"{{ post.elementsWK }}",{% endif %}{%
-if post.variantOf.size > 0 %},"var":"{{ post.variantOf }}",{% endif %}{% 
+if post.elementsWK.size > 0 %},"elWK":"{{ post.elementsWK }}"{% endif %}{%
+if post.variantOf.size > 0 %},"var":"{{ post.variantOf }}"{% endif %}{% 
 if post.alternateFor.size > 0 %},"alt":"{{ post.alternateFor }}"{% endif %}}
