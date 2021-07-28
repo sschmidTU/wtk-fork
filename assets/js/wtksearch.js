@@ -376,7 +376,7 @@ class WTKSearch {
     if (document.getElementById('search-box').clientWidth < 500) {
       leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
     }
-    const variantOf = page.varOf?.length > 0 ? ` (variant of ${page.varOf})` : '';
+    const variantOf = page.varOf?.length > 0 ? ` (variant of ${page.varOf})` : ''; // TODO make clickable
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
       // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
@@ -389,7 +389,7 @@ class WTKSearch {
             '>WK</a>'+
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
       '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">' +
-            page.kanji+' '+kanjiName+variantOf+'</a>'+
+            page.kanji+' '+kanjiName+'</a>'+variantOf+
       '  </h3>'+
       '</article></div>'
     ;
