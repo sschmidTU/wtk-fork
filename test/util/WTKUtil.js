@@ -1,6 +1,7 @@
 class WTKUtil {
   // @speed: this is super slow and unoptimized, algorithmically speaking, but over 2055 entries fast enough.
-  // usage: paste this method in the WTKSearch class in the offline branch
+  // usage: paste this method in the WTKSearch class in the offline branch.
+  //   or just load it into the console and supply wtk, using the ?console=1 url parameter
   find_unfindable_WK_Kanji(wtk, printUnifiedLogOutput = true) {
     const oldLogLevel = wtk.logLevel;
     wtk.logLevel = wtk.LogLevels.Silent;
