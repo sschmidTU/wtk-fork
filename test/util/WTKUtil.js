@@ -24,6 +24,9 @@ class WTKUtil {
       console.log(jsonString + '\n' + logOutput);
       console.log('not found concatenated: ' + notFoundString);
     }
+    if (Object.keys(notFound).length === 0) {
+      console.log("all WK kanji were found by name :)");
+    }
     
     wtk.logLevel = oldLogLevel;
   }
