@@ -502,10 +502,16 @@ class WTKSearch {
     if (updateHTMLElements) {
       this.result.show();
     }
-    return {
+    let returnValue = {
       length: searchResultsList.length,
-      list  : searchResultsList,
+      list  : searchResultsList
     }
+    if (missingCount > 0) {
+      // these values only make sense when searching by kanji. the if statement is a clumsy way of hiding them for radical searches.
+      returnValue.missingCount = missingCount;
+      returnValue.missing = missingKanjiList;
+    }
+    return returnValue;
   }
 
   /** Returns a list of kanji contained in the query string, or null if there are none. */
