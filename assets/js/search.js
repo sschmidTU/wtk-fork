@@ -10,10 +10,33 @@ var docs =
 ];
 
 
-// add keywordWK (kwWK) info from wk_kanji data (wk_kanji_short_min.js)
 for (const doc of docs) {
   if (wk_kanji[doc.kanji]) {
+    // add keywordWK (kwWK) info from wk_kanji data (wk_kanji_short_min.js)
     doc.kwWK = wk_kanji[doc.kanji].meanings[0].meaning; // see wk_kanji_short_min.js
+  }
+  if (!doc.el) {
+    //console.log("missing el for: " + doc.kanji); //debug
+    if (doc.elP) {
+      // construct el (elements) from elP (elementsPure)
+      const elementsPure = doc.elP.split(",");
+      let newElementsField = "";
+      for (const element of elementsPure) {
+        const elementTrimmed = element.trim();
+        if (elementsDict[elementTrimmed]) {
+          const newSubElements = elementsDict[elementTrimmed].elements;
+          if (newElementsField.length > 0) {
+            newElementsField += ", ";
+          }
+          newElementsField += newSubElements.trim();
+        }
+      }
+      doc.el = newElementsField;
+      //console.log("new elements field: " + newElementsField); //debug
+    } else {
+      // this shouldn't happen, having neither elements nor elementsPure
+      console.log("missing elements/elementsPure for " + doc.kanji); //debug
+    }
   }
 }
 // TODO put all the keywordWK directly into the data so we don't have to do this every time.
