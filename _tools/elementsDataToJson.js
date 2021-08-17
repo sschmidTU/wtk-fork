@@ -22,7 +22,12 @@ function processFile(fileString) {
             elements: columns[3].trim()
         };
     }
-    console.log(JSON.stringify(returnJson));
-    //console.log(JSON.stringify(returnJson, undefined, 2)); //2: pretty print
+    const stringified = JSON.stringify(returnJson);
+    //const stringified = JSON.stringify(returnJson, undefined, 2); //2: pretty print
+    console.log(stringified);
+    const fileStart = "const elementsDict =\n";
+    fs.writeFile("../assets/js/elementsDict.js", fileStart + stringified + ";", () => {
+        return; //callback, unnecessary
+    });
 }
 

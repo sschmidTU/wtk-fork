@@ -1,8 +1,10 @@
-RTKName;Kanji;WKName;Elements
+RTK name; kanji; WK name; RTK elements full
 wand; 訃 right part; toe; magic wand, wand, augury
 divining rod; 上 upper part; toe; magic wand, wand, augury, divining rod
 compare; 比; compare; compare, spoon, sitting on the ground, spoon2, sitting on the ground2
 say; 言; say; say, words, keitai, mouth
+mouth; 口; mouth; mouth
+rice field; 田; rice field; rice field, brains
 white; 白; white; white, drop, sun, day
 soil; 土; dirt; soil, dirt, ground
 direction; 方; direction; direction, compass
@@ -26,3 +28,4 @@ city walls; 阝; building; city walls
 skeleton; 骨; bone; skeleton, joint, moon, month, flesh, part of the body
 bend; 曲; music; bend, rice field, brains, stick
 beans; 豆; beans; beans, table, ceiling, one, mouth
+schoolhouse; 学覚栄 upper part; viking; schoolhouse, owl, one, animal legs, crown
