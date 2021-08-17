@@ -7,7 +7,6 @@ variants:
 alternateFor: 
 keyword: 
 keywordAlts: 
-elements: 
 elementsPure: 
 strokes: 
 on-yomi: 
