@@ -1,0 +1,28 @@
+RTKName;Kanji;WKName;Elements
+wand; 訃 right part; toe; magic wand, wand, augury
+divining rod; 上 upper part; toe; magic wand, wand, augury, divining rod
+compare; 比; compare; compare, spoon, sitting on the ground, spoon2, sitting on the ground2
+say; 言; say; say, words, keitai, mouth
+white; 白; white; white, drop, sun, day
+soil; 土; dirt; soil, dirt, ground
+direction; 方; direction; direction, compass
+taskmaster; 牧 right part; winter; taskmaster
+leg; 足; leg; leg, wooden leg, mouth, mending, mend; also 踪 left part
+perfect; 完; perfect; perfect, house, beginning
+thread; 糸; thread; thread, spiderman
+climax; 至; mole; climax, wall, one, ceiling, elbow, soil, dirt, ground
+jewel; 玉; jewel; jewel, king, ball, earring, drop
+round; 丸; round; round, drop, nine, baseball
+shellfish; 貝; shellfish; shellfish, shell, clam, oyster, eye, animal legs, eight
+chestnut; 栗; chestnut; chestnut, old west, tree, wood
+bundle; 束; bundle; bundle, Chaplin, tree, wood, mouth
+sickness; 痒 upper part; sick; sickness
+easy; 易; easy; easy, sun, day, knot, piglet’s tail
+dog tag; 甫; wedding; dog tag, dogtag, arrowhead, screwdriver, utilize, utilise
+sheep; 羊; sheep; sheep, horns, king, stick
+house; 宋 upper part; roof; house;
+pinnacle; 阝; building; pinnacle
+city walls; 阝; building; city walls
+skeleton; 骨; bone; skeleton, joint, moon, month, flesh, part of the body
+bend; 曲; music; bend, rice field, brains, stick
+beans; 豆; beans; beans, table, ceiling, one, mouth
