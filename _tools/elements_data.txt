@@ -28,4 +28,4 @@ city walls; 阝; building; city walls
 skeleton; 骨; bone; skeleton, joint, moon, month, flesh, part of the body
 bend; 曲; music; bend, rice field, brains, stick
 beans; 豆; beans; beans, table, ceiling, one, mouth
-schoolhouse; 学覚栄 upper part; grass, forehead; schoolhouse, owl, one, animal legs, crown
+schoolhouse; 学覚栄 upper part; viking; schoolhouse, owl, one, animal legs, crown
