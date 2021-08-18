@@ -1,11 +1,7 @@
 //nodejs script, call 'node thisScript.js'
 // outputs json for elementsDict.js
 const fs = require('fs')
-let mainDir = __dirname;
-if (__dirname.endsWith("_tools")) {
-    mainDir = mainDir.replace("_tools","");
-}
-//console.log(mainDir);
+let mainDir = __filename.replace(/_tools[\\|\/]elementsDataToJson.js/, "");
 fs.readFile(mainDir + "_tools/elements_data.txt", "utf8" , (err, data) => {
     if (err) {
       console.error(err)
