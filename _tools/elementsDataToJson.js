@@ -1,13 +1,13 @@
 //nodejs script, call 'node thisScript.js'
 // outputs json for elementsDict.js
-const fs = require('fs')
+const fs = require('fs');
 let mainDir = __filename.replace(/_tools[\\|\/]elementsDataToJson.js/, "");
 fs.readFile(mainDir + "_tools/elements_data.txt", "utf8" , (err, data) => {
     if (err) {
-      console.error(err)
-      return
+      console.error(err);
+      return;
     }
-    processFile(data)
+    processFile(data);
 });
 
 function processFile(fileString) {
@@ -31,4 +31,3 @@ function processFile(fileString) {
         return; //callback, unnecessary
     });
 }
-
