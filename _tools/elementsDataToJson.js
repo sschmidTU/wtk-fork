@@ -1,7 +1,12 @@
 //nodejs script, call 'node thisScript.js'
 // outputs json for elementsDict.js
 const fs = require('fs')
-fs.readFile('./elements_data.txt', 'utf8' , (err, data) => {
+let mainDir = __dirname;
+if (__dirname.endsWith("_tools")) {
+    mainDir = mainDir.replace("_tools","");
+}
+//console.log(mainDir);
+fs.readFile(mainDir + "_tools/elements_data.txt", "utf8" , (err, data) => {
     if (err) {
       console.error(err)
       return
@@ -26,7 +31,7 @@ function processFile(fileString) {
     //const stringified = JSON.stringify(returnJson, undefined, 2); //2: pretty print
     console.log(stringified);
     const fileStart = "const elementsDict =\n";
-    fs.writeFile("../assets/js/elementsDict.js", fileStart + stringified + ";", () => {
+    fs.writeFile(mainDir + "assets/js/elementsDict.js", fileStart + stringified + ";", () => {
         return; //callback, unnecessary
     });
 }
