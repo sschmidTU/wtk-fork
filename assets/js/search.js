@@ -19,6 +19,7 @@ for (const doc of docs) {
     //console.log("missing el for: " + doc.kanji); //debug
     if (doc.elP) {
       // construct el (elements) from elP (elementsPure)
+      // TODO move this to a script that changes the .md files, instead of having visitors do this every time
       const elementsPure = doc.elP.split(",");
       let newElementsField = "";
       for (const element of elementsPure) {
