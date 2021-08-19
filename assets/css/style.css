@@ -105,14 +105,33 @@ li {
   margin-top: 0;
   margin-bottom: 1em; }
 
-a:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji) {
+.expandedKanjiInfo {
+  margin-left: 1em;
+  display: none;
+}
+
+.hoverPointer:hover {
+  cursor: pointer;
+}
+
+/*#22a8e6;*/
+.expandButton {
+  color: #22a8e6;
+  text-decoration: none;
+}
+
+.expandButton:hover {
+  cursor: pointer;
+}
+
+a:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji):not(.expandButton) {
   color: #9b3732;
   text-decoration: none; }
 
 a:visited:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji) {
   color: #262626; }
 
-a:hover:not(.h4link):not(.btnWK) {
+a:hover:not(.h4link):not(.btnWK):not(.expandButton) {
   color: #d8281e; }
 
 a:focus {

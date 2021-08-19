@@ -297,6 +297,7 @@ class WTKSearch {
             } else {
               entries.append(newEntry);
             }
+            this.addExpandFunctionToEntry(page);
             this.addCopyFunctionToEntry(page);
             this.addCopyFunctionToTextKanji(page);
             entriesAdded++;
@@ -374,23 +375,55 @@ class WTKSearch {
     const variantOf = page.var?.length > 0 ? ` (variant of <a id="btnSearchKanji${page.var}">${page.var}</a>)` : '';
     const alternateFor = page.alt?.length > 0 ? ` (alternate for <a id="btnSearchKanji${page.alt}">${page.alt}</a>)` : '';
 
+    let elements = page.elP;
+    if (!elements) {
+      elements = page.el;
+    }
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
       // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
       '<article>'+
-      '  <h3 style="text-align: left">'+
-      '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'" ' +
-             'style="text-decoration: '+wkButtonTextDecoration + '" ' +
-             'title="'+wkButtonHoverText+'"' +
-             'class="'+wkButtonClass+'" ' +
-            '>WK</a>'+
-      '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
-      '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">' +
+      '<h3 style="text-align: left">'+
+      '<a id="expandButton'+page.id+'" class="expandButton" title="Show more info">˃ </button>' +
+        '<a href="https://www.wanikani.com/kanji/'+page.kanji+'" ' +
+          'style="text-decoration: '+wkButtonTextDecoration + '" ' +
+          'title="'+wkButtonHoverText+'"' +
+          'class="'+wkButtonClass+'" ' +
+        '>WK </a>'+
+        '<button id="cbCopyButton'+page.id+'" class="hoverPointer" title="Copy this kanji to clipboard">📋</button> ' +
+        '<a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">' +
             page.kanji+' '+kanjiName+'</a>'+variantOf+alternateFor+
-      '  </h3>'+
-      '</article></div>'
+        '<div id="expandedKanjiInfo'+page.kanji+'" class="expandedKanjiInfo">radicals: ' + elements + '</div>'
+      '</h3>'+
+      '</article>'+
+      '</div>'
     ;
     return entry;
+  }
+
+  addExpandFunctionToEntry(page) {
+    const button = document.getElementById('expandButton'+page.id);
+    const expandedInfoDiv = document.getElementById('expandedKanjiInfo' + page.kanji);
+    if (button && expandedInfoDiv) {
+      const self = this;
+      button.onclick = function() { //▶˃▼
+        if (button.innerText.trim() === "˃") {
+          button.innerText = "˅ "; // ›>
+          expandedInfoDiv.style.display = "block";
+          // replace bloated subelements with just main element. TODO move to function
+          for (const element of Object.keys(elementsDict)) {
+            if (expandedInfoDiv.innerText.includes(element)) {
+              const replacement = elementsDict[element].elements;
+              expandedInfoDiv.innerText = expandedInfoDiv.innerText.replace(replacement, element);
+              // TODO replace with WK equivalent
+            }
+          }
+        } else {
+          button.innerText = "˃ ";
+          expandedInfoDiv.style.display = "none";
+        }
+      }
+    }
   }
 
   addCopyFunctionToEntry(page) {
@@ -458,6 +491,7 @@ class WTKSearch {
             searchResultsList.push(kanjiPage);
             const entry = this.createEntry(kanjiPage);
             this.entries.append(entry);
+            this.addExpandFunctionToEntry(kanjiPage);
             this.addCopyFunctionToEntry(kanjiPage);
             this.addCopyFunctionToTextKanji(kanjiPage);
           }
