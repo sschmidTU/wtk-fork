@@ -409,6 +409,7 @@ class WTKSearch {
       button.onclick = function() { //▶˃▼
         if (button.innerText.trim() === "˃") {
           button.innerText = "˅ "; // ›>
+          button.classList.add("expanded");
           expandedInfoDiv.style.display = "block";
           // replace bloated subelements with just main element. TODO move to function
           for (const element of Object.keys(elementsDict)) {
@@ -420,6 +421,7 @@ class WTKSearch {
           }
         } else {
           button.innerText = "˃ ";
+          button.classList.remove("expanded");
           expandedInfoDiv.style.display = "none";
         }
       }

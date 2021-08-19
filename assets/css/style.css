@@ -118,10 +118,18 @@ li {
 .expandButton {
   color: #22a8e6;
   text-decoration: none;
+  opacity: 0.4;
+}
+
+.expandButton.expanded {
+  opacity: 1.0;
+  color: #9b3732;
 }
 
 .expandButton:hover {
   cursor: pointer;
+  color: #9b3732;
+  opacity: 1.0;
 }
 
 a:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji):not(.expandButton) {
