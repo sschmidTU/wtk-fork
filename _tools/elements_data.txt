@@ -29,3 +29,6 @@ skeleton; 骨; bone; skeleton, joint, moon, month, flesh, part of the body
 bend; 曲; music; bend, rice field, brains, stick
 beans; 豆; beans; beans, table, ceiling, one, mouth
 schoolhouse; 学覚栄 upper part; viking; schoolhouse, owl, one, animal legs, crown
+animal legs; 只 bottom part or ハ; fins; animal legs, eight
+eye; 目; eye; eye
+spoon; 匕; spoon; spoon, sitting on the ground
