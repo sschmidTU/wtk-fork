@@ -17,6 +17,10 @@ function processFile(fileString) {
     for (let i=1; i < rows.length; i++) {
         const columns = rows[i].split(";");
         const rtkName = columns[0];
+        if (rtkName === "") {
+            console.log(`faulty (or last) row ̀${i+1}.`);
+            continue;
+        }
         returnJson[rtkName] = {
             kanji: columns[1].trim(),
             wkName: columns[2].trim(),
@@ -27,7 +31,7 @@ function processFile(fileString) {
     //const stringified = JSON.stringify(returnJson, undefined, 2); //2: pretty print
     console.log(stringified);
     const fileStart = "const elementsDict =\n";
-    fs.writeFile(mainDir + "assets/js/elementsDict.js", fileStart + stringified + ";", () => {
+    fs.writeFile(mainDir + "assets/js/elementsDict.js", fileStart + stringified + ";\n", () => {
         return; //callback, unnecessary
     });
 }
