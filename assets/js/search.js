@@ -30,6 +30,9 @@ for (const doc of docs) {
             newElementsField += ", ";
           }
           newElementsField += newSubElements.trim();
+        } else {
+          // shouldn't happen; need to add element to elementsData.txt and node elementsDataToJson.js
+          console.log(`Error: element ${elementTrimmed} for kanji ${doc.kanji} wasn't found in elementsDict.`);
         }
       }
       doc.el = newElementsField;
