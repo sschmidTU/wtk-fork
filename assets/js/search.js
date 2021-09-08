@@ -6,9 +6,6 @@ for (const doc of docs) {
     // add keywordWK (kwWK) info from wk_kanji data (wk_kanji_short_min.js)
     doc.kwWK = wk_kanji[doc.kanji].meanings[0].meaning; // see wk_kanji_short_min.js
   }
-  if (doc.kanji === "眞") {
-    console.dir(doc);
-  }
   if (!doc.el) {
     //console.log("missing el for: " + doc.kanji); //debug
     if (doc.elP) {
