@@ -1,4 +1,4 @@
-RTK name; kanji; WK name; RTK elements full
+RTK name; kanji; WK name; RTK elements full // comments
 wand; 訃 right part; toe; magic wand, wand, augury
 divining rod; 上 upper part; toe; magic wand, wand, augury, divining rod
 compare; 比; compare; compare, spoon, sitting on the ground, spoon2, sitting on the ground2
@@ -30,6 +30,12 @@ bend; 曲; music; bend, rice field, brains, stick
 beans; 豆; beans; beans, table, ceiling, one, mouth
 schoolhouse; 学覚栄 upper part; viking; schoolhouse, owl, one, animal legs, crown
 animal legs; 只 bottom part or ハ; fins; animal legs, eight
-eye; 目; eye; eye
+eye; 目; eye; eye // or net in WK. net in WK is just horizontal eye in RTK
 spoon; 匕; spoon; spoon, sitting on the ground
 straightened hook; 断 left part; lion; straightened hook, hook, fishhook
+wall; 至 top part; trash; wall, one, ceiling, elbow
+infant; 育 top part; trash; infant, toddler, top hat, elbow // WK doesn't differentiate between wall and infant
+elbow; 厶; private; elbow
+meeting; 合 top part; hat ground; meeting, umbrella, one // WK "meet" radical is 会
+sun; 日; sun; sun, day
+horns; 并 top part; horns; horns, animal horns
