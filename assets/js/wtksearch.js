@@ -721,6 +721,11 @@ class WTKSearch {
     // set up mouse drag check to prevent drag-selecting clicking on a kanji when you just want to copy it
     window.addEventListener('mousedown', function () { self.dragged = false });
     window.addEventListener('mousemove', function () { self.dragged = true });
+
+    if (params.query?.length > 0) {
+      document.getElementById(this.searchBarId).value = params.query;
+      this.searchBarSearch(); // alternatively, call this.search() directly
+    }
   }
 
   focusSearchBar() {
