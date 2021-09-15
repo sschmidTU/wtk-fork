@@ -952,7 +952,7 @@ class WTKSearch {
       "past": "gone", //p231
       "meet": "meeting", // more specific/strict: meeting&mouth. meeting in RTK is only the top part (hat/umbrella + one), but mouth is basically always there too
       "mole": "climax",
-      "trash": "infant", //p232
+      "trash": "infant,wall", //p232. infant is the exact match, but WK calls RTK's wall (top stroke missing) trash as well
       "skin": "pelt", //p239
       "wave": "waves",
       // "valley": "valley", // somewhat similar: gully (p237), though that could be boat too

@@ -15,12 +15,13 @@ function processFile(fileString) {
     const rows = fileString.split("\n");
     // skip first row
     for (let i=1; i < rows.length; i++) {
-        const columns = rows[i].split(";");
-        const rtkName = columns[0];
-        if (rtkName === "") {
-            console.log(`faulty (or last) row ̀${i+1}.`);
+        const decommented = rows[i].split("//")[0];
+        if (decommented === "") {
+            console.log(`empty (or last) row ̀${i+1}.`);
             continue;
         }
+        const columns = decommented.split(";");
+        const rtkName = columns[0];
         returnJson[rtkName] = {
             kanji: columns[1].trim(),
             wkName: columns[2].trim(),
