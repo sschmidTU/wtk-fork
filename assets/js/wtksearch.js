@@ -901,7 +901,7 @@ class WTKSearch {
       "lid mouth": "tall",
       "lid": "top hat", //p130
       //"samurai": "gentleman", //p134 // actually gentleman is only for the gentleman kanji which also has samurai as element.
-      "viking": "schoolhouse,little&crown", // viking+mouth is also "outhouse". but viking itself is just little+crown
+      "viking": "schoolhouse", // viking&mouth is also "outhouse". also viking = schoolhouse = little&crown. but i added schoolhouse wherever outhouse/little+crown was.
       "warn": "admonish",
       "ceremony": "arrow", //p143
       "drunkard": "fiesta",
