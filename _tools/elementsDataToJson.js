@@ -22,9 +22,10 @@ function processFile(fileString) {
         }
         const columns = decommented.split(";");
         const rtkName = columns[0];
+        const wkNames = columns[2].split("&").map((radical) => radical.trim());
         returnJson[rtkName] = {
             kanji: columns[1].trim(),
-            wkName: columns[2].trim(),
+            wkNames: wkNames,
             elements: columns[3].trim()
         };
     }
