@@ -371,9 +371,11 @@ class WTKSearch {
     if (document.getElementById('search-box').clientWidth < 500) {
       leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
     }
-    const variantOf = page.var?.length > 0 ? ` (variant of <a id="btnSearchKanji${page.var}">${page.var}</a>)` : '';
-    const alternateFor = page.alt?.length > 0 ? ` (alternate for <a id="btnSearchKanji${page.alt}">${page.alt}</a>)` : '';
+    const variantOf = page.var?.length > 0 ? ` (variant of <a id="btnSearchKanji${page.var}">${page.var}</a>` : '';
+    const alternateFor = page.alt?.length > 0 ? ` (alternate for <a id="btnSearchKanji${page.alt}">${page.alt}</a>` : '';
     const outdated = page.out ? `, outdated` : '';
+    const hasVariantOrAlternate = variantOf.length > 0 || alternateFor.length > 0;
+    const endBracket = hasVariantOrAlternate ? ')' : '';
 
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
@@ -387,7 +389,7 @@ class WTKSearch {
             '>WK</a>'+
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
       '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">' +
-            page.kanji+' '+kanjiName+'</a>'+variantOf+alternateFor+outdated+
+            page.kanji+' '+kanjiName+'</a>'+variantOf+alternateFor+outdated+endBracket+
       '  </h3>'+
       '</article></div>'
     ;
