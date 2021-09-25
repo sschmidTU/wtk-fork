@@ -373,6 +373,7 @@ class WTKSearch {
     }
     const variantOf = page.var?.length > 0 ? ` (variant of <a id="btnSearchKanji${page.var}">${page.var}</a>)` : '';
     const alternateFor = page.alt?.length > 0 ? ` (alternate for <a id="btnSearchKanji${page.alt}">${page.alt}</a>)` : '';
+    const outdated = page.out ? `, outdated` : '';
 
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
@@ -386,7 +387,7 @@ class WTKSearch {
             '>WK</a>'+
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
       '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">' +
-            page.kanji+' '+kanjiName+'</a>'+variantOf+alternateFor+
+            page.kanji+' '+kanjiName+'</a>'+variantOf+alternateFor+outdated+
       '  </h3>'+
       '</article></div>'
     ;
