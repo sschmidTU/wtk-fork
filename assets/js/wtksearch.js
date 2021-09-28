@@ -726,7 +726,7 @@ class WTKSearch {
     window.addEventListener('mousemove', function () { self.dragged = true });
 
     if (params.query?.length > 0) {
-      document.getElementById(this.searchBarId).value = params.query;
+      document.getElementById(this.searchBarId).value = params.query.replace("+"," ");
       this.searchBarSearch(); // alternatively, call this.search() directly
     }
   }
