@@ -934,7 +934,7 @@ class WTKSearch {
       //"monk": "boy"
       "guard": "devil", //p183
       "mask": "formerly",
-      "king": "king,porter,jewel,bushes,celery", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
+      "king": "king,porter,grow up,jewel,bushes,celery", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise,turtleWK", //p195
