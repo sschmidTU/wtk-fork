@@ -20,7 +20,11 @@ for (const doc of docs) {
     if (doc.elP) {
       // construct el (elements) from elP (elementsPure)
       // TODO move this to a script that changes the .md files, instead of having visitors do this every time
-      const elementsPure = doc.elP.split(",");
+      let elP = doc.elP;
+      if (doc.elPx) {
+        elP += `, ${elPx}`;
+      }
+      const elementsPure = elP.split(",");
       let newElementsField = "";
       for (const element of elementsPure) {
         const elementTrimmed = element.trim();

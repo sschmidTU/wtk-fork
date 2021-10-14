@@ -2,6 +2,7 @@
 if post.kwWK.size > 0 %},"kwWK":"{{ post.keywordWK }}"{% endif %}{%
 if post.elements.size > 0 %},"el":"{{ post.elements | remove:'"' }}"{% endif %}{%
 if post.elementsPure.size > 0 %},"elP":"{{ post.elementsPure }}"{% endif %}{%
+if post.elementsPureExtra.size > 0 %},"elPx":"{{ post.elementsPureExtra }}"{% endif %}{%
 if post.elementsWK.size > 0 %},"elWK":"{{ post.elementsWK }}"{% endif %}{%
 if post.outdated %},"out":true{% endif %}{%
 if post.variantOf.size > 0 %},"var":"{{ post.variantOf }}"{% endif %}{% 
