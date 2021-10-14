@@ -9,7 +9,12 @@ for (const doc of docs) {
     //console.log("missing el for: " + doc.kanji); //debug
     if (doc.elP) {
       // construct el (elements) from elP (elementsPure)
-      const elementsPure = doc.elP.split(",");
+      // TODO move this to a script that changes the .md files, instead of having visitors do this every time
+      let elP = doc.elP;
+      if (doc.elPx) {
+        elP += `, ${doc.elPx}`;
+      }
+      const elementsPure = elP.split(",");
       let newElementsField = "";
       for (const element of elementsPure) {
         const elementTrimmed = element.trim();
