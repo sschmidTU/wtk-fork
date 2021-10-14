@@ -22,7 +22,7 @@ for (const doc of docs) {
       // TODO move this to a script that changes the .md files, instead of having visitors do this every time
       let elP = doc.elP;
       if (doc.elPx) {
-        elP += `, ${elPx}`;
+        elP += `, ${doc.elPx}`;
       }
       const elementsPure = elP.split(",");
       let newElementsField = "";
