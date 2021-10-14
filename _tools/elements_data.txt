@@ -14,6 +14,7 @@ perfect; 完; perfect; perfect, house, beginning
 thread; 糸; thread; thread, spiderman
 climax; 至; mole; climax, wall, one, ceiling, elbow, soil, dirt, ground
 jewel; 玉; jewel; jewel, king, ball, earring, drop
+king; 王; king; king, jewel, ball
 round; 丸; round; round, drop, nine, baseball
 shellfish; 貝; shellfish; shellfish, shell, clam, oyster, eye, animal legs, eight
 chestnut; 栗; chestnut; chestnut, old west, tree, wood
@@ -30,12 +31,14 @@ bend; 曲; music; bend, rice field, brains, stick
 beans; 豆; beans; beans, table, ceiling, one, mouth
 schoolhouse; 学覚栄 upper part; viking; schoolhouse, owl, one, animal legs, crown
 animal legs; 只 bottom part or ハ; fins; animal legs, eight
-eye; 目; eye; eye // or net in WK. net in WK is just horizontal eye in RTK
-spoon; 匕; spoon; spoon, sitting on the ground
 straightened hook; 断 left part; lion; straightened hook, hook, fishhook
 wall; 至 top part; trash; wall, one, ceiling, elbow
 infant; 育 top part; trash; infant, toddler, top hat, elbow // WK doesn't differentiate between wall and infant
+upside down in a row; 並; line up&spikes&horns&ground; upside down in a row, row // line up is the direct equivalent, but only a kanji in WK, not a radical. also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
+measurement; 寸; measurement; measurement, glue, drop, ten with a hook
 elbow; 厶; private; elbow
 meeting; 合 top part; hat ground; meeting, umbrella, one // WK "meet" radical is 会
 sun; 日; sun; sun, day
 horns; 并 top part; horns; horns, animal horns
+eye; 目; eye; eye // or net in WK. net in WK is just horizontal eye in RTK
+spoon; 匕; spoon; spoon, sitting on the ground

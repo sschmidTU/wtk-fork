@@ -371,8 +371,11 @@ class WTKSearch {
     if (document.getElementById('search-box').clientWidth < 500) {
       leftPaddingPercent = 5; // less padding on small screens (e.g. mobile, portrait mode). TODO cleaner solution
     }
-    const variantOf = page.var?.length > 0 ? ` (variant of <a id="btnSearchKanji${page.var}">${page.var}</a>)` : '';
-    const alternateFor = page.alt?.length > 0 ? ` (alternate for <a id="btnSearchKanji${page.alt}">${page.alt}</a>)` : '';
+    const variantOf = page.var?.length > 0 ? ` (variant of <a id="btnSearchKanji${page.var}">${page.var}</a>` : '';
+    const alternateFor = page.alt?.length > 0 ? ` (alternate for <a id="btnSearchKanji${page.alt}">${page.alt}</a>` : '';
+    const outdated = page.out ? `, outdated` : '';
+    const hasVariantOrAlternate = variantOf.length > 0 || alternateFor.length > 0;
+    const endBracket = hasVariantOrAlternate ? ')' : '';
 
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
@@ -386,7 +389,7 @@ class WTKSearch {
             '>WK</a>'+
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
       '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">' +
-            page.kanji+' '+kanjiName+'</a>'+variantOf+alternateFor+
+            page.kanji+' '+kanjiName+'</a>'+variantOf+alternateFor+outdated+endBracket+
       '  </h3>'+
       '</article></div>'
     ;
@@ -723,7 +726,7 @@ class WTKSearch {
     window.addEventListener('mousemove', function () { self.dragged = true });
 
     if (params.query?.length > 0) {
-      document.getElementById(this.searchBarId).value = params.query;
+      document.getElementById(this.searchBarId).value = params.query.replaceAll("+"," ");
       this.searchBarSearch(); // alternatively, call this.search() directly
     }
   }
@@ -901,7 +904,7 @@ class WTKSearch {
       "lid mouth": "tall",
       "lid": "top hat", //p130
       //"samurai": "gentleman", //p134 // actually gentleman is only for the gentleman kanji which also has samurai as element.
-      "viking": "schoolhouse",
+      "viking": "schoolhouse", // viking&mouth is also "outhouse". also viking = schoolhouse = little&crown. but i added schoolhouse wherever outhouse/little+crown was.
       "warn": "admonish",
       "ceremony": "arrow", //p143
       "drunkard": "fiesta",
@@ -931,7 +934,7 @@ class WTKSearch {
       //"monk": "boy"
       "guard": "devil", //p183
       "mask": "formerly",
-      "king": "king,porter,jewel,bushes,celery", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
+      "king": "king,porter,grow up,jewel,bushes,celery", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
       "alligator": "scorpion",
       "earth": "ground", //only kanji in WK
       "turtle": "tortoise,turtleWK", //p195
