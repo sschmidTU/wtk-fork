@@ -10,15 +10,15 @@ class WTKSearch {
   rtkMode                  = false; // save isRtkMode() for a while so it doesn't have to be called every time
   strictMode               = false;
   // HTML things
-  result                   = null; // save $('#search-results')
-  entries                  = null; // save $('#search-results .entries')
+  result                   = null; // save document.getElementById('search-results')
+  entries                  = null; // save document.getElementById('search-results.entries')
   copyButtonsHighlighted   = {};
   copyButtonSelectedClass  = 'btnClipLastSelected';
   searchBarId              = 'searchBar';
-  checkboxStrictQuery      = 'input[name=strictModeCheckbox]';
-  checkboxRTKQuery         = 'input[name=rtkModeCheckbox]';
-  checkboxStrictLabelQuery = '#strictModeLabel';
-  checkboxVocabQuery       = 'input[name=vocabModeCheckbox'; // also called compound mode
+  checkboxStrictQuery      = 'strictModeCheckbox';
+  checkboxRTKQuery         = 'rtkModeCheckbox';
+  checkboxStrictLabelQuery = 'strictModeLabel';
+  checkboxVocabQuery       = 'vocabModeCheckbox'; // also called compound mode
   vocabInputQuery          = 'vocabInput';
   vocabCopyButtonQuery     = 'cbCopyButtonVocab';
   deleteVocabButtonQuery   = 'deleteVocabButton';
@@ -56,8 +56,8 @@ class WTKSearch {
     }
     query = query.trim().toLowerCase();
     // trim is useful for mobile auto-correct. maybe check later if input like 'inX' is necessary
-    var result  = this.result  = $('#search-results');
-    var entries = this.entries = $('#search-results .entries');
+    var result  = this.result  = document.getElementById('search-results');
+    var entries = this.entries = document.getElementById('search-results.entries');
     const rtkMode = this.rtkMode = this.isRtkMode(); // used multiple times
     const strictMode = this.strictMode = !rtkMode && this.isStrictMode(); // TODO fix strict mode for rtk mode, currently disabled in rtk mode.
 
@@ -82,8 +82,8 @@ class WTKSearch {
     const isSmallRtkKeyword = rtkMode && this.is_short_rtk_keyword(query);
     const isSmallWkKeyword = !rtkMode && this.is_short_wk_keyword(query);
     if (!forceSearch && query.length <= 2 && !(isSmallRtkKeyword || isSmallWkKeyword)) {
-      result.hide();
-      entries.empty();
+      this.hide(result);
+      this.emptyNode(entries);
       return { length: 0 };
     }
     //this.lastQueries.push(query);
@@ -195,8 +195,8 @@ class WTKSearch {
     this.log(this.LogLevels.Info, ' '); // new line
     //var displayEntries = [];
     // if (query.trim().length <= 2) {
-      result.hide();
-      entries.empty();
+      this.hide(result);
+      this.emptyNode(entries);
     // }
 
     let idsAddedToResults = {};
@@ -211,8 +211,8 @@ class WTKSearch {
       this.log(this.LogLevels.Info, 'query ' + (i+1) + ': ' + query);
 
       // retrieve matching result with content
-      var results = $.map(idx.search(query), function(result) {
-        return $.grep(docs, function(entry) {
+      var results = idx.search(query).map(function(result) {
+        return docs.filter(function(entry) {
           // TODO handle multiple queries here instead of the query adding below
           if (entry.id === result.ref && !idsAddedToResults[entry.id]) {
             idsAddedToResults[entry.id] = 1; // id was added. use object=hash map instead of array for O(1) performance
@@ -222,14 +222,14 @@ class WTKSearch {
         })[0];
       });
 
-      //entries.empty();
-
       let matches = 0;
       let entriesAdded = 0;
       if (results && results.length > 0) {
         // TODO fix strictMode for RTK mode, need to get each radical (e.g. "pent in" would be detected as 2 currently);
-        //$.each(results, function(key, page) {
         for (const page of results) {
+          if (!page) {
+            continue;
+          }
           let addToResults = !strictMode; // if not strict mode, add all results to query
           const keywordLower = page.kw.toLowerCase();
           let keywordWKLower = page.kwWK?.toLowerCase();
@@ -295,7 +295,7 @@ class WTKSearch {
             if (prepend) {
               entries.prepend(newEntry);
             } else {
-              entries.append(newEntry);
+              entries.appendChild(newEntry);
             }
             this.addCopyFunctionToEntry(page);
             this.addCopyFunctionToTextKanji(page);
@@ -315,9 +315,9 @@ class WTKSearch {
     }
     const elementsNames = rtkMode ? 'elements' : 'radicals';
     if (searchResults.length === 0 && updateHTMLElements) {
-      entries.append(
+      entries.appendChild(this.toDom(
         '<h3><i> No results found. (typo? try other '+elementsNames+'?)</i></h3>'
-      );
+      ));
       let mailSubjectString = '[wtksearch] My Search had no results'.replace(' ', '%20');
       let mailBodyString = 'Hello,\n\nunfortunately my query did not find the kanji i was looking for.\n\n'+
       'Query: ' + query + '\n' +
@@ -326,18 +326,18 @@ class WTKSearch {
       '\n[Please add the kanji you were looking for above, if you can find it elsewhere, or an image of it]\n' +
       '\n';
       mailBodyString = mailBodyString.replace(' ', '%20').replaceAll('\n', '%0A');
-      this.entries.append(
+      this.entries.appendChild(this.toDom(
         '<h4><a class="h4link" ' +
         'href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
         '">Report missing Kanji in a mail (using template)? ^.^</a> ' +
         '<a class="h4link" href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>' +
         '</h4>'
-      )
+      ))
     }
     // if (results.length == 0) {
     //   entries.append('<h4>Kanji not found :-(</h4>'); // sometimes fires too early
     // }
-    result.show();
+    this.show(result);
 
     this.lastSearchResults = searchResults;
     return searchResults;
@@ -393,7 +393,7 @@ class WTKSearch {
       '  </h3>'+
       '</article></div>'
     ;
-    return entry;
+    return this.toDom(entry);
   }
 
   addCopyFunctionToEntry(page) {
@@ -443,10 +443,10 @@ class WTKSearch {
     let missingKanjiList = '';
     if (updateHTMLElements) {
       if (this.entries) {
-        this.entries.empty();
+        this.emptyNode(this.entries);
       } else { // this.entries is uninitialized before first search
-        this.result  = $('#search-results');
-        this.entries = $('#search-results .entries');
+        this.result  = document.getElementById('search-results');
+        this.entries = document.getElementById('search-results.entries');
       }
     }
     let kanjiEntriesShown = {};
@@ -460,7 +460,7 @@ class WTKSearch {
             const kanjiPage = kanjisFound[kanji];
             searchResultsList.push(kanjiPage);
             const entry = this.createEntry(kanjiPage);
-            this.entries.append(entry);
+            this.entries.appendChild(entry);
             this.addCopyFunctionToEntry(kanjiPage);
             this.addCopyFunctionToTextKanji(kanjiPage);
           }
@@ -468,9 +468,9 @@ class WTKSearch {
           if (this.kanjiMatches(kanji)) { // check that this is actually a kanji and not の or sth. not kanji: returns null
             missingKanjiList += kanji;
             if (updateHTMLElements) {
-              this.entries.append(
+              this.entries.appendChild(this.toDom(
                 '<h3><i> The kanji </i>' + kanji + '<i> is not yet in our dataset.</i></h3>'
-              );
+              ));
             }
             //console.log(`${kanji} (aozora #${aozoraNumbers[kanji]} not in dataset`);
           }
@@ -494,16 +494,16 @@ class WTKSearch {
       'Version: ' + document.getElementById(this.versionElementQuery).text + '\n' +
       '\n';
       mailBodyString = mailBodyString.replace(' ', '%20').replaceAll('\n', '%0A');
-      this.entries.append(
+      this.entries.appendChild(this.toDom(
         '<h4><a class="h4link" ' +
         'href="mailto:wtksearch@gmail.com?subject=' + mailSubjectString + '&body=' + mailBodyString +
         '">Report missing Kanji in a mail (using template)? ^.^</a> ' +
         '<a class="h4link" href="mailto:wtksearch@gmail.com">wtksearch@gmail.com</a>' +
         '</h4>'
-      )
+      ));
     }
     if (updateHTMLElements) {
-      this.result.show();
+      this.show(this.result);
     }
     let returnValue = {
       length: searchResultsList.length,
@@ -593,7 +593,7 @@ class WTKSearch {
   }
 
   checked(checkboxQuery) {
-    return $(checkboxQuery).prop('checked');
+    return document.getElementById(checkboxQuery).checked;
   }
 
   isStrictMode() {
@@ -609,6 +609,27 @@ class WTKSearch {
     return this.checked(this.checkboxVocabQuery);
   }
 
+  emptyNode(node) {
+    while (node && node.lastChild) {
+      node.removeChild(node.lastChild);
+    }
+  }
+
+  toDom(html) {
+    var template = document.createElement('template');
+    html = html.trim(); // Never return a text node of whitespace as the result
+    template.innerHTML = html;
+    return template.content.firstChild;
+  }
+
+  show(node) {
+    node.style.display = 'block';
+  }
+
+  hide(node) {
+    node.style.display = 'none';
+  }
+
   setupHTMLElements() {
     const checkboxStrictQuery = this.checkboxStrictQuery;
     const checkboxRTKQuery = this.checkboxRTKQuery;
@@ -617,9 +638,9 @@ class WTKSearch {
     const params = this.getUrlParameters();
 
     const self = this; // `this` isn't available in anonymous functions
-    $('#search-button').on('click', function() {
+    document.getElementById('search-button').onclick = function() {
       return self.searchBarSearch();
-    });
+    };
     
     const searchBar = document.getElementById(this.searchBarId);
     searchBar.oninput = function() {
@@ -659,28 +680,28 @@ class WTKSearch {
       }
     });
 
-    // checkboxStrict.on('click', function() { // replaces click event completely
-    $(checkboxStrictQuery).change(function() {
+    // checkboxStrict.onclick replaces click event completely
+    document.getElementById(checkboxStrictQuery).onchange = function() {
       self.focusSearchBar();
       return self.searchBarSearch(); // TODO optimization: don't search again when enabling strict mode, only re-filter. same for RTK checkbox
-    });
-    $(checkboxRTKQuery).change(function() {
+    };
+    document.getElementById(checkboxRTKQuery).onchange = function() {
       if (self.isRtkMode()) {
-        $(checkboxStrictLabelQuery).prop('style')['text-decoration'] = 'line-through'; // strike-through
+        document.getElementById(checkboxStrictLabelQuery).style["text-decoration"] = 'line-through'; // strike-through
       } else {
-        $(checkboxStrictLabelQuery).prop('style')['text-decoration'] = '';
+        document.getElementById(checkboxStrictLabelQuery).style['text-decoration'] = '';
       }
       self.focusSearchBar();
       return self.searchBarSearch();
-    })
-    $(checkboxVocabQuery).change(function() {
+    };
+    document.getElementById(checkboxVocabQuery).onchange = function() {
       if (self.isVocabMode()) {
         document.getElementById('vocabModeDiv').style.display = "block";
       } else {
         document.getElementById('vocabModeDiv').style.display = "none";
       }
       self.focusSearchBar();
-    })
+    };
     document.getElementById(this.deleteVocabButtonQuery).onclick = function() {
       document.getElementById(self.vocabInputQuery).value = '';
       self.dehighlightButton(self.vocabCopyButtonQuery, self.vocabCopyButtonQuery);
@@ -694,13 +715,13 @@ class WTKSearch {
     }
 
     if (params.strict === '1' || params.strict === 'true' && !this.isStrictMode()) {
-      $(checkboxStrictQuery).click();
+      document.getElementById(checkboxStrictQuery).click();
     }
     if (params.rtk === '1' || params.rtk === 'true' && !this.isRtkMode()) {
-      $(checkboxRTKQuery).click();
+      document.getElementById(checkboxRTKQuery).click();
     }
     if (params.compound === '1' || params.compound === 'true') {
-      $(checkboxVocabQuery).click();
+      document.getElementById(checkboxVocabQuery).click();
     }
     if (params.console === '1') {
       window.wtk = this; // make wtk available in the console
@@ -1376,12 +1397,22 @@ class WTKSearch {
   }
 }
 
+if (document.readyState !== 'loading' ) {
+  // document is already ready
+  init();
+} else {
+  document.addEventListener('DOMContentLoaded', function () {
+      //document was not ready
+      init();
+  });
+}
 
-$(document).ready(function() {
+// $(document).ready() (without jquery):
+function init() {
   const wtk = new WTKSearch();
-
+  
   wtk.setupHTMLElements();
   wtk.logLevel = wtk.LogLevels.Info; // use LogLevels.Silent to silence console.logs or LogLevels.Debug for detailed reports
 
   //wtk.find_unfindable_WK_Kanji(wtk, true);
-});
+}
