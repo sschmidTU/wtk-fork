@@ -1,0 +1,17 @@
+{
+    "version": "0.2.1",
+    "configurations": [
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Launch Chrome Debugging",
+        "url": "http://localhost:8000" // start server beforehand, e.g. with python3: python -m http.server
+      },
+      {
+        "type": "pwa-msedge",
+        "request": "launch",
+        "name": "Launch Edge Debugging",
+        "url": "http://localhost:8000"
+      }
+    ]
+}
