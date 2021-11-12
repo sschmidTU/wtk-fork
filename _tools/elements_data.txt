@@ -3,14 +3,13 @@ wand; 訃 right part; toe; magic wand, wand, augury
 divining rod; 上 upper part; toe; magic wand, wand, augury, divining rod
 compare; 比; compare; compare, spoon, sitting on the ground, spoon2, sitting on the ground2
 say; 言; say; say, words, keitai, mouth
-mouth; 口; mouth; mouth
-rice field; 田; rice field; rice field, brains
 white; 白; white; white, drop, sun, day
-soil; 土; dirt; soil, dirt, ground
 direction; 方; direction; direction, compass
 taskmaster; 牧 right part; winter; taskmaster
 leg; 足; leg; leg, wooden leg, mouth, mending, mend; also 踪 left part
 perfect; 完; perfect; perfect, house, beginning
+voice; 声; voice; voice, samurai, flag, stick
+missile; 投 right part; weapon; missile, wind, crotch
 thread; 糸; thread; thread, spiderman
 climax; 至; mole; climax, wall, one, ceiling, elbow, soil, dirt, ground
 jewel; 玉; jewel; jewel, king, ball, earring, drop
@@ -23,9 +22,7 @@ sickness; 痒 upper part; sick; sickness
 easy; 易; easy; easy, sun, day, knot, piglet’s tail
 dog tag; 甫; wedding; dog tag, dogtag, arrowhead, screwdriver, utilize, utilise
 sheep; 羊; sheep; sheep, horns, king, stick
-house; 宋 upper part; roof; house;
-pinnacle; 阝; building; pinnacle
-city walls; 阝; building; city walls
+house; 宋 upper part; roof; house
 skeleton; 骨; bone; skeleton, joint, moon, month, flesh, part of the body
 bend; 曲; music; bend, rice field, brains, stick
 beans; 豆; beans; beans, table, ceiling, one, mouth
@@ -35,10 +32,21 @@ straightened hook; 断 left part; lion; straightened hook, hook, fishhook
 wall; 至 top part; trash; wall, one, ceiling, elbow
 infant; 育 top part; trash; infant, toddler, top hat, elbow // WK doesn't differentiate between wall and infant
 upside down in a row; 並; line up&spikes&horns&ground; upside down in a row, row // line up is the direct equivalent, but only a kanji in WK, not a radical. also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
-measurement; 寸; measurement; measurement, glue, drop, ten with a hook
-elbow; 厶; private; elbow
 meeting; 合 top part; hat ground; meeting, umbrella, one // WK "meet" radical is 会
+measurement; 寸; measurement; measurement, glue, drop, ten with a hook
+// "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
+mouth; 口; mouth; mouth
 sun; 日; sun; sun, day
-horns; 并 top part; horns; horns, animal horns
 eye; 目; eye; eye // or net in WK. net in WK is just horizontal eye in RTK
+rice field; 田; rice field; rice field, brains
+soil; 土; dirt; soil, dirt, ground
+samurai; 士; samurai; samurai, gentleman
+stick; 旧 left part; stick; stick
+flag; 戸 bottom part; flag; flag
+pinnacle; 阝; building; pinnacle
+city walls; 阝; building; city walls
+wind; 冗 bottom part; table; wind
+crotch; 又; stool; crotch
+elbow; 厶; private; elbow
+horns; 并 top part; horns; horns, animal horns
 spoon; 匕; spoon; spoon, sitting on the ground
