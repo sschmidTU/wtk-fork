@@ -38,6 +38,7 @@ measurement; 寸; measurement; measurement, glue, drop, ten with a hook
 mouth; 口; mouth; mouth
 sun; 日; sun; sun, day
 eye; 目; eye; eye // or net in WK. net in WK is just horizontal eye in RTK
+ear; 耳; ear; ear
 rice field; 田; rice field; rice field, brains
 soil; 土; dirt; soil, dirt, ground
 samurai; 士; samurai; samurai, gentleman
