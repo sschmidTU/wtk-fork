@@ -34,6 +34,7 @@ infant; 育 top part; trash; infant, toddler, top hat, elbow // WK doesn't diffe
 upside down in a row; 並; line up&spikes&horns&ground; upside down in a row, row // line up is the direct equivalent, but only a kanji in WK, not a radical. also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat ground; meeting, umbrella, one // WK "meet" radical is 会
 measurement; 寸; measurement; measurement, glue, drop, ten with a hook
+do; 為; sake; do, so, strange building, tail feathers; do=so // so synonym/alternate for do
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
 mouth; 口; mouth; mouth
 sun; 日; sun; sun, day
@@ -51,3 +52,5 @@ crotch; 又; stool; crotch
 elbow; 厶; private; elbow
 horns; 并 top part; horns; horns, animal horns
 spoon; 匕; spoon; spoon, sitting on the ground
+vulture; 爪; cleat; vulture
+tail feathers; 杰 bottom part; boil; tail feathers
