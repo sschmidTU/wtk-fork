@@ -783,7 +783,7 @@ class WTKSearch {
   is_short_wk_keyword(query) {
     const small_wk_keywords = [
       'i', 'he', 'pi', 'go', 'do', 'no'
-    ]
+    ];
     return small_wk_keywords.includes(query);
   }
 

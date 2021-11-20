@@ -72,11 +72,11 @@
       switch (event.keyCode) {
         // Left arrow button
         case 37:
-          window.location = "../{% if page.prev != "" %}{{ page.prev }}/index.html{% endif %}"
+          window.location = "../{% if page.prev != "" %}{{ page.prev }}/index.html{% endif %}";
           break;
         // Right arrow button
         case 39:
-          window.location = "../{% if page.next != "" %}{{ page.next }}/index.html{% endif %}"
+          window.location = "../{% if page.next != "" %}{{ page.next }}/index.html{% endif %}";
           break;
       }
     }
