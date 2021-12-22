@@ -1,4 +1,4 @@
-RTK name; kanji; WK name; RTK elements full // comments
+RTK name; kanji; WK name; RTK elements full; synonyms a=b // comments
 wand; 訃 right part; toe; magic wand, wand, augury
 divining rod; 上 upper part; toe; magic wand, wand, augury, divining rod
 compare; 比; compare; compare, spoon, sitting on the ground, spoon2, sitting on the ground2
@@ -35,7 +35,13 @@ upside down in a row; 並; line up&spikes&horns&ground; upside down in a row, ro
 meeting; 合 top part; hat ground; meeting, umbrella, one // WK "meet" radical is 会
 measurement; 寸; measurement; measurement, glue, drop, ten with a hook
 do; 為; sake; do, so, strange building, tail feathers; do=so // so synonym/alternate for do
+rake; 粛 top part; wolverine; rake // = broom with stick through it (vertical stroke)
+broom; 雪 bottom part; wolverine; broom, brush // = rake without stick through it (mostly)
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
+towel; 巾; towel; towel
+crown; 冗 top part; forehead; crown
+maestro; 師 left part; bear; maestro, maestro without baton
+stop; 止; stop; stop, footprint
 mouth; 口; mouth; mouth
 sun; 日; sun; sun, day
 eye; 目; eye; eye // or net in WK. net in WK is just horizontal eye in RTK
