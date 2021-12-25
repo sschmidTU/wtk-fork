@@ -783,7 +783,7 @@ class WTKSearch {
   is_short_wk_keyword(query) {
     const small_wk_keywords = [
       'i', 'he', 'pi', 'go', 'do', 'no'
-    ]
+    ];
     return small_wk_keywords.includes(query);
   }
 
@@ -1096,7 +1096,7 @@ class WTKSearch {
       "fang": "tusk", //2053
       "sickle": "animal tracks", // or grab, p228, which is covered by "cleat tree".
       "number": "turn", //2058
-      "sake": "doX", //2067
+      "sake": "do", //2067
       //"ground kick": "hairpin", // TODO doesn't make sense to me anymore. this was before i realized kick could be scarf and hairpin
       "grass": "owl",
       "football": "migrating ducks", //p412

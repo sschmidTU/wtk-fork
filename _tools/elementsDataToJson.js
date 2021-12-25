@@ -15,12 +15,34 @@ function processFile(fileString) {
     const rows = fileString.split("\n");
     // skip first row
     for (let i=1; i < rows.length; i++) {
+        if (rows[i].trim().startsWith("//")) {
+            continue;
+        }
         const decommented = rows[i].split("//")[0];
         if (decommented === "") {
             console.log(`empty (or last) row ̀${i+1}.`);
             continue;
         }
         const columns = decommented.split(";");
+
+        // validate columns
+        let invalidRow = false;
+        if (columns.length < 4) {
+            invalidRow = true;
+        } else {
+            for (let col = 0; col < columns.length; col++) {
+                if (columns[col].trim() == "") {
+                    invalidRow = true;
+                    break;
+                }
+            }
+        }
+        if (invalidRow) {
+            console.warn(`invalid line ${i+1} in elements_data: \n${rows[i]}`);
+            return;
+        }
+
+        // process columns
         const rtkName = columns[0];
         const wkNames = columns[2].split("&").map((radical) => radical.trim());
         returnJson[rtkName] = {
