@@ -18,7 +18,7 @@ for (const doc of docs) {
   if (!doc.el) {
     //console.log("missing el for: " + doc.kanji); //debug
     if (doc.elT) {
-      doc.elP = doc.elT.replaceAll("l(", "").replaceAll("t(","").replaceAll(")","");
+      doc.elP = doc.elT.replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll(")","");
     }
     if (doc.elP) {
       // construct el (elements) from elP (elementsPure)
