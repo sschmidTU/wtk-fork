@@ -17,6 +17,9 @@ for (const doc of docs) {
   }
   if (!doc.el) {
     //console.log("missing el for: " + doc.kanji); //debug
+    if (doc.elT) {
+      doc.elP = doc.elT.replaceAll("l(", "").replaceAll("t(","").replaceAll(")","");
+    }
     if (doc.elP) {
       // construct el (elements) from elP (elementsPure)
       // TODO move this to a script that changes the .md files, instead of having visitors do this every time

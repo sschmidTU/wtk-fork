@@ -38,6 +38,8 @@ do; 為; sake; do, so, strange building, tail feathers; do=so // so synonym/alte
 rake; 粛 top part; wolverine; rake // = broom with stick through it (vertical stroke)
 broom; 雪 bottom part; wolverine; broom, brush // = rake without stick through it (mostly)
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
+person; 亻; leader; person
+dish; 皿; plate; dish
 teepee; 発 top part; tent; teepee, wigwam; teepee=wigwam
 bow; 弓; bow; bow
 towel; 巾; towel; towel
@@ -62,3 +64,6 @@ horns; 并 top part; horns; horns, animal horns
 spoon; 匕; spoon; spoon, sitting on the ground
 vulture; 爪; cleat; vulture
 tail feathers; 杰 bottom part; boil; tail feathers
+one; 一; ground; one
+ceiling; 一; ground; ceiling, one // only when on the top edge of a kanji
+floor; 一; ground; floor, one // only when on the bottom edge of a kanji

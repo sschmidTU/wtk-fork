@@ -7,7 +7,7 @@ variants:
 alternateFor: 
 keyword: 
 keywordAlts: 
-elementsPure: 
+elementsTree: 
 strokes: 
 on-yomi: 
 kun-yomi: 
