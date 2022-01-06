@@ -5,7 +5,8 @@ compare; 比; compare; compare, spoon, sitting on the ground, spoon2, sitting on
 say; 言; say; say, words, keitai, mouth
 white; 白; white; white, drop, sun, day
 direction; 方; direction; direction, compass
-taskmaster; 牧 right part; winter; taskmaster
+taskmaster; 牧 right part; winter; taskmaster // extra stroke "over the edge" to the right compared to walking legs
+walking legs; 各 top part; winter; walking legs // top horizontal stroke doesn't go "over the edge"
 leg; 足; leg; leg, wooden leg, mouth, mending, mend; also 踪 left part
 perfect; 完; perfect; perfect, house, beginning
 voice; 声; voice; voice, samurai, flag, stick
