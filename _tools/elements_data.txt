@@ -41,6 +41,7 @@ broom; 雪 bottom part; wolverine; broom, brush // = rake without stick through 
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
 woman; 女; woman; woman
 person; 亻; leader; person
+large; 大; big; large, St. Bernard
 eight; 八; eight; eight
 eight2; 曾 top part; eight; eight2, eight
 dish; 皿; plate; dish
