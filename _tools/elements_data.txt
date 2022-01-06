@@ -34,7 +34,7 @@ wall; 至 top part; trash; wall, one, ceiling, elbow
 infant; 育 top part; trash; infant, toddler, top hat, elbow // WK doesn't differentiate between wall and infant
 upside down in a row; 並; line up&spikes&horns&ground; upside down in a row, row // line up is the direct equivalent, but only a kanji in WK, not a radical. also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat ground; meeting, umbrella, one // WK "meet" radical is 会
-measurement; 寸; measurement; measurement, glue, drop, ten with a hook
+glue; 寸; measurement; glue, drop, ten with a hook
 do; 為; sake; do, so, strange building, tail feathers; do=so // so synonym/alternate for do
 rake; 粛 top part; wolverine; rake // = broom with stick through it (vertical stroke)
 broom; 雪 bottom part; wolverine; broom, brush // = rake without stick through it (mostly)
