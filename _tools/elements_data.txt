@@ -39,6 +39,7 @@ do; 為; sake; do, so, strange building, tail feathers; do=so // so synonym/alte
 rake; 粛 top part; wolverine; rake // = broom with stick through it (vertical stroke)
 broom; 雪 bottom part; wolverine; broom, brush // = rake without stick through it (mostly)
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
+woman; 女; woman; woman
 person; 亻; leader; person
 eight; 八; eight; eight
 eight2; 曾 top part; eight; eight2, eight
