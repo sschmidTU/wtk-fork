@@ -38,6 +38,8 @@ do; 為; sake; do, so, strange building, tail feathers; do=so // so synonym/alte
 rake; 粛 top part; wolverine; rake // = broom with stick through it (vertical stroke)
 broom; 雪 bottom part; wolverine; broom, brush // = rake without stick through it (mostly)
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
+teepee; 発 top part; tent; teepee, wigwam; teepee=wigwam
+bow; 弓; bow; bow
 towel; 巾; towel; towel
 crown; 冗 top part; forehead; crown
 maestro; 師 left part; bear; maestro, maestro without baton
