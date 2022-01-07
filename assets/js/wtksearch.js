@@ -116,7 +116,7 @@ class WTKSearch {
         if (inputRadical === '') { // can also happen for "blue     sun" for example, which won't be trimmed
           continue;
         }
-        // check for number (of occurences) at he end, e.g. 'tree3' or 'jackhammer2' (WK)
+        // check for number (of occurences) at the end, e.g. 'tree3' or 'jackhammer2' (WK)
         let numberChar = inputRadical.charAt(inputRadical.length - 1);
         let occurences = Number.parseInt(numberChar, 10);
         if (isNaN(occurences)) {
