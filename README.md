@@ -15,11 +15,12 @@ wtk-search is a web-based Kanji search engine for Wanikani radicals or RTK names
 ![image](https://user-images.githubusercontent.com/33069673/99188470-75195100-275c-11eb-8f6f-6e3c4e6d0d13.png)
 
 ---
+If you use RTK element names, check the *RTK* checkbox:<br>
 ![image](https://user-images.githubusercontent.com/33069673/99189292-cd525200-2760-11eb-98be-d04f4bf1aa1d.png)
 
 
 
-Live at: https://sschmidtu.github.io/mr-kanji-search-wtk/?rtk=0
+You can 'remember' the RTK option with a link like this: https://sschmidtu.github.io/mr-kanji-search-wtk/?rtk=1
 
 If you have suggestions, if you can't find your Kanji using WK radicals or RTK names, please leave a comment in [the Discussions section](https://github.com/sschmidTU/mr-kanji-search-wtk/discussions/21), [open an issue](https://github.com/sschmidTU/mr-kanji-search-wtk/issues),
 or comment on the Wanikani thread:
