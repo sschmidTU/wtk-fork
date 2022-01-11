@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "elements": "node _tools/elementsDataToJson.js"
   },
   "repository": {
     "type": "git",
