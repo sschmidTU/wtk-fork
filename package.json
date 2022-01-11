@@ -1,0 +1,31 @@
+{
+  "name": "wtk-search",
+  "version": "1.5.0",
+  "description": "Kanji search engine using Wanikani radicals or RTK names, on a RTK element dataset of 3000+ Kanji",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sschmidTU/mr-kanji-search-wtk.git"
+  },
+  "keywords": [
+    "kanji",
+    "search",
+    "wanikani",
+    "rtk"
+  ],
+  "author": "sschmidTU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sschmidTU/mr-kanji-search-wtk/issues"
+  },
+  "homepage": "https://github.com/sschmidTU/mr-kanji-search-wtk#readme",
+  "devDependencies": {
+    "node-fetch": "^3.1.0"
+  }
+}

@@ -3,3 +3,5 @@ _site
 .Rproj.user
 .Rhistory
 _tools_gitignored
+node_modules
+package-lock.json
