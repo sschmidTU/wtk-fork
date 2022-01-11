@@ -42,6 +42,8 @@ gates; 門; gates; gates
 cocoon; 幼 left part; poop; cocoon
 cactus; 聯 bottom right part; cactus; cactus
 car; 車; car; car, sun, day, rice field, ten, needle
+too much; 余; surplus; too much, umbrella, potato, small
+eat; 食; eat; eat, food, umbrella, good, halo, drop, silver
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
 woman; 女; woman; woman
 person; 亻; leader; person
