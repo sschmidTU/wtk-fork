@@ -41,7 +41,7 @@ broom; 雪 bottom part; wolverine; broom, brush // = rake without stick through 
 gates; 門; gates; gates
 cocoon; 幼 left part; poop; cocoon
 cactus; 聯 bottom right part; cactus; cactus
-car; 車; car; car, sun, day, ten, needle
+car; 車; car; car, sun, day, rice field, ten, needle
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
 woman; 女; woman; woman
 person; 亻; leader; person
