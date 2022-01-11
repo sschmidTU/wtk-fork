@@ -46,8 +46,11 @@ woman; 女; woman; woman
 person; 亻; leader; person
 large; 大; big; large, St. Bernard
 eight; 八; eight; eight
-eight2; 曾 top part; eight; eight2, eight
+eight2; 曾 top part; eight; eight2, eight // TODO elements shouldn't have digits in their name
 dish; 皿; plate; dish
+craft; 紅; construction; craft
+stream; 川; river; stream, flood
+flood; 災 top part; flood; flood, stream // would be nice if this was only flood, not stream. dual in rtk-search
 teepee; 発 top part; tent; teepee, wigwam; teepee=wigwam
 bow; 弓; bow; bow
 towel; 巾; towel; towel
