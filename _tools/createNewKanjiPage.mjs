@@ -49,6 +49,11 @@ async function init() {
     dirname = dirname.replace("_tools","rtk3-remain");
 
     const kanji = process.argv[2];
+    if (!(kanji?.length > 0)) {
+        console.log("usage: node _tools/createNewKanjiPage.mjs [kanji]");
+        console.log("   or: npm run newkanji -- [kanji]");
+        return;
+    }
 
     const kanjiData = await getKanjiData(kanji);
     console.log("kanjiData json: \n" + JSON.stringify(kanjiData));
