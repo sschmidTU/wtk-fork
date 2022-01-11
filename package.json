@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "elements": "node _tools/elementsDataToJson.js"
+    "elements": "node _tools/elementsDataToJson.js",
+    "newkanji": "node _tools/createNewKanjiPage.mjs"
   },
   "repository": {
     "type": "git",
