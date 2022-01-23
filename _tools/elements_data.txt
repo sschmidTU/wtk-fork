@@ -45,6 +45,9 @@ car; 車; car; car, sun, day, rice field, ten, needle
 too much; 余; surplus; too much, umbrella, potato, small
 eat; 食; eat; eat, food, umbrella, good, halo, drop, silver
 four; 四; four; four, pent in, human legs // actually mouth legs on WK but that's included in the RTK elements
+road; 退 left part; scooter; road
+reclining; 乞 top part; gun; reclining, lying down
+fishhook; 乙; nose; fishhook, fishguts
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
 woman; 女; woman; woman
 person; 亻; leader; person
