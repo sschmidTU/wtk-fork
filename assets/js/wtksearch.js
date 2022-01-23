@@ -876,7 +876,7 @@ class WTKSearch {
       "season": "decameron", //p41
       "pool": "ladle", //p42
       //"neck": "neck",
-      "nose": "fish guts", //p44
+      "nose": "fishhook", //p44, also fishguts, but not really used in data
       "reality": "true", //p46
       "narwhal": "by one’s side",
       "construction": "craft",
