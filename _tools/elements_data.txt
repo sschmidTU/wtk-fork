@@ -59,7 +59,7 @@ fingerprint; 犯 right part; snake; fingerprint
 oven-fire; 灬; boil; oven-fire, oven fire, drop4, barbecue
 ice; 凍 left part; ice; ice
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
-wheat; 和; grain; wheat, cereal
+wheat; 和 left part; grain; wheat, cereal
 top hat; 京 top part; lid; top hat
 pent in; 囗; mouth; pent in // when it's enclosing other elements. otherwise mouth
 tree; 木; tree; tree, wood
