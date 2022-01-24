@@ -57,6 +57,7 @@ times; 回; times; times, -times, pent in, mouth
 retainer; 臣; servant; retainer, slave
 fingerprint; 犯 right part; snake; fingerprint
 oven-fire; 灬; boil; oven-fire, oven fire, drop4, barbecue
+ice; 凍 left part; ice; ice
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
 wheat; 和; grain; wheat, cereal
 top hat; 京 top part; lid; top hat
