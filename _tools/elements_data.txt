@@ -50,7 +50,7 @@ road; 退 left part; scooter; road
 reclining; 乞 top part; gun; reclining, lying down
 fishhook; 乙; nose; fishhook, fishguts
 saw; 乍; key; saw
-bones; 残 left part; yakuza; bones, one, ceiling
+bones; 残 left part; yakuza; bones, one, ceiling, evening
 fiesta; 伐 right part; drunkard; fiesta
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
 pent in; 囗; mouth; pent in // when it's enclosing other elements. otherwise mouth
