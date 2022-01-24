@@ -48,6 +48,7 @@ four; 四; four; four, pent in, human legs // actually mouth legs on WK but that
 road; 退 left part; scooter; road
 reclining; 乞 top part; gun; reclining, lying down
 fishhook; 乙; nose; fishhook, fishguts
+saw; 乍; key; saw
 // "primitives": (in the sense that there usually isn't a meaningful subdivision of them)
 tree; 木; tree; tree, wood
 woman; 女; woman; woman
