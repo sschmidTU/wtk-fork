@@ -1080,7 +1080,7 @@ class WTKSearch {
       "tophat": "shelf",
       "lineup": "row",
       "normal": "universal", //1925
-      "yen": "circle", //1952
+      "yen": "yen,circle", //1952
       "lifeguard": "funnel",
       "think": "think", //p391
       "energy": "reclining one fishhook", //energy doesn't exist in RTK
