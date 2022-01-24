@@ -35,11 +35,9 @@ kun-yomi: ${kanjiData.kun_readings}
 comments: 
 permalink: /${kanji}/
 ---`;
-    // TODO parse keyword, strokes, on-yomi, kun-yomi from jisho
-    //console.log("pageString: \n" + pageString);
     const filename = `${dirName}/${kanjiNumber}.md`;
     console.log("filename: " + filename);
-    FS.writeFile(filename, pageString, (err) => console.log(err));
+    FS.writeFile(filename, pageString, (err) => {if (err) console.log(err)});
 }
 
 async function init() {
