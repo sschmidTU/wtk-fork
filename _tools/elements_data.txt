@@ -1,4 +1,4 @@
-RTK name; kanji; WK name; RTK elements full (element1Synonym1 = element1Synonym2 = element1Synonym3, element2, ...elements); // comments. synonym info (=) may not be complete yet.
+RTK / elementsPure name; kanji; WK name; RTK elements full (element1Synonym1 = element1Synonym2 = element1Synonym3, element2, ...elements); // comments. synonym info (=) may not be complete yet.
 wand; 訃 right part; toe; magic wand = wand = augury
 divining rod; 上 upper part; toe; divining rod, magic wand = wand = augury
 compare; 比; compare; compare, spoon = sitting on the ground, spoon2, sitting on the ground2
