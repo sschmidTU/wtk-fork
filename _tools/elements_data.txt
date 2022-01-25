@@ -50,6 +50,8 @@ car; 車; car; car, sun = day, rice field, ten, needle
 too much; 余; surplus; too much, umbrella, potato, small
 eat; 食; eat; eat = food, umbrella, good, halo, drop, silver
 four; 四; four; four, pent in, human legs // actually mouth legs on WK but that's included in the RTK elements
+human legs; 儿; legs; human legs
+animal legs; 六 bottom part, 只 bottom part; legs; animal legs
 road; 退 left part; scooter; road
 reclining; 乞 top part; gun; reclining = lying down
 fishhook; 乙; nose; fishhook = fishguts
@@ -87,6 +89,7 @@ mouth; 口; mouth; mouth
 sun; 日; sun; sun = day
 eye; 目; eye; eye // or net in WK. net in WK is just horizontal eye in RTK
 ear; 耳; ear; ear
+mortar; 臼; sun; mortar // mortar/sun is not distinguished in WK
 rice field; 田; rice field; rice field = brains
 soil; 土; dirt; soil = dirt = ground
 samurai; 士; samurai; samurai = gentleman
