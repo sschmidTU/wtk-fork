@@ -1,90 +1,90 @@
-RTK name; kanji; WK name; RTK elements full; synonyms a=b // comments
-wand; 訃 right part; toe; magic wand, wand, augury
-divining rod; 上 upper part; toe; magic wand, wand, augury, divining rod
-compare; 比; compare; compare, spoon, sitting on the ground, spoon2, sitting on the ground2
-say; 言; say; say, words, keitai, mouth
-white; 白; white; white, drop, sun, day
-direction; 方; direction; direction, compass
+RTK name; kanji; WK name; RTK elements full (element1Synonym1 = element1Synonym2 = element1Synonym3, element2, ...elements); // comments. synonym info (=) may not be complete yet.
+wand; 訃 right part; toe; magic wand = wand = augury
+divining rod; 上 upper part; toe; divining rod, magic wand = wand = augury
+compare; 比; compare; compare, spoon = sitting on the ground, spoon2, sitting on the ground2
+say; 言; say; say = words = keitai, mouth
+white; 白; white; white, drop, sun = day
+direction; 方; direction; direction = compass
 taskmaster; 牧 right part; winter; taskmaster // extra stroke "over the edge" to the right compared to walking legs
 walking legs; 各 top part; winter; walking legs // top horizontal stroke doesn't go "over the edge"
-leg; 足; leg; leg, wooden leg, mouth, mending, mend; also 踪 left part
+leg; 足, 踪 left part; leg; leg, wooden leg, mouth, mending = mend
 perfect; 完; perfect; perfect, house, beginning
 voice; 声; voice; voice, samurai, flag, stick
 missile; 投 right part; weapon; missile, wind, crotch
 thread; 糸; thread; thread, spiderman
-climax; 至; mole; climax, wall, one, ceiling, elbow, soil, dirt, ground
-jewel; 玉; jewel; jewel, king, ball, earring, drop
-king; 王; king; king, jewel, ball
+climax; 至; mole; climax, wall, one, ceiling, elbow, soil = dirt = ground
+jewel; 玉; jewel; jewel = king = ball, earring, drop
+king; 王; king; king = jewel = ball
 round; 丸; round; round, drop, nine, baseball
 employee; 員; member; employee, mouth, shellfish // TODO t(mouth, shellfish)
-shellfish; 貝; shellfish; shellfish, shell, clam, oyster, eye, animal legs, eight
-chestnut; 栗; chestnut; chestnut, old west, tree, wood
-bundle; 束; bundle; bundle, Chaplin, tree, wood, mouth
+shellfish; 貝; shellfish; shellfish = shell = clam = oyster, eye, animal legs = eight
+chestnut; 栗; chestnut; chestnut = old west, tree = wood
+bundle; 束; bundle; bundle = Chaplin, tree = wood, mouth
 sickness; 痒 upper part; sick; sickness
-easy; 易; easy; easy, sun, day, knot, piglet’s tail
-dog tag; 甫; wedding; dog tag, dogtag, arrowhead, screwdriver, utilize, utilise
+easy; 易; easy; easy, sun = day, knot, piglet’s tail
+dog tag; 甫; wedding; dog tag = dogtag, arrowhead, screwdriver, utilize = utilise
 sheep; 羊; sheep; sheep, horns, king, stick
 house; 宋 upper part; roof; house
-skeleton; 骨; bone; skeleton, joint, moon, month, flesh, part of the body
-bend; 曲; music; bend, rice field, brains, stick
+skeleton; 骨; bone; skeleton, joint, moon = month = flesh = part of the body
+bend; 曲; music; bend, rice field = brains, stick
 beans; 豆; beans; beans, table, ceiling, one, mouth
-schoolhouse; 学覚栄 upper part; viking; schoolhouse, owl, one, animal legs, crown
-animal legs; 只 bottom part or ハ; fins; animal legs, eight
+schoolhouse; 学覚栄 upper part; viking; schoolhouse = owl, one, animal legs, crown
+animal legs; 只 bottom part or ハ; fins; animal legs = eight
 straightened hook; 断 left part; lion; straightened hook, hook, fishhook
 wall; 至 top part; trash; wall, one, ceiling, elbow
 infant; 育 top part; trash; infant, toddler, top hat, elbow // WK doesn't differentiate between wall and infant
 upside down in a row; 並; line up&spikes&horns&ground; upside down in a row, row // line up is the direct equivalent, but only a kanji in WK, not a radical. also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat ground; meeting, umbrella, one // WK "meet" radical is 会
 glue; 寸; measurement; glue, drop, ten with a hook
-do; 為; sake; do, so, strange building, tail feathers; do=so // so synonym/alternate for do
+do; 為; sake; do = so, strange building, tail feathers // so synonym/alternate for do
 rake; 粛 top part; wolverine; rake // = broom with stick through it (vertical stroke)
 broom; 雪 bottom part; wolverine; broom, brush // = rake without stick through it (mostly)
 gates; 門; gates; gates
 cocoon; 幼 left part; poop; cocoon
 cactus; 聯 bottom right part; cactus; cactus
-car; 車; car; car, sun, day, rice field, ten, needle
+car; 車; car; car, sun = day, rice field, ten, needle
 too much; 余; surplus; too much, umbrella, potato, small
-eat; 食; eat; eat, food, umbrella, good, halo, drop, silver
+eat; 食; eat; eat = food, umbrella, good, halo, drop, silver
 four; 四; four; four, pent in, human legs // actually mouth legs on WK but that's included in the RTK elements
 road; 退 left part; scooter; road
-reclining; 乞 top part; gun; reclining, lying down
-fishhook; 乙; nose; fishhook, fishguts
+reclining; 乞 top part; gun; reclining = lying down
+fishhook; 乙; nose; fishhook = fishguts
 saw; 乍; key; saw
 bones; 残 left part; yakuza; bones, one, ceiling, evening
 fiesta; 伐 right part; drunkard; fiesta
 show; 示; jackhammer; show, altar, two, small // altar is same naming in RTK as 礼 left part, confusing.
-times; 回; times; times, -times, pent in, mouth
-retainer; 臣; servant; retainer, slave
+times; 回; times; times = -times, pent in, mouth
+retainer; 臣; servant; retainer = slave
 fingerprint; 犯 right part; snake; fingerprint
-oven-fire; 灬; boil; oven-fire, oven fire, drop4, barbecue
+oven-fire; 灬; boil; oven-fire = oven fire = barbecue, drop4
 ice; 凍 left part; ice; ice
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
-wheat; 和 left part; grain; wheat, cereal
+wheat; 和 left part; grain; wheat = cereal
 top hat; 京 top part; lid; top hat
 pent in; 囗; mouth; pent in // when it's enclosing other elements. otherwise mouth
-tree; 木; tree; tree, wood
+tree; 木; tree; tree = wood
 woman; 女; woman; woman
 person; 亻; leader; person
-large; 大; big; large, St. Bernard
+large; 大; big; large = St. Bernard
 eight; 八; eight; eight
-eight2; 曾 top part; eight; eight2, eight // TODO elements shouldn't have digits in their name
+eight2; 曾 top part; eight; eight, eight2 // TODO elements shouldn't have digits in their name
 dish; 皿; plate; dish
 craft; 紅; construction; craft
 stream; 川; river; stream, flood
 flood; 災 top part; flood; flood, stream // would be nice if this was only flood, not stream. dual in rtk-search
-teepee; 発 top part; tent; teepee, wigwam; teepee=wigwam
+teepee; 発 top part; tent; teepee = wigwam
 bow; 弓; bow; bow
 towel; 巾; towel; towel
 crown; 冗 top part; forehead; crown
 maestro; 師 left part; bear; maestro, maestro without baton
 stop; 止; stop; stop, footprint
 mouth; 口; mouth; mouth
-sun; 日; sun; sun, day
+sun; 日; sun; sun = day
 eye; 目; eye; eye // or net in WK. net in WK is just horizontal eye in RTK
 ear; 耳; ear; ear
-rice field; 田; rice field; rice field, brains
-soil; 土; dirt; soil, dirt, ground
-samurai; 士; samurai; samurai, gentleman
+rice field; 田; rice field; rice field = brains
+soil; 土; dirt; soil = dirt = ground
+samurai; 士; samurai; samurai = gentleman
 stick; 旧 left part; stick; stick
 flag; 戸 bottom part; flag; flag
 pinnacle; 阝; building; pinnacle
@@ -92,8 +92,8 @@ city walls; 阝; building; city walls
 wind; 冗 bottom part; table; wind
 crotch; 又; stool; crotch
 elbow; 厶; private; elbow
-horns; 并 top part; horns; horns, animal horns
-spoon; 匕; spoon; spoon, sitting on the ground
+horns; 并 top part; horns; horns = animal horns
+spoon; 匕; spoon; spoon = sitting on the ground
 vulture; 爪; cleat; vulture
 tail feathers; 杰 bottom part; boil; tail feathers
 one; 一; ground; one
