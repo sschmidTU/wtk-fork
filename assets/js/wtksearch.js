@@ -941,7 +941,7 @@ class WTKSearch {
       "oldersister": "elder sister",
       "belt": "sash", //p161
       "heaven": "heavens,witch,sapling", // heavens p164
-      "stand": "stand up", // only relevant for strict mode
+      "stand": "stand up", // only relevant for strict mode. also vase
       "chapter": "badge", //p166
       "mohawk": "antique", //p167
       "scent": "aroma",

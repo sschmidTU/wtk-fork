@@ -23,6 +23,8 @@ bundle; 束; bundle; bundle = Chaplin, tree = wood, mouth
 sickness; 痒 upper part; sick; sickness
 easy; 易; easy; easy, sun = day, knot, piglet’s tail
 dog tag; 甫; wedding; dog tag = dogtag, arrowhead, screwdriver, utilize = utilise
+sovereign; 帝; sovereign; sovereign, top hat, stand up = vase, apron, crown, towel // apron = crown+towel
+stand up; 立; stand; stand up = vase, top hat, horns, floor, one // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 sheep; 羊; sheep; sheep, horns, king, stick
 house; 宋 upper part; roof; house
 skeleton; 骨; bone; skeleton, joint, moon = month = flesh = part of the body
