@@ -25,6 +25,8 @@ easy; 易; easy; easy, sun = day, knot, piglet’s tail
 dog tag; 甫; wedding; dog tag = dogtag, arrowhead, screwdriver, utilize = utilise
 sovereign; 帝; sovereign; sovereign, top hat, stand up = vase, apron, crown, towel // apron = crown+towel
 stand up; 立; stand; stand up = vase, top hat, horns, floor, one // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
+heart; 心; heart; heart, drops, drop3, drop, fishhook
+red cross; 惡 part between one and one; red cross; red cross = swiss = switzerland = d-pad, box4, box // doesn't exist in RTK/WK ("made up"), hard to describe in RTK elements
 sheep; 羊; sheep; sheep, horns, king, stick
 house; 宋 upper part; roof; house
 skeleton; 骨; bone; skeleton, joint, moon = month = flesh = part of the body
