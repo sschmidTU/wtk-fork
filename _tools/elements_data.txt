@@ -53,6 +53,9 @@ four; 四; four; four, pent in, human legs // actually mouth legs on WK but that
 human legs; 儿; legs; human legs
 animal legs; 六 bottom part, 只 bottom part; legs; animal legs
 road; 退 left part; scooter; road
+going; 行; go; going // boulevard is only when there's something in the middle/inner of the go element
+boulevard; 行; go; boulevard, going // used when there's something in the middle/inner.
+five; 五; five; five
 reclining; 乞 top part; gun; reclining = lying down
 fishhook; 乙; nose; fishhook = fishguts
 saw; 乍; key; saw
