@@ -18,6 +18,7 @@ king; 王; king; king = jewel = ball
 round; 丸; round; round, drop, nine, baseball
 employee; 員; member; employee, mouth, shellfish // TODO t(mouth, shellfish)
 shellfish; 貝; shellfish; shellfish = shell = clam = oyster, eye, animal legs = eight
+see; 見; see; see, eye, human legs
 chestnut; 栗; chestnut; chestnut = old west, tree = wood
 bundle; 束; bundle; bundle = Chaplin, tree = wood, mouth
 sickness; 痒 upper part; sick; sickness
@@ -68,6 +69,8 @@ fingerprint; 犯 right part; snake; fingerprint
 oven-fire; 灬; boil; oven-fire = oven fire = barbecue, drop4
 ice; 凍 left part; ice; ice
 dart; 矢; arrow; dart, drop, heavens
+turkey; 唯 right part; turkey; turkey
+flowers; 艹, 若 top part; flowers; flowers
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 wheat; 和 left part; grain; wheat = cereal
 top hat; 京 top part; lid; top hat
