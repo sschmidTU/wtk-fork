@@ -59,6 +59,7 @@ road; 退 left part; scooter; road
 going; 行; go; going // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go; boulevard, going // used when there's something in the middle/inner.
 five; 五; five; five
+beg; 乞; beg; beg, reclining = lying down, fishhook
 reclining; 乞 top part; gun; reclining = lying down
 fishhook; 乙; nose; fishhook = fishguts
 saw; 乍; key; saw
@@ -68,6 +69,7 @@ show; 示; jackhammer; show, altar, two, small // altar is same naming in RTK as
 times; 回; times; times = -times, pent in, mouth
 retainer; 臣; servant; retainer = slave
 fingerprint; 犯 right part; snake; fingerprint
+sign of the snake; 巳; snake; sign of the snake, mosaic, mosaic with bit missing // this is exactly WK snake, which can also be RTK fingerprint
 oven-fire; 灬; boil; oven-fire = oven fire = barbecue, drop4
 ice; 凍 left part; ice; ice
 dart; 矢; arrow; dart, drop, heavens
