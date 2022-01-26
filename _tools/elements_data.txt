@@ -27,7 +27,7 @@ dog tag; 甫; wedding; dog tag = dogtag, arrowhead, screwdriver, utilize = utili
 sovereign; 帝; sovereign; sovereign, top hat, stand up = vase, apron, crown, towel // apron = crown+towel
 stand up; 立; stand; stand up = vase, top hat, horns, floor, one // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 heart; 心; heart; heart, drops, drop3, drop, fishhook
-swiss; 惡 part between one and one; swiss; swiss = switzerland = red cross = d-pad, convex2, box4, box // doesn't exist in RTK/WK ("made up"), hard to describe in RTK elements
+swiss; 惡 part between one and one; swiss; swiss = switzerland = red cross = d-pad = plus, convex2, box4, box // doesn't exist in RTK/WK ("made up"), hard to describe in RTK elements
 convex; 凸; convex; convex
 box; 区 outer part; cage; box
 sheep; 羊; sheep; sheep, horns, king, stick
