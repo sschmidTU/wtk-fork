@@ -66,7 +66,7 @@ async function init() {
     kanjiData.newKanjiNumber = newKanjiNumber
     console.log("newKanjiNumber: " + newKanjiNumber);
 
-    generatePage(kanjiData, dirname);
+    generatePage(kanjiData, dirnameRtk3);
 }
 
 function getFiles(dirname) {
