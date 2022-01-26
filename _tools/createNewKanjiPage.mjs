@@ -81,7 +81,16 @@ function getFiles(dirname) {
 function checkForDuplicateIn(dirname, files, kanji) {
     for (const file of files) {
         const fileString = FS.readFileSync(`${dirname}/${file}`);
-        if (fileString.includes(`kanji: ${kanji}`)) {
+        //const regex = new RegExp(`/^kanji: ${kanji}/m`);
+        //const matchExists = regex.test(fileString.toString()); // doesn't work
+        const match = fileString.toString().match(/^kanji: ./m); // /m: multiline mode, needed for ^ = beginning of line
+        // if (!match?.length) {
+        //     console.log(".md lacking kanji: " + file);
+        //     continue;
+        // } // commented for speed
+        const kanjiMatch = match[0];
+        const existingKanji = kanjiMatch[kanjiMatch.length - 1];
+        if (existingKanji === kanji) {
             console.log("error: kanji already exists in file " + file);
             console.log("exiting.");
             process.exit();
