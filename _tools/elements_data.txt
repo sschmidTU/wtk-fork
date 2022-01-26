@@ -29,6 +29,7 @@ stand up; 立; stand; stand up = vase, top hat, horns, floor, one // RTK says "U
 heart; 心; heart; heart, drops, drop3, drop, fishhook
 swiss; 惡 part between one and one; swiss; swiss = switzerland = red cross = d-pad, convex2, box4, box // doesn't exist in RTK/WK ("made up"), hard to describe in RTK elements
 convex; 凸; convex; convex
+box; 区 outer part; cage; box
 sheep; 羊; sheep; sheep, horns, king, stick
 house; 宋 upper part; roof; house
 skeleton; 骨; bone; skeleton, joint, moon = month = flesh = part of the body
