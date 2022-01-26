@@ -8,7 +8,9 @@
   },
   "scripts": {
     "elements": "node _tools/elementsDataToJson.js",
-    "newkanji": "node _tools/createNewKanjiPage.mjs"
+    "newkanji": "node _tools/createNewKanjiPage.mjs",
+    "duplicates": "node _tools/checkKanjiDuplicates.mjs",
+    "test": "node _tools/checkKanjiDuplicates.mjs"
   },
   "repository": {
     "type": "git",
