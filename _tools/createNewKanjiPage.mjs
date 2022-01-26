@@ -43,8 +43,9 @@ permalink: /${kanji}/
 async function init() {
     //let mainDir = __filename.replace(/_tools[\\|\/]createNewKanjiPage.mjs/, "");
     const __filename = fileURLToPath(import.meta.url);
-    let dirname = path.dirname(__filename);
-    dirname = dirname.replace("_tools","rtk3-remain");
+    const dirname = path.dirname(__filename);
+    const dirnamev1To6 = dirname.replace("_tools","rtk1-v6");
+    const dirnameRtk3 = dirname.replace("_tools","rtk3-remain");
 
     const kanji = process.argv[2];
     if (!(kanji?.length > 0)) {
@@ -53,22 +54,42 @@ async function init() {
         return;
     }
 
+    const rtk3Files  = getFiles(dirnameRtk3);
+    const v1To6Files = getFiles(dirnamev1To6);
+    checkForDuplicateIn(dirnameRtk3, rtk3Files, kanji) // more likely to have duplicate, so check first
+    checkForDuplicateIn(dirnamev1To6, v1To6Files, kanji);
+
     const kanjiData = await getKanjiData(kanji);
     console.log("kanjiData json: \n" + JSON.stringify(kanjiData));
     
-    let newKanjiNumber = getNewKanjiNumber(dirname);
+    let newKanjiNumber = getNewKanjiNumber(rtk3Files);
     kanjiData.newKanjiNumber = newKanjiNumber
     console.log("newKanjiNumber: " + newKanjiNumber);
 
     generatePage(kanjiData, dirname);
 }
 
-function getNewKanjiNumber(dirname) {
+function getFiles(dirname) {
     const files = FS.readdirSync(dirname, function (err, files) {
         if (err) {
             console.log("readdir error: \n" + err);
         }
     });
+    return files;
+}
+
+function checkForDuplicateIn(dirname, files, kanji) {
+    for (const file of files) {
+        const fileString = FS.readFileSync(`${dirname}/${file}`);
+        if (fileString.includes(`kanji: ${kanji}`)) {
+            console.log("error: kanji already exists in file " + file);
+            console.log("exiting.");
+            process.exit();
+        }
+    }
+}
+
+function getNewKanjiNumber(files) {
     let last = files[files.length-1];
     last = last.replace(".md","");
     //console.log("last: " + last);
