@@ -8,6 +8,8 @@ direction; 方; direction; direction = compass
 taskmaster; 牧 right part; winter; taskmaster // extra stroke "over the edge" to the right compared to walking legs
 walking legs; 各 top part; winter; walking legs // top horizontal stroke doesn't go "over the edge"
 leg; 足, 踪 left part; leg; leg, wooden leg, mouth, mending = mend
+mending; 足 bottom part; coat rack; mending = mend
+zoo; 蛋 top part, 旋 bottom right part, 疏 left part; coat rack; zoo = critters // coat rack in WK is both zoo and mending
 perfect; 完; perfect; perfect, house, beginning
 voice; 声; voice; voice, samurai, flag, stick
 missile; 投 right part; weapon; missile, wind, crotch
@@ -96,7 +98,8 @@ top hat; 京 top part; lid; top hat
 pent in; 囗; mouth; pent in // when it's enclosing other elements. otherwise mouth
 tree; 木; tree; tree = wood
 woman; 女; woman; woman
-person; 亻; leader; person
+person; 亻, 卒 middle part; leader&person; person // person is more ambiguous in RTK than in WK for a change (RTK person = WK leader or person)
+assembly line; 卒 middle part; person; assembly line, person2, person
 large; 大; big; large = St. Bernard
 eight; 八; eight; eight
 eight2; 曾 top part; eight; eight, eight2 // TODO elements shouldn't have digits in their name
