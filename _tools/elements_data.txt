@@ -36,7 +36,6 @@ skeleton; 骨; bone; skeleton, joint, moon = month = flesh = part of the body
 bend; 曲; music; bend, rice field = brains, stick
 beans; 豆; beans; beans, table, ceiling, one, mouth
 schoolhouse; 学覚栄 upper part; viking; schoolhouse = owl, one, animal legs, crown
-animal legs; 只 bottom part or ハ; fins; animal legs = eight
 straightened hook; 断 left part; lion; straightened hook, hook, fishhook
 wall; 至 top part; trash; wall, one, ceiling, elbow
 infant; 育 top part; trash; infant, toddler, top hat, elbow // WK doesn't differentiate between wall and infant
@@ -54,7 +53,7 @@ too much; 余; surplus; too much, umbrella, potato, small
 eat; 食; eat; eat = food, umbrella, good, halo, drop, silver
 four; 四; four; four, pent in, human legs // actually mouth legs on WK but that's included in the RTK elements
 human legs; 儿; legs; human legs
-animal legs; 六 bottom part, 只 bottom part; legs; animal legs
+animal legs; ハ, 只 bottom part; fins; animal legs = eight
 road; 退 left part; scooter; road
 going; 行; go; going // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go; boulevard, going // used when there's something in the middle/inner.
