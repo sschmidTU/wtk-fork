@@ -58,7 +58,7 @@ human legs; 儿; legs; human legs
 animal legs; ハ, 只 bottom part; fins; animal legs = eight
 road; 退 left part; scooter; road
 going; 行; go&loiter; going // boulevard is only when there's something in the middle/inner of the go element
-boulevard; 行; go; boulevard, going // used when there's something in the middle/inner.
+boulevard; 行; go&loiter; boulevard, going // used when there's something in the middle/inner.
 five; 五; five; five
 beg; 乞; beg; beg, reclining = lying down, fishhook
 reclining; 乞 top part; gun; reclining = lying down
