@@ -78,7 +78,11 @@ flowers; 艹, 若 top part; flowers; flowers
 negative; 不; not; negative, negation, one, ceiling, person, drop
 water; 氵; tsunami; water, water droplets, water pistol
 deceased; 亡; death; deceased, perish, top hat, fishhook
+genius; 才, 在 outer part; genius; genius, genie
+by one's side; 左 outer part; narwhal; by one's side, by one’s side
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
+child; 子; child; child
+finger; 招 left part; fingers; finger, fingers
 enter; 入; enter; enter
 wheat; 和 left part; grain; wheat = cereal
 top hat; 京 top part; lid; top hat
