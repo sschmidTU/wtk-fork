@@ -83,6 +83,9 @@ deceased; 亡; death; deceased = perish, top hat, fishhook
 genius; 才, 在 outer part; genius; genius = genie
 by one's side; 左 outer part; narwhal; by one's side = by one’s side
 early; 早; early; early = sunflower, sun, day, ten, needle
+pack of wild dogs; 狂 left part; animal; pack of wild dogs
+bound up; 句 outer part, 負 top part; prison; bound up
+insect; 虫; insect; insect, inX, stick, mouth // inX = in, but so that search engine can deal with it
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 child; 子; child; child
 finger; 招 left part; fingers; finger = fingers
