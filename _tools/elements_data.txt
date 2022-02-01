@@ -68,7 +68,7 @@ fiesta; 伐 right part; drunkard; fiesta
 show; 示; jackhammer; show, altar, two, small // altar is same naming in RTK as 礼 left part, confusing.
 altar; 礼 left part; spirit; altar // almost same as cloak, doesn't have the diagonal stroke on the right
 cloak; 初 left part; spirit; cloak // almost same as altar, has an extra diagonal stroke on the right
-guillotine; 決 right part; decide; guillotine, key, St. Bernard, large, person
+guillotine; 決 right part; decide; guillotine, key, St. Bernard = large = person
 times; 回; times; times = -times, pent in, mouth
 retainer; 臣; servant; retainer = slave
 fingerprint; 犯 right part; snake; fingerprint
@@ -79,14 +79,14 @@ dart; 矢; arrow; dart, drop, heavens
 turkey; 唯 right part; turkey; turkey
 flowers; 艹, 若 top part; flowers; flowers
 negative; 不; not; negative, negation, one, ceiling, person, drop
-water; 氵; tsunami; water, water droplets, water pistol
-deceased; 亡; death; deceased, perish, top hat, fishhook
-genius; 才, 在 outer part; genius; genius, genie
-by one's side; 左 outer part; narwhal; by one's side, by one’s side
-early; 早; early; early, sunflower, sun, day, ten, needle
+water; 氵; tsunami; water = water droplets = water pistol
+deceased; 亡; death; deceased = perish, top hat, fishhook
+genius; 才, 在 outer part; genius; genius = genie
+by one's side; 左 outer part; narwhal; by one's side = by one’s side
+early; 早; early; early = sunflower, sun, day, ten, needle
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 child; 子; child; child
-finger; 招 left part; fingers; finger, fingers
+finger; 招 left part; fingers; finger = fingers
 enter; 入; enter; enter
 wheat; 和 left part; grain; wheat = cereal
 top hat; 京 top part; lid; top hat
