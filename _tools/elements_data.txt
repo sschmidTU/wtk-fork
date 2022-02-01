@@ -68,6 +68,7 @@ show; 示; jackhammer; show, altar, two, small // altar is same naming in RTK as
 altar; 礼 left part; spirit; altar // almost same as cloak, doesn't have the diagonal stroke on the right
 cloak; 初 left part; spirit; cloak // almost same as altar, has an extra diagonal stroke on the right
 guillotine; 決 right part; decide; guillotine, key, St. Bernard = large = person
+page; 頁; page; page, one, ceiling, drop, shellfish = shell = clam = oyster, eye, animal legs = eight
 times; 回; times; times = -times, pent in, mouth
 retainer; 臣; servant; retainer = slave
 fingerprint; 犯 right part; snake; fingerprint
@@ -100,7 +101,7 @@ large; 大; big; large = St. Bernard
 eight; 八; eight; eight
 eight2; 曾 top part; eight; eight, eight2 // TODO elements shouldn't have digits in their name
 dish; 皿; plate; dish
-craft; 紅; construction; craft
+craft; 紅 right part; construction; craft
 stream; 川; river; stream, flood
 flood; 災 top part; flood; flood, stream // would be nice if this was only flood, not stream. dual in rtk-search
 teepee; 発 top part; tent; teepee = wigwam
