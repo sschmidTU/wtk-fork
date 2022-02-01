@@ -76,6 +76,8 @@ dart; 矢; arrow; dart, drop, heavens
 turkey; 唯 right part; turkey; turkey
 flowers; 艹, 若 top part; flowers; flowers
 negative; 不; not; negative, negation, one, ceiling, person, drop
+water; 氵; tsunami; water, water droplets, water pistol
+deceased; 亡; death; deceased, perish, top hat, fishhook
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 wheat; 和 left part; grain; wheat = cereal
 top hat; 京 top part; lid; top hat
