@@ -66,6 +66,9 @@ saw; 乍; key; saw
 bones; 残 left part; yakuza; bones, one, ceiling, evening
 fiesta; 伐 right part; drunkard; fiesta
 show; 示; jackhammer; show, altar, two, small // altar is same naming in RTK as 礼 left part, confusing.
+altar; 礼 left part; spirit; altar // almost same as cloak, doesn't have the diagonal stroke on the right
+cloak; 初 left part; spirit; cloak // almost same as altar, has an extra diagonal stroke on the right
+guillotine; 決 right part; decide; guillotine, key, St. Bernard, large, person
 times; 回; times; times = -times, pent in, mouth
 retainer; 臣; servant; retainer = slave
 fingerprint; 犯 right part; snake; fingerprint
