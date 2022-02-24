@@ -42,7 +42,7 @@ straightened hook; 断 left part; lion; straightened hook, hook, fishhook
 wall; 至 top part; trash; wall, one, ceiling, elbow
 infant; 育 top part; trash; infant, toddler, top hat, elbow // WK doesn't differentiate between wall and infant
 upside down in a row; 並; line up&spikes&horns&ground; upside down in a row, row // line up is the direct equivalent, but only a kanji in WK, not a radical. also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
-meeting; 合 top part; hat ground; meeting, umbrella, one // WK "meet" radical is 会
+meeting; 合 top part; hat&ground&mouth; meeting, umbrella, one // WK "meet" radical is 会
 glue; 寸; measurement; glue, drop, ten with a hook
 do; 為; sake; do = so, strange building, tail feathers // so synonym/alternate for do
 rake; 粛 top part; wolverine; rake // = broom with stick through it (vertical stroke)
@@ -76,7 +76,8 @@ retainer; 臣; servant; retainer = slave
 fingerprint; 犯 right part; snake; fingerprint
 sign of the snake; 巳; snake; sign of the snake, mosaic, mosaic with bit missing // this is exactly WK snake, which can also be RTK fingerprint
 oven-fire; 灬; boil; oven-fire = oven fire = barbecue, drop4
-ice; 凍 left part; ice; ice
+ice; 凍 left part, 冬 bottom part; ice; ice, two
+two; 二; two; two, one2, ceiling, floor 
 dart; 矢; arrow; dart, drop, heavens
 turkey; 唯 right part; turkey; turkey
 flowers; 艹, 若 top part; flowers; flowers
@@ -91,6 +92,7 @@ bound up; 句 outer part, 負 top part; prison; bound up
 insect; 虫; insect; insect, inX, stick, mouth // inX = in, but so that search engine can deal with it
 gone; 去; past; gone, soil = dirt = ground, elbow
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
+umbrella; 全 top part; hat; umbrella
 moon; 月; moon; moon = month = flesh = part of the body
 child; 子; child; child
 finger; 招 left part; fingers; finger = fingers
