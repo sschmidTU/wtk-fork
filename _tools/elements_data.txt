@@ -76,7 +76,7 @@ retainer; 臣; servant; retainer = slave
 fingerprint; 犯 right part; snake; fingerprint
 sign of the snake; 巳; snake; sign of the snake, mosaic, mosaic with bit missing // this is exactly WK snake, which can also be RTK fingerprint
 oven-fire; 灬; boil; oven-fire = oven fire = barbecue, drop4
-ice; 凍 left part, 冬 bottom part; ice; ice, two
+ice; 凍 left part, 冬 bottom part; ice; ice, two // ice is ambiguous in RTK, see 凍 and 冬.
 two; 二; two; two, one2, ceiling, floor 
 dart; 矢; arrow; dart, drop, heavens
 turkey; 唯 right part; turkey; turkey
