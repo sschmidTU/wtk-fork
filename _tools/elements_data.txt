@@ -83,6 +83,7 @@ turkey; 唯 right part; turkey; turkey
 flowers; 艹, 若 top part; flowers; flowers
 negative; 不; not; negative, negation, one, ceiling, person, drop
 water; 氵; tsunami; water = water droplets = water pistol
+grains of rice; 録 bottom right part; water; grains of rice
 deceased; 亡; death; deceased = perish, top hat, fishhook
 genius; 才, 在 outer part; genius; genius = genie
 by one's side; 左 outer part; narwhal; by one's side = by one’s side
@@ -91,6 +92,8 @@ pack of wild dogs; 狂 left part; animal; pack of wild dogs
 bound up; 句 outer part, 負 top part; prison; bound up
 insect; 虫; insect; insect, inX, stick, mouth // inX = in, but so that search engine can deal with it
 gone; 去; past; gone, soil = dirt = ground, elbow
+stone; 砂 left part; stone; stone, rock
+mutually; 互 middle part; mutual; mutually, mutual, broken broom
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 全 top part; hat; umbrella
 moon; 月; moon; moon = month = flesh = part of the body

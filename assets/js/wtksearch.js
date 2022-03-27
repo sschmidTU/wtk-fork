@@ -1249,7 +1249,7 @@ class WTKSearch {
       "weapon": "missile",
       "grave": "spool",
       "cleat": "vulture",
-      "water": "grains of rice",
+      "water": "water,grains of rice",
       "leader": "person",
       //"flag": "flag",
       "gambler": "strawman",
