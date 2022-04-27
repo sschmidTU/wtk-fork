@@ -75,7 +75,8 @@ times; 回; times; times = -times, pent in, mouth
 retainer; 臣; servant; retainer = slave
 fingerprint; 犯 right part; snake; fingerprint
 sign of the snake; 巳; snake; sign of the snake, mosaic, mosaic with bit missing // this is exactly WK snake, which can also be RTK fingerprint
-oven-fire; 灬; boil; oven-fire = oven fire = barbecue, drop4
+oven-fire; 灬; boil; oven-fire = oven fire = barbecue, drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
+tail feathers; 鳥 bottom part; boil; tail feathers // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
 ice; 凍 left part, 冬 bottom part; ice; ice, two // ice is ambiguous in RTK, see 凍 and 冬.
 two; 二; two; two, one2, ceiling, floor 
 dart; 矢; arrow; dart, drop, heavens
@@ -140,7 +141,6 @@ elbow; 厶; private; elbow
 horns; 并 top part; horns; horns = animal horns
 spoon; 匕; spoon; spoon = sitting on the ground
 vulture; 爪; cleat; vulture
-tail feathers; 杰 bottom part; boil; tail feathers
 one; 一; ground; one
 ceiling; 一; ground; ceiling, one // only when on the top edge of a kanji
 floor; 一; ground; floor, one // only when on the bottom edge of a kanji
