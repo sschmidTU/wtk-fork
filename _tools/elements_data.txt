@@ -94,6 +94,8 @@ insect; 虫; insect; insect, inX, stick, mouth // inX = in, but so that search e
 gone; 去; past; gone, soil = dirt = ground, elbow
 stone; 砂 left part; stone; stone, rock
 mutually; 互 middle part; mutual; mutually, mutual, broken broom
+ri; 里; village; ri, computer, village, rice field, brains, soil, dirt, ground
+fortune-telling; 占; fortune; fortune-telling, fortunetelling, magic wand, wand, augury, divining rod, mouth
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 全 top part; hat; umbrella
 moon; 月; moon; moon = month = flesh = part of the body
