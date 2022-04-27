@@ -5,7 +5,7 @@ compare; 比; compare; compare, spoon = sitting on the ground, spoon2, sitting o
 say; 言; say; say = words = keitai, mouth
 white; 白; white; white, drop, sun = day
 direction; 方; direction; direction = compass
-taskmaster; 牧 right part; winter; taskmaster // extra stroke "over the edge" to the right compared to walking legs
+taskmaster; 牧 right part; winter; taskmaster // compared to walking legs, longer second stroke, "over the edge" to the top right
 walking legs; 各 top part; winter; walking legs // top horizontal stroke doesn't go "over the edge"
 leg; 足, 踪 left part; leg; leg, wooden leg, mouth, mending = mend
 mending; 足 bottom part; coat rack; mending = mend
