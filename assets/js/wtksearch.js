@@ -915,7 +915,7 @@ class WTKSearch {
       "hat": "umbrella", //p109
       "suit": "fit", //p110
       "all": "all,whole", //p114, only kanji in WK. ambiguous in WK: both 皆 and 全 called 'all'.
-      // "reason": "logic", //283, only kanji in WK, conflicgt with WK radical reason
+      // "reason": "logic", //283, only kanji in WK, conflict with WK radical reason
       "master": "lord",
       "scooter": "road", //p122
       "winter": "walking legs,taskmaster", //p125, or taskmaster, p137
