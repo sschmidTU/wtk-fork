@@ -149,12 +149,12 @@ li {
   margin-bottom: 1em;
 }
 
-a:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji) {
+a:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji):not(.a-blue) {
   color: $color-highlight;
   text-decoration: none;
 }
 
-a:visited:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji) {
+a:visited:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji):not(.a-blue) {
   color: $color-primary;
 }
 
@@ -170,6 +170,11 @@ a:focus {
 a:hover,
   a:active {
   outline: 0;
+}
+
+.a-blue {
+  color: #308cbc;
+  text-decoration: none;
 }
 
 .btn {
