@@ -116,7 +116,7 @@ class WTKSearch {
         if (inputRadical === '') { // can also happen for "blue     sun" for example, which won't be trimmed
           continue;
         }
-        // check for number (of occurences) at he end, e.g. 'tree3' or 'jackhammer2' (WK)
+        // check for number (of occurences) at the end, e.g. 'tree3' or 'jackhammer2' (WK)
         let numberChar = inputRadical.charAt(inputRadical.length - 1);
         let occurences = Number.parseInt(numberChar, 10);
         if (isNaN(occurences)) {
@@ -876,7 +876,7 @@ class WTKSearch {
       "season": "decameron", //p41
       "pool": "ladle", //p42
       //"neck": "neck",
-      "nose": "fish guts", //p44
+      "nose": "fishhook", //p44, also fishguts, but not really used in data
       "reality": "true", //p46
       "narwhal": "by one’s side",
       "construction": "craft",
@@ -915,7 +915,7 @@ class WTKSearch {
       "hat": "umbrella", //p109
       "suit": "fit", //p110
       "all": "all,whole", //p114, only kanji in WK. ambiguous in WK: both 皆 and 全 called 'all'.
-      // "reason": "logic", //283, only kanji in WK, conflicgt with WK radical reason
+      // "reason": "logic", //283, only kanji in WK, conflict with WK radical reason
       "master": "lord",
       "scooter": "road", //p122
       "winter": "walking legs,taskmaster", //p125, or taskmaster, p137
@@ -941,7 +941,7 @@ class WTKSearch {
       "oldersister": "elder sister",
       "belt": "sash", //p161
       "heaven": "heavens,witch,sapling", // heavens p164
-      "stand": "stand up", // only relevant for strict mode
+      "stand": "stand up", // only relevant for strict mode. also vase
       "chapter": "badge", //p166
       "mohawk": "antique", //p167
       "scent": "aroma",
@@ -996,7 +996,7 @@ class WTKSearch {
       "attach": "adhere", //p265
       "dynamite": "third class", //p267
       "shrimp": "shaku,shaku-hachi", //p276
-      "jackhammer": "show", //p1167, lesson30
+      "jackhammer": "show,altar", //p1167, lesson30. also 1086 show=altar (p301), same name as spirit/altar
       "reason": "sprout", //1186 wherefore as kanji, but always also sprout (or shoot, synonym)
       "turtleshell": "armor", //1194
       "humble": "monkey", //1198
@@ -1039,7 +1039,7 @@ class WTKSearch {
       "peace": "even", // or call, but covered by even
       "treasure": "sheaf,tucked under the arm", //p339 or arm maybe, p222
       "rocket": "sheik,top hat&villain&belt&elbow", //1605, sheik = 2047* (p12) in rtk3 = top hat villain belt elbow
-      "dance": "ballerina", // or sometimes only sunglasses (right part of WK dance), RTK isn't clear on this (see shoeshine element). or dance in rtk-search
+      "dance": "ballerina,sunglasses", // sometimes only sunglasses (right part of WK dance), RTK isn't clear on this (see shoeshine element). or dance in rtk-search
       "barracks": "earthworm,mountain goat,barracks", //p340 or mountain goat (p413), or barracks (2189)
       "spicy": "spicy,red pepper", // spicy or maybe red pepper sometimes
       "hotpepper": "ketchup", //p341
@@ -1080,7 +1080,7 @@ class WTKSearch {
       "tophat": "shelf",
       "lineup": "row",
       "normal": "universal", //1925
-      "yen": "circle", //1952
+      "yen": "yen,circle", //1952
       "lifeguard": "funnel",
       "think": "think", //p391
       "energy": "reclining one fishhook", //energy doesn't exist in RTK
@@ -1249,7 +1249,7 @@ class WTKSearch {
       "weapon": "missile",
       "grave": "spool",
       "cleat": "vulture",
-      "water": "grains of rice",
+      "water": "water,grains of rice",
       "leader": "person",
       //"flag": "flag",
       "gambler": "strawman",

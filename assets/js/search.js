@@ -7,6 +7,9 @@ for (const doc of docs) {
   }
   if (!doc.el) {
     //console.log("missing el for: " + doc.kanji); //debug
+    if (doc.elT) {
+      doc.elP = doc.elT.replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll(")","");
+    }
     if (doc.elP) {
       // construct el (elements) from elP (elementsPure)
       // TODO move this to a script that changes the .md files, instead of having visitors do this every time
@@ -17,13 +20,31 @@ for (const doc of docs) {
       const elementsPure = elP.split(",");
       let newElementsField = "";
       for (const element of elementsPure) {
-        const elementTrimmed = element.trim();
+        let elementTrimmed = element.trim();
+
+        // check for number (of occurences) at the end, e.g. 'tree3' or 'jackhammer2' (WK).
+        //   copied code from wtksearch.js -> functionize? but 2 return values
+        let numberChar = elementTrimmed.charAt(elementTrimmed.length - 1);
+        let occurences = Number.parseInt(numberChar, 10);
+        if (isNaN(occurences)) {
+          numberChar = elementTrimmed.charAt(0);
+          occurences = Number.parseInt(numberChar, 10); // also check prefix number, e.g. '2tree'
+        }
+        if (!isNaN(occurences)) {
+          elementTrimmed = elementTrimmed.replace(numberChar, ''); // remove occurences for now, add again later
+        }
+
         if (elementsDict[elementTrimmed]) {
-          const newSubElements = elementsDict[elementTrimmed].elements;
-          if (newElementsField.length > 0) {
-            newElementsField += ", ";
+          const newSubElements = elementsDict[elementTrimmed].elements.trim();
+          for (const subElement of newSubElements.split(",")) {
+            if (!subElement || subElement.length === 0) {
+              continue;
+            }
+            if (newElementsField.length > 0) {
+              newElementsField += ", ";
+            }
+            newElementsField += subElement + occurences ?? "";
           }
-          newElementsField += newSubElements.trim();
         } else {
           // shouldn't happen; need to add element to elementsData.txt and node elementsDataToJson.js
           console.log(`Error: element ${elementTrimmed} for kanji ${doc.kanji} wasn't found in elementsDict.`);
