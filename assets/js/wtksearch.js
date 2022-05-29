@@ -416,6 +416,7 @@ class WTKSearch {
           self.searchByKanji([buttonSource], {
             updateHTMLElements: true
           });
+          self.lastQuery = buttonSource;
         };
       }
     }
@@ -426,7 +427,6 @@ class WTKSearch {
     showOnlyMissingKanji = false,
     maxKanjiToCheck = 10000,
   } = {}) {
-    this.lastQuery = kanjiList; // necessary e.g. to make kanji buttons responsive (e.g. kanji in footer after clicking on 'alternate for' kanji)
     //let aozoraNumbers = {};
     let kanjisFound = {};
     let searchResultsList = [];
