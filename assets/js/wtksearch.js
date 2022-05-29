@@ -19,6 +19,7 @@ class WTKSearch {
   checkboxRTKQuery         = 'rtkModeCheckbox';
   checkboxStrictLabelQuery = 'strictModeLabel';
   checkboxVocabQuery       = 'vocabModeCheckbox'; // also called compound mode
+  checkboxCNVariantQuery   = 'cnVariantCheckbox';
   vocabInputQuery          = 'vocabInput';
   vocabCopyButtonQuery     = 'cbCopyButtonVocab';
   deleteVocabButtonQuery   = 'deleteVocabButton';
@@ -377,6 +378,10 @@ class WTKSearch {
     const hasVariantOrAlternate = variantOf.length > 0 || alternateFor.length > 0;
     const endBracket = hasVariantOrAlternate ? ')' : '';
 
+    const showChineseVariant = this.checked(this.checkboxCNVariantQuery);
+    const cnFlagString = true ? '' : '<sup><sub>&#127464;&#127475;</sub></sup>'; // just showing fallback 'CN' in my browser, which is ugly.
+    const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh">'+page.kanji+'</span>'+cnFlagString+')' : '';
+
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
       // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
@@ -388,8 +393,9 @@ class WTKSearch {
              'class="'+wkButtonClass+'" ' +
             '>WK</a>'+
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
-      '    <a class="'+resultKanjiButtonClass+'" href="https://jisho.org/search/'+page.kanji+'">' +
-            page.kanji+' '+kanjiName+'</a>'+variantOf+alternateFor+outdated+endBracket+
+      '    <a class="'+resultKanjiButtonClass+' jptext" href="https://jisho.org/search/'+page.kanji+'">' +
+            '<span lang="jp">' + page.kanji + '</span>' +
+            cnVariantString + ' ' + kanjiName + '</a>'+variantOf+alternateFor+outdated+endBracket+
       '  </h3>'+
       '</article></div>'
     ;
@@ -635,6 +641,7 @@ class WTKSearch {
     const checkboxRTKQuery = this.checkboxRTKQuery;
     const checkboxStrictLabelQuery = this.checkboxStrictLabelQuery;
     const checkboxVocabQuery = this.checkboxVocabQuery;
+    const checkboxCNVariantQuery = this.checkboxCNVariantQuery;
     const params = this.getUrlParameters();
 
     const self = this; // `this` isn't available in anonymous functions
@@ -714,6 +721,14 @@ class WTKSearch {
       self.focusElement(self.vocabInputQuery);
     }
 
+    const checkboxCNVariant = document.getElementById(this.checkboxCNVariantQuery);
+    if (checkboxCNVariant) {
+      checkboxCNVariant.onclick = function() {
+        // TODO performance: update text instead of repeating search (though impact should be negligible)
+        self.search(self.lastQuery, { forceSearch: true, updateHTMLElements: true});
+      };
+    }
+
     if (params.strict === '1' || params.strict === 'true' && !this.isStrictMode()) {
       document.getElementById(checkboxStrictQuery).checked = true;
     }
@@ -726,6 +741,9 @@ class WTKSearch {
     if (params.console === '1') {
       window.wtk = this; // make wtk available in the console
       // could also be window.wtksearch to avoid conflicts. but shorter/easier for now (debug)
+    }
+    if (params.cnVariant === '1') {
+      checkboxCNVariant.checked = true;
     }
 
     const btnLatestKanji = document.getElementById('btnSearchLatestKanji');
