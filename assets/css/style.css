@@ -105,11 +105,11 @@ li {
   margin-top: 0;
   margin-bottom: 1em; }
 
-a:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji) {
+a:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji):not(.a-blue) {
   color: #9b3732;
   text-decoration: none; }
 
-a:visited:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji) {
+a:visited:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji):not(.a-blue) {
   color: #262626; }
 
 a:hover:not(.h4link):not(.btnWK) {
@@ -122,6 +122,11 @@ a:focus {
 a:hover,
 a:active {
   outline: 0; }
+
+.a-blue {
+  color: #308cbc;
+  text-decoration: none;
+}
 
 .btn {
   display: inline-block;
