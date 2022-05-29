@@ -593,7 +593,7 @@ class WTKSearch {
   }
 
   checked(checkboxQuery) {
-    return document.getElementById(checkboxQuery).checked;
+    return document.getElementById(checkboxQuery)?.checked;
   }
 
   isStrictMode() {
@@ -715,13 +715,13 @@ class WTKSearch {
     }
 
     if (params.strict === '1' || params.strict === 'true' && !this.isStrictMode()) {
-      document.getElementById(checkboxStrictQuery).click();
+      document.getElementById(checkboxStrictQuery).checked = true;
     }
     if (params.rtk === '1' || params.rtk === 'true' && !this.isRtkMode()) {
-      document.getElementById(checkboxRTKQuery).click();
+      document.getElementById(checkboxRTKQuery).checked = true;
     }
     if (params.compound === '1' || params.compound === 'true') {
-      document.getElementById(checkboxVocabQuery).click();
+      document.getElementById(checkboxVocabQuery).checked = true;
     }
     if (params.console === '1') {
       window.wtk = this; // make wtk available in the console
