@@ -23,6 +23,7 @@ body {
       padding: 0em 4em; } }
 
 #foot {
+  text-align: center;
   margin-top: 1em;
   max-width: 1000px; }
   @media screen and (min-width: 800px) {
@@ -93,6 +94,12 @@ h4 {
 
 .btnResultKanjiWK {
   text-transform: lowercase;
+}
+
+.optionsBottom {
+  text-align: center;
+  font-size: 1.0em;
+  color:#cecece;
 }
 
 p {
