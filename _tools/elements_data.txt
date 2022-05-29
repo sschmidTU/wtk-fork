@@ -98,6 +98,8 @@ stone; 砂 left part; stone; stone, rock
 mutually; 互 middle part; mutual; mutually, mutual, broken broom
 ri; 里; village; ri, computer, village, rice field, brains, soil, dirt, ground // often "computer" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK.
 fortune-telling; 占; fortune; fortune-telling, fortunetelling, magic wand, wand, augury, divining rod, mouth
+chair; 呉 middle part; lion; chair, fishhook, straightened hook
+tool; 具 bottom part; ground&fins; tool, one, animal legs = eight // this is 具 minus the eye. doesn't exist in WK (ground + fins).
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 全 top part; hat; umbrella
 moon; 月; moon; moon = month = flesh = part of the body
