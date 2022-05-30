@@ -12,6 +12,8 @@ elementsPure: [elements]
 elementsPureExtra: [elements] // usually if elementsPureVague = yes
 elementsPureVague: yes or no
 elementsWK: [elements/WK radicals]
+chinese-elements-different: yes or no // only for major differences where elements would be entirely differently notated
+chinese-font-difference: yes or no // for smaller font changes that don't quite change elements, e.g. 糸
 strokes: (number)
 on-yomi: [onyomi]
 kun-yomi: [kunyomi]
