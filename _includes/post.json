@@ -1,5 +1,5 @@
 {"id":"{{ post.v4 }}","kanji":"{{ post.kanji }}","kw":"{{ post.keyword | remove:'"' }}"{%
-if post.kwWK.size > 0 %},"kwWK":"{{ post.keywordWK }}"{% endif %}{%
+if post.keywordWK.size > 0 %},"kwWK":"{{ post.keywordWK }}"{% endif %}{%
 if post.elements.size > 0 %},"el":"{{ post.elements | remove:'"' }}"{% endif %}{%
 if post.elementsPure.size > 0 %},"elP":"{{ post.elementsPure }}"{% endif %}{%
 if post.elementsPureExtra.size > 0 %},"elPx":"{{ post.elementsPureExtra }}"{% endif %}{%
