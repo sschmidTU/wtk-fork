@@ -394,7 +394,7 @@ class WTKSearch {
             '>WK</a>'+
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
       '    <a class="'+resultKanjiButtonClass+' jptext" href="https://jisho.org/search/'+page.kanji+'">' +
-            '<span lang="jp">' + page.kanji + '</span>' +
+            '<span lang="ja">' + page.kanji + '</span>' +
             cnVariantString + ' ' + kanjiName + '</a>'+variantOf+alternateFor+outdated+endBracket+
       '  </h3>'+
       '</article></div>'
