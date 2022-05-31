@@ -724,6 +724,9 @@ class WTKSearch {
     const checkboxCNVariant = document.getElementById(this.checkboxCNVariantQuery);
     if (checkboxCNVariant) {
       checkboxCNVariant.onclick = function() {
+        if (self.lastQuery === "") {
+          return;
+        }
         // TODO performance: update text instead of repeating search (though impact should be negligible)
         self.search(self.lastQuery, { forceSearch: true, updateHTMLElements: true});
       };
