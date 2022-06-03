@@ -380,7 +380,7 @@ class WTKSearch {
 
     const showChineseVariant = this.checked(this.checkboxCNVariantQuery);
     const cnFlagString = true ? '' : '<sup><sub>&#127464;&#127475;</sub></sup>'; // just showing fallback 'CN' in my browser, which is ugly.
-    const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh">'+page.kanji+'</span>'+cnFlagString+')' : '';
+    const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh-Hans">'+page.kanji+'</span>'+cnFlagString+')' : '';
 
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
