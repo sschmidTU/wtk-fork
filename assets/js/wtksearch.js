@@ -1396,6 +1396,7 @@ class WTKSearch {
     }
   }
 
+  // enum (as far as JS allows)
   LogLevels = {
     Silent: 0,
     Error: 1,
