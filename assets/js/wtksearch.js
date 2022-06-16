@@ -1208,6 +1208,7 @@ class WTKSearch {
       "ground": "one,floor,ceiling",
       "creeper": "one&mouth,mouth&floor",
       "measurement": "glue",
+      "measure": "glue", // custom shorthand
       "commander": "leader",
       "bookshelf": "scrapbook", // or tome, but scrapbook always has tome as well (after my changes)
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
