@@ -922,7 +922,7 @@ class WTKSearch {
       "odd": "strange", //p63
       "river": "stream",
       "original": "meadow,spring", //p67, or spring, without the cliff
-      "temple": "buddhist temple", //p75
+      "temple": "buddhist temple,templeWK", //p75
       "flame": "inflammation",
       "head": "hood,belt,headWK", //p83, or belt, p161, or headWK
       "roof": "house", //p85
@@ -1038,7 +1038,7 @@ class WTKSearch {
       "onesided": "one-sided", //1297
       "hills": "building blocks", //1299, also "of"
       "not": "negative",
-      "arrow": "dart", //1305
+      "arrow": "dart,arrowWK", //1305
       "spear": "halberd", //1311
       //"dollar": "dollarsign", //p302. here always dollar
       "beggar": "slingshot,snare", //p304. snare: p327 in rtk1v4, missing stick on top
