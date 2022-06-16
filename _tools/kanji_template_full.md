@@ -8,6 +8,7 @@ alternateFor: (kanji)
 outdated: yes or no
 keyword: (keyword)
 keywordAlts: [keywords]
+keywordRTK3: [keyword] // previously, (RTK3) was displayed here after the keyword, because this keyword is duplicated in RTK3, not unique anymore. could be done again in RTK mode.
 elementsPure: [elements]
 elementsPureExtra: [elements] // usually if elementsPureVague = yes
 elementsPureVague: yes or no
