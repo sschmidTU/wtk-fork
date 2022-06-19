@@ -58,16 +58,16 @@ for (const doc of docs) {
         // shouldn't happen; need to add element to elementsData.txt and node elementsDataToJson.js
         console.log(`Error: element ${elementTrimmed} for kanji ${doc.kanji} wasn't found in elementsDict.`);
       }
-      if (doc.elWK) { // don't need to be processed above. also note elPx is added before above.
-        if (!newElementsField.endsWith(", ")) {
-          // shouldn't happen
-          console.log(`warning: newElementsField for ${doc.kanji} didn't end with ", " before elWK added: ${newElementsField}`);
-        }
-        newElementsField += doc.elWK;
-      }
-      doc.el = newElementsField;
-      //console.log("new elements field: " + newElementsField); //debug
     }
+    if (doc.elWK) { // don't need to be processed above. also note elPx is added before above.
+      if (!newElementsField.endsWith(", ")) {
+        // shouldn't happen
+        console.log(`warning: newElementsField for ${doc.kanji} didn't end with ", " before elWK added: ${newElementsField}`);
+      }
+      newElementsField += doc.elWK;
+    }
+    doc.el = newElementsField;
+    //console.log("new elements field: " + newElementsField); //debug
     if (!doc.el) {
       // this shouldn't happen
       console.log("missing elements for " + doc.kanji); //debug
