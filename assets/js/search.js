@@ -58,7 +58,6 @@ for (const doc of docs) {
       for (const oldElement of oldElements) {
         oldElementsObject[oldElement.trim()] = true;
       }
-      console.dir(oldElementsObject);
       for (const oldElement of Object.keys(oldElementsObject)) {
         if (!newElementsObject[oldElement]) {
           console.log(`${doc.kanji}: new elements created from elT missing old element: ${oldElement}`);
