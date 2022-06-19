@@ -102,9 +102,12 @@ chair; 呉 middle part; lion; chair, fishhook, straightened hook
 tool; 具 bottom part; ground&fins; tool, one, animal legs = eight // this is 具 minus the eye. doesn't exist in WK (ground + fins).
 nightbreak; 旦; dawn; nightbreak, sun, day, one, floor
 excuse; 免; excuse; excuse = village stocks = rabbit, bound up, human legs // original primitive called "village stocks" in RTK, though excuse seems better as that's also the kanji keyword
-somebody; 身; body&somebody; somebody, oneself, nose, drop
+somebody; 身; body&somebody&slideWK; somebody, oneself, nose, drop
 oneself; 自; self; oneself = nose, drop, eye
 cave; 店 outer part; canopy; cave
+span; 亘; dawn; span, ceiling, nightbreak, sun = day, one, floor
+cause; 因; cause; cause, pent in, large
+give; 呉; give&catapult; give, mouth, chair, fishhook, straightened hook, tool, animal legs
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 全 top part; hat; umbrella
 moon; 月; moon; moon = month = flesh = part of the body
