@@ -868,7 +868,7 @@ class WTKSearch {
       //"moon": "moon" or month, but kanji with month always also have moon, and not vice versa
       "month": "moon", // catch cases where only moon is given, see above
       "ricepaddy": "rice field,silage", // or silage, p354. RTK says sun for 更 again
-      "net": "eye", // own radical in WK, just horizontal eye in RTK
+      "net": "eye,netWK", // own radical in WK, just horizontal eye in RTK
       "dare": "risk", // not a WK radical, WK: sun + eye
       "crystal": "sparkle", // or crystal kanji, see wk_radicals_that_are_also_kanji_names()
       "products": "goods",
