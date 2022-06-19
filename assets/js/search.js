@@ -15,58 +15,62 @@ for (const doc of docs) {
     // add keywordWK (kwWK) info from wk_kanji data (wk_kanji_short_min.js)
     doc.kwWK = wk_kanji[doc.kanji].meanings[0].meaning; // see wk_kanji_short_min.js
   }
-  if (!doc.el) {
-    //console.log("missing el for: " + doc.kanji); //debug
-    if (doc.elT) {
-      doc.elP = doc.elT.replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll(")","");
+  if (doc.elT) {
+    // create doc.el (elements) from doc.elT (elementsTree)
+    doc.elP = doc.elT.replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll(")","");
+    // construct el (elements) from elP (elementsPure)
+    // TODO move this to a script that changes the .md files, instead of having visitors do this every time
+    let elP = doc.elP;
+    if (doc.elPx) {
+      elP += `, ${doc.elPx}`;
     }
-    if (doc.elP) {
-      // construct el (elements) from elP (elementsPure)
-      // TODO move this to a script that changes the .md files, instead of having visitors do this every time
-      let elP = doc.elP;
-      if (doc.elPx) {
-        elP += `, ${doc.elPx}`;
+    const elementsPure = elP.split(",");
+    let newElementsField = "";
+    for (const element of elementsPure) {
+      let elementTrimmed = element.trim();
+
+      // check for number (of occurences) at the end, e.g. 'tree3' or 'jackhammer2' (WK).
+      //   copied code from wtksearch.js -> functionize? but 2 return values
+      let numberChar = elementTrimmed.charAt(elementTrimmed.length - 1);
+      let occurences = Number.parseInt(numberChar, 10);
+      if (isNaN(occurences)) {
+        numberChar = elementTrimmed.charAt(0);
+        occurences = Number.parseInt(numberChar, 10); // also check prefix number, e.g. '2tree'
       }
-      const elementsPure = elP.split(",");
-      let newElementsField = "";
-      for (const element of elementsPure) {
-        let elementTrimmed = element.trim();
+      if (!isNaN(occurences)) {
+        elementTrimmed = elementTrimmed.replace(numberChar, ''); // remove occurences for now, add again later
+      }
+      const occurencesString = occurences > 0 ? occurences.toString() : "";
 
-        // check for number (of occurences) at the end, e.g. 'tree3' or 'jackhammer2' (WK).
-        //   copied code from wtksearch.js -> functionize? but 2 return values
-        let numberChar = elementTrimmed.charAt(elementTrimmed.length - 1);
-        let occurences = Number.parseInt(numberChar, 10);
-        if (isNaN(occurences)) {
-          numberChar = elementTrimmed.charAt(0);
-          occurences = Number.parseInt(numberChar, 10); // also check prefix number, e.g. '2tree'
-        }
-        if (!isNaN(occurences)) {
-          elementTrimmed = elementTrimmed.replace(numberChar, ''); // remove occurences for now, add again later
-        }
-        const occurencesString = occurences > 0 ? occurences.toString() : "";
-
-        if (elementsDict[elementTrimmed]) {
-          const newSubElements = elementsDict[elementTrimmed].elements.trim();
-          for (const subElement of newSubElements.split(",")) {
-            const subElementTrimmed = subElement?.trim();
-            if (!subElementTrimmed || subElementTrimmed.length === 0) {
-              continue;
-            }
-            if (newElementsField.length > 0) {
-              newElementsField += ", ";
-            }
-            newElementsField += subElementTrimmed + occurencesString;
+      if (elementsDict[elementTrimmed]) {
+        const newSubElements = elementsDict[elementTrimmed].elements.trim();
+        for (const subElement of newSubElements.split(",")) {
+          const subElementTrimmed = subElement?.trim();
+          if (!subElementTrimmed || subElementTrimmed.length === 0) {
+            continue;
           }
-        } else {
-          // shouldn't happen; need to add element to elementsData.txt and node elementsDataToJson.js
-          console.log(`Error: element ${elementTrimmed} for kanji ${doc.kanji} wasn't found in elementsDict.`);
+          if (newElementsField.length > 0) {
+            newElementsField += ", ";
+          }
+          newElementsField += subElementTrimmed + occurencesString;
         }
+      } else {
+        // shouldn't happen; need to add element to elementsData.txt and node elementsDataToJson.js
+        console.log(`Error: element ${elementTrimmed} for kanji ${doc.kanji} wasn't found in elementsDict.`);
+      }
+      if (doc.elWK) { // don't need to be processed above. also note elPx is added before above.
+        if (!newElementsField.endsWith(", ")) {
+          // shouldn't happen
+          console.log(`warning: newElementsField for ${doc.kanji} didn't end with ", " before elWK added: ${newElementsField}`);
+        }
+        newElementsField += doc.elWK;
       }
       doc.el = newElementsField;
       //console.log("new elements field: " + newElementsField); //debug
-    } else {
-      // this shouldn't happen, having neither elements nor elementsPure
-      console.log("missing elements/elementsPure for " + doc.kanji); //debug
+    }
+    if (!doc.el) {
+      // this shouldn't happen
+      console.log("missing elements for " + doc.kanji); //debug
     }
   }
 }
