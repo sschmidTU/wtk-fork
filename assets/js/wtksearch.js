@@ -876,7 +876,7 @@ class WTKSearch {
       "world": "generation",
       "dawn": "nightbreak", // p25
       "former": "olden times", //p27
-      "self": "self,oneself", // two self radicals in WK. the self that is 'snake' in RTK can also be 'self' there, but no difference for now
+      "self": "self,oneself,nose", // "oneself" in RTK is also "nose". two self radicals in WK. the self that is 'snake' in RTK can also be 'self' there, but no difference for now
       "middle": "inX",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
@@ -1043,7 +1043,7 @@ class WTKSearch {
       //"dollar": "dollarsign", //p302. here always dollar
       "beggar": "slingshot,snare", //p304. snare: p327 in rtk1v4, missing stick on top
       "give": "bestow",
-      "body": "somebody", //1337
+      "body": "somebody", //1337. 身 is "body" as radical and "somebody" as kanji in WK
       "come": "scissors", //p307
       "mix": "mingle", //1368
       "foot": "leg", //1372
