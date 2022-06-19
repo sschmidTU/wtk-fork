@@ -9,9 +9,11 @@ outdated: yes or no
 keyword: (keyword)
 keywordAlts: [keywords]
 keywordRTK3: [keyword] // previously, (RTK3) was displayed here after the keyword, because this keyword is duplicated in RTK3, not unique anymore. could be done again in RTK mode.
-elementsPure: [elements]
-elementsPureExtra: [elements] // usually if elementsPureVague = yes
+elements: [elements] // old way to record elements, listing all subelements every time, which leads to duplicated info between kanji (e.g. sun = day)
+elementsPure: [elements] // main elements without subelements, e.g. 'white' instead of 'drop sun day' for 白い. this notation is also outdated in favor of elementsTree.
+elementsPureExtra: [elements] // extra elements not contained in elementsTree or elementsPure. often present if elementsPureVague = yes
 elementsPureVague: yes or no
+elementsTree: [elements] // new/alternate way to add elements. A tree of elementsPure, e.g. l(sun, moon) = 明 = sun, day, moon, month etc in the old `elements` notation. if one element doesn't fit the tree structure, it's added to elementsPureExtra.
 elementsWK: [elements/WK radicals]
 chinese-elements-different: yes or no // only for major differences where elements would be entirely differently notated
 chinese-font-difference: yes or no // for smaller font changes that don't quite change elements, e.g. 糸
