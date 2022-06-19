@@ -876,7 +876,7 @@ class WTKSearch {
       "world": "generation",
       "dawn": "nightbreak", // p25
       "former": "olden times", //p27
-      "self": "self,oneself", // two self radicals in WK. the self that is 'snake' in RTK can also be 'self' there, but no difference for now
+      "self": "self,oneself,nose", // "oneself" in RTK is also "nose". two self radicals in WK. the self that is 'snake' in RTK can also be 'self' there, but no difference for now
       "middle": "inX",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
@@ -922,7 +922,7 @@ class WTKSearch {
       "odd": "strange", //p63
       "river": "stream",
       "original": "meadow,spring", //p67, or spring, without the cliff
-      "temple": "buddhist temple", //p75
+      "temple": "buddhist temple,templeWK", //p75
       "flame": "inflammation",
       "head": "hood,belt,headWK", //p83, or belt, p161, or headWK
       "roof": "house", //p85
@@ -1038,12 +1038,12 @@ class WTKSearch {
       "onesided": "one-sided", //1297
       "hills": "building blocks", //1299, also "of"
       "not": "negative",
-      "arrow": "dart", //1305
+      "arrow": "dart,arrowWK", //1305
       "spear": "halberd", //1311
       //"dollar": "dollarsign", //p302. here always dollar
       "beggar": "slingshot,snare", //p304. snare: p327 in rtk1v4, missing stick on top
       "give": "bestow",
-      "body": "somebody", //1337
+      "body": "somebody", //1337. 身 is "body" as radical and "somebody" as kanji in WK
       "come": "scissors", //p307
       "mix": "mingle", //1368
       "foot": "leg", //1372
@@ -1208,6 +1208,7 @@ class WTKSearch {
       "ground": "one,floor,ceiling",
       "creeper": "one&mouth,mouth&floor",
       "measurement": "glue",
+      "measure": "glue", // custom shorthand
       "commander": "leader",
       "bookshelf": "scrapbook", // or tome, but scrapbook always has tome as well (after my changes)
       "tofu": "rag", // actually exists in RTK, indirectly, description of 旅
@@ -1396,6 +1397,7 @@ class WTKSearch {
     }
   }
 
+  // enum (as far as JS allows)
   LogLevels = {
     Silent: 0,
     Error: 1,

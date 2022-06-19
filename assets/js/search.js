@@ -33,17 +33,19 @@ for (const doc of docs) {
         if (!isNaN(occurences)) {
           elementTrimmed = elementTrimmed.replace(numberChar, ''); // remove occurences for now, add again later
         }
+        const occurencesString = occurences > 0 ? occurences.toString() : "";
 
         if (elementsDict[elementTrimmed]) {
           const newSubElements = elementsDict[elementTrimmed].elements.trim();
           for (const subElement of newSubElements.split(",")) {
-            if (!subElement || subElement.length === 0) {
+            const subElementTrimmed = subElement?.trim();
+            if (!subElementTrimmed || subElementTrimmed.length === 0) {
               continue;
             }
             if (newElementsField.length > 0) {
               newElementsField += ", ";
             }
-            newElementsField += subElement + occurences ?? "";
+            newElementsField += subElementTrimmed + occurencesString;
           }
         } else {
           // shouldn't happen; need to add element to elementsData.txt and node elementsDataToJson.js
