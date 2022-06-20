@@ -108,6 +108,7 @@ cave; 店 outer part; canopy; cave
 span; 亘; dawn; span, ceiling, nightbreak, sun = day, one, floor
 cause; 因; cause; cause, pent in, large
 give; 呉; give&catapult; give, mouth, chair, fishhook, straightened hook, tool, animal legs
+oversee; 監; oversee; oversee, retainer = slave, reclining = lying down, one, dish
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 全 top part; hat; umbrella
 moon; 月; moon; moon = month = flesh = part of the body
