@@ -48,6 +48,31 @@ for (const doc of docs) {
             }
             newElementsField += subElementTrimmed + occurencesString;
             newElementsObject[subElementTrimmed] = true;
+
+            const elementInfo = elementsDict[subElementTrimmed];  // TODO maybe take from element, not subElement, but then take out of subelements loop to avoid repetition
+            if (!elementInfo) {
+              // console.log("not in elementsdict: " + subElementTrimmed);
+              continue;
+            }
+            let elementsWKFromElement = elementInfo.elementsWK;
+            if (elementsWKFromElement) {
+              elementsWKFromElement = elementsWKFromElement.trim();
+              if (!doc.elWK) {
+                doc.elWK = elementsWKFromElement;
+              } else {
+                // check for each subelement if it's already in doc.elWK
+                const existingElWK = doc.elWK.split(",").map((a) => { return a.trim() });
+                const newElWKArray = elementsWKFromElement.split(",").map((a) => { return a.trim() });
+                for (const newElWK of newElWKArray) {
+                  if (existingElWK.includes(newElWK)) {
+                    // console.log("already exists: " + newElWK);
+                    continue;
+                  }
+                  doc.elWK += `, ${newElWK}`;
+                }
+              }
+              // console.log(`doc.elWK for ${doc.kanji}: ${doc.elWK}`);
+            }
           }
         } else {
           // shouldn't happen; need to add element to elementsData.txt and node elementsDataToJson.js

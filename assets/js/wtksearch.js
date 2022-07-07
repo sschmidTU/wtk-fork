@@ -1086,7 +1086,7 @@ class WTKSearch {
       "surplus": "too much", //1786
       "squid": "awl", //p368
       "sick": "sickness", //lesson44
-      "cage": "box", //p371
+      "cage": "box,cage", //p371 for box. cage is a keyword for 檻 and 籠.
       "district": "ward", //1831
       "tent": "teepee", //p373
       "hair": "shape", //p374
