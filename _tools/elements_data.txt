@@ -110,6 +110,9 @@ cause; 因; cause; cause, pent in, large
 give; 呉; give&catapult; give, mouth, chair, fishhook, straightened hook, tool, animal legs
 oversee; 監; oversee; oversee, retainer = slave, reclining = lying down, one, dish
 summer; 夏; summer; summer, one, ceiling, drop, eye, walking legs; leafWK
+husband; 夫; husband; husband, one, large
+not yet; 未; not yet; not yet, tree, wood, one
+extremity; 末; end; extremity, tree, wood, one
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 全 top part; hat; umbrella
 moon; 月; moon; moon = month = flesh = part of the body
