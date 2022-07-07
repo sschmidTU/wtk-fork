@@ -27,7 +27,7 @@ function processFile(fileString) {
 
         // validate columns
         let invalidRow = false;
-        if (columns.length !== 4) {
+        if (columns.length < 4 || columns.length > 5) {
             invalidRow = true;
         } else {
             for (let col = 0; col < columns.length; col++) {
@@ -46,10 +46,16 @@ function processFile(fileString) {
         const rtkName = columns[0];
         const wkNames = columns[2].split("&").map((radical) => radical.trim());
         const elementsProcessed = processElements(columns[3]);
+        const elementsWK = columns.length > 4 ? columns[4] : undefined;
+        if (elementsWK && !elementsWK.includes("WK")) { // TODO check each elementWK
+            console.warn(`invalid line ${i+1} in elements_data (column 5 doesn't have an elementWK): \n${rows[i]}`);
+            return;
+        }
         returnJson[rtkName] = {
             kanji: columns[1].trim(),
             wkNames: wkNames,
-            elements: elementsProcessed
+            elements: elementsProcessed,
+            elementsWK: elementsWK
         };
     }
     const stringified = JSON.stringify(returnJson);

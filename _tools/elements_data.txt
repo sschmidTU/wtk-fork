@@ -1,4 +1,4 @@
-RTK / elementsPure name; kanji; WK name; RTK elements full (element1Synonym1 = element1Synonym2 = element1Synonym3, element2, ...elements); // comments. synonym info (=) may not be complete yet.
+RTK / elementsPure name; kanji; WK name; RTK elements full (element1Synonym1 = element1Synonym2 = element1Synonym3, element2, ...elements); elementsWK; // comments. synonym info (=) may not be complete yet. elementsWK is optional and can also be comma separated (WK) elements with a "WK" suffix, see leafWK.
 wand; 訃 right part; toe; magic wand = wand = augury
 divining rod; 上 upper part; toe; divining rod, magic wand = wand = augury
 compare; 比; compare; compare, spoon = sitting on the ground, spoon2, sitting on the ground2
@@ -109,7 +109,7 @@ span; 亘; dawn; span, ceiling, nightbreak, sun = day, one, floor
 cause; 因; cause; cause, pent in, large
 give; 呉; give&catapult; give, mouth, chair, fishhook, straightened hook, tool, animal legs
 oversee; 監; oversee; oversee, retainer = slave, reclining = lying down, one, dish
-summer; 夏; summer; summer, one, ceiling, drop, eye, walking legs // TODO add leafWK
+summer; 夏; summer; summer, one, ceiling, drop, eye, walking legs; leafWK
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 全 top part; hat; umbrella
 moon; 月; moon; moon = month = flesh = part of the body
