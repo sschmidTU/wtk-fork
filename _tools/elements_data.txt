@@ -149,8 +149,8 @@ soil; 土; dirt; soil = dirt = ground
 samurai; 士; samurai; samurai = gentleman
 stick; 旧 left part; stick; stick
 flag; 戸 bottom part; flag; flag
-pinnacle; 阝; building; pinnacle
-city walls; 阝; building; city walls
+pinnacle; 阝; building; pinnacle // pinnacle when on the left
+city walls; 阝; building; city walls // city walls when on the right
 wind; 冗 bottom part; table; wind
 crotch; 又; stool; crotch
 elbow; 厶; private; elbow
