@@ -70,8 +70,8 @@ function processFile(fileString) {
 function processElements(elementsRaw) {
     let returnString = "";
     let elementArray = [];
-    let commaSeparated = elementsRaw;
-    commaSeparated = elementsRaw.split(",");
+    let elementsStructureRemoved = elementsRaw.replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll(")","");
+    let commaSeparated = elementsRaw.split(",");
 
     // put elements/synonyms into elementArray
     for (const elementUnit of commaSeparated) {
