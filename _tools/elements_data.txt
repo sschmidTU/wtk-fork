@@ -1,4 +1,4 @@
-RTK / elementsPure name(=synonym1=synonym2=...); kanji; WK name; RTK subelements; elementsWK; // comments. synonym info (=) may not be complete yet. elementsWK is optional and can also be comma separated (WK) elements with a "WK" suffix, see leafWK.
+RTK / elementsPure name(=synonym1=synonym2=...); kanji; WK name; RTK structure or subelements (if both: separated by &); elementsWK; // comments. synonym info (=) may not be complete yet. elementsWK is optional and can also be comma separated (WK) elements with a "WK" suffix, see leafWK.
 wand=magic wand=augury; 訃 right part; toe
 divining rod; 上 upper part; toe; divining rod, wand
 compare; 比; compare; spoon, spoon2, sitting on the ground2
@@ -33,6 +33,7 @@ not=knot=piglet's tail; 勿; not
 easy; 易; easy; t(sun, not)
 screwdriver=utilize=utilise; 用; task; moon, stick 
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
+fiesta; 伐 right part; drunkard; c(arrowhead, drop); slideWK
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 towel; 巾; towel
@@ -57,7 +58,7 @@ straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, one) // WK "meet" radical is 会
 fit; 合; suit; t(meeting, mouth)
-glue; 寸; measurement; o(t(ten, hook), drop)
+glue; 寸; measurement; tr(t(ten, hook), drop)
 do=so; 為; sake; tail feathers
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
 broom; 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
@@ -87,30 +88,32 @@ beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here
 evening; 夕; evening
 bones; 残 left part; yakuza; t(ceiling, evening)
-fiesta; 伐 right part; drunkard; fiesta
-show; 示; jackhammer; show, altar, two, small // altar is same naming in RTK as 礼 left part, confusing.
-altar; 礼 left part; spirit; altar // almost same as cloak, doesn't have the diagonal stroke on the right
-cloak; 初 left part; spirit; cloak // almost same as altar, has an extra diagonal stroke on the right
-guillotine; 決 right part; decide; guillotine, key, St. Bernard = large = person
-page; 頁; page; page, one, ceiling, drop, shellfish = shell = clam = oyster, eye, animal legs = eight
-times; 回; times; times = -times, pent in, mouth
-retainer; 臣; servant; retainer = slave
-fingerprint; 犯 right part; snake; fingerprint
-sign of the snake; 巳; snake; sign of the snake, mosaic, mosaic with bit missing // this is exactly WK snake, which can also be RTK fingerprint
-oven-fire; 灬; boil; oven-fire = oven fire = barbecue, drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
-tail feathers; 鳥 bottom part; boil; tail feathers // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
-ice; 凍 left part, 冬 bottom part; ice; ice, two // ice is ambiguous in RTK, see 凍 and 冬.
-two; 二; two; two, one2, ceiling, floor 
-dart; 矢; arrow; dart, drop, heavens
-turkey; 唯 right part; turkey; turkey
-flowers; 艹, 若 top part; flowers; flowers
-negative; 不; not; negative, negation, one, ceiling, person, drop
-water; 氵; tsunami; water = water droplets = water pistol
-grains of rice; 録 bottom right part; water; grains of rice
-deceased; 亡; death; deceased = perish, top hat, straightened hook
-genius; 才, 在 outer part; genius; genius = genie
-by one's side; 左 outer part; narwhal; by one's side = by one’s side
-early; 早; early; early = sunflower, sun, day, ten, needle
+show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
+altar; 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right
+cloak; 初 left part; spirit // almost same as altar, has an extra diagonal stroke on the right
+key; ユ; hook
+guillotine; 決 right part; decide; t(c(key, stick), large) // maybe the subdivision here with key crossed by stick is unnecessary, but who knows.
+page; 頁; page; t(ceiling, drop, shellfish); leafWK
+times=-times; 回; times; o(pent in, mouth)
+retainer=slave; 臣; servant
+fingerprint; 犯 right part; snake
+sign of the snake; 巳; snake; t(mouth, fishhook) & mosaic, mosaic with bit missing // this is exactly WK snake, which can also be RTK fingerprint
+clothes hanger=coat hanger; 幻 right part; cape
+oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
+tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
+ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
+two; 二; two
+heavens; 天; heaven
+dart; 矢; arrow; c(heavens, drop)
+turkey; 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
+flowers; 艹, 若 top part; flowers
+negative=negation; 不; not; t(one, c(person, stick))
+water=water droplets=water pistol; 氵; tsunami
+grains of rice; 米, 氺, 録 bottom right part; water; grains of rice // multiple shapes in RTK, but mainly 氺, which is water in WK.
+deceased=perish; 亡; death; t(top hat, straightened hook)
+genius=genie; 才, 在 outer part; genius; t(c(ten, drop), hook); slideWK
+by one's side=by one’s side; 左 outer part; narwhal
+early=sunflower; 早; early; l(sun, ten)
 pack of wild dogs; 狂 left part; animal; pack of wild dogs
 bound up; 句 outer part, 負 top part; prison; bound up
 insect; 虫; insect; insect, inX, stick, mouth // inX = in, but so that search engine can deal with it

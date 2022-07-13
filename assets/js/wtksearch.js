@@ -1110,7 +1110,7 @@ class WTKSearch {
       "clan ground": "calling card",
       "peoples": "people",
       "wedding": "dog tag",
-      "cape": "clothes hanger",  //p397
+      "cape": "clothes hanger",  //p397. also coat hanger
       "pirate": "chihuahua with one human leg", //RTK1v6: p402 (2033), RTK3v4 2087: chihuahua with one human leg
       "face": "mask", //2039
       "catapult": "give", //2046
