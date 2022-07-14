@@ -1,22 +1,22 @@
 RTK / elementsPure name(=synonym1=synonym2=...); kanji; WK name(&other WK names); RTK structure or subelements (if both: separated by &); elementsWK; // comments. elementsWK is optional and can also be comma separated (WK) elements with a "WK" suffix, see leafWK.
 wand=magic wand=augury; 訃 right part; toe
-divining rod; 上 upper part; toe; divining rod, wand
+divining rod; 上 upper part; toe; wand
 compare; 比; compare; spoon, spoon2, sitting on the ground2
 say=words=keitai; 言; say; one4, mouth, ceiling
-white; 白; white; white, t(drop, sun)
+white; 白; white; t(drop, sun)
 direction=compass; 方; direction
 taskmaster; 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
 walking legs; 各 top part; winter // top horizontal stroke doesn't go "over the edge"
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
 mending=mend; 足 bottom part; coat rack
-zoo=critters; 蛋 top part, 旋 bottom right part, 疏 left part; coat rack; // coat rack in WK is both zoo and mending
+zoo=critters; 蛋 top part, 旋 bottom right part, 疏 left part; coat rack // coat rack in WK is both zoo and mending
 perfect; 完; perfect; t(house, beginning)
-flag; 戸 bottom part; flag; mouth; slideWK
+flag; 戸 bottom part; flag; t(mouth, drop); slideWK
 voice; 声; voice; t(samurai, o(flag, stick))
 missile; 投 right part; weapon; t(wind, crotch)
 thread=spiderman; 糸; thread
 wall; 至 top part; ground&private; t(ceiling, elbow) // WK doesn't have this as an extra radical, as it's almost always used as 至 (mole/climax) or right side of 転 (cloud/rising cloud). it only has trash/infant (育 top part).
-infant; 育 top part; trash; infant, toddler, top hat, elbow // WK doesn't differentiate between RTK wall and infant
+infant=toddler; 育 top part; trash; t(top hat, elbow) // WK doesn't differentiate between RTK wall and infant
 climax; 至; mole; t(wall, soil)
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
@@ -46,7 +46,7 @@ swiss=switzerland=plus=red cross=d-pad; 亞 middle part, 惡 plus-shaped part be
 convex; 凸; convex
 sheep; 羊; sheep; t(horns, king, stick)
 house; 宋 upper part; roof
-joint; 骨 upper part; joint; // doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon.
+joint; 骨 upper part; joint // doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon.
 skeleton; 骨; bone; t(joint, moon)
 bend; 曲; music; rice field, stick2 // basically one and a half rice fields (or 2 rice fields half overlapping) with 2 sticks
 beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
@@ -68,17 +68,17 @@ gates; 門; gates
 cocoon; 幼 left part; poop; elbow
 cactus; 聯 bottom right part; cactus
 car; 車; car; t(ten, rice field, ten)
-human legs; 儿; legs; human legs
-animal legs; ハ, 只 bottom part; fins; animal legs = eight // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
+human legs; 儿; legs
+animal legs; ハ, 只 bottom part; fins // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 horns=animal horns; 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 little=small; 小; small; o(animal legs, t(stick, hook))
 too much; 余; surplus; t(umbrella, dry, little)
-hairpin; 畏長 bottom part, ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top
+hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top
 scarf=garment=clothes; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin)
 silver; 銀 right part; root; t(sun, hairpin) 
 good; 良; good; t(drop, silver)
-eat; 食; eat; eat = food, t(umbrella, good)
-four; 四; four; four, pent in, human legs // actually mouth legs on WK but that's included in the RTK elements
+eat=food; 食; eat; t(umbrella, good)
+four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
 road; 退 left part; scooter
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going; loiterWK // used when there's something in the middle/inner.
@@ -98,7 +98,7 @@ page; 頁; page; t(ceiling, drop, shellfish); leafWK
 times=-times; 回; times; o(pent in, mouth)
 retainer=slave; 臣; servant
 fingerprint; 犯 right part; snake
-sign of the snake; 巳; snake; t(mouth, fishhook) & mosaic, mosaic with bit missing // this is exactly WK snake, which can also be RTK fingerprint
+sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 clothes hanger=coat hanger; 幻 right part; cape
 bound up; 句 outer part, 負 top part; prison; c(clothes hanger, drop)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
@@ -111,7 +111,7 @@ turkey; 唯 right part; turkey // TODO maybe this could be subdivided, though it
 flowers; 艹, 若 top part; flowers
 negative=negation; 不; not; t(ceiling, c(person, stick))
 water=water droplets=water pistol; 氵; tsunami
-grains of rice; 米, 氺, 録 bottom right part; water; grains of rice // multiple shapes in RTK, but mainly 氺, which is water in WK.
+grains of rice; 米, 氺, 録 bottom right part; water // multiple shapes in RTK, but mainly 氺, which is water in WK.
 deceased=perish; 亡; death; t(top hat, straightened hook)
 genius=genie; 才, 在 outer part; genius; t(c(ten, drop), hook); slideWK
 by one's side=by one’s side; 左 outer part; narwhal
@@ -136,9 +136,9 @@ cause; 因; cause; o(pent in, large)
 give; 呉; give&catapult; t(mouth, chair, tool)
 oversee; 監; oversee; t(l(retainer, reclining, floor), dish)
 summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK
-husband; 夫; husband; t(ten, large) // similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length
-not yet; 未; not yet; not yet, tree, wood, one // similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter
-extremity; 末; end; extremity, tree, wood, one // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
+husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length
+not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter
+extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
 old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 个全 top part; hat
@@ -148,11 +148,11 @@ finger=fingers; 扌, 招 left part; fingers
 enter; 入; enter; t(hook, person)
 wheat=cereal; 禾, 和 left part; grain; t(drop, tree); slideWK
 top hat; 亠, 京 top part; lid; t(drop, one)
-pent in; 囗; mouth; pent in // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
+pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
 tree=wood; 木; tree
 woman; 女; woman
-person; 亻, 卒 middle part; leader&person; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
-assembly line; 卒 middle part; assembly line; l(person, person) & person2 // not named in WK
+person; 亻, 卒 middle part; leader&person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
+assembly line; 卒 middle part; assembly line; person2 // not named in WK
 large=St. Bernard; 大; big
 eight; 八; eight
 eightTwo; 曾 top part; eight; eight // this was previously called eight2, but numbers in element names are reserved for number of occurences.
@@ -160,7 +160,7 @@ ten=needle; 十; ten
 dish; 皿; plate
 craft; 工, 紅 right part; construction; t(ceiling, stick, floor)
 stream; 川; river
-flood; 巛, 災 top part; flood; flood, stream // would be nice if this was only flood, not stream. dual in rtk-search
+flood=stream; 巛, 災 top part; flood // would be nice if this was only flood, not stream. dual in rtk-search
 teepee=wigwam; 癶, 発 top part; tent
 bow; 弓; bow
 maestro; 師 left part; drop&bear
@@ -174,9 +174,9 @@ ear; 耳; ear
 rice field=brains; 田; rice field
 soil=dirt=ground; 土; dirt
 samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal strong is longer than the lower one here.
-stick; ｜, 旧 left part; stick; stick // basically any vertical line
-pinnacle; 阝; building; pinnacle // RTK: pinnacle when on the left, city walls when on the right
-city walls; 阝; building; city walls // RTK: pinnacle when on the left, city walls when on the right
+stick; ｜, 旧 left part; stick // basically any vertical line
+pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on the right
+city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 wind; 几, 冗 bottom part; table
 crotch; 又; stool
 elbow; 厶; private

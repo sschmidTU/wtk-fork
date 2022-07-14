@@ -27,15 +27,18 @@ function processFile(fileString) {
 
         // validate columns
         let invalidRow = false;
-        if (columns.length < 4 || columns.length > 5) {
+        if (columns.length < 3 || columns.length > 5) {
             invalidRow = true;
         } else {
-            for (let col = 0; col < columns.length; col++) {
-                if (columns[col].trim() == "") {
-                    invalidRow = true;
-                    break;
-                }
+            if (columns[columns.length - 1].trim() === "") {
+                invalidRow = true;
             }
+            // for (let col = 0; col < columns.length; col++) {
+            //     if (columns[col].trim() == "") {
+            //         invalidRow = true;
+            //         break;
+            //     }
+            // }
         }
         if (invalidRow) {
             console.warn(`invalid line ${i+1} in elements_data: \n${rows[i]}`);
@@ -43,23 +46,46 @@ function processFile(fileString) {
         }
 
         // process columns
-        const rtkName = columns[0];
+        const rtkNames = columns[0].split("=");
+        const mainName = rtkNames[0];
+        const synonyms = [];
+        for (let j = 1; j < rtkNames.length; j++) {
+            synonyms.push(rtkNames[j]);
+        }
+        const kanji = columns[1].trim();
         const wkNames = columns[2].split("&").map((radical) => radical.trim());
-        const elementsProcessed = processElements(columns[3]);
+        let elements = [mainName];
+        let subElements = [];
+        if (columns.length > 3) {
+            subElements = removeStructure(columns[3]).split(",").map(a => a.trim());
+            console.log(`subElements for ${mainName}: ${subElements.toString()}`);
+            //const elementsProcessed = processElements(columns[3]);
+        }
+        for (const subelement of subElements) {
+            if (subelement === mainName) {
+                console.log("duplicate subelement: " + subelement);
+            }
+            if (subelement.includes("=")) {
+                console.log(`subelement contains '=': ${subelement}`);
+            }
+        }
         const elementsWK = columns.length > 4 ? columns[4] : undefined;
         if (elementsWK && !elementsWK.includes("WK")) { // TODO check each elementWK
             console.warn(`invalid line ${i+1} in elements_data (column 5 doesn't have an elementWK): \n${rows[i]}`);
             return;
         }
-        returnJson[rtkName] = {
-            kanji: columns[1].trim(),
+        
+        returnJson[mainName] = {
+            //elements: elementsProcessed,
+            elements: subElements,
+            elementsWK: elementsWK,
+            kanji: kanji,
+            synonyms: synonyms,
             wkNames: wkNames,
-            elements: elementsProcessed,
-            elementsWK: elementsWK
         };
     }
-    const stringified = JSON.stringify(returnJson);
-    //const stringified = JSON.stringify(returnJson, undefined, 2); //2: pretty print. use for debug (elementsDict_debug.js)
+    //const stringified = JSON.stringify(returnJson);
+    const stringified = JSON.stringify(returnJson, undefined, 2); //2: pretty print. use for debug (elementsDict_debug.js)
     //console.log(stringified);
     const fileStart = "const elementsDict =\n";
     fs.writeFile(mainDir + "assets/js/elementsDict.js", fileStart + stringified + ";\n", () => {
@@ -67,11 +93,17 @@ function processFile(fileString) {
     });
 }
 
+function removeStructure(elementsTreeString) {
+    return elementsTreeString.replaceAll(/[trlb][trlb]\(/g, "")
+        .replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll("c(","")
+        .replaceAll(")","");
+}
+
 function processElements(elementsRaw) {
     let returnString = "";
     let elementArray = [];
-    let elementsStructureRemoved = elementsRaw.replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll(")","");
-    let commaSeparated = elementsRaw.split(",");
+    let commaSeparated = elementsRaw;
+    commaSeparated = elementsRaw.split(",");
 
     // put elements/synonyms into elementArray
     for (const elementUnit of commaSeparated) {
