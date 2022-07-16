@@ -300,6 +300,7 @@ class WTKSearch {
             }
             this.addCopyFunctionToEntry(page);
             this.addCopyFunctionToTextKanji(page);
+            this.addCollapsibleFunctionToEntry(page);
             entriesAdded++;
           }
       } // end for each page
@@ -417,7 +418,7 @@ class WTKSearch {
           }
         }
       }
-      elementsDisplayString += ` (elements: ${elString})`;
+      elementsDisplayString = ` elements: ${elString}`;
     }
 
     const showChineseVariant = this.checked(this.checkboxCNVariantQuery);
@@ -429,6 +430,8 @@ class WTKSearch {
       // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
       '<article>'+
       '  <h3 style="text-align: left">'+
+      //'  <button style="border-style: none; background-color: none" class="collapsible" id="expandButton'+page.id+'" title="Show elements">&plus;</button>'+
+      '  <a style="cursor: pointer" class="collapsible collapsed" id="expandButton'+page.id+'" title="Show elements">&minus;</button>'+
       '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'" ' +
              'style="text-decoration: '+wkButtonTextDecoration + '" ' +
              'title="'+wkButtonHoverText+'"' +
@@ -437,11 +440,28 @@ class WTKSearch {
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
       '    <a class="'+resultKanjiButtonClass+' jptext" href="https://jisho.org/search/'+page.kanji+'">' +
             '<span lang="ja">' + page.kanji + '</span>' +
-            cnVariantString + ' ' + kanjiName + '</a>'+variantOf+alternateFor+outdated+endBracket+elementsDisplayString+
+            cnVariantString + ' ' + kanjiName + '</a>'+variantOf+alternateFor+outdated+endBracket+
+          '<span id="elementsInfo'+page.id+'" style="text-align: left; display: block">'+elementsDisplayString+'</span>'+
       '  </h3>'+
-      '</article></div>'
+      '</article>'+
+      '</div>'
     ;
     return this.toDom(entry);
+  }
+
+  addCollapsibleFunctionToEntry(page) {
+    const expandButton = document.getElementById('expandButton'+page.id)
+    expandButton.onclick = function() {
+      if (expandButton.classList.contains("collapsed")) {
+        expandButton.innerHTML = "&plus; ";
+        expandButton.classList.toggle("collapsed");
+        document.getElementById(`elementsInfo${page.id}`).style.display = "none";
+      } else {
+        expandButton.innerHTML = "&minus; ";
+        expandButton.classList.toggle("collapsed");
+        document.getElementById(`elementsInfo${page.id}`).style.display = "block";
+      }
+    }
   }
 
   addCopyFunctionToEntry(page) {
@@ -509,6 +529,7 @@ class WTKSearch {
             searchResultsList.push(kanjiPage);
             const entry = this.createEntry(kanjiPage);
             this.entries.appendChild(entry);
+            this.addCollapsibleFunctionToEntry(kanjiPage);
             this.addCopyFunctionToEntry(kanjiPage);
             this.addCopyFunctionToTextKanji(kanjiPage);
           }
