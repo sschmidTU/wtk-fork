@@ -378,6 +378,48 @@ class WTKSearch {
     const hasVariantOrAlternate = variantOf.length > 0 || alternateFor.length > 0;
     const endBracket = hasVariantOrAlternate ? ')' : '';
 
+    let elementsDisplayString = '';
+    if (page.elT) {
+      let elString = removeStructure(page.elT);
+      if (!this.isRtkMode()) {
+        const elTranslations = {};
+        const elTSplit = elString.split(",").map(a => a.trim());
+        for (const el of elTSplit) {
+          let elKey = el;
+          const numberChar = el.charAt(el.length - 1);
+          const occurences = Number.parseInt(numberChar, 10);
+          if (!isNaN(occurences)) {
+            elKey = elKey.replace(numberChar, '');
+          }
+          if (elementsDict[elKey]?.wkNames) {
+            elTranslations[el] = elementsDict[elKey].wkNames.map(wkName => {
+              if (!isNaN(occurences)) {
+                return wkName + occurences;
+              }
+              return wkName;
+            });
+          }
+        }
+        elString = '';
+        for (const el of elTSplit) {
+          if (elTranslations[el]) {
+            for (const wkName of elTranslations[el]) {
+              if (elString.length > 0) {
+                elString += ', ';
+              }
+              elString += wkName;
+            }
+          } else {
+            if (elString.length > 0) {
+              elString += ', ';
+            }
+            elString += el;
+          }
+        }
+      }
+      elementsDisplayString += ` (elements: ${elString})`;
+    }
+
     const showChineseVariant = this.checked(this.checkboxCNVariantQuery);
     const cnFlagString = true ? '' : '<sup><sub>&#127464;&#127475;</sub></sup>'; // just showing fallback 'CN' in my browser, which is ugly.
     const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh-Hans">'+page.kanji+'</span>'+cnFlagString+')' : '';
@@ -395,7 +437,7 @@ class WTKSearch {
       '    <button id="cbCopyButton'+page.id+'" title="Copy this kanji to clipboard">📋</button>' +
       '    <a class="'+resultKanjiButtonClass+' jptext" href="https://jisho.org/search/'+page.kanji+'">' +
             '<span lang="ja">' + page.kanji + '</span>' +
-            cnVariantString + ' ' + kanjiName + '</a>'+variantOf+alternateFor+outdated+endBracket+
+            cnVariantString + ' ' + kanjiName + '</a>'+variantOf+alternateFor+outdated+endBracket+elementsDisplayString+
       '  </h3>'+
       '</article></div>'
     ;
