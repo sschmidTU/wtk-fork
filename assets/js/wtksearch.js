@@ -473,14 +473,14 @@ class WTKSearch {
   addCollapsibleFunctionToEntry(page) {
     const expandButton = document.getElementById('expandButton'+page.id)
     expandButton.onclick = function() {
-      if (expandButton.classList.contains("collapsed")) {
-        expandButton.innerHTML = "&plus; ";
-        expandButton.classList.toggle("collapsed");
-        document.getElementById(`elementsInfo${page.id}`).style.display = "none";
+      if (expandButton.classList.contains('collapsed')) {
+        expandButton.innerHTML = '&plus; ';
+        expandButton.classList.toggle('collapsed');
+        document.getElementById(`elementsInfo${page.id}`).style.display = 'none';
       } else {
-        expandButton.innerHTML = "&minus; ";
-        expandButton.classList.toggle("collapsed");
-        document.getElementById(`elementsInfo${page.id}`).style.display = "block";
+        expandButton.innerHTML = '&minus; ';
+        expandButton.classList.toggle('collapsed');
+        document.getElementById(`elementsInfo${page.id}`).style.display = 'block';
       }
     }
   }
