@@ -55,11 +55,12 @@ function processFile(fileString) {
         }
         const kanji = columns[1].trim();
         const wkNames = columns[2].split("&").map((radical) => radical.trim());
-        let elements = [mainName];
+        let mainElements = []; // main elements only, no subelements
         let subElements = [];
         if (columns.length > 3) {
             subElements = removeStructure(columns[3]).split(",").map(a => a.trim());
-            console.log(`subElements for ${mainName}: ${subElements.toString()}`);
+            mainElements = [...subElements]; // shallow copy
+            //console.log(`subElements for ${mainName}: ${subElements.toString()}`);
             //const elementsProcessed = processElements(columns[3]);
         }
         for (const subelement of subElements) {
@@ -78,12 +79,43 @@ function processFile(fileString) {
         
         returnJson[mainName] = {
             //elements: elementsProcessed,
-            elements: subElements,
+            elements: mainElements,
             elementsWK: elementsWK,
             kanji: kanji,
+            subElements: subElements,
             synonyms: synonyms,
             wkNames: wkNames,
         };
+    }
+
+    for (const element of Object.keys(returnJson)) {
+        const elementObject = returnJson[element];
+        let subElementsChecked = {}; // this doesn't seem to catch many repeated checks for now, but whatever
+        for (let i=0; i<elementObject.subElements.length; i++) {
+            const subElement = elementObject.subElements[i];
+            if (subElementsChecked[subElement] || !returnJson[subElement]) {
+                //console.log(`skipping ${subElement} for ${element}`);
+                subElementsChecked[subElement] = true;
+                continue;
+            }
+            const subsubelements = returnJson[subElement].subElements;
+            for (const sub3element of subsubelements) {
+                if (!elementObject.subElements.includes(sub3element)) {
+                    //console.log(`adding sub3element ${sub3element} for ${element}`);
+                    elementObject.subElements.push(sub3element);
+                }
+            }
+            for (const synonym of returnJson[subElement].synonyms) {
+                if (!elementObject.subElements.includes(synonym)) {
+                    elementObject.subElements.push(synonym);
+                }
+            }
+            subElementsChecked[subElement] = true;
+        }
+        // add own synonyms. these don't need to be checked for subelements.
+        for (const synonym of elementObject.synonyms) {
+            elementObject.subElements.push(synonym);
+        }
     }
     //const stringified = JSON.stringify(returnJson);
     const stringified = JSON.stringify(returnJson, undefined, 2); //2: pretty print. use for debug (elementsDict_debug.js)
