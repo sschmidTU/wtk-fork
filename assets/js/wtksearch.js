@@ -382,40 +382,46 @@ class WTKSearch {
     let elementsDisplayString = '';
     if (page.elT) {
       let elString = removeStructure(page.elT);
-      if (!this.isRtkMode()) {
-        const elTranslations = {};
-        const elTSplit = elString.split(",").map(a => a.trim());
-        for (const el of elTSplit) {
-          let elKey = el;
-          const numberChar = el.charAt(el.length - 1);
-          const occurences = Number.parseInt(numberChar, 10);
-          if (!isNaN(occurences)) {
-            elKey = elKey.replace(numberChar, '');
-          }
-          if (elementsDict[elKey]?.wkNames) {
-            elTranslations[el] = elementsDict[elKey].wkNames.map(wkName => {
-              if (!isNaN(occurences)) {
-                return wkName + occurences;
-              }
-              return wkName;
-            });
-          }
+      const elTranslations = {};
+      const elTSplit = elString.split(",").map(a => a.trim());
+      for (const el of elTSplit) {
+        let elKey = el;
+        const numberChar = el.charAt(el.length - 1);
+        const occurences = Number.parseInt(numberChar, 10);
+        if (!isNaN(occurences)) {
+          elKey = elKey.replace(numberChar, '');
         }
-        elString = '';
-        for (const el of elTSplit) {
-          if (elTranslations[el]) {
-            for (const wkName of elTranslations[el]) {
-              if (elString.length > 0) {
-                elString += ', ';
-              }
-              elString += wkName;
+        if (!this.isRtkMode() && elementsDict[elKey]?.wkNames) {
+          elTranslations[el] = elementsDict[elKey].wkNames.map(wkName => {
+            if (!isNaN(occurences)) {
+              return wkName + occurences;
             }
-          } else {
+            return wkName;
+          });
+        }
+      }
+      elString = '';
+      for (const el of elTSplit) {
+        if (elTranslations[el]) {
+          for (const wkName of elTranslations[el]) {
             if (elString.length > 0) {
               elString += ', ';
             }
-            elString += el;
+            let elementCharacter = this.elementSingleCharacterDisplay(el);
+            if (elementCharacter.length > 0) {
+              elementCharacter += ' ';
+            }
+            elString += elementCharacter + wkName;
           }
+        } else {
+          if (elString.length > 0) {
+            elString += ', ';
+          }
+          let elementCharacter = this.elementSingleCharacterDisplay(el);
+          if (elementCharacter.length > 0) {
+            elementCharacter += ' ';
+          }
+          elString += elementCharacter + el;
         }
       }
       elementsDisplayString = ` elements: ${elString}`;
@@ -447,6 +453,21 @@ class WTKSearch {
       '</div>'
     ;
     return this.toDom(entry);
+  }
+
+  elementSingleCharacterDisplay(elementName) {
+    const elObject = elementsDict[elementName];
+    if (!elObject) {
+      return '';
+    }
+    const description = elObject.kanji;
+    if (description.length === 1) {
+      return description;
+    }
+    if (/^.,/.test(description)) {
+      return description[0];
+    }
+    return ''; // no perfectly matching single character representation of the element found
   }
 
   addCollapsibleFunctionToEntry(page) {

@@ -112,7 +112,7 @@ const elementsDict =
   },
   "walking legs": {
     "elements": [],
-    "kanji": "各 top part",
+    "kanji": "攵, 各 top part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -1307,7 +1307,7 @@ const elementsDict =
   },
   "road": {
     "elements": [],
-    "kanji": "退 left part",
+    "kanji": "辶, 退 left part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -2321,7 +2321,7 @@ const elementsDict =
   },
   "umbrella": {
     "elements": [],
-    "kanji": "个全 top part",
+    "kanji": "个, 全 top part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [

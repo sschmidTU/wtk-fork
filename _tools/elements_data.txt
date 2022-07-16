@@ -6,7 +6,7 @@ say=words=keitai; 言; say; one4, mouth, ceiling
 white; 白; white; t(drop, sun)
 direction=compass; 方; direction
 taskmaster; 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
-walking legs; 各 top part; winter // top horizontal stroke doesn't go "over the edge"
+walking legs; 攵, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
 mending=mend; 足 bottom part; coat rack
 zoo=critters; 蛋 top part, 旋 bottom right part, 疏 left part; coat rack // coat rack in WK is both zoo and mending
@@ -79,7 +79,7 @@ silver; 銀 right part; root; t(sun, hairpin)
 good; 良; good; t(drop, silver)
 eat=food; 食; eat; t(umbrella, good)
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
-road; 退 left part; scooter
+road; 辶, 退 left part; scooter
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going; loiterWK // used when there's something in the middle/inner.
 five; 五; five
@@ -141,7 +141,7 @@ not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(ex
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
 old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
-umbrella; 个全 top part; hat
+umbrella; 个, 全 top part; hat
 moon=month=flesh=part of the body; 月; moon
 child; 子; child
 finger=fingers; 扌, 招 left part; fingers
