@@ -58,8 +58,17 @@ function processFile(fileString) {
         let mainElements = []; // main elements only, no subelements
         let subElements = [];
         if (columns.length > 3) {
-            subElements = removeStructure(columns[3]).split(",").map(a => a.trim());
-            mainElements = [...subElements]; // shallow copy
+            mainElements = removeStructure(columns[3]).split(",").map(a => a.trim())
+            subElements = [...mainElements]; // shallow copy
+            for (const subElement of subElements) {
+                if (/.+[0-9]+/.test(subElement)) {
+                    const occurenceFreeElement = subElement.replaceAll(/[0-9]/g,"");
+                    if (!subElements.includes(occurenceFreeElement)) {
+                        //console.log(`adding occurenceFreeElement ${occurenceFreeElement} for subElement ${subElement} to mainName ${mainName}.`);
+                        subElements.push(occurenceFreeElement);
+                    }
+                }
+            }
             //console.log(`subElements for ${mainName}: ${subElements.toString()}`);
             //const elementsProcessed = processElements(columns[3]);
         }
@@ -91,6 +100,7 @@ function processFile(fileString) {
     for (const element of Object.keys(returnJson)) {
         const elementObject = returnJson[element];
         let subElementsChecked = {}; // this doesn't seem to catch many repeated checks for now, but whatever
+        // need to use an indexed for loop, because .subElements expands during the loop.
         for (let i=0; i<elementObject.subElements.length; i++) {
             const subElement = elementObject.subElements[i];
             if (subElementsChecked[subElement] || !returnJson[subElement]) {
@@ -103,6 +113,11 @@ function processFile(fileString) {
                 if (!elementObject.subElements.includes(sub3element)) {
                     //console.log(`adding sub3element ${sub3element} for ${element}`);
                     elementObject.subElements.push(sub3element);
+                    if (/.+[0-9]+/.test(sub3element)) {
+                        const occurenceFreeElement = sub3element.replaceAll(/[0-9]/g,"");
+                        //console.log(`adding occurenceFreeElement ${occurenceFreeElement} for sub3element ${sub3element} to element ${element}.`);
+                        elementObject.subElements.push(occurenceFreeElement);
+                    }
                 }
             }
             for (const synonym of returnJson[subElement].synonyms) {

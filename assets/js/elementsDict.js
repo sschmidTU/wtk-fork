@@ -682,9 +682,11 @@ const elementsDict =
     "subElements": [
       "drop3",
       "fishhook",
+      "drop",
       "hook",
       "stick",
-      "fishguts"
+      "fishguts",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
@@ -711,6 +713,8 @@ const elementsDict =
       "convex2",
       "box4",
       "two",
+      "convex",
+      "box",
       "switzerland",
       "plus",
       "red cross",
@@ -798,6 +802,7 @@ const elementsDict =
     "subElements": [
       "rice field",
       "stick2",
+      "stick",
       "brains"
     ],
     "synonyms": [],
@@ -844,7 +849,9 @@ const elementsDict =
     ],
     "kanji": "桜 top right part, 巣 top part",
     "subElements": [
-      "drop3"
+      "drop3",
+      "drop",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
@@ -860,7 +867,9 @@ const elementsDict =
     "subElements": [
       "owl",
       "crown",
-      "drop3"
+      "drop3",
+      "drop",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
@@ -982,8 +991,10 @@ const elementsDict =
       "oven-fire",
       "coat hanger",
       "drop4",
+      "drop",
       "oven fire",
       "barbecue",
+      "drops",
       "so"
     ],
     "synonyms": [
@@ -1612,6 +1623,8 @@ const elementsDict =
     "kanji": "灬",
     "subElements": [
       "drop4",
+      "drop",
+      "drops",
       "oven fire",
       "barbecue"
     ],
@@ -1634,6 +1647,8 @@ const elementsDict =
       "oven-fire",
       "coat hanger",
       "drop4",
+      "drop",
+      "drops",
       "oven fire",
       "barbecue"
     ],
@@ -1650,7 +1665,9 @@ const elementsDict =
     "kanji": "凍 left part, 冬 bottom part",
     "subElements": [
       "drop2",
-      "two"
+      "two",
+      "drop",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
@@ -2449,7 +2466,8 @@ const elementsDict =
     ],
     "kanji": "卒 middle part",
     "subElements": [
-      "person2"
+      "person2",
+      "person"
     ],
     "synonyms": [],
     "wkNames": [
@@ -2591,7 +2609,8 @@ const elementsDict =
     ],
     "kanji": "官 bottom part",
     "subElements": [
-      "mouth2"
+      "mouth2",
+      "mouth"
     ],
     "synonyms": [],
     "wkNames": [
