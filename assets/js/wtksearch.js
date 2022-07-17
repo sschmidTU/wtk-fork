@@ -880,6 +880,9 @@ class WTKSearch {
     if (params.cnVariant === '1') {
       checkboxCNVariant.checked = true;
     }
+    if (params.elementsInfo === '1') {
+      this.addElementsInfo = true;
+    }
 
     const btnLatestKanji = document.getElementById('btnSearchLatestKanji');
     if (btnLatestKanji) {
