@@ -1744,8 +1744,12 @@ const elementsDict =
   "seven": {
     "elements": [],
     "kanji": "七",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "diced"
+    ],
+    "synonyms": [
+      "diced"
+    ],
     "wkNames": [
       "seven"
     ]
@@ -2394,6 +2398,21 @@ const elementsDict =
     ],
     "wkNames": [
       "old"
+    ]
+  },
+  "i": {
+    "elements": [
+      "five",
+      "mouth"
+    ],
+    "kanji": "吾",
+    "subElements": [
+      "five",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "i"
     ]
   },
   "umbrella": {
