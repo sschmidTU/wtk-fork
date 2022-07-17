@@ -301,7 +301,7 @@ class WTKSearch {
             }
             this.addCopyFunctionToEntry(page);
             this.addCopyFunctionToTextKanji(page);
-            if (this.addElementsInfo) {
+            if (this.addElementsInfo && page.elT) {
               this.addCollapsibleFunctionToEntry(page);
             }
             entriesAdded++;
@@ -596,7 +596,7 @@ class WTKSearch {
             searchResultsList.push(kanjiPage);
             const entry = this.createEntry(kanjiPage);
             this.entries.appendChild(entry);
-            if (this.addElementsInfo) {
+            if (this.addElementsInfo && kanjiPage.elT) {
               this.addCollapsibleFunctionToEntry(kanjiPage);
             }
             this.addCopyFunctionToEntry(kanjiPage);
