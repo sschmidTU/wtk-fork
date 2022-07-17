@@ -2433,6 +2433,15 @@ const elementsDict =
       "i"
     ]
   },
+  "benefit": {
+    "elements": [],
+    "kanji": "益",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "t(horns, one, animal legs, dish)"
+    ]
+  },
   "umbrella": {
     "elements": [],
     "kanji": "𠆢, 全 top part",
