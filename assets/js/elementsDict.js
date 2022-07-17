@@ -3025,28 +3025,28 @@ const elementsDict =
     ]
   },
   "ceiling": {
-    "elements": [
-      "one"
-    ],
+    "elements": [],
     "kanji": "一",
     "subElements": [
       "one"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "one"
+    ],
     "wkNames": [
       "ground"
     ],
     "comment": "only when on top of another element. In any case, also called \"one\""
   },
   "floor": {
-    "elements": [
-      "one"
-    ],
+    "elements": [],
     "kanji": "一",
     "subElements": [
       "one"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "one"
+    ],
     "wkNames": [
       "ground"
     ],

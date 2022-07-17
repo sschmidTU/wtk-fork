@@ -194,5 +194,5 @@ elbow; 厶; private
 spoon=sitting on the ground; 匕; spoon
 vulture; 爪; cleat
 one; 一; ground
-ceiling; 一; ground; one // only when on top of another element. In any case, also called "one"
-floor; 一; ground; one // only when on the bottom of another element. In any case, also called "one"
+ceiling=one; 一; ground // only when on top of another element. In any case, also called "one"
+floor=one; 一; ground // only when on the bottom of another element. In any case, also called "one"
