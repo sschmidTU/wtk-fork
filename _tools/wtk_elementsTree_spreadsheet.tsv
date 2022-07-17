@@ -10,22 +10,22 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 九	nine	Nine	nine	nine, baseball
 十	ten	Ten	ten	ten, needle
 口	mouth	Mouth	mouth	mouth
-日	day	Sun	day	day, sun
+日	sun, day	Sun	sun	day, sun
 月	month	Moon	month	month, moon, month, flesh, part of the body
 田	rice field	Rice Paddy	rice field	rice field, brains
 目	eye	Eye	eye	eye
 古	old	Old	t(ten, mouth)	old, tombstone, gravestone, church, ten, needle, mouth
 吾	I	I	t(five, mouth)	I, five, mouth
-冒	risk	Dare	t(day, eye)	risk, sun, day, eye
+冒	risk	Dare	t(sun, eye)	risk, sun, day, eye
 朋	companion		l(month, month)	companion, moon2, moon, month2, month, flesh2, flesh, part of the body2, part of the body
-明	bright	Bright	l(day, month)	bright, sun, day, moon, month, flesh, part of the body
-唱	chant	Chant	l(mouth, t(day, day))	chant, mouth, prosperous, sun, day, tongue wagging, wagging tongue, sun2, day2, tongue wagging2
-晶	sparkle	Crystal	t(day, l(day, day))	sparkle, day, sun, day3, sun3
+明	bright	Bright	l(sun, month)	bright, sun, day, moon, month, flesh, part of the body
+唱	chant	Chant	l(mouth, t(sun, sun))	chant, mouth, prosperous, sun, day, tongue wagging, wagging tongue, sun2, day2, tongue wagging2
+晶	sparkle	Crystal	t(sun, l(sun, sun))	sparkle, day, sun, day3, sun3
 品	goods	Product	t(mouth, l(mouth, mouth))	goods, mouth, mouth3, three mouths
 呂	spine	Bath	t(mouth, drop, mouth)	spine, mouth, drop, mouth2
-昌	prosperous	Prosperous	t(day, day)	prosperous, sun, day, sun2, day2
-早	early	Early	t(day, ten)	early, sunflower, sun, day, ten, needle
-旭	rising sun		l(nine, day)	rising sun, nine, baseball, sun, day
+昌	prosperous	Prosperous	t(sun, sun)	prosperous, sun, day, sun2, day2
+早	early	Early	t(sun, ten)	early, sunflower, sun, day, ten, needle
+旭	rising sun		l(nine, sun)	rising sun, nine, baseball, sun, day
 世	generation	World	generation	generation, generations, ten, twenty
 胃	stomach	Stomach	t(rice field, month)	stomach, rice field, brains, moon, month, flesh, part of the body
 旦	nightbreak	Dawn	t(day, floor)	nightbreak, sun, day, one, floor
@@ -33,15 +33,15 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 亘	span		t(ceiling, nightbreak)	span, one, ceiling, sun, day, one, floor
 凹	concave	Concave	concave	concave
 凸	convex	Convex	convex	convex
-旧	olden times	Former	l(stick, day)	olden times, stick, sun, day
+旧	olden times	Former	l(stick, sun)	olden times, stick, sun, day
 自	oneself	Self	t(drop, eye)	oneself, drop, eye
-白	white	White	t(drop, day)	white, drop, sun, day
+白	white	White	t(drop, sun)	white, drop, sun, day
 百	hundred	Hundred	t(ceiling, white)	hundred, one, ceiling, white, dove
 中	in	Middle	o(mouth, stick)	in, inx, stick, mouth
 千	thousand	Thousand	t(drop, ten)	thousand, one thousand, drop, ten, needle
 舌	tongue	Tongue	t(thousand, mouth)	tongue, thousand, drop, ten, needle, mouth
 升	measuring box	Grid	l(thousand, ten)	measuring box, thousand, drop, ten, needle
-昇	rise up	Ascend	t(day, measuring box)	rise up, sun, day, measuring box, thousand, drop, ten, needle
+昇	rise up	Ascend	t(sun, measuring box)	rise up, sun, day, measuring box, thousand, drop, ten, needle
 丸	round	Circle	l(drop, nine)	round, drop, nine, baseball
 寸	measurement	Measurement	measurement	measurement, glue, drop, ten with a hook
 肘	elbow		l(month, measurement)	elbow, moon, month, flesh, part of the body, glue
@@ -50,8 +50,8 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 占	fortune-telling	Fortune	t(magic wand, mouth)	fortune-telling, fortunetelling, magic wand, wand, augury, divining rod, mouth
 上	above	Above	t(magic wand, floor)	above, magic wand, wand, augury, divining rod, one, floor
 下	below	Below	t(ceiling, magic wand)	below, one, ceiling, magic wand, wand, augury, divining rod
-卓	eminent	Table	t(magic wand, day, ten)	eminent, magic wand, augury, divinging rod, sunflower, sun, day, ten, needle
-朝	morning	Morning	l(t(ten, day, ten), month)	morning, mist, ten, needle, early, sun, day, moon, month, flesh, part of the body, ten2, needle2
+卓	eminent	Table	t(magic wand, sun, ten)	eminent, magic wand, augury, divinging rod, sunflower, sun, day, ten, needle
+朝	morning	Morning	l(t(ten, sun, ten), month)	morning, mist, ten, needle, early, sun, day, moon, month, flesh, part of the body, ten2, needle2
 嘲	derision		l(mouth, morning)	derision, mouth, morning , mist, ten, needle, early, sun, day, moon, month, flesh, part of the body, ten2, needle2
 只	only		t(mouth, animal legs)	only, mouth, animal legs, eight
 貝	shellfish	Shellfish	t(eye, animal legs)	shellfish, shell, clam, oyster, eye, animal legs, eight
@@ -69,7 +69,7 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 万	ten thousand	Ten Thousand	t(ceiling, bound up)	ten thousand, one, ceiling, bound up
 句	phrase	Paragraph	o(bound up, mouth)	phrase, bound up, mouth
 肌	texture	Skin	l(month, wind)	texture, moon, month, flesh, part of the body, wind
-旬	decameron	In Season	o(bound up, day)	decameron, bound up, sun, day
+旬	decameron	In Season	o(bound up, sun)	decameron, bound up, sun, day
 勺	ladle		o(bound up, drop)	ladle, bound up, drop
 的	bull´s eye	Target	l(white, ladle)	bull’s eye, white, dove, ladle, bound up, drop
 首	neck	Neck	t(horns, ceiling, drop, eye)	neck, horns, nose, one, ceiling, drop, eye
@@ -130,7 +130,7 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 嗅	sniff		l(mouth, t(oneself, dog))	mouth, oneself, drop, eye, dog, large, St. Bernard, drop
 妙	exquisite	Strange	l(woman, few)	exquisite, woman, few
 省	focus	Conserve	t(few, eye)	focus, few, eye
-厚	thick	Thick	o(cliff, t(day, child))	thick, cliff, sun, day, child
+厚	thick	Thick	o(cliff, t(sun, child))	thick, cliff, sun, day, child
 奇	strange	Odd	t(large, can)	strange, large, St. Bernard, can, mouth, street, nail, spike
 川	stream	River	stream	stream, flood
 州	state	State	o(stream, drops)	state, stream, flood, drops
