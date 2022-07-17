@@ -148,6 +148,8 @@ i; 吾; i; t(five, mouth)
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 𠆢, 全 top part; hat
 moon=month=flesh=part of the body; 月; moon
+companion; 朋; companion; l(moon, moon)
+bright; 明; bright; l(sun, moon)
 child; 子; child
 finger=fingers; 扌, 招 left part; fingers
 enter; 入; enter; t(hook, person)

@@ -2459,6 +2459,43 @@ const elementsDict =
       "moon"
     ]
   },
+  "companion": {
+    "elements": [
+      "moon",
+      "moon"
+    ],
+    "kanji": "朋",
+    "subElements": [
+      "moon",
+      "moon",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "companion"
+    ]
+  },
+  "bright": {
+    "elements": [
+      "sun",
+      "moon"
+    ],
+    "kanji": "明",
+    "subElements": [
+      "sun",
+      "moon",
+      "day",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bright"
+    ]
+  },
   "child": {
     "elements": [],
     "kanji": "子",
