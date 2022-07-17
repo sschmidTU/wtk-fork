@@ -66,12 +66,14 @@ for (const doc of docs) {
           //console.log(`adding new occurenced element ${occurencedElement} to ${doc.kanji}.elementsPureExtra`);
           doc.elP += ", " + occurencedElement;
           newElementsField += ", " + occurencedElement;
+          newElementsObject[occurencedElement] = true;
           if (elementsDict[occurenceKey]) {
             const synonyms = elementsDict[occurenceKey].synonyms
             for (const synonym of synonyms) {
               const occurencedSynonym = synonym + occurenceCount;
               if (!newElementsField.includes(occurencedSynonym)) {
                 newElementsField += ", " + occurencedSynonym;
+                newElementsObject[occurencedSynonym] = true;
               }
             }
             // also add occurenced subelements? might get too much
