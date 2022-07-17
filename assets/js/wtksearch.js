@@ -50,8 +50,9 @@ class WTKSearch {
    */
   search(query, {
     forceSearch = true,
-    updateHTMLElements = false,
+    updateHTMLElements = true,
     allowRepeatedQueries = true,
+    filterOnDocInsteadOfQuery = undefined,
   } = {}) {
     if (!query?.trim) {
       return { length: 0 };
@@ -213,16 +214,26 @@ class WTKSearch {
       this.log(this.LogLevels.Info, 'query ' + (i+1) + ': ' + query);
 
       // retrieve matching result with content
-      var results = idx.search(query).map(function(result) {
-        return docs.filter(function(entry) {
-          // TODO handle multiple queries here instead of the query adding below
-          if (entry.id === result.ref && !idsAddedToResults[entry.id]) {
-            idsAddedToResults[entry.id] = 1; // id was added. use object=hash map instead of array for O(1) performance
-            return true;
+      var results;
+      if (!filterOnDocInsteadOfQuery) {
+        var results = idx.search(query).map(function(result) {
+          return docs.filter(function(entry) {
+            // TODO handle multiple queries here instead of the query adding below
+            if (entry.id === result.ref && !idsAddedToResults[entry.id]) {
+              idsAddedToResults[entry.id] = 1; // id was added. use object=hash map instead of array for O(1) performance
+              return true;
+            }
+            return false;
+          })[0];
+        });
+      } else {
+        results = [];
+        for (const doc of docs) {
+          if (filterOnDocInsteadOfQuery(doc)) {
+            results.push(doc);
           }
-          return false;
-        })[0];
-      });
+        }
+      }
 
       let matches = 0;
       let entriesAdded = 0;
