@@ -47,14 +47,17 @@ for (const doc of docs) {
         oldElementsObject[oldElement.trim()] = true;
       }
       //console.dir(oldElementsObject);
-      for (const oldElement of Object.keys(oldElementsObject)) {
-        if (!newElementsObject[oldElement]) {
-          console.log(`${doc.kanji}: new elements created from elT missing old element: ${oldElement}`);
+      const debug = false;
+      if (debug) {
+        for (const oldElement of Object.keys(oldElementsObject)) {
+          if (!newElementsObject[oldElement]) {
+            console.log(`${doc.kanji}: new elements created from elT missing old element: ${oldElement}`);
+          }
         }
-      }
-      for (const newElement of Object.keys(newElementsObject)) {
-        if (!oldElementsObject[newElement]) {
-          console.log(`${doc.kanji}: old elements missing new element created from elT: ${newElement}`);
+        for (const newElement of Object.keys(newElementsObject)) {
+          if (!oldElementsObject[newElement]) {
+            console.log(`${doc.kanji}: old elements missing new element created from elT: ${newElement}`);
+          }
         }
       }
     }

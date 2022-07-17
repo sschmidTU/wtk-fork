@@ -9,6 +9,7 @@ class WTKSearch {
   logLevel                 = 0; // silent by default
   rtkMode                  = false; // save isRtkMode() for a while so it doesn't have to be called every time
   strictMode               = false;
+  addElementsInfo          = false;
   // HTML things
   result                   = null; // save document.getElementById('search-results')
   entries                  = null; // save document.getElementById('search-results.entries')
@@ -300,7 +301,9 @@ class WTKSearch {
             }
             this.addCopyFunctionToEntry(page);
             this.addCopyFunctionToTextKanji(page);
-            this.addCollapsibleFunctionToEntry(page);
+            if (this.addElementsInfo) {
+              this.addCollapsibleFunctionToEntry(page);
+            }
             entriesAdded++;
           }
       } // end for each page
@@ -397,7 +400,7 @@ class WTKSearch {
     const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh-Hans">'+page.kanji+'</span>'+cnFlagString+')' : '';
 
     let elementsDisplayString = '';
-    if (page.elT) {
+    if (this.addElementsInfo && page.elT) {
       let elStringOrig = removeStructure(page.elT);
       const elTranslations = {};
       const elTSplit = elStringOrig.split(",").map(a => a.trim());
@@ -444,14 +447,23 @@ class WTKSearch {
     const expandAll = this.checked("expandAllResultsCheckbox");
     const collapsedString = expandAll ? '' : ' collapsed';
     const plusOrMinus = expandAll ? '&minus;' : '&plus;'; // default
+    let collapsibleButtonHtml = '';
+    if (this.addElementsInfo) {
+      collapsibleButtonHtml = '<a class="collapsibleButton'+collapsedString+'" id="expandButton'+page.id+
+        '" title="Show elements">'+plusOrMinus+'</button>';
+    }
+    let elementsInfoHtml = '';
+    if (this.addElementsInfo) {
+      elementsInfoHtml = '<span class="elementsInfo collapsible'+collapsedString+'" id="elementsInfo'+page.id+
+        '">'+elementsDisplayString+'</span>';
+    }
 
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
       // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
       '<article>'+
       '  <h3 style="text-align: left">'+
-      //'  <button style="border-style: none; background-color: none" class="collapsible" id="expandButton'+page.id+'" title="Show elements">&plus;</button>'+
-      '  <a class="collapsibleButton'+collapsedString+'" id="expandButton'+page.id+'" title="Show elements">'+plusOrMinus+'</button>'+
+      collapsibleButtonHtml+
       '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'" ' +
              'style="text-decoration: '+wkButtonTextDecoration + '" ' +
              'title="'+wkButtonHoverText+'"' +
@@ -461,7 +473,7 @@ class WTKSearch {
       '    <a class="'+resultKanjiButtonClass+' jptext" href="https://jisho.org/search/'+page.kanji+'">' +
             '<span lang="ja">' + page.kanji + '</span>' +
             cnVariantString + ' ' + kanjiName + '</a>'+variantOf+alternateFor+outdated+endBracket+
-          '<span class="elementsInfo collapsible'+collapsedString+'" id="elementsInfo'+page.id+'">'+elementsDisplayString+'</span>'+
+          elementsInfoHtml+
       '  </h3>'+
       '</article>'+
       '</div>'
