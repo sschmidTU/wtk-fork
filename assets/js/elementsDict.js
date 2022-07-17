@@ -2790,22 +2790,6 @@ const elementsDict =
     ],
     "comment": "mortar/sun is not distinguished in WK"
   },
-  "prosperous": {
-    "elements": [
-      "sun",
-      "sun"
-    ],
-    "kanji": "昌",
-    "subElements": [
-      "sun",
-      "sun",
-      "day"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "prosperous"
-    ]
-  },
   "eye": {
     "elements": [],
     "kanji": "目",
@@ -2840,6 +2824,38 @@ const elementsDict =
       "top hat"
     ],
     "comment": "this is not (always) perfectly RTK(eye)+RTK(one), but close enough."
+  },
+  "prosperous": {
+    "elements": [
+      "sun",
+      "sun"
+    ],
+    "kanji": "昌",
+    "subElements": [
+      "sun",
+      "sun",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "prosperous"
+    ]
+  },
+  "risk": {
+    "elements": [
+      "sun",
+      "eye"
+    ],
+    "kanji": "冒",
+    "subElements": [
+      "sun",
+      "eye",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dare"
+    ]
   },
   "rice field": {
     "elements": [],
