@@ -2733,6 +2733,22 @@ const elementsDict =
       "ear"
     ]
   },
+  "shelf": {
+    "elements": [
+      "eye",
+      "one"
+    ],
+    "kanji": "且, 助 left part",
+    "subElements": [
+      "eye",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "top hat"
+    ],
+    "comment": "this is not (always) perfectly RTK(eye)+RTK(one), but close enough."
+  },
   "rice field": {
     "elements": [],
     "kanji": "田",

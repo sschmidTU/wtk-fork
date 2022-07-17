@@ -171,6 +171,7 @@ sun=day; 日; sun
 mortar; 臼; sun // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
 ear; 耳; ear
+shelf; 且, 助 left part; top hat; c(eye, one) // this is not (always) perfectly RTK(eye)+RTK(one), but close enough.
 rice field=brains; 田; rice field
 soil=dirt=ground; 土; dirt
 samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal strong is longer than the lower one here.
