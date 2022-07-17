@@ -37,7 +37,7 @@ for (const doc of docs) {
       }
       newElementsField += subElement;
     }
-    const compareOldAndNewElements = true;
+    const compareOldAndNewElements = false;
     if (compareOldAndNewElements && doc.el) {
       //console.log("comparing old and new elements for " + doc.kanji);
       // check old and new elements
@@ -47,17 +47,14 @@ for (const doc of docs) {
         oldElementsObject[oldElement.trim()] = true;
       }
       //console.dir(oldElementsObject);
-      const debug = false;
-      if (debug) {
-        for (const oldElement of Object.keys(oldElementsObject)) {
-          if (!newElementsObject[oldElement]) {
-            console.log(`${doc.kanji}: new elements created from elT missing old element: ${oldElement}`);
-          }
+      for (const oldElement of Object.keys(oldElementsObject)) {
+        if (!newElementsObject[oldElement]) {
+          console.log(`${doc.kanji}: new elements created from elT missing old element: ${oldElement}`);
         }
-        for (const newElement of Object.keys(newElementsObject)) {
-          if (!oldElementsObject[newElement]) {
-            console.log(`${doc.kanji}: old elements missing new element created from elT: ${newElement}`);
-          }
+      }
+      for (const newElement of Object.keys(newElementsObject)) {
+        if (!oldElementsObject[newElement]) {
+          console.log(`${doc.kanji}: old elements missing new element created from elT: ${newElement}`);
         }
       }
     }
