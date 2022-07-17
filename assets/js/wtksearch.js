@@ -312,16 +312,18 @@ class WTKSearch {
       }
     } // end if results
 
-    const expandResultsLimit = Number(document.getElementById("expandResultsLimitInput").value);
-    const expandAll = this.checked("expandAllResultsCheckbox");
-    for (let i = 0; i < searchResults.length; i++) {
-      if (!expandAll && (i+1) > expandResultsLimit) {
-        break;
-      }
-      const result = searchResults.list[i];
-      const expandButton = document.getElementById('expandButton'+result.id);
-      if (expandButton) {
-        this.toggleCollapsible(expandButton, result.id, false);
+    if (this.addElementsInfo) {
+      const expandResultsLimit = Number(document.getElementById("expandResultsLimitInput").value);
+      const expandAll = this.checked("expandAllResultsCheckbox");
+      for (let i = 0; i < searchResults.length; i++) {
+        if (!expandAll && (i+1) > expandResultsLimit) {
+          break;
+        }
+        const result = searchResults.list[i];
+        const expandButton = document.getElementById('expandButton'+result.id);
+        if (expandButton) {
+          this.toggleCollapsible(expandButton, result.id, false);
+        }
       }
     }
 
