@@ -1741,6 +1741,15 @@ const elementsDict =
       "three"
     ]
   },
+  "seven": {
+    "elements": [],
+    "kanji": "七",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "seven"
+    ]
+  },
   "heavens": {
     "elements": [],
     "kanji": "天",
