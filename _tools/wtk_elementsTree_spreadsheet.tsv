@@ -11,14 +11,14 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 十	ten	Ten	ten	ten, needle
 口	mouth	Mouth	mouth	mouth
 日	sun, day	Sun	sun	day, sun
-月	month	Moon	month	month, moon, month, flesh, part of the body
+月	moon, month	Moon	moon	month, moon, month, flesh, part of the body
 田	rice field	Rice Paddy	rice field	rice field, brains
 目	eye	Eye	eye	eye
 古	old	Old	t(ten, mouth)	old, tombstone, gravestone, church, ten, needle, mouth
 吾	I	I	t(five, mouth)	I, five, mouth
 冒	risk	Dare	t(sun, eye)	risk, sun, day, eye
-朋	companion		l(month, month)	companion, moon2, moon, month2, month, flesh2, flesh, part of the body2, part of the body
-明	bright	Bright	l(sun, month)	bright, sun, day, moon, month, flesh, part of the body
+朋	companion		l(moon, moon)	companion, moon2, moon, month2, month, flesh2, flesh, part of the body2, part of the body
+明	bright	Bright	l(sun, moon)	bright, sun, day, moon, month, flesh, part of the body
 唱	chant	Chant	l(mouth, t(sun, sun))	chant, mouth, prosperous, sun, day, tongue wagging, wagging tongue, sun2, day2, tongue wagging2
 晶	sparkle	Crystal	t(sun, l(sun, sun))	sparkle, day, sun, day3, sun3
 品	goods	Product	t(mouth, l(mouth, mouth))	goods, mouth, mouth3, three mouths
@@ -27,9 +27,9 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 早	early	Early	t(sun, ten)	early, sunflower, sun, day, ten, needle
 旭	rising sun		l(nine, sun)	rising sun, nine, baseball, sun, day
 世	generation	World	generation	generation, generations, ten, twenty
-胃	stomach	Stomach	t(rice field, month)	stomach, rice field, brains, moon, month, flesh, part of the body
+胃	stomach	Stomach	t(rice field, moon)	stomach, rice field, brains, moon, month, flesh, part of the body
 旦	nightbreak	Dawn	t(day, floor)	nightbreak, sun, day, one, floor
-胆	gall bladder	Guts	l(month, t(day, floor))	gallbladder, moon, month, flesh, part of the body, nightbreak, sun, day, one, floor
+胆	gall bladder	Guts	l(moon, t(day, floor))	gallbladder, moon, month, flesh, part of the body, nightbreak, sun, day, one, floor
 亘	span		t(ceiling, nightbreak)	span, one, ceiling, sun, day, one, floor
 凹	concave	Concave	concave	concave
 凸	convex	Convex	convex	convex
@@ -44,14 +44,14 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 昇	rise up	Ascend	t(sun, measuring box)	rise up, sun, day, measuring box, thousand, drop, ten, needle
 丸	round	Circle	l(drop, nine)	round, drop, nine, baseball
 寸	measurement	Measurement	measurement	measurement, glue, drop, ten with a hook
-肘	elbow		l(month, measurement)	elbow, moon, month, flesh, part of the body, glue
+肘	elbow		l(moon, measurement)	elbow, moon, month, flesh, part of the body, glue
 専	specialty	Specialty	t(ten, rice field, measurement)	specialty, ten, needle, rice field, brains, glue
 博	Dr.	Exhibition	l(ten, specialty)	Dr., ten, needle, acupuncturist, specialty, drop, ten, needle, rice field, brains, glue
 占	fortune-telling	Fortune	t(magic wand, mouth)	fortune-telling, fortunetelling, magic wand, wand, augury, divining rod, mouth
 上	above	Above	t(magic wand, floor)	above, magic wand, wand, augury, divining rod, one, floor
 下	below	Below	t(ceiling, magic wand)	below, one, ceiling, magic wand, wand, augury, divining rod
 卓	eminent	Table	t(magic wand, sun, ten)	eminent, magic wand, augury, divinging rod, sunflower, sun, day, ten, needle
-朝	morning	Morning	l(t(ten, sun, ten), month)	morning, mist, ten, needle, early, sun, day, moon, month, flesh, part of the body, ten2, needle2
+朝	morning	Morning	l(t(ten, sun, ten), moon)	morning, mist, ten, needle, early, sun, day, moon, month, flesh, part of the body, ten2, needle2
 嘲	derision		l(mouth, morning)	derision, mouth, morning , mist, ten, needle, early, sun, day, moon, month, flesh, part of the body, ten2, needle2
 只	only		t(mouth, animal legs)	only, mouth, animal legs, eight
 貝	shellfish	Shellfish	t(eye, animal legs)	shellfish, shell, clam, oyster, eye, animal legs, eight
@@ -68,7 +68,7 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 負	defeat	Lose	t(bound up, shellfish)	defeat, bound up, shellfish, shell, clam, oyster, eye, animal legs, eight
 万	ten thousand	Ten Thousand	t(ceiling, bound up)	ten thousand, one, ceiling, bound up
 句	phrase	Paragraph	o(bound up, mouth)	phrase, bound up, mouth
-肌	texture	Skin	l(month, wind)	texture, moon, month, flesh, part of the body, wind
+肌	texture	Skin	l(moon, wind)	texture, moon, month, flesh, part of the body, wind
 旬	decameron	In Season	o(bound up, sun)	decameron, bound up, sun, day
 勺	ladle		o(bound up, drop)	ladle, bound up, drop
 的	bull´s eye	Target	l(white, ladle)	bull’s eye, white, dove, ladle, bound up, drop
@@ -81,7 +81,7 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 工	craft	Construction	craft	craft, artificial
 左	left	Left	o(by one's side, craft)	left, by one's side, by one’s side, craft
 右	right	Right	o(by one's side, mouth)	right, by one's side, by one’s side, mouth
-有	possess	Have	o(by one's side, month)	possess, possession, by one's side, by one’s side, moon, month, flesh, part of the body
+有	possess	Have	o(by one's side, moon)	possess, possession, by one's side, by one’s side, moon, month, flesh, part of the body
 賄	bribe	Bribe	l(shellfish, possess)	bribe, shellfish, shell, clam, oyster, eye, animal legs, eight, possess, by one's side, by one’s side, moon, month, flesh, part of the body
 貢	tribute	Tribute	t(craft, shellfish)	tribute, craft, shellfish, shell, clam, oyster, eye, animal legs, eight
 項	paragraph	Paragraph	l(craft, page)	paragraph, craft, head, page, one, ceiling, drop, shellfish, shell, clam, oyster, eye, animal legs, eight
@@ -117,7 +117,7 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 外	outside	Outside	l(evening, magic wand)	outside, evening, magic wand, augury
 名	name	Name	t(evening, mouth)	name, evening, mouth
 石	stone	Stone	t(cliff, mouth)	stone, cliff, mouth
-肖	resemblance	Resemblance	t(small, month)	resemblance, spark, candle, small, little, moon, month, flesh, part of the body
+肖	resemblance	Resemblance	t(small, moon)	resemblance, spark, candle, small, little, moon, month, flesh, part of the body
 硝	nitrate		l(stone, resemblance)	nitrate, stone, rock, resemblance, spark, candle, small, little, moon, month, flesh, part of the body
 砕	smash	Smash	l(stone, ninety)	smash, stone, rock, ninety, nine, baseball, ten, needle
 砂	sand	Sand	l(stone, few)	sand, stone, rock, few
@@ -139,7 +139,7 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 氷	icicle	Ice	l(drop, water)	icicle, drop, water
 永	eternity	Eternity	t(drop, water)	eternity, drop, water
 泉	spring	Spring	t(white, water)	spring, white, dove, water
-腺	gland		l(month, spring)	gland, moon, month, flesh, part of the body, spring, white, dove, water
+腺	gland		l(moon, spring)	gland, moon, month, flesh, part of the body, spring, white, dove, water
 原	meadow	Original	o(cliff, t(white, small))	meadow, cliff, spring, white, dove, small, little
 願	petition	Request	l(meadow, page)	petition, meadow, cliff, white, dove, small, little, head, page, one, ceiling, drop, shellfish, shell, clam, oyster, eye, animal legs, eight
 泳	swim	Swim	l(water, eternity)	swim, water, water droplets, water pistol, eternity
