@@ -84,7 +84,7 @@ function processFile(fileString) {
                 console.log(`subelement contains '=': ${subelement}`);
             }
         }
-        const elementsWK = columns.length > 4 ? columns[4] : undefined;
+        const elementsWK = columns.length > 4 ? columns[4].trim() : undefined;
         if (elementsWK && !elementsWK.includes("WK")) { // TODO check each elementWK
             console.warn(`invalid line ${i+1} in elements_data (column 5 doesn't have an elementWK): \n${rows[i]}`);
             return;

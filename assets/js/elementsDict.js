@@ -187,7 +187,7 @@ const elementsDict =
       "mouth",
       "drop"
     ],
-    "elementsWK": " slideWK",
+    "elementsWK": "slideWK",
     "kanji": "尸, 戸 bottom part",
     "subElements": [
       "mouth",
@@ -555,7 +555,7 @@ const elementsDict =
       "arrowhead",
       "drop"
     ],
-    "elementsWK": " slideWK",
+    "elementsWK": "slideWK",
     "kanji": "戈, 伐 right part",
     "subElements": [
       "arrowhead",
@@ -1342,7 +1342,7 @@ const elementsDict =
     "elements": [
       ""
     ],
-    "elementsWK": " loiterWK ",
+    "elementsWK": "loiterWK",
     "kanji": "行",
     "subElements": [
       ""
@@ -1358,7 +1358,7 @@ const elementsDict =
     "elements": [
       "going"
     ],
-    "elementsWK": " loiterWK ",
+    "elementsWK": "loiterWK",
     "kanji": "行",
     "subElements": [
       "going",
@@ -1407,7 +1407,7 @@ const elementsDict =
       "reclining",
       "fishhook"
     ],
-    "elementsWK": " noseWK ",
+    "elementsWK": "noseWK",
     "kanji": "乞",
     "subElements": [
       "reclining",
@@ -1538,7 +1538,7 @@ const elementsDict =
       "drop",
       "shellfish"
     ],
-    "elementsWK": " leafWK",
+    "elementsWK": "leafWK",
     "kanji": "頁",
     "subElements": [
       "ceiling",
@@ -1840,7 +1840,7 @@ const elementsDict =
       "drop",
       "hook"
     ],
-    "elementsWK": " slideWK",
+    "elementsWK": "slideWK",
     "kanji": "才, 在 outer part",
     "subElements": [
       "ten",
@@ -1963,7 +1963,7 @@ const elementsDict =
       "drop",
       "mouth"
     ],
-    "elementsWK": " leafWK, slideWK",
+    "elementsWK": "leafWK, slideWK",
     "kanji": "石, 砂 left part",
     "subElements": [
       "ceiling",
@@ -2263,7 +2263,7 @@ const elementsDict =
       "oneself",
       "walking legs"
     ],
-    "elementsWK": " leafWK",
+    "elementsWK": "leafWK",
     "kanji": "夏",
     "subElements": [
       "ceiling",
@@ -2434,7 +2434,7 @@ const elementsDict =
       "drop",
       "tree"
     ],
-    "elementsWK": " slideWK",
+    "elementsWK": "slideWK",
     "kanji": "禾, 和 left part",
     "subElements": [
       "drop",
