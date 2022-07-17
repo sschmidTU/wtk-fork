@@ -2753,6 +2753,22 @@ const elementsDict =
     ],
     "comment": "mortar/sun is not distinguished in WK"
   },
+  "prosperous": {
+    "elements": [
+      "sun",
+      "sun"
+    ],
+    "kanji": "昌",
+    "subElements": [
+      "sun",
+      "sun",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "prosperous"
+    ]
+  },
   "eye": {
     "elements": [],
     "kanji": "目",

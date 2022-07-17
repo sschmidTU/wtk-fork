@@ -63,6 +63,7 @@ function processFile(fileString) {
         let subElements = [];
         if (columns.length > 3) {
             mainElements = removeStructure(columns[3]).split(",").map(a => a.trim())
+            // TODO maybe avoid duplicates? e.g. 昌 adds sun twice
             subElements = [...mainElements]; // shallow copy
             for (const subElement of subElements) {
                 if (/.+[0-9]+/.test(subElement)) {
