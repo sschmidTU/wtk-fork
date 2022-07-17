@@ -1457,7 +1457,7 @@ const elementsDict =
   },
   "altar": {
     "elements": [],
-    "kanji": "礼 left part",
+    "kanji": "礻, 礼 left part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -1466,7 +1466,7 @@ const elementsDict =
   },
   "cloak": {
     "elements": [],
-    "kanji": "初 left part",
+    "kanji": "衤, 初 left part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
