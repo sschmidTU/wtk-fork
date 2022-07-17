@@ -107,7 +107,7 @@ tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
 two; 二; two
 three; 三; three
-seven; 七; seven
+seven=diced; 七; seven
 heavens; 天; heaven
 dart; 矢; arrow; c(heavens, drop)
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
@@ -143,6 +143,7 @@ husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(ex
 not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
 old=tombstone=gravestone=church; 古; old; t(ten, mouth)
+i; 吾; i; t(five, mouth)
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 𠆢, 全 top part; hat
 moon=month=flesh=part of the body; 月; moon
