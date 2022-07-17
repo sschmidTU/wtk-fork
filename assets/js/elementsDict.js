@@ -1741,6 +1741,24 @@ const elementsDict =
       "three"
     ]
   },
+  "six": {
+    "elements": [
+      "top hat",
+      "animal legs"
+    ],
+    "kanji": "六",
+    "subElements": [
+      "top hat",
+      "animal legs",
+      "drop",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "six"
+    ]
+  },
   "seven": {
     "elements": [],
     "kanji": "七",

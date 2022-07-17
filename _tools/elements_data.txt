@@ -107,6 +107,7 @@ tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
 two; 二; two
 three; 三; three
+six; 六; six; t(top hat, animal legs)
 seven=diced; 七; seven
 heavens; 天; heaven
 dart; 矢; arrow; c(heavens, drop)
