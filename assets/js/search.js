@@ -78,7 +78,7 @@ for (const doc of docs) {
         }
       }
     }
-    const compareOldAndNewElements = true;
+    const compareOldAndNewElements = false;
     if (compareOldAndNewElements && doc.el) {
       //console.log("comparing old and new elements for " + doc.kanji);
       // check old and new elements
