@@ -1,17 +1,17 @@
 RTK / elementsPure name(=synonym1=synonym2=...); kanji; WK name(&other WK names); RTK structure or subelements (if both: separated by &); elementsWK; // comments. elementsWK is optional and can also be comma separated (WK) elements with a "WK" suffix, see leafWK.
-wand=magic wand=augury; 訃 right part; toe
+wand=magic wand=augury; 卜, 訃 right part; toe
 divining rod; 上 upper part; toe; wand
 compare; 比; compare; spoon, spoon2, sitting on the ground2
 say=words=keitai; 言; say; one4, mouth, ceiling
 white; 白; white; t(drop, sun)
 direction=compass; 方; direction
-taskmaster; 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
-walking legs; 攵, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
+taskmaster; 攵, 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
+walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
-mending=mend; 足 bottom part; coat rack
+mending=mend; 疋, 足 bottom part; coat rack
 zoo=critters; 蛋 top part, 旋 bottom right part, 疏 left part; coat rack // coat rack in WK is both zoo and mending
 perfect; 完; perfect; t(house, beginning)
-flag; 戸 bottom part; flag; t(mouth, drop); slideWK
+flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
 voice; 声; voice; t(samurai, o(flag, stick))
 missile; 投 right part; weapon; t(wind, crotch)
 thread=spiderman; 糸; thread
@@ -33,7 +33,7 @@ not=knot=piglet's tail; 勿; not
 easy; 易; easy; t(sun, not)
 screwdriver=utilize=utilise; 用; task; moon, stick 
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
-fiesta; 伐 right part; drunkard; c(arrowhead, drop); slideWK
+fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 towel; 巾; towel
@@ -41,8 +41,8 @@ apron; 婦 bottom right part, 帯 bottom+middle part; forehead&towel; t(crown, t
 sovereign; 帝; sovereign; t(stand up, apron)
 drop=drops; 白 top part; drop
 heart; 心; heart; o(drop3, fishhook)
-box; 区 outer part; cage
-swiss=switzerland=plus=red cross=d-pad; 亞 middle part, 惡 plus-shaped part between one and one; swiss; convex2, box4, two // doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements
+box; 匚, 区 outer part; cage
+swiss=switzerland=plus=red cross=d-pad; 亞, 亞 middle part, 惡 plus-shaped part between one and one; swiss; convex2, box4, two // doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements
 convex; 凸; convex
 sheep; 羊; sheep; t(horns, king, stick)
 house; 宋 upper part; roof
@@ -61,16 +61,16 @@ fit; 合; suit; t(meeting, mouth)
 glue; 寸; measurement; tr(t(ten, hook), drop)
 do=so; 為; sake; tail feathers
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
-broom; 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
+broom; ヨ, 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
 rake; 粛 top part; wolverine; c(broom, stick) // = broom with stick through it (vertical stroke)
-brush; 津 right part, 書 top part; brush; t(rake, c(dry, stick)) // broom is just the "reverse E" part
+brush; 聿, 津 right part, 書 top part; brush; t(rake, c(dry, stick)) // broom is just the "reverse E" part
 gates; 門; gates
-cocoon; 幼 left part; poop; elbow
+cocoon; 幺, 幼 left part; poop; elbow
 cactus; 聯 bottom right part; cactus
 car; 車; car; t(ten, rice field, ten)
 human legs; 儿; legs
 animal legs; ハ, 只 bottom part; fins // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
-horns=animal horns; 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
+horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 little=small; 小; small; o(animal legs, t(stick, hook))
 too much; 余; surplus; t(umbrella, dry, little)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top
@@ -79,16 +79,16 @@ silver; 銀 right part; root; t(sun, hairpin)
 good; 良; good; t(drop, silver)
 eat=food; 食; eat; t(umbrella, good)
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
-road; 辶, 退 left part; scooter
+road; ⻌, 退 left part; scooter
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going; loiterWK // used when there's something in the middle/inner.
 five; 五; five
 staples; 印 left part; comb
-reclining=lying down; 乞 top part; gun
+reclining=lying down; 𠂉, 乞 top part; gun
 beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here
 evening; 夕; evening
-bones; 残 left part; yakuza; t(ceiling, evening)
+bones; 歹, 残 left part; yakuza; t(ceiling, evening)
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
 altar; 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right
 cloak; 初 left part; spirit // almost same as altar, has an extra diagonal stroke on the right
@@ -100,14 +100,14 @@ retainer=slave; 臣; servant
 fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 clothes hanger=coat hanger; 幻 right part; cape
-bound up; 句 outer part, 負 top part; prison; c(clothes hanger, drop)
+bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
 two; 二; two
 heavens; 天; heaven
 dart; 矢; arrow; c(heavens, drop)
-turkey; 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
+turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 flowers; 艹, 若 top part; flowers
 negative=negation; 不; not; t(ceiling, c(person, stick))
 water=water droplets=water pistol; 氵; tsunami
@@ -120,7 +120,7 @@ pack of wild dogs; 狂 left part; animal
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
 gone; 去; past; t(soil, elbow)
-stone=rock; 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK
+stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK
 mutually=mutual=broken broom; 互 middle part; mutual
 ri=computer=village; 里; village; t(rice field, soil) // often "computer" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK.
 fortune-telling=fortunetelling; 占; fortune; t(divining rod, mouth)
@@ -141,7 +141,7 @@ not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(ex
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
 old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
-umbrella; 个, 全 top part; hat
+umbrella; 𠆢, 全 top part; hat
 moon=month=flesh=part of the body; 月; moon
 child; 子; child
 finger=fingers; 扌, 招 left part; fingers

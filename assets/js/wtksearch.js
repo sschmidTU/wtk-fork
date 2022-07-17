@@ -381,9 +381,10 @@ class WTKSearch {
 
     let elementsDisplayString = '';
     if (page.elT) {
-      let elString = removeStructure(page.elT);
+      let elStringOrig = removeStructure(page.elT);
       const elTranslations = {};
-      const elTSplit = elString.split(",").map(a => a.trim());
+      const elTSplit = elStringOrig.split(",").map(a => a.trim());
+      let elString = '';
       for (const el of elTSplit) {
         let elKey = el;
         const numberChar = el.charAt(el.length - 1);
@@ -399,15 +400,12 @@ class WTKSearch {
             return wkName;
           });
         }
-      }
-      elString = '';
-      for (const el of elTSplit) {
         if (elTranslations[el]) {
           for (const wkName of elTranslations[el]) {
             if (elString.length > 0) {
               elString += ', ';
             }
-            let elementCharacter = this.elementSingleCharacterDisplay(el);
+            let elementCharacter = this.elementSingleCharacterDisplay(elKey);
             if (elementCharacter.length > 0) {
               elementCharacter += ' ';
             }
@@ -417,7 +415,7 @@ class WTKSearch {
           if (elString.length > 0) {
             elString += ', ';
           }
-          let elementCharacter = this.elementSingleCharacterDisplay(el);
+          let elementCharacter = this.elementSingleCharacterDisplay(elKey);
           if (elementCharacter.length > 0) {
             elementCharacter += ' ';
           }
@@ -463,6 +461,10 @@ class WTKSearch {
     const description = elObject.kanji;
     if (description.length === 1) {
       return description;
+    }
+    if (/^..,/.test(description)) { // e.g. 𠆢 = '\uD840'+'\uDDA2'. checking for CJK Unified Ideographs (+ Extensions) is complicated 
+      //console.log('accepting description ' + description.substring(0, 2));
+      return description.substring(0, 2);
     }
     if (/^.,/.test(description)) {
       return description[0];

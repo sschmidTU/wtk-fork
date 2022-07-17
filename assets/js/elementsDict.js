@@ -2,7 +2,7 @@ const elementsDict =
 {
   "wand": {
     "elements": [],
-    "kanji": "訃 right part",
+    "kanji": "卜, 訃 right part",
     "subElements": [
       "magic wand",
       "augury"
@@ -103,7 +103,7 @@ const elementsDict =
   },
   "taskmaster": {
     "elements": [],
-    "kanji": "牧 right part",
+    "kanji": "攵, 牧 right part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -112,7 +112,7 @@ const elementsDict =
   },
   "walking legs": {
     "elements": [],
-    "kanji": "攵, 各 top part",
+    "kanji": "夂, 各 top part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -140,7 +140,7 @@ const elementsDict =
   },
   "mending": {
     "elements": [],
-    "kanji": "足 bottom part",
+    "kanji": "疋, 足 bottom part",
     "subElements": [
       "mend"
     ],
@@ -185,7 +185,7 @@ const elementsDict =
       "drop"
     ],
     "elementsWK": " slideWK",
-    "kanji": "戸 bottom part",
+    "kanji": "尸, 戸 bottom part",
     "subElements": [
       "mouth",
       "drop",
@@ -548,7 +548,7 @@ const elementsDict =
       "drop"
     ],
     "elementsWK": " slideWK",
-    "kanji": "伐 right part",
+    "kanji": "戈, 伐 right part",
     "subElements": [
       "arrowhead",
       "drop",
@@ -695,7 +695,7 @@ const elementsDict =
   },
   "box": {
     "elements": [],
-    "kanji": "区 outer part",
+    "kanji": "匚, 区 outer part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -708,7 +708,7 @@ const elementsDict =
       "box4",
       "two"
     ],
-    "kanji": "亞 middle part, 惡 plus-shaped part between one and one",
+    "kanji": "亞, 亞 middle part, 惡 plus-shaped part between one and one",
     "subElements": [
       "convex2",
       "box4",
@@ -1026,7 +1026,7 @@ const elementsDict =
   },
   "broom": {
     "elements": [],
-    "kanji": "雪 bottom part",
+    "kanji": "ヨ, 雪 bottom part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -1054,7 +1054,7 @@ const elementsDict =
       "dry",
       "stick"
     ],
-    "kanji": "津 right part, 書 top part",
+    "kanji": "聿, 津 right part, 書 top part",
     "subElements": [
       "rake",
       "dry",
@@ -1084,7 +1084,7 @@ const elementsDict =
     "elements": [
       "elbow"
     ],
-    "kanji": "幼 left part",
+    "kanji": "幺, 幼 left part",
     "subElements": [
       "elbow"
     ],
@@ -1141,7 +1141,7 @@ const elementsDict =
   },
   "horns": {
     "elements": [],
-    "kanji": "并 top part",
+    "kanji": "丷, 并 top part",
     "subElements": [
       "animal horns"
     ],
@@ -1307,7 +1307,7 @@ const elementsDict =
   },
   "road": {
     "elements": [],
-    "kanji": "辶, 退 left part",
+    "kanji": "⻌, 退 left part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -1365,7 +1365,7 @@ const elementsDict =
   },
   "reclining": {
     "elements": [],
-    "kanji": "乞 top part",
+    "kanji": "𠂉, 乞 top part",
     "subElements": [
       "lying down"
     ],
@@ -1426,7 +1426,7 @@ const elementsDict =
       "ceiling",
       "evening"
     ],
-    "kanji": "残 left part",
+    "kanji": "歹, 残 left part",
     "subElements": [
       "ceiling",
       "evening",
@@ -1604,7 +1604,7 @@ const elementsDict =
       "clothes hanger",
       "drop"
     ],
-    "kanji": "句 outer part, 負 top part",
+    "kanji": "勹, 句 outer part, 負 top part",
     "subElements": [
       "clothes hanger",
       "drop",
@@ -1710,7 +1710,7 @@ const elementsDict =
   },
   "turkey": {
     "elements": [],
-    "kanji": "唯 right part",
+    "kanji": "隹, 唯 right part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -1925,7 +1925,7 @@ const elementsDict =
       "mouth"
     ],
     "elementsWK": " leafWK, slideWK",
-    "kanji": "砂 left part",
+    "kanji": "石, 砂 left part",
     "subElements": [
       "ceiling",
       "drop",
@@ -2321,7 +2321,7 @@ const elementsDict =
   },
   "umbrella": {
     "elements": [],
-    "kanji": "个, 全 top part",
+    "kanji": "𠆢, 全 top part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
