@@ -224,6 +224,13 @@ class WTKSearch {
         })[0];
       });
 
+      // const results = [];
+      // for (const doc of docs) {
+      //   if (doc.elT) {
+      //     results.push(doc);
+      //   }
+      // }
+
       let matches = 0;
       let entriesAdded = 0;
       if (results && results.length > 0) {
@@ -593,7 +600,9 @@ class WTKSearch {
             searchResultsList.push(kanjiPage);
             const entry = this.createEntry(kanjiPage);
             this.entries.appendChild(entry);
-            this.addCollapsibleFunctionToEntry(kanjiPage);
+            if (this.addElementsInfo) {
+              this.addCollapsibleFunctionToEntry(kanjiPage);
+            }
             this.addCopyFunctionToEntry(kanjiPage);
             this.addCopyFunctionToTextKanji(kanjiPage);
           }
