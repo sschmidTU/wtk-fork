@@ -16,9 +16,15 @@ for (const doc of docs) {
     const elementsPure = elP.split(",");
     let newElementsField = "";
     const newElementsObject = {};
+    const occurences = {};
     for (const element of elementsPure) {
       let elementTrimmed = element.trim();
       newElementsObject[elementTrimmed] = true; // save potentially with occurences
+      if (!occurences[elementTrimmed]) {
+        occurences[elementTrimmed] = 1;
+      } else {
+        occurences[elementTrimmed]++;
+      }
       elementTrimmed = elementTrimmed.replaceAll(/[0-9]/g,""); // remove occurences
 
       if (elementsDict[elementTrimmed]) {
@@ -36,6 +42,39 @@ for (const doc of docs) {
         newElementsField += ", ";
       }
       newElementsField += subElement;
+    }
+    // add elements with occurences (e.g. moon2) that occur multiple times in elementsTree
+    for (const occurenceKey of Object.keys(occurences)) {
+      if (/[0-9]/.test(occurenceKey)) {
+        //console.log("skipping already occurenced element " + occurenceKey);
+        continue;
+      }
+      const occurenceCount = occurences[occurenceKey];
+      if (occurenceCount > 1) {
+        const occurencedElement = occurenceKey + occurenceCount;
+        if (!doc.elPx?.includes(occurencedElement)) {
+          //console.log(`adding new occurenced element ${occurencedElement} to ${doc.kanji}.elementsPureExtra`);
+          doc.elP += ", " + occurencedElement;
+          newElementsField += ", " + occurencedElement;
+          if (elementsDict[occurenceKey]) {
+            const synonyms = elementsDict[occurenceKey].synonyms
+            for (const synonym of synonyms) {
+              const occurencedSynonym = synonym + occurenceCount;
+              if (!newElementsField.includes(occurencedSynonym)) {
+                newElementsField += ", " + occurencedSynonym;
+              }
+            }
+            // also add occurenced subelements? might get too much
+            // const newSubElements = elementsDict[elementTrimmed].subElements;
+            // for (const newSubElement of newSubElements) {
+            //   const occurencedSubElement = newSubElement + occurenceCount;
+            //   if (!newElementsField.includes(occurencedSubElement)) {
+            //     newElementsField += ", " + occurencedSubElement;
+            //   }
+            // }
+          }
+        }
+      }
     }
     const compareOldAndNewElements = false;
     if (compareOldAndNewElements && doc.el) {
