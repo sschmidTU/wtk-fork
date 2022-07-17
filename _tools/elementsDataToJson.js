@@ -18,7 +18,11 @@ function processFile(fileString) {
         if (rows[i].trim().startsWith("//")) {
             continue;
         }
-        const decommented = rows[i].split("//")[0];
+        const commentSplit = rows[i].split("//");
+        if (commentSplit.length > 2) {
+            console.log(`warning: row ${i+1} has more than one occurence of //`);
+        }
+        const decommented = commentSplit[0];
         if (decommented === "") {
             console.log(`empty (or last) row ̀${i+1}.`);
             continue;
@@ -95,6 +99,11 @@ function processFile(fileString) {
             synonyms: synonyms,
             wkNames: wkNames,
         };
+        let comment;
+        if (commentSplit.length === 2) {
+            comment = commentSplit[1].trim();
+            returnJson[mainName].comment = comment;
+        }
     }
 
     for (const element of Object.keys(returnJson)) {
@@ -133,7 +142,7 @@ function processFile(fileString) {
         }
     }
     //const stringified = JSON.stringify(returnJson);
-    const stringified = JSON.stringify(returnJson, undefined, 2); //2: pretty print. use for debug (elementsDict_debug.js)
+    const stringified = JSON.stringify(returnJson, undefined, 2); //2: pretty print. zipped, same size as non-pretty-print
     //console.log(stringified);
     const fileStart = "const elementsDict =\n";
     fs.writeFile(mainDir + "assets/js/elementsDict.js", fileStart + stringified + ";\n", () => {

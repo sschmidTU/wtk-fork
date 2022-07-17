@@ -108,7 +108,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "winter"
-    ]
+    ],
+    "comment": "compared to walking legs, longer second stroke, \"over the edge\" to the top right"
   },
   "walking legs": {
     "elements": [],
@@ -117,7 +118,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "winter"
-    ]
+    ],
+    "comment": "top horizontal stroke doesn't go \"over the edge\""
   },
   "leg": {
     "elements": [
@@ -162,7 +164,8 @@ const elementsDict =
     ],
     "wkNames": [
       "coat rack"
-    ]
+    ],
+    "comment": "coat rack in WK is both zoo and mending"
   },
   "perfect": {
     "elements": [
@@ -260,7 +263,8 @@ const elementsDict =
     "wkNames": [
       "ground",
       "private"
-    ]
+    ],
+    "comment": "WK doesn't have this as an extra radical, as it's almost always used as 至 (mole/climax) or right side of 転 (cloud/rising cloud). it only has trash/infant (育 top part)."
   },
   "infant": {
     "elements": [
@@ -281,7 +285,8 @@ const elementsDict =
     ],
     "wkNames": [
       "trash"
-    ]
+    ],
+    "comment": "WK doesn't differentiate between RTK wall and infant"
   },
   "climax": {
     "elements": [
@@ -310,7 +315,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "king"
-    ]
+    ],
+    "comment": "my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel."
   },
   "jewel": {
     "elements": [
@@ -331,7 +337,8 @@ const elementsDict =
     ],
     "wkNames": [
       "jewel"
-    ]
+    ],
+    "comment": "my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel."
   },
   "nine": {
     "elements": [],
@@ -540,7 +547,8 @@ const elementsDict =
     ],
     "wkNames": [
       "ceremony"
-    ]
+    ],
+    "comment": "RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is \"dart\", not \"arrow\", to \"avoid\" confusion."
   },
   "fiesta": {
     "elements": [
@@ -608,7 +616,8 @@ const elementsDict =
     ],
     "wkNames": [
       "stand"
-    ]
+    ],
+    "comment": "RTK says \"Used as a primitive, it can also mean vase\". But stand up seems more central/well known."
   },
   "towel": {
     "elements": [],
@@ -728,7 +737,8 @@ const elementsDict =
     ],
     "wkNames": [
       "swiss"
-    ]
+    ],
+    "comment": "doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements"
   },
   "convex": {
     "elements": [],
@@ -773,7 +783,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "joint"
-    ]
+    ],
+    "comment": "doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon."
   },
   "skeleton": {
     "elements": [
@@ -808,7 +819,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "music"
-    ]
+    ],
+    "comment": "basically one and a half rice fields (or 2 rice fields half overlapping) with 2 sticks"
   },
   "beans": {
     "elements": [
@@ -892,7 +904,8 @@ const elementsDict =
     ],
     "wkNames": [
       "nose"
-    ]
+    ],
+    "comment": "according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have."
   },
   "straightened hook": {
     "elements": [
@@ -908,7 +921,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "lion"
-    ]
+    ],
+    "comment": "RTK: a more specific name for fishhook when it's straight"
   },
   "upside down in a row": {
     "elements": [],
@@ -924,7 +938,8 @@ const elementsDict =
       "spikes",
       "horns",
       "ground"
-    ]
+    ],
+    "comment": "line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed."
   },
   "meeting": {
     "elements": [
@@ -941,7 +956,8 @@ const elementsDict =
     "wkNames": [
       "hat",
       "ground"
-    ]
+    ],
+    "comment": "WK \"meet\" radical is 会"
   },
   "fit": {
     "elements": [
@@ -1022,7 +1038,8 @@ const elementsDict =
     ],
     "wkNames": [
       "dry"
-    ]
+    ],
+    "comment": "RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses \"dry\" for the next kanji."
   },
   "broom": {
     "elements": [],
@@ -1031,7 +1048,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "wolverine"
-    ]
+    ],
+    "comment": "= rake/wolverine without stick through it (mostly)"
   },
   "rake": {
     "elements": [
@@ -1046,7 +1064,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "wolverine"
-    ]
+    ],
+    "comment": "= broom with stick through it (vertical stroke)"
   },
   "brush": {
     "elements": [
@@ -1069,7 +1088,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "brush"
-    ]
+    ],
+    "comment": "broom is just the \"reverse E\" part"
   },
   "gates": {
     "elements": [],
@@ -1137,7 +1157,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "fins"
-    ]
+    ],
+    "comment": "don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards."
   },
   "horns": {
     "elements": [],
@@ -1150,7 +1171,8 @@ const elementsDict =
     ],
     "wkNames": [
       "horns"
-    ]
+    ],
+    "comment": "don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards."
   },
   "little": {
     "elements": [
@@ -1206,7 +1228,8 @@ const elementsDict =
     "wkNames": [
       "ground",
       "kick"
-    ]
+    ],
+    "comment": "note that scarf (RTK) has an extra, very small vertical stroke on top"
   },
   "scarf": {
     "elements": [
@@ -1303,7 +1326,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "four"
-    ]
+    ],
+    "comment": "actually mouth legs on WK but that's included in the RTK elements"
   },
   "road": {
     "elements": [],
@@ -1327,7 +1351,8 @@ const elementsDict =
     "wkNames": [
       "go",
       "loiter"
-    ]
+    ],
+    "comment": "boulevard is only when there's something in the middle/inner of the go element"
   },
   "boulevard": {
     "elements": [
@@ -1343,7 +1368,8 @@ const elementsDict =
     "wkNames": [
       "go",
       "loiter"
-    ]
+    ],
+    "comment": "used when there's something in the middle/inner."
   },
   "five": {
     "elements": [],
@@ -1394,7 +1420,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "beg"
-    ]
+    ],
+    "comment": "WK: kanji/radical doesn't exist"
   },
   "saw": {
     "elements": [
@@ -1410,7 +1437,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "key"
-    ]
+    ],
+    "comment": "reclining/gun and staples/comb are overlapping here"
   },
   "evening": {
     "elements": [],
@@ -1453,7 +1481,8 @@ const elementsDict =
     ],
     "wkNames": [
       "jackhammer"
-    ]
+    ],
+    "comment": "altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases."
   },
   "altar": {
     "elements": [],
@@ -1462,7 +1491,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "spirit"
-    ]
+    ],
+    "comment": "almost same as cloak, doesn't have the diagonal stroke on the right"
   },
   "cloak": {
     "elements": [],
@@ -1471,7 +1501,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "spirit"
-    ]
+    ],
+    "comment": "almost same as altar, has an extra diagonal stroke on the right"
   },
   "key": {
     "elements": [],
@@ -1498,7 +1529,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "decide"
-    ]
+    ],
+    "comment": "maybe the subdivision here with key crossed by stick is unnecessary, but who knows."
   },
   "page": {
     "elements": [
@@ -1584,7 +1616,8 @@ const elementsDict =
     ],
     "wkNames": [
       "snake"
-    ]
+    ],
+    "comment": "this is exactly WK snake, which can also be RTK fingerprint"
   },
   "clothes hanger": {
     "elements": [],
@@ -1634,7 +1667,8 @@ const elementsDict =
     ],
     "wkNames": [
       "boil"
-    ]
+    ],
+    "comment": "don't confuse with tail feathers, which has a kind of フ shape around it."
   },
   "tail feathers": {
     "elements": [
@@ -1655,7 +1689,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "boil"
-    ]
+    ],
+    "comment": "Note that this radical in RTK explicitly includes the フ shape around the \"oven-fire\"-like short strokes. don't confuse with oven-fire (RTK) radical."
   },
   "ice": {
     "elements": [
@@ -1672,7 +1707,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "ice"
-    ]
+    ],
+    "comment": "ice is ambiguous in RTK, see 凍 and 冬."
   },
   "two": {
     "elements": [],
@@ -1715,7 +1751,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "turkey"
-    ]
+    ],
+    "comment": "TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?"
   },
   "flowers": {
     "elements": [],
@@ -1769,7 +1806,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "water"
-    ]
+    ],
+    "comment": "multiple shapes in RTK, but mainly 氺, which is water in WK."
   },
   "deceased": {
     "elements": [
@@ -1877,7 +1915,8 @@ const elementsDict =
     ],
     "wkNames": [
       "middle"
-    ]
+    ],
+    "comment": "inX is just a synonym for in that makes it easier for the search engine"
   },
   "insect": {
     "elements": [
@@ -1977,7 +2016,8 @@ const elementsDict =
     ],
     "wkNames": [
       "village"
-    ]
+    ],
+    "comment": "often \"computer\" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK."
   },
   "fortune-telling": {
     "elements": [
@@ -2016,7 +2056,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "chair"
-    ]
+    ],
+    "comment": "doesn't exist in WK, only the straightened hook (lion) part"
   },
   "tool": {
     "elements": [
@@ -2033,7 +2074,8 @@ const elementsDict =
     "wkNames": [
       "ground",
       "fins"
-    ]
+    ],
+    "comment": "this is 具 minus the eye. doesn't exist in WK (ground + fins). TODO maybe t(ground, fins) for WK?"
   },
   "nightbreak": {
     "elements": [
@@ -2097,7 +2139,8 @@ const elementsDict =
     ],
     "wkNames": [
       "excuse"
-    ]
+    ],
+    "comment": "original primitive called \"village stocks\" in RTK, though excuse seems better as that's also the kanji keyword"
   },
   "oneself": {
     "elements": [
@@ -2138,7 +2181,8 @@ const elementsDict =
       "body",
       "somebody",
       "slideWK"
-    ]
+    ],
+    "comment": "in WK, the radical is called body, the kanji somebody."
   },
   "cave": {
     "elements": [],
@@ -2254,7 +2298,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "husband"
-    ]
+    ],
+    "comment": "similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length"
   },
   "not yet": {
     "elements": [
@@ -2274,7 +2319,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "not yet"
-    ]
+    ],
+    "comment": "similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter"
   },
   "extremity": {
     "elements": [
@@ -2294,7 +2340,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "end"
-    ]
+    ],
+    "comment": "similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer"
   },
   "old": {
     "elements": [
@@ -2426,7 +2473,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "mouth"
-    ]
+    ],
+    "comment": "called \"pent in\" in RTK when it's enclosing other elements. otherwise mouth"
   },
   "tree": {
     "elements": [],
@@ -2458,7 +2506,8 @@ const elementsDict =
     "wkNames": [
       "leader",
       "person"
-    ]
+    ],
+    "comment": "person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person."
   },
   "assembly line": {
     "elements": [
@@ -2472,7 +2521,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "assembly line"
-    ]
+    ],
+    "comment": "not named in WK"
   },
   "large": {
     "elements": [],
@@ -2507,7 +2557,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "eight"
-    ]
+    ],
+    "comment": "this was previously called eight2, but numbers in element names are reserved for number of occurences."
   },
   "ten": {
     "elements": [],
@@ -2569,7 +2620,8 @@ const elementsDict =
     ],
     "wkNames": [
       "flood"
-    ]
+    ],
+    "comment": "would be nice if this was only flood, not stream. dual in rtk-search"
   },
   "teepee": {
     "elements": [],
@@ -2659,7 +2711,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "sun"
-    ]
+    ],
+    "comment": "mortar/sun is not distinguished in WK"
   },
   "eye": {
     "elements": [],
@@ -2668,7 +2721,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "eye"
-    ]
+    ],
+    "comment": "eye or net in WK. net in WK is just horizontal eye in RTK"
   },
   "ear": {
     "elements": [],
@@ -2718,7 +2772,8 @@ const elementsDict =
     ],
     "wkNames": [
       "samurai"
-    ]
+    ],
+    "comment": "similar to dirt, but the upper horizontal strong is longer than the lower one here."
   },
   "stick": {
     "elements": [],
@@ -2727,7 +2782,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "stick"
-    ]
+    ],
+    "comment": "basically any vertical line"
   },
   "pinnacle": {
     "elements": [],
@@ -2736,7 +2792,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "building"
-    ]
+    ],
+    "comment": "RTK: pinnacle when on the left, city walls when on the right"
   },
   "city walls": {
     "elements": [],
@@ -2745,7 +2802,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "building"
-    ]
+    ],
+    "comment": "RTK: pinnacle when on the left, city walls when on the right"
   },
   "wind": {
     "elements": [],
@@ -2816,7 +2874,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "ground"
-    ]
+    ],
+    "comment": "only when on top of another element. In any case, also called \"one\""
   },
   "floor": {
     "elements": [
@@ -2829,6 +2888,7 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "ground"
-    ]
+    ],
+    "comment": "only when on the bottom of another element. In any case, also called \"one\""
   }
 };
