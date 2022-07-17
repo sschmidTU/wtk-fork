@@ -1338,6 +1338,19 @@ const elementsDict =
       "scooter"
     ]
   },
+  "roadB": {
+    "elements": [
+      "scooter"
+    ],
+    "kanji": "辶",
+    "subElements": [
+      "scooter"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "迄 left part"
+    ]
+  },
   "going": {
     "elements": [
       ""
@@ -2178,7 +2191,6 @@ const elementsDict =
     ],
     "synonyms": [],
     "wkNames": [
-      "body",
       "somebody",
       "slideWK"
     ],
@@ -2500,12 +2512,21 @@ const elementsDict =
   },
   "person": {
     "elements": [],
-    "kanji": "亻, 卒 middle part",
+    "kanji": "人",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
-      "leader",
       "person"
+    ],
+    "comment": "person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person."
+  },
+  "personB": {
+    "elements": [],
+    "kanji": "亻",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "leader"
     ],
     "comment": "person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person."
   },
@@ -2546,7 +2567,7 @@ const elementsDict =
       "eight"
     ]
   },
-  "eightTwo": {
+  "eightB": {
     "elements": [
       "eight"
     ],

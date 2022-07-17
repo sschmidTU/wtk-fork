@@ -80,6 +80,7 @@ good; 良; good; t(drop, silver)
 eat=food; 食; eat; t(umbrella, good)
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
 road; ⻌, 退 left part; scooter
+roadB; 辶; 迄 left part; scooter
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going; loiterWK // used when there's something in the middle/inner.
 five; 五; five
@@ -130,7 +131,7 @@ nightbreak; 旦; dawn; t(sun, floor)
 span; 亘; dawn; t(ceiling, nightbreak)
 excuse=village stocks=rabbit; 免; excuse; t(bound up, c(mouth, stick), human legs) // original primitive called "village stocks" in RTK, though excuse seems better as that's also the kanji keyword
 oneself=nose; 自; self; t(drop, eye)
-somebody; 身; body&somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
+somebody; 身; somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
 cave; 广, 店 outer part; canopy
 cause; 因; cause; o(pent in, large)
 give; 呉; give&catapult; t(mouth, chair, tool)
@@ -151,11 +152,12 @@ top hat; 亠, 京 top part; lid; t(drop, one)
 pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
 tree=wood; 木; tree
 woman; 女; woman
-person; 亻, 卒 middle part; leader&person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
+person; 人; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
+personB; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
 large=St. Bernard; 大; big
 eight; 八; eight
-eightTwo; 曾 top part; eight; eight // this was previously called eight2, but numbers in element names are reserved for number of occurences.
+eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
 ten=needle; 十; ten
 dish; 皿; plate
 craft; 工, 紅 right part; construction; t(ceiling, stick, floor)

@@ -405,7 +405,7 @@ class WTKSearch {
             if (elString.length > 0) {
               elString += ', ';
             }
-            let elementCharacter = this.elementSingleCharacterDisplay(elKey);
+            let elementCharacter = this.elementSingleCharacterDisplay(elKey, wkName);
             if (elementCharacter.length > 0) {
               elementCharacter += ' ';
             }
@@ -453,7 +453,10 @@ class WTKSearch {
     return this.toDom(entry);
   }
 
-  elementSingleCharacterDisplay(elementName) {
+  elementSingleCharacterDisplay(elementName, wkName) {
+    if (wkName === "slideWK") {
+      return "ノ";
+    }
     const elObject = elementsDict[elementName];
     if (!elObject) {
       return '';
