@@ -1732,6 +1732,24 @@ const elementsDict =
       "two"
     ]
   },
+  "three": {
+    "elements": [],
+    "kanji": "三",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "three"
+    ]
+  },
+  "seven": {
+    "elements": [],
+    "kanji": "七",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "seven"
+    ]
+  },
   "heavens": {
     "elements": [],
     "kanji": "天",
@@ -2579,7 +2597,7 @@ const elementsDict =
     "wkNames": [
       "eight"
     ],
-    "comment": "this was previously called eight2, but numbers in element names are reserved for number of occurences."
+    "comment": "there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences."
   },
   "ten": {
     "elements": [],
