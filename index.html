@@ -56,8 +56,13 @@ Search for kanji and click their clipboard button to add them here.">📋</butto
 
 <div class="optionsBottom">
 <input type="checkbox" id="cnVariantCheckbox" name="cnVariantCheckbox" value="false" tabindex=4>
-  <label for="cnVariantCheckbox" id="cnVariantLabel" title="Display Simplified Chinese variant in brackets. A lot of programs in Windows and Android (e.g. Anki) unfortunately use these by default. Note that most Chinese variants are basically the same. Also, I'll make a proper options UI soon™, promised (kinda)!">
+  <label for="cnVariantCheckbox" id="cnVariantLabel" title="Display Simplified Chinese variant in brackets. A lot of programs in Windows and Android (e.g. Anki) unfortunately use these by default. Note that most Chinese variants are basically the same.">
 Add Chinese font in brackets - examples: <span lang='ja'>言</span> (<span lang='zh-Hans'>言</span>), <span lang='ja'>誤</span>(<span lang='zh-Hans'>誤</span>)</label>
+<br>
+<input type="number" id="expandResultsLimitInput" value=3> <input type="checkbox" id="expandAllResultsCheckbox" name="expandAllResultsCheckbox" value="false">
+<label for="expandAllResultsCheckbox" id="expandAllResultsLabel" title=""><i>all</i></label> Number of results to expand automatically (show elements info)
+<br>
+
 </div>
 
 </div>
@@ -66,7 +71,7 @@ Add Chinese font in brackets - examples: <span lang='ja'>言</span> (<span lang=
 	<p>
 @ <a id="gitCommitsLink" href="https://github.com/sschmidTU/mr-kanji-search-wtk/commits/offline">2022-05</a> 
 <a href="https://github.com/sschmidTU/mr-kanji-search-wtk" id="wtkVersionFooterElement">
-wtk-search v1.5.6.0-offline
+wtk-search v2.0-offline-beta
 </a> by <a href="https://community.wanikani.com/t/multi-radical-kanji-search-web/46781">Saimin@WK</a>, based on rtk-search
 <br>3119 Kanji searchable (latest: <a id='btnSearchLatestKanji'>嗄</a>)
 	</p>

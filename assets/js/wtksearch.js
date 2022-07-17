@@ -309,6 +309,19 @@ class WTKSearch {
       }
     } // end if results
 
+    const expandResultsLimit = Number(document.getElementById("expandResultsLimitInput").value);
+    const expandAll = this.checked("expandAllResultsCheckbox");
+    for (let i = 0; i < searchResults.length; i++) {
+      if (!expandAll && (i+1) > expandResultsLimit) {
+        break;
+      }
+      const result = searchResults.list[i];
+      const expandButton = document.getElementById('expandButton'+result.id);
+      if (expandButton) {
+        this.toggleCollapsible(expandButton, result.id, false);
+      }
+    }
+
     // log and display results
     const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
     this.log(this.LogLevels.Info,
@@ -379,6 +392,10 @@ class WTKSearch {
     const hasVariantOrAlternate = variantOf.length > 0 || alternateFor.length > 0;
     const endBracket = hasVariantOrAlternate ? ')' : '';
 
+    const showChineseVariant = this.checked(this.checkboxCNVariantQuery);
+    const cnFlagString = true ? '' : '<sup><sub>&#127464;&#127475;</sub></sup>'; // just showing fallback 'CN' in my browser, which is ugly.
+    const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh-Hans">'+page.kanji+'</span>'+cnFlagString+')' : '';
+
     let elementsDisplayString = '';
     if (page.elT) {
       let elStringOrig = removeStructure(page.elT);
@@ -424,10 +441,9 @@ class WTKSearch {
       }
       elementsDisplayString = ` elements: ${elString}`;
     }
-
-    const showChineseVariant = this.checked(this.checkboxCNVariantQuery);
-    const cnFlagString = true ? '' : '<sup><sub>&#127464;&#127475;</sub></sup>'; // just showing fallback 'CN' in my browser, which is ugly.
-    const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh-Hans">'+page.kanji+'</span>'+cnFlagString+')' : '';
+    const expandAll = this.checked("expandAllResultsCheckbox");
+    const collapsedString = expandAll ? '' : ' collapsed';
+    const plusOrMinus = expandAll ? '&minus;' : '&plus;'; // default
 
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
@@ -435,7 +451,7 @@ class WTKSearch {
       '<article>'+
       '  <h3 style="text-align: left">'+
       //'  <button style="border-style: none; background-color: none" class="collapsible" id="expandButton'+page.id+'" title="Show elements">&plus;</button>'+
-      '  <a style="cursor: pointer" class="collapsible collapsed" id="expandButton'+page.id+'" title="Show elements">&minus;</button>'+
+      '  <a class="collapsibleButton'+collapsedString+'" id="expandButton'+page.id+'" title="Show elements">'+plusOrMinus+'</button>'+
       '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'" ' +
              'style="text-decoration: '+wkButtonTextDecoration + '" ' +
              'title="'+wkButtonHoverText+'"' +
@@ -445,7 +461,7 @@ class WTKSearch {
       '    <a class="'+resultKanjiButtonClass+' jptext" href="https://jisho.org/search/'+page.kanji+'">' +
             '<span lang="ja">' + page.kanji + '</span>' +
             cnVariantString + ' ' + kanjiName + '</a>'+variantOf+alternateFor+outdated+endBracket+
-          '<span id="elementsInfo'+page.id+'" style="text-align: left; display: block">'+elementsDisplayString+'</span>'+
+          '<span class="elementsInfo collapsible'+collapsedString+'" id="elementsInfo'+page.id+'">'+elementsDisplayString+'</span>'+
       '  </h3>'+
       '</article>'+
       '</div>'
@@ -475,18 +491,26 @@ class WTKSearch {
     return ''; // no perfectly matching single character representation of the element found
   }
 
+  toggleCollapsible(collapsibleButton, pageId, newCollapsedValue = undefined) {
+    if (newCollapsedValue === undefined) {
+      newCollapsedValue = !collapsibleButton.classList.contains('collapsed'); // toggle
+    }
+    if (newCollapsedValue) { // should now be collapsed
+      collapsibleButton.innerHTML = '&plus; ';
+      collapsibleButton.classList.add('collapsed');
+      document.getElementById(`elementsInfo${pageId}`).classList.add('collapsed');
+    } else {
+      collapsibleButton.innerHTML = '&minus; ';
+      collapsibleButton.classList.remove('collapsed');
+      document.getElementById(`elementsInfo${pageId}`).classList.remove('collapsed');
+    }
+  }
+
   addCollapsibleFunctionToEntry(page) {
-    const expandButton = document.getElementById('expandButton'+page.id)
+    const expandButton = document.getElementById('expandButton'+page.id);
+    const self = this;
     expandButton.onclick = function() {
-      if (expandButton.classList.contains('collapsed')) {
-        expandButton.innerHTML = '&plus; ';
-        expandButton.classList.toggle('collapsed');
-        document.getElementById(`elementsInfo${page.id}`).style.display = 'none';
-      } else {
-        expandButton.innerHTML = '&minus; ';
-        expandButton.classList.toggle('collapsed');
-        document.getElementById(`elementsInfo${page.id}`).style.display = 'block';
-      }
+      self.toggleCollapsible(expandButton, page.id);
     }
   }
 

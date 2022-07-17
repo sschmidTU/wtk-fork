@@ -97,10 +97,33 @@ h4 {
 }
 
 .optionsBottom {
-  text-align: center;
+  text-align: left;
   font-size: 1.0em;
   color:#cecece;
+  position: relative;
+  left: 28%;
 }
+
+input[type=number]{
+  width: 6ch /* size */
+}
+
+.elementsInfo {
+  text-align: left;
+}
+
+.collapsible {
+  display: block;
+}
+
+.collapsible.collapsed {
+  display: none;
+}
+
+.collapsibleButton {
+  cursor: pointer
+}
+
 
 p {
   line-height: 2em;
