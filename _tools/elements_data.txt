@@ -28,7 +28,7 @@ see; 見; see; t(eye, human legs)
 old west; 要 top part, 価 right part; helicopter
 chestnut; 栗; chestnut; t(old west, tree)
 bundle=Chaplin; 束; bundle; tree, mouth
-sickness; 痒 outer part; sick
+sickness; 疒, 痒 outer part; sick
 not=knot=piglet's tail; 勿; not
 easy; 易; easy; t(sun, not)
 screwdriver=utilize=utilise; 用; task; moon, stick 

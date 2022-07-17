@@ -466,7 +466,7 @@ const elementsDict =
   },
   "sickness": {
     "elements": [],
-    "kanji": "痒 outer part",
+    "kanji": "疒, 痒 outer part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
