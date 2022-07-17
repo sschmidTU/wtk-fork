@@ -9,6 +9,7 @@ class WTKSearch {
   logLevel                 = 0; // silent by default
   rtkMode                  = false; // save isRtkMode() for a while so it doesn't have to be called every time
   strictMode               = false;
+  addElementsInfo          = false;
   // HTML things
   result                   = null; // save document.getElementById('search-results')
   entries                  = null; // save document.getElementById('search-results.entries')
@@ -300,6 +301,9 @@ class WTKSearch {
             }
             this.addCopyFunctionToEntry(page);
             this.addCopyFunctionToTextKanji(page);
+            if (this.addElementsInfo) {
+              this.addCollapsibleFunctionToEntry(page);
+            }
             entriesAdded++;
           }
       } // end for each page
@@ -307,6 +311,21 @@ class WTKSearch {
         matches = results.length;
       }
     } // end if results
+
+    if (this.addElementsInfo) {
+      const expandResultsLimit = Number(document.getElementById("expandResultsLimitInput").value);
+      const expandAll = this.checked("expandAllResultsCheckbox");
+      for (let i = 0; i < searchResults.length; i++) {
+        if (!expandAll && (i+1) > expandResultsLimit) {
+          break;
+        }
+        const result = searchResults.list[i];
+        const expandButton = document.getElementById('expandButton'+result.id);
+        if (expandButton) {
+          this.toggleCollapsible(expandButton, result.id, false);
+        }
+      }
+    }
 
     // log and display results
     const maxResultsReachedString = ' (only showing ' + this.maxResultSize + ')';
@@ -382,11 +401,71 @@ class WTKSearch {
     const cnFlagString = true ? '' : '<sup><sub>&#127464;&#127475;</sub></sup>'; // just showing fallback 'CN' in my browser, which is ugly.
     const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh-Hans">'+page.kanji+'</span>'+cnFlagString+')' : '';
 
+    let elementsDisplayString = '';
+    if (this.addElementsInfo && page.elT) {
+      let elStringOrig = removeStructure(page.elT);
+      const elTranslations = {};
+      const elTSplit = elStringOrig.split(",").map(a => a.trim());
+      let elString = '';
+      for (const el of elTSplit) {
+        let elKey = el;
+        const numberChar = el.charAt(el.length - 1);
+        const occurences = Number.parseInt(numberChar, 10);
+        if (!isNaN(occurences)) {
+          elKey = elKey.replace(numberChar, '');
+        }
+        if (!this.isRtkMode() && elementsDict[elKey]?.wkNames) {
+          elTranslations[el] = elementsDict[elKey].wkNames.map(wkName => {
+            if (!isNaN(occurences)) {
+              return wkName + occurences;
+            }
+            return wkName;
+          });
+        }
+        if (elTranslations[el]) {
+          for (const wkName of elTranslations[el]) {
+            if (elString.length > 0) {
+              elString += ', ';
+            }
+            let elementCharacter = this.elementSingleCharacterDisplay(elKey, wkName);
+            if (elementCharacter.length > 0) {
+              elementCharacter += ' ';
+            }
+            elString += elementCharacter + wkName;
+          }
+        } else {
+          if (elString.length > 0) {
+            elString += ', ';
+          }
+          let elementCharacter = this.elementSingleCharacterDisplay(elKey);
+          if (elementCharacter.length > 0) {
+            elementCharacter += ' ';
+          }
+          elString += elementCharacter + el;
+        }
+      }
+      elementsDisplayString = ` elements: ${elString}`;
+    }
+    const expandAll = this.checked("expandAllResultsCheckbox");
+    const collapsedString = expandAll ? '' : ' collapsed';
+    const plusOrMinus = expandAll ? '&minus;' : '&plus;'; // default
+    let collapsibleButtonHtml = '';
+    if (this.addElementsInfo) {
+      collapsibleButtonHtml = '<a class="collapsibleButton'+collapsedString+'" id="expandButton'+page.id+
+        '" title="Show elements">'+plusOrMinus+'</button>';
+    }
+    let elementsInfoHtml = '';
+    if (this.addElementsInfo) {
+      elementsInfoHtml = '<span class="elementsInfo collapsible'+collapsedString+'" id="elementsInfo'+page.id+
+        '">'+elementsDisplayString+'</span>';
+    }
+
     const entry =
       '<div style="position: relative; left: ' + leftPaddingPercent + '%; text-align: center">'+
       // left: desktop: 37% for alignment with WK, 28% with kanji in chrome
       '<article>'+
       '  <h3 style="text-align: left">'+
+      collapsibleButtonHtml+
       '    <a href="https://www.wanikani.com/kanji/'+page.kanji+'" ' +
              'style="text-decoration: '+wkButtonTextDecoration + '" ' +
              'title="'+wkButtonHoverText+'"' +
@@ -396,10 +475,57 @@ class WTKSearch {
       '    <a class="'+resultKanjiButtonClass+' jptext" href="https://jisho.org/search/'+page.kanji+'">' +
             '<span lang="ja">' + page.kanji + '</span>' +
             cnVariantString + ' ' + kanjiName + '</a>'+variantOf+alternateFor+outdated+endBracket+
+          elementsInfoHtml+
       '  </h3>'+
-      '</article></div>'
+      '</article>'+
+      '</div>'
     ;
     return this.toDom(entry);
+  }
+
+  elementSingleCharacterDisplay(elementName, wkName) {
+    if (wkName === "slideWK") {
+      return "ノ";
+    }
+    const elObject = elementsDict[elementName];
+    if (!elObject) {
+      return '';
+    }
+    const description = elObject.kanji;
+    if (description.length === 1) {
+      return description;
+    }
+    if (/^..,/.test(description)) { // e.g. 𠆢 = '\uD840'+'\uDDA2'. checking for CJK Unified Ideographs (+ Extensions) is complicated 
+      //console.log('accepting description ' + description.substring(0, 2));
+      return description.substring(0, 2);
+    }
+    if (/^.,/.test(description)) {
+      return description[0];
+    }
+    return ''; // no perfectly matching single character representation of the element found
+  }
+
+  toggleCollapsible(collapsibleButton, pageId, newCollapsedValue = undefined) {
+    if (newCollapsedValue === undefined) {
+      newCollapsedValue = !collapsibleButton.classList.contains('collapsed'); // toggle
+    }
+    if (newCollapsedValue) { // should now be collapsed
+      collapsibleButton.innerHTML = '&plus; ';
+      collapsibleButton.classList.add('collapsed');
+      document.getElementById(`elementsInfo${pageId}`).classList.add('collapsed');
+    } else {
+      collapsibleButton.innerHTML = '&minus; ';
+      collapsibleButton.classList.remove('collapsed');
+      document.getElementById(`elementsInfo${pageId}`).classList.remove('collapsed');
+    }
+  }
+
+  addCollapsibleFunctionToEntry(page) {
+    const expandButton = document.getElementById('expandButton'+page.id);
+    const self = this;
+    expandButton.onclick = function() {
+      self.toggleCollapsible(expandButton, page.id);
+    }
   }
 
   addCopyFunctionToEntry(page) {
@@ -467,6 +593,9 @@ class WTKSearch {
             searchResultsList.push(kanjiPage);
             const entry = this.createEntry(kanjiPage);
             this.entries.appendChild(entry);
+            if (this.addElementsInfo) {
+              this.addCollapsibleFunctionToEntry(kanjiPage);
+            }
             this.addCopyFunctionToEntry(kanjiPage);
             this.addCopyFunctionToTextKanji(kanjiPage);
           }
