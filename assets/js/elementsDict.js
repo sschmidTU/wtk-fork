@@ -2434,12 +2434,23 @@ const elementsDict =
     ]
   },
   "benefit": {
-    "elements": [],
+    "elements": [
+      "horns",
+      "one",
+      "animal legs",
+      "dish"
+    ],
     "kanji": "益",
-    "subElements": [],
+    "subElements": [
+      "horns",
+      "one",
+      "animal legs",
+      "dish",
+      "animal horns"
+    ],
     "synonyms": [],
     "wkNames": [
-      "t(horns, one, animal legs, dish)"
+      "benefit"
     ]
   },
   "umbrella": {
