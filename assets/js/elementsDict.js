@@ -1741,11 +1741,33 @@ const elementsDict =
       "three"
     ]
   },
+  "six": {
+    "elements": [
+      "top hat",
+      "animal legs"
+    ],
+    "kanji": "六",
+    "subElements": [
+      "top hat",
+      "animal legs",
+      "drop",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "six"
+    ]
+  },
   "seven": {
     "elements": [],
     "kanji": "七",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "diced"
+    ],
+    "synonyms": [
+      "diced"
+    ],
     "wkNames": [
       "seven"
     ]
@@ -2396,6 +2418,21 @@ const elementsDict =
       "old"
     ]
   },
+  "i": {
+    "elements": [
+      "five",
+      "mouth"
+    ],
+    "kanji": "吾",
+    "subElements": [
+      "five",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "i"
+    ]
+  },
   "umbrella": {
     "elements": [],
     "kanji": "𠆢, 全 top part",
@@ -2787,6 +2824,38 @@ const elementsDict =
       "top hat"
     ],
     "comment": "this is not (always) perfectly RTK(eye)+RTK(one), but close enough."
+  },
+  "prosperous": {
+    "elements": [
+      "sun",
+      "sun"
+    ],
+    "kanji": "昌",
+    "subElements": [
+      "sun",
+      "sun",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "prosperous"
+    ]
+  },
+  "risk": {
+    "elements": [
+      "sun",
+      "eye"
+    ],
+    "kanji": "冒",
+    "subElements": [
+      "sun",
+      "eye",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dare"
+    ]
   },
   "rice field": {
     "elements": [],
