@@ -50,8 +50,9 @@ class WTKSearch {
    */
   search(query, {
     forceSearch = true,
-    updateHTMLElements = false,
+    updateHTMLElements = true,
     allowRepeatedQueries = true,
+    filterOnDocInsteadOfQuery = undefined,
   } = {}) {
     if (!query?.trim) {
       return { length: 0 };
@@ -213,23 +214,26 @@ class WTKSearch {
       this.log(this.LogLevels.Info, 'query ' + (i+1) + ': ' + query);
 
       // retrieve matching result with content
-      var results = idx.search(query).map(function(result) {
-        return docs.filter(function(entry) {
-          // TODO handle multiple queries here instead of the query adding below
-          if (entry.id === result.ref && !idsAddedToResults[entry.id]) {
-            idsAddedToResults[entry.id] = 1; // id was added. use object=hash map instead of array for O(1) performance
-            return true;
+      var results;
+      if (!filterOnDocInsteadOfQuery) {
+        var results = idx.search(query).map(function(result) {
+          return docs.filter(function(entry) {
+            // TODO handle multiple queries here instead of the query adding below
+            if (entry.id === result.ref && !idsAddedToResults[entry.id]) {
+              idsAddedToResults[entry.id] = 1; // id was added. use object=hash map instead of array for O(1) performance
+              return true;
+            }
+            return false;
+          })[0];
+        });
+      } else {
+        results = [];
+        for (const doc of docs) {
+          if (filterOnDocInsteadOfQuery(doc)) {
+            results.push(doc);
           }
-          return false;
-        })[0];
-      });
-
-      // const results = [];
-      // for (const doc of docs) {
-      //   if (doc.elT) {
-      //     results.push(doc);
-      //   }
-      // }
+        }
+      }
 
       let matches = 0;
       let entriesAdded = 0;
@@ -308,7 +312,7 @@ class WTKSearch {
             }
             this.addCopyFunctionToEntry(page);
             this.addCopyFunctionToTextKanji(page);
-            if (this.addElementsInfo) {
+            if (this.addElementsInfo && page.elT) {
               this.addCollapsibleFunctionToEntry(page);
             }
             entriesAdded++;
@@ -320,8 +324,11 @@ class WTKSearch {
     } // end if results
 
     if (this.addElementsInfo) {
-      const expandResultsLimit = Number(document.getElementById("expandResultsLimitInput").value);
-      const expandAll = this.checked("expandAllResultsCheckbox");
+      let expandResultsLimit = Number(document.getElementById("expandResultsLimitInput")?.value);
+      let expandAll = this.checked("expandAllResultsCheckbox");
+      if (expandResultsLimit === undefined && expandAll === undefined ) { // temp solution for missing ui option
+        expandAll = true;
+      }
       for (let i = 0; i < searchResults.length; i++) {
         if (!expandAll && (i+1) > expandResultsLimit) {
           break;
@@ -457,12 +464,12 @@ class WTKSearch {
     const collapsedString = expandAll ? '' : ' collapsed';
     const plusOrMinus = expandAll ? '&minus;' : '&plus;'; // default
     let collapsibleButtonHtml = '';
-    if (this.addElementsInfo) {
+    if (this.addElementsInfo && page.elT) {
       collapsibleButtonHtml = '<a class="collapsibleButton'+collapsedString+'" id="expandButton'+page.id+
         '" title="Show elements">'+plusOrMinus+'</button>';
     }
     let elementsInfoHtml = '';
-    if (this.addElementsInfo) {
+    if (this.addElementsInfo && page.elT) {
       elementsInfoHtml = '<span class="elementsInfo collapsible'+collapsedString+'" id="elementsInfo'+page.id+
         '">'+elementsDisplayString+'</span>';
     }
@@ -600,7 +607,7 @@ class WTKSearch {
             searchResultsList.push(kanjiPage);
             const entry = this.createEntry(kanjiPage);
             this.entries.appendChild(entry);
-            if (this.addElementsInfo) {
+            if (this.addElementsInfo && kanjiPage.elT) {
               this.addCollapsibleFunctionToEntry(kanjiPage);
             }
             this.addCopyFunctionToEntry(kanjiPage);
@@ -883,6 +890,9 @@ class WTKSearch {
     }
     if (params.cnVariant === '1') {
       checkboxCNVariant.checked = true;
+    }
+    if (params.elementsInfo === '1') {
+      this.addElementsInfo = true;
     }
 
     const btnLatestKanji = document.getElementById('btnSearchLatestKanji');
