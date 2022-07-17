@@ -62,7 +62,7 @@ function insertInto(dirname, files, kanjiToElementsTree) {
         const newFileString = fileString.slice(0, endOfElementsLineIndex + 1) + `elementsTree: ${elementsTree}\n` + fileString.slice(endOfElementsLineIndex + 1);
         //console.log(newFileString);
         if (loopCount > 5) {
-            break;
+            break; // debug limit to not change 150 files at once
         }
         loopCount++;
         FS.writeFileSync(`${dirname}/${filename}`, newFileString);
