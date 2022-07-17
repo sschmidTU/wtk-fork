@@ -313,8 +313,11 @@ class WTKSearch {
     } // end if results
 
     if (this.addElementsInfo) {
-      const expandResultsLimit = Number(document.getElementById("expandResultsLimitInput").value);
-      const expandAll = this.checked("expandAllResultsCheckbox");
+      let expandResultsLimit = Number(document.getElementById("expandResultsLimitInput")?.value);
+      let expandAll = this.checked("expandAllResultsCheckbox");
+      if (expandResultsLimit === undefined && expandAll === undefined ) { // temp solution for missing ui option
+        expandAll = true;
+      }
       for (let i = 0; i < searchResults.length; i++) {
         if (!expandAll && (i+1) > expandResultsLimit) {
           break;
