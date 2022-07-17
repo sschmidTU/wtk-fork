@@ -453,12 +453,12 @@ class WTKSearch {
     const collapsedString = expandAll ? '' : ' collapsed';
     const plusOrMinus = expandAll ? '&minus;' : '&plus;'; // default
     let collapsibleButtonHtml = '';
-    if (this.addElementsInfo) {
+    if (this.addElementsInfo && page.elT) {
       collapsibleButtonHtml = '<a class="collapsibleButton'+collapsedString+'" id="expandButton'+page.id+
         '" title="Show elements">'+plusOrMinus+'</button>';
     }
     let elementsInfoHtml = '';
-    if (this.addElementsInfo) {
+    if (this.addElementsInfo && page.elT) {
       elementsInfoHtml = '<span class="elementsInfo collapsible'+collapsedString+'" id="elementsInfo'+page.id+
         '">'+elementsDisplayString+'</span>';
     }
