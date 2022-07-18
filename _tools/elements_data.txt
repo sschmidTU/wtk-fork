@@ -145,9 +145,12 @@ not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(ex
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
 old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 i; 吾; i; t(five, mouth)
+benefit; 益; benefit; t(horns, one, animal legs, dish)
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 𠆢, 全 top part; hat
 moon=month=flesh=part of the body; 月; moon
+companion; 朋; companion; l(moon, moon)
+bright; 明; bright; l(sun, moon)
 child; 子; child
 finger=fingers; 扌, 招 left part; fingers
 enter; 入; enter; t(hook, person)
@@ -192,5 +195,5 @@ elbow; 厶; private
 spoon=sitting on the ground; 匕; spoon
 vulture; 爪; cleat
 one; 一; ground
-ceiling; 一; ground; one // only when on top of another element. In any case, also called "one"
-floor; 一; ground; one // only when on the bottom of another element. In any case, also called "one"
+ceiling=one; 一; ground // only when on top of another element. In any case, also called "one"
+floor=one; 一; ground // only when on the bottom of another element. In any case, also called "one"

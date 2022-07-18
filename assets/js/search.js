@@ -31,6 +31,11 @@ for (const doc of docs) {
         const newSubElements = elementsDict[elementTrimmed].subElements;
         for (const subElement of newSubElements) {
           newElementsObject[subElement] = true;
+          if (!occurences[subElement]) {
+            occurences[subElement] = 1;
+          } else {
+            occurences[subElement]++;
+          }
         }
       } else {
         // shouldn't happen; need to add element to elementsData.txt and node elementsDataToJson.js

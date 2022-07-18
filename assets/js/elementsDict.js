@@ -2433,6 +2433,26 @@ const elementsDict =
       "i"
     ]
   },
+  "benefit": {
+    "elements": [
+      "horns",
+      "one",
+      "animal legs",
+      "dish"
+    ],
+    "kanji": "益",
+    "subElements": [
+      "horns",
+      "one",
+      "animal legs",
+      "dish",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "benefit"
+    ]
+  },
   "umbrella": {
     "elements": [],
     "kanji": "𠆢, 全 top part",
@@ -2457,6 +2477,43 @@ const elementsDict =
     ],
     "wkNames": [
       "moon"
+    ]
+  },
+  "companion": {
+    "elements": [
+      "moon",
+      "moon"
+    ],
+    "kanji": "朋",
+    "subElements": [
+      "moon",
+      "moon",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "companion"
+    ]
+  },
+  "bright": {
+    "elements": [
+      "sun",
+      "moon"
+    ],
+    "kanji": "明",
+    "subElements": [
+      "sun",
+      "moon",
+      "day",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bright"
     ]
   },
   "child": {
@@ -2988,28 +3045,28 @@ const elementsDict =
     ]
   },
   "ceiling": {
-    "elements": [
-      "one"
-    ],
+    "elements": [],
     "kanji": "一",
     "subElements": [
       "one"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "one"
+    ],
     "wkNames": [
       "ground"
     ],
     "comment": "only when on top of another element. In any case, also called \"one\""
   },
   "floor": {
-    "elements": [
-      "one"
-    ],
+    "elements": [],
     "kanji": "一",
     "subElements": [
       "one"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "one"
+    ],
     "wkNames": [
       "ground"
     ],
