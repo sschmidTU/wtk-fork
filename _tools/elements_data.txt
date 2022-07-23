@@ -179,6 +179,7 @@ mouth; 口; mouth
 sun=day; 日; sun
 mortar; 臼; sun // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
+eyeB=eye; 罒; net // also eye in RTK (ambiguouos), but net in WK. We handle this radical separately.
 ear; 耳; ear
 shelf; 且, 助 left part; top hat; c(eye, one) // this is not (always) perfectly RTK(eye)+RTK(one), but close enough.
 prosperous; 昌; prosperous; t(sun, sun)
