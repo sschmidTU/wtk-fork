@@ -49,6 +49,7 @@ house; 宋 upper part; roof
 joint; 骨 upper part; joint // doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon.
 skeleton; 骨; bone; t(joint, moon)
 bend; 曲; music; rice field, stick2 // basically one and a half rice fields (or 2 rice fields half overlapping) with 2 sticks
+cadet; 曹; official; t(c(bend, one), sun)
 beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
 crown; 冗 top part; forehead
 owl; 桜 top right part, 巣 top part; grass; drop3
