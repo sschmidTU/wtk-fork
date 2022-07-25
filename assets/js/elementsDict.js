@@ -88,6 +88,60 @@ const elementsDict =
       "white"
     ]
   },
+  "power": {
+    "elements": [],
+    "kanji": "力",
+    "subElements": [
+      "muscle",
+      "arnold"
+    ],
+    "synonyms": [
+      "muscle",
+      "arnold"
+    ],
+    "wkNames": [
+      "power"
+    ]
+  },
+  "add": {
+    "elements": [
+      "power",
+      "mouth"
+    ],
+    "kanji": "加",
+    "subElements": [
+      "power",
+      "mouth",
+      "muscle",
+      "arnold"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "add"
+    ]
+  },
+  "noon": {
+    "elements": [],
+    "kanji": "午",
+    "subElements": [
+      "sign of the horse"
+    ],
+    "synonyms": [
+      "sign of the horse"
+    ],
+    "wkNames": [
+      "noon"
+    ]
+  },
+  "cow": {
+    "elements": [],
+    "kanji": "牛",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "cow"
+    ]
+  },
   "direction": {
     "elements": [],
     "kanji": "方",
@@ -821,6 +875,28 @@ const elementsDict =
       "music"
     ],
     "comment": "basically one and a half rice fields (or 2 rice fields half overlapping) with 2 sticks"
+  },
+  "cadet": {
+    "elements": [
+      "bend",
+      "one",
+      "sun"
+    ],
+    "kanji": "曹",
+    "subElements": [
+      "bend",
+      "one",
+      "sun",
+      "rice field",
+      "stick2",
+      "stick",
+      "brains",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "official"
+    ]
   },
   "beans": {
     "elements": [
@@ -2856,6 +2932,20 @@ const elementsDict =
       "eye"
     ],
     "comment": "eye or net in WK. net in WK is just horizontal eye in RTK"
+  },
+  "eyeB": {
+    "elements": [],
+    "kanji": "罒",
+    "subElements": [
+      "eye"
+    ],
+    "synonyms": [
+      "eye"
+    ],
+    "wkNames": [
+      "net"
+    ],
+    "comment": "also eye in RTK (ambiguouos), but net in WK. We handle this radical separately."
   },
   "ear": {
     "elements": [],

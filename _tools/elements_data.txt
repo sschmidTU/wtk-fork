@@ -4,6 +4,10 @@ divining rod; 上 upper part; toe; wand
 compare; 比; compare; spoon, spoon2, sitting on the ground2
 say=words=keitai; 言; say; one4, mouth, ceiling
 white; 白; white; t(drop, sun)
+power=muscle=arnold; 力; power
+add; 加; add; l(power, mouth)
+noon=sign of the horse; 午; noon
+cow; 牛; cow
 direction=compass; 方; direction
 taskmaster; 攵, 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
 walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
