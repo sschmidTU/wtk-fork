@@ -24,6 +24,7 @@ infant=toddler; 育 top part; trash; t(top hat, elbow) // WK doesn't differentia
 climax; 至; mole; t(wall, soil)
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
+emperor; 皇; emperor; t(white, king)
 nine=baseball; 九; nine
 round; 丸; round; c(nine, drop)
 employee; 員; member; t(mouth, shellfish)
@@ -88,6 +89,7 @@ road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going; loiterWK // used when there's something in the middle/inner.
+goingB; 彳; loiter
 five; 五; five
 staples; 印 left part; comb
 reclining=lying down; 𠂉, 乞 top part; gun

@@ -396,6 +396,25 @@ const elementsDict =
     ],
     "comment": "my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel."
   },
+  "emperor": {
+    "elements": [
+      "white",
+      "king"
+    ],
+    "kanji": "皇",
+    "subElements": [
+      "white",
+      "king",
+      "drop",
+      "sun",
+      "drops",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "emperor"
+    ]
+  },
   "nine": {
     "elements": [],
     "kanji": "九",
@@ -1461,6 +1480,15 @@ const elementsDict =
       "loiter"
     ],
     "comment": "used when there's something in the middle/inner."
+  },
+  "goingB": {
+    "elements": [],
+    "kanji": "彳",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "loiter"
+    ]
   },
   "five": {
     "elements": [],
