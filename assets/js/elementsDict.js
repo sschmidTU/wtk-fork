@@ -229,7 +229,9 @@ const elementsDict =
     "kanji": "完",
     "subElements": [
       "house",
-      "beginning"
+      "beginning",
+      "two",
+      "human legs"
     ],
     "synonyms": [],
     "wkNames": [
@@ -1572,6 +1574,21 @@ const elementsDict =
       "jackhammer"
     ],
     "comment": "altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases."
+  },
+  "beginning": {
+    "elements": [
+      "two",
+      "human legs"
+    ],
+    "kanji": "元",
+    "subElements": [
+      "two",
+      "human legs"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "origin"
+    ]
   },
   "altar": {
     "elements": [],

@@ -96,6 +96,7 @@ saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overl
 evening; 夕; evening
 bones; 歹, 残 left part; yakuza; t(ceiling, evening)
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
+beginning; 元; origin; t(two, human legs)
 altar; 礻, 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right
 cloak; 衤, 初 left part; spirit // almost same as altar, has an extra diagonal stroke on the right
 key; ユ; hook
