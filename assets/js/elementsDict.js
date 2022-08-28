@@ -879,6 +879,28 @@ const elementsDict =
       "bone"
     ]
   },
+  "sprout": {
+    "elements": [
+      "drop",
+      "rice field"
+    ],
+    "kanji": "由",
+    "subElements": [
+      "drop",
+      "rice field",
+      "drops",
+      "brains",
+      "shoot",
+      "wherefore"
+    ],
+    "synonyms": [
+      "shoot",
+      "wherefore"
+    ],
+    "wkNames": [
+      "reason"
+    ]
+  },
   "bend": {
     "elements": [
       "rice field",
@@ -950,6 +972,15 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "forehead"
+    ]
+  },
+  "hood": {
+    "elements": [],
+    "kanji": "冂",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "head"
     ]
   },
   "owl": {
