@@ -483,6 +483,26 @@ const elementsDict =
       "ten thousand"
     ]
   },
+  "tongue": {
+    "elements": [
+      "thousand",
+      "mouth"
+    ],
+    "kanji": "舌",
+    "subElements": [
+      "thousand",
+      "mouth",
+      "drop",
+      "ten",
+      "drops",
+      "needle",
+      "one thousand"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tongue"
+    ]
+  },
   "measuring box": {
     "elements": [
       "thousand",

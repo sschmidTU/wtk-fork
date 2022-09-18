@@ -29,6 +29,7 @@ nine=baseball; 九; nine
 ten=needle; 十; ten&cross
 thousand=one thousand; 千; thousand; t(drop, ten); slideWK
 ten thousand; 万; ten thousand; t(ceiling, bound up)
+tongue; 舌; tongue; t(thousand, mouth)
 measuring box; 升; grid; l(thousand, ten); slideWK
 round; 丸; round; c(nine, drop)
 employee; 員; member; t(mouth, shellfish)
