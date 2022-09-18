@@ -28,8 +28,8 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 旭	rising sun		l(nine, sun)	rising sun, nine, baseball, sun, day
 世	generation	World	generation	generation, generations, ten, twenty
 胃	stomach	Stomach	t(rice field, moon)	stomach, rice field, brains, moon, month, flesh, part of the body
-旦	nightbreak	Dawn	t(day, floor)	nightbreak, sun, day, one, floor
-胆	gall bladder	Guts	l(moon, t(day, floor))	gallbladder, moon, month, flesh, part of the body, nightbreak, sun, day, one, floor
+旦	nightbreak	Dawn	t(sun, floor)	nightbreak, sun, day, one, floor
+胆	gall bladder	Guts	l(moon, nightbreak)	gallbladder, moon, month, flesh, part of the body, nightbreak, sun, day, one, floor
 亘	span		t(ceiling, nightbreak)	span, one, ceiling, sun, day, one, floor
 凹	concave	Concave	concave	concave
 凸	convex	Convex	convex	convex
@@ -47,12 +47,12 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements
 肘	elbow		l(moon, measurement)	elbow, moon, month, flesh, part of the body, glue
 専	specialty	Specialty	t(ten, rice field, measurement)	specialty, ten, needle, rice field, brains, glue
 博	Dr.	Exhibition	l(ten, specialty)	Dr., ten, needle, acupuncturist, specialty, drop, ten, needle, rice field, brains, glue
-占	fortune-telling	Fortune	t(magic wand, mouth)	fortune-telling, fortunetelling, magic wand, wand, augury, divining rod, mouth
-上	above	Above	t(magic wand, floor)	above, magic wand, wand, augury, divining rod, one, floor
-下	below	Below	t(ceiling, magic wand)	below, one, ceiling, magic wand, wand, augury, divining rod
-卓	eminent	Table	t(magic wand, sun, ten)	eminent, magic wand, augury, divinging rod, sunflower, sun, day, ten, needle
+占	fortune-telling	Fortune	t(wand, mouth)	fortune-telling, fortunetelling, magic wand, wand, augury, divining rod, mouth
+上	above	Above	t(wand, floor)	above, magic wand, wand, augury, divining rod, one, floor
+下	below	Below	t(ceiling, wand)	below, one, ceiling, magic wand, wand, augury, divining rod
+卓	eminent	Table	t(wand, sun, ten)	eminent, magic wand, augury, divinging rod, sunflower, sun, day, ten, needle
 朝	morning	Morning	l(t(ten, sun, ten), moon)	morning, mist, ten, needle, early, sun, day, moon, month, flesh, part of the body, ten2, needle2
-嘲	derision		l(mouth, morning)	derision, mouth, morning , mist, ten, needle, early, sun, day, moon, month, flesh, part of the body, ten2, needle2
+嘲	derision		l(mouth, morning, moon)	derision, mouth, morning , mist, ten, needle, early, sun, day, moon, month, flesh, part of the body, ten2, needle2
 只	only		t(mouth, animal legs)	only, mouth, animal legs, eight
 貝	shellfish	Shellfish	t(eye, animal legs)	shellfish, shell, clam, oyster, eye, animal legs, eight
 唄	pop song	Shamisen Song	l(mouth, shellfish)	pop song, mouth, shellfish, shell, clam, oyster, eye, animal legs, eight

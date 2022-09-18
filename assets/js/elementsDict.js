@@ -463,6 +463,26 @@ const elementsDict =
       "thousand"
     ]
   },
+  "ten thousand": {
+    "elements": [
+      "ceiling",
+      "bound up"
+    ],
+    "kanji": "万",
+    "subElements": [
+      "ceiling",
+      "bound up",
+      "one",
+      "clothes hanger",
+      "drop",
+      "coat hanger",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ten thousand"
+    ]
+  },
   "measuring box": {
     "elements": [
       "thousand",
@@ -1742,6 +1762,7 @@ const elementsDict =
       "two",
       "human legs"
     ],
+    "elementsWK": "piWK",
     "kanji": "元",
     "subElements": [
       "two",
