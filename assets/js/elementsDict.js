@@ -2219,6 +2219,25 @@ const elementsDict =
       "early"
     ]
   },
+  "mist": {
+    "elements": [
+      "ten",
+      "sun",
+      "ten"
+    ],
+    "kanji": "朝 left part",
+    "subElements": [
+      "ten",
+      "sun",
+      "ten",
+      "needle",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "morning"
+    ]
+  },
   "pack of wild dogs": {
     "elements": [],
     "kanji": "狂 left part",
