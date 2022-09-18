@@ -86,13 +86,13 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements	Comments
 貢	tribute	Tribute	t(craft, shellfish)	tribute, craft, shellfish, shell, clam, oyster, eye, animal legs, eight	
 項	paragraph	Paragraph	l(craft, page)	paragraph, craft, head, page, one, ceiling, drop, shellfish, shell, clam, oyster, eye, animal legs, eight	
 刀	sword	Sword	sword	sword, dagger	
-刃	blade	Blade	l(drop, sword)	blade, drop, sword, dagger	
+刃	blade	Blade	c(sword, drop)	blade, drop, sword, dagger	
 切	cut	Cut	l(seven, sword)	cut, seven, diced, sword, dagger	
 召	seduce	Call	t(sword, mouth)	seduce, sword, dagger, mouth	
 昭	shining	Shining	l(sun, seduce)	shining, sun, day, seduce, summon, sword, dagger, mouth	
-則	rule	Rule	l(shellfish, sword)	rule, shellfish, shell, clam, oyster, eye, animal legs, eight, sword, sabre, saber	
-副	vice-	Vice	l(t(ceiling, mouth, rice field), sword)	vice-, wealth, one, ceiling, mouth, rice field, brains, sword, sabre, saber	
-別	separate	Separate	l(t(mouth, bound up), sword)	separate, mouth, bound up, sword, sabre, saber	
+則	rule	Rule	l(shellfish, saber)	rule, shellfish, shell, clam, oyster, eye, animal legs, eight, sword, sabre, saber	
+副	vice-	Vice	l(wealth, saber)	vice-, wealth, one, ceiling, mouth, rice field, brains, sword, sabre, saber	
+別	separate	Separate	l(t(mouth, bound up), saber)	separate, mouth, bound up, sword, sabre, saber	
 丁	street	Street	street	street, nail, spike	
 町	village	Town	l(rice field, street)	village, rice field, brains, street, nail, spike	
 可	can	Possible	o(street, mouth)	can, mouth, street, street, nail, spike	
@@ -104,7 +104,7 @@ Kanji	Keyword	KeywordWK	ElementsTree	Elements	Comments
 好	fond	Like	l(woman, child)	fond, woman, child	
 如	likeness	Likeness	l(woman, mouth)	likeness, woman, mouth	
 母	mama	Mother	mama	mama, mother, breasts	
-貫	pierce	Pierce	t(mama, shellfish)	pierce, mama, mother, breasts, oyster, shellfish, shell, clam, oyster, eye, animal legs, eight	
+貫	pierce	Pierce	t(rice field, shellfish)	pierce, mama, mother, breasts, oyster, shellfish, shell, clam, oyster, eye, animal legs, eight	
 兄	elder brother	Older Brother	t(mouth, human legs)	elder brother, teenager, mouth, human legs	
 呪	curse	Curse	l(mouth, elder brother)	curse, mouth, elder brother, teenager, mouth, human legs, mouth2	
 克	overcome	Overcome	t(ten, elder brother)	overcome, ten, needle, elder brother, teenager, mouth, human legs	

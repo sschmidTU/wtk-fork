@@ -463,6 +463,68 @@ const elementsDict =
       "thousand"
     ]
   },
+  "sword": {
+    "elements": [],
+    "kanji": "刀",
+    "subElements": [
+      "dagger"
+    ],
+    "synonyms": [
+      "dagger"
+    ],
+    "wkNames": [
+      "sword"
+    ]
+  },
+  "saber": {
+    "elements": [],
+    "kanji": "刂",
+    "subElements": [
+      "sabre",
+      "sword"
+    ],
+    "synonyms": [
+      "sabre",
+      "sword"
+    ],
+    "wkNames": [
+      "knife"
+    ],
+    "comment": "variant of 刀 sword"
+  },
+  "blade": {
+    "elements": [
+      "sword",
+      "drop"
+    ],
+    "kanji": "刃",
+    "subElements": [
+      "sword",
+      "drop",
+      "dagger",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "blade"
+    ]
+  },
+  "seduce": {
+    "elements": [
+      "sword",
+      "mouth"
+    ],
+    "kanji": "召",
+    "subElements": [
+      "sword",
+      "mouth",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "call"
+    ]
+  },
   "ten thousand": {
     "elements": [
       "ceiling",
@@ -538,6 +600,26 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "round"
+    ]
+  },
+  "wealth": {
+    "elements": [
+      "ceiling",
+      "mouth",
+      "rice field"
+    ],
+    "elementsWK": "creeperWK",
+    "kanji": "福 right part",
+    "subElements": [
+      "ceiling",
+      "mouth",
+      "rice field",
+      "one",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "scarecrow"
     ]
   },
   "employee": {
@@ -1156,6 +1238,20 @@ const elementsDict =
     ],
     "comment": "RTK: a more specific name for fishhook when it's straight"
   },
+  "complete": {
+    "elements": [
+      ""
+    ],
+    "elementsWK": "barbWK",
+    "kanji": "了",
+    "subElements": [
+      ""
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "finish"
+    ]
+  },
   "upside down in a row": {
     "elements": [],
     "kanji": "並",
@@ -1620,6 +1716,15 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "迄 left part"
+    ]
+  },
+  "street": {
+    "elements": [],
+    "kanji": "丁",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "street"
     ]
   },
   "going": {
@@ -2235,6 +2340,25 @@ const elementsDict =
     ],
     "wkNames": [
       "narwhal"
+    ]
+  },
+  "possess": {
+    "elements": [
+      "by one's side",
+      "moon"
+    ],
+    "kanji": "有",
+    "subElements": [
+      "by one's side",
+      "moon",
+      "by one’s side",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "have"
     ]
   },
   "early": {
@@ -2953,6 +3077,30 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "woman"
+    ]
+  },
+  "mama": {
+    "elements": [
+      "sun",
+      "drop2",
+      "drop"
+    ],
+    "kanji": "母",
+    "subElements": [
+      "sun",
+      "drop2",
+      "drop",
+      "day",
+      "drops",
+      "mother",
+      "breasts"
+    ],
+    "synonyms": [
+      "mother",
+      "breasts"
+    ],
+    "wkNames": [
+      "mother"
     ]
   },
   "person": {

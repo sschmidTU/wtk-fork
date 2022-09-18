@@ -28,10 +28,15 @@ emperor; 皇; emperor; t(white, king)
 nine=baseball; 九; nine
 ten=needle; 十; ten&cross
 thousand=one thousand; 千; thousand; t(drop, ten); slideWK
+sword=dagger; 刀; sword
+saber=sabre=sword; 刂; knife // variant of 刀 sword
+blade; 刃; blade; c(sword, drop)
+seduce; 召; call; t(sword, mouth)
 ten thousand; 万; ten thousand; t(ceiling, bound up)
 tongue; 舌; tongue; t(thousand, mouth)
 measuring box; 升; grid; l(thousand, ten); slideWK
 round; 丸; round; c(nine, drop)
+wealth; 福 right part; scarecrow; t(ceiling, mouth, rice field); creeperWK
 employee; 員; member; t(mouth, shellfish)
 shellfish=shell=clam=oyster; 貝; shellfish; t(eye, animal legs)
 see; 見; see; t(eye, human legs)
@@ -69,6 +74,7 @@ owl; 桜 top right part, 巣 top part; grass; drop3
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
+complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
 fit; 合; suit; t(meeting, mouth)
@@ -97,6 +103,7 @@ eat=food; 食; eat; t(umbrella, good)
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
 road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
+street; 丁; street
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going; loiterWK // used when there's something in the middle/inner.
 goingB; 彳; loiter
@@ -138,6 +145,7 @@ grains of rice; 米, 氺, 録 bottom right part; water // multiple shapes in RTK
 deceased=perish; 亡; death; t(top hat, straightened hook)
 genius=genie; 才, 在 outer part; genius; t(c(ten, drop), hook); slideWK
 by one's side=by one’s side; 左 outer part; narwhal
+possess; 有; have; o(by one's side, moon)
 early=sunflower; 早; early; t(sun, ten)
 mist; 朝 left part; morning; t(ten, sun, ten)
 pack of wild dogs; 狂 left part; animal
@@ -179,6 +187,7 @@ top hat; 亠, 京 top part; lid; t(drop, one)
 pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
 tree=wood; 木; tree
 woman; 女; woman
+mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
 person; 人; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 personB; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
