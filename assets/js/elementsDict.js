@@ -428,6 +428,61 @@ const elementsDict =
       "nine"
     ]
   },
+  "ten": {
+    "elements": [],
+    "kanji": "十",
+    "subElements": [
+      "needle"
+    ],
+    "synonyms": [
+      "needle"
+    ],
+    "wkNames": [
+      "ten",
+      "cross"
+    ]
+  },
+  "thousand": {
+    "elements": [
+      "drop",
+      "ten"
+    ],
+    "elementsWK": "slideWK",
+    "kanji": "千",
+    "subElements": [
+      "drop",
+      "ten",
+      "drops",
+      "needle",
+      "one thousand"
+    ],
+    "synonyms": [
+      "one thousand"
+    ],
+    "wkNames": [
+      "thousand"
+    ]
+  },
+  "measuring box": {
+    "elements": [
+      "thousand",
+      "ten"
+    ],
+    "elementsWK": "slideWK",
+    "kanji": "升",
+    "subElements": [
+      "thousand",
+      "ten",
+      "drop",
+      "drops",
+      "needle",
+      "one thousand"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "grid"
+    ]
+  },
   "round": {
     "elements": [
       "nine",
@@ -1126,11 +1181,50 @@ const elementsDict =
       "hook",
       "drop",
       "needle",
-      "drops"
+      "drops",
+      "measurement"
+    ],
+    "synonyms": [
+      "measurement"
+    ],
+    "wkNames": [
+      "measurement"
+    ]
+  },
+  "specialty": {
+    "elements": [
+      "ten",
+      "rice field",
+      "glue"
+    ],
+    "kanji": "専",
+    "subElements": [
+      "ten",
+      "rice field",
+      "glue",
+      "needle",
+      "brains",
+      "hook",
+      "drop",
+      "drops",
+      "measurement"
     ],
     "synonyms": [],
     "wkNames": [
-      "measurement"
+      "specialty"
+    ]
+  },
+  "generation": {
+    "elements": [],
+    "kanji": "世",
+    "subElements": [
+      "generations"
+    ],
+    "synonyms": [
+      "generations"
+    ],
+    "wkNames": [
+      "world"
     ]
   },
   "do": {
@@ -2853,19 +2947,6 @@ const elementsDict =
       "eight"
     ],
     "comment": "there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences."
-  },
-  "ten": {
-    "elements": [],
-    "kanji": "十",
-    "subElements": [
-      "needle"
-    ],
-    "synonyms": [
-      "needle"
-    ],
-    "wkNames": [
-      "ten"
-    ]
   },
   "dish": {
     "elements": [],

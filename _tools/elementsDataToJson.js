@@ -53,6 +53,10 @@ function processFile(fileString) {
         // process columns
         const rtkNames = columns[0].split("=");
         const mainName = rtkNames[0];
+        if (returnJson[mainName]) {
+            console.warn(`duplicate row ${i+1} (${mainName})`);
+            return;
+        }
         const synonyms = [];
         for (let j = 1; j < rtkNames.length; j++) {
             synonyms.push(rtkNames[j]);

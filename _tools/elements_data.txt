@@ -26,6 +26,9 @@ king; 王; king // my version of RTK1 has errors where sometimes 王 is called j
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 emperor; 皇; emperor; t(white, king)
 nine=baseball; 九; nine
+ten=needle; 十; ten&cross
+thousand=one thousand; 千; thousand; t(drop, ten); slideWK
+measuring box; 升; grid; l(thousand, ten); slideWK
 round; 丸; round; c(nine, drop)
 employee; 員; member; t(mouth, shellfish)
 shellfish=shell=clam=oyster; 貝; shellfish; t(eye, animal legs)
@@ -67,7 +70,9 @@ straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
 fit; 合; suit; t(meeting, mouth)
-glue; 寸; measurement; tr(t(ten, hook), drop)
+glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
+specialty; 専; specialty; t(ten, rice field, glue)
+generation=generations; 世; world
 do=so; 為; sake; tail feathers
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
 broom; ヨ, 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
@@ -176,7 +181,6 @@ assembly line; 卒 middle part; assembly line; person2 // not named in WK
 large=St. Bernard; 大; big
 eight; 八; eight
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
-ten=needle; 十; ten
 dish; 皿; plate
 craft; 工, 紅 right part; construction; t(ceiling, stick, floor)
 stream; 川; river
