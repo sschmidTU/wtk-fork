@@ -824,6 +824,15 @@ const elementsDict =
       "convex"
     ]
   },
+  "concave": {
+    "elements": [],
+    "kanji": "凸",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "concave"
+    ]
+  },
   "sheep": {
     "elements": [
       "horns",
