@@ -821,7 +821,7 @@ const elementsDict =
   },
   "drop": {
     "elements": [],
-    "kanji": "白 top part",
+    "kanji": "丶, 白 top part",
     "subElements": [
       "drops"
     ],

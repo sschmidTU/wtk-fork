@@ -48,7 +48,7 @@ stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primi
 towel; 巾; towel
 apron; 婦 bottom right part, 帯 bottom+middle part; forehead&towel; t(crown, towel) 
 sovereign; 帝; sovereign; t(stand up, apron)
-drop=drops; 白 top part; drop
+drop=drops; 丶, 白 top part; drop
 heart; 心; heart; o(drop3, fishhook)
 box; 匚, 区 outer part; cage
 swiss=switzerland=plus=red cross=d-pad; 亞, 亞 middle part, 惡 plus-shaped part between one and one; swiss; convex2, box4, two // doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements
