@@ -56,7 +56,7 @@ function insertInto(dirname, files, kanjiToElementsTree) {
             console.log(`no elementsTree found for ${kanjiMatch}`);
             continue;
         }
-        console.log(`new elementsTree for ${filename} ${kanjiMatch}: ${elementsTree})`);
+        console.log(`new elementsTree for ${filename} ${kanjiMatch}: ${elementsTree}`);
 
         const elementsLineIndex = elementsMatch.index;
         const endOfElementsLineIndex = fileString.indexOf("\n", elementsLineIndex + 1);

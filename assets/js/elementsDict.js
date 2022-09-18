@@ -1938,6 +1938,24 @@ const elementsDict =
       "prison"
     ]
   },
+  "ladle": {
+    "elements": [
+      "bound up",
+      "drop"
+    ],
+    "kanji": "勺",
+    "subElements": [
+      "bound up",
+      "drop",
+      "clothes hanger",
+      "coat hanger",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ladle"
+    ]
+  },
   "oven-fire": {
     "elements": [
       "drop4"

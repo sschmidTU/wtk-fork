@@ -119,6 +119,7 @@ fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 clothes hanger=coat hanger; 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)
+ladle; 勺; ladle; o(bound up, drop)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
