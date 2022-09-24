@@ -1030,7 +1030,7 @@ const elementsDict =
   },
   "house": {
     "elements": [],
-    "kanji": "宋 upper part",
+    "kanji": "宀",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -3158,7 +3158,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "eight"
-    ]
+    ],
+    "comment": "similar to ハ animal legs"
   },
   "eightB": {
     "elements": [
@@ -3173,6 +3174,43 @@ const elementsDict =
       "eight"
     ],
     "comment": "there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences."
+  },
+  "salad": {
+    "elements": [
+      "flowers",
+      "floor"
+    ],
+    "kanji": "昔 top part",
+    "subElements": [
+      "flowers",
+      "floor",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "blackjack"
+    ]
+  },
+  "strung together": {
+    "elements": [
+      "salad",
+      "animal legs"
+    ],
+    "kanji": "共",
+    "subElements": [
+      "salad",
+      "animal legs",
+      "flowers",
+      "floor",
+      "one",
+      "together"
+    ],
+    "synonyms": [
+      "together"
+    ],
+    "wkNames": [
+      "together"
+    ]
   },
   "dish": {
     "elements": [],

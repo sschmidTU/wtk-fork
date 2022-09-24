@@ -61,7 +61,7 @@ swiss=switzerland=plus=red cross=d-pad; 亞, 亞 middle part, 惡 plus-shaped pa
 convex; 凸; convex
 concave; 凸; concave
 sheep; 羊; sheep; t(horns, king, stick)
-house; 宋 upper part; roof
+house; 宀; roof
 joint; 骨 upper part; joint // doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon.
 skeleton; 骨; bone; t(joint, moon)
 sprout=shoot=wherefore; 由; reason; t(drop, rice field)
@@ -192,8 +192,10 @@ person; 人; person // person is more ambiguous in RTK than in WK for a change: 
 personB; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
 large=St. Bernard; 大; big
-eight; 八; eight
+eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
+salad; 昔 top part; blackjack; t(flowers, floor)
+strung together=together; 共; together; t(salad, animal legs)
 dish; 皿; plate
 craft; 工, 紅 right part; construction; t(ceiling, stick, floor)
 stream; 川; river
