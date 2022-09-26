@@ -516,12 +516,20 @@ class WTKSearch {
     if (/^.,/.test(description)) {
       return description[0];
     }
+    const italicizePartString = (inputString) => {
+      const matches = /.+ part/.exec(matchString); // "left part", "bottom right part", etc
+      if (matches) {
+        return `<i>${matches[0]}</i>`;
+      }
+      return inputString;
+    }
     const commaIndex = description.indexOf(",");
     if (commaIndex > 0) {
-      return description.substring(0, commaIndex); // only return first part of description
+      const firstPart = description.substring(0, commaIndex); // only use first part of description
+      return italicizePartString(firstPart);
     }
     // no perfectly matching single character representation of the element found
-    return description;
+    return italicizePartString(description);
   }
 
   toggleCollapsible(collapsibleButton, pageId, newCollapsedValue = undefined) {
