@@ -66,10 +66,15 @@ function processFile(fileString) {
         let mainElements = []; // main elements only, no subelements
         let subElements = [];
         if (columns.length > 3) {
-            mainElements = removeStructure(columns[3]).split(",").map(a => a.trim())
+            const structureSubelementSplit = columns[3].split("&");
+            mainElements = removeStructure(structureSubelementSplit[0]).split(",").map(a => a.trim())
             // TODO maybe avoid duplicates? e.g. 昌 adds sun twice
             subElements = [...mainElements]; // shallow copy
-            for (const subElement of subElements) {
+            if (structureSubelementSplit.length > 1) {
+                subElements = subElements.concat(structureSubelementSplit[1].split(","));
+            }
+            for (const subElementRaw of subElements) {
+                const subElement = subElementRaw.trim();
                 if (/.+[0-9]+/.test(subElement)) {
                     const occurenceFreeElement = subElement.replaceAll(/[0-9]/g,"");
                     if (!subElements.includes(occurenceFreeElement)) {

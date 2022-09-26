@@ -196,6 +196,7 @@ eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
 salad; 昔 top part; blackjack; t(flowers, floor)
 strung together=together; 共; together; t(salad, animal legs)
+bushel basket; 棋 right part; crab; c(strung together, one)&eye
 dish; 皿; plate
 craft; 工, 紅 right part; construction; t(ceiling, stick, floor)
 stream; 川; river

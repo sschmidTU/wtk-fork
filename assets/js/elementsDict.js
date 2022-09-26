@@ -3212,6 +3212,27 @@ const elementsDict =
       "together"
     ]
   },
+  "bushel basket": {
+    "elements": [
+      "strung together",
+      "one"
+    ],
+    "kanji": "棋 right part",
+    "subElements": [
+      "strung together",
+      "one",
+      "eye",
+      "salad",
+      "animal legs",
+      "flowers",
+      "floor",
+      "together"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "crab"
+    ]
+  },
   "dish": {
     "elements": [],
     "kanji": "皿",
