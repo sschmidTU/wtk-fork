@@ -517,7 +517,7 @@ class WTKSearch {
       return description[0];
     }
     const italicizePartString = (inputString) => {
-      const matches = /.+ part/.exec(matchString); // "left part", "bottom right part", etc
+      const matches = /.+ part/.exec(inputString); // "left part", "bottom right part", etc
       if (matches) {
         return `<i>${matches[0]}</i>`;
       }
