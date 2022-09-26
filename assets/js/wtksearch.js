@@ -441,7 +441,7 @@ class WTKSearch {
             if (elString.length > 0) {
               elString += ', ';
             }
-            let elementCharacter = this.elementSingleCharacterDisplay(elKey, wkName);
+            let elementCharacter = this.elementDisplayString(elKey, wkName);
             if (elementCharacter.length > 0) {
               elementCharacter += ' ';
             }
@@ -451,7 +451,7 @@ class WTKSearch {
           if (elString.length > 0) {
             elString += ', ';
           }
-          let elementCharacter = this.elementSingleCharacterDisplay(elKey);
+          let elementCharacter = this.elementDisplayString(elKey);
           if (elementCharacter.length > 0) {
             elementCharacter += ' ';
           }
@@ -497,7 +497,7 @@ class WTKSearch {
     return this.toDom(entry);
   }
 
-  elementSingleCharacterDisplay(elementName, wkName) {
+  elementDisplayString(elementName, wkName) {
     if (wkName === "slideWK") {
       return "ノ";
     }
@@ -516,7 +516,12 @@ class WTKSearch {
     if (/^.,/.test(description)) {
       return description[0];
     }
-    return ''; // no perfectly matching single character representation of the element found
+    const commaIndex = description.indexOf(",");
+    if (commaIndex > 0) {
+      return description.substring(0, commaIndex); // only return first part of description
+    }
+    // no perfectly matching single character representation of the element found
+    return description;
   }
 
   toggleCollapsible(collapsibleButton, pageId, newCollapsedValue = undefined) {
