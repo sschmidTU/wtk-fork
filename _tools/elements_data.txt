@@ -78,6 +78,8 @@ complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
 fit; 合; suit; t(meeting, mouth)
+bonsai; 秦 or 寿 upper part; spring
+spring; 泉; spring; t(white, water)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
 specialty; 専; specialty; t(ten, rice field, glue)
 generation=generations; 世; world

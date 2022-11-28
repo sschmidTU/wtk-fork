@@ -1305,6 +1305,36 @@ const elementsDict =
       "suit"
     ]
   },
+  "bonsai": {
+    "elements": [],
+    "kanji": "秦 or 寿 upper part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "spring"
+    ]
+  },
+  "spring": {
+    "elements": [
+      "white",
+      "water"
+    ],
+    "kanji": "泉",
+    "subElements": [
+      "white",
+      "water",
+      "drop",
+      "sun",
+      "drops",
+      "day",
+      "water droplets",
+      "water pistol"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "spring"
+    ]
+  },
   "glue": {
     "elements": [
       "ten",
