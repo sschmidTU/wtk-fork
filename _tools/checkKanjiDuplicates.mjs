@@ -13,11 +13,18 @@ async function init() {
     const filesv1To6 = getFiles(dirnamev1To6);
     const filesRtk3 = getFiles(dirnameRtk3);
 
-    checkDirForDuplicates(dirnamev1To6, filesv1To6, kanjiMap);
-    checkDirForDuplicates(dirnameRtk3, filesRtk3, kanjiMap);
+    let duplicateCount = 0;
+    duplicateCount += checkDirForDuplicates(dirnamev1To6, filesv1To6, kanjiMap);
+    duplicateCount += checkDirForDuplicates(dirnameRtk3, filesRtk3, kanjiMap);
+    if (duplicateCount === 0) {
+        console.log("Done. No duplicates found.");
+    } else {
+        console.log("Done. Duplicates found: " + duplicateCount);
+    }
 }
 
 function checkDirForDuplicates(dirname, files, kanjiMap) {
+    let duplicateCount = 0;
     for (const file of files) {
         const fileString = FS.readFileSync(`${dirname}/${file}`);
         const match = fileString.toString().match(/^kanji: ./m); // /m: multiline mode, needed for ^ = beginning of line
@@ -29,11 +36,13 @@ function checkDirForDuplicates(dirname, files, kanjiMap) {
         const kanji = kanjiMatch[kanjiMatch.length - 1];
         //console.log("kanji: " + kanji);
         if (kanjiMap[kanji]) {
+            duplicateCount++;
             console.log("error: kanji " + kanji + " in file " + file + " already existed in " + kanjiMap[kanji]);
         } else {
             kanjiMap[kanji] = file;
         }
     }
+    return duplicateCount;
 }
 
 function getFiles(dirname) {
