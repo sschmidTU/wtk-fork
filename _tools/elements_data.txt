@@ -20,7 +20,7 @@ voice; 声; voice; t(samurai, o(flag, stick))
 missile; 投 right part; weapon; t(wind, crotch)
 thread=spiderman; 糸; thread
 wall; 至 top part; ground&private; t(ceiling, elbow) // WK doesn't have this as an extra radical, as it's almost always used as 至 (mole/climax) or right side of 転 (cloud/rising cloud). it only has trash/infant (育 top part).
-infant=toddler; 育 top part; trash; t(top hat, elbow) // WK doesn't differentiate between RTK wall and infant
+infant=toddler; 𠫓, 育 top part; trash; t(top hat, elbow) // WK doesn't differentiate between RTK wall and infant
 climax; 至; mole; t(wall, soil)
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
@@ -78,8 +78,9 @@ complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
 fit; 合; suit; t(meeting, mouth)
-bonsai; 秦 or 寿 upper part; spring
+bonsai; 𡗗, 秦 or 寿 upper part; spring
 spring; 泉; spring; t(white, water)
+awl; 㑒; squid
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
 specialty; 専; specialty; t(ten, rice field, glue)
 generation=generations; 世; world
@@ -97,7 +98,7 @@ animal legs; ハ, 只 bottom part; fins // don't confuse with RTK(animal legs), 
 horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 little=small; 小; small; o(animal legs, t(stick, hook))
 too much; 余; surplus; t(umbrella, dry, little)
-hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top
+hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 scarf=garment=clothes; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin)
 silver; 銀 right part; root; t(sun, hairpin) 
 good; 良; good; t(drop, silver)
@@ -127,7 +128,7 @@ times=-times; 回; times; o(pent in, mouth)
 retainer=slave; 臣; servant
 fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
-clothes hanger=coat hanger; 幻 right part; cape
+clothes hanger=coat hanger; 𠃌, 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)
 ladle; 勺; ladle; o(bound up, drop)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
@@ -149,12 +150,13 @@ genius=genie; 才, 在 outer part; genius; t(c(ten, drop), hook); slideWK
 by one's side=by one’s side; 左 outer part; narwhal
 possess; 有; have; o(by one's side, moon)
 early=sunflower; 早; early; t(sun, ten)
-mist; 朝 left part; morning; t(ten, sun, ten)
+mist; 𠦝, 龺, 朝 left part; morning; t(ten, sun, ten)
 pack of wild dogs; 狂 left part; animal
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
 gone; 去; past; t(soil, elbow)
-stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK
+stone=rock; 丆, 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK
+beggar; 丂, 巧 right part; snare // similar to slingshot:  与 without the lower horizontal line (?)
 mutually=mutual=broken broom; 互 middle part; mutual
 ri=computer=village; 里; village; t(rice field, soil) // often "computer" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK.
 fortune-telling=fortunetelling; 占; fortune; t(divining rod, mouth)
@@ -196,7 +198,7 @@ assembly line; 卒 middle part; assembly line; person2 // not named in WK
 large=St. Bernard; 大; big
 eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
-salad; 昔 top part; blackjack; t(flowers, floor)
+salad; 龷, 昔 top part; blackjack; t(flowers, floor)
 strung together=together; 共; together; t(salad, animal legs)
 bushel basket; 棋 right part; crab; c(strung together, one)&eye
 dish; 皿; plate
@@ -206,7 +208,7 @@ flood=stream; 巛, 災 top part; flood // would be nice if this was only flood, 
 teepee=wigwam; 癶, 発 top part; tent
 bow; 弓; bow
 maestro; 師 left part; drop&bear
-maestro without baton; 官 bottom part; bear; mouth2
+maestro without baton; 㠯, 官 bottom part; bear; mouth2
 stop=footprint; 止; stop
 mouth; 口; mouth
 sun=day; 日; sun

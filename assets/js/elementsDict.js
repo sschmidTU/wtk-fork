@@ -327,7 +327,7 @@ const elementsDict =
       "top hat",
       "elbow"
     ],
-    "kanji": "育 top part",
+    "kanji": "𠫓, 育 top part",
     "subElements": [
       "top hat",
       "elbow",
@@ -1307,7 +1307,7 @@ const elementsDict =
   },
   "bonsai": {
     "elements": [],
-    "kanji": "秦 or 寿 upper part",
+    "kanji": "𡗗, 秦 or 寿 upper part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -1333,6 +1333,15 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "spring"
+    ]
+  },
+  "awl": {
+    "elements": [],
+    "kanji": "㑒",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "squid"
     ]
   },
   "glue": {
@@ -1626,7 +1635,7 @@ const elementsDict =
       "ground",
       "kick"
     ],
-    "comment": "note that scarf (RTK) has an extra, very small vertical stroke on top"
+    "comment": "note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇"
   },
   "scarf": {
     "elements": [
@@ -2065,7 +2074,7 @@ const elementsDict =
   },
   "clothes hanger": {
     "elements": [],
-    "kanji": "幻 right part",
+    "kanji": "𠃌, 幻 right part",
     "subElements": [
       "coat hanger"
     ],
@@ -2417,7 +2426,7 @@ const elementsDict =
       "sun",
       "ten"
     ],
-    "kanji": "朝 left part",
+    "kanji": "𠦝, 龺, 朝 left part",
     "subElements": [
       "ten",
       "sun",
@@ -2504,7 +2513,7 @@ const elementsDict =
       "mouth"
     ],
     "elementsWK": "leafWK, slideWK",
-    "kanji": "石, 砂 left part",
+    "kanji": "丆, 石, 砂 left part",
     "subElements": [
       "ceiling",
       "drop",
@@ -2519,6 +2528,16 @@ const elementsDict =
     "wkNames": [
       "stone"
     ]
+  },
+  "beggar": {
+    "elements": [],
+    "kanji": "丂, 巧 right part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "snare"
+    ],
+    "comment": "similar to slingshot:  与 without the lower horizontal line (?)"
   },
   "mutually": {
     "elements": [],
@@ -3210,7 +3229,7 @@ const elementsDict =
       "flowers",
       "floor"
     ],
-    "kanji": "昔 top part",
+    "kanji": "龷, 昔 top part",
     "subElements": [
       "flowers",
       "floor",
@@ -3349,7 +3368,7 @@ const elementsDict =
     "elements": [
       "mouth2"
     ],
-    "kanji": "官 bottom part",
+    "kanji": "㠯, 官 bottom part",
     "subElements": [
       "mouth2",
       "mouth"
