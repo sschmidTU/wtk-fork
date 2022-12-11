@@ -1442,6 +1442,7 @@ class WTKSearch {
       "limit": "silver",
       "good": "good,halo", // good = 良, halo = left part of 朗, on the left of a kanji, missing one stroke on the bottom
       "helicopter": "old west",
+      "official": "cadet", // 曹. only as kanji in WK. helicopter+sun, kinda
       "charcoal": "pup tent",
       "long": "mane&hairpin", // also long, see get_wk_radicals_that_are_also_kanji_names()
       "splinter": "talking cricket",
