@@ -2317,6 +2317,20 @@ const elementsDict =
       "flowers"
     ]
   },
+  "decorate": {
+    "elements": [
+      "cross"
+    ],
+    "kanji": "賁",
+    "subElements": [
+      "cross"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "decorate"
+    ],
+    "comment": "not a RTK or WK kanji, but the kanji exists."
+  },
   "negative": {
     "elements": [
       "ceiling",
@@ -3000,6 +3014,24 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "benefit"
+    ]
+  },
+  "state of mind": {
+    "elements": [
+      "drop",
+      "stick",
+      "drop"
+    ],
+    "kanji": "忄",
+    "subElements": [
+      "drop",
+      "stick",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "soul"
     ]
   },
   "umbrella": {

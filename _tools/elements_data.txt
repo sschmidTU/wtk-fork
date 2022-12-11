@@ -144,6 +144,7 @@ heavens; 天; heaven
 dart; 矢; arrow; c(heavens, drop)
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 flowers; 艹, 若 top part; flowers
+decorate; 賁; decorate; t(cross, flowers, shellfish) // not a RTK or WK kanji, but the kanji exists.
 negative=negation; 不; not; t(ceiling, c(person, stick))
 water=water droplets=water pistol; 氵; tsunami
 grains of rice; 米, 氺, 録 bottom right part; water // multiple shapes in RTK, but mainly 氺, which is water in WK.
@@ -180,6 +181,7 @@ extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not 
 old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 i; 吾; i; t(five, mouth)
 benefit; 益; benefit; t(horns, one, animal legs, dish)
+state of mind; 忄; soul; l(drop, stick, drop)
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 𠆢, 全 top part; hat
 moon=month=flesh=part of the body; 月; moon
