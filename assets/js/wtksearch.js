@@ -1052,7 +1052,7 @@ class WTKSearch {
       "chastity": "upright",
       "member": "employee",
       "origin": "beginning",
-      "geoduck": "page",
+      "geoduck": "head", // or page
       "paragraph": "phrase", //p41
       "season": "decameron", //p41
       "pool": "ladle", //p42

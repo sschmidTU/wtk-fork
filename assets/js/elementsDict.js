@@ -1344,6 +1344,49 @@ const elementsDict =
       "squid"
     ]
   },
+  "now": {
+    "elements": [
+      "umbrella",
+      "now",
+      "clothes hanger"
+    ],
+    "kanji": "今",
+    "subElements": [
+      "umbrella",
+      "now",
+      "clothes hanger",
+      "coat hanger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "now"
+    ]
+  },
+  "head": {
+    "elements": [
+      "ground",
+      "oneself",
+      "animal legs"
+    ],
+    "elementsWK": "leafWK",
+    "kanji": "頁",
+    "subElements": [
+      "ground",
+      "oneself",
+      "animal legs",
+      "drop",
+      "eye",
+      "nose",
+      "drops",
+      "page"
+    ],
+    "synonyms": [
+      "page"
+    ],
+    "wkNames": [
+      "geoduck"
+    ]
+  },
   "glue": {
     "elements": [
       "ten",
