@@ -142,6 +142,21 @@ const elementsDict =
       "cow"
     ]
   },
+  "revelation": {
+    "elements": [
+      "cow",
+      "mouth"
+    ],
+    "kanji": "告",
+    "subElements": [
+      "cow",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "announce"
+    ]
+  },
   "before": {
     "elements": [
       "cow",
@@ -466,6 +481,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "all"
+    ]
+  },
+  "un-": {
+    "elements": [
+      "animal legs",
+      "shape",
+      "three"
+    ],
+    "kanji": "非",
+    "subElements": [
+      "animal legs",
+      "shape",
+      "three",
+      "jail cell",
+      "prison bars"
+    ],
+    "synonyms": [
+      "jail cell",
+      "prison bars"
+    ],
+    "wkNames": [
+      "injustice"
     ]
   },
   "nine": {
