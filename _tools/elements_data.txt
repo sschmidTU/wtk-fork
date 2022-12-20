@@ -8,7 +8,7 @@ power=muscle=arnold; 力; power
 add; 加; add; l(power, mouth)
 noon=sign of the horse; 午; noon
 cow; 牛; cow
-before; 先; before; t(cow, human legs)&dropB, soil // the bottom part of the stroke is missing for cow but this is how RTK sees it. WK says slide+soil+legs
+before; 先; before; t(cow, human legs)&dropB, soil // the bottom part of the stroke is missing for cow but RTK says it's still cow. WK says slide+soil+legs
 direction=compass; 方; direction
 taskmaster; 攵, 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
 walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
@@ -111,6 +111,7 @@ horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal le
 little=small; 小; small; o(animal legs, t(stick, hook))
 littleB; 光 top part; triceratops; little
 few; 少; few; t(little, dropB)
+portent; 兆; omen; c(human legs, drop4)&ice
 too much; 余; surplus; t(umbrella, dry, little)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 scarf=garment=clothes; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin)
@@ -120,9 +121,11 @@ eat=food; 食; eat; t(umbrella, good)
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
 road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
+street; 丁; street
 cliff; 厂; cliff
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
-street; 丁; street
+right; 右; right; tl(by one's side, mouth)
+left; 左; left; tl(by one's side, craft)
 can; 可; possible; o(street, mouth)
 strange; 奇; odd; t(large, can)
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
@@ -156,6 +159,7 @@ oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathe
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
 fish; 魚; fish; t(bound up, rice field, oven-fire)
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
+icicle; 壮 left part; turtle
 two; 二; two
 three; 三; three
 shape=three; 彡; hair
@@ -165,7 +169,9 @@ heavens; 天; heaven
 dart; 矢; arrow; c(heavens, drop)
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 flowers; 艹, 若 top part; flowers
+seedling; t(flowers, rice field); seedling
 decorate; 賁; decorate; t(cross, flowers, shellfish) // not a RTK or WK kanji, but the kanji exists.
+graveyard; 莫; greenhouse; t(flowers, sun, large)
 negative=negation; 不; not; t(ceiling, c(person, stick))
 water=water droplets=water pistol; 氵; tsunami
 waterB; 水; water
@@ -229,6 +235,7 @@ personB; 亻; leader // person is more ambiguous in RTK than in WK for a change:
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
 large=St. Bernard; 大; big
 plump; 太, fat; o(large, drop)
+dog; 犬; dog; c(large, drop)
 eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
 salad; 龷, 昔 top part; blackjack; t(flowers, floor)

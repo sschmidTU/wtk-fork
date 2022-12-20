@@ -142,6 +142,28 @@ const elementsDict =
       "cow"
     ]
   },
+  "before": {
+    "elements": [
+      "cow",
+      "human legs"
+    ],
+    "kanji": "先",
+    "subElements": [
+      "cow",
+      "human legs",
+      "dropB",
+      "soil",
+      "drop",
+      "dirt",
+      "ground",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "before"
+    ],
+    "comment": "the bottom part of the stroke is missing for cow but this is how RTK sees it. WK says slide+soil+legs"
+  },
   "direction": {
     "elements": [],
     "kanji": "方",
@@ -1827,6 +1849,27 @@ const elementsDict =
       "few"
     ]
   },
+  "portent": {
+    "elements": [
+      "human legs",
+      "drop4"
+    ],
+    "kanji": "兆",
+    "subElements": [
+      "human legs",
+      "drop4",
+      "ice",
+      "drop",
+      "drop2",
+      "drop",
+      "two",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "omen"
+    ]
+  },
   "too much": {
     "elements": [
       "umbrella",
@@ -1984,6 +2027,15 @@ const elementsDict =
       "迄 left part"
     ]
   },
+  "street": {
+    "elements": [],
+    "kanji": "丁",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "street"
+    ]
+  },
   "cliff": {
     "elements": [],
     "kanji": "厂",
@@ -2017,13 +2069,40 @@ const elementsDict =
     ],
     "comment": "cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke"
   },
-  "street": {
-    "elements": [],
-    "kanji": "丁",
-    "subElements": [],
+  "right": {
+    "elements": [
+      "by one's side",
+      "mouth"
+    ],
+    "kanji": "右",
+    "subElements": [
+      "by one's side",
+      "mouth",
+      "by one’s side"
+    ],
     "synonyms": [],
     "wkNames": [
-      "street"
+      "right"
+    ]
+  },
+  "left": {
+    "elements": [
+      "by one's side",
+      "craft"
+    ],
+    "kanji": "左",
+    "subElements": [
+      "by one's side",
+      "craft",
+      "by one’s side",
+      "ceiling",
+      "stick",
+      "floor",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "left"
     ]
   },
   "can": {
@@ -2543,6 +2622,15 @@ const elementsDict =
     ],
     "comment": "ice is ambiguous in RTK, see 凍 and 冬."
   },
+  "icicle": {
+    "elements": [],
+    "kanji": "壮 left part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "turtle"
+    ]
+  },
   "two": {
     "elements": [],
     "kanji": "二",
@@ -2649,6 +2737,15 @@ const elementsDict =
       "flowers"
     ]
   },
+  "seedling": {
+    "elements": [],
+    "kanji": "t(flowers, rice field)",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "seedling"
+    ]
+  },
   "decorate": {
     "elements": [
       "cross",
@@ -2671,6 +2768,25 @@ const elementsDict =
       "decorate"
     ],
     "comment": "not a RTK or WK kanji, but the kanji exists."
+  },
+  "graveyard": {
+    "elements": [
+      "flowers",
+      "sun",
+      "large"
+    ],
+    "kanji": "莫",
+    "subElements": [
+      "flowers",
+      "sun",
+      "large",
+      "day",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "greenhouse"
+    ]
   },
   "negative": {
     "elements": [
@@ -3725,6 +3841,23 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "o(large, drop)"
+    ]
+  },
+  "dog": {
+    "elements": [
+      "large",
+      "drop"
+    ],
+    "kanji": "犬",
+    "subElements": [
+      "large",
+      "drop",
+      "St. Bernard",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dog"
     ]
   },
   "eight": {
