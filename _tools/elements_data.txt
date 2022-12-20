@@ -162,10 +162,12 @@ by one's side=by one’s side; 左 outer part; narwhal
 possess; 有; have; o(by one's side, moon)
 early=sunflower; 早; early; t(sun, ten)
 mist; 𠦝, 龺, 朝 left part; morning; t(ten, sun, ten)
+morning; 朝; morning; l(mist, moon)
 pack of wild dogs; 狂 left part; animal
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
 gone; 去; past; t(soil, elbow)
+cliff; 厂; cliff
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 resemblance; 肖; resemblance; t(littleB, moon)
 beggar; 丂, 巧 right part; snare // similar to slingshot:  与 without the lower horizontal line (?)
@@ -210,6 +212,7 @@ person; 人; person // person is more ambiguous in RTK than in WK for a change: 
 personB; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
 large=St. Bernard; 大; big
+plump; 太, fat; o(large, drop)
 eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
 salad; 龷, 昔 top part; blackjack; t(flowers, floor)
@@ -240,6 +243,7 @@ stick; ｜, 旧 left part; stick // basically any vertical line
 pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 wind; 几, 冗 bottom part; table
+mediocre; 凡; o(wind, drop)
 crotch; 又; stool
 elbow; 厶; private
 spoon=sitting on the ground; 匕; spoon

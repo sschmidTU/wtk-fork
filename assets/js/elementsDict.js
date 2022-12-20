@@ -2635,6 +2635,28 @@ const elementsDict =
       "morning"
     ]
   },
+  "morning": {
+    "elements": [
+      "mist",
+      "moon"
+    ],
+    "kanji": "朝",
+    "subElements": [
+      "mist",
+      "moon",
+      "ten",
+      "sun",
+      "needle",
+      "day",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "morning"
+    ]
+  },
   "pack of wild dogs": {
     "elements": [],
     "kanji": "狂 left part",
@@ -2700,6 +2722,15 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "past"
+    ]
+  },
+  "cliff": {
+    "elements": [],
+    "kanji": "厂",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "cliff"
     ]
   },
   "stone": {
@@ -3453,6 +3484,15 @@ const elementsDict =
       "big"
     ]
   },
+  "plump": {
+    "elements": [],
+    "kanji": "太, fat",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "o(large, drop)"
+    ]
+  },
   "eight": {
     "elements": [],
     "kanji": "八",
@@ -3836,6 +3876,15 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "table"
+    ]
+  },
+  "mediocre": {
+    "elements": [],
+    "kanji": "凡",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "o(wind, drop)"
     ]
   },
   "crotch": {
