@@ -2339,6 +2339,21 @@ const elementsDict =
       "yakuza"
     ]
   },
+  "name": {
+    "elements": [
+      "evening",
+      "mouth"
+    ],
+    "kanji": "名",
+    "subElements": [
+      "evening",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "name"
+    ]
+  },
   "show": {
     "elements": [
       "two",
@@ -4258,6 +4273,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "dare"
+    ]
+  },
+  "neck": {
+    "elements": [
+      "horns",
+      "one",
+      "oneself"
+    ],
+    "kanji": "首",
+    "subElements": [
+      "horns",
+      "one",
+      "oneself",
+      "animal horns",
+      "drop",
+      "eye",
+      "drops",
+      "nose"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "neck"
     ]
   },
   "rice field": {

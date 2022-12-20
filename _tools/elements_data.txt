@@ -142,6 +142,7 @@ saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overl
 evening; 夕; evening
 many; 多; many; t(evening, evening)
 bones; 歹, 残 left part; yakuza; t(ceiling, evening)
+name; 名; name; t(evening, mouth)
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
 beginning; 元; origin; t(two, human legs); piWK
 altar; 礻, 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right
@@ -265,6 +266,7 @@ ear; 耳; ear
 shelf; 且, 助 left part; top hat; c(eye, one) // this is not (always) perfectly RTK(eye)+RTK(one), but close enough.
 prosperous; 昌; prosperous; t(sun, sun)
 risk; 冒; dare; t(sun, eye)
+neck; 首; neck; t(horns, one, oneself)
 rice field=brains; 田; rice field
 soil=dirt=ground; 土; dirt
 samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal strong is longer than the lower one here.
