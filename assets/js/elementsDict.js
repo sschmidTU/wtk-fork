@@ -1310,6 +1310,15 @@ const elementsDict =
     ],
     "comment": "RTK: a more specific name for fishhook when it's straight"
   },
+  "straightaway": {
+    "elements": [],
+    "kanji": "直",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "t(ten, eye, straightened hook)"
+    ]
+  },
   "complete": {
     "elements": [
       ""
@@ -3319,6 +3328,29 @@ const elementsDict =
     ],
     "comment": "similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer"
   },
+  "vermillion": {
+    "elements": [
+      "not yet",
+      "dropB"
+    ],
+    "kanji": "朱",
+    "subElements": [
+      "not yet",
+      "dropB",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "vermillion"
+    ]
+  },
   "old": {
     "elements": [
       "ten",
@@ -3452,7 +3484,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "companion"
-    ]
+    ],
+    "comment": "kanji/radical not on WK"
   },
   "bright": {
     "elements": [
@@ -3586,6 +3619,22 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "t(tree, l(tree, tree))"
+    ]
+  },
+  "book": {
+    "elements": [
+      "tree",
+      "one"
+    ],
+    "kanji": "本",
+    "subElements": [
+      "tree",
+      "one",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "book"
     ]
   },
   "woman": {
@@ -3876,6 +3925,36 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "mouth"
+    ]
+  },
+  "goods": {
+    "elements": [
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "kanji": "品",
+    "subElements": [
+      "mouth",
+      "mouth",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "product"
+    ]
+  },
+  "furniture": {
+    "elements": [],
+    "kanji": "操 right part",
+    "subElements": [
+      "wooden goods"
+    ],
+    "synonyms": [
+      "wooden goods"
+    ],
+    "wkNames": [
+      "t(goods, tree)"
     ]
   },
   "sun": {

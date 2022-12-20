@@ -78,6 +78,7 @@ owl; 桜 top right part, 巣 top part; grass; drop3
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
+straightaway; 直; t(ten, eye, straightened hook)
 complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
@@ -199,6 +200,7 @@ summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK
 husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length
 not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
+vermillion; 朱; vermillion; c(not yet, dropB)
 old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 i; 吾; i; t(five, mouth)
 benefit; 益; benefit; t(horns, one, animal legs, dish)
@@ -207,7 +209,7 @@ elder brother; 兄; older brother; t(mouth, human legs)
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 𠆢, 全 top part; hat
 moon=month=flesh=part of the body; 月; moon
-companion; 朋; companion; l(moon, moon)
+companion; 朋; companion; l(moon, moon) // kanji/radical not on WK
 bright; 明; bright; l(sun, moon)
 child; 子; child
 finger=fingers; 扌, 招 left part; fingers
@@ -218,6 +220,7 @@ pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other element
 tree=wood; 木; tree
 grove; 林; l(tree, tree)
 forest; 森; t(tree, l(tree, tree))
+book; 本; book; c(tree, one)
 woman; 女; woman
 mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
 person; 人; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
@@ -240,6 +243,8 @@ maestro; 師 left part; drop&bear
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
 stop=footprint; 止; stop
 mouth; 口; mouth
+goods; 品; product; t(mouth, l(mouth, mouth))
+furniture=wooden goods; 操 right part; t(goods, tree)
 sun=day; 日; sun
 mortar; 臼; sun // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
