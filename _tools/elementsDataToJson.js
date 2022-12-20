@@ -160,9 +160,11 @@ function processFile(fileString) {
     });
 }
 
+// TODO duplicated code with search.js
 function removeStructure(elementsTreeString) {
     return elementsTreeString.replaceAll(/[trlb][trlb]\(/g, "")
         .replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll("c(","")
+        .replaceAll("f(", "") // flanked: e.g. 火 = f(fire, drop, drop) = fire flanked by drop, drop
         .replaceAll(")","");
 }
 

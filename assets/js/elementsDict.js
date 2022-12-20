@@ -1473,13 +1473,13 @@ const elementsDict =
   "now": {
     "elements": [
       "umbrella",
-      "now",
+      "one",
       "clothes hanger"
     ],
     "kanji": "今",
     "subElements": [
       "umbrella",
-      "now",
+      "one",
       "clothes hanger",
       "coat hanger"
     ],
@@ -2509,14 +2509,14 @@ const elementsDict =
   },
   "fire": {
     "elements": [
-      "drop",
       "person",
+      "drop",
       "drop"
     ],
     "kanji": "火",
     "subElements": [
-      "drop",
       "person",
+      "drop",
       "drop",
       "drops"
     ],
@@ -2524,7 +2524,7 @@ const elementsDict =
     "wkNames": [
       "fire"
     ],
-    "comment": "TODO maybe make new structure f (flanking): f(fire, drop, drop)"
+    "comment": "fire flanked by drop, drop"
   },
   "inflammation": {
     "elements": [],

@@ -88,7 +88,7 @@ bonsai; 𡗗, 秦 or 寿 upper part; spring
 spring; 泉; spring; t(white, water)
 meadow; 原; original; o(cliff, spring)
 awl; 㑒; squid
-now; 今; now; t(umbrella, now, clothes hanger)
+now; 今; now; t(umbrella, one, clothes hanger)
 head=page; 頁; geoduck; t(ground, oneself, animal legs); leafWK
 stinking; 臭; stinking; t(oneself, large)
 rule; l(shellfish, knife); rule
@@ -153,7 +153,7 @@ sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // thi
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)
 ladle; 勺; ladle; o(bound up, drop)
-fire; 火; fire; l(drop, person, drop) // TODO maybe make new structure f (flanking): f(fire, drop, drop)
+fire; 火; fire; f(person, drop, drop) // fire flanked by drop, drop
 inflammation; 炎; t(fire, fire)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
