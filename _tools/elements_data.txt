@@ -25,7 +25,9 @@ infant=toddler; 𠫓, 育 top part; trash; t(top hat, elbow) // WK doesn't diffe
 climax; 至; mole; t(wall, soil)
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
+lord; 主; master; t(drop, king)
 emperor; 皇; emperor; t(white, king)
+whole; 全; all; t(umbrella, king)
 nine=baseball; 九; nine
 ten=needle; 十; ten&cross
 thousand=one thousand; 千; thousand; t(drop, ten); slideWK
@@ -115,6 +117,7 @@ portent; 兆; omen; c(human legs, drop4)&ice
 too much; 余; surplus; t(umbrella, dry, little)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 scarf=garment=clothes; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin)
+gold; 金; gold; t(umbrella, c(king, drop2))
 silver; 銀 right part; root; t(sun, hairpin) 
 good; 良; good; t(drop, silver)
 eat=food; 食; eat; t(umbrella, good)

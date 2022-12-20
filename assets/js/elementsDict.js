@@ -418,6 +418,22 @@ const elementsDict =
     ],
     "comment": "my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel."
   },
+  "lord": {
+    "elements": [
+      "drop",
+      "king"
+    ],
+    "kanji": "主",
+    "subElements": [
+      "drop",
+      "king",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "master"
+    ]
+  },
   "emperor": {
     "elements": [
       "white",
@@ -435,6 +451,21 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "emperor"
+    ]
+  },
+  "whole": {
+    "elements": [
+      "umbrella",
+      "king"
+    ],
+    "kanji": "全",
+    "subElements": [
+      "umbrella",
+      "king"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "all"
     ]
   },
   "nine": {
@@ -1928,6 +1959,25 @@ const elementsDict =
     ],
     "wkNames": [
       "clothes"
+    ]
+  },
+  "gold": {
+    "elements": [
+      "umbrella",
+      "king",
+      "drop2"
+    ],
+    "kanji": "金",
+    "subElements": [
+      "umbrella",
+      "king",
+      "drop2",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "gold"
     ]
   },
   "silver": {
