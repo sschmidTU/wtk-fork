@@ -159,7 +159,7 @@ oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathe
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
 fish; 魚; fish; t(bound up, rice field, oven-fire)
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
-icicle; 壮 left part; turtle
+turtle; 壮 left part; icicle
 two; 二; two
 three; 三; three
 shape=three; 彡; hair

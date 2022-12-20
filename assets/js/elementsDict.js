@@ -162,7 +162,7 @@ const elementsDict =
     "wkNames": [
       "before"
     ],
-    "comment": "the bottom part of the stroke is missing for cow but this is how RTK sees it. WK says slide+soil+legs"
+    "comment": "the bottom part of the stroke is missing for cow but RTK says it's still cow. WK says slide+soil+legs"
   },
   "direction": {
     "elements": [],
@@ -2622,13 +2622,13 @@ const elementsDict =
     ],
     "comment": "ice is ambiguous in RTK, see 凍 and 冬."
   },
-  "icicle": {
+  "turtle": {
     "elements": [],
     "kanji": "壮 left part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
-      "turtle"
+      "icicle"
     ]
   },
   "two": {
