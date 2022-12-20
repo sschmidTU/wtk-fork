@@ -679,6 +679,45 @@ const elementsDict =
       "see"
     ]
   },
+  "tool": {
+    "elements": [
+      "ceiling",
+      "animal legs"
+    ],
+    "kanji": "具 bottom part",
+    "subElements": [
+      "ceiling",
+      "animal legs",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ground",
+      "fins"
+    ],
+    "comment": "this is 具 minus the eye. doesn't exist in WK (ground + fins). TODO maybe t(ground, fins) for WK?"
+  },
+  "true": {
+    "elements": [
+      "ten",
+      "eye",
+      "tool"
+    ],
+    "kanji": "真",
+    "subElements": [
+      "ten",
+      "eye",
+      "tool",
+      "needle",
+      "ceiling",
+      "animal legs",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "reality"
+    ]
+  },
   "old west": {
     "elements": [],
     "kanji": "要 top part, 価 right part",
@@ -1473,6 +1512,19 @@ const elementsDict =
     ],
     "wkNames": [
       "measurement"
+    ]
+  },
+  "temple": {
+    "elements": [],
+    "kanji": "寺",
+    "subElements": [
+      "Buddhist temple"
+    ],
+    "synonyms": [
+      "Buddhist temple"
+    ],
+    "wkNames": [
+      "temple"
     ]
   },
   "specialty": {
@@ -2315,6 +2367,25 @@ const elementsDict =
       "ladle"
     ]
   },
+  "fire": {
+    "elements": [
+      "drop",
+      "person",
+      "drop"
+    ],
+    "kanji": "火",
+    "subElements": [
+      "drop",
+      "person",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "fire"
+    ],
+    "comment": "TODO maybe make new structure f (flanking): f(fire, drop, drop)"
+  },
   "oven-fire": {
     "elements": [
       "drop4"
@@ -2915,24 +2986,6 @@ const elementsDict =
       "chair"
     ],
     "comment": "doesn't exist in WK, only the straightened hook (lion) part"
-  },
-  "tool": {
-    "elements": [
-      "ceiling",
-      "animal legs"
-    ],
-    "kanji": "具 bottom part",
-    "subElements": [
-      "ceiling",
-      "animal legs",
-      "one"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "ground",
-      "fins"
-    ],
-    "comment": "this is 具 minus the eye. doesn't exist in WK (ground + fins). TODO maybe t(ground, fins) for WK?"
   },
   "nightbreak": {
     "elements": [
@@ -3885,6 +3938,26 @@ const elementsDict =
       "samurai"
     ],
     "comment": "similar to dirt, but the upper horizontal strong is longer than the lower one here."
+  },
+  "square jewel": {
+    "elements": [
+      "soil",
+      "soil"
+    ],
+    "kanji": "圭",
+    "subElements": [
+      "soil",
+      "soil",
+      "dirt",
+      "ground",
+      "squared jewel"
+    ],
+    "synonyms": [
+      "squared jewel"
+    ],
+    "wkNames": [
+      "square jewel"
+    ]
   },
   "stick": {
     "elements": [],
