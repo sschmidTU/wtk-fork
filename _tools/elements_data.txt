@@ -8,6 +8,7 @@ power=muscle=arnold; 力; power
 add; 加; add; l(power, mouth)
 noon=sign of the horse; 午; noon
 cow; 牛; cow
+revelation; 告; announce; t(cow, mouth)
 before; 先; before; t(cow, human legs)&dropB, soil // the bottom part of the stroke is missing for cow but RTK says it's still cow. WK says slide+soil+legs
 direction=compass; 方; direction
 taskmaster; 攵, 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
@@ -28,6 +29,7 @@ jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors w
 lord; 主; master; t(drop, king)
 emperor; 皇; emperor; t(white, king)
 whole; 全; all; t(umbrella, king)
+un-=jail cell=prison bars; 非; injustice; f(animal legs, shape, three)
 nine=baseball; 九; nine
 ten=needle; 十; ten&cross
 thousand=one thousand; 千; thousand; t(drop, ten); slideWK
