@@ -81,6 +81,7 @@ meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is �
 fit; 合; suit; t(meeting, mouth)
 bonsai; 𡗗, 秦 or 寿 upper part; spring
 spring; 泉; spring; t(white, water)
+meadow; 原; original; o(cliff, spring)
 awl; 㑒; squid
 now; 今; now; t(umbrella, now, clothes hanger)
 head=page; 頁; geoduck; t(ground, oneself, animal legs); leafWK
@@ -112,6 +113,7 @@ four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's 
 road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
 street; 丁; street
+can; 可; possible; o(street, mouth)
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going; loiterWK // used when there's something in the middle/inner.
 goingB; 彳; loiter
@@ -151,6 +153,8 @@ flowers; 艹, 若 top part; flowers
 decorate; 賁; decorate; t(cross, flowers, shellfish) // not a RTK or WK kanji, but the kanji exists.
 negative=negation; 不; not; t(ceiling, c(person, stick))
 water=water droplets=water pistol; 氵; tsunami
+waterB; 水; water
+eternity; 永; eternity; t(drop, waterB)
 grains of rice; 米, 氺, 録 bottom right part; water // multiple shapes in RTK, but mainly 氺, which is water in WK.
 deceased=perish; 亡; death; t(top hat, straightened hook)
 genius=genie; 才, 在 outer part; genius; t(c(ten, drop), hook); slideWK

@@ -1349,6 +1349,29 @@ const elementsDict =
       "spring"
     ]
   },
+  "meadow": {
+    "elements": [
+      "cliff",
+      "spring"
+    ],
+    "kanji": "原",
+    "subElements": [
+      "cliff",
+      "spring",
+      "white",
+      "water",
+      "drop",
+      "sun",
+      "drops",
+      "day",
+      "water droplets",
+      "water pistol"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "original"
+    ]
+  },
   "awl": {
     "elements": [],
     "kanji": "㑒",
@@ -1859,6 +1882,21 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "street"
+    ]
+  },
+  "can": {
+    "elements": [
+      "street",
+      "mouth"
+    ],
+    "kanji": "可",
+    "subElements": [
+      "street",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "possible"
     ]
   },
   "going": {
@@ -2441,6 +2479,31 @@ const elementsDict =
     ],
     "wkNames": [
       "tsunami"
+    ]
+  },
+  "waterB": {
+    "elements": [],
+    "kanji": "水",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "water"
+    ]
+  },
+  "eternity": {
+    "elements": [
+      "drop",
+      "waterB"
+    ],
+    "kanji": "永",
+    "subElements": [
+      "drop",
+      "waterB",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "eternity"
     ]
   },
   "grains of rice": {
