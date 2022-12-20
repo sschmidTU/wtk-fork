@@ -1674,6 +1674,27 @@ const elementsDict =
       "triceratops"
     ]
   },
+  "few": {
+    "elements": [
+      "little",
+      "dropB"
+    ],
+    "kanji": "少",
+    "subElements": [
+      "little",
+      "dropB",
+      "animal legs",
+      "stick",
+      "hook",
+      "small",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "few"
+    ]
+  },
   "too much": {
     "elements": [
       "umbrella",

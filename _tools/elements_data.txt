@@ -101,6 +101,7 @@ animal legs; ハ, 只 bottom part; fins // don't confuse with RTK(animal legs), 
 horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 little=small; 小; small; o(animal legs, t(stick, hook))
 littleB; 光 top part; triceratops; little
+few; 少; few; t(little, dropB)
 too much; 余; surplus; t(umbrella, dry, little)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 scarf=garment=clothes; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin)
