@@ -212,6 +212,21 @@ const elementsDict =
     ],
     "comment": "top horizontal stroke doesn't go \"over the edge\""
   },
+  "each": {
+    "elements": [
+      "walking legs",
+      "mouth"
+    ],
+    "kanji": "各",
+    "subElements": [
+      "walking legs",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "each"
+    ]
+  },
   "leg": {
     "elements": [
       "mouth",
@@ -2075,6 +2090,26 @@ const elementsDict =
     "wkNames": [
       "eat"
     ]
+  },
+  "butcher": {
+    "elements": [],
+    "kanji": "前 bottom part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "butcher"
+    ],
+    "comment": "butcher doesn't exist in WK, added here."
+  },
+  "meeting of butchers": {
+    "elements": [],
+    "kanji": "兪",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "death star"
+    ],
+    "comment": "there is a subtle variation: either moon knife or moon flood. seems to depend on font as well (like 喩・喻), so might be ok to take this as the same element."
   },
   "four": {
     "elements": [

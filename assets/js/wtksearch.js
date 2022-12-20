@@ -1414,7 +1414,7 @@ class WTKSearch {
       "animal": "pack of wild dogs", // some koohii users write just 'pack of dogs', which also works with lunr btw
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "meeting&moon&saber", // or meeting of butchers. or meeting moon flood, but unnecessary for now. or convoy
+      "deathstar": "meeting of butchers", // or meeting&moon&saber. or meeting moon flood, but unnecessary for now. or convoy
       // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
       "dirt mouth": "lidded crock",
       //"brush": "brush",

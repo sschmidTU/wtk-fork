@@ -13,6 +13,7 @@ before; 先; before; t(cow, human legs)&dropB, soil // the bottom part of the st
 direction=compass; 方; direction
 taskmaster; 攵, 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
 walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
+each; 各; each; t(walking legs, mouth)
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
 mending=mend; 疋, 足 bottom part; coat rack
 zoo=critters; 蛋 top part, 旋 bottom right part, 疏 left part; coat rack // coat rack in WK is both zoo and mending
@@ -123,6 +124,8 @@ gold; 金; gold; t(umbrella, c(king, drop2))
 silver; 銀 right part; root; t(sun, hairpin) 
 good; 良; good; t(drop, silver)
 eat=food; 食; eat; t(umbrella, good)
+butcher; 前 bottom part; butcher // butcher doesn't exist in WK, added here.
+meeting of butchers; 兪; death star // there is a subtle variation: either moon knife or moon flood. seems to depend on font as well (like 喩・喻), so might be ok to take this as the same element.
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
 road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
