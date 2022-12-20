@@ -73,6 +73,7 @@ cadet; 曹; official; t(c(bend, one), sun)
 beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
 crown; 冗 top part; forehead
 hood; 冂; head
+same; 同; same; o(hood, t(ceiling, mouth)); creeperWK
 owl; 桜 top right part, 巣 top part; grass; drop3
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
@@ -117,6 +118,8 @@ eat=food; 食; eat; t(umbrella, good)
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
 road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
+cliff; 厂; cliff
+stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 street; 丁; street
 can; 可; possible; o(street, mouth)
 strange; 奇; odd; t(large, can)
@@ -146,11 +149,14 @@ clothes hanger=coat hanger; 𠃌, 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)
 ladle; 勺; ladle; o(bound up, drop)
 fire; 火; fire; l(drop, person, drop) // TODO maybe make new structure f (flanking): f(fire, drop, drop)
+inflammation; 炎; t(fire, fire)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
+fish; 魚; fish; t(bound up, rice field, oven-fire)
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
 two; 二; two
 three; 三; three
+shape=three; 彡; hair
 six; 六; six; t(top hat, animal legs)
 seven=diced; 七; seven
 heavens; 天; heaven
@@ -174,8 +180,6 @@ pack of wild dogs; 狂 left part; animal
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
 gone; 去; past; t(soil, elbow)
-cliff; 厂; cliff
-stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 resemblance; 肖; resemblance; t(littleB, moon)
 beggar; 丂, 巧 right part; snare // similar to slingshot:  与 without the lower horizontal line (?)
 mutually=mutual=broken broom; 互 middle part; mutual
@@ -212,6 +216,8 @@ wheat=cereal; 禾, 和 left part; grain; t(drop, tree); slideWK
 top hat; 亠, 京 top part; lid; t(drop, one)
 pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
 tree=wood; 木; tree
+grove; 林; l(tree, tree)
+forest; 森; t(tree, l(tree, tree))
 woman; 女; woman
 mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
 person; 人; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.

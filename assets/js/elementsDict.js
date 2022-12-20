@@ -1222,6 +1222,25 @@ const elementsDict =
       "head"
     ]
   },
+  "same": {
+    "elements": [
+      "hood",
+      "ceiling",
+      "mouth"
+    ],
+    "elementsWK": "creeperWK",
+    "kanji": "同",
+    "subElements": [
+      "hood",
+      "ceiling",
+      "mouth",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "same"
+    ]
+  },
   "owl": {
     "elements": [
       "drop3"
@@ -1956,6 +1975,39 @@ const elementsDict =
       "迄 left part"
     ]
   },
+  "cliff": {
+    "elements": [],
+    "kanji": "厂",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "cliff"
+    ]
+  },
+  "stone": {
+    "elements": [
+      "ceiling",
+      "drop",
+      "mouth"
+    ],
+    "elementsWK": "leafWK, slideWK",
+    "kanji": "石, 砂 left part",
+    "subElements": [
+      "ceiling",
+      "drop",
+      "mouth",
+      "one",
+      "drops",
+      "rock"
+    ],
+    "synonyms": [
+      "rock"
+    ],
+    "wkNames": [
+      "stone"
+    ],
+    "comment": "cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke"
+  },
   "street": {
     "elements": [],
     "kanji": "丁",
@@ -2386,6 +2438,15 @@ const elementsDict =
     ],
     "comment": "TODO maybe make new structure f (flanking): f(fire, drop, drop)"
   },
+  "inflammation": {
+    "elements": [],
+    "kanji": "炎",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "t(fire, fire)"
+    ]
+  },
   "oven-fire": {
     "elements": [
       "drop4"
@@ -2429,6 +2490,32 @@ const elementsDict =
     ],
     "comment": "Note that this radical in RTK explicitly includes the フ shape around the \"oven-fire\"-like short strokes. don't confuse with oven-fire (RTK) radical."
   },
+  "fish": {
+    "elements": [
+      "bound up",
+      "rice field",
+      "oven-fire"
+    ],
+    "kanji": "魚",
+    "subElements": [
+      "bound up",
+      "rice field",
+      "oven-fire",
+      "clothes hanger",
+      "drop",
+      "coat hanger",
+      "drops",
+      "brains",
+      "drop4",
+      "drop",
+      "oven fire",
+      "barbecue"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "fish"
+    ]
+  },
   "ice": {
     "elements": [
       "drop2",
@@ -2463,6 +2550,19 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "three"
+    ]
+  },
+  "shape": {
+    "elements": [],
+    "kanji": "彡",
+    "subElements": [
+      "three"
+    ],
+    "synonyms": [
+      "three"
+    ],
+    "wkNames": [
+      "hair"
     ]
   },
   "six": {
@@ -2841,39 +2941,6 @@ const elementsDict =
     "wkNames": [
       "past"
     ]
-  },
-  "cliff": {
-    "elements": [],
-    "kanji": "厂",
-    "subElements": [],
-    "synonyms": [],
-    "wkNames": [
-      "cliff"
-    ]
-  },
-  "stone": {
-    "elements": [
-      "ceiling",
-      "drop",
-      "mouth"
-    ],
-    "elementsWK": "leafWK, slideWK",
-    "kanji": "石, 砂 left part",
-    "subElements": [
-      "ceiling",
-      "drop",
-      "mouth",
-      "one",
-      "drops",
-      "rock"
-    ],
-    "synonyms": [
-      "rock"
-    ],
-    "wkNames": [
-      "stone"
-    ],
-    "comment": "cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke"
   },
   "resemblance": {
     "elements": [
@@ -3501,6 +3568,24 @@ const elementsDict =
     ],
     "wkNames": [
       "tree"
+    ]
+  },
+  "grove": {
+    "elements": [],
+    "kanji": "林",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "l(tree, tree)"
+    ]
+  },
+  "forest": {
+    "elements": [],
+    "kanji": "森",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "t(tree, l(tree, tree))"
     ]
   },
   "woman": {
