@@ -71,7 +71,7 @@ function processFile(fileString) {
             // TODO maybe avoid duplicates? e.g. 昌 adds sun twice
             subElements = [...mainElements]; // shallow copy
             if (structureSubelementSplit.length > 1) {
-                subElements = subElements.concat(structureSubelementSplit[1].split(","));
+                subElements = subElements.concat(structureSubelementSplit[1].split(",").map(a => a.trim()));
             }
             for (const subElementRaw of subElements) {
                 const subElement = subElementRaw.trim();
