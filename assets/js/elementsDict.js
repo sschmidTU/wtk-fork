@@ -1424,6 +1424,35 @@ const elementsDict =
       "geoduck"
     ]
   },
+  "stinking": {
+    "elements": [
+      "oneself",
+      "large"
+    ],
+    "kanji": "臭",
+    "subElements": [
+      "oneself",
+      "large",
+      "drop",
+      "eye",
+      "nose",
+      "St. Bernard",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "stinking"
+    ]
+  },
+  "rule": {
+    "elements": [],
+    "kanji": "l(shellfish, knife)",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "rule"
+    ]
+  },
   "glue": {
     "elements": [
       "ten",
@@ -1897,6 +1926,24 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "possible"
+    ]
+  },
+  "strange": {
+    "elements": [
+      "large",
+      "can"
+    ],
+    "kanji": "奇",
+    "subElements": [
+      "large",
+      "can",
+      "St. Bernard",
+      "street",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "odd"
     ]
   },
   "going": {

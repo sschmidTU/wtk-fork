@@ -85,6 +85,8 @@ meadow; 原; original; o(cliff, spring)
 awl; 㑒; squid
 now; 今; now; t(umbrella, now, clothes hanger)
 head=page; 頁; geoduck; t(ground, oneself, animal legs); leafWK
+stinking; 臭; stinking; t(oneself, large)
+rule; l(shellfish, knife); rule
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
 specialty; 専; specialty; t(ten, rice field, glue)
 generation=generations; 世; world
@@ -114,6 +116,7 @@ road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
 street; 丁; street
 can; 可; possible; o(street, mouth)
+strange; 奇; odd; t(large, can)
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going; loiterWK // used when there's something in the middle/inner.
 goingB; 彳; loiter
