@@ -224,7 +224,8 @@ const elementsDict =
     ],
     "synonyms": [],
     "wkNames": [
-      "each"
+      "each",
+      "kiss"
     ]
   },
   "leg": {
