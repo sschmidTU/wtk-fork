@@ -3567,6 +3567,22 @@ const elementsDict =
       "hat"
     ]
   },
+  "jammed in": {
+    "elements": [
+      "umbrella",
+      "human legs"
+    ],
+    "kanji": "介",
+    "subElements": [
+      "umbrella",
+      "human legs",
+      "stick"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "jammed in"
+    ]
+  },
   "moon": {
     "elements": [],
     "kanji": "月",

@@ -213,8 +213,9 @@ i; 吾; i; t(five, mouth)
 benefit; 益; benefit; t(horns, one, animal legs, dish)
 state of mind; 忄; soul; l(drop, stick, drop)
 elder brother; 兄; older brother; t(mouth, human legs)
-// "primitives": (in the sense that there usually isn't a significant subdivision of them)
+// "primitives" (mostly): (in the sense that there usually isn't a significant subdivision of them) (otherwise, grouped by similarity)
 umbrella; 𠆢, 全 top part; hat
+jammed in; 介; jammed in; t(umbrella, human legs)&stick
 moon=month=flesh=part of the body; 月; moon
 companion; 朋; companion; l(moon, moon) // kanji/radical not on WK
 bright; 明; bright; l(sun, moon)
