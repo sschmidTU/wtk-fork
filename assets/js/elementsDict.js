@@ -228,6 +228,23 @@ const elementsDict =
       "kiss"
     ]
   },
+  "guest": {
+    "elements": [
+      "house",
+      "each"
+    ],
+    "kanji": "客",
+    "subElements": [
+      "house",
+      "each",
+      "walking legs",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "guest"
+    ]
+  },
   "leg": {
     "elements": [
       "mouth",
@@ -4346,6 +4363,26 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "dare"
+    ]
+  },
+  "hundred": {
+    "elements": [
+      "ceiling",
+      "white"
+    ],
+    "kanji": "百",
+    "subElements": [
+      "ceiling",
+      "white",
+      "one",
+      "drop",
+      "sun",
+      "drops",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "hundred"
     ]
   },
   "neck": {
