@@ -934,6 +934,20 @@ const elementsDict =
       "drop"
     ]
   },
+  "dropB": {
+    "elements": [
+      "drop"
+    ],
+    "kanji": "少 bottom part",
+    "subElements": [
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "slide"
+    ]
+  },
   "heart": {
     "elements": [
       "drop3",
@@ -1643,6 +1657,23 @@ const elementsDict =
       "small"
     ]
   },
+  "littleB": {
+    "elements": [
+      "little"
+    ],
+    "kanji": "光 top part",
+    "subElements": [
+      "little",
+      "animal legs",
+      "stick",
+      "hook",
+      "small"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "triceratops"
+    ]
+  },
   "too much": {
     "elements": [
       "umbrella",
@@ -1927,6 +1958,21 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "evening"
+    ]
+  },
+  "many": {
+    "elements": [
+      "evening",
+      "evening"
+    ],
+    "kanji": "多",
+    "subElements": [
+      "evening",
+      "evening"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "many"
     ]
   },
   "bones": {
@@ -2319,11 +2365,20 @@ const elementsDict =
   },
   "decorate": {
     "elements": [
-      "cross"
+      "cross",
+      "flowers",
+      "shellfish"
     ],
     "kanji": "賁",
     "subElements": [
-      "cross"
+      "cross",
+      "flowers",
+      "shellfish",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
     ],
     "synonyms": [],
     "wkNames": [
@@ -2570,7 +2625,7 @@ const elementsDict =
       "mouth"
     ],
     "elementsWK": "leafWK, slideWK",
-    "kanji": "丆, 石, 砂 left part",
+    "kanji": "石, 砂 left part",
     "subElements": [
       "ceiling",
       "drop",
@@ -2584,6 +2639,30 @@ const elementsDict =
     ],
     "wkNames": [
       "stone"
+    ],
+    "comment": "cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke"
+  },
+  "resemblance": {
+    "elements": [
+      "littleB",
+      "moon"
+    ],
+    "kanji": "肖",
+    "subElements": [
+      "littleB",
+      "moon",
+      "little",
+      "animal legs",
+      "stick",
+      "hook",
+      "small",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "resemblance"
     ]
   },
   "beggar": {
@@ -3032,6 +3111,21 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "soul"
+    ]
+  },
+  "elder brother": {
+    "elements": [
+      "mouth",
+      "human legs"
+    ],
+    "kanji": "兄",
+    "subElements": [
+      "mouth",
+      "human legs"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "older brother"
     ]
   },
   "umbrella": {

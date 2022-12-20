@@ -55,6 +55,7 @@ towel; 巾; towel
 apron; 婦 bottom right part, 帯 bottom+middle part; forehead&towel; t(crown, towel) 
 sovereign; 帝; sovereign; t(stand up, apron)
 drop=drops; 丶, 白 top part; drop
+dropB; 少 bottom part; slide; drop
 heart; 心; heart; o(drop3, fishhook)
 box; 匚, 区 outer part; cage
 swiss=switzerland=plus=red cross=d-pad; 亞, 亞 middle part, 惡 plus-shaped part between one and one; swiss; convex2, box4, two // doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements
@@ -99,6 +100,7 @@ human legs; 儿; legs
 animal legs; ハ, 只 bottom part; fins // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 little=small; 小; small; o(animal legs, t(stick, hook))
+littleB; 光 top part; triceratops; little
 too much; 余; surplus; t(umbrella, dry, little)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 scarf=garment=clothes; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin)
@@ -118,6 +120,7 @@ reclining=lying down; 𠂉, 乞 top part; gun
 beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here
 evening; 夕; evening
+many; 多; many; t(evening, evening)
 bones; 歹, 残 left part; yakuza; t(ceiling, evening)
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
 beginning; 元; origin; t(two, human legs); piWK
@@ -158,7 +161,8 @@ pack of wild dogs; 狂 left part; animal
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
 gone; 去; past; t(soil, elbow)
-stone=rock; 丆, 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK
+stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
+resemblance; 肖; resemblance; t(littleB, moon)
 beggar; 丂, 巧 right part; snare // similar to slingshot:  与 without the lower horizontal line (?)
 mutually=mutual=broken broom; 互 middle part; mutual
 ri=computer=village; 里; village; t(rice field, soil) // often "computer" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK.
@@ -182,6 +186,7 @@ old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 i; 吾; i; t(five, mouth)
 benefit; 益; benefit; t(horns, one, animal legs, dish)
 state of mind; 忄; soul; l(drop, stick, drop)
+elder brother; 兄; older brother; t(mouth, human legs)
 // "primitives": (in the sense that there usually isn't a significant subdivision of them)
 umbrella; 𠆢, 全 top part; hat
 moon=month=flesh=part of the body; 月; moon
