@@ -85,7 +85,7 @@ owl; 桜 top right part, 巣 top part; grass; drop3
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
-straightaway; 直; t(ten, eye, straightened hook)
+straightaway; 直; fix; t(ten, eye, straightened hook)
 complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
@@ -164,7 +164,7 @@ clothes hanger=coat hanger; 𠃌, 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)
 ladle; 勺; ladle; o(bound up, drop)
 fire; 火; fire; f(person, drop, drop) // fire flanked by drop, drop
-inflammation; 炎; t(fire, fire)
+inflammation; 炎; flame; t(fire, fire)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
 fish; 魚; fish; t(bound up, rice field, oven-fire)
@@ -236,8 +236,8 @@ wheat=cereal; 禾, 和 left part; grain; t(drop, tree); slideWK
 top hat; 亠, 京 top part; lid; t(drop, one)
 pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
 tree=wood; 木; tree
-grove; 林; l(tree, tree)
-forest; 森; t(tree, l(tree, tree))
+grove; 林; forest; l(tree, tree) // honestly this should also be grove in WK. forest in WK is both 林 and 森
+forest; 森; forest; t(tree, grove)
 book; 本; book; c(tree, one)
 woman; 女; woman
 mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
@@ -245,7 +245,7 @@ person; 人; person // person is more ambiguous in RTK than in WK for a change: 
 personB; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
 large=St. Bernard; 大; big
-plump; 太, fat; o(large, drop)
+plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
 eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
@@ -263,7 +263,7 @@ maestro without baton; 㠯, 官 bottom part; bear; mouth2
 stop=footprint; 止; stop
 mouth; 口; mouth
 goods; 品; product; t(mouth, l(mouth, mouth))
-furniture=wooden goods; 操 right part; t(goods, tree)
+furniture=wooden goods; 操 right part; syrup; t(goods, tree)
 sun=day; 日; sun
 mortar; 臼; sun // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
@@ -282,7 +282,7 @@ stick; ｜, 旧 left part; stick // basically any vertical line
 pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 wind; 几, 冗 bottom part; table
-mediocre; 凡; o(wind, drop)
+mediocre; 凡; mediocre; o(wind, drop)
 crotch; 又; stool
 elbow; 厶; private
 spoon=sitting on the ground; 匕; spoon

@@ -63,7 +63,7 @@ function processFile(fileString) {
         }
         const kanji = columns[1].trim();
         const wkNames = columns[2].split("&").map((radical) => radical.trim());
-        for (const wkNameProcessed in wkNames) {
+        for (const wkNameProcessed of wkNames) {
             if (wkNameProcessed.includes("(")) {
                 console.warn(`brackets in wkname in row ${i+1}`);
             }

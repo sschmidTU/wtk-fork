@@ -1434,12 +1434,25 @@ const elementsDict =
     "comment": "RTK: a more specific name for fishhook when it's straight"
   },
   "straightaway": {
-    "elements": [],
+    "elements": [
+      "ten",
+      "eye",
+      "straightened hook"
+    ],
     "kanji": "直",
-    "subElements": [],
+    "subElements": [
+      "ten",
+      "eye",
+      "straightened hook",
+      "needle",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
     "synonyms": [],
     "wkNames": [
-      "t(ten, eye, straightened hook)"
+      "fix"
     ]
   },
   "complete": {
@@ -2682,12 +2695,21 @@ const elementsDict =
     "comment": "fire flanked by drop, drop"
   },
   "inflammation": {
-    "elements": [],
+    "elements": [
+      "fire",
+      "fire"
+    ],
     "kanji": "炎",
-    "subElements": [],
+    "subElements": [
+      "fire",
+      "fire",
+      "person",
+      "drop",
+      "drops"
+    ],
     "synonyms": [],
     "wkNames": [
-      "t(fire, fire)"
+      "flame"
     ]
   },
   "oven-fire": {
@@ -3891,21 +3913,36 @@ const elementsDict =
     ]
   },
   "grove": {
-    "elements": [],
+    "elements": [
+      "tree",
+      "tree"
+    ],
     "kanji": "林",
-    "subElements": [],
+    "subElements": [
+      "tree",
+      "tree",
+      "wood"
+    ],
     "synonyms": [],
     "wkNames": [
-      "l(tree, tree)"
-    ]
+      "forest"
+    ],
+    "comment": "honestly this should also be grove in WK. forest in WK is both 林 and 森"
   },
   "forest": {
-    "elements": [],
+    "elements": [
+      "tree",
+      "grove"
+    ],
     "kanji": "森",
-    "subElements": [],
+    "subElements": [
+      "tree",
+      "grove",
+      "wood"
+    ],
     "synonyms": [],
     "wkNames": [
-      "t(tree, l(tree, tree))"
+      "forest"
     ]
   },
   "book": {
@@ -4006,12 +4043,20 @@ const elementsDict =
     ]
   },
   "plump": {
-    "elements": [],
-    "kanji": "太, fat",
-    "subElements": [],
+    "elements": [
+      "large",
+      "drop"
+    ],
+    "kanji": "太",
+    "subElements": [
+      "large",
+      "drop",
+      "St. Bernard",
+      "drops"
+    ],
     "synonyms": [],
     "wkNames": [
-      "o(large, drop)"
+      "fat"
     ]
   },
   "dog": {
@@ -4249,16 +4294,23 @@ const elementsDict =
     ]
   },
   "furniture": {
-    "elements": [],
+    "elements": [
+      "goods",
+      "tree"
+    ],
     "kanji": "操 right part",
     "subElements": [
+      "goods",
+      "tree",
+      "mouth",
+      "wood",
       "wooden goods"
     ],
     "synonyms": [
       "wooden goods"
     ],
     "wkNames": [
-      "t(goods, tree)"
+      "syrup"
     ]
   },
   "sun": {
@@ -4509,12 +4561,19 @@ const elementsDict =
     ]
   },
   "mediocre": {
-    "elements": [],
+    "elements": [
+      "wind",
+      "drop"
+    ],
     "kanji": "凡",
-    "subElements": [],
+    "subElements": [
+      "wind",
+      "drop",
+      "drops"
+    ],
     "synonyms": [],
     "wkNames": [
-      "o(wind, drop)"
+      "mediocre"
     ]
   },
   "crotch": {
