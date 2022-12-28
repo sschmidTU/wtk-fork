@@ -1329,7 +1329,7 @@ const elementsDict =
   },
   "crown": {
     "elements": [],
-    "kanji": "冗 top part",
+    "kanji": "冖, 冗 top part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -1363,6 +1363,48 @@ const elementsDict =
     "wkNames": [
       "same"
     ]
+  },
+  "tall": {
+    "elements": [
+      "top hat",
+      "mouth",
+      "hood",
+      "mouth"
+    ],
+    "kanji": "高",
+    "subElements": [
+      "top hat",
+      "mouth",
+      "hood",
+      "mouth",
+      "drop",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tall"
+    ]
+  },
+  "circumference": {
+    "elements": [
+      "hood",
+      "soil",
+      "mouth"
+    ],
+    "kanji": "周",
+    "subElements": [
+      "hood",
+      "soil",
+      "mouth",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "circumference"
+    ],
+    "comment": "RTK says glass hood instead of hood (subelement/variant I guess)"
   },
   "owl": {
     "elements": [
@@ -1822,6 +1864,31 @@ const elementsDict =
     ],
     "comment": "broom is just the \"reverse E\" part"
   },
+  "write": {
+    "elements": [
+      "brush",
+      "sun"
+    ],
+    "kanji": "書",
+    "subElements": [
+      "brush",
+      "sun",
+      "rake",
+      "dry",
+      "stick",
+      "broom",
+      "ceiling",
+      "ten",
+      "one",
+      "needle",
+      "clothesline",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "write"
+    ]
+  },
   "gates": {
     "elements": [],
     "kanji": "門",
@@ -1870,6 +1937,25 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "car"
+    ]
+  },
+  "army": {
+    "elements": [
+      "crown",
+      "car"
+    ],
+    "kanji": "軍",
+    "subElements": [
+      "crown",
+      "car",
+      "ten",
+      "rice field",
+      "needle",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "army"
     ]
   },
   "human legs": {
@@ -2008,6 +2094,26 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "surplus"
+    ]
+  },
+  "ray": {
+    "elements": [
+      "littleB",
+      "human legs"
+    ],
+    "kanji": "光",
+    "subElements": [
+      "littleB",
+      "human legs",
+      "little",
+      "animal legs",
+      "stick",
+      "hook",
+      "small"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "sunlight"
     ]
   },
   "hairpin": {
@@ -2806,6 +2912,22 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "icicle"
+    ]
+  },
+  "robust": {
+    "elements": [
+      "turtle",
+      "samurai"
+    ],
+    "kanji": "壮",
+    "subElements": [
+      "turtle",
+      "samurai",
+      "gentleman"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "robust"
     ]
   },
   "two": {
@@ -3899,6 +4021,91 @@ const elementsDict =
     ],
     "comment": "called \"pent in\" in RTK when it's enclosing other elements. otherwise mouth"
   },
+  "receive": {
+    "elements": [
+      "top hat",
+      "mouth",
+      "child"
+    ],
+    "kanji": "享",
+    "subElements": [
+      "top hat",
+      "mouth",
+      "child",
+      "drop",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "receive"
+    ]
+  },
+  "pavilion": {
+    "elements": [
+      "top hat",
+      "mouth",
+      "crown",
+      "street"
+    ],
+    "kanji": "亭",
+    "subElements": [
+      "top hat",
+      "mouth",
+      "crown",
+      "street",
+      "drop",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "restaurant"
+    ]
+  },
+  "capital": {
+    "elements": [
+      "top hat",
+      "mouth",
+      "little"
+    ],
+    "kanji": "京",
+    "subElements": [
+      "top hat",
+      "mouth",
+      "little",
+      "drop",
+      "one",
+      "drops",
+      "animal legs",
+      "stick",
+      "hook",
+      "small"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "capital"
+    ]
+  },
+  "cottage": {
+    "elements": [
+      "umbrella",
+      "soil",
+      "mouth"
+    ],
+    "kanji": "舎",
+    "subElements": [
+      "umbrella",
+      "soil",
+      "mouth",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "cottage"
+    ]
+  },
   "tree": {
     "elements": [],
     "kanji": "木",
@@ -4519,6 +4726,40 @@ const elementsDict =
     ],
     "wkNames": [
       "square jewel"
+    ]
+  },
+  "good luck": {
+    "elements": [
+      "samurai",
+      "mouth"
+    ],
+    "kanji": "吉",
+    "subElements": [
+      "samurai",
+      "mouth",
+      "gentleman"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "good luck"
+    ]
+  },
+  "sell": {
+    "elements": [
+      "samurai",
+      "crown",
+      "human legs"
+    ],
+    "kanji": "売",
+    "subElements": [
+      "samurai",
+      "crown",
+      "human legs",
+      "gentleman"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "sell"
     ]
   },
   "stick": {

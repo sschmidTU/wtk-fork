@@ -78,9 +78,11 @@ sprout=shoot=wherefore; 由; reason; t(drop, rice field)
 bend; 曲; music; rice field, stick2 // basically one and a half rice fields (or 2 rice fields half overlapping) with 2 sticks
 cadet; 曹; official; t(c(bend, one), sun)
 beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
-crown; 冗 top part; forehead
+crown; 冖, 冗 top part; forehead
 hood; 冂; head
 same; 同; same; o(hood, t(ceiling, mouth)); creeperWK
+tall; 高; tall; t(top hat, mouth, o(hood, mouth))
+circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hood instead of hood (subelement/variant I guess)
 owl; 桜 top right part, 巣 top part; grass; drop3
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
@@ -106,11 +108,13 @@ do=so; 為; sake; tail feathers
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
 broom; ヨ, 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
 rake; 粛 top part; wolverine; c(broom, stick) // = broom with stick through it (vertical stroke)
-brush; 聿, 津 right part, 書 top part; brush; t(rake, c(dry, stick)) // broom is just the "reverse E" part
+brush; 聿, 津 right part, 書 top part; brush; t(rake, c(dry, stick))&broom // broom is just the "reverse E" part
+write; 書; write; t(brush, sun)
 gates; 門; gates
 cocoon; 幺, 幼 left part; poop; elbow
 cactus; 聯 bottom right part; cactus
 car; 車; car; t(ten, rice field, ten)
+army; 軍; army; t(crown, car)
 human legs; 儿; legs
 animal legs; ハ, 只 bottom part; fins // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
@@ -119,6 +123,7 @@ littleB; 光 top part; triceratops; little
 few; 少; few; t(little, dropB)
 portent; 兆; omen; c(human legs, drop4)&ice
 too much; 余; surplus; t(umbrella, dry, little)
+ray; 光; sunlight; t(littleB, human legs)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 scarf=garment=clothes; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin)
 gold; 金; gold; t(umbrella, c(king, drop2))
@@ -170,6 +175,7 @@ tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that
 fish; 魚; fish; t(bound up, rice field, oven-fire)
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
 turtle; 壮 left part; icicle
+robust; 壮; robust; l(turtle, samurai)
 two; 二; two
 three; 三; three
 shape=three; 彡; hair
@@ -235,6 +241,10 @@ enter; 入; enter; t(hook, person)
 wheat=cereal; 禾, 和 left part; grain; t(drop, tree); slideWK
 top hat; 亠, 京 top part; lid; t(drop, one)
 pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
+receive; 享; receive; t(top hat, mouth, child)
+pavilion; 亭; restaurant; t(top hat, mouth, crown, street)
+capital; 京; capital; t(top hat, mouth, little)
+cottage; 舎; cottage; t(umbrella, soil, mouth)
 tree=wood; 木; tree
 grove; 林; forest; l(tree, tree) // honestly this should also be grove in WK. forest in WK is both 林 and 森
 forest; 森; forest; t(tree, grove)
@@ -278,6 +288,8 @@ rice field=brains; 田; rice field
 soil=dirt=ground; 土; dirt
 samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal strong is longer than the lower one here.
 square jewel=squared jewel; 圭; square jewel; t(soil, soil)
+good luck; 吉; good luck; t(samurai, mouth)
+sell; 売; sell; t(samurai, crown, human legs)
 stick; ｜, 旧 left part; stick // basically any vertical line
 pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
