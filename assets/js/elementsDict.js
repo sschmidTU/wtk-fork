@@ -30,6 +30,25 @@ const elementsDict =
       "toe"
     ]
   },
+  "above": {
+    "elements": [
+      "divining rod",
+      "floor"
+    ],
+    "kanji": "上",
+    "subElements": [
+      "divining rod",
+      "floor",
+      "wand",
+      "magic wand",
+      "augury",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "above"
+    ]
+  },
   "compare": {
     "elements": [
       "spoon",
@@ -277,6 +296,16 @@ const elementsDict =
       "coat rack"
     ]
   },
+  "coat rack": {
+    "elements": [],
+    "kanji": "疋",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "coat rack"
+    ],
+    "comment": "doesn't exist in RTK as element, but as kanji. Often without the hook at the top end."
+  },
   "zoo": {
     "elements": [],
     "kanji": "蛋 top part, 旋 bottom right part, 疏 left part",
@@ -290,6 +319,39 @@ const elementsDict =
       "coat rack"
     ],
     "comment": "coat rack in WK is both zoo and mending"
+  },
+  "run": {
+    "elements": [
+      "soil",
+      "mending"
+    ],
+    "kanji": "走",
+    "subElements": [
+      "soil",
+      "mending",
+      "dirt",
+      "ground",
+      "mend"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "run"
+    ]
+  },
+  "determine": {
+    "elements": [
+      "house",
+      "coat rack"
+    ],
+    "kanji": "定",
+    "subElements": [
+      "house",
+      "coat rack"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "determine"
+    ]
   },
   "perfect": {
     "elements": [
@@ -980,6 +1042,108 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "drunkard"
+    ]
+  },
+  "parade": {
+    "elements": [
+      "cliff",
+      "fiesta"
+    ],
+    "kanji": "茂 bottom part",
+    "subElements": [
+      "cliff",
+      "fiesta",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "parade"
+    ]
+  },
+  "turn into": {
+    "elements": [
+      "parade",
+      "clothes hanger"
+    ],
+    "kanji": "成",
+    "subElements": [
+      "parade",
+      "clothes hanger",
+      "cliff",
+      "fiesta",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops",
+      "coat hanger",
+      "paradeB"
+    ],
+    "synonyms": [
+      "paradeB"
+    ],
+    "wkNames": [
+      "become"
+    ]
+  },
+  "bar": {
+    "elements": [
+      "fiesta",
+      "two"
+    ],
+    "kanji": "桟 right part",
+    "subElements": [
+      "fiesta",
+      "two",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bar"
+    ],
+    "comment": "doesn't exist in RTK. apparently comes from 戔, which is also a variant for the right part"
+  },
+  "warrior": {
+    "elements": [
+      "arrowhead",
+      "stop"
+    ],
+    "kanji": "武",
+    "subElements": [
+      "arrowhead",
+      "stop",
+      "one",
+      "arrow",
+      "footprint"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "military"
+    ]
+  },
+  "style": {
+    "elements": [
+      "arrowhead",
+      "craft"
+    ],
+    "kanji": "式",
+    "subElements": [
+      "arrowhead",
+      "craft",
+      "arrow",
+      "ceiling",
+      "stick",
+      "floor",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "style"
     ]
   },
   "dog tag": {
@@ -2364,6 +2528,24 @@ const elementsDict =
       "left"
     ]
   },
+  "young": {
+    "elements": [
+      "flowers",
+      "right"
+    ],
+    "kanji": "若",
+    "subElements": [
+      "flowers",
+      "right",
+      "by one's side",
+      "mouth",
+      "by one’s side"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "young"
+    ]
+  },
   "can": {
     "elements": [
       "street",
@@ -2779,6 +2961,69 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "ladle"
+    ]
+  },
+  "phrase": {
+    "elements": [
+      "bound up",
+      "mouth"
+    ],
+    "kanji": "句",
+    "subElements": [
+      "bound up",
+      "mouth",
+      "clothes hanger",
+      "drop",
+      "coat hanger",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "poem"
+    ]
+  },
+  "poem": {
+    "elements": [
+      "flowers",
+      "phrase"
+    ],
+    "kanji": "敬 left part",
+    "subElements": [
+      "flowers",
+      "phrase",
+      "bound up",
+      "mouth",
+      "clothes hanger",
+      "drop",
+      "coat hanger",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "poem"
+    ]
+  },
+  "awe": {
+    "elements": [
+      "poem",
+      "taskmaster"
+    ],
+    "kanji": "敬",
+    "subElements": [
+      "poem",
+      "taskmaster",
+      "flowers",
+      "phrase",
+      "bound up",
+      "mouth",
+      "clothes hanger",
+      "drop",
+      "coat hanger",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "respect"
     ]
   },
   "fire": {
@@ -4474,6 +4719,47 @@ const elementsDict =
       "stop"
     ]
   },
+  "correct": {
+    "elements": [
+      "ceiling",
+      "stop"
+    ],
+    "kanji": "正",
+    "subElements": [
+      "ceiling",
+      "stop",
+      "one",
+      "footprint"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "correct"
+    ]
+  },
+  "walk": {
+    "elements": [
+      "stop",
+      "few"
+    ],
+    "kanji": "歩",
+    "subElements": [
+      "stop",
+      "few",
+      "footprint",
+      "little",
+      "dropB",
+      "animal legs",
+      "stick",
+      "hook",
+      "small",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "walk"
+    ]
+  },
   "mouth": {
     "elements": [],
     "kanji": "口",
@@ -4519,6 +4805,23 @@ const elementsDict =
     "wkNames": [
       "syrup"
     ]
+  },
+  "creeper": {
+    "elements": [
+      "ceiling",
+      "mouth"
+    ],
+    "kanji": "同 inner part",
+    "subElements": [
+      "ceiling",
+      "mouth",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "creeper"
+    ],
+    "comment": "doesn't exist in RTK, but does in WK, and is very common."
   },
   "sun": {
     "elements": [],

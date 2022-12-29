@@ -1,6 +1,7 @@
 RTK / elementsPure name(=synonym1=synonym2=...); kanji; WK name(&other WK names); RTK structure or subelements (if both: separated by &); elementsWK; // comments. elementsWK is optional and can also be comma separated (WK) elements with a "WK" suffix, see leafWK.
 wand=magic wand=augury; 卜, 訃 right part; toe
 divining rod; 上 upper part; toe; wand
+above; 上; above; t(divining rod, floor)
 compare; 比; compare; spoon, spoon2, sitting on the ground2
 say=words=keitai; 言; say; one4, mouth, ceiling
 white; 白; white; t(drop, sun)
@@ -17,7 +18,10 @@ each; 各; each&kiss; t(walking legs, mouth)
 guest; 客; guest; t(house, each)
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
 mending=mend; 疋, 足 bottom part; coat rack
+coat rack; 疋; coat rack // doesn't exist in RTK as element, but as kanji. Often without the hook at the top end.
 zoo=critters; 蛋 top part, 旋 bottom right part, 疏 left part; coat rack // coat rack in WK is both zoo and mending
+run; 走; run; t(soil, mending)
+determine; 定; determine; t(house, coat rack)
 perfect; 完; perfect; t(house, beginning)
 flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
 voice; 声; voice; t(samurai, o(flag, stick))
@@ -58,6 +62,11 @@ easy; 易; easy; t(sun, not)
 screwdriver=utilize=utilise; 用; task; moon, stick 
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
 fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
+parade; 茂 bottom part; parade; l(cliff, fiesta)
+turn into=paradeB; 成; become; o(parade, clothes hanger)
+bar; 桟 right part; bar; c(fiesta, two) // doesn't exist in RTK. apparently comes from 戔, which is also a variant for the right part
+warrior; 武; military; tr(arrowhead, stop)&one
+style; 式; style; tr(arrowhead, craft)
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 towel; 巾; towel
@@ -140,6 +149,7 @@ cliff; 厂; cliff
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 right; 右; right; tl(by one's side, mouth)
 left; 左; left; tl(by one's side, craft)
+young; 若; young; t(flowers, right)
 can; 可; possible; o(street, mouth)
 strange; 奇; odd; t(large, can)
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
@@ -168,6 +178,9 @@ sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // thi
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)
 ladle; 勺; ladle; o(bound up, drop)
+phrase; 句; poem; o(bound up, mouth)
+poem; 敬 left part; poem; t(flowers, phrase)
+awe; 敬; respect; l(poem, taskmaster)
 fire; 火; fire; f(person, drop, drop) // fire flanked by drop, drop
 inflammation; 炎; flame; t(fire, fire)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
@@ -271,9 +284,12 @@ bow; 弓; bow
 maestro; 師 left part; drop&bear
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
 stop=footprint; 止; stop
+correct; 正; correct; t(ceiling, stop)
+walk; 歩; walk; t(stop, few)
 mouth; 口; mouth
 goods; 品; product; t(mouth, l(mouth, mouth))
 furniture=wooden goods; 操 right part; syrup; t(goods, tree)
+creeper; 同 inner part; creeper; t(ceiling, mouth) // doesn't exist in RTK, but does in WK, and is very common.
 sun=day; 日; sun
 mortar; 臼; sun // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
