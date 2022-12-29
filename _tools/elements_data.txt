@@ -108,7 +108,7 @@ awl; 㑒; squid
 now; 今; now; t(umbrella, one, clothes hanger)
 head=page; 頁; geoduck; t(ground, oneself, animal legs); leafWK
 stinking; 臭; stinking; t(oneself, large)
-rule; l(shellfish, knife); rule
+rule; 則; rule; l(shellfish, knife)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
 temple=Buddhist temple; 寺; temple
 specialty; 専; specialty; t(ten, rice field, glue)
@@ -199,7 +199,7 @@ heavens; 天; heaven
 dart; 矢; arrow; c(heavens, drop)
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 flowers; 艹, 若 top part; flowers
-seedling; t(flowers, rice field); seedling
+seedling; 苗; seedling; t(flowers, rice field)
 decorate; 賁; decorate; t(cross, flowers, shellfish) // not a RTK or WK kanji, but the kanji exists.
 graveyard; 莫; greenhouse; t(flowers, sun, large)
 negative=negation; 不; not; t(ceiling, c(person, stick))

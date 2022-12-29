@@ -62,6 +62,9 @@ function processFile(fileString) {
             synonyms.push(rtkNames[j]);
         }
         const kanji = columns[1].trim();
+        if (kanji.includes("(")) {
+            console.warn(`brackets in kanji column in row ${i+1}`);
+        }
         const wkNames = columns[2].split("&").map((radical) => radical.trim());
         for (const wkNameProcessed of wkNames) {
             if (wkNameProcessed.includes("(")) {

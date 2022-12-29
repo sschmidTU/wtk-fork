@@ -1854,9 +1854,20 @@ const elementsDict =
     ]
   },
   "rule": {
-    "elements": [],
-    "kanji": "l(shellfish, knife)",
-    "subElements": [],
+    "elements": [
+      "shellfish",
+      "knife"
+    ],
+    "kanji": "則",
+    "subElements": [
+      "shellfish",
+      "knife",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
+    ],
     "synonyms": [],
     "wkNames": [
       "rule"
@@ -3291,9 +3302,16 @@ const elementsDict =
     ]
   },
   "seedling": {
-    "elements": [],
-    "kanji": "t(flowers, rice field)",
-    "subElements": [],
+    "elements": [
+      "flowers",
+      "rice field"
+    ],
+    "kanji": "苗",
+    "subElements": [
+      "flowers",
+      "rice field",
+      "brains"
+    ],
     "synonyms": [],
     "wkNames": [
       "seedling"
