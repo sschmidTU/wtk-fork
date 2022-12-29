@@ -2450,6 +2450,15 @@ const elementsDict =
       "迄 left part"
     ]
   },
+  "stretch": {
+    "elements": [],
+    "kanji": "廴",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "yoga"
+    ]
+  },
   "street": {
     "elements": [],
     "kanji": "丁",
