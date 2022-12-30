@@ -507,6 +507,26 @@ const elementsDict =
     ],
     "comment": "WK doesn't differentiate between RTK wall and infant"
   },
+  "cloud": {
+    "elements": [
+      "ceiling",
+      "wall"
+    ],
+    "kanji": "云",
+    "subElements": [
+      "ceiling",
+      "wall",
+      "one",
+      "elbow",
+      "rising cloud"
+    ],
+    "synonyms": [
+      "rising cloud"
+    ],
+    "wkNames": [
+      "cloud"
+    ]
+  },
   "climax": {
     "elements": [
       "wall",
@@ -1301,6 +1321,43 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "sovereign"
+    ]
+  },
+  "sash": {
+    "elements": [
+      "buckle",
+      "apron"
+    ],
+    "kanji": "帯",
+    "subElements": [
+      "buckle",
+      "apron",
+      "crown",
+      "towel"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "belt"
+    ]
+  },
+  "rain": {
+    "elements": [
+      "ceiling",
+      "towel",
+      "drop4"
+    ],
+    "kanji": "雨",
+    "subElements": [
+      "ceiling",
+      "towel",
+      "drop4",
+      "drop",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rain"
     ]
   },
   "drop": {
@@ -3339,6 +3396,16 @@ const elementsDict =
       "arrow"
     ]
   },
+  "bamboo": {
+    "elements": [],
+    "kanji": "竹, 笑 top part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "bamboo"
+    ],
+    "comment": "the vertical strokes are always shortened when used as an element."
+  },
   "turkey": {
     "elements": [],
     "kanji": "隹, 唯 right part",
@@ -3738,6 +3805,25 @@ const elementsDict =
     "synonyms": [
       "mutual",
       "broken broom"
+    ],
+    "wkNames": [
+      "mutual"
+    ]
+  },
+  "inter": {
+    "elements": [
+      "tree",
+      "eye"
+    ],
+    "kanji": "相",
+    "subElements": [
+      "tree",
+      "eye",
+      "wood",
+      "inter-"
+    ],
+    "synonyms": [
+      "inter-"
     ],
     "wkNames": [
       "mutual"

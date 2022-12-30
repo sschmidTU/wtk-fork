@@ -30,6 +30,7 @@ missile; 投 right part; weapon; t(wind, crotch)
 thread=spiderman; 糸; thread
 wall; 至 top part; ground&private; t(ceiling, elbow) // WK doesn't have this as an extra radical, as it's almost always used as 至 (mole/climax) or right side of 転 (cloud/rising cloud). it only has trash/infant (育 top part).
 infant=toddler; 𠫓, 育 top part; trash; t(top hat, elbow) // WK doesn't differentiate between RTK wall and infant
+cloud=rising cloud; 云; cloud; t(ceiling, wall)
 climax; 至; mole; t(wall, soil)
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
@@ -75,6 +76,8 @@ market; 市; t(top hat, towel); city // can look like c(towel, one) depending on
 buckle; 帯 top part; mountain&one // see apron apron (frame 415) in RTK1
 apron; 帯 bottom+middle part, 婦 bottom right part; forehead&towel; t(crown, towel)
 sovereign; 帝; sovereign; t(stand up, apron)
+sash; 帯; belt; t(buckle, apron)
+rain; 雨; rain; t(ceiling, o(towel, drop4))
 drop=drops; 丶, 白 top part; drop
 dropB; 少 bottom part; slide; drop
 heart; 心; heart; o(drop3, fishhook)
@@ -200,6 +203,7 @@ six; 六; six; t(top hat, animal legs)
 seven=diced; 七; seven
 heavens; 天; heaven
 dart; 矢; arrow; c(heavens, drop)
+bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened when used as an element.
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 flowers; 艹, 若 top part; flowers
 seedling; 苗; seedling; t(flowers, rice field)
@@ -224,6 +228,7 @@ gone; 去; past; t(soil, elbow)
 resemblance; 肖; resemblance; t(littleB, moon)
 beggar; 丂, 巧 right part; snare // similar to slingshot:  与 without the lower horizontal line (?)
 mutually=mutual=broken broom; 互 middle part; mutual
+inter=inter-; 相; mutual; l(tree, eye)
 ri=computer=village; 里; village; t(rice field, soil) // often "computer" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK.
 fortune-telling=fortunetelling; 占; fortune; t(divining rod, mouth)
 chair; 呉 middle part; chair; t(straightened hook, stick) // doesn't exist in WK, only the straightened hook (lion) part
