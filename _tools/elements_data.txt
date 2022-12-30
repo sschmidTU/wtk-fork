@@ -17,9 +17,10 @@ walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "ove
 each; 各; each&kiss; t(walking legs, mouth)
 guest; 客; guest; t(house, each)
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
-mending=mend; 疋, 足 bottom part; coat rack
-coat rack; 疋; coat rack // doesn't exist in RTK as element, but as kanji. Often without the hook at the top end.
-zoo=critters; 蛋 top part, 旋 bottom right part, 疏 left part; coat rack // coat rack in WK is both zoo and mending
+mending=mend=zoo; 定 bottom part, 疋, 足 bottom part; coat rack // only difference to zoo: missing hook at end of top stroke
+zoo=critters=mending=mend; 疋; coat rack // added hook on top stroke compared to mending, almost indistinguishable. coat rack in WK is both zoo and mending
+stop=footprint; 止; stop
+correct; 正; correct; t(ceiling, stop)
 run; 走; run; t(soil, mending)
 determine; 定; determine; t(house, coat rack)
 perfect; 完; perfect; t(house, beginning)
@@ -284,8 +285,6 @@ teepee=wigwam; 癶, 発 top part; tent
 bow; 弓; bow
 maestro; 師 left part; drop&bear
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
-stop=footprint; 止; stop
-correct; 正; correct; t(ceiling, stop)
 walk; 歩; walk; t(stop, few)
 mouth; 口; mouth
 goods; 品; product; t(mouth, l(mouth, mouth))

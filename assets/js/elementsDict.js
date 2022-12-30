@@ -274,6 +274,8 @@ const elementsDict =
       "mouth",
       "mending",
       "mend",
+      "zoo",
+      "critters",
       "wooden leg"
     ],
     "synonyms": [
@@ -285,40 +287,67 @@ const elementsDict =
   },
   "mending": {
     "elements": [],
-    "kanji": "疋, 足 bottom part",
+    "kanji": "定 bottom part, 疋, 足 bottom part",
     "subElements": [
-      "mend"
+      "mend",
+      "zoo"
     ],
     "synonyms": [
-      "mend"
+      "mend",
+      "zoo"
     ],
     "wkNames": [
       "coat rack"
-    ]
-  },
-  "coat rack": {
-    "elements": [],
-    "kanji": "疋",
-    "subElements": [],
-    "synonyms": [],
-    "wkNames": [
-      "coat rack"
     ],
-    "comment": "doesn't exist in RTK as element, but as kanji. Often without the hook at the top end."
+    "comment": "only difference to zoo: missing hook at end of top stroke"
   },
   "zoo": {
     "elements": [],
-    "kanji": "蛋 top part, 旋 bottom right part, 疏 left part",
+    "kanji": "疋",
     "subElements": [
-      "critters"
+      "critters",
+      "mending",
+      "mend"
     ],
     "synonyms": [
-      "critters"
+      "critters",
+      "mending",
+      "mend"
     ],
     "wkNames": [
       "coat rack"
     ],
-    "comment": "coat rack in WK is both zoo and mending"
+    "comment": "added hook on top stroke compared to mending, almost indistinguishable. coat rack in WK is both zoo and mending"
+  },
+  "stop": {
+    "elements": [],
+    "kanji": "止",
+    "subElements": [
+      "footprint"
+    ],
+    "synonyms": [
+      "footprint"
+    ],
+    "wkNames": [
+      "stop"
+    ]
+  },
+  "correct": {
+    "elements": [
+      "ceiling",
+      "stop"
+    ],
+    "kanji": "正",
+    "subElements": [
+      "ceiling",
+      "stop",
+      "one",
+      "footprint"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "correct"
+    ]
   },
   "run": {
     "elements": [
@@ -331,7 +360,9 @@ const elementsDict =
       "mending",
       "dirt",
       "ground",
-      "mend"
+      "mend",
+      "zoo",
+      "critters"
     ],
     "synonyms": [],
     "wkNames": [
@@ -4731,36 +4762,6 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "bear"
-    ]
-  },
-  "stop": {
-    "elements": [],
-    "kanji": "止",
-    "subElements": [
-      "footprint"
-    ],
-    "synonyms": [
-      "footprint"
-    ],
-    "wkNames": [
-      "stop"
-    ]
-  },
-  "correct": {
-    "elements": [
-      "ceiling",
-      "stop"
-    ],
-    "kanji": "正",
-    "subElements": [
-      "ceiling",
-      "stop",
-      "one",
-      "footprint"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "correct"
     ]
   },
   "walk": {
