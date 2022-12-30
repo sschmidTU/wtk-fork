@@ -48,7 +48,7 @@ ten thousand; 万; ten thousand; t(ceiling, bound up)
 tongue; 舌; tongue; t(thousand, mouth)
 measuring box; 升; grid; l(thousand, ten); slideWK
 round; 丸; round; c(nine, drop)
-wealth; 福 right part; scarecrow; t(ceiling, mouth, rice field); creeperWK
+wealth; 畐, 福 right part; scarecrow; t(ceiling, mouth, rice field); creeperWK
 employee; 員; member; t(mouth, shellfish)
 shellfish=shell=clam=oyster; 貝; shellfish; t(eye, animal legs)
 see; 見; see; t(eye, human legs)
@@ -71,7 +71,9 @@ style; 式; style; tr(arrowhead, craft)
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 towel; 巾; towel
-apron; 婦 bottom right part, 帯 bottom+middle part; forehead&towel; t(crown, towel) 
+market; 市; t(top hat, towel); city // can look like c(towel, one) depending on font, especially with chinese-like font
+buckle; 帯 top part; mountain&one // see apron apron (frame 415) in RTK1
+apron; 帯 bottom+middle part, 婦 bottom right part; forehead&towel; t(crown, towel)
 sovereign; 帝; sovereign; t(stand up, apron)
 drop=drops; 丶, 白 top part; drop
 dropB; 少 bottom part; slide; drop
@@ -135,7 +137,7 @@ portent; 兆; omen; c(human legs, drop4)&ice
 too much; 余; surplus; t(umbrella, dry, little)
 ray; 光; sunlight; t(littleB, human legs)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
-scarf=garment=clothes; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin)
+garment=clothes=scarf; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin) // scarf/garment is a bit ambiguous in RTK, can also be close to hairpin/𧘇 kick
 gold; 金; gold; t(umbrella, c(king, drop2))
 silver; 銀 right part; root; t(sun, hairpin) 
 good; 良; good; t(drop, silver)

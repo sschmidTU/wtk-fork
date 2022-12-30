@@ -825,7 +825,7 @@ const elementsDict =
       "rice field"
     ],
     "elementsWK": "creeperWK",
-    "kanji": "福 right part",
+    "kanji": "畐, 福 right part",
     "subElements": [
       "ceiling",
       "mouth",
@@ -1237,12 +1237,37 @@ const elementsDict =
       "towel"
     ]
   },
+  "market": {
+    "elements": [
+      "city"
+    ],
+    "kanji": "市",
+    "subElements": [
+      "city"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "t(top hat, towel)"
+    ],
+    "comment": "can look like c(towel, one) depending on font, especially with chinese-like font"
+  },
+  "buckle": {
+    "elements": [],
+    "kanji": "帯 top part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "mountain",
+      "one"
+    ],
+    "comment": "see apron apron (frame 415) in RTK1"
+  },
   "apron": {
     "elements": [
       "crown",
       "towel"
     ],
-    "kanji": "婦 bottom right part, 帯 bottom+middle part",
+    "kanji": "帯 bottom+middle part, 婦 bottom right part",
     "subElements": [
       "crown",
       "towel"
@@ -2333,7 +2358,7 @@ const elementsDict =
     ],
     "comment": "note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇"
   },
-  "scarf": {
+  "garment": {
     "elements": [
       "top hat",
       "hairpin"
@@ -2345,16 +2370,17 @@ const elementsDict =
       "drop",
       "one",
       "drops",
-      "garment",
-      "clothes"
+      "clothes",
+      "scarf"
     ],
     "synonyms": [
-      "garment",
-      "clothes"
+      "clothes",
+      "scarf"
     ],
     "wkNames": [
       "clothes"
-    ]
+    ],
+    "comment": "scarf/garment is a bit ambiguous in RTK, can also be close to hairpin/𧘇 kick"
   },
   "gold": {
     "elements": [
