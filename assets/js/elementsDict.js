@@ -3649,6 +3649,15 @@ const elementsDict =
     ],
     "comment": "multiple shapes in RTK, but mainly 氺, which is water in WK."
   },
+  "north": {
+    "elements": [],
+    "kanji": "北",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "north"
+    ]
+  },
   "deceased": {
     "elements": [
       "top hat",
@@ -3947,6 +3956,96 @@ const elementsDict =
       "village"
     ],
     "comment": "often \"computer\" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK."
+  },
+  "juvenile": {
+    "elements": [
+      "stand up",
+      "ri"
+    ],
+    "kanji": "童",
+    "subElements": [
+      "stand up",
+      "ri",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "rice field",
+      "soil",
+      "brains",
+      "dirt",
+      "ground",
+      "computer",
+      "village"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "juvenile"
+    ]
+  },
+  "make a deal": {
+    "elements": [
+      "stand up",
+      "hood",
+      "human legs",
+      "mouth"
+    ],
+    "kanji": "商",
+    "subElements": [
+      "stand up",
+      "hood",
+      "human legs",
+      "mouth",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "merchandise"
+    ],
+    "comment": "similar to antique, but different \"under the hood\""
+  },
+  "antique": {
+    "elements": [
+      "stand up",
+      "hood",
+      "old"
+    ],
+    "kanji": "啇",
+    "subElements": [
+      "stand up",
+      "hood",
+      "old",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "ten",
+      "mouth",
+      "tombstone",
+      "gravestone",
+      "church",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "mohawk"
+    ],
+    "comment": "similar to make a deal, but different \"under the hood\""
   },
   "fortune-telling": {
     "elements": [

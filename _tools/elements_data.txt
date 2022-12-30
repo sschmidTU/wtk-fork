@@ -217,6 +217,7 @@ water=water droplets=water pistol; 氵; tsunami
 waterB; 水; water
 eternity; 永; eternity; t(drop, waterB)
 grains of rice; 米, 氺, 録 bottom right part; water // multiple shapes in RTK, but mainly 氺, which is water in WK.
+north; 北; north
 deceased=perish; 亡; death; t(top hat, straightened hook)
 genius=genie; 才, 在 outer part; genius; t(c(ten, drop), hook); slideWK
 by one's side=by one’s side; 左 outer part; narwhal
@@ -233,6 +234,9 @@ beggar; 丂, 巧 right part; snare // similar to slingshot:  与 without the low
 mutually=mutual=broken broom; 互 middle part; mutual
 inter=inter-; 相; mutual; l(tree, eye)
 ri=computer=village; 里; village; t(rice field, soil) // often "computer" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK.
+juvenile; 童; juvenile; t(stand up, ri)
+make a deal; 商; merchandise; t(stand up, o(hood, t(human legs, mouth))) // similar to antique, but different "under the hood"
+antique; 啇; mohawk; t(stand up, o(hood, old)) // similar to make a deal, but different "under the hood"
 fortune-telling=fortunetelling; 占; fortune; t(divining rod, mouth)
 chair; 呉 middle part; chair; t(straightened hook, stick) // doesn't exist in WK, only the straightened hook (lion) part
 nightbreak; 旦; dawn; t(sun, floor)
