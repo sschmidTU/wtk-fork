@@ -1248,6 +1248,34 @@ const elementsDict =
     ],
     "comment": "RTK says \"Used as a primitive, it can also mean vase\". But stand up seems more central/well known."
   },
+  "badge": {
+    "elements": [
+      "stand up",
+      "early"
+    ],
+    "kanji": "章",
+    "subElements": [
+      "stand up",
+      "early",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "sun",
+      "ten",
+      "sunflower",
+      "day",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "chapter"
+    ]
+  },
   "towel": {
     "elements": [],
     "kanji": "巾",
@@ -1259,15 +1287,20 @@ const elementsDict =
   },
   "market": {
     "elements": [
-      "city"
+      "top hat",
+      "towel"
     ],
     "kanji": "市",
     "subElements": [
-      "city"
+      "top hat",
+      "towel",
+      "drop",
+      "one",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
-      "t(top hat, towel)"
+      "city"
     ],
     "comment": "can look like c(towel, one) depending on font, especially with chinese-like font"
   },
@@ -3372,12 +3405,43 @@ const elementsDict =
     ]
   },
   "heavens": {
-    "elements": [],
+    "elements": [
+      "ceiling",
+      "large"
+    ],
     "kanji": "天",
-    "subElements": [],
+    "subElements": [
+      "ceiling",
+      "large",
+      "one",
+      "St. Bernard"
+    ],
     "synonyms": [],
     "wkNames": [
       "heaven"
+    ]
+  },
+  "wheat": {
+    "elements": [
+      "drop",
+      "tree"
+    ],
+    "elementsWK": "slideWK",
+    "kanji": "禾, 和 left part",
+    "subElements": [
+      "drop",
+      "tree",
+      "drops",
+      "wood",
+      "cereal",
+      "sapling"
+    ],
+    "synonyms": [
+      "cereal",
+      "sapling"
+    ],
+    "wkNames": [
+      "grain"
     ]
   },
   "dart": {
@@ -3389,12 +3453,43 @@ const elementsDict =
     "subElements": [
       "heavens",
       "drop",
+      "ceiling",
+      "large",
+      "one",
+      "St. Bernard",
       "drops"
     ],
     "synonyms": [],
     "wkNames": [
       "arrow"
     ]
+  },
+  "angel": {
+    "elements": [
+      "wheat",
+      "mouth",
+      "same"
+    ],
+    "kanji": "橋 right part",
+    "subElements": [
+      "wheat",
+      "mouth",
+      "same",
+      "drop",
+      "tree",
+      "drops",
+      "wood",
+      "cereal",
+      "sapling",
+      "hood",
+      "ceiling",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "angel"
+    ],
+    "comment": "WK: not a radical"
   },
   "bamboo": {
     "elements": [],
@@ -4387,27 +4482,6 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "enter"
-    ]
-  },
-  "wheat": {
-    "elements": [
-      "drop",
-      "tree"
-    ],
-    "elementsWK": "slideWK",
-    "kanji": "禾, 和 left part",
-    "subElements": [
-      "drop",
-      "tree",
-      "drops",
-      "wood",
-      "cereal"
-    ],
-    "synonyms": [
-      "cereal"
-    ],
-    "wkNames": [
-      "grain"
     ]
   },
   "top hat": {

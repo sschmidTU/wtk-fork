@@ -71,8 +71,9 @@ warrior; 武; military; tr(arrowhead, stop)&one
 style; 式; style; tr(arrowhead, craft)
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
+badge; 章; chapter; t(stand up, early)
 towel; 巾; towel
-market; 市; t(top hat, towel); city // can look like c(towel, one) depending on font, especially with chinese-like font
+market; 市; city; t(top hat, towel) // can look like c(towel, one) depending on font, especially with chinese-like font
 buckle; 帯 top part; mountain&one // see apron apron (frame 415) in RTK1
 apron; 帯 bottom+middle part, 婦 bottom right part; forehead&towel; t(crown, towel)
 sovereign; 帝; sovereign; t(stand up, apron)
@@ -201,8 +202,10 @@ three; 三; three
 shape=three; 彡; hair
 six; 六; six; t(top hat, animal legs)
 seven=diced; 七; seven
-heavens; 天; heaven
+heavens; 天; heaven; t(ceiling, large)
+wheat=cereal=sapling; 禾, 和 left part; grain; t(drop, tree); slideWK
 dart; 矢; arrow; c(heavens, drop)
+angel; 橋 right part; angel; t(wheat, mouth, same) // WK: not a radical
 bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened when used as an element.
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 flowers; 艹, 若 top part; flowers
@@ -260,7 +263,6 @@ bright; 明; bright; l(sun, moon)
 child; 子; child
 finger=fingers; 扌, 招 left part; fingers
 enter; 入; enter; t(hook, person)
-wheat=cereal; 禾, 和 left part; grain; t(drop, tree); slideWK
 top hat; 亠, 京 top part; lid; t(drop, one)
 pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
 receive; 享; receive; t(top hat, mouth, child)
