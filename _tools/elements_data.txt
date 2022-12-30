@@ -32,6 +32,7 @@ infant=toddler; 𠫓, 育 top part; trash; t(top hat, elbow) // WK doesn't diffe
 cloud=rising cloud; 云; cloud; t(ceiling, wall)
 climax; 至; mole; t(wall, soil)
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
+porter=king; 壬; king
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 lord; 主; master; t(drop, king)
 emperor; 皇; emperor; t(white, king)
@@ -130,6 +131,7 @@ cocoon; 幺, 幼 left part; poop; elbow
 cactus; 聯 bottom right part; cactus
 car; 車; car; t(ten, rice field, ten)
 army; 軍; army; t(crown, car)
+east; 東; east; t(ten, rice field, person, stick)
 human legs; 儿; legs
 animal legs; ハ, 只 bottom part; fins // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
@@ -167,6 +169,9 @@ staples; 印 left part; comb
 reclining=lying down; 𠂉, 乞 top part; gun
 beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here
+double back=fold back; 复; black hole; t(reclining, sun, walking legs)
+lack; 欠; lack; t(c(reclining, drop), person)
+next; 次; next; l(ice, lack)
 evening; 夕; evening
 many; 多; many; t(evening, evening)
 bones; 歹, 残 left part; yakuza; t(ceiling, evening)
@@ -183,7 +188,7 @@ retainer=slave; 臣; servant
 fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
-bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)
+bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)&reclining
 aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop)
 phrase; 句; poem; o(bound up, mouth)
@@ -237,6 +242,8 @@ ri=computer=village; 里; village; t(rice field, soil) // often "computer" in ea
 juvenile; 童; juvenile; t(stand up, ri)
 make a deal; 商; merchandise; t(stand up, o(hood, t(human legs, mouth))) // similar to antique, but different "under the hood"
 antique; 啇; mohawk; t(stand up, o(hood, old)) // similar to make a deal, but different "under the hood"
+muzzle; 咅; clown; t(stand up, mouth)
+sound; 音; sound; t(stand up, sun)
 fortune-telling=fortunetelling; 占; fortune; t(divining rod, mouth)
 chair; 呉 middle part; chair; t(straightened hook, stick) // doesn't exist in WK, only the straightened hook (lion) part
 nightbreak; 旦; dawn; t(sun, floor)
@@ -258,6 +265,8 @@ i; 吾; i; t(five, mouth)
 benefit; 益; benefit; t(horns, one, animal legs, dish)
 state of mind; 忄; soul; l(drop, stick, drop)
 elder brother; 兄; older brother; t(mouth, human legs)
+devil; 兑; guard; t(horns, elder brother)
+formerly; 曽; formerly; t(horns, rice field, sun)
 // "primitives" (mostly): (in the sense that there usually isn't a significant subdivision of them) (otherwise, grouped by similarity)
 umbrella; 𠆢, 全 top part; hat
 jammed in; 介; jammed in; t(umbrella, human legs)&stick

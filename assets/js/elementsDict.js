@@ -538,6 +538,19 @@ const elementsDict =
     ],
     "comment": "my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel."
   },
+  "porter": {
+    "elements": [],
+    "kanji": "壬",
+    "subElements": [
+      "king"
+    ],
+    "synonyms": [
+      "king"
+    ],
+    "wkNames": [
+      "king"
+    ]
+  },
   "jewel": {
     "elements": [
       "king",
@@ -754,8 +767,10 @@ const elementsDict =
       "one",
       "clothes hanger",
       "drop",
+      "reclining",
       "coat hanger",
-      "drops"
+      "drops",
+      "lying down"
     ],
     "synonyms": [],
     "wkNames": [
@@ -2260,6 +2275,27 @@ const elementsDict =
       "army"
     ]
   },
+  "east": {
+    "elements": [
+      "ten",
+      "rice field",
+      "person",
+      "stick"
+    ],
+    "kanji": "東",
+    "subElements": [
+      "ten",
+      "rice field",
+      "person",
+      "stick",
+      "needle",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "east"
+    ]
+  },
   "human legs": {
     "elements": [],
     "kanji": "儿",
@@ -2838,6 +2874,69 @@ const elementsDict =
     ],
     "comment": "reclining/gun and staples/comb are overlapping here"
   },
+  "double back": {
+    "elements": [
+      "reclining",
+      "sun",
+      "walking legs"
+    ],
+    "kanji": "复",
+    "subElements": [
+      "reclining",
+      "sun",
+      "walking legs",
+      "lying down",
+      "day",
+      "fold back"
+    ],
+    "synonyms": [
+      "fold back"
+    ],
+    "wkNames": [
+      "black hole"
+    ]
+  },
+  "lack": {
+    "elements": [
+      "reclining",
+      "drop",
+      "person"
+    ],
+    "kanji": "欠",
+    "subElements": [
+      "reclining",
+      "drop",
+      "person",
+      "lying down",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "lack"
+    ]
+  },
+  "next": {
+    "elements": [
+      "ice",
+      "lack"
+    ],
+    "kanji": "次",
+    "subElements": [
+      "ice",
+      "lack",
+      "drop2",
+      "drop",
+      "two",
+      "reclining",
+      "person",
+      "lying down",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "next"
+    ]
+  },
   "evening": {
     "elements": [],
     "kanji": "夕",
@@ -3085,8 +3184,10 @@ const elementsDict =
     "subElements": [
       "clothes hanger",
       "drop",
+      "reclining",
       "coat hanger",
-      "drops"
+      "drops",
+      "lying down"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3104,8 +3205,10 @@ const elementsDict =
       "spoon",
       "clothes hanger",
       "drop",
+      "reclining",
       "coat hanger",
       "drops",
+      "lying down",
       "sitting on the ground"
     ],
     "synonyms": [],
@@ -3123,8 +3226,10 @@ const elementsDict =
       "bound up",
       "drop",
       "clothes hanger",
+      "reclining",
       "coat hanger",
-      "drops"
+      "drops",
+      "lying down"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3142,8 +3247,10 @@ const elementsDict =
       "mouth",
       "clothes hanger",
       "drop",
+      "reclining",
       "coat hanger",
-      "drops"
+      "drops",
+      "lying down"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3163,8 +3270,10 @@ const elementsDict =
       "mouth",
       "clothes hanger",
       "drop",
+      "reclining",
       "coat hanger",
-      "drops"
+      "drops",
+      "lying down"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3186,8 +3295,10 @@ const elementsDict =
       "mouth",
       "clothes hanger",
       "drop",
+      "reclining",
       "coat hanger",
-      "drops"
+      "drops",
+      "lying down"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3287,8 +3398,10 @@ const elementsDict =
       "oven-fire",
       "clothes hanger",
       "drop",
+      "reclining",
       "coat hanger",
       "drops",
+      "lying down",
       "brains",
       "drop4",
       "drop",
@@ -4048,6 +4161,53 @@ const elementsDict =
     ],
     "comment": "similar to make a deal, but different \"under the hood\""
   },
+  "muzzle": {
+    "elements": [
+      "stand up",
+      "mouth"
+    ],
+    "kanji": "咅",
+    "subElements": [
+      "stand up",
+      "mouth",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "clown"
+    ]
+  },
+  "sound": {
+    "elements": [
+      "stand up",
+      "sun"
+    ],
+    "kanji": "音",
+    "subElements": [
+      "stand up",
+      "sun",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "sound"
+    ]
+  },
   "fortune-telling": {
     "elements": [
       "divining rod",
@@ -4139,8 +4299,10 @@ const elementsDict =
       "human legs",
       "clothes hanger",
       "drop",
+      "reclining",
       "coat hanger",
       "drops",
+      "lying down",
       "village stocks",
       "rabbit"
     ],
@@ -4465,6 +4627,44 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "older brother"
+    ]
+  },
+  "devil": {
+    "elements": [
+      "horns",
+      "elder brother"
+    ],
+    "kanji": "兑",
+    "subElements": [
+      "horns",
+      "elder brother",
+      "animal horns",
+      "mouth",
+      "human legs"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "guard"
+    ]
+  },
+  "formerly": {
+    "elements": [
+      "horns",
+      "rice field",
+      "sun"
+    ],
+    "kanji": "曽",
+    "subElements": [
+      "horns",
+      "rice field",
+      "sun",
+      "animal horns",
+      "brains",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "formerly"
     ]
   },
   "umbrella": {
