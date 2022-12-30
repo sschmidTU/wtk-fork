@@ -2,8 +2,7 @@ RTK / elementsPure name(=synonym1=synonym2=...); kanji; WK name(&other WK names)
 wand=magic wand=augury; 卜, 訃 right part; toe
 divining rod; 上 upper part; toe; wand
 above; 上; above; t(divining rod, floor)
-compare; 比; compare; spoon, spoon2, sitting on the ground2
-say=words=keitai; 言; say; one4, mouth, ceiling
+say=words=keitai; 言; say; t(ceiling4, mouth)
 white; 白; white; t(drop, sun)
 power=muscle=arnold; 力; power
 add; 加; add; l(power, mouth)
@@ -185,6 +184,7 @@ fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)
+aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop)
 phrase; 句; poem; o(bound up, mouth)
 poem; 敬 left part; poem; t(flowers, phrase)
@@ -279,6 +279,7 @@ forest; 森; forest; t(tree, grove)
 book; 本; book; c(tree, one)
 woman; 女; woman
 mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
+every; 毎; every; t(reclining, rice field)
 person; 人; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 personB; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
@@ -327,6 +328,9 @@ mediocre; 凡; mediocre; o(wind, drop)
 crotch; 又; stool
 elbow; 厶; private
 spoon=sitting on the ground; 匕; spoon
+compare; 比; compare; l(spoon, spoon)
+all; 皆; all; t(compare, white)
+delicious; 旨; point; t(spoon, sun)
 vulture; 爪; cleat
 one; 一; ground
 ceiling=one; 一; ground // only when on top of another element. In any case, also called "one"

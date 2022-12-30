@@ -49,33 +49,14 @@ const elementsDict =
       "above"
     ]
   },
-  "compare": {
-    "elements": [
-      "spoon",
-      "spoon2",
-      "sitting on the ground2"
-    ],
-    "kanji": "比",
-    "subElements": [
-      "spoon",
-      "spoon2",
-      "sitting on the ground2",
-      "sitting on the ground"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "compare"
-    ]
-  },
   "say": {
     "elements": [
-      "one4",
-      "mouth",
-      "ceiling"
+      "ceiling4",
+      "mouth"
     ],
     "kanji": "言",
     "subElements": [
-      "one4",
+      "ceiling4",
       "mouth",
       "ceiling",
       "one",
@@ -3112,6 +3093,26 @@ const elementsDict =
       "prison"
     ]
   },
+  "aroma": {
+    "elements": [
+      "bound up",
+      "spoon"
+    ],
+    "kanji": "匂",
+    "subElements": [
+      "bound up",
+      "spoon",
+      "clothes hanger",
+      "drop",
+      "coat hanger",
+      "drops",
+      "sitting on the ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "scent"
+    ]
+  },
   "ladle": {
     "elements": [
       "bound up",
@@ -4789,6 +4790,23 @@ const elementsDict =
       "mother"
     ]
   },
+  "every": {
+    "elements": [
+      "reclining",
+      "rice field"
+    ],
+    "kanji": "毎",
+    "subElements": [
+      "reclining",
+      "rice field",
+      "lying down",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "every"
+    ]
+  },
   "person": {
     "elements": [],
     "kanji": "人",
@@ -5462,6 +5480,60 @@ const elementsDict =
     ],
     "wkNames": [
       "spoon"
+    ]
+  },
+  "compare": {
+    "elements": [
+      "spoon",
+      "spoon"
+    ],
+    "kanji": "比",
+    "subElements": [
+      "spoon",
+      "spoon",
+      "sitting on the ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "compare"
+    ]
+  },
+  "all": {
+    "elements": [
+      "compare",
+      "white"
+    ],
+    "kanji": "皆",
+    "subElements": [
+      "compare",
+      "white",
+      "spoon",
+      "sitting on the ground",
+      "drop",
+      "sun",
+      "drops",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "all"
+    ]
+  },
+  "delicious": {
+    "elements": [
+      "spoon",
+      "sun"
+    ],
+    "kanji": "旨",
+    "subElements": [
+      "spoon",
+      "sun",
+      "sitting on the ground",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "point"
     ]
   },
   "vulture": {
