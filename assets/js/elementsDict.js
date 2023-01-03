@@ -1024,6 +1024,7 @@ const elementsDict =
       "piglet's tail"
     ],
     "wkNames": [
+      "wing",
       "not"
     ]
   },
@@ -1051,12 +1052,16 @@ const elementsDict =
       "not",
       "day",
       "knot",
-      "piglet's tail"
+      "piglet's tail",
+      "piggy bank"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "piggy bank"
+    ],
     "wkNames": [
       "easy"
-    ]
+    ],
+    "comment": "element is called piggy bank in RTK, but honestly that's kinda silly if we can just use the kanji name \"easy\"."
   },
   "screwdriver": {
     "elements": [
@@ -1531,6 +1536,61 @@ const elementsDict =
     "wkNames": [
       "sheep"
     ]
+  },
+  "beauty": {
+    "elements": [
+      "sheep",
+      "large"
+    ],
+    "kanji": "美",
+    "subElements": [
+      "sheep",
+      "large",
+      "horns",
+      "king",
+      "stick",
+      "animal horns",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "beauty"
+    ],
+    "comment": "the last part of the vertical stroke is interwoven with the large radical, but that seems like a minor detail. (structureVague: yes)"
+  },
+  "spicy": {
+    "elements": [
+      "stand",
+      "ten"
+    ],
+    "kanji": "辛",
+    "subElements": [
+      "stand",
+      "ten",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "spicy"
+    ]
+  },
+  "happiness": {
+    "elements": [
+      "ten",
+      "spicy"
+    ],
+    "kanji": "幸",
+    "subElements": [
+      "ten",
+      "spicy",
+      "needle",
+      "stand"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "happiness"
+    ],
+    "comment": "interwoven. structureVague: yes"
   },
   "roof": {
     "elements": [],
