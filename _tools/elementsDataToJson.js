@@ -75,7 +75,13 @@ function processFile(fileString) {
         let subElements = [];
         if (columns.length > 3) {
             const structureSubelementSplit = columns[3].split("&");
-            mainElements = removeStructure(structureSubelementSplit[0]).split(",").map(a => a.trim())
+            mainElements = structureSubelementSplit[0];
+            const leftBracketOccurences = countOccurences(mainElements, '\\(');
+            const rightBracketOccurences = countOccurences(mainElements, '\\)');
+            if (leftBracketOccurences !== rightBracketOccurences) {
+                console.warn(`bracket mismatch in row ${i+1}: ${mainElements}`);
+            }
+            mainElements = removeStructure(mainElements).split(",").map(a => a.trim());
             // TODO maybe avoid duplicates? e.g. 昌 adds sun twice
             subElements = [...mainElements]; // shallow copy
             if (structureSubelementSplit.length > 1) {
@@ -174,6 +180,12 @@ function removeStructure(elementsTreeString) {
         .replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll("c(","")
         .replaceAll("f(", "") // flanked: e.g. 火 = f(fire, drop, drop) = fire flanked by drop, drop
         .replaceAll(")","");
+}
+
+function countOccurences(text, searchRegexString) {
+    const occurences = text.match(new RegExp(searchRegexString, 'g'))?.length ?? 0
+    return occurences;
+    // apparently the performance of this isn't great, but we don't care here
 }
 
 function processElements(elementsRaw) {
