@@ -237,8 +237,11 @@ const elementsDict =
     "subElements": [
       "house",
       "each",
+      "roof",
+      "sow",
       "walking legs",
-      "mouth"
+      "mouth",
+      "pig"
     ],
     "synonyms": [],
     "wkNames": [
@@ -358,7 +361,10 @@ const elementsDict =
     "kanji": "定",
     "subElements": [
       "house",
-      "coat rack"
+      "coat rack",
+      "roof",
+      "sow",
+      "pig"
     ],
     "synonyms": [],
     "wkNames": [
@@ -374,8 +380,11 @@ const elementsDict =
     "subElements": [
       "house",
       "beginning",
+      "roof",
+      "sow",
       "two",
-      "human legs"
+      "human legs",
+      "pig"
     ],
     "synonyms": [],
     "wkNames": [
@@ -1018,6 +1027,19 @@ const elementsDict =
       "not"
     ]
   },
+  "sow": {
+    "elements": [],
+    "kanji": "豕",
+    "subElements": [
+      "pig"
+    ],
+    "synonyms": [
+      "pig"
+    ],
+    "wkNames": [
+      "pig"
+    ]
+  },
   "easy": {
     "elements": [
       "sun",
@@ -1510,14 +1532,37 @@ const elementsDict =
       "sheep"
     ]
   },
-  "house": {
+  "roof": {
     "elements": [],
     "kanji": "宀",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "house"
+    ],
+    "synonyms": [
+      "house"
+    ],
     "wkNames": [
       "roof"
-    ]
+    ],
+    "comment": "this is called house in RTK, but unfortunately the kanji 家 is also house, which RTK calls the \"full character\", and we can't/shouldn't have two elements with the same name, so we renamed this to roof (WK name)."
+  },
+  "house": {
+    "elements": [
+      "roof",
+      "sow"
+    ],
+    "kanji": "家",
+    "subElements": [
+      "roof",
+      "sow",
+      "house",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "house"
+    ],
+    "comment": "in RTK originally 宀 is house, but so is 家, which RTK calls the \"full character\". We can't/shouldn't have two elements with the same name, so we renamed the RTK house radical to roof (WK name)."
   },
   "joint": {
     "elements": [],
