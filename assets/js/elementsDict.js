@@ -1803,6 +1803,36 @@ const elementsDict =
       "fix"
     ]
   },
+  "dragon": {
+    "elements": [
+      "stand up",
+      "rice field",
+      "fishhook"
+    ],
+    "kanji": "竜",
+    "subElements": [
+      "stand up",
+      "rice field",
+      "fishhook",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "brains",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dragon"
+    ],
+    "comment": "fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke"
+  },
   "complete": {
     "elements": [
       ""
@@ -3922,6 +3952,31 @@ const elementsDict =
       "animal"
     ]
   },
+  "sort of thing": {
+    "elements": [
+      "evening",
+      "dog",
+      "oven-fire"
+    ],
+    "kanji": "然",
+    "subElements": [
+      "evening",
+      "dog",
+      "oven-fire",
+      "large",
+      "drop",
+      "drop4",
+      "drop",
+      "drops",
+      "oven fire",
+      "barbecue",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "nature"
+    ]
+  },
   "in": {
     "elements": [
       "mouth",
@@ -4333,6 +4388,43 @@ const elementsDict =
     "wkNames": [
       "self"
     ]
+  },
+  "snake": {
+    "elements": [],
+    "kanji": "己",
+    "subElements": [
+      "self"
+    ],
+    "synonyms": [
+      "self"
+    ],
+    "wkNames": [
+      "oneself"
+    ],
+    "comment": "unfortunately the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK"
+  },
+  "wrap": {
+    "elements": [
+      "bound up",
+      "snake"
+    ],
+    "kanji": "包",
+    "subElements": [
+      "bound up",
+      "snake",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down",
+      "self"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "wrap"
+    ],
+    "comment": "structureVague: yes: not quite top-down, it's also entwined"
   },
   "somebody": {
     "elements": [
@@ -5595,6 +5687,20 @@ const elementsDict =
     "wkNames": [
       "sell"
     ]
+  },
+  "scorpion": {
+    "elements": [],
+    "kanji": "也",
+    "subElements": [
+      "est"
+    ],
+    "synonyms": [
+      "est"
+    ],
+    "wkNames": [
+      "alligator"
+    ],
+    "comment": "kanji is named est in RTK, element scorpion"
   },
   "stick": {
     "elements": [],

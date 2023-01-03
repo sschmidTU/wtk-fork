@@ -104,6 +104,7 @@ schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
 straightaway; 直; fix; t(ten, eye, straightened hook)
+dragon; 竜; dragon; t(stand up, rice field, fishhook) // fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke
 complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
@@ -231,6 +232,7 @@ early=sunflower; 早; early; t(sun, ten)
 mist; 𠦝, 龺, 朝 left part; morning; t(ten, sun, ten)
 morning; 朝; morning; l(mist, moon)
 pack of wild dogs; 狂 left part; animal
+sort of thing; 然; nature; t(l(evening, dog), oven-fire)
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
 gone; 去; past; t(soil, elbow)
@@ -250,6 +252,8 @@ nightbreak; 旦; dawn; t(sun, floor)
 span; 亘; dawn; t(ceiling, nightbreak)
 excuse=village stocks=rabbit; 免; excuse; t(bound up, c(mouth, stick), human legs) // original primitive called "village stocks" in RTK, though excuse seems better as that's also the kanji keyword
 oneself=nose; 自; self; t(drop, eye)
+snake=self; 己; oneself // unfortunately the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK
+wrap; 包; wrap; t(bound up, snake) // structureVague: yes: not quite top-down, it's also entwined
 somebody; 身; somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
 cave; 广, 店 outer part; canopy
 cause; 因; cause; o(pent in, large)
@@ -329,6 +333,7 @@ samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal str
 square jewel=squared jewel; 圭; square jewel; t(soil, soil)
 good luck; 吉; good luck; t(samurai, mouth)
 sell; 売; sell; t(samurai, crown, human legs)
+scorpion=est; 也; alligator // kanji is named est in RTK, element scorpion
 stick; ｜, 旧 left part; stick // basically any vertical line
 pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
