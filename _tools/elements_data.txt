@@ -90,12 +90,6 @@ concave; 凸; concave
 sheep; 羊; sheep; t(horns, king, stick)
 roof=house; 宀; roof // this is called house in RTK, but unfortunately the kanji 家 is also house, which RTK calls the "full character", and we can't/shouldn't have two elements with the same name, so we renamed this to roof (WK name).
 house; 家; house; t(roof, sow) // in RTK originally 宀 is house, but so is 家, which RTK calls the "full character". We can't/shouldn't have two elements with the same name, so we renamed the RTK house radical to roof (WK name).
-joint; 骨 upper part; joint // doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon.
-skeleton; 骨; bone; t(joint, moon)
-sprout=shoot=wherefore; 由; reason; t(drop, rice field)
-bend; 曲; music; rice field, stick2 // basically one and a half rice fields (or 2 rice fields half overlapping) with 2 sticks
-cadet; 曹; official; t(c(bend, one), sun)
-beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
 crown; 冖, 冗 top part; forehead
 hood; 冂; head
 same; 同; same; o(hood, t(ceiling, mouth)); creeperWK
@@ -103,6 +97,12 @@ tall; 高; tall; t(top hat, mouth, o(hood, mouth))
 circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hood instead of hood (subelement/variant I guess)
 owl; 桜 top right part, 巣 top part; grass; drop3
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
+joint; 骨 upper part; joint // doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon.
+skeleton; 骨; bone; t(joint, moon)
+sprout=shoot=wherefore; 由; reason; t(drop, rice field)
+bend; 曲; music; rice field, stick2 // basically one and a half rice fields (or 2 rice fields half overlapping) with 2 sticks
+cadet; 曹; official; t(c(bend, one), sun)
+beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
 straightaway; 直; fix; t(ten, eye, straightened hook)

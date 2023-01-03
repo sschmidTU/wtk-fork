@@ -1564,6 +1564,118 @@ const elementsDict =
     ],
     "comment": "in RTK originally 宀 is house, but so is 家, which RTK calls the \"full character\". We can't/shouldn't have two elements with the same name, so we renamed the RTK house radical to roof (WK name)."
   },
+  "crown": {
+    "elements": [],
+    "kanji": "冖, 冗 top part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "forehead"
+    ]
+  },
+  "hood": {
+    "elements": [],
+    "kanji": "冂",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "head"
+    ]
+  },
+  "same": {
+    "elements": [
+      "hood",
+      "ceiling",
+      "mouth"
+    ],
+    "elementsWK": "creeperWK",
+    "kanji": "同",
+    "subElements": [
+      "hood",
+      "ceiling",
+      "mouth",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "same"
+    ]
+  },
+  "tall": {
+    "elements": [
+      "top hat",
+      "mouth",
+      "hood",
+      "mouth"
+    ],
+    "kanji": "高",
+    "subElements": [
+      "top hat",
+      "mouth",
+      "hood",
+      "mouth",
+      "drop",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tall"
+    ]
+  },
+  "circumference": {
+    "elements": [
+      "hood",
+      "soil",
+      "mouth"
+    ],
+    "kanji": "周",
+    "subElements": [
+      "hood",
+      "soil",
+      "mouth",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "circumference"
+    ],
+    "comment": "RTK says glass hood instead of hood (subelement/variant I guess)"
+  },
+  "owl": {
+    "elements": [
+      "drop3"
+    ],
+    "kanji": "桜 top right part, 巣 top part",
+    "subElements": [
+      "drop3",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "grass"
+    ]
+  },
+  "schoolhouse": {
+    "elements": [
+      "owl",
+      "crown"
+    ],
+    "kanji": "学覚栄 upper part",
+    "subElements": [
+      "owl",
+      "crown",
+      "drop3",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "viking"
+    ]
+  },
   "joint": {
     "elements": [],
     "kanji": "骨 upper part",
@@ -1676,118 +1788,6 @@ const elementsDict =
     ],
     "wkNames": [
       "beans"
-    ]
-  },
-  "crown": {
-    "elements": [],
-    "kanji": "冖, 冗 top part",
-    "subElements": [],
-    "synonyms": [],
-    "wkNames": [
-      "forehead"
-    ]
-  },
-  "hood": {
-    "elements": [],
-    "kanji": "冂",
-    "subElements": [],
-    "synonyms": [],
-    "wkNames": [
-      "head"
-    ]
-  },
-  "same": {
-    "elements": [
-      "hood",
-      "ceiling",
-      "mouth"
-    ],
-    "elementsWK": "creeperWK",
-    "kanji": "同",
-    "subElements": [
-      "hood",
-      "ceiling",
-      "mouth",
-      "one"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "same"
-    ]
-  },
-  "tall": {
-    "elements": [
-      "top hat",
-      "mouth",
-      "hood",
-      "mouth"
-    ],
-    "kanji": "高",
-    "subElements": [
-      "top hat",
-      "mouth",
-      "hood",
-      "mouth",
-      "drop",
-      "one",
-      "drops"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "tall"
-    ]
-  },
-  "circumference": {
-    "elements": [
-      "hood",
-      "soil",
-      "mouth"
-    ],
-    "kanji": "周",
-    "subElements": [
-      "hood",
-      "soil",
-      "mouth",
-      "dirt",
-      "ground"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "circumference"
-    ],
-    "comment": "RTK says glass hood instead of hood (subelement/variant I guess)"
-  },
-  "owl": {
-    "elements": [
-      "drop3"
-    ],
-    "kanji": "桜 top right part, 巣 top part",
-    "subElements": [
-      "drop3",
-      "drop",
-      "drops"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "grass"
-    ]
-  },
-  "schoolhouse": {
-    "elements": [
-      "owl",
-      "crown"
-    ],
-    "kanji": "学覚栄 upper part",
-    "subElements": [
-      "owl",
-      "crown",
-      "drop3",
-      "drop",
-      "drops"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "viking"
     ]
   },
   "fishhook": {
