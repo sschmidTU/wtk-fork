@@ -333,6 +333,24 @@ const elementsDict =
       "correct"
     ]
   },
+  "this here": {
+    "elements": [
+      "stop",
+      "spoon"
+    ],
+    "kanji": "此",
+    "subElements": [
+      "stop",
+      "spoon",
+      "footprint",
+      "sitting on the ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "this here"
+    ],
+    "comment": "rtk3 element (2043). not an element on WK (though it appears quite frequently in rarer kanji)"
+  },
   "run": {
     "elements": [
       "soil",
@@ -2221,30 +2239,6 @@ const elementsDict =
       "world"
     ]
   },
-  "do": {
-    "elements": [
-      "tail feathers"
-    ],
-    "kanji": "為",
-    "subElements": [
-      "tail feathers",
-      "clothes hanger",
-      "oven-fire",
-      "coat hanger",
-      "drop4",
-      "drop",
-      "oven fire",
-      "barbecue",
-      "drops",
-      "so"
-    ],
-    "synonyms": [
-      "so"
-    ],
-    "wkNames": [
-      "sake"
-    ]
-  },
   "dry": {
     "elements": [
       "ceiling",
@@ -3520,6 +3514,49 @@ const elementsDict =
     ],
     "comment": "Note that this radical in RTK explicitly includes the フ shape around the \"oven-fire\"-like short strokes. don't confuse with oven-fire (RTK) radical."
   },
+  "feathers": {
+    "elements": [
+      "clothes hanger2",
+      "drop2"
+    ],
+    "kanji": "羽",
+    "subElements": [
+      "clothes hanger2",
+      "drop2",
+      "clothes hanger",
+      "drop",
+      "coat hanger",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "feather"
+    ]
+  },
+  "do": {
+    "elements": [
+      "tail feathers"
+    ],
+    "kanji": "為",
+    "subElements": [
+      "tail feathers",
+      "clothes hanger",
+      "oven-fire",
+      "coat hanger",
+      "drop4",
+      "drop",
+      "drops",
+      "oven fire",
+      "barbecue",
+      "so"
+    ],
+    "synonyms": [
+      "so"
+    ],
+    "wkNames": [
+      "sake"
+    ]
+  },
   "fish": {
     "elements": [
       "bound up",
@@ -3759,6 +3796,47 @@ const elementsDict =
       "turkey"
     ],
     "comment": "TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?"
+  },
+  "char": {
+    "elements": [
+      "turkey",
+      "oven-fire"
+    ],
+    "kanji": "焦",
+    "subElements": [
+      "turkey",
+      "oven-fire",
+      "drop4",
+      "drop",
+      "drops",
+      "oven fire",
+      "barbecue",
+      "barbecue"
+    ],
+    "synonyms": [
+      "barbecue"
+    ],
+    "wkNames": [
+      "char"
+    ],
+    "comment": "barbecue is not in my RTK1 book, but in the rtk-search data"
+  },
+  "pegasus": {
+    "elements": [
+      "noon",
+      "turkey"
+    ],
+    "kanji": "勧 left part, variant of 雚",
+    "subElements": [
+      "noon",
+      "turkey",
+      "sign of the horse"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "pegasus"
+    ],
+    "comment": "doesn't exist in WK (noon+turkey)"
   },
   "flowers": {
     "elements": [],
@@ -4562,22 +4640,6 @@ const elementsDict =
       "canopy"
     ]
   },
-  "cause": {
-    "elements": [
-      "pent in",
-      "large"
-    ],
-    "kanji": "因",
-    "subElements": [
-      "pent in",
-      "large",
-      "St. Bernard"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "cause"
-    ]
-  },
   "give": {
     "elements": [
       "mouth",
@@ -4733,29 +4795,6 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "vermillion"
-    ]
-  },
-  "old": {
-    "elements": [
-      "ten",
-      "mouth"
-    ],
-    "kanji": "古",
-    "subElements": [
-      "ten",
-      "mouth",
-      "needle",
-      "tombstone",
-      "gravestone",
-      "church"
-    ],
-    "synonyms": [
-      "tombstone",
-      "gravestone",
-      "church"
-    ],
-    "wkNames": [
-      "old"
     ]
   },
   "i": {
@@ -4997,6 +5036,29 @@ const elementsDict =
       "lid"
     ]
   },
+  "old": {
+    "elements": [
+      "ten",
+      "mouth"
+    ],
+    "kanji": "古",
+    "subElements": [
+      "ten",
+      "mouth",
+      "needle",
+      "tombstone",
+      "gravestone",
+      "church"
+    ],
+    "synonyms": [
+      "tombstone",
+      "gravestone",
+      "church"
+    ],
+    "wkNames": [
+      "old"
+    ]
+  },
   "pent in": {
     "elements": [],
     "kanji": "囗",
@@ -5006,6 +5068,59 @@ const elementsDict =
       "mouth"
     ],
     "comment": "called \"pent in\" in RTK when it's enclosing other elements. otherwise mouth"
+  },
+  "quandary": {
+    "elements": [
+      "pent in",
+      "tree"
+    ],
+    "kanji": "困",
+    "subElements": [
+      "pent in",
+      "tree",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "distressed"
+    ]
+  },
+  "harden": {
+    "elements": [
+      "pent in",
+      "old"
+    ],
+    "kanji": "固",
+    "subElements": [
+      "pent in",
+      "old",
+      "ten",
+      "mouth",
+      "needle",
+      "tombstone",
+      "gravestone",
+      "church"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "hard"
+    ]
+  },
+  "cause": {
+    "elements": [
+      "pent in",
+      "large"
+    ],
+    "kanji": "因",
+    "subElements": [
+      "pent in",
+      "large",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "cause"
+    ]
   },
   "receive": {
     "elements": [

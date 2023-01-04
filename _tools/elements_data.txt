@@ -20,6 +20,7 @@ mending=mend=zoo; 定 bottom part, 疋, 足 bottom part; coat rack // only diffe
 zoo=critters=mending=mend; 疋; coat rack // added hook on top stroke compared to mending, almost indistinguishable. coat rack in WK is both zoo and mending
 stop=footprint; 止; stop
 correct; 正; correct; t(ceiling, stop)
+this here; 此; this here; l(stop, spoon) // rtk3 element (2043). not an element on WK (though it appears quite frequently in rarer kanji)
 run; 走; run; t(soil, mending)
 determine; 定; determine; t(house, coat rack)
 perfect; 完; perfect; t(house, beginning)
@@ -126,7 +127,6 @@ glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
 temple=Buddhist temple; 寺; temple
 specialty; 専; specialty; t(ten, rice field, glue)
 generation=generations; 世; world
-do=so; 為; sake; tail feathers
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
 broom; ヨ, 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
 rake; 粛 top part; wolverine; c(broom, stick) // = broom with stick through it (vertical stroke)
@@ -204,6 +204,8 @@ fire; 火; fire; f(person, drop, drop) // fire flanked by drop, drop
 inflammation; 炎; flame; t(fire, fire)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
+feathers; 羽; feather; clothes hanger2, drop2
+do=so; 為; sake; tail feathers
 fish; 魚; fish; t(bound up, rice field, oven-fire)
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
 turtle; 壮 left part; icicle
@@ -219,6 +221,8 @@ dart; 矢; arrow; c(heavens, drop)
 angel; 橋 right part; angel; t(wheat, mouth, same) // WK: not a radical
 bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened when used as an element.
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
+char=barbecue; 焦; char; t(turkey, oven-fire) // barbecue is not in my RTK1 book, but in the rtk-search data
+pegasus; 勧 left part, variant of 雚; pegasus; t(noon, turkey) // doesn't exist in WK (noon+turkey)
 flowers; 艹, 若 top part; flowers
 seedling; 苗; seedling; t(flowers, rice field)
 decorate; 賁; decorate; t(cross, flowers, shellfish) // not a RTK or WK kanji, but the kanji exists.
@@ -261,7 +265,6 @@ snake=self; 己; oneself // unfortunately the kanji 己 is self in RTK, but ones
 wrap; 包; wrap; t(bound up, snake) // structureVague: yes: not quite top-down, it's also entwined
 somebody; 身; somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
 cave; 广, 店 outer part; canopy
-cause; 因; cause; o(pent in, large)
 give; 呉; give&catapult; t(mouth, chair, tool)
 oversee; 監; oversee; t(l(retainer, reclining, floor), dish)
 summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK
@@ -269,7 +272,6 @@ husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(ex
 not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
 vermillion; 朱; vermillion; c(not yet, dropB)
-old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 i; 吾; i; t(five, mouth)
 benefit; 益; benefit; t(horns, one, animal legs, dish)
 state of mind; 忄; soul; l(drop, stick, drop)
@@ -286,7 +288,11 @@ child; 子; child
 finger=fingers; 扌, 招 left part; fingers
 enter; 入; enter; t(hook, person)
 top hat; 亠, 京 top part; lid; t(drop, one)
+old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
+quandary; 困; distressed; o(pent in, tree)
+harden; 固; hard; o(pent in, old)
+cause; 因; cause; o(pent in, large)
 receive; 享; receive; t(top hat, mouth, child)
 pavilion; 亭; restaurant; t(top hat, mouth, crown, street)
 capital; 京; capital; t(top hat, mouth, little)
