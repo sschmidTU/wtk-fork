@@ -16,6 +16,16 @@ for (const doc of docs) {
     doc.kwWK = wk_kanji[doc.kanji].meanings[0].meaning; // see wk_kanji_short_min.js
   }
   if (doc.elT) {
+    const docElementsTree = doc.elT;
+    const elTCommentSplit = docElementsTree.split("//");
+    const elementsTreeWithoutComment = elTCommentSplit[0].trim();
+    let elTComment = "";
+    if (elTCommentSplit.length > 2) {
+      console.log("warning: elementsTree has more than one comment split (//)");
+    } else if (elTCommentSplit.length === 2) {
+      elTComment = elTCommentSplit[1].trim();
+    }
+    doc.elTComment = elTComment;
     // create doc.el (elements) from doc.elT (elementsTree)
     doc.elP = removeStructure(doc.elT);
     // TODO move this to a script that changes the .md files, instead of having visitors do this every time
