@@ -26,6 +26,7 @@ for (const doc of docs) {
     } else if (elTCommentSplit.length === 2) {
       elTComment = elTCommentSplit[1].trim();
     }
+    doc.elT = elementsTreeWithoutComment;
     doc.elTComment = elTComment;
     // create doc.el (elements) from doc.elT (elementsTree)
     doc.elP = removeStructure(elementsTreeWithoutComment);
