@@ -17,6 +17,7 @@ for (const doc of docs) {
   }
   if (doc.elT) {
     const docElementsTree = doc.elT;
+    // remove/separate comments from elementsTree field
     const elTCommentSplit = docElementsTree.split("//");
     const elementsTreeWithoutComment = elTCommentSplit[0].trim();
     let elTComment = "";
@@ -27,7 +28,7 @@ for (const doc of docs) {
     }
     doc.elTComment = elTComment;
     // create doc.el (elements) from doc.elT (elementsTree)
-    doc.elP = removeStructure(doc.elT);
+    doc.elP = removeStructure(elementsTreeWithoutComment);
     // TODO move this to a script that changes the .md files, instead of having visitors do this every time
     let elP = doc.elP;
     if (doc.elPx) {
