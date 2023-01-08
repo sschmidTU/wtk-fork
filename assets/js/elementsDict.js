@@ -2053,6 +2053,28 @@ const elementsDict =
       "spring"
     ]
   },
+  "longevity": {
+    "elements": [
+      "bonsai",
+      "glue"
+    ],
+    "kanji": "寿",
+    "subElements": [
+      "bonsai",
+      "glue",
+      "ten",
+      "hook",
+      "drop",
+      "measurement",
+      "needle",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "lifespan"
+    ],
+    "comment": "bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable"
+  },
   "meadow": {
     "elements": [
       "cliff",

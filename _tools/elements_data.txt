@@ -117,6 +117,7 @@ meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is �
 fit; 合; suit; t(meeting, mouth)
 bonsai; 𡗗, 秦 or 寿 upper part; spring
 spring; 泉; spring; t(white, water)
+longevity; 寿; lifespan; t(bonsai, glue) // bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable
 meadow; 原; original; o(cliff, spring)
 awl; 㑒; squid
 now; 今; now; t(umbrella, one, clothes hanger)
