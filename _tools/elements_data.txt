@@ -38,6 +38,7 @@ jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors w
 lord; 主; master; t(drop, king)
 emperor; 皇; emperor; t(white, king)
 whole; 全; all; t(umbrella, king)
+courts; 廷; courts; lb(stretch, porter)
 un-=jail cell=prison bars; 非; injustice; f(animal legs, shape, three)
 nine=baseball; 九; nine
 ten=needle; 十; ten&cross
@@ -45,12 +46,13 @@ thousand=one thousand; 千; thousand; t(drop, ten); slideWK
 sword=dagger; 刀; sword
 saber=sabre=sword; 刂; knife // variant of 刀 sword
 blade; 刃; blade; c(sword, drop)
+endure; 忍; endure; t(blade, heart)
 seduce; 召; call; t(sword, mouth)
 ten thousand; 万; ten thousand; t(ceiling, bound up)
 tongue; 舌; tongue; t(thousand, mouth)
 measuring box; 升; grid; l(thousand, ten); slideWK
 round; 丸; round; c(nine, drop)
-wealth; 畐, 福 right part; scarecrow; t(ceiling, mouth, rice field); creeperWK
+wealth; 畐, 福 right part; scarecrow; t(creeper, rice field)
 employee; 員; member; t(mouth, shellfish)
 shellfish=shell=clam=oyster; 貝; shellfish; t(eye, animal legs)
 see; 見; see; t(eye, human legs)
@@ -74,6 +76,7 @@ style; 式; style; tr(arrowhead, craft)
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 badge; 章; chapter; t(stand up, early)
+idea; 意; idea; t(stand up, sun, heart)
 towel; 巾; towel
 market; 市; city; t(top hat, towel) // can look like c(towel, one) depending on font, especially with chinese-like font
 buckle; 帯 top part; mountain&one // see apron apron (frame 415) in RTK1
@@ -84,6 +87,7 @@ rain; 雨; rain; t(ceiling, o(towel, drop4))
 drop=drops; 丶, 白 top part; drop
 dropB; 少 bottom part; slide; drop
 heart; 心; heart; o(drop3, fishhook)
+favor=favour; 恵; favor; t(ten, rice field, heart)
 box; 匚, 区 outer part; cage
 swiss=switzerland=plus=red cross=d-pad; 亞, 亞 middle part, 惡 plus-shaped part between one and one; swiss; convex2, box4, two // doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements
 convex; 凸; convex
@@ -96,7 +100,7 @@ roof=house; 宀; roof // this is called house in RTK, but unfortunately the kanj
 house; 家; house; t(roof, sow) // in RTK originally 宀 is house, but so is 家, which RTK calls the "full character". We can't/shouldn't have two elements with the same name, so we renamed the RTK house radical to roof (WK name).
 crown; 冖, 冗 top part; forehead
 hood; 冂; head
-same; 同; same; o(hood, t(ceiling, mouth)); creeperWK
+same; 同; same; o(hood, creeper)
 tall; 高; tall; t(top hat, mouth, o(hood, mouth))
 circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hood instead of hood (subelement/variant I guess)
 owl; 桜 top right part, 巣 top part; grass; drop3
@@ -190,7 +194,6 @@ cloak; 衤, 初 left part; spirit // almost same as altar, has an extra diagonal
 key; ユ; hook
 guillotine; 決 right part; decide; t(c(key, stick), large) // maybe the subdivision here with key crossed by stick is unnecessary, but who knows.
 page; 頁; page; t(ceiling, drop, shellfish); leafWK
-times=-times; 回; times; o(pent in, mouth)
 retainer=slave; 臣; servant
 fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
@@ -246,6 +249,7 @@ sort of thing; 然; nature; t(l(evening, dog), oven-fire)
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
 gone; 去; past; t(soil, elbow)
+kebab; 串; kebab; c(t(mouth, mouth), stick)
 resemblance; 肖; resemblance; t(littleB, moon)
 beggar; 丂, 巧 right part; snare // similar to slingshot:  与 without the lower horizontal line (?)
 mutually=mutual=broken broom; 互 middle part; mutual
@@ -291,6 +295,7 @@ enter; 入; enter; t(hook, person)
 top hat; 亠, 京 top part; lid; t(drop, one)
 old=tombstone=gravestone=church; 古; old; t(ten, mouth)
 pent in; 囗; mouth // called "pent in" in RTK when it's enclosing other elements. otherwise mouth
+times=-times; 回; times; o(pent in, mouth)
 quandary; 困; distressed; o(pent in, tree)
 harden; 固; hard; o(pent in, old)
 cause; 因; cause; o(pent in, large)
@@ -329,6 +334,7 @@ mouth; 口; mouth
 goods; 品; product; t(mouth, l(mouth, mouth))
 furniture=wooden goods; 操 right part; syrup; t(goods, tree)
 creeper; 同 inner part; creeper; t(ceiling, mouth) // doesn't exist in RTK, but does in WK, and is very common.
+a certain; 或; a certain; tr(fiesta, creeper)
 sun=day; 日; sun
 mortar; 臼; sun // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
@@ -343,6 +349,7 @@ rice field=brains; 田; rice field
 soil=dirt=ground; 土; dirt
 samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal strong is longer than the lower one here.
 square jewel=squared jewel; 圭; square jewel; t(soil, soil)
+intention; 志; intention; t(samurai, heart)
 good luck; 吉; good luck; t(samurai, mouth)
 sell; 売; sell; t(samurai, crown, human legs)
 scorpion=est; 也; alligator // kanji is named est in RTK, element scorpion
@@ -351,6 +358,7 @@ pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on th
 city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 wind; 几, 冗 bottom part; table
 mediocre; 凡; mediocre; o(wind, drop)
+barge; 恐 top part; saw; l(craft, mediocre) // not named in my RTK copy, but in the pre-existing rtk-search data
 crotch; 又; stool
 elbow; 厶; private
 spoon=sitting on the ground; 匕; spoon

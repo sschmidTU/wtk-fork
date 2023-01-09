@@ -650,6 +650,22 @@ const elementsDict =
       "all"
     ]
   },
+  "courts": {
+    "elements": [
+      "stretch",
+      "porter"
+    ],
+    "kanji": "廷",
+    "subElements": [
+      "stretch",
+      "porter",
+      "king"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "courts"
+    ]
+  },
   "un-": {
     "elements": [
       "animal legs",
@@ -766,6 +782,31 @@ const elementsDict =
       "blade"
     ]
   },
+  "endure": {
+    "elements": [
+      "blade",
+      "heart"
+    ],
+    "kanji": "忍",
+    "subElements": [
+      "blade",
+      "heart",
+      "sword",
+      "drop",
+      "dagger",
+      "drops",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "endure"
+    ]
+  },
   "seduce": {
     "elements": [
       "sword",
@@ -863,18 +904,17 @@ const elementsDict =
   },
   "wealth": {
     "elements": [
-      "ceiling",
-      "mouth",
+      "creeper",
       "rice field"
     ],
-    "elementsWK": "creeperWK",
     "kanji": "畐, 福 right part",
     "subElements": [
+      "creeper",
+      "rice field",
       "ceiling",
       "mouth",
-      "rice field",
-      "one",
-      "brains"
+      "brains",
+      "one"
     ],
     "synonyms": [],
     "wkNames": [
@@ -1317,6 +1357,38 @@ const elementsDict =
       "chapter"
     ]
   },
+  "idea": {
+    "elements": [
+      "stand up",
+      "sun",
+      "heart"
+    ],
+    "kanji": "意",
+    "subElements": [
+      "stand up",
+      "sun",
+      "heart",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "day",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "idea"
+    ]
+  },
   "towel": {
     "elements": [],
     "kanji": "巾",
@@ -1479,6 +1551,35 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "heart"
+    ]
+  },
+  "favor": {
+    "elements": [
+      "ten",
+      "rice field",
+      "heart"
+    ],
+    "kanji": "恵",
+    "subElements": [
+      "ten",
+      "rice field",
+      "heart",
+      "needle",
+      "brains",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "drops",
+      "favour"
+    ],
+    "synonyms": [
+      "favour"
+    ],
+    "wkNames": [
+      "favor"
     ]
   },
   "box": {
@@ -1663,13 +1764,12 @@ const elementsDict =
   "same": {
     "elements": [
       "hood",
-      "ceiling",
-      "mouth"
+      "creeper"
     ],
-    "elementsWK": "creeperWK",
     "kanji": "同",
     "subElements": [
       "hood",
+      "creeper",
       "ceiling",
       "mouth",
       "one"
@@ -3251,24 +3351,6 @@ const elementsDict =
       "page"
     ]
   },
-  "times": {
-    "elements": [
-      "pent in",
-      "mouth"
-    ],
-    "kanji": "回",
-    "subElements": [
-      "pent in",
-      "mouth",
-      "-times"
-    ],
-    "synonyms": [
-      "-times"
-    ],
-    "wkNames": [
-      "times"
-    ]
-  },
   "retainer": {
     "elements": [],
     "kanji": "臣",
@@ -3790,6 +3872,7 @@ const elementsDict =
       "cereal",
       "sapling",
       "hood",
+      "creeper",
       "ceiling",
       "one"
     ],
@@ -4238,6 +4321,23 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "past"
+    ]
+  },
+  "kebab": {
+    "elements": [
+      "mouth",
+      "mouth",
+      "stick"
+    ],
+    "kanji": "串",
+    "subElements": [
+      "mouth",
+      "mouth",
+      "stick"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "kebab"
     ]
   },
   "resemblance": {
@@ -5091,6 +5191,24 @@ const elementsDict =
     ],
     "comment": "called \"pent in\" in RTK when it's enclosing other elements. otherwise mouth"
   },
+  "times": {
+    "elements": [
+      "pent in",
+      "mouth"
+    ],
+    "kanji": "回",
+    "subElements": [
+      "pent in",
+      "mouth",
+      "-times"
+    ],
+    "synonyms": [
+      "-times"
+    ],
+    "wkNames": [
+      "times"
+    ]
+  },
   "quandary": {
     "elements": [
       "pent in",
@@ -5688,6 +5806,28 @@ const elementsDict =
     ],
     "comment": "doesn't exist in RTK, but does in WK, and is very common."
   },
+  "a certain": {
+    "elements": [
+      "fiesta",
+      "creeper"
+    ],
+    "kanji": "或",
+    "subElements": [
+      "fiesta",
+      "creeper",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops",
+      "ceiling",
+      "mouth",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "a certain"
+    ]
+  },
   "sun": {
     "elements": [],
     "kanji": "日",
@@ -5896,6 +6036,29 @@ const elementsDict =
       "square jewel"
     ]
   },
+  "intention": {
+    "elements": [
+      "samurai",
+      "heart"
+    ],
+    "kanji": "志",
+    "subElements": [
+      "samurai",
+      "heart",
+      "gentleman",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "intention"
+    ]
+  },
   "good luck": {
     "elements": [
       "samurai",
@@ -5998,6 +6161,29 @@ const elementsDict =
     "wkNames": [
       "mediocre"
     ]
+  },
+  "barge": {
+    "elements": [
+      "craft",
+      "mediocre"
+    ],
+    "kanji": "恐 top part",
+    "subElements": [
+      "craft",
+      "mediocre",
+      "ceiling",
+      "stick",
+      "floor",
+      "one",
+      "wind",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "saw"
+    ],
+    "comment": "not named in my RTK copy, but in the pre-existing rtk-search data"
   },
   "crotch": {
     "elements": [],
