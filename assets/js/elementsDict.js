@@ -802,6 +802,15 @@ const elementsDict =
       "fur"
     ]
   },
+  "two hands": {
+    "elements": [],
+    "kanji": "开",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "lantern"
+    ]
+  },
   "sword": {
     "elements": [],
     "kanji": "刀",
@@ -2230,6 +2239,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "suit"
+    ]
+  },
+  "adzuki beans": {
+    "elements": [
+      "flowers",
+      "fit"
+    ],
+    "kanji": "荅",
+    "subElements": [
+      "flowers",
+      "fit",
+      "meeting",
+      "mouth",
+      "umbrella",
+      "floor",
+      "one",
+      "azuki beans"
+    ],
+    "synonyms": [
+      "azuki beans"
+    ],
+    "wkNames": [
+      "azuki beans"
     ]
   },
   "bonsai": {
@@ -5675,6 +5707,29 @@ const elementsDict =
       "woman"
     ]
   },
+  "concubine": {
+    "elements": [
+      "stand up",
+      "woman"
+    ],
+    "kanji": "妾",
+    "subElements": [
+      "stand up",
+      "woman",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "concubine"
+    ]
+  },
   "mama": {
     "elements": [
       "sun",
@@ -6449,6 +6504,54 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "mediocre"
+    ]
+  },
+  "whirlwind": {
+    "elements": [],
+    "kanji": "亢",
+    "subElements": [
+      "high spirits"
+    ],
+    "synonyms": [
+      "high spirits"
+    ],
+    "wkNames": [
+      "whirlwind"
+    ]
+  },
+  "boat": {
+    "elements": [
+      "drop",
+      "wind",
+      "drop",
+      "stick"
+    ],
+    "kanji": "舟",
+    "subElements": [
+      "drop",
+      "wind",
+      "drop",
+      "stick",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "boat"
+    ]
+  },
+  "dispose": {
+    "elements": [
+      "walking legs",
+      "wind"
+    ],
+    "kanji": "処",
+    "subElements": [
+      "walking legs",
+      "wind"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "deal with"
     ]
   },
   "barge": {

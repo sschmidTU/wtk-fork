@@ -48,6 +48,7 @@ sheaf; 爻 top or bottom part; treasure
 hope; 希; wish; t(sheaf, linen)
 hand; 手; hand
 fur; 毛; fur
+two hands; 开; lantern
 sword=dagger; 刀; sword
 saber=sabre=sword; 刂; knife // variant of 刀 sword
 blade; 刃; blade; c(sword, drop)
@@ -126,6 +127,7 @@ complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
 fit; 合; suit; t(meeting, mouth)
+adzuki beans=azuki beans; 荅; azuki beans; t(flowers, fit)
 bonsai; 𡗗, 秦 or 寿 upper part; spring
 spring; 泉; spring; t(white, water)
 longevity; 寿; lifespan; t(bonsai, glue) // bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable
@@ -321,6 +323,7 @@ grove; 林; forest; l(tree, tree) // honestly this should also be grove in WK. f
 forest; 森; forest; t(tree, grove)
 book; 本; book; c(tree, one)
 woman; 女; woman
+concubine; 妾; concubine; t(stand up, woman)
 mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
 every; 毎; every; t(reclining, rice field)
 person; 人; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
@@ -372,6 +375,9 @@ pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on th
 city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 wind; 几, 冗 bottom part; table
 mediocre; 凡; mediocre; o(wind, drop)
+whirlwind=high spirits; 亢; whirlwind
+boat; 舟; boat; t(drop, o(wind, t(drop, stick)))
+dispose; 処; deal with; lb(walking legs, wind)
 barge; 恐 top part; saw; l(craft, mediocre) // not named in my RTK copy, but in the pre-existing rtk-search data
 crotch; 又; stool
 elbow; 厶; private
