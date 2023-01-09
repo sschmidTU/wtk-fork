@@ -1337,7 +1337,7 @@ class WTKSearch {
       "house": "houseWK,house", // the wk radical house is the kanji 家, which doesn't have a unique name in rtk (house is just the top part in rtk)
       "form": "contain",
       "crabtrap": "tremendously",
-      "wild": "wreath", // or "laid waste", same thing basically
+      "wild": "laid waste", // or "wreath", same thing basically, though wreath is not in my RTK copy and missing in one kanji's data which has laid waste
       "lifestock": "livestock", // "lifestock" is just a typo ("livestock" is correct), but why not catch it.
       "gentle": "gentle,tender", // gentle in WK is tender in RTK. tender in RTK is (also) gentle in WK. RTK's tender is also an element.
       // ---------------------------------- ^^ -------- //

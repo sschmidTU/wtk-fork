@@ -49,6 +49,27 @@ const elementsDict =
       "above"
     ]
   },
+  "eminent": {
+    "elements": [
+      "wand",
+      "sun",
+      "ten"
+    ],
+    "kanji": "卓",
+    "subElements": [
+      "wand",
+      "sun",
+      "ten",
+      "magic wand",
+      "augury",
+      "day",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "table"
+    ]
+  },
   "say": {
     "elements": [
       "ceiling4",
@@ -734,6 +755,33 @@ const elementsDict =
     ],
     "wkNames": [
       "thousand"
+    ]
+  },
+  "sheaf": {
+    "elements": [],
+    "kanji": "爻 top or bottom part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "treasure"
+    ]
+  },
+  "hope": {
+    "elements": [
+      "sheaf",
+      "linen"
+    ],
+    "kanji": "希",
+    "subElements": [
+      "sheaf",
+      "linen",
+      "by one's side",
+      "towel",
+      "by one’s side"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "wish"
     ]
   },
   "sword": {
@@ -4115,6 +4163,36 @@ const elementsDict =
       "death"
     ]
   },
+  "laid waste": {
+    "elements": [
+      "flowers",
+      "deceased",
+      "stream"
+    ],
+    "kanji": "荒",
+    "subElements": [
+      "flowers",
+      "deceased",
+      "stream",
+      "top hat",
+      "straightened hook",
+      "drop",
+      "one",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "drops",
+      "perish",
+      "wreath"
+    ],
+    "synonyms": [
+      "wreath"
+    ],
+    "wkNames": [
+      "wild"
+    ]
+  },
   "genius": {
     "elements": [
       "ten",
@@ -4168,6 +4246,22 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "have"
+    ]
+  },
+  "linen": {
+    "elements": [
+      "by one's side",
+      "towel"
+    ],
+    "kanji": "布",
+    "subElements": [
+      "by one's side",
+      "towel",
+      "by one’s side"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "cloth"
     ]
   },
   "early": {
