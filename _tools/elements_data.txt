@@ -48,7 +48,8 @@ sheaf; 爻 top or bottom part; treasure
 hope; 希; wish; t(sheaf, linen)
 hand; 手; hand
 fur; 毛; fur
-two hands; 开; lantern
+from=fist; 乃; stairs
+reach out; 及; reach; c(from, dropB)
 sword=dagger; 刀; sword
 saber=sabre=sword; 刂; knife // variant of 刀 sword
 blade; 刃; blade; c(sword, drop)
@@ -75,6 +76,7 @@ easy=piggy bank; 易; easy; t(sun, not) // element is called piggy bank in RTK, 
 screwdriver=utilize=utilise; 用; task; moon, stick 
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
 fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
+length=tucked under the arm; 丈; height
 parade; 茂 bottom part; parade; l(cliff, fiesta)
 turn into=paradeB; 成; become; o(parade, clothes hanger)
 bar; 桟 right part; bar; c(fiesta, two) // doesn't exist in RTK. apparently comes from 戔, which is also a variant for the right part
@@ -238,9 +240,11 @@ turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, thou
 char=barbecue; 焦; char; t(turkey, oven-fire) // barbecue is not in my RTK1 book, but in the rtk-search data
 pegasus; 勧 left part, variant of 雚; pegasus; t(noon, turkey) // doesn't exist in WK (noon+turkey)
 flowers; 艹, 若 top part; flowers
+two hands; 开; lantern; flowers
 seedling; 苗; seedling; t(flowers, rice field)
 decorate; 賁; decorate; t(cross, flowers, shellfish) // not a RTK or WK kanji, but the kanji exists.
 graveyard; 莫; greenhouse; t(flowers, sun, large)
+punish; 刑; punish; l(two hands, saber)
 negative=negation; 不; not; t(ceiling, c(person, stick))
 water=water droplets=water pistol; 氵; tsunami
 waterB; 水; water
@@ -249,7 +253,7 @@ grains of rice; 米, 氺, 録 bottom right part; water // multiple shapes in RTK
 north; 北; north
 deceased=perish; 亡; death; t(top hat, straightened hook)
 laid waste=wreath; 荒; wild; t(flowers, deceased, stream)
-genius=genie; 才, 在 outer part; genius; t(c(ten, drop), hook); slideWK
+genius=genie; 才, 在 outer part; genius; t(c(ten, drop), hook); slideWK&barbWK
 by one's side=by one’s side; 左 outer part; narwhal
 possess; 有; have; o(by one's side, moon)
 linen; 布; cloth; tl(by one's side, towel)
@@ -261,6 +265,9 @@ sort of thing; 然; nature; t(l(evening, dog), oven-fire)
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
 gone; 去; past; t(soil, elbow)
+history; 史; history; t(in, length) // structureVague: yes
+officer; 吏; officer; c(history, one)
+grow late; 更; again; t(ceiling, rice field, length) // structureVague: yes
 kebab; 串; kebab; c(t(mouth, mouth), stick)
 resemblance; 肖; resemblance; t(littleB, moon)
 beggar; 丂, 巧 right part; snare // similar to slingshot:  与 without the lower horizontal line (?)
@@ -380,6 +387,8 @@ boat; 舟; boat; t(drop, o(wind, t(drop, stick)))
 dispose; 処; deal with; lb(walking legs, wind)
 barge; 恐 top part; saw; l(craft, mediocre) // not named in my RTK copy, but in the pre-existing rtk-search data
 crotch; 又; stool
+guy; 奴; dude; l(woman, crotch)
+to measure; 蒦; to measure; t(flowers, turkey, stool) // rare on its own
 elbow; 厶; private
 spoon=sitting on the ground; 匕; spoon
 compare; 比; compare; l(spoon, spoon)

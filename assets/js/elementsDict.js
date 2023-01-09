@@ -802,13 +802,35 @@ const elementsDict =
       "fur"
     ]
   },
-  "two hands": {
+  "from": {
     "elements": [],
-    "kanji": "开",
-    "subElements": [],
+    "kanji": "乃",
+    "subElements": [
+      "fist"
+    ],
+    "synonyms": [
+      "fist"
+    ],
+    "wkNames": [
+      "stairs"
+    ]
+  },
+  "reach out": {
+    "elements": [
+      "from",
+      "dropB"
+    ],
+    "kanji": "及",
+    "subElements": [
+      "from",
+      "dropB",
+      "fist",
+      "drop",
+      "drops"
+    ],
     "synonyms": [],
     "wkNames": [
-      "lantern"
+      "reach"
     ]
   },
   "sword": {
@@ -1270,6 +1292,19 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "drunkard"
+    ]
+  },
+  "length": {
+    "elements": [],
+    "kanji": "丈",
+    "subElements": [
+      "tucked under the arm"
+    ],
+    "synonyms": [
+      "tucked under the arm"
+    ],
+    "wkNames": [
+      "height"
     ]
   },
   "parade": {
@@ -4119,6 +4154,19 @@ const elementsDict =
       "flowers"
     ]
   },
+  "two hands": {
+    "elements": [
+      "flowers"
+    ],
+    "kanji": "开",
+    "subElements": [
+      "flowers"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "lantern"
+    ]
+  },
   "seedling": {
     "elements": [
       "flowers",
@@ -4175,6 +4223,25 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "greenhouse"
+    ]
+  },
+  "punish": {
+    "elements": [
+      "two hands",
+      "saber"
+    ],
+    "kanji": "刑",
+    "subElements": [
+      "two hands",
+      "saber",
+      "flowers",
+      "sabre",
+      "sword",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "punish"
     ]
   },
   "negative": {
@@ -4318,7 +4385,7 @@ const elementsDict =
       "drop",
       "hook"
     ],
-    "elementsWK": "slideWK",
+    "elementsWK": "slideWK&barbWK",
     "kanji": "才, 在 outer part",
     "subElements": [
       "ten",
@@ -4535,6 +4602,68 @@ const elementsDict =
     "wkNames": [
       "past"
     ]
+  },
+  "history": {
+    "elements": [
+      "in",
+      "length"
+    ],
+    "kanji": "史",
+    "subElements": [
+      "in",
+      "length",
+      "mouth",
+      "stick",
+      "inX",
+      "tucked under the arm"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "history"
+    ],
+    "comment": "structureVague: yes"
+  },
+  "officer": {
+    "elements": [
+      "history",
+      "one"
+    ],
+    "kanji": "吏",
+    "subElements": [
+      "history",
+      "one",
+      "in",
+      "length",
+      "mouth",
+      "stick",
+      "inX",
+      "tucked under the arm"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "officer"
+    ]
+  },
+  "grow late": {
+    "elements": [
+      "ceiling",
+      "rice field",
+      "length"
+    ],
+    "kanji": "更",
+    "subElements": [
+      "ceiling",
+      "rice field",
+      "length",
+      "one",
+      "brains",
+      "tucked under the arm"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "again"
+    ],
+    "comment": "structureVague: yes"
   },
   "kebab": {
     "elements": [
@@ -6585,6 +6714,39 @@ const elementsDict =
     "wkNames": [
       "stool"
     ]
+  },
+  "guy": {
+    "elements": [
+      "woman",
+      "crotch"
+    ],
+    "kanji": "奴",
+    "subElements": [
+      "woman",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dude"
+    ]
+  },
+  "to measure": {
+    "elements": [
+      "flowers",
+      "turkey",
+      "stool"
+    ],
+    "kanji": "蒦",
+    "subElements": [
+      "flowers",
+      "turkey",
+      "stool"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "to measure"
+    ],
+    "comment": "rare on its own"
   },
   "elbow": {
     "elements": [],
