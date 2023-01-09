@@ -468,21 +468,6 @@ const elementsDict =
       "voice"
     ]
   },
-  "missile": {
-    "elements": [
-      "wind",
-      "crotch"
-    ],
-    "kanji": "投 right part",
-    "subElements": [
-      "wind",
-      "crotch"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "weapon"
-    ]
-  },
   "thread": {
     "elements": [],
     "kanji": "糸",
@@ -535,6 +520,51 @@ const elementsDict =
       "trash"
     ],
     "comment": "WK doesn't differentiate between RTK wall and infant"
+  },
+  "bring up": {
+    "elements": [
+      "infant",
+      "moon"
+    ],
+    "kanji": "育",
+    "subElements": [
+      "infant",
+      "moon",
+      "top hat",
+      "elbow",
+      "drop",
+      "one",
+      "drops",
+      "toddler",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "nurture"
+    ]
+  },
+  "allot": {
+    "elements": [
+      "infant",
+      "human legs"
+    ],
+    "kanji": "充",
+    "subElements": [
+      "infant",
+      "human legs",
+      "top hat",
+      "elbow",
+      "drop",
+      "one",
+      "drops",
+      "toddler"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "allocate"
+    ]
   },
   "cloud": {
     "elements": [
@@ -902,6 +932,22 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "endure"
+    ]
+  },
+  "part": {
+    "elements": [
+      "eight",
+      "sword"
+    ],
+    "kanji": "分",
+    "subElements": [
+      "eight",
+      "sword",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "part"
     ]
   },
   "seduce": {
@@ -2257,6 +2303,27 @@ const elementsDict =
       "ground"
     ],
     "comment": "WK \"meet\" radical is 会"
+  },
+  "meetingB": {
+    "elements": [
+      "meeting",
+      "elbow"
+    ],
+    "kanji": "会",
+    "subElements": [
+      "meeting",
+      "elbow",
+      "umbrella",
+      "floor",
+      "one",
+      "meeting"
+    ],
+    "synonyms": [
+      "meeting"
+    ],
+    "wkNames": [
+      "meeting"
+    ]
   },
   "fit": {
     "elements": [
@@ -4450,6 +4517,53 @@ const elementsDict =
       "cloth"
     ]
   },
+  "friend": {
+    "elements": [
+      "by one's side",
+      "crotch"
+    ],
+    "kanji": "友",
+    "subElements": [
+      "by one's side",
+      "crotch",
+      "by one’s side"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "friend"
+    ]
+  },
+  "missile": {
+    "elements": [
+      "wind",
+      "crotch"
+    ],
+    "kanji": "殳",
+    "subElements": [
+      "wind",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "weapon"
+    ]
+  },
+  "branch": {
+    "elements": [
+      "ten",
+      "crotch"
+    ],
+    "kanji": "支",
+    "subElements": [
+      "ten",
+      "crotch",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "support"
+    ]
+  },
   "early": {
     "elements": [
       "sun",
@@ -5102,6 +5216,21 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "canopy"
+    ]
+  },
+  "wide": {
+    "elements": [
+      "cave",
+      "elbow"
+    ],
+    "kanji": "広",
+    "subElements": [
+      "cave",
+      "elbow"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "wide"
     ]
   },
   "give": {
@@ -6006,6 +6135,21 @@ const elementsDict =
     ],
     "comment": "there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences."
   },
+  "public": {
+    "elements": [
+      "eight",
+      "elbow"
+    ],
+    "kanji": "公",
+    "subElements": [
+      "eight",
+      "elbow"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "public"
+    ]
+  },
   "salad": {
     "elements": [
       "flowers",
@@ -6113,6 +6257,72 @@ const elementsDict =
       "flood"
     ],
     "comment": "would be nice if this was only flood, not stream. dual in rtk-search"
+  },
+  "claw": {
+    "elements": [],
+    "kanji": "爪",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "claw"
+    ]
+  },
+  "mountain": {
+    "elements": [],
+    "kanji": "山",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "mountain"
+    ]
+  },
+  "exit": {
+    "elements": [
+      "mountain",
+      "mountain"
+    ],
+    "kanji": "出",
+    "subElements": [
+      "mountain",
+      "mountain"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "exit"
+    ]
+  },
+  "secrecy": {
+    "elements": [
+      "roof",
+      "invariably",
+      "mountain"
+    ],
+    "kanji": "密",
+    "subElements": [
+      "roof",
+      "invariably",
+      "mountain",
+      "house",
+      "heart",
+      "dropB",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "drops",
+      "sow",
+      "pig",
+      "secret"
+    ],
+    "synonyms": [
+      "secret"
+    ],
+    "wkNames": [
+      "secret"
+    ],
+    "comment": "WK also calls this secrecy now (patched?), though it's silly to not also accept secret."
   },
   "teepee": {
     "elements": [],
@@ -6619,6 +6829,30 @@ const elementsDict =
       "table"
     ]
   },
+  "windB": {
+    "elements": [
+      "wind",
+      "insect"
+    ],
+    "kanji": "風",
+    "subElements": [
+      "wind",
+      "insect",
+      "in",
+      "floor",
+      "drop",
+      "mouth",
+      "stick",
+      "inX",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "wind"
+    ],
+    "comment": "this is stupidly ambiguous in RTK, as 几 is also wind"
+  },
   "mediocre": {
     "elements": [
       "wind",
@@ -6749,19 +6983,77 @@ const elementsDict =
     "elements": [
       "flowers",
       "turkey",
-      "stool"
+      "crotch"
     ],
     "kanji": "蒦",
     "subElements": [
       "flowers",
       "turkey",
-      "stool"
+      "crotch"
     ],
     "synonyms": [],
     "wkNames": [
       "to measure"
     ],
     "comment": "rare on its own"
+  },
+  "spool": {
+    "elements": [
+      "crotch",
+      "soil"
+    ],
+    "kanji": "圣",
+    "subElements": [
+      "crotch",
+      "soil",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tombstone"
+    ]
+  },
+  "uncle": {
+    "elements": [
+      "above",
+      "small",
+      "crotch"
+    ],
+    "kanji": "叔",
+    "subElements": [
+      "above",
+      "small",
+      "crotch",
+      "divining rod",
+      "floor",
+      "wand",
+      "magic wand",
+      "augury",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "uncle"
+    ]
+  },
+  "anti": {
+    "elements": [
+      "cliff",
+      "crotch"
+    ],
+    "kanji": "反",
+    "subElements": [
+      "cliff",
+      "crotch",
+      "anti-"
+    ],
+    "synonyms": [
+      "anti-"
+    ],
+    "wkNames": [
+      "anti"
+    ]
   },
   "elbow": {
     "elements": [],
@@ -6771,6 +7063,54 @@ const elementsDict =
     "wkNames": [
       "private"
     ]
+  },
+  "pedestal": {
+    "elements": [
+      "elbow",
+      "mouth"
+    ],
+    "kanji": "台",
+    "subElements": [
+      "elbow",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "machine"
+    ]
+  },
+  "license": {
+    "elements": [
+      "elbow",
+      "human legs"
+    ],
+    "kanji": "允",
+    "subElements": [
+      "elbow",
+      "human legs"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "license"
+    ]
+  },
+  "streetwalker": {
+    "elements": [
+      "license",
+      "walking legs"
+    ],
+    "kanji": "夋",
+    "subElements": [
+      "license",
+      "walking legs",
+      "elbow",
+      "human legs"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "spider"
+    ],
+    "comment": "doesn't exist in RTK4 (maybe in 6?), but spider exists in WK (where license doesn't exist)"
   },
   "spoon": {
     "elements": [],
@@ -6846,6 +7186,72 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "cleat"
+    ]
+  },
+  "leader": {
+    "elements": [
+      "turtle",
+      "vulture",
+      "glue"
+    ],
+    "kanji": "将",
+    "subElements": [
+      "turtle",
+      "vulture",
+      "glue",
+      "ten",
+      "hook",
+      "drop",
+      "needle",
+      "drops",
+      "measurement"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "commander"
+    ]
+  },
+  "accept": {
+    "elements": [
+      "vulture",
+      "crown",
+      "crotch"
+    ],
+    "kanji": "受",
+    "subElements": [
+      "vulture",
+      "crown",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "accept"
+    ]
+  },
+  "love": {
+    "elements": [
+      "vulture",
+      "crown",
+      "heart",
+      "walking legs"
+    ],
+    "kanji": "愛",
+    "subElements": [
+      "vulture",
+      "crown",
+      "heart",
+      "walking legs",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "love"
     ]
   },
   "one": {

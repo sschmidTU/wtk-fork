@@ -27,10 +27,11 @@ determine; 定; determine; t(house, coat rack)
 perfect; 完; perfect; t(house, beginning)
 flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
 voice; 声; voice; t(samurai, o(flag, stick))
-missile; 投 right part; weapon; t(wind, crotch)
 thread=spiderman; 糸; thread
 wall; 至 top part; ground&private; t(ceiling, elbow) // WK doesn't have this as an extra radical, as it's almost always used as 至 (mole/climax) or right side of 転 (cloud/rising cloud). it only has trash/infant (育 top part).
 infant=toddler; 𠫓, 育 top part; trash; t(top hat, elbow) // WK doesn't differentiate between RTK wall and infant
+bring up; 育; nurture; t(infant, moon)
+allot; 充; allocate; t(infant, human legs)
 cloud=rising cloud; 云; cloud; t(ceiling, wall)
 climax; 至; mole; t(wall, soil)
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
@@ -54,6 +55,7 @@ sword=dagger; 刀; sword
 saber=sabre=sword; 刂; knife // variant of 刀 sword
 blade; 刃; blade; c(sword, drop)
 endure; 忍; endure; t(blade, heart)
+part; 分; part; t(eight, sword)
 seduce; 召; call; t(sword, mouth)
 ten thousand; 万; ten thousand; t(ceiling, bound up)
 tongue; 舌; tongue; t(thousand, mouth)
@@ -128,6 +130,7 @@ dragon; 竜; dragon; t(stand up, rice field, fishhook) // fishhook a bit vague/d
 complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
+meetingB=meeting; 会; meeting; t(meeting, elbow)
 fit; 合; suit; t(meeting, mouth)
 adzuki beans=azuki beans; 荅; azuki beans; t(flowers, fit)
 bonsai; 𡗗, 秦 or 寿 upper part; spring
@@ -257,6 +260,9 @@ genius=genie; 才, 在 outer part; genius; t(c(ten, drop), hook); slideWK&barbWK
 by one's side=by one’s side; 左 outer part; narwhal
 possess; 有; have; o(by one's side, moon)
 linen; 布; cloth; tl(by one's side, towel)
+friend; 友; friend; tl(by one's side, crotch)
+missile; 殳; weapon; t(wind, crotch)
+branch; 支; support; t(ten, crotch)
 early=sunflower; 早; early; t(sun, ten)
 mist; 𠦝, 龺, 朝 left part; morning; t(ten, sun, ten)
 morning; 朝; morning; l(mist, moon)
@@ -289,6 +295,7 @@ snake=self; 己; oneself // unfortunately the kanji 己 is self in RTK, but ones
 wrap; 包; wrap; t(bound up, snake) // structureVague: yes: not quite top-down, it's also entwined
 somebody; 身; somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
 cave; 广, 店 outer part; canopy
+wide; 広; wide; tl(cave, elbow)
 give; 呉; give&catapult; t(mouth, chair, tool)
 oversee; 監; oversee; t(l(retainer, reclining, floor), dish)
 summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK
@@ -341,6 +348,7 @@ plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
 eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
+public; 公; public; t(eight, elbow)
 salad; 龷, 昔 top part; blackjack; t(flowers, floor)
 strung together=together; 共; together; t(salad, animal legs)
 bushel basket; 棋 right part; crab; c(strung together, one)&eye
@@ -348,6 +356,10 @@ dish; 皿; plate
 craft; 工, 紅 right part; construction; t(ceiling, stick, floor)
 stream; 川; river
 flood=stream; 巛, 災 top part; flood // would be nice if this was only flood, not stream. dual in rtk-search
+claw; 爪; claw
+mountain; 山; mountain
+exit; 出; exit; t(mountain, mountain)
+secrecy=secret; 密; secret; t(roof, invariably, mountain) // WK also calls this secrecy now (patched?), though it's silly to not also accept secret.
 teepee=wigwam; 癶, 発 top part; tent
 bow; 弓; bow
 maestro; 師 left part; drop&bear
@@ -381,6 +393,7 @@ stick; ｜, 旧 left part; stick // basically any vertical line
 pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 wind; 几, 冗 bottom part; table
+windB; 風; wind; o(wind, insect) // this is stupidly ambiguous in RTK, as 几 is also wind
 mediocre; 凡; mediocre; o(wind, drop)
 whirlwind=high spirits; 亢; whirlwind
 boat; 舟; boat; t(drop, o(wind, t(drop, stick)))
@@ -389,13 +402,22 @@ barge; 恐 top part; saw; l(craft, mediocre) // not named in my RTK copy, but in
 crotch; 又; stool
 pair; 双; pair; l(crotch, crotch)
 guy; 奴; dude; l(woman, crotch)
-to measure; 蒦; to measure; t(flowers, turkey, stool) // rare on its own
+to measure; 蒦; to measure; t(flowers, turkey, crotch) // rare on its own
+spool; 圣; tombstone; t(crotch, soil)
+uncle; 叔; uncle; l(t(above, small), crotch)
+anti=anti-; 反; anti; tl(cliff, crotch)
 elbow; 厶; private
+pedestal; 台; machine; t(elbow, mouth)
+license; 允; license; t(elbow, human legs)
+streetwalker; 夋; spider; t(license, walking legs) // doesn't exist in RTK4 (maybe in 6?), but spider exists in WK (where license doesn't exist)
 spoon=sitting on the ground; 匕; spoon
 compare; 比; compare; l(spoon, spoon)
 all; 皆; all; t(compare, white)
 delicious; 旨; point; t(spoon, sun)
 vulture; 爪; cleat
+leader; 将; commander; l(turtle, t(vulture, glue))
+accept; 受; accept; t(vulture, crown, crotch)
+love; 愛; love; t(vulture, crown, heart, walking legs)
 one; 一; ground
 ceiling=one; 一; ground // only when on top of another element. In any case, also called "one"
 floor=one; 一; ground // only when on the bottom of another element. In any case, also called "one"
