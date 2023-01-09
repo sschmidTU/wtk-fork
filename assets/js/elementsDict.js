@@ -1065,6 +1065,27 @@ const elementsDict =
       "reality"
     ]
   },
+  "pierce": {
+    "elements": [
+      "rice field",
+      "shellfish"
+    ],
+    "kanji": "貫",
+    "subElements": [
+      "rice field",
+      "shellfish",
+      "brains",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "pierce"
+    ]
+  },
   "old west": {
     "elements": [],
     "kanji": "要 top part, 価 right part",
@@ -5425,6 +5446,32 @@ const elementsDict =
       "capital"
     ]
   },
+  "scenery": {
+    "elements": [
+      "sun",
+      "capital"
+    ],
+    "kanji": "景",
+    "subElements": [
+      "sun",
+      "capital",
+      "day",
+      "top hat",
+      "mouth",
+      "little",
+      "drop",
+      "one",
+      "drops",
+      "animal legs",
+      "stick",
+      "hook",
+      "small"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "scene"
+    ]
+  },
   "cottage": {
     "elements": [
       "umbrella",
@@ -5923,6 +5970,38 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "a certain"
+    ]
+  },
+  "emotion": {
+    "elements": [
+      "cliff",
+      "a certain",
+      "heart"
+    ],
+    "kanji": "感",
+    "subElements": [
+      "cliff",
+      "a certain",
+      "heart",
+      "fiesta",
+      "creeper",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops",
+      "ceiling",
+      "mouth",
+      "one",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "feeling"
     ]
   },
   "sun": {

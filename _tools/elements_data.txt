@@ -61,6 +61,7 @@ shellfish=shell=clam=oyster; 貝; shellfish; t(eye, animal legs)
 see; 見; see; t(eye, human legs)
 tool; 具 bottom part; ground&fins; t(ceiling, animal legs) // this is 具 minus the eye. doesn't exist in WK (ground + fins). TODO maybe t(ground, fins) for WK?
 true; 真; reality; t(ten, eye, tool)
+pierce; 貫; pierce; t(rice field, shellfish)
 old west; 要 top part, 価 right part; helicopter
 chestnut; 栗; chestnut; t(old west, tree)
 bundle=Chaplin; 束; bundle; tree, mouth
@@ -307,6 +308,7 @@ cause; 因; cause; o(pent in, large)
 receive; 享; receive; t(top hat, mouth, child)
 pavilion; 亭; restaurant; t(top hat, mouth, crown, street)
 capital; 京; capital; t(top hat, mouth, little)
+scenery; 景; scene; t(sun, capital)
 cottage; 舎; cottage; t(umbrella, soil, mouth)
 tree=wood; 木; tree
 grove; 林; forest; l(tree, tree) // honestly this should also be grove in WK. forest in WK is both 林 and 森
@@ -340,6 +342,7 @@ goods; 品; product; t(mouth, l(mouth, mouth))
 furniture=wooden goods; 操 right part; syrup; t(goods, tree)
 creeper; 同 inner part; creeper; t(ceiling, mouth) // doesn't exist in RTK, but does in WK, and is very common.
 a certain; 或; a certain; tr(fiesta, creeper)
+emotion; 感; feeling; t(l(cliff, a certain), heart)
 sun=day; 日; sun
 mortar; 臼; sun // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
