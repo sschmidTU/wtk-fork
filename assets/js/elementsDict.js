@@ -4919,7 +4919,7 @@ const elementsDict =
       "vermillion"
     ]
   },
-  "i": {
+  "I": {
     "elements": [
       "five",
       "mouth"
@@ -4927,11 +4927,14 @@ const elementsDict =
     "kanji": "吾",
     "subElements": [
       "five",
-      "mouth"
-    ],
-    "synonyms": [],
-    "wkNames": [
+      "mouth",
       "i"
+    ],
+    "synonyms": [
+      "i"
+    ],
+    "wkNames": [
+      "I"
     ]
   },
   "benefit": {
