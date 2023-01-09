@@ -3032,6 +3032,32 @@ const elementsDict =
       "left"
     ]
   },
+  "left-handed": {
+    "elements": [
+      "left",
+      "moon"
+    ],
+    "kanji": "惰 right part",
+    "subElements": [
+      "left",
+      "moon",
+      "by one's side",
+      "craft",
+      "by one’s side",
+      "ceiling",
+      "stick",
+      "floor",
+      "one",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "left-handed"
+    ],
+    "comment": "not in my RTK book, occurs twice. used as extra element"
+  },
   "young": {
     "elements": [
       "flowers",

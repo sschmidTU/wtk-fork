@@ -173,6 +173,7 @@ cliff; 厂; cliff
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 right; 右; right; tl(by one's side, mouth)
 left; 左; left; tl(by one's side, craft)
+left-handed; 惰 right part; left-handed; t(left, moon) // not in my RTK book, occurs twice. used as extra element
 young; 若; young; t(flowers, right)
 can; 可; possible; o(street, mouth)
 strange; 奇; odd; t(large, can)
