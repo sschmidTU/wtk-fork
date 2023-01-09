@@ -46,6 +46,8 @@ ten=needle; 十; ten&cross
 thousand=one thousand; 千; thousand; t(drop, ten); slideWK
 sheaf; 爻 top or bottom part; treasure
 hope; 希; wish; t(sheaf, linen)
+hand; 手; hand
+fur; 毛; fur
 sword=dagger; 刀; sword
 saber=sabre=sword; 刂; knife // variant of 刀 sword
 blade; 刃; blade; c(sword, drop)
@@ -76,7 +78,7 @@ parade; 茂 bottom part; parade; l(cliff, fiesta)
 turn into=paradeB; 成; become; o(parade, clothes hanger)
 bar; 桟 right part; bar; c(fiesta, two) // doesn't exist in RTK. apparently comes from 戔, which is also a variant for the right part
 warrior; 武; military; tr(arrowhead, stop)&one
-style; 式; style; tr(arrowhead, craft)
+style; 式; ritual; tr(arrowhead, craft)
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 badge; 章; chapter; t(stand up, early)
@@ -91,6 +93,7 @@ rain; 雨; rain; t(ceiling, o(towel, drop4))
 drop=drops; 丶, 白 top part; drop
 dropB; 少 bottom part; slide; drop
 heart; 心; heart; o(drop3, fishhook)
+invariably; 必; certain; c(heart, dropB)
 favor=favour; 恵; favor; t(ten, rice field, heart)
 box; 匚, 区 outer part; cage
 swiss=switzerland=plus=red cross=d-pad; 亞, 亞 middle part, 惡 plus-shaped part between one and one; swiss; convex2, box4, two // doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements
@@ -297,7 +300,9 @@ moon=month=flesh=part of the body; 月; moon
 companion; 朋; companion; l(moon, moon) // kanji/radical not on WK
 bright; 明; bright; l(sun, moon)
 child; 子; child
-finger=fingers; 扌, 招 left part; fingers
+fingers=finger; 扌, 招 left part; fingers
+ego; 我; ego; l(fingers, fiesta) // kanji name in WK is I, but radical name is ego. I is also ambiguous. structureVague: yes
+righteousness; 義; righteousness; t(sheep, ego)
 enter; 入; enter; t(hook, person)
 top hat; 亠, 京 top part; lid; t(drop, one)
 old=tombstone=gravestone=church; 古; old; t(ten, mouth)

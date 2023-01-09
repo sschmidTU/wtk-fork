@@ -784,6 +784,24 @@ const elementsDict =
       "wish"
     ]
   },
+  "hand": {
+    "elements": [],
+    "kanji": "手",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "hand"
+    ]
+  },
+  "fur": {
+    "elements": [],
+    "kanji": "毛",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "fur"
+    ]
+  },
   "sword": {
     "elements": [],
     "kanji": "刀",
@@ -1344,7 +1362,7 @@ const elementsDict =
     ],
     "synonyms": [],
     "wkNames": [
-      "style"
+      "ritual"
     ]
   },
   "dog tag": {
@@ -1620,6 +1638,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "heart"
+    ]
+  },
+  "invariably": {
+    "elements": [
+      "heart",
+      "dropB"
+    ],
+    "kanji": "必",
+    "subElements": [
+      "heart",
+      "dropB",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "certain"
     ]
   },
   "favor": {
@@ -5258,17 +5298,64 @@ const elementsDict =
       "child"
     ]
   },
-  "finger": {
+  "fingers": {
     "elements": [],
     "kanji": "扌, 招 left part",
     "subElements": [
-      "fingers"
+      "finger"
     ],
     "synonyms": [
-      "fingers"
+      "finger"
     ],
     "wkNames": [
       "fingers"
+    ]
+  },
+  "ego": {
+    "elements": [
+      "fingers",
+      "fiesta"
+    ],
+    "kanji": "我",
+    "subElements": [
+      "fingers",
+      "fiesta",
+      "finger",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ego"
+    ],
+    "comment": "kanji name in WK is I, but radical name is ego. I is also ambiguous. structureVague: yes"
+  },
+  "righteousness": {
+    "elements": [
+      "sheep",
+      "ego"
+    ],
+    "kanji": "義",
+    "subElements": [
+      "sheep",
+      "ego",
+      "horns",
+      "king",
+      "stick",
+      "animal horns",
+      "fingers",
+      "fiesta",
+      "finger",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "righteousness"
     ]
   },
   "enter": {
