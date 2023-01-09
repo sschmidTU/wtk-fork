@@ -387,6 +387,7 @@ boat; 舟; boat; t(drop, o(wind, t(drop, stick)))
 dispose; 処; deal with; lb(walking legs, wind)
 barge; 恐 top part; saw; l(craft, mediocre) // not named in my RTK copy, but in the pre-existing rtk-search data
 crotch; 又; stool
+pair; 双; pair; l(crotch, crotch)
 guy; 奴; dude; l(woman, crotch)
 to measure; 蒦; to measure; t(flowers, turkey, stool) // rare on its own
 elbow; 厶; private

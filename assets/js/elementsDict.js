@@ -6715,6 +6715,21 @@ const elementsDict =
       "stool"
     ]
   },
+  "pair": {
+    "elements": [
+      "crotch",
+      "crotch"
+    ],
+    "kanji": "双",
+    "subElements": [
+      "crotch",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "pair"
+    ]
+  },
   "guy": {
     "elements": [
       "woman",
