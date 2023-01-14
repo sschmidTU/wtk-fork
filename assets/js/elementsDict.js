@@ -49,6 +49,24 @@ const elementsDict =
       "above"
     ]
   },
+  "below": {
+    "elements": [
+      "ceiling",
+      "wand"
+    ],
+    "kanji": "下",
+    "subElements": [
+      "ceiling",
+      "wand",
+      "one",
+      "magic wand",
+      "augury"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "below"
+    ]
+  },
   "eminent": {
     "elements": [
       "wand",
@@ -1923,6 +1941,24 @@ const elementsDict =
       "roof"
     ],
     "comment": "this is called house in RTK, but unfortunately the kanji 家 is also house, which RTK calls the \"full character\", and we can't/shouldn't have two elements with the same name, so we renamed this to roof (WK name)."
+  },
+  "hole": {
+    "elements": [
+      "roof",
+      "eight"
+    ],
+    "kanji": "穴",
+    "subElements": [
+      "roof",
+      "eight",
+      "house",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "hole"
+    ]
   },
   "house": {
     "elements": [

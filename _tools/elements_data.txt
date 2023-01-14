@@ -2,6 +2,7 @@ RTK / elementsPure name(=synonym1=synonym2=...); kanji; WK name(&other WK names)
 wand=magic wand=augury; 卜, 訃 right part; toe
 divining rod; 上 upper part; toe; wand
 above; 上; above; t(divining rod, floor)
+below; 下; below; t(ceiling, wand)
 eminent; 卓; table; t(wand, sun, ten)
 say=words=keitai; 言; say; t(ceiling4, mouth)
 white; 白; white; t(drop, sun)
@@ -109,6 +110,7 @@ beauty; 美; beauty; t(sheep, large) // the last part of the vertical stroke is 
 spicy; 辛; spicy; t(stand, ten)
 happiness; 幸; happiness; t(ten, spicy) // interwoven. structureVague: yes
 roof=house; 宀; roof // this is called house in RTK, but unfortunately the kanji 家 is also house, which RTK calls the "full character", and we can't/shouldn't have two elements with the same name, so we renamed this to roof (WK name).
+hole; 穴; hole; t(roof, eight)
 house; 家; house; t(roof, sow) // in RTK originally 宀 is house, but so is 家, which RTK calls the "full character". We can't/shouldn't have two elements with the same name, so we renamed the RTK house radical to roof (WK name).
 crown; 冖, 冗 top part; forehead
 hood; 冂; head
