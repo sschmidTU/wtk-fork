@@ -7,6 +7,7 @@ eminent; 卓; table; t(wand, sun, ten)
 say=words=keitai; 言; say; t(ceiling4, mouth)
 white; 白; white; t(drop, sun)
 power=muscle=arnold; 力; power
+man; 男; man; t(rice field, power)
 add; 加; add; l(power, mouth)
 noon=sign of the horse; 午; noon
 cow; 牛; cow
@@ -82,6 +83,7 @@ fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
 length=tucked under the arm; 丈; height
 parade; 茂 bottom part; parade; l(cliff, fiesta)
 turn into=paradeB; 成; become; o(parade, clothes hanger)
+storehouse; 蔵; storehouse; t(flowers, o(parade, retainer))
 float; 桟 right part; bar; c(fiesta, two) // apparently comes from 戔, which is also a variant for the right part
 warrior; 武; military; tr(arrowhead, stop)&one
 style; 式; ritual; tr(arrowhead, craft)
@@ -173,6 +175,7 @@ too much; 余; surplus; t(umbrella, dry, little)
 ray; 光; sunlight; t(littleB, human legs)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 garment=clothes=scarf; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin) // scarf/garment is a bit ambiguous in RTK, can also be close to hairpin/𧘇 kick
+trampoline=round; 睘; trampoline; t(eyeB, ceiling, mouth, scarf)
 gold; 金; gold; t(umbrella, c(king, drop2))
 silver; 銀 right part; root; t(sun, hairpin) 
 good; 良; good; t(drop, silver)
@@ -183,7 +186,7 @@ four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's 
 road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
 stretch; 廴; yoga
-street; 丁; street
+street=nail=spike; 丁; street
 cliff; 厂; cliff
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 right; 右; right; tl(by one's side, mouth)
@@ -218,6 +221,8 @@ key; ユ; hook
 guillotine; 決 right part; decide; t(c(key, stick), large) // maybe the subdivision here with key crossed by stick is unnecessary, but who knows.
 page; 頁; page; t(ceiling, drop, shellfish); leafWK
 retainer=slave; 臣; servant
+loincloth=wise; 臤; wise; 臤
+gigantic; 巨; giant
 fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
@@ -314,6 +319,8 @@ husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(ex
 not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
 vermillion; 朱; vermillion; c(not yet, dropB)
+lose; 失; fault; c(husband, dropB)
+approve; 賛; agree; t(l(husband, husband), shellfish)
 I=i; 吾; I; t(five, mouth)
 benefit; 益; benefit; t(horns, one, animal legs, dish)
 state of mind; 忄; soul; l(drop, stick, drop)
@@ -392,6 +399,7 @@ utmost; 最; most; t(sun, take)
 shelf; 且, 助 left part; top hat; c(eye, one) // this is not (always) perfectly RTK(eye)+RTK(one), but close enough.
 prosperous; 昌; prosperous; t(sun, sun)
 risk; 冒; dare; t(sun, eye)
+mandala; 曼; mandala; t(sun, eyeB, crotch) // not named in WK
 hundred; 百; hundred; t(ceiling, white)
 neck; 首; neck; t(horns, one, oneself)
 rice field=brains; 田; rice field

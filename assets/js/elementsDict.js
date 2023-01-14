@@ -142,6 +142,24 @@ const elementsDict =
       "power"
     ]
   },
+  "man": {
+    "elements": [
+      "rice field",
+      "power"
+    ],
+    "kanji": "男",
+    "subElements": [
+      "rice field",
+      "power",
+      "brains",
+      "muscle",
+      "arnold"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "man"
+    ]
+  },
   "add": {
     "elements": [
       "power",
@@ -1413,6 +1431,30 @@ const elementsDict =
     ],
     "wkNames": [
       "become"
+    ]
+  },
+  "storehouse": {
+    "elements": [
+      "flowers",
+      "parade",
+      "retainer"
+    ],
+    "kanji": "蔵",
+    "subElements": [
+      "flowers",
+      "parade",
+      "retainer",
+      "cliff",
+      "fiesta",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops",
+      "slave"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "storehouse"
     ]
   },
   "float": {
@@ -3072,6 +3114,30 @@ const elementsDict =
     ],
     "comment": "scarf/garment is a bit ambiguous in RTK, can also be close to hairpin/𧘇 kick"
   },
+  "trampoline": {
+    "elements": [
+      "eyeB",
+      "ceiling",
+      "mouth",
+      "scarf"
+    ],
+    "kanji": "睘",
+    "subElements": [
+      "eyeB",
+      "ceiling",
+      "mouth",
+      "scarf",
+      "eye",
+      "one",
+      "round"
+    ],
+    "synonyms": [
+      "round"
+    ],
+    "wkNames": [
+      "trampoline"
+    ]
+  },
   "gold": {
     "elements": [
       "umbrella",
@@ -3220,8 +3286,14 @@ const elementsDict =
   "street": {
     "elements": [],
     "kanji": "丁",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "nail",
+      "spike"
+    ],
+    "synonyms": [
+      "nail",
+      "spike"
+    ],
     "wkNames": [
       "street"
     ]
@@ -3347,7 +3419,9 @@ const elementsDict =
     "kanji": "可",
     "subElements": [
       "street",
-      "mouth"
+      "mouth",
+      "nail",
+      "spike"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3365,7 +3439,9 @@ const elementsDict =
       "can",
       "St. Bernard",
       "street",
-      "mouth"
+      "mouth",
+      "nail",
+      "spike"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3780,6 +3856,31 @@ const elementsDict =
     ],
     "wkNames": [
       "servant"
+    ]
+  },
+  "loincloth": {
+    "elements": [
+      "臤"
+    ],
+    "kanji": "臤",
+    "subElements": [
+      "臤",
+      "wise"
+    ],
+    "synonyms": [
+      "wise"
+    ],
+    "wkNames": [
+      "wise"
+    ]
+  },
+  "gigantic": {
+    "elements": [],
+    "kanji": "巨",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "giant"
     ]
   },
   "fingerprint": {
@@ -5618,6 +5719,57 @@ const elementsDict =
       "vermillion"
     ]
   },
+  "lose": {
+    "elements": [
+      "husband",
+      "dropB"
+    ],
+    "kanji": "失",
+    "subElements": [
+      "husband",
+      "dropB",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "fault"
+    ]
+  },
+  "approve": {
+    "elements": [
+      "husband",
+      "husband",
+      "shellfish"
+    ],
+    "kanji": "賛",
+    "subElements": [
+      "husband",
+      "husband",
+      "shellfish",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "agree"
+    ]
+  },
   "I": {
     "elements": [
       "five",
@@ -6046,7 +6198,9 @@ const elementsDict =
       "street",
       "drop",
       "one",
-      "drops"
+      "drops",
+      "nail",
+      "spike"
     ],
     "synonyms": [],
     "wkNames": [
@@ -6875,6 +7029,26 @@ const elementsDict =
     "wkNames": [
       "dare"
     ]
+  },
+  "mandala": {
+    "elements": [
+      "sun",
+      "eyeB",
+      "crotch"
+    ],
+    "kanji": "曼",
+    "subElements": [
+      "sun",
+      "eyeB",
+      "crotch",
+      "day",
+      "eye"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "mandala"
+    ],
+    "comment": "not named in WK"
   },
   "hundred": {
     "elements": [
