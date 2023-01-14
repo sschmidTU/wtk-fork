@@ -2343,6 +2343,59 @@ const elementsDict =
       "suit"
     ]
   },
+  "valley": {
+    "elements": [
+      "eight",
+      "umbrella",
+      "mouth"
+    ],
+    "kanji": "谷",
+    "subElements": [
+      "eight",
+      "umbrella",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "valley"
+    ]
+  },
+  "contain": {
+    "elements": [
+      "roof",
+      "valley"
+    ],
+    "kanji": "容",
+    "subElements": [
+      "roof",
+      "valley",
+      "house",
+      "eight",
+      "umbrella",
+      "mouth",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "form"
+    ]
+  },
+  "gully": {
+    "elements": [
+      "eight",
+      "mouth"
+    ],
+    "kanji": "㕣",
+    "subElements": [
+      "eight",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "gully"
+    ]
+  },
   "adzuki beans": {
     "elements": [
       "flowers",
