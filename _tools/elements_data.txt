@@ -82,7 +82,7 @@ fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
 length=tucked under the arm; 丈; height
 parade; 茂 bottom part; parade; l(cliff, fiesta)
 turn into=paradeB; 成; become; o(parade, clothes hanger)
-bar; 桟 right part; bar; c(fiesta, two) // doesn't exist in RTK. apparently comes from 戔, which is also a variant for the right part
+float; 桟 right part; bar; c(fiesta, two) // apparently comes from 戔, which is also a variant for the right part
 warrior; 武; military; tr(arrowhead, stop)&one
 style; 式; ritual; tr(arrowhead, craft)
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
@@ -206,7 +206,10 @@ next; 次; next; l(ice, lack)
 evening; 夕; evening
 many; 多; many; t(evening, evening)
 bones; 歹, 残 left part; yakuza; t(ceiling, evening)
+file; 列; row; l(bones, saber)
+death; 死; death; t(ceiling, l(evening, spoon))&bones
 name; 名; name; t(evening, mouth)
+ballerina=sunglasses; 舛; dance; l(evening, cow) // RTK v4 calls this sunglasses, but in rtk-search data this is ambiguous, seems like "sunglasses with one lense missing" is a vertically separated element with a variant of evening on top, something else in the middle, and cow on the bottom. Almost all the occurences of 舛 in the data have "ballerina" though.
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
 beginning; 元; origin; t(two, human legs); piWK
 altar; 礻, 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right
@@ -222,6 +225,7 @@ bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)&rec
 aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop)
 phrase; 句; poem; o(bound up, mouth)
+decameron; 旬; in season; tr(bound up, sun)
 poem; 敬 left part; poem; t(flowers, phrase)
 awe; 敬; respect; l(poem, taskmaster)
 fire; 火; fire; f(person, drop, drop) // fire flanked by drop, drop
@@ -299,7 +303,9 @@ oneself=nose; 自; self; t(drop, eye)
 snake=self; 己; oneself // unfortunately the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK
 wrap; 包; wrap; t(bound up, snake) // structureVague: yes: not quite top-down, it's also entwined
 somebody; 身; somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
-cave; 广, 店 outer part; canopy
+cave; 广, 店 outer part; canopy; dropB
+pelt; 皮; skin; tl(cave, crotch)&ten // elementsPureVague: yes
+waves=wave; 波; wave; l(water, pelt)
 wide; 広; wide; tl(cave, elbow)
 give; 呉; give&catapult; t(mouth, chair, tool)
 oversee; 監; oversee; t(l(retainer, reclining, floor), dish)
@@ -381,6 +387,8 @@ mortar; 臼; sun // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
 eyeB=eye; 罒; net // also eye in RTK (ambiguouos), but net in WK. We handle this radical separately.
 ear; 耳; ear
+take; 取; take; l(ear, crotch)
+utmost; 最; most; t(sun, take)
 shelf; 且, 助 left part; top hat; c(eye, one) // this is not (always) perfectly RTK(eye)+RTK(one), but close enough.
 prosperous; 昌; prosperous; t(sun, sun)
 risk; 冒; dare; t(sun, eye)
@@ -420,6 +428,7 @@ compare; 比; compare; l(spoon, spoon)
 all; 皆; all; t(compare, white)
 delicious; 旨; point; t(spoon, sun)
 vulture; 爪; cleat
+rose of sharon=althea; 舜; rose of sharon; t(vulture, crown, ballerina)
 leader; 将; commander; l(turtle, t(vulture, glue))
 accept; 受; accept; t(vulture, crown, crotch)
 love; 愛; love; t(vulture, crown, heart, walking legs)

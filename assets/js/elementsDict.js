@@ -1415,7 +1415,7 @@ const elementsDict =
       "become"
     ]
   },
-  "bar": {
+  "float": {
     "elements": [
       "fiesta",
       "two"
@@ -1433,7 +1433,7 @@ const elementsDict =
     "wkNames": [
       "bar"
     ],
-    "comment": "doesn't exist in RTK. apparently comes from 戔, which is also a variant for the right part"
+    "comment": "apparently comes from 戔, which is also a variant for the right part"
   },
   "warrior": {
     "elements": [
@@ -3586,6 +3586,47 @@ const elementsDict =
       "yakuza"
     ]
   },
+  "file": {
+    "elements": [
+      "bones",
+      "saber"
+    ],
+    "kanji": "列",
+    "subElements": [
+      "bones",
+      "saber",
+      "ceiling",
+      "evening",
+      "one",
+      "sabre",
+      "sword",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "row"
+    ]
+  },
+  "death": {
+    "elements": [
+      "ceiling",
+      "evening",
+      "spoon"
+    ],
+    "kanji": "死",
+    "subElements": [
+      "ceiling",
+      "evening",
+      "spoon",
+      "bones",
+      "one",
+      "sitting on the ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "death"
+    ]
+  },
   "name": {
     "elements": [
       "evening",
@@ -3600,6 +3641,25 @@ const elementsDict =
     "wkNames": [
       "name"
     ]
+  },
+  "ballerina": {
+    "elements": [
+      "evening",
+      "cow"
+    ],
+    "kanji": "舛",
+    "subElements": [
+      "evening",
+      "cow",
+      "sunglasses"
+    ],
+    "synonyms": [
+      "sunglasses"
+    ],
+    "wkNames": [
+      "dance"
+    ],
+    "comment": "RTK v4 calls this sunglasses, but in rtk-search data this is ambiguous, seems like \"sunglasses with one lense missing\" is a vertically separated element with a variant of evening on top, something else in the middle, and cow on the bottom. Almost all the occurences of 舛 in the data have \"ballerina\" though."
   },
   "show": {
     "elements": [
@@ -3846,6 +3906,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "poem"
+    ]
+  },
+  "decameron": {
+    "elements": [
+      "bound up",
+      "sun"
+    ],
+    "kanji": "旬",
+    "subElements": [
+      "bound up",
+      "sun",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "in season"
     ]
   },
   "poem": {
@@ -5299,12 +5381,66 @@ const elementsDict =
     "comment": "in WK, the radical is called body, the kanji somebody."
   },
   "cave": {
-    "elements": [],
+    "elements": [
+      "dropB"
+    ],
     "kanji": "广, 店 outer part",
-    "subElements": [],
+    "subElements": [
+      "dropB",
+      "drop",
+      "drops"
+    ],
     "synonyms": [],
     "wkNames": [
       "canopy"
+    ]
+  },
+  "pelt": {
+    "elements": [
+      "cave",
+      "crotch"
+    ],
+    "kanji": "皮",
+    "subElements": [
+      "cave",
+      "crotch",
+      "ten",
+      "dropB",
+      "drop",
+      "drops",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "skin"
+    ],
+    "comment": "elementsPureVague: yes"
+  },
+  "waves": {
+    "elements": [
+      "water",
+      "pelt"
+    ],
+    "kanji": "波",
+    "subElements": [
+      "water",
+      "pelt",
+      "water droplets",
+      "water pistol",
+      "cave",
+      "crotch",
+      "ten",
+      "dropB",
+      "drop",
+      "drops",
+      "needle",
+      "wave"
+    ],
+    "synonyms": [
+      "wave"
+    ],
+    "wkNames": [
+      "wave"
     ]
   },
   "wide": {
@@ -5315,7 +5451,10 @@ const elementsDict =
     "kanji": "広",
     "subElements": [
       "cave",
-      "elbow"
+      "elbow",
+      "dropB",
+      "drop",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
@@ -6656,6 +6795,39 @@ const elementsDict =
       "ear"
     ]
   },
+  "take": {
+    "elements": [
+      "ear",
+      "crotch"
+    ],
+    "kanji": "取",
+    "subElements": [
+      "ear",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "take"
+    ]
+  },
+  "utmost": {
+    "elements": [
+      "sun",
+      "take"
+    ],
+    "kanji": "最",
+    "subElements": [
+      "sun",
+      "take",
+      "day",
+      "ear",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "most"
+    ]
+  },
   "shelf": {
     "elements": [
       "eye",
@@ -7275,6 +7447,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "cleat"
+    ]
+  },
+  "rose of sharon": {
+    "elements": [
+      "vulture",
+      "crown",
+      "ballerina"
+    ],
+    "kanji": "舜",
+    "subElements": [
+      "vulture",
+      "crown",
+      "ballerina",
+      "evening",
+      "cow",
+      "sunglasses",
+      "althea"
+    ],
+    "synonyms": [
+      "althea"
+    ],
+    "wkNames": [
+      "rose of sharon"
     ]
   },
   "leader": {
