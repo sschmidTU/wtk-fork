@@ -15,6 +15,7 @@ elementsPureExtra: [elements] // extra elements not contained in elementsTree or
 elementsPureVague: yes or no
 elementsTree: [elements] // new/alternate way to add elements. A tree of elementsPure, e.g. l(sun, moon) = 明 = sun, day, moon, month etc in the old `elements` notation. if one element doesn't fit the tree structure, it's added to elementsPureExtra.
 structureVague: yes or no // e.g. 包 is not quite top-down, it's also entwined
+similar: [kanji] // kanji that looks similar / similar elements
 elementsWK: [elements/WK radicals]
 chinese-elements-different: yes or no // only for major differences where elements would be entirely differently notated
 chinese-font-difference: yes or no // for smaller font changes that don't quite change elements, e.g. 糸

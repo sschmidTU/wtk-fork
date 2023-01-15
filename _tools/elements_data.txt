@@ -7,6 +7,7 @@ eminent; 卓; table; t(wand, sun, ten)
 say=words=keitai; 言; say; t(ceiling4, mouth)
 white; 白; white; t(drop, sun)
 power=muscle=arnold; 力; power
+triceps=cooperate; 劦; cooperate; t(power, l(power, power))
 man; 男; man; t(rice field, power)
 add; 加; add; l(power, mouth)
 noon=sign of the horse; 午; noon
@@ -24,6 +25,7 @@ zoo=critters=mending=mend; 疋; coat rack // added hook on top stroke compared t
 stop=footprint; 止; stop
 correct; 正; correct; t(ceiling, stop)
 this here; 此; this here; l(stop, spoon) // rtk3 element (2043). not an element on WK (though it appears quite frequently in rarer kanji)
+accompany; 従; obey; l(goingB, t(horns, mending))
 run; 走; run; t(soil, mending)
 determine; 定; determine; t(house, coat rack)
 perfect; 完; perfect; t(house, beginning)
@@ -41,6 +43,7 @@ porter=king; 壬; king
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 lord; 主; master; t(drop, king)
 emperor; 皇; emperor; t(white, king)
+display; 呈; present; t(mouth, king)
 whole; 全; all; t(umbrella, king)
 courts; 廷; courts; lb(stretch, porter)
 un-=jail cell=prison bars; 非; injustice; f(animal legs, shape, three)
@@ -53,6 +56,7 @@ hand; 手; hand
 fur; 毛; fur
 from=fist; 乃; stairs
 reach out; 及; reach; c(from, dropB)
+excel; 秀; excel; t(wheat, from)
 sword=dagger; 刀; sword
 saber=sabre=sword; 刂; knife // variant of 刀 sword
 blade; 刃; blade; c(sword, drop)
@@ -196,8 +200,9 @@ young; 若; young; t(flowers, right)
 can; 可; possible; o(street, mouth)
 strange; 奇; odd; t(large, can)
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
-boulevard; 行; go&loiter; going; loiterWK // used when there's something in the middle/inner.
+boulevard; 行; go&loiter; going, goingB, one, street; loiterWK // used when there's something in the middle/inner.
 goingB; 彳; loiter
+indications=indication; 徴; indication; l(goingB, t(mountain, king), taskmaster)
 five; 五; five
 staples; 印 left part; comb
 reclining=lying down; 𠂉, 乞 top part; gun
@@ -215,6 +220,7 @@ name; 名; name; t(evening, mouth)
 ballerina=sunglasses; 舛; dance; l(evening, cow) // RTK v4 calls this sunglasses, but in rtk-search data this is ambiguous, seems like "sunglasses with one lense missing" is a vertically separated element with a variant of evening on top, something else in the middle, and cow on the bottom. Almost all the occurences of 舛 in the data have "ballerina" though.
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
 beginning; 元; origin; t(two, human legs); piWK
+paper punch; 探 top right part; pi; t(crown, human legs)
 altar; 礻, 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right
 cloak; 衤, 初 left part; spirit // almost same as altar, has an extra diagonal stroke on the right
 key; ユ; hook
@@ -251,6 +257,9 @@ seven=diced; 七; seven
 heavens; 天; heaven; t(ceiling, large)
 wheat=cereal=sapling; 禾, 和 left part; grain; t(drop, tree); slideWK
 dart; 矢; arrow; c(heavens, drop)
+autumn; 秋; autumn; l(wheat, fire)
+profit; 利; profit; l(wheat, saber)
+committee; 委; committee; t(wheat, woman)
 angel; 橋 right part; angel; t(wheat, mouth, same) // WK: not a radical
 bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened when used as an element.
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
@@ -303,12 +312,14 @@ fortune-telling=fortunetelling; 占; fortune; t(divining rod, mouth)
 chair; 呉 middle part; chair; t(straightened hook, stick) // doesn't exist in WK, only the straightened hook (lion) part
 nightbreak; 旦; dawn; t(sun, floor)
 span; 亘; dawn; t(ceiling, nightbreak)
+quantity; 量; amount; t(nightbreak, ri)
 excuse=village stocks=rabbit; 免; excuse; t(bound up, c(mouth, stick), human legs) // original primitive called "village stocks" in RTK, though excuse seems better as that's also the kanji keyword
 oneself=nose; 自; self; t(drop, eye)
 snake=self; 己; oneself // unfortunately the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK
 wrap; 包; wrap; t(bound up, snake) // structureVague: yes: not quite top-down, it's also entwined
 somebody; 身; somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
 cave; 广, 店 outer part; canopy; dropB
+shire; 庄; manor; tl(cave, soil)
 pelt; 皮; skin; tl(cave, crotch)&ten // elementsPureVague: yes
 waves=wave; 波; wave; l(water, pelt)
 wide; 広; wide; tl(cave, elbow)
@@ -364,6 +375,7 @@ assembly line; 卒 middle part; assembly line; person2 // not named in WK
 large=St. Bernard; 大; big
 plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
+dog with one leg=dog; 尤; dog with one leg
 eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
 public; 公; public; t(eight, elbow)
@@ -403,6 +415,8 @@ mandala; 曼; mandala; t(sun, eyeB, crotch) // not named in WK
 hundred; 百; hundred; t(ceiling, white)
 neck; 首; neck; t(horns, one, oneself)
 rice field=brains; 田; rice field
+rice; 米; rice; c(tree, horns)
+astray; 迷; astray; lb(road, rice)
 soil=dirt=ground; 土; dirt
 samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal strong is longer than the lower one here.
 square jewel=squared jewel; 圭; square jewel; t(soil, soil)
@@ -411,6 +425,7 @@ good luck; 吉; good luck; t(samurai, mouth)
 sell; 売; sell; t(samurai, crown, human legs)
 scorpion=est; 也; alligator // kanji is named est in RTK, element scorpion
 stick; ｜, 旧 left part; stick // basically any vertical line
+olden times=old days; 旧; former; l(stick, sun)
 pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 wind; 几, 冗 bottom part; table

@@ -142,6 +142,28 @@ const elementsDict =
       "power"
     ]
   },
+  "triceps": {
+    "elements": [
+      "power",
+      "power",
+      "power"
+    ],
+    "kanji": "劦",
+    "subElements": [
+      "power",
+      "power",
+      "power",
+      "muscle",
+      "arnold",
+      "cooperate"
+    ],
+    "synonyms": [
+      "cooperate"
+    ],
+    "wkNames": [
+      "cooperate"
+    ]
+  },
   "man": {
     "elements": [
       "rice field",
@@ -407,6 +429,27 @@ const elementsDict =
       "this here"
     ],
     "comment": "rtk3 element (2043). not an element on WK (though it appears quite frequently in rarer kanji)"
+  },
+  "accompany": {
+    "elements": [
+      "goingB",
+      "horns",
+      "mending"
+    ],
+    "kanji": "従",
+    "subElements": [
+      "goingB",
+      "horns",
+      "mending",
+      "animal horns",
+      "mend",
+      "zoo",
+      "critters"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "obey"
+    ]
   },
   "run": {
     "elements": [
@@ -722,6 +765,21 @@ const elementsDict =
       "emperor"
     ]
   },
+  "display": {
+    "elements": [
+      "mouth",
+      "king"
+    ],
+    "kanji": "呈",
+    "subElements": [
+      "mouth",
+      "king"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "present"
+    ]
+  },
   "whole": {
     "elements": [
       "umbrella",
@@ -897,6 +955,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "reach"
+    ]
+  },
+  "excel": {
+    "elements": [
+      "wheat",
+      "from"
+    ],
+    "kanji": "秀",
+    "subElements": [
+      "wheat",
+      "from",
+      "drop",
+      "tree",
+      "cereal",
+      "sapling",
+      "fist",
+      "drops",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "excel"
     ]
   },
   "sword": {
@@ -3466,13 +3546,21 @@ const elementsDict =
   },
   "boulevard": {
     "elements": [
-      "going"
+      "going",
+      "goingB",
+      "one",
+      "street"
     ],
     "elementsWK": "loiterWK",
     "kanji": "行",
     "subElements": [
       "going",
-      ""
+      "goingB",
+      "one",
+      "street",
+      "",
+      "nail",
+      "spike"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3488,6 +3576,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "loiter"
+    ]
+  },
+  "indications": {
+    "elements": [
+      "goingB",
+      "mountain",
+      "king",
+      "taskmaster"
+    ],
+    "kanji": "徴",
+    "subElements": [
+      "goingB",
+      "mountain",
+      "king",
+      "taskmaster",
+      "indication"
+    ],
+    "synonyms": [
+      "indication"
+    ],
+    "wkNames": [
+      "indication"
     ]
   },
   "five": {
@@ -3770,6 +3880,21 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "origin"
+    ]
+  },
+  "paper punch": {
+    "elements": [
+      "crown",
+      "human legs"
+    ],
+    "kanji": "探 top right part",
+    "subElements": [
+      "crown",
+      "human legs"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "pi"
     ]
   },
   "altar": {
@@ -4393,6 +4518,73 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "arrow"
+    ]
+  },
+  "autumn": {
+    "elements": [
+      "wheat",
+      "fire"
+    ],
+    "kanji": "秋",
+    "subElements": [
+      "wheat",
+      "fire",
+      "drop",
+      "tree",
+      "drops",
+      "wood",
+      "cereal",
+      "sapling",
+      "person"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "autumn"
+    ]
+  },
+  "profit": {
+    "elements": [
+      "wheat",
+      "saber"
+    ],
+    "kanji": "利",
+    "subElements": [
+      "wheat",
+      "saber",
+      "drop",
+      "tree",
+      "drops",
+      "wood",
+      "cereal",
+      "sapling",
+      "sabre",
+      "sword",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "profit"
+    ]
+  },
+  "committee": {
+    "elements": [
+      "wheat",
+      "woman"
+    ],
+    "kanji": "委",
+    "subElements": [
+      "wheat",
+      "woman",
+      "drop",
+      "tree",
+      "drops",
+      "wood",
+      "cereal",
+      "sapling"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "committee"
     ]
   },
   "angel": {
@@ -5372,6 +5564,32 @@ const elementsDict =
       "dawn"
     ]
   },
+  "quantity": {
+    "elements": [
+      "nightbreak",
+      "ri"
+    ],
+    "kanji": "量",
+    "subElements": [
+      "nightbreak",
+      "ri",
+      "sun",
+      "floor",
+      "day",
+      "one",
+      "rice field",
+      "soil",
+      "brains",
+      "dirt",
+      "ground",
+      "computer",
+      "village"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "amount"
+    ]
+  },
   "excuse": {
     "elements": [
       "bound up",
@@ -5494,6 +5712,26 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "canopy"
+    ]
+  },
+  "shire": {
+    "elements": [
+      "cave",
+      "soil"
+    ],
+    "kanji": "庄",
+    "subElements": [
+      "cave",
+      "soil",
+      "dropB",
+      "drop",
+      "drops",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "manor"
     ]
   },
   "pelt": {
@@ -6493,6 +6731,19 @@ const elementsDict =
       "dog"
     ]
   },
+  "dog with one leg": {
+    "elements": [],
+    "kanji": "尤",
+    "subElements": [
+      "dog"
+    ],
+    "synonyms": [
+      "dog"
+    ],
+    "wkNames": [
+      "dog with one leg"
+    ]
+  },
   "eight": {
     "elements": [],
     "kanji": "八",
@@ -7105,6 +7356,42 @@ const elementsDict =
       "rice field"
     ]
   },
+  "rice": {
+    "elements": [
+      "tree",
+      "horns"
+    ],
+    "kanji": "米",
+    "subElements": [
+      "tree",
+      "horns",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rice"
+    ]
+  },
+  "astray": {
+    "elements": [
+      "road",
+      "rice"
+    ],
+    "kanji": "迷",
+    "subElements": [
+      "road",
+      "rice",
+      "tree",
+      "horns",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "astray"
+    ]
+  },
   "soil": {
     "elements": [],
     "kanji": "土",
@@ -7234,6 +7521,25 @@ const elementsDict =
       "stick"
     ],
     "comment": "basically any vertical line"
+  },
+  "olden times": {
+    "elements": [
+      "stick",
+      "sun"
+    ],
+    "kanji": "旧",
+    "subElements": [
+      "stick",
+      "sun",
+      "day",
+      "old days"
+    ],
+    "synonyms": [
+      "old days"
+    ],
+    "wkNames": [
+      "former"
+    ]
   },
   "pinnacle": {
     "elements": [],
