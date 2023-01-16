@@ -327,6 +327,23 @@ const elementsDict =
       "guest"
     ]
   },
+  "relaxed": {
+    "elements": [
+      "person",
+      "stick",
+      "taskmaster"
+    ],
+    "kanji": "攸",
+    "subElements": [
+      "person",
+      "stick",
+      "taskmaster"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "relaxed"
+    ]
+  },
   "leg": {
     "elements": [
       "mouth",
@@ -1455,6 +1472,29 @@ const elementsDict =
     "wkNames": [
       "drunkard"
     ]
+  },
+  "request": {
+    "elements": [
+      "arrow",
+      "rice"
+    ],
+    "kanji": "求",
+    "subElements": [
+      "arrow",
+      "rice",
+      "water",
+      "tree",
+      "horns",
+      "water droplets",
+      "water pistol",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "request"
+    ],
+    "comment": "structureVague: yes"
   },
   "length": {
     "elements": [],
@@ -3361,6 +3401,30 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "yoga"
+    ]
+  },
+  "build": {
+    "elements": [
+      "stretch",
+      "brush"
+    ],
+    "kanji": "建",
+    "subElements": [
+      "stretch",
+      "brush",
+      "rake",
+      "dry",
+      "stick",
+      "broom",
+      "ceiling",
+      "ten",
+      "one",
+      "needle",
+      "clothesline"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "build"
     ]
   },
   "street": {
@@ -6197,6 +6261,26 @@ const elementsDict =
       "bright"
     ]
   },
+  "rib": {
+    "elements": [
+      "moon",
+      "power"
+    ],
+    "kanji": "肋",
+    "subElements": [
+      "moon",
+      "power",
+      "month",
+      "flesh",
+      "part of the body",
+      "muscle",
+      "arnold"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rib"
+    ]
+  },
   "child": {
     "elements": [],
     "kanji": "子",
@@ -7034,6 +7118,24 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "mouth"
+    ]
+  },
+  "spine": {
+    "elements": [
+      "mouth",
+      "drop",
+      "mouth"
+    ],
+    "kanji": "呂",
+    "subElements": [
+      "mouth",
+      "drop",
+      "mouth",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bath"
     ]
   },
   "goods": {

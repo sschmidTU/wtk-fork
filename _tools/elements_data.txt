@@ -19,6 +19,7 @@ taskmaster; 攵, 牧 right part; winter // compared to walking legs, longer seco
 walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
 each; 各; each&kiss; t(walking legs, mouth)
 guest; 客; guest; t(house, each)
+relaxed; 攸; relaxed; l(person, stick, taskmaster)
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
 mending=mend=zoo; 定 bottom part, 疋, 足 bottom part; coat rack // only difference to zoo: missing hook at end of top stroke
 zoo=critters=mending=mend; 疋; coat rack // added hook on top stroke compared to mending, almost indistinguishable. coat rack in WK is both zoo and mending
@@ -84,6 +85,7 @@ easy=piggy bank; 易; easy; t(sun, not) // element is called piggy bank in RTK, 
 screwdriver=utilize=utilise; 用; task; moon, stick 
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
 fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
+request; 求; request; c(arrow, rice)&water // structureVague: yes
 length=tucked under the arm; 丈; height
 parade; 茂 bottom part; parade; l(cliff, fiesta)
 turn into=paradeB; 成; become; o(parade, clothes hanger)
@@ -190,6 +192,7 @@ four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's 
 road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
 stretch; 廴; yoga
+build; 建; build; lb(stretch, brush)
 street=nail=spike; 丁; street
 cliff; 厂; cliff
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
@@ -344,6 +347,7 @@ jammed in; 介; jammed in; t(umbrella, human legs)&stick
 moon=month=flesh=part of the body; 月; moon
 companion; 朋; companion; l(moon, moon) // kanji/radical not on WK
 bright; 明; bright; l(sun, moon)
+rib; 肋; rib; l(moon, power)
 child; 子; child
 fingers=finger; 扌, 招 left part; fingers
 ego; 我; ego; l(fingers, fiesta) // kanji name in WK is I, but radical name is ego. I is also ambiguous. structureVague: yes
@@ -396,6 +400,7 @@ maestro; 師 left part; drop&bear
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
 walk; 歩; walk; t(stop, few)
 mouth; 口; mouth
+spine; 呂; bath; t(mouth, drop, mouth)
 goods; 品; product; t(mouth, l(mouth, mouth))
 furniture=wooden goods; 操 right part; syrup; t(goods, tree)
 creeper; 同 inner part; creeper; t(ceiling, mouth) // doesn't exist in RTK, but does in WK, and is very common.
