@@ -344,6 +344,22 @@ const elementsDict =
       "relaxed"
     ]
   },
+  "set free": {
+    "elements": [
+      "direction",
+      "taskmaster"
+    ],
+    "kanji": "放",
+    "subElements": [
+      "direction",
+      "taskmaster",
+      "compass"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "release"
+    ]
+  },
   "leg": {
     "elements": [
       "mouth",
@@ -700,6 +716,31 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "mole"
+    ]
+  },
+  "arrival": {
+    "elements": [
+      "climax",
+      "saber"
+    ],
+    "kanji": "到",
+    "subElements": [
+      "climax",
+      "saber",
+      "wall",
+      "soil",
+      "ceiling",
+      "elbow",
+      "one",
+      "dirt",
+      "ground",
+      "sabre",
+      "sword",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "arrival"
     ]
   },
   "king": {
@@ -1291,6 +1332,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "reality"
+    ]
+  },
+  "upright": {
+    "elements": [
+      "divining rod",
+      "shellfish"
+    ],
+    "kanji": "貞",
+    "subElements": [
+      "divining rod",
+      "shellfish",
+      "wand",
+      "magic wand",
+      "augury",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "chastity"
     ]
   },
   "pierce": {

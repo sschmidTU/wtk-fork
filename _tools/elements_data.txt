@@ -20,6 +20,7 @@ walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "ove
 each; 各; each&kiss; t(walking legs, mouth)
 guest; 客; guest; t(house, each)
 relaxed; 攸; relaxed; l(person, stick, taskmaster)
+set free; 放; release; l(direction, taskmaster)
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
 mending=mend=zoo; 定 bottom part, 疋, 足 bottom part; coat rack // only difference to zoo: missing hook at end of top stroke
 zoo=critters=mending=mend; 疋; coat rack // added hook on top stroke compared to mending, almost indistinguishable. coat rack in WK is both zoo and mending
@@ -39,6 +40,7 @@ bring up; 育; nurture; t(infant, moon)
 allot; 充; allocate; t(infant, human legs)
 cloud=rising cloud; 云; cloud; t(ceiling, wall)
 climax; 至; mole; t(wall, soil)
+arrival; 到; arrival; l(climax, saber)
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 porter=king; 壬; king
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
@@ -74,6 +76,7 @@ shellfish=shell=clam=oyster; 貝; shellfish; t(eye, animal legs)
 see; 見; see; t(eye, human legs)
 tool; 具 bottom part; ground&fins; t(ceiling, animal legs) // this is 具 minus the eye. doesn't exist in WK (ground + fins). TODO maybe t(ground, fins) for WK?
 true; 真; reality; t(ten, eye, tool)
+upright; 貞; chastity; t(divining rod, shellfish)
 pierce; 貫; pierce; t(rice field, shellfish)
 old west; 要 top part, 価 right part; helicopter
 chestnut; 栗; chestnut; t(old west, tree)
