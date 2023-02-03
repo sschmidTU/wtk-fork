@@ -788,6 +788,22 @@ const elementsDict =
     ],
     "comment": "my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel."
   },
+  "responsibility": {
+    "elements": [
+      "person",
+      "porter"
+    ],
+    "kanji": "任",
+    "subElements": [
+      "person",
+      "porter",
+      "king"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "duty"
+    ]
+  },
   "lord": {
     "elements": [
       "drop",
@@ -1628,6 +1644,7 @@ const elementsDict =
       "flowers",
       "parade",
       "retainer",
+      "flower",
       "cliff",
       "fiesta",
       "arrowhead",
@@ -2222,6 +2239,55 @@ const elementsDict =
       "head"
     ]
   },
+  "inside": {
+    "elements": [
+      "hood",
+      "person"
+    ],
+    "kanji": "内",
+    "subElements": [
+      "hood",
+      "person"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "inside"
+    ]
+  },
+  "third class": {
+    "elements": [
+      "ceiling",
+      "inside"
+    ],
+    "kanji": "丙",
+    "subElements": [
+      "ceiling",
+      "inside",
+      "one",
+      "hood",
+      "person"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "third class"
+    ]
+  },
+  "meat": {
+    "elements": [
+      "inside",
+      "person"
+    ],
+    "kanji": "肉",
+    "subElements": [
+      "inside",
+      "person",
+      "hood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "meat"
+    ]
+  },
   "same": {
     "elements": [
       "hood",
@@ -2487,17 +2553,57 @@ const elementsDict =
       "fix"
     ]
   },
+  "by means of": {
+    "elements": [
+      "straightened hook",
+      "drop",
+      "person"
+    ],
+    "kanji": "以",
+    "subElements": [
+      "straightened hook",
+      "drop",
+      "person",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "from"
+    ]
+  },
+  "eel": {
+    "elements": [
+      "rice field",
+      "fishhook"
+    ],
+    "kanji": "俺 bottom right part",
+    "subElements": [
+      "rice field",
+      "fishhook",
+      "brains",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "eel"
+    ],
+    "comment": "fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke"
+  },
   "dragon": {
     "elements": [
       "stand up",
-      "rice field",
-      "fishhook"
+      "eel"
     ],
     "kanji": "竜",
     "subElements": [
       "stand up",
-      "rice field",
-      "fishhook",
+      "eel",
       "top hat",
       "horns",
       "floor",
@@ -2506,6 +2612,8 @@ const elementsDict =
       "animal horns",
       "drops",
       "vase",
+      "rice field",
+      "fishhook",
       "brains",
       "hook",
       "stick",
@@ -2514,8 +2622,7 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "dragon"
-    ],
-    "comment": "fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke"
+    ]
   },
   "complete": {
     "elements": [
@@ -2547,6 +2654,45 @@ const elementsDict =
       "ground"
     ],
     "comment": "line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed."
+  },
+  "row": {
+    "elements": [],
+    "kanji": "並",
+    "subElements": [
+      "upside down in a row"
+    ],
+    "synonyms": [
+      "upside down in a row"
+    ],
+    "wkNames": [
+      "line up",
+      "spikes",
+      "horns",
+      "ground"
+    ],
+    "comment": "line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed."
+  },
+  "virtuous": {
+    "elements": [
+      "sheep",
+      "row",
+      "mouth"
+    ],
+    "kanji": "善",
+    "subElements": [
+      "sheep",
+      "row",
+      "mouth",
+      "horns",
+      "king",
+      "stick",
+      "animal horns",
+      "upside down in a row"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "morally good"
+    ]
   },
   "meeting": {
     "elements": [
@@ -2667,6 +2813,7 @@ const elementsDict =
     "subElements": [
       "flowers",
       "fit",
+      "flower",
       "meeting",
       "mouth",
       "umbrella",
@@ -2904,6 +3051,42 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "specialty"
+    ]
+  },
+  "adhere": {
+    "elements": [
+      "person",
+      "glue"
+    ],
+    "kanji": "付",
+    "subElements": [
+      "person",
+      "glue",
+      "ten",
+      "hook",
+      "drop",
+      "needle",
+      "drops",
+      "measurement"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "attach"
+    ]
+  },
+  "substitute": {
+    "elements": [
+      "person",
+      "arrow"
+    ],
+    "kanji": "代",
+    "subElements": [
+      "person",
+      "arrow"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "substitute"
     ]
   },
   "generation": {
@@ -3610,6 +3793,7 @@ const elementsDict =
     "subElements": [
       "flowers",
       "right",
+      "flower",
       "by one's side",
       "mouth",
       "by one’s side"
@@ -3634,6 +3818,25 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "possible"
+    ]
+  },
+  "what": {
+    "elements": [
+      "person",
+      "can"
+    ],
+    "kanji": "何",
+    "subElements": [
+      "person",
+      "can",
+      "street",
+      "mouth",
+      "nail",
+      "spike"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "what"
     ]
   },
   "strange": {
@@ -3735,6 +3938,22 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "five"
+    ]
+  },
+  "tile": {
+    "elements": [
+      "five",
+      "drop"
+    ],
+    "kanji": "瓦",
+    "subElements": [
+      "five",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tile"
     ]
   },
   "staples": {
@@ -4199,6 +4418,27 @@ const elementsDict =
       "prison"
     ]
   },
+  "long time": {
+    "elements": [
+      "bound up",
+      "dropB"
+    ],
+    "kanji": "久",
+    "subElements": [
+      "bound up",
+      "dropB",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "long time"
+    ]
+  },
   "aroma": {
     "elements": [
       "bound up",
@@ -4293,6 +4533,7 @@ const elementsDict =
     "subElements": [
       "flowers",
       "phrase",
+      "flower",
       "bound up",
       "mouth",
       "clothes hanger",
@@ -4318,6 +4559,7 @@ const elementsDict =
       "taskmaster",
       "flowers",
       "phrase",
+      "flower",
       "bound up",
       "mouth",
       "clothes hanger",
@@ -4807,8 +5049,12 @@ const elementsDict =
   "flowers": {
     "elements": [],
     "kanji": "艹, 若 top part",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "flower"
+    ],
+    "synonyms": [
+      "flower"
+    ],
     "wkNames": [
       "flowers"
     ]
@@ -4819,11 +5065,53 @@ const elementsDict =
     ],
     "kanji": "开",
     "subElements": [
-      "flowers"
+      "flowers",
+      "flower"
     ],
     "synonyms": [],
     "wkNames": [
       "lantern"
+    ]
+  },
+  "put together": {
+    "elements": [
+      "horns",
+      "two hands"
+    ],
+    "kanji": "并",
+    "subElements": [
+      "horns",
+      "two hands",
+      "animal horns",
+      "flowers",
+      "flower"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "put together"
+    ]
+  },
+  "folding screen": {
+    "elements": [
+      "flag",
+      "put together"
+    ],
+    "kanji": "屏",
+    "subElements": [
+      "flag",
+      "put together",
+      "mouth",
+      "drop",
+      "drops",
+      "horns",
+      "two hands",
+      "animal horns",
+      "flowers",
+      "flower"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "folding screen"
     ]
   },
   "seedling": {
@@ -4835,6 +5123,7 @@ const elementsDict =
     "subElements": [
       "flowers",
       "rice field",
+      "flower",
       "brains"
     ],
     "synonyms": [],
@@ -4853,6 +5142,7 @@ const elementsDict =
       "cross",
       "flowers",
       "shellfish",
+      "flower",
       "eye",
       "animal legs",
       "shell",
@@ -4876,6 +5166,7 @@ const elementsDict =
       "flowers",
       "sun",
       "large",
+      "flower",
       "day",
       "St. Bernard"
     ],
@@ -4894,6 +5185,7 @@ const elementsDict =
       "two hands",
       "saber",
       "flowers",
+      "flower",
       "sabre",
       "sword",
       "dagger"
@@ -5019,6 +5311,7 @@ const elementsDict =
       "flowers",
       "deceased",
       "stream",
+      "flower",
       "top hat",
       "straightened hook",
       "drop",
@@ -6797,6 +7090,40 @@ const elementsDict =
       "every"
     ]
   },
+  "dumbfounded": {
+    "elements": [
+      "mouth",
+      "tree"
+    ],
+    "kanji": "呆",
+    "subElements": [
+      "mouth",
+      "tree",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "shock"
+    ]
+  },
+  "protect": {
+    "elements": [
+      "person",
+      "dumbfounded"
+    ],
+    "kanji": "保",
+    "subElements": [
+      "person",
+      "dumbfounded",
+      "mouth",
+      "tree",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "preserve"
+    ]
+  },
   "person": {
     "elements": [],
     "kanji": "人",
@@ -6831,6 +7158,25 @@ const elementsDict =
       "assembly line"
     ],
     "comment": "not named in WK"
+  },
+  "sitting in meditation": {
+    "elements": [
+      "soil",
+      "assembly line"
+    ],
+    "kanji": "坐",
+    "subElements": [
+      "soil",
+      "assembly line",
+      "dirt",
+      "ground",
+      "person2",
+      "person"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "sitting in meditation"
+    ]
   },
   "large": {
     "elements": [],
@@ -6940,6 +7286,7 @@ const elementsDict =
     "subElements": [
       "flowers",
       "floor",
+      "flower",
       "one"
     ],
     "synonyms": [],
@@ -6958,6 +7305,7 @@ const elementsDict =
       "animal legs",
       "flowers",
       "floor",
+      "flower",
       "one",
       "together"
     ],
@@ -6982,6 +7330,7 @@ const elementsDict =
       "animal legs",
       "flowers",
       "floor",
+      "flower",
       "together"
     ],
     "synonyms": [],
@@ -7896,7 +8245,8 @@ const elementsDict =
     "subElements": [
       "flowers",
       "turkey",
-      "crotch"
+      "crotch",
+      "flower"
     ],
     "synonyms": [],
     "wkNames": [
@@ -8084,6 +8434,22 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "point"
+    ]
+  },
+  "change": {
+    "elements": [
+      "person",
+      "spoon"
+    ],
+    "kanji": "化",
+    "subElements": [
+      "person",
+      "spoon",
+      "sitting on the ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "change"
     ]
   },
   "vulture": {

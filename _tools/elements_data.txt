@@ -44,6 +44,7 @@ arrival; 到; arrival; l(climax, saber)
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 porter=king; 壬; king
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
+responsibility; 任; duty; l(person, porter)
 lord; 主; master; t(drop, king)
 emperor; 皇; emperor; t(white, king)
 display; 呈; present; t(mouth, king)
@@ -125,6 +126,9 @@ hole; 穴; hole; t(roof, eight)
 house; 家; house; t(roof, sow) // in RTK originally 宀 is house, but so is 家, which RTK calls the "full character". We can't/shouldn't have two elements with the same name, so we renamed the RTK house radical to roof (WK name).
 crown; 冖, 冗 top part; forehead
 hood; 冂; head
+inside; 内; inside; c(hood, person)
+third class; 丙; third class; t(ceiling, inside)
+meat; 肉; meat; o(inside, person)
 same; 同; same; o(hood, creeper)
 tall; 高; tall; t(top hat, mouth, o(hood, mouth))
 circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hood instead of hood (subelement/variant I guess)
@@ -139,9 +143,13 @@ beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
 straightaway; 直; fix; t(ten, eye, straightened hook)
-dragon; 竜; dragon; t(stand up, rice field, fishhook) // fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke
+by means of; 以; from; l(straightened hook, drop, person)
+eel; 俺 bottom right part; eel; t(rice field, fishhook) // fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke
+dragon; 竜; dragon; t(stand up, eel)
 complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
+row=upside down in a row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
+virtuous; 善; morally good; t(sheep, row, mouth)
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
 meetingB=meeting; 会; meeting; t(meeting, elbow)
 fit; 合; suit; t(meeting, mouth)
@@ -161,6 +169,8 @@ rule; 則; rule; l(shellfish, knife)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
 temple=Buddhist temple; 寺; temple
 specialty; 専; specialty; t(ten, rice field, glue)
+adhere; 付; attach; l(person, glue)
+substitute; 代; substitute; l(person, arrow)
 generation=generations; 世; world
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
 broom; ヨ, 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
@@ -204,12 +214,14 @@ left; 左; left; tl(by one's side, craft)
 left-handed; 惰 right part; left-handed; t(left, moon) // not in my RTK book, occurs twice. used as extra element
 young; 若; young; t(flowers, right)
 can; 可; possible; o(street, mouth)
+what; 何; what; l(person, can)
 strange; 奇; odd; t(large, can)
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going, goingB, one, street; loiterWK // used when there's something in the middle/inner.
 goingB; 彳; loiter
 indications=indication; 徴; indication; l(goingB, t(mountain, king), taskmaster)
 five; 五; five
+tile; 瓦; tile; c(five, drop)
 staples; 印 left part; comb
 reclining=lying down; 𠂉, 乞 top part; gun
 beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
@@ -239,6 +251,7 @@ fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)&reclining
+long time; 久; long time; c(bound up, dropB)
 aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop)
 phrase; 句; poem; o(bound up, mouth)
@@ -271,8 +284,10 @@ bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened w
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 char=barbecue; 焦; char; t(turkey, oven-fire) // barbecue is not in my RTK1 book, but in the rtk-search data
 pegasus; 勧 left part, variant of 雚; pegasus; t(noon, turkey) // doesn't exist in WK (noon+turkey)
-flowers; 艹, 若 top part; flowers
+flowers=flower; 艹, 若 top part; flowers
 two hands; 开; lantern; flowers
+put together; 并; put together; t(horns, two hands)
+folding screen; 屏; folding screen; tl(flag, put together)
 seedling; 苗; seedling; t(flowers, rice field)
 decorate; 賁; decorate; t(cross, flowers, shellfish) // not a RTK or WK kanji, but the kanji exists.
 graveyard; 莫; greenhouse; t(flowers, sun, large)
@@ -376,9 +391,12 @@ woman; 女; woman
 concubine; 妾; concubine; t(stand up, woman)
 mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
 every; 毎; every; t(reclining, rice field)
+dumbfounded; 呆; shock; t(mouth, tree)
+protect; 保; preserve; l(person, dumbfounded)
 person; 人; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 personB; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
+sitting in meditation; 坐; sitting in meditation; c(soil, assembly line)
 large=St. Bernard; 大; big
 plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
@@ -458,6 +476,7 @@ spoon=sitting on the ground; 匕; spoon
 compare; 比; compare; l(spoon, spoon)
 all; 皆; all; t(compare, white)
 delicious; 旨; point; t(spoon, sun)
+change; 化; change; l(person, spoon)
 vulture; 爪; cleat
 rose of sharon=althea; 舜; rose of sharon; t(vulture, crown, ballerina)
 leader; 将; commander; l(turtle, t(vulture, glue))
