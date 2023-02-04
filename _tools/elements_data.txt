@@ -236,6 +236,7 @@ mop; 伊 right part; mop; c(broom, dropB)&rake
 brush; 聿, 津 right part, 書 top part; brush; t(rake, c(dry, stick))&broom // broom is just the "reverse E" part
 write; 書; write; t(brush, sun)
 old boy=buddy=you; 君; buddy; t(mop, mouth)
+tickle; 浸 right part; tickle; t(broom, crown, crotch) // not named in WK
 gates; 門; gates
 cocoon; 幺, 幼 left part; poop; elbow
 two cocoons=cocoon2; 慈 middle part; two poops; l(cocoon, cocoon)
@@ -449,6 +450,7 @@ shire; 庄; manor; tl(cave, soil)
 pelt; 皮; skin; tl(cave, crotch)&ten // elementsPureVague: yes
 waves=wave; 波; wave; l(water, pelt)
 wide; 広; wide; tl(cave, elbow)
+china=T'ang; 唐; china; tl(cave, t(rake, mouth))
 give; 呉; give&catapult; t(mouth, chair, tool)
 summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK
 husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length

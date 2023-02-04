@@ -4427,6 +4427,24 @@ const elementsDict =
       "buddy"
     ]
   },
+  "tickle": {
+    "elements": [
+      "broom",
+      "crown",
+      "crotch"
+    ],
+    "kanji": "浸 right part",
+    "subElements": [
+      "broom",
+      "crown",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tickle"
+    ],
+    "comment": "not named in WK"
+  },
   "gates": {
     "elements": [],
     "kanji": "門",
@@ -8424,6 +8442,31 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "wide"
+    ]
+  },
+  "china": {
+    "elements": [
+      "cave",
+      "rake",
+      "mouth"
+    ],
+    "kanji": "唐",
+    "subElements": [
+      "cave",
+      "rake",
+      "mouth",
+      "dropB",
+      "drop",
+      "drops",
+      "broom",
+      "stick",
+      "T'ang"
+    ],
+    "synonyms": [
+      "T'ang"
+    ],
+    "wkNames": [
+      "china"
     ]
   },
   "give": {
