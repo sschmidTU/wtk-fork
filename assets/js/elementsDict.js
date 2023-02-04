@@ -1651,7 +1651,7 @@ const elementsDict =
     ],
     "comment": "element is called piggy bank in RTK, but honestly that's kinda silly if we can just use the kanji name \"easy\"."
   },
-  "screwdriver": {
+  "utilize": {
     "elements": [
       "moon",
       "stick"
@@ -1663,16 +1663,17 @@ const elementsDict =
       "month",
       "flesh",
       "part of the body",
-      "utilize",
-      "utilise"
+      "utilise",
+      "screwdriver"
     ],
     "synonyms": [
-      "utilize",
-      "utilise"
+      "utilise",
+      "screwdriver"
     ],
     "wkNames": [
       "task"
-    ]
+    ],
+    "comment": "main name is screwdriver in RTK, but probably most people will forget that after they're familiar with the kanji keyword utilize"
   },
   "arrowhead": {
     "elements": [],
@@ -1879,13 +1880,6 @@ const elementsDict =
       "arrowhead",
       "screwdriver",
       "arrow",
-      "moon",
-      "stick",
-      "month",
-      "flesh",
-      "part of the body",
-      "utilize",
-      "utilise",
       "dogtag"
     ],
     "synonyms": [
@@ -2225,6 +2219,32 @@ const elementsDict =
       "cage"
     ]
   },
+  "shovel": {
+    "elements": [],
+    "kanji": "凵",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "box"
+    ],
+    "comment": "unfortunately, RTK shovel is WK box, and RTK box is WK cage"
+  },
+  "twenty": {
+    "elements": [
+      "shovel",
+      "one"
+    ],
+    "kanji": "廿",
+    "subElements": [
+      "shovel",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "twenty"
+    ],
+    "comment": "unfortunately in WK 廾 is also twenty"
+  },
   "swiss": {
     "elements": [
       "convex2",
@@ -2529,6 +2549,26 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "tall"
+    ]
+  },
+  "both": {
+    "elements": [
+      "ceiling",
+      "stick",
+      "hood",
+      "mountain"
+    ],
+    "kanji": "両",
+    "subElements": [
+      "ceiling",
+      "stick",
+      "hood",
+      "mountain",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "both"
     ]
   },
   "circumference": {
@@ -3070,6 +3110,44 @@ const elementsDict =
     ],
     "comment": "this is actually missing a horizontal stroke of bonsai, but can be easily misread as bonsai (also depending on font)"
   },
+  "scroll": {
+    "elements": [
+      "quarter",
+      "snake"
+    ],
+    "kanji": "巻",
+    "subElements": [
+      "quarter",
+      "snake",
+      "bonsai",
+      "horns",
+      "animal horns",
+      "self"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "scroll"
+    ]
+  },
+  "ticket": {
+    "elements": [
+      "quarter",
+      "sword"
+    ],
+    "kanji": "券",
+    "subElements": [
+      "quarter",
+      "sword",
+      "bonsai",
+      "horns",
+      "animal horns",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ticket"
+    ]
+  },
   "spring": {
     "elements": [
       "white",
@@ -3112,6 +3190,31 @@ const elementsDict =
       "lifespan"
     ],
     "comment": "bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable"
+  },
+  "half": {
+    "elements": [
+      "littleB",
+      "craft",
+      "stick"
+    ],
+    "kanji": "半",
+    "subElements": [
+      "littleB",
+      "craft",
+      "stick",
+      "little",
+      "ceiling",
+      "floor",
+      "animal legs",
+      "hook",
+      "small",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "half"
+    ],
+    "comment": "or c(c(two, stick), horns)"
   },
   "meadow": {
     "elements": [
@@ -3707,12 +3810,12 @@ const elementsDict =
   "ray": {
     "elements": [
       "littleB",
-      "human legs"
+      "pi"
     ],
     "kanji": "光",
     "subElements": [
       "littleB",
-      "human legs",
+      "pi",
       "little",
       "animal legs",
       "stick",
@@ -3722,6 +3825,15 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "sunlight"
+    ]
+  },
+  "pi": {
+    "elements": [],
+    "kanji": "光 bottom part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "t(ceiling, human legs)"
     ]
   },
   "hairpin": {
@@ -3976,6 +4088,30 @@ const elementsDict =
       "cliff"
     ]
   },
+  "fu": {
+    "elements": [],
+    "kanji": "フ",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "fu"
+    ],
+    "comment": "doesn't exist in RTK or WK, but useful sub-element"
+  },
+  "straight fu": {
+    "elements": [],
+    "kanji": "片 bottom right part",
+    "subElements": [
+      "fuB"
+    ],
+    "synonyms": [
+      "fuB"
+    ],
+    "wkNames": [
+      "straight fu"
+    ],
+    "comment": "doesn't exist in RTK or WK, but useful sub-element"
+  },
   "axe": {
     "elements": [
       "cliff",
@@ -4062,6 +4198,32 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "slice"
+    ]
+  },
+  "one-sided": {
+    "elements": [
+      "stick",
+      "stick",
+      "cliff",
+      "one",
+      "stick"
+    ],
+    "kanji": "片",
+    "subElements": [
+      "stick",
+      "stick",
+      "cliff",
+      "one",
+      "stick",
+      "onesided",
+      "one sided"
+    ],
+    "synonyms": [
+      "onesided",
+      "one sided"
+    ],
+    "wkNames": [
+      "one sided"
     ]
   },
   "stone": {
@@ -4817,9 +4979,17 @@ const elementsDict =
     "comment": "almost same as altar, has an extra diagonal stroke on the right"
   },
   "key": {
-    "elements": [],
+    "elements": [
+      "straight fu",
+      "floor"
+    ],
     "kanji": "ユ",
-    "subElements": [],
+    "subElements": [
+      "straight fu",
+      "floor",
+      "fuB",
+      "one"
+    ],
     "synonyms": [],
     "wkNames": [
       "hook"
@@ -4836,6 +5006,10 @@ const elementsDict =
       "key",
       "stick",
       "large",
+      "straight fu",
+      "floor",
+      "fuB",
+      "one",
       "St. Bernard"
     ],
     "synonyms": [],
@@ -5031,7 +5205,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "ladle"
-    ]
+    ],
+    "comment": "doesn't exist in WK, which also has 斗 ladle unfortunately"
   },
   "phrase": {
     "elements": [
@@ -5074,6 +5249,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "in season"
+    ]
+  },
+  "big dipper": {
+    "elements": [
+      "stick",
+      "one",
+      "drop2"
+    ],
+    "kanji": "斗",
+    "subElements": [
+      "stick",
+      "one",
+      "drop2",
+      "drop",
+      "drops",
+      "measuring cup"
+    ],
+    "synonyms": [
+      "measuring cup"
+    ],
+    "wkNames": [
+      "ladle"
     ]
   },
   "poem": {
@@ -5698,6 +5895,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "folding screen"
+    ]
+  },
+  "lofty": {
+    "elements": [
+      "ten",
+      "salad",
+      "human legs"
+    ],
+    "kanji": "尭",
+    "subElements": [
+      "ten",
+      "salad",
+      "human legs",
+      "flowers",
+      "pi",
+      "needle",
+      "floor",
+      "flower",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "gambler"
     ]
   },
   "seedling": {
@@ -6746,6 +6966,78 @@ const elementsDict =
       "canopy"
     ]
   },
+  "yurt": {
+    "elements": [
+      "cave",
+      "twenty"
+    ],
+    "kanji": "度 without 又",
+    "subElements": [
+      "cave",
+      "twenty",
+      "dropB",
+      "drop",
+      "drops",
+      "shovel",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "yurt"
+    ],
+    "comment": "only exists as element/radical in WK, but is quite common"
+  },
+  "degrees": {
+    "elements": [
+      "yurt",
+      "crotch"
+    ],
+    "kanji": "度",
+    "subElements": [
+      "yurt",
+      "crotch",
+      "cave",
+      "twenty",
+      "dropB",
+      "drop",
+      "drops",
+      "shovel",
+      "one",
+      "degree"
+    ],
+    "synonyms": [
+      "degree"
+    ],
+    "wkNames": [
+      "degree"
+    ]
+  },
+  "commoner": {
+    "elements": [
+      "yurt",
+      "oven-fire"
+    ],
+    "kanji": "庶",
+    "subElements": [
+      "yurt",
+      "oven-fire",
+      "cave",
+      "twenty",
+      "dropB",
+      "drop",
+      "drops",
+      "shovel",
+      "one",
+      "drop4",
+      "drop",
+      "oven fire",
+      "barbecue"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "all"
+    ]
+  },
   "shire": {
     "elements": [
       "cave",
@@ -7156,6 +7448,19 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "hat"
+    ]
+  },
+  "umbrellaB": {
+    "elements": [],
+    "kanji": "之 bottom part",
+    "subElements": [
+      "umbrella"
+    ],
+    "synonyms": [
+      "umbrella"
+    ],
+    "wkNames": [
+      "hatB"
     ]
   },
   "jammed in": {
@@ -7942,6 +8247,26 @@ const elementsDict =
     ],
     "wkNames": [
       "together"
+    ]
+  },
+  "once upon a time": {
+    "elements": [
+      "salad",
+      "sun"
+    ],
+    "kanji": "昔",
+    "subElements": [
+      "salad",
+      "sun",
+      "flowers",
+      "floor",
+      "flower",
+      "one",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "once upon a time"
     ]
   },
   "bushel basket": {
@@ -9382,6 +9707,27 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "exhaust"
+    ]
+  },
+  "of": {
+    "elements": [
+      "stick",
+      "fu",
+      "umbrellaB"
+    ],
+    "kanji": "之",
+    "subElements": [
+      "stick",
+      "fu",
+      "umbrellaB",
+      "umbrella",
+      "building blocks"
+    ],
+    "synonyms": [
+      "building blocks"
+    ],
+    "wkNames": [
+      "this"
     ]
   }
 };
