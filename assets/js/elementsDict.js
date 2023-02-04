@@ -1589,6 +1589,16 @@ const elementsDict =
       "not"
     ]
   },
+  "notB": {
+    "elements": [],
+    "kanji": "而 bottom part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "wingB",
+      "notB"
+    ]
+  },
   "sow": {
     "elements": [],
     "kanji": "豕",
@@ -2085,6 +2095,27 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "rain"
+    ]
+  },
+  "snow": {
+    "elements": [
+      "rain",
+      "broom"
+    ],
+    "kanji": "雪",
+    "subElements": [
+      "rain",
+      "broom",
+      "ceiling",
+      "towel",
+      "drop4",
+      "drop",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "snow"
     ]
   },
   "drop": {
@@ -3022,6 +3053,23 @@ const elementsDict =
       "spring"
     ]
   },
+  "quarter": {
+    "elements": [
+      "bonsai",
+      "horns"
+    ],
+    "kanji": "龹",
+    "subElements": [
+      "bonsai",
+      "horns",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "gladiator"
+    ],
+    "comment": "this is actually missing a horizontal stroke of bonsai, but can be easily misread as bonsai (also depending on font)"
+  },
   "spring": {
     "elements": [
       "white",
@@ -3334,6 +3382,25 @@ const elementsDict =
     ],
     "comment": "= broom with stick through it (vertical stroke)"
   },
+  "mop": {
+    "elements": [
+      "broom",
+      "dropB"
+    ],
+    "kanji": "伊 right part",
+    "subElements": [
+      "broom",
+      "dropB",
+      "rake",
+      "drop",
+      "drops",
+      "stick"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "mop"
+    ]
+  },
   "brush": {
     "elements": [
       "rake",
@@ -3381,6 +3448,32 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "write"
+    ]
+  },
+  "old boy": {
+    "elements": [
+      "mop",
+      "mouth"
+    ],
+    "kanji": "君",
+    "subElements": [
+      "mop",
+      "mouth",
+      "broom",
+      "dropB",
+      "rake",
+      "drop",
+      "drops",
+      "stick",
+      "buddy",
+      "you"
+    ],
+    "synonyms": [
+      "buddy",
+      "you"
+    ],
+    "wkNames": [
+      "buddy"
     ]
   },
   "gates": {
@@ -3883,6 +3976,94 @@ const elementsDict =
       "cliff"
     ]
   },
+  "axe": {
+    "elements": [
+      "cliff",
+      "street"
+    ],
+    "kanji": "斤",
+    "subElements": [
+      "cliff",
+      "street",
+      "nail",
+      "spike",
+      "ax"
+    ],
+    "synonyms": [
+      "ax"
+    ],
+    "wkNames": [
+      "axe"
+    ],
+    "comment": "RTK has ax as the main name, but I can't be bothered to spell it in Old English ;)"
+  },
+  "reject": {
+    "elements": [
+      "axe",
+      "dropB"
+    ],
+    "kanji": "斥",
+    "subElements": [
+      "axe",
+      "dropB",
+      "cliff",
+      "street",
+      "nail",
+      "spike",
+      "ax",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "reject"
+    ]
+  },
+  "fold": {
+    "elements": [
+      "fingers",
+      "axe"
+    ],
+    "kanji": "折",
+    "subElements": [
+      "fingers",
+      "axe",
+      "finger",
+      "cliff",
+      "street",
+      "nail",
+      "spike",
+      "ax"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "fold"
+    ]
+  },
+  "chop off": {
+    "elements": [
+      "car",
+      "axe"
+    ],
+    "kanji": "斬",
+    "subElements": [
+      "car",
+      "axe",
+      "ten",
+      "rice field",
+      "needle",
+      "brains",
+      "cliff",
+      "street",
+      "nail",
+      "spike",
+      "ax"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "slice"
+    ]
+  },
   "stone": {
     "elements": [
       "ceiling",
@@ -4148,6 +4329,47 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "comb"
+    ]
+  },
+  "comb": {
+    "elements": [
+      "ceiling",
+      "drop",
+      "notB"
+    ],
+    "kanji": "而",
+    "subElements": [
+      "ceiling",
+      "drop",
+      "notB",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rake"
+    ]
+  },
+  "demand": {
+    "elements": [
+      "rain",
+      "comb"
+    ],
+    "kanji": "需",
+    "subElements": [
+      "rain",
+      "comb",
+      "ceiling",
+      "towel",
+      "drop4",
+      "drop",
+      "one",
+      "drops",
+      "notB"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "demand"
     ]
   },
   "reclining": {
@@ -5598,11 +5820,33 @@ const elementsDict =
   "waterB": {
     "elements": [],
     "kanji": "水",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "water"
+    ],
+    "synonyms": [
+      "water"
+    ],
     "wkNames": [
       "water"
     ]
+  },
+  "waterC": {
+    "elements": [],
+    "kanji": "泰 bottom part",
+    "subElements": [
+      "waterB",
+      "water",
+      "grains of rice"
+    ],
+    "synonyms": [
+      "waterB",
+      "water",
+      "grains of rice"
+    ],
+    "wkNames": [
+      "water"
+    ],
+    "comment": "this is close to 氷 ice, but missing the フ"
   },
   "eternity": {
     "elements": [
@@ -5613,7 +5857,10 @@ const elementsDict =
     "subElements": [
       "drop",
       "waterB",
-      "drops"
+      "drops",
+      "water",
+      "water droplets",
+      "water pistol"
     ],
     "synonyms": [],
     "wkNames": [
@@ -7413,6 +7660,23 @@ const elementsDict =
       "concubine"
     ]
   },
+  "fruit": {
+    "elements": [
+      "rice field",
+      "tree"
+    ],
+    "kanji": "果",
+    "subElements": [
+      "rice field",
+      "tree",
+      "brains",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "fruit"
+    ]
+  },
   "mama": {
     "elements": [
       "sun",
@@ -8268,9 +8532,12 @@ const elementsDict =
       "rice field",
       "brains",
       "armour",
-      "roots"
+      "roots",
+      "monkey"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "monkey"
+    ],
     "wkNames": [
       "say humbly"
     ]

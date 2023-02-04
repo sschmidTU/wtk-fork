@@ -90,6 +90,7 @@ chestnut; 栗; chestnut; t(old west, tree)
 bundle=Chaplin; 束; bundle; tree, mouth
 sickness; 疒, 痒 outer part; sick
 not=knot=piglet's tail; 勿; wing&not
+notB; 而 bottom part; wingB&notB
 sow=pig; 豕; pig
 thing; 物; thing; l(cow, not)
 easy=piggy bank; 易; easy; t(sun, not) // element is called piggy bank in RTK, but honestly that's kinda silly if we can just use the kanji name "easy".
@@ -115,6 +116,7 @@ apron; 帯 bottom+middle part, 婦 bottom right part; forehead&towel; t(crown, t
 sovereign; 帝; sovereign; t(stand up, apron)
 sash; 帯; belt; t(buckle, apron)
 rain; 雨; rain; t(ceiling, o(towel, drop4))
+snow; 雪; snow; t(rain, broom)
 drop=drops; 丶, 白 top part; drop
 dropB; 少 bottom part; slide; drop
 heart; 心; heart; o(drop3, fishhook)
@@ -167,6 +169,7 @@ contain; 容; form; t(roof, valley)
 gully; 㕣; gully; t(eight, mouth)
 adzuki beans=azuki beans; 荅; azuki beans; t(flowers, fit)
 bonsai; 𡗗, 秦 or 寿 upper part; spring
+quarter; 龹; gladiator; c(bonsai, horns) // this is actually missing a horizontal stroke of bonsai, but can be easily misread as bonsai (also depending on font)
 spring; 泉; spring; t(white, water)
 longevity; 寿; lifespan; t(bonsai, glue) // bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable
 meadow; 原; original; o(cliff, spring)
@@ -184,8 +187,10 @@ generation=generations; 世; world
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
 broom; ヨ, 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
 rake; 粛 top part; wolverine; c(broom, stick) // = broom with stick through it (vertical stroke)
+mop; 伊 right part; mop; c(broom, dropB)&rake
 brush; 聿, 津 right part, 書 top part; brush; t(rake, c(dry, stick))&broom // broom is just the "reverse E" part
 write; 書; write; t(brush, sun)
+old boy=buddy=you; 君; buddy; t(mop, mouth)
 gates; 門; gates
 cocoon; 幺, 幼 left part; poop; elbow
 cactus; 聯 bottom right part; cactus
@@ -217,6 +222,10 @@ stretch; 廴; yoga
 build; 建; build; lb(stretch, brush)
 street=nail=spike; 丁; street
 cliff; 厂; cliff
+axe=ax; 斤; axe; tl(cliff, street) // RTK has ax as the main name, but I can't be bothered to spell it in Old English ;)
+reject; 斥; reject; c(axe, dropB)
+fold; 折; fold; l(fingers, axe)
+chop off; 斬; slice; l(car, axe)
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 right; 右; right; tl(by one's side, mouth)
 left; 左; left; tl(by one's side, craft)
@@ -232,6 +241,8 @@ indications=indication; 徴; indication; l(goingB, t(mountain, king), taskmaster
 five; 五; five
 tile; 瓦; tile; c(five, drop)
 staples; 印 left part; comb
+comb; 而; rake; t(ceiling, drop, notB)
+demand; 需; demand; t(rain, comb)
 reclining=lying down; 𠂉, 乞 top part; gun
 beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here
@@ -311,7 +322,8 @@ graveyard; 莫; greenhouse; t(flowers, sun, large)
 punish; 刑; punish; l(two hands, saber)
 negative=negation; 不; not; t(ceiling, c(person, stick))
 water=water droplets=water pistol; 氵; tsunami
-waterB; 水; water
+waterB=water; 水; water
+waterC=waterB=water=grains of rice; 泰 bottom part; water // this is close to 氷 ice, but missing the フ
 eternity; 永; eternity; t(drop, waterB)
 grains of rice; 米, 氺, 録 bottom right part; water // multiple shapes in RTK, but mainly 氺, which is water in WK.
 north; 北; north
@@ -406,6 +418,7 @@ forest; 森; forest; t(tree, grove)
 book; 本; book; c(tree, one)
 woman; 女; woman
 concubine; 妾; concubine; t(stand up, woman)
+fruit; 果; fruit; t(rice field, tree)
 mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
 every; 毎; every; t(reclining, rice field)
 dumbfounded; 呆; shock; t(mouth, tree)
@@ -459,7 +472,7 @@ hundred; 百; hundred; t(ceiling, white)
 neck; 首; neck; t(horns, one, oneself)
 rice field=brains; 田; rice field
 armor=armour=roots; 甲; turtle shell; t(rice field, stick)
-speaketh; 申; say humbly; t(stick, armor)
+speaketh=monkey; 申; say humbly; t(stick, armor)
 rice; 米; rice; c(tree, horns)
 astray; 迷; astray; lb(road, rice)
 soil=dirt=ground; 土; dirt
