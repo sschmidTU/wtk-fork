@@ -5109,7 +5109,7 @@ const elementsDict =
   },
   "twoB": {
     "elements": [],
-    "kanji": "冬 bottom part",
+    "kanji": "冬 bottom part (二 skewed)",
     "subElements": [
       "two",
       "ice"

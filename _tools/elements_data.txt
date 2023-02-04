@@ -284,7 +284,7 @@ ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK,
 turtle; 壮 left part; icicle
 robust; 壮; robust; l(turtle, samurai)
 two; 二; two
-twoB=two=ice; 冬 bottom part; twoB // RTK often calls this ice (凍 left part), which I disagree with, but should be findable for
+twoB=two=ice; 冬 bottom part (二 skewed); twoB // RTK often calls this ice (凍 left part), which I disagree with, but should be findable for
 three; 三; three
 shape=three; 彡; hair
 six; 六; six; t(top hat, animal legs)
