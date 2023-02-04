@@ -221,6 +221,19 @@ const elementsDict =
       "cow"
     ]
   },
+  "cowB": {
+    "elements": [],
+    "kanji": "降 bottom right part",
+    "subElements": [
+      "cow"
+    ],
+    "synonyms": [
+      "cow"
+    ],
+    "wkNames": [
+      "cowB"
+    ]
+  },
   "revelation": {
     "elements": [
       "cow",
@@ -290,6 +303,26 @@ const elementsDict =
       "winter"
     ],
     "comment": "top horizontal stroke doesn't go \"over the edge\""
+  },
+  "winter": {
+    "elements": [
+      "walking legs",
+      "twoB"
+    ],
+    "kanji": "冬",
+    "subElements": [
+      "walking legs",
+      "twoB",
+      "two",
+      "ice",
+      "drop2",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "winter"
+    ]
   },
   "each": {
     "elements": [
@@ -739,6 +772,44 @@ const elementsDict =
     ],
     "wkNames": [
       "thread"
+    ]
+  },
+  "lineage": {
+    "elements": [
+      "dropB",
+      "thread"
+    ],
+    "kanji": "系",
+    "subElements": [
+      "dropB",
+      "thread",
+      "drop",
+      "spiderman",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "lineage"
+    ]
+  },
+  "grandchild": {
+    "elements": [
+      "child",
+      "lineage"
+    ],
+    "kanji": "孫",
+    "subElements": [
+      "child",
+      "lineage",
+      "dropB",
+      "thread",
+      "drop",
+      "spiderman",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "grandchild"
     ]
   },
   "wall": {
@@ -1634,6 +1705,38 @@ const elementsDict =
       "pig"
     ]
   },
+  "warthog": {
+    "elements": [
+      "horns",
+      "sow"
+    ],
+    "kanji": "隊 right part",
+    "subElements": [
+      "horns",
+      "sow",
+      "animal horns",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "warthog"
+    ]
+  },
+  "regiment": {
+    "elements": [
+      "pinnacle",
+      "wart hog"
+    ],
+    "kanji": "隊",
+    "subElements": [
+      "pinnacle",
+      "wart hog"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "squad"
+    ]
+  },
   "thing": {
     "elements": [
       "cow",
@@ -2467,6 +2570,33 @@ const elementsDict =
       "hole"
     ]
   },
+  "empty": {
+    "elements": [
+      "hole",
+      "craft"
+    ],
+    "kanji": "空",
+    "subElements": [
+      "hole",
+      "craft",
+      "roof",
+      "eight",
+      "house",
+      "sow",
+      "pig",
+      "ceiling",
+      "stick",
+      "floor",
+      "one",
+      "sky"
+    ],
+    "synonyms": [
+      "sky"
+    ],
+    "wkNames": [
+      "sky"
+    ]
+  },
   "house": {
     "elements": [
       "roof",
@@ -2887,6 +3017,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "from"
+    ]
+  },
+  "prefecture": {
+    "elements": [
+      "straightened hook",
+      "eye",
+      "little"
+    ],
+    "kanji": "県",
+    "subElements": [
+      "straightened hook",
+      "eye",
+      "little",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "animal legs",
+      "small"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "prefecture"
     ]
   },
   "eel": {
@@ -3447,6 +3600,29 @@ const elementsDict =
       "specialty"
     ]
   },
+  "acupuncturist": {
+    "elements": [
+      "specialty",
+      "drop"
+    ],
+    "kanji": "縛 right part",
+    "subElements": [
+      "specialty",
+      "drop",
+      "ten",
+      "rice field",
+      "glue",
+      "needle",
+      "brains",
+      "hook",
+      "drops",
+      "measurement"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "acupuncturist"
+    ]
+  },
   "adhere": {
     "elements": [
       "person",
@@ -3657,6 +3833,118 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "poop"
+    ]
+  },
+  "two cocoons": {
+    "elements": [
+      "cocoon",
+      "cocoon"
+    ],
+    "kanji": "慈 middle part",
+    "subElements": [
+      "cocoon",
+      "cocoon",
+      "elbow",
+      "cocoon2"
+    ],
+    "synonyms": [
+      "cocoon2"
+    ],
+    "wkNames": [
+      "two poops"
+    ]
+  },
+  "how many": {
+    "elements": [
+      "fiesta",
+      "two cocoons",
+      "person"
+    ],
+    "kanji": "幾",
+    "subElements": [
+      "fiesta",
+      "two cocoons",
+      "person",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops",
+      "cocoon",
+      "elbow",
+      "cocoon2",
+      "cocoon"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "how many"
+    ]
+  },
+  "mysterious": {
+    "elements": [
+      "top hat",
+      "cocoon"
+    ],
+    "kanji": "玄",
+    "subElements": [
+      "top hat",
+      "cocoon",
+      "drop",
+      "one",
+      "elbow",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "mysterious"
+    ]
+  },
+  "double-mysterious": {
+    "elements": [
+      "horns",
+      "ceiling",
+      "two cocoons"
+    ],
+    "kanji": "滋 right part",
+    "subElements": [
+      "horns",
+      "ceiling",
+      "two cocoons",
+      "mysterious",
+      "animal horns",
+      "one",
+      "cocoon",
+      "elbow",
+      "cocoon2",
+      "cocoon",
+      "top hat",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "double-mysterious"
+    ]
+  },
+  "livestock": {
+    "elements": [
+      "mysterious",
+      "rice field"
+    ],
+    "kanji": "畜",
+    "subElements": [
+      "mysterious",
+      "rice field",
+      "top hat",
+      "cocoon",
+      "drop",
+      "one",
+      "elbow",
+      "drops",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "livestock"
     ]
   },
   "cactus": {
@@ -4261,6 +4549,27 @@ const elementsDict =
       "reject"
     ]
   },
+  "hill": {
+    "elements": [
+      "axe",
+      "floor"
+    ],
+    "kanji": "丘",
+    "subElements": [
+      "axe",
+      "floor",
+      "cliff",
+      "street",
+      "nail",
+      "spike",
+      "ax",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "hill"
+    ]
+  },
   "fold": {
     "elements": [
       "fingers",
@@ -4304,6 +4613,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "slice"
+    ]
+  },
+  "soldier": {
+    "elements": [
+      "axe",
+      "floor",
+      "animal legs"
+    ],
+    "kanji": "兵",
+    "subElements": [
+      "axe",
+      "floor",
+      "animal legs",
+      "cliff",
+      "street",
+      "nail",
+      "spike",
+      "ax",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "soldier"
     ]
   },
   "one-sided": {
@@ -5703,6 +6035,23 @@ const elementsDict =
     ],
     "wkNames": [
       "seven"
+    ]
+  },
+  "cut": {
+    "elements": [
+      "seven",
+      "sword"
+    ],
+    "kanji": "切",
+    "subElements": [
+      "seven",
+      "sword",
+      "diced",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "cut"
     ]
   },
   "heavens": {
@@ -8301,6 +8650,25 @@ const elementsDict =
       "every"
     ]
   },
+  "cleverness": {
+    "elements": [
+      "every",
+      "taskmaster"
+    ],
+    "kanji": "敏",
+    "subElements": [
+      "every",
+      "taskmaster",
+      "reclining",
+      "rice field",
+      "lying down",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "alert"
+    ]
+  },
   "dumbfounded": {
     "elements": [
       "mouth",
@@ -8626,7 +8994,18 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "claw"
-    ]
+    ],
+    "comment": "similar to vulture, but longer bottom strokes"
+  },
+  "vulture": {
+    "elements": [],
+    "kanji": "妥 top part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "cleat"
+    ],
+    "comment": "similar to claw, but smaller bottom strokes"
   },
   "mountain": {
     "elements": [],
@@ -8989,6 +9368,30 @@ const elementsDict =
       "feeling"
     ]
   },
+  "tripod": {
+    "elements": [
+      "creeper",
+      "hood",
+      "human legs",
+      "street"
+    ],
+    "kanji": "融 left part",
+    "subElements": [
+      "creeper",
+      "hood",
+      "human legs",
+      "street",
+      "ceiling",
+      "mouth",
+      "one",
+      "nail",
+      "spike"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bully"
+    ]
+  },
   "sun": {
     "elements": [],
     "kanji": "日",
@@ -9186,6 +9589,33 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "neck"
+    ]
+  },
+  "inn": {
+    "elements": [
+      "roof",
+      "person",
+      "hundred"
+    ],
+    "kanji": "宿",
+    "subElements": [
+      "roof",
+      "person",
+      "hundred",
+      "house",
+      "ceiling",
+      "white",
+      "one",
+      "drop",
+      "sun",
+      "drops",
+      "day",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "inn"
     ]
   },
   "rice field": {
@@ -9825,15 +10255,6 @@ const elementsDict =
       "change"
     ]
   },
-  "vulture": {
-    "elements": [],
-    "kanji": "爪",
-    "subElements": [],
-    "synonyms": [],
-    "wkNames": [
-      "cleat"
-    ]
-  },
   "rose of sharon": {
     "elements": [
       "vulture",
@@ -10177,12 +10598,27 @@ const elementsDict =
       "task"
     ]
   },
+  "stamp": {
+    "elements": [
+      "hood",
+      "stick"
+    ],
+    "kanji": "卩",
+    "subElements": [
+      "hood",
+      "stick"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "stamp"
+    ]
+  },
   "chop-seal": {
     "elements": [
       "clothes hanger",
       "stick"
     ],
-    "kanji": "令 bottom part, 卩",
+    "kanji": "令 bottom part, 卩 with longer top stroke",
     "subElements": [
       "clothes hanger",
       "stick",
@@ -10200,6 +10636,52 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "mama"
+    ]
+  },
+  "instead": {
+    "elements": [
+      "gone",
+      "stamp"
+    ],
+    "kanji": "却",
+    "subElements": [
+      "gone",
+      "stamp",
+      "soil",
+      "elbow",
+      "dirt",
+      "ground",
+      "hood",
+      "stick"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "contrary"
+    ]
+  },
+  "wholesale": {
+    "elements": [
+      "reclining",
+      "stick",
+      "correct",
+      "stamp"
+    ],
+    "kanji": "卸",
+    "subElements": [
+      "reclining",
+      "stick",
+      "correct",
+      "stamp",
+      "lying down",
+      "ceiling",
+      "stop",
+      "one",
+      "footprint",
+      "hood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "wholesale"
     ]
   }
 };

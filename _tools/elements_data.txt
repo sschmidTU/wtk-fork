@@ -12,11 +12,13 @@ man; 男; man; t(rice field, power)
 add; 加; add; l(power, mouth)
 noon=sign of the horse; 午; noon
 cow; 牛; cow
+cowB=cow; 降 bottom right part; cowB
 revelation; 告; announce; t(cow, mouth)
 before; 先; before; t(cow, human legs)&dropB, soil // the bottom part of the stroke is missing for cow but RTK says it's still cow. WK says slide+soil+legs
 direction=compass; 方; direction
 taskmaster; 攵, 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
 walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
+winter; 冬; winter; t(walking legs, twoB)
 each; 各; each&kiss; t(walking legs, mouth)
 guest; 客; guest; t(house, each)
 path; 路; road; l(leg, each)
@@ -41,6 +43,8 @@ voice; 声; voice; t(samurai, o(flag, stick))
 re-=re; 戻; return; tl(door, large)
 employ; 雇; employ; tl(door, turkey) 
 thread=spiderman; 糸; thread
+lineage; 系; lineage; t(dropB, thread)
+grandchild; 孫; grandchild; l(child, lineage)
 wall; 至 top part; ground&private; t(ceiling, elbow) // WK doesn't have this as an extra radical, as it's almost always used as 至 (mole/climax) or right side of 転 (cloud/rising cloud). it only has trash/infant (育 top part).
 infant=toddler; 𠫓, 育 top part; trash; t(top hat, elbow) // WK doesn't differentiate between RTK wall and infant
 bring up; 育; nurture; t(infant, moon)
@@ -93,6 +97,8 @@ sickness; 疒, 痒 outer part; sick
 not=knot=piglet's tail; 勿; wing&not
 notB; 而 bottom part; wingB&notB
 sow=pig; 豕; pig
+warthog; 隊 right part; warthog; t(horns, sow)
+regiment; 隊; squad; l(pinnacle, wart hog)
 thing; 物; thing; l(cow, not)
 easy=piggy bank; 易; easy; t(sun, not) // element is called piggy bank in RTK, but honestly that's kinda silly if we can just use the kanji name "easy".
 utilize=utilise=screwdriver; 用; task; moon, stick // main name is screwdriver in RTK, but probably most people will forget that after they're familiar with the kanji keyword utilize
@@ -137,6 +143,7 @@ happiness; 幸; happiness; t(ten, spicy) // interwoven. structureVague: yes
 roofB=roof; 屋; roof; tl(flag, climax) // unfortunately this has the same name as the roof (house) element/WK radical
 roof=house; 宀; roof // this is called house in RTK, but unfortunately the kanji 家 is also house, which RTK calls the "full character", and we can't/shouldn't have two elements with the same name, so we renamed this to roof (WK name).
 hole; 穴; hole; t(roof, eight)
+empty=sky; 空; sky; t(hole, craft)
 house; 家; house; t(roof, sow) // in RTK originally 宀 is house, but so is 家, which RTK calls the "full character". We can't/shouldn't have two elements with the same name, so we renamed the RTK house radical to roof (WK name).
 crown; 冖, 冗 top part; forehead
 hood; 冂; head
@@ -161,6 +168,7 @@ fishhookB=fishhook; 乚; umbrella
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
 straightaway; 直; fix; t(ten, eye, straightened hook)
 by means of; 以; from; l(straightened hook, drop, person)
+prefecture; 県; prefecture; t(lb(straightened hook, eye), little)
 eel; 俺 bottom right part; eel; t(rice field, fishhook) // fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke
 dragon; 竜; dragon; t(stand up, eel)
 complete; 了; finish; ; barbWK
@@ -190,6 +198,7 @@ rule; 則; rule; l(shellfish, knife)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
 temple=Buddhist temple; 寺; temple
 specialty; 専; specialty; t(ten, rice field, glue)
+acupuncturist; 縛 right part; acupuncturist; c(specialty, drop)
 adhere; 付; attach; l(person, glue)
 substitute; 代; substitute; l(person, arrow)
 generation=generations; 世; world
@@ -202,6 +211,11 @@ write; 書; write; t(brush, sun)
 old boy=buddy=you; 君; buddy; t(mop, mouth)
 gates; 門; gates
 cocoon; 幺, 幼 left part; poop; elbow
+two cocoons=cocoon2; 慈 middle part; two poops; l(cocoon, cocoon)
+how many; 幾; how many; tr(c(fiesta, two cocoons), person)
+mysterious; 玄; mysterious; t(top hat, cocoon)
+double-mysterious; 滋 right part; double-mysterious; t(horns, ceiling, two cocoons)&mysterious
+livestock; 畜; livestock; t(mysterious, rice field)
 cactus; 聯 bottom right part; cactus
 car; 車; car; t(ten, rice field, ten)
 army; 軍; army; t(crown, car)
@@ -238,8 +252,10 @@ fu; フ; fu // doesn't exist in RTK or WK, but useful sub-element
 straight fu=fuB; 片 bottom right part; straight fu // doesn't exist in RTK or WK, but useful sub-element
 axe=ax; 斤; axe; tl(cliff, street) // RTK has ax as the main name, but I can't be bothered to spell it in Old English ;)
 reject; 斥; reject; c(axe, dropB)
+hill; 丘; hill; t(axe, floor)
 fold; 折; fold; l(fingers, axe)
 chop off; 斬; slice; l(car, axe)
+soldier; 兵; soldier; t(axe, floor, animal legs)
 one-sided=onesided=one sided; 片; one sided; t(l(stick, stick), tl(cliff, c(one, stick)))
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 right; 右; right; tl(by one's side, mouth)
@@ -316,6 +332,7 @@ three; 三; three
 shape=three; 彡; hair
 six; 六; six; t(top hat, animal legs)
 seven=diced; 七; seven
+cut; 切; cut; l(seven, sword)
 heavens; 天; heaven; t(ceiling, large)
 wheat=cereal=sapling; 禾, 和 left part; grain; t(drop, tree); slideWK
 dart; 矢; arrow; c(heavens, drop)
@@ -450,6 +467,7 @@ concubine; 妾; concubine; t(stand up, woman)
 fruit; 果; fruit; t(rice field, tree)
 mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
 every; 毎; every; t(reclining, rice field)
+cleverness; 敏; alert; l(every, taskmaster)
 dumbfounded; 呆; shock; t(mouth, tree)
 protect; 保; preserve; l(person, dumbfounded)
 person; 人; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
@@ -471,7 +489,8 @@ dish; 皿; plate
 craft; 工, 紅 right part; construction; t(ceiling, stick, floor)
 stream; 川; river
 flood=stream; 巛, 災 top part; flood // would be nice if this was only flood, not stream. dual in rtk-search
-claw; 爪; claw
+claw; 爪; claw // similar to vulture, but longer bottom strokes
+vulture; 妥 top part; cleat // similar to claw, but smaller bottom strokes
 mountain; 山; mountain
 exit; 出; exit; t(mountain, mountain)
 secrecy=secret; 密; secret; t(roof, invariably, mountain) // WK also calls this secrecy now (patched?), though it's silly to not also accept secret.
@@ -492,6 +511,7 @@ furniture=wooden goods; 操 right part; syrup; t(goods, tree)
 creeper; 同 inner part; creeper; t(ceiling, mouth) // doesn't exist in RTK, but does in WK, and is very common.
 a certain; 或; a certain; tr(fiesta, creeper)
 emotion; 感; feeling; t(l(cliff, a certain), heart)
+tripod; 融 left part; bully; t(creeper, o(hood, t(human legs, street)))
 sun=day; 日; sun
 mortar; 臼; sun // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
@@ -505,6 +525,7 @@ risk; 冒; dare; t(sun, eye)
 mandala; 曼; mandala; t(sun, eyeB, crotch) // not named in WK
 hundred; 百; hundred; t(ceiling, white)
 neck; 首; neck; t(horns, one, oneself)
+inn; 宿; inn; t(roof, l(person, hundred))
 rice field=brains; 田; rice field
 armor=armour=roots; 甲; turtle shell; t(rice field, stick)
 speaketh=monkey; 申; say humbly; t(stick, armor)
@@ -544,7 +565,6 @@ compare; 比; compare; l(spoon, spoon)
 all; 皆; all; t(compare, white)
 delicious; 旨; point; t(spoon, sun)
 change; 化; change; l(person, spoon)
-vulture; 爪; cleat
 rose of sharon=althea; 舜; rose of sharon; t(vulture, crown, ballerina)
 leader; 将; commander; l(turtle, t(vulture, glue))
 accept; 受; accept; t(vulture, crown, crotch)
@@ -562,5 +582,8 @@ of=building blocks; 之; this; t(stick, fu, umbrellaB)
 halberd; 矛; spear; c(beforehand, dropB)
 beforehand; 予; beforehand; t(chop-sealB, c(street, fu)) // RTK: this is identical to halberd, except the last stroke is omitted
 task; 務; task; l(halberd, t(taskmaster, power))
-chop-seal; 令 bottom part, 卩; stamp; tr(clothes hanger, stick)
+stamp; 卩; stamp; t(hood, stick)
+chop-seal; 令 bottom part, 卩 with longer top stroke; stamp; tr(clothes hanger, stick)
 chop-sealB; 矛 top part, 勇 top part; mama
+instead; 却; contrary; l(gone, stamp)
+wholesale; 卸; wholesale; l(t(reclining, stick, correct), stamp)
