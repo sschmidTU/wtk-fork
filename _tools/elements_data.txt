@@ -8,7 +8,7 @@ say=words=keitai; 言; say; t(ceiling4, mouth)
 white; 白; white; t(drop, sun)
 power=muscle=arnold; 力; power
 triceps=cooperate; 劦; cooperate; t(power, l(power, power))
-man; 男; man; t(rice field, power)
+man=male; 男; man; t(rice field, power)
 add; 加; add; l(power, mouth)
 noon=sign of the horse; 午; noon
 cow; 牛; cow
@@ -34,6 +34,7 @@ accompany; 従; obey; l(goingB, t(horns, mending))
 run; 走; run; t(soil, mending)
 determine; 定; determine; t(house, coat rack)
 perfect; 完; perfect; t(house, beginning)
+tooth; 歯; tooth; t(stop, o(shovel, rice))
 flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
 door; 戸; door; t(ceiling, flag)
 nun; 尼; nun; tl(flag, spoon)
@@ -63,6 +64,7 @@ whole; 全; all; t(umbrella, king)
 courts; 廷; courts; lb(stretch, porter)
 un-=jail cell=prison bars; 非; injustice; f(animal legs, shape, three)
 nine=baseball; 九; nine
+ninety; 枠 right part; ninety; t(nine, ten)
 ten=needle; 十; ten&cross
 thousand=one thousand; 千; thousand; t(drop, ten); slideWK
 sheaf; 爻 top or bottom part; treasure
@@ -91,6 +93,9 @@ true; 真; reality; t(ten, eye, tool)
 upright; 貞; chastity; t(divining rod, shellfish)
 pierce; 貫; pierce; t(rice field, shellfish)
 old west; 要 top part, 価 right part; helicopter
+west; 西; west; t(ceiling, c(pent in, human legs))
+sign of the bird=whiskey bottle; 酉; alcohol; c(west, one)
+chieftain=molotov cocktail; 猶 right part, 酋; molotov cocktail; t(horns, sign of the bird)
 chestnut; 栗; chestnut; t(old west, tree)
 bundle=Chaplin; 束; bundle; tree, mouth
 sickness; 疒, 痒 outer part; sick
@@ -163,8 +168,10 @@ sprout=shoot=wherefore; 由; reason; t(drop, rice field)
 bend; 曲; music; rice field, stick2 // basically one and a half rice fields (or 2 rice fields half overlapping) with 2 sticks
 cadet; 曹; official; t(c(bend, one), sun)
 beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
+drum=drums; 鼓 left part; drum; t(samurai, beans) // the top stroke of beans is merged into the samurai element here
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 fishhookB=fishhook; 乚; umbrella
+hook; 小 bottom part, 疋 end of top stroke; hook
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
 straightaway; 直; fix; t(ten, eye, straightened hook)
 by means of; 以; from; l(straightened hook, drop, person)
@@ -203,6 +210,7 @@ adhere; 付; attach; l(person, glue)
 substitute; 代; substitute; l(person, arrow)
 generation=generations; 世; world
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
+even; 平; flat; c(dry, horns)
 broom; ヨ, 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
 rake; 粛 top part; wolverine; c(broom, stick) // = broom with stick through it (vertical stroke)
 mop; 伊 right part; mop; c(broom, dropB)&rake
@@ -272,6 +280,7 @@ indications=indication; 徴; indication; l(goingB, t(mountain, king), taskmaster
 five; 五; five
 tile; 瓦; tile; c(five, drop)
 staples; 印 left part; comb
+staplesB; 臼 right part; combB // reverse staples/comb
 comb; 而; rake; t(ceiling, drop, notB)
 demand; 需; demand; t(rain, comb)
 reclining=lying down; 𠂉, 乞 top part; gun
@@ -306,6 +315,8 @@ loincloth=wise; 臤; wise; 臤
 gigantic=giant; 巨; giant
 fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
+mailbox; 宛 bottom part; mailbox; l(evening, fingerprint)
+address; 宛; address; t(roof, mailbox)
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)&reclining
 long time; 久; long time; c(bound up, dropB)
@@ -417,7 +428,6 @@ pelt; 皮; skin; tl(cave, crotch)&ten // elementsPureVague: yes
 waves=wave; 波; wave; l(water, pelt)
 wide; 広; wide; tl(cave, elbow)
 give; 呉; give&catapult; t(mouth, chair, tool)
-oversee; 監; oversee; t(l(retainer, reclining, floor), dish)
 summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK
 husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length
 scissors; 峡 right part; scissors; c(husband, horns) // don't confuse with scissors kanji 鋏
@@ -486,8 +496,11 @@ strung together=together; 共; together; t(salad, animal legs)
 once upon a time; 昔; once upon a time; t(salad, sun)
 bushel basket; 棋 right part; crab; c(strung together, one)&eye
 dish; 皿; plate
+blood; 血; blood; t(drop, dish)
+oversee; 監; oversee; t(l(retainer, t(reclining, floor)), dish)
 craft; 工, 紅 right part; construction; t(ceiling, stick, floor)
 stream; 川; river
+state; 州; state; o(stream, drop3)
 flood=stream; 巛, 災 top part; flood // would be nice if this was only flood, not stream. dual in rtk-search
 claw; 爪; claw // similar to vulture, but longer bottom strokes
 vulture; 妥 top part; cleat // similar to claw, but smaller bottom strokes
@@ -513,7 +526,7 @@ a certain; 或; a certain; tr(fiesta, creeper)
 emotion; 感; feeling; t(l(cliff, a certain), heart)
 tripod; 融 left part; bully; t(creeper, o(hood, t(human legs, street)))
 sun=day; 日; sun
-mortar; 臼; sun // mortar/sun is not distinguished in WK
+mortar; 臼; sun; l(staples, staplesB) // mortar/sun is not distinguished in WK
 eye; 目; eye // eye or net in WK. net in WK is just horizontal eye in RTK
 eyeB=eye; 罒; net // also eye in RTK (ambiguouos), but net in WK. We handle this radical separately.
 ear; 耳; ear
@@ -582,8 +595,16 @@ of=building blocks; 之; this; t(stick, fu, umbrellaB)
 halberd; 矛; spear; c(beforehand, dropB)
 beforehand; 予; beforehand; t(chop-sealB, c(street, fu)) // RTK: this is identical to halberd, except the last stroke is omitted
 task; 務; task; l(halberd, t(taskmaster, power))
+tusk=waitress; 牙; fang; t(ceiling, c(hook, straightened hook, dropB)) // something like 戈 fiesta is in there, but not quite
+previously; 既; previously; l(silver, tusk)
 stamp; 卩; stamp; t(hood, stick)
 chop-seal; 令 bottom part, 卩 with longer top stroke; stamp; tr(clothes hanger, stick)
 chop-sealB; 矛 top part, 勇 top part; mama
+orders=order; 令; orders; t(meeting, chop-seal)
+courage; 勇; courage; t(chop-sealB, man)
 instead; 却; contrary; l(gone, stamp)
 wholesale; 卸; wholesale; l(t(reclining, stick, correct), stamp)
+receipt; 留; receipt&private; t(dropB, elbow)
+egg=eggs; 卵; egg; l(c(receipt, drop), c(stamp, drop))
+detain; 留; detain; t(l(receipt, sword), rice field)
+doubt; 疑; doubt; l(t(spoon, dart), t(chop-sealB, zoo))

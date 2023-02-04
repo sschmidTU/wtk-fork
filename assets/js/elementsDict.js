@@ -175,9 +175,12 @@ const elementsDict =
       "power",
       "brains",
       "muscle",
-      "arnold"
+      "arnold",
+      "male"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "male"
+    ],
     "wkNames": [
       "man"
     ]
@@ -595,6 +598,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "perfect"
+    ]
+  },
+  "tooth": {
+    "elements": [
+      "stop",
+      "shovel",
+      "rice"
+    ],
+    "kanji": "歯",
+    "subElements": [
+      "stop",
+      "shovel",
+      "rice",
+      "footprint",
+      "tree",
+      "horns",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tooth"
     ]
   },
   "flag": {
@@ -1139,6 +1164,23 @@ const elementsDict =
       "nine"
     ]
   },
+  "ninety": {
+    "elements": [
+      "nine",
+      "ten"
+    ],
+    "kanji": "枠 right part",
+    "subElements": [
+      "nine",
+      "ten",
+      "baseball",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ninety"
+    ]
+  },
   "ten": {
     "elements": [],
     "kanji": "十",
@@ -1620,6 +1662,70 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "helicopter"
+    ]
+  },
+  "west": {
+    "elements": [
+      "ceiling",
+      "pent in",
+      "human legs"
+    ],
+    "kanji": "西",
+    "subElements": [
+      "ceiling",
+      "pent in",
+      "human legs",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "west"
+    ]
+  },
+  "sign of the bird": {
+    "elements": [
+      "west",
+      "one"
+    ],
+    "kanji": "酉",
+    "subElements": [
+      "west",
+      "one",
+      "ceiling",
+      "pent in",
+      "human legs",
+      "whiskey bottle"
+    ],
+    "synonyms": [
+      "whiskey bottle"
+    ],
+    "wkNames": [
+      "alcohol"
+    ]
+  },
+  "chieftain": {
+    "elements": [
+      "horns",
+      "sign of the bird"
+    ],
+    "kanji": "猶 right part, 酋",
+    "subElements": [
+      "horns",
+      "sign of the bird",
+      "animal horns",
+      "west",
+      "one",
+      "ceiling",
+      "pent in",
+      "human legs",
+      "whiskey bottle",
+      "molotov cocktail"
+    ],
+    "synonyms": [
+      "molotov cocktail"
+    ],
+    "wkNames": [
+      "molotov cocktail"
     ]
   },
   "chestnut": {
@@ -2926,6 +3032,33 @@ const elementsDict =
       "beans"
     ]
   },
+  "drum": {
+    "elements": [
+      "samurai",
+      "beans"
+    ],
+    "kanji": "鼓 left part",
+    "subElements": [
+      "samurai",
+      "beans",
+      "gentleman",
+      "ceiling",
+      "mouth",
+      "horns",
+      "floor",
+      "one",
+      "animal horns",
+      "table",
+      "drums"
+    ],
+    "synonyms": [
+      "drums"
+    ],
+    "wkNames": [
+      "drum"
+    ],
+    "comment": "the top stroke of beans is merged into the samurai element here"
+  },
   "fishhook": {
     "elements": [
       "hook",
@@ -2956,6 +3089,15 @@ const elementsDict =
     ],
     "wkNames": [
       "umbrella"
+    ]
+  },
+  "hook": {
+    "elements": [],
+    "kanji": "小 bottom part, 疋 end of top stroke",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "hook"
     ]
   },
   "straightened hook": {
@@ -3692,6 +3834,27 @@ const elementsDict =
       "dry"
     ],
     "comment": "RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses \"dry\" for the next kanji."
+  },
+  "even": {
+    "elements": [
+      "dry",
+      "horns"
+    ],
+    "kanji": "平",
+    "subElements": [
+      "dry",
+      "horns",
+      "ceiling",
+      "ten",
+      "one",
+      "needle",
+      "clothesline",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "flat"
+    ]
   },
   "broom": {
     "elements": [],
@@ -4931,6 +5094,16 @@ const elementsDict =
       "comb"
     ]
   },
+  "staplesB": {
+    "elements": [],
+    "kanji": "臼 right part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "combB"
+    ],
+    "comment": "reverse staples/comb"
+  },
   "comb": {
     "elements": [
       "ceiling",
@@ -5553,6 +5726,41 @@ const elementsDict =
       "snake"
     ],
     "comment": "this is exactly WK snake, which can also be RTK fingerprint"
+  },
+  "mailbox": {
+    "elements": [
+      "evening",
+      "fingerprint"
+    ],
+    "kanji": "宛 bottom part",
+    "subElements": [
+      "evening",
+      "fingerprint"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "mailbox"
+    ]
+  },
+  "address": {
+    "elements": [
+      "roof",
+      "mailbox"
+    ],
+    "kanji": "宛",
+    "subElements": [
+      "roof",
+      "mailbox",
+      "house",
+      "evening",
+      "fingerprint",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "address"
+    ]
   },
   "clothes hanger": {
     "elements": [],
@@ -7728,28 +7936,6 @@ const elementsDict =
       "catapult"
     ]
   },
-  "oversee": {
-    "elements": [
-      "retainer",
-      "reclining",
-      "floor",
-      "dish"
-    ],
-    "kanji": "監",
-    "subElements": [
-      "retainer",
-      "reclining",
-      "floor",
-      "dish",
-      "slave",
-      "lying down",
-      "one"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "oversee"
-    ]
-  },
   "summer": {
     "elements": [
       "ceiling",
@@ -8946,6 +9132,44 @@ const elementsDict =
       "plate"
     ]
   },
+  "blood": {
+    "elements": [
+      "drop",
+      "dish"
+    ],
+    "kanji": "血",
+    "subElements": [
+      "drop",
+      "dish",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "blood"
+    ]
+  },
+  "oversee": {
+    "elements": [
+      "retainer",
+      "reclining",
+      "floor",
+      "dish"
+    ],
+    "kanji": "監",
+    "subElements": [
+      "retainer",
+      "reclining",
+      "floor",
+      "dish",
+      "slave",
+      "lying down",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "oversee"
+    ]
+  },
   "craft": {
     "elements": [
       "ceiling",
@@ -8971,6 +9195,23 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "river"
+    ]
+  },
+  "state": {
+    "elements": [
+      "stream",
+      "drop3"
+    ],
+    "kanji": "州",
+    "subElements": [
+      "stream",
+      "drop3",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "state"
     ]
   },
   "flood": {
@@ -9406,9 +9647,15 @@ const elementsDict =
     ]
   },
   "mortar": {
-    "elements": [],
+    "elements": [
+      "staples",
+      "staplesB"
+    ],
     "kanji": "臼",
-    "subElements": [],
+    "subElements": [
+      "staples",
+      "staplesB"
+    ],
     "synonyms": [],
     "wkNames": [
       "sun"
@@ -10598,6 +10845,64 @@ const elementsDict =
       "task"
     ]
   },
+  "tusk": {
+    "elements": [
+      "ceiling",
+      "hook",
+      "straightened hook",
+      "dropB"
+    ],
+    "kanji": "牙",
+    "subElements": [
+      "ceiling",
+      "hook",
+      "straightened hook",
+      "dropB",
+      "one",
+      "fishhook",
+      "stick",
+      "fishguts",
+      "drop",
+      "drops",
+      "waitress"
+    ],
+    "synonyms": [
+      "waitress"
+    ],
+    "wkNames": [
+      "fang"
+    ],
+    "comment": "something like 戈 fiesta is in there, but not quite"
+  },
+  "previously": {
+    "elements": [
+      "silver",
+      "tusk"
+    ],
+    "kanji": "既",
+    "subElements": [
+      "silver",
+      "tusk",
+      "sun",
+      "hairpin",
+      "day",
+      "ceiling",
+      "hook",
+      "straightened hook",
+      "dropB",
+      "one",
+      "fishhook",
+      "stick",
+      "fishguts",
+      "drop",
+      "drops",
+      "waitress"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "previously"
+    ]
+  },
   "stamp": {
     "elements": [
       "hood",
@@ -10636,6 +10941,51 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "mama"
+    ]
+  },
+  "orders": {
+    "elements": [
+      "meeting",
+      "chop-seal"
+    ],
+    "kanji": "令",
+    "subElements": [
+      "meeting",
+      "chop-seal",
+      "umbrella",
+      "floor",
+      "one",
+      "clothes hanger",
+      "stick",
+      "coat hanger",
+      "order"
+    ],
+    "synonyms": [
+      "order"
+    ],
+    "wkNames": [
+      "orders"
+    ]
+  },
+  "courage": {
+    "elements": [
+      "chop-sealB",
+      "man"
+    ],
+    "kanji": "勇",
+    "subElements": [
+      "chop-sealB",
+      "man",
+      "rice field",
+      "power",
+      "brains",
+      "muscle",
+      "arnold",
+      "male"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "courage"
     ]
   },
   "instead": {
@@ -10682,6 +11032,104 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "wholesale"
+    ]
+  },
+  "receipt": {
+    "elements": [
+      "dropB",
+      "elbow"
+    ],
+    "kanji": "留",
+    "subElements": [
+      "dropB",
+      "elbow",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "receipt",
+      "private"
+    ]
+  },
+  "egg": {
+    "elements": [
+      "receipt",
+      "drop",
+      "stamp",
+      "drop"
+    ],
+    "kanji": "卵",
+    "subElements": [
+      "receipt",
+      "drop",
+      "stamp",
+      "drop",
+      "dropB",
+      "elbow",
+      "drops",
+      "hood",
+      "stick",
+      "eggs"
+    ],
+    "synonyms": [
+      "eggs"
+    ],
+    "wkNames": [
+      "egg"
+    ]
+  },
+  "detain": {
+    "elements": [
+      "receipt",
+      "sword",
+      "rice field"
+    ],
+    "kanji": "留",
+    "subElements": [
+      "receipt",
+      "sword",
+      "rice field",
+      "dropB",
+      "elbow",
+      "drop",
+      "drops",
+      "dagger",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "detain"
+    ]
+  },
+  "doubt": {
+    "elements": [
+      "spoon",
+      "dart",
+      "chop-sealB",
+      "zoo"
+    ],
+    "kanji": "疑",
+    "subElements": [
+      "spoon",
+      "dart",
+      "chop-sealB",
+      "zoo",
+      "sitting on the ground",
+      "heavens",
+      "drop",
+      "ceiling",
+      "large",
+      "one",
+      "St. Bernard",
+      "drops",
+      "critters",
+      "mending",
+      "mend"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "doubt"
     ]
   }
 };
