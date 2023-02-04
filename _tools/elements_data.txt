@@ -58,10 +58,22 @@ porter=king; 壬; king
 jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 responsibility; 任; duty; l(person, porter)
 lord; 主; master; t(drop, king)
+grow up; 青 top part; life; t(drop, king)
+bushes; 峰 bottom right part; bushes; t(grow up, stick)
+cornstak; 俸 bottom right part; dry; t(soil, stick)
+dedicate=observance; 奉; dedicate; t(bonsai, cornstalk)
+life=cell; 生; life; c(grow up, dropB)
+star; 星; star; t(sun, life)
+blue; 青; blue; t(grow up, moon)
+blame; 責; blame; t(grow up, shellfish)
+flick knife; 契 top part; flick knife; l(grow up, sword)
+pledge; 契; pledge; t(flick knife, large)
+harm; 害; damage; t(roof, grow up, mouth)
 emperor; 皇; emperor; t(white, king)
 display; 呈; present; t(mouth, king)
 whole; 全; all; t(umbrella, king)
 courts; 廷; courts; lb(stretch, porter)
+cabbage; 謹 right part; boot; t(flowers, c(mouth, stick), grow up)
 un-=jail cell=prison bars; 非; injustice; f(animal legs, shape, three)
 nine=baseball; 九; nine
 ninety; 枠 right part; ninety; t(nine, ten)
@@ -138,6 +150,8 @@ favor=favour; 恵; favor; t(ten, rice field, heart)
 box; 匚, 区 outer part; cage
 shovel; 凵; box // unfortunately, RTK shovel is WK box, and RTK box is WK cage
 twenty; 廿; twenty; c(shovel, one) // unfortunately in WK 廾 is also twenty
+villain; 凶; villain; o(shovel, sheaf)
+sheik; 禽; rocket; t(umbrella, top hat, villain, c(hood, elbow))&meeting // not quite meeting: top hat instead of one
 swiss=switzerland=plus=red cross=d-pad; 亞, 亞 middle part, 惡 plus-shaped part between one and one; swiss; convex2, box4, two // doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements
 convex; 凸; convex
 concave; 凸; concave
@@ -145,6 +159,8 @@ sheep; 羊; sheep; t(horns, king, stick)
 beauty; 美; beauty; t(sheep, large) // the last part of the vertical stroke is interwoven with the large radical, but that seems like a minor detail. (structureVague: yes)
 spicy; 辛; spicy; t(stand, ten)
 happiness; 幸; happiness; t(ten, spicy) // interwoven. structureVague: yes
+ketchup=false; 辟; hot pepper; l(tl(flag, mouth), spicy) // kanji meaning is false (jisho)
+red pepper; 新 left part, 辛; red pepper; t(stand up, tree)
 roofB=roof; 屋; roof; tl(flag, climax) // unfortunately this has the same name as the roof (house) element/WK radical
 roof=house; 宀; roof // this is called house in RTK, but unfortunately the kanji 家 is also house, which RTK calls the "full character", and we can't/shouldn't have two elements with the same name, so we renamed this to roof (WK name).
 hole; 穴; hole; t(roof, eight)
@@ -171,9 +187,10 @@ beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
 drum=drums; 鼓 left part; drum; t(samurai, beans) // the top stroke of beans is merged into the samurai element here
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 fishhookB=fishhook; 乚; umbrella
-hook; 小 bottom part, 疋 end of top stroke; hook
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
 straightaway; 直; fix; t(ten, eye, straightened hook)
+hook; 小 bottom part, 疋 end of top stroke; hook
+contend; 争; conflict; t(bound up, rake, hook)
 by means of; 以; from; l(straightened hook, drop, person)
 prefecture; 県; prefecture; t(lb(straightened hook, eye), little)
 eel; 俺 bottom right part; eel; t(rice field, fishhook) // fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke
@@ -189,12 +206,14 @@ valley; 谷; valley; t(eight, umbrella, mouth)
 contain; 容; form; t(roof, valley)
 gully; 㕣; gully; t(eight, mouth)
 adzuki beans=azuki beans; 荅; azuki beans; t(flowers, fit)
-bonsai; 𡗗, 秦 or 寿 upper part; spring
+bonsai; 𡗗, 秦 or 寿 upper part; spring; husband
 quarter; 龹; gladiator; c(bonsai, horns) // this is actually missing a horizontal stroke of bonsai, but can be easily misread as bonsai (also depending on font)
+springtime; 春; spring; t(bonsai, sun)
 scroll; 巻; scroll; t(quarter, snake)
 ticket; 券; ticket; t(quarter, sword)
 spring; 泉; spring; t(white, water)
-longevity; 寿; lifespan; t(bonsai, glue) // bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable
+longevity; 寿; lifespan; t(bonsai, glue)&dropB // bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable
+christmas tree; 耒; plow; c(bushes, tree)&umbrella
 half; 半; half; t(littleB, craft, stick) // or c(c(two, stick), horns)
 meadow; 原; original; o(cliff, spring)
 awl; 㑒; squid
@@ -242,6 +261,7 @@ ray; 光; sunlight; t(littleB, pi)
 pi; 光 bottom part; pi; t(ceiling, human legs)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 garment=clothes=scarf; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin) // scarf/garment is a bit ambiguous in RTK, can also be close to hairpin/𧘇 kick
+surface; 表; express; t(lordB, hairpin)
 trampoline=round; 睘; trampoline; t(eyeB, ceiling, mouth, scarf)
 gold; 金; gold; t(umbrella, c(king, drop2))
 silver; 銀 right part; root; t(sun, hairpin) 
@@ -264,6 +284,7 @@ hill; 丘; hill; t(axe, floor)
 fold; 折; fold; l(fingers, axe)
 chop off; 斬; slice; l(car, axe)
 soldier; 兵; soldier; t(axe, floor, animal legs)
+new; 新; new; l(red pepper, axe)
 one-sided=onesided=one sided; 片; one sided; t(l(stick, stick), tl(cliff, c(one, stick)))
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 right; 右; right; tl(by one's side, mouth)
@@ -351,6 +372,7 @@ autumn; 秋; autumn; l(wheat, fire)
 profit; 利; profit; l(wheat, saber)
 committee; 委; committee; t(wheat, woman)
 angel; 橋 right part; angel; t(wheat, mouth, same) // WK: not a radical
+resin; 朮, 術 middle part; angel; c(ten, drop, human legs)
 bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened when used as an element.
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 char=barbecue; 焦; char; t(turkey, oven-fire) // barbecue is not in my RTK1 book, but in the rtk-search data
@@ -492,8 +514,10 @@ eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
 public; 公; public; t(eight, elbow)
 salad; 龷, 昔 top part; blackjack; t(flowers, floor)
+celery; 講 top right part; celery; c(salad, salad) // or salad + t(l(stick, stick), floor). doesn't exist in WK, part of bigger elements like spring or lifeguard
 strung together=together; 共; together; t(salad, animal legs)
 once upon a time; 昔; once upon a time; t(salad, sun)
+grass skirt; 㐮; nurse; t(top hat, celery, hairpin)
 bushel basket; 棋 right part; crab; c(strung together, one)&eye
 dish; 皿; plate
 blood; 血; blood; t(drop, dish)
@@ -598,6 +622,8 @@ task; 務; task; l(halberd, t(taskmaster, power))
 tusk=waitress; 牙; fang; t(ceiling, c(hook, straightened hook, dropB)) // something like 戈 fiesta is in there, but not quite
 previously; 既; previously; l(silver, tusk)
 stamp; 卩; stamp; t(hood, stick)
+cornucopia=vine; 丩; vines; t(shovel, stick)
+lowly; 卑; lowly; t(drop, rice field, cornucopia)
 chop-seal; 令 bottom part, 卩 with longer top stroke; stamp; tr(clothes hanger, stick)
 chop-sealB; 矛 top part, 勇 top part; mama
 orders=order; 令; orders; t(meeting, chop-seal)
@@ -608,3 +634,7 @@ receipt; 留; receipt&private; t(dropB, elbow)
 egg=eggs; 卵; egg; l(c(receipt, drop), c(stamp, drop))
 detain; 留; detain; t(l(receipt, sword), rice field)
 doubt; 疑; doubt; l(t(spoon, dart), t(chop-sealB, zoo))
+earthworm; 屯; barracks; t(dropB, mountain, fishhookB)
+rice seedling; 坴 top part; rice seedling; t(soil, human legs)
+land; 坴; womb; t(rice seedling, soil)
+acorn=sign of the hog; 亥; slice; t(top hat, spoon, dropB, drop) // the bottom part isn't further described in RTK, a bit vague/unique

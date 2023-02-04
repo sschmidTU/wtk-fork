@@ -1064,6 +1064,233 @@ const elementsDict =
       "master"
     ]
   },
+  "grow up": {
+    "elements": [
+      "drop",
+      "king"
+    ],
+    "kanji": "青 top part",
+    "subElements": [
+      "drop",
+      "king",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "life"
+    ]
+  },
+  "bushes": {
+    "elements": [
+      "grow up",
+      "stick"
+    ],
+    "kanji": "峰 bottom right part",
+    "subElements": [
+      "grow up",
+      "stick",
+      "drop",
+      "king",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bushes"
+    ]
+  },
+  "cornstak": {
+    "elements": [
+      "soil",
+      "stick"
+    ],
+    "kanji": "俸 bottom right part",
+    "subElements": [
+      "soil",
+      "stick",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dry"
+    ]
+  },
+  "dedicate": {
+    "elements": [
+      "bonsai",
+      "cornstalk"
+    ],
+    "kanji": "奉",
+    "subElements": [
+      "bonsai",
+      "cornstalk",
+      "husband",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "observance"
+    ],
+    "synonyms": [
+      "observance"
+    ],
+    "wkNames": [
+      "dedicate"
+    ]
+  },
+  "life": {
+    "elements": [
+      "grow up",
+      "dropB"
+    ],
+    "kanji": "生",
+    "subElements": [
+      "grow up",
+      "dropB",
+      "drop",
+      "king",
+      "drops",
+      "cell"
+    ],
+    "synonyms": [
+      "cell"
+    ],
+    "wkNames": [
+      "life"
+    ]
+  },
+  "star": {
+    "elements": [
+      "sun",
+      "life"
+    ],
+    "kanji": "星",
+    "subElements": [
+      "sun",
+      "life",
+      "day",
+      "grow up",
+      "dropB",
+      "drop",
+      "king",
+      "drops",
+      "cell"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "star"
+    ]
+  },
+  "blue": {
+    "elements": [
+      "grow up",
+      "moon"
+    ],
+    "kanji": "青",
+    "subElements": [
+      "grow up",
+      "moon",
+      "drop",
+      "king",
+      "drops",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "blue"
+    ]
+  },
+  "blame": {
+    "elements": [
+      "grow up",
+      "shellfish"
+    ],
+    "kanji": "責",
+    "subElements": [
+      "grow up",
+      "shellfish",
+      "drop",
+      "king",
+      "drops",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "blame"
+    ]
+  },
+  "flick knife": {
+    "elements": [
+      "grow up",
+      "sword"
+    ],
+    "kanji": "契 top part",
+    "subElements": [
+      "grow up",
+      "sword",
+      "drop",
+      "king",
+      "drops",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "flick knife"
+    ]
+  },
+  "pledge": {
+    "elements": [
+      "flick knife",
+      "large"
+    ],
+    "kanji": "契",
+    "subElements": [
+      "flick knife",
+      "large",
+      "grow up",
+      "sword",
+      "drop",
+      "king",
+      "drops",
+      "dagger",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "pledge"
+    ]
+  },
+  "harm": {
+    "elements": [
+      "roof",
+      "grow up",
+      "mouth"
+    ],
+    "kanji": "害",
+    "subElements": [
+      "roof",
+      "grow up",
+      "mouth",
+      "house",
+      "drop",
+      "king",
+      "drops",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "damage"
+    ]
+  },
   "emperor": {
     "elements": [
       "white",
@@ -1127,6 +1354,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "courts"
+    ]
+  },
+  "cabbage": {
+    "elements": [
+      "flowers",
+      "mouth",
+      "stick",
+      "grow up"
+    ],
+    "kanji": "謹 right part",
+    "subElements": [
+      "flowers",
+      "mouth",
+      "stick",
+      "grow up",
+      "flower",
+      "drop",
+      "king",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "boot"
     ]
   },
   "un-": {
@@ -2495,6 +2745,50 @@ const elementsDict =
     ],
     "comment": "unfortunately in WK 廾 is also twenty"
   },
+  "villain": {
+    "elements": [
+      "shovel",
+      "sheaf"
+    ],
+    "kanji": "凶",
+    "subElements": [
+      "shovel",
+      "sheaf"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "villain"
+    ]
+  },
+  "sheik": {
+    "elements": [
+      "umbrella",
+      "top hat",
+      "villain",
+      "hood",
+      "elbow"
+    ],
+    "kanji": "禽",
+    "subElements": [
+      "umbrella",
+      "top hat",
+      "villain",
+      "hood",
+      "elbow",
+      "meeting",
+      "drop",
+      "one",
+      "shovel",
+      "sheaf",
+      "floor",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rocket"
+    ],
+    "comment": "not quite meeting: top hat instead of one"
+  },
   "swiss": {
     "elements": [
       "convex2",
@@ -2614,6 +2908,56 @@ const elementsDict =
       "happiness"
     ],
     "comment": "interwoven. structureVague: yes"
+  },
+  "ketchup": {
+    "elements": [
+      "flag",
+      "mouth",
+      "spicy"
+    ],
+    "kanji": "辟",
+    "subElements": [
+      "flag",
+      "mouth",
+      "spicy",
+      "drop",
+      "drops",
+      "stand",
+      "ten",
+      "needle",
+      "false"
+    ],
+    "synonyms": [
+      "false"
+    ],
+    "wkNames": [
+      "hot pepper"
+    ],
+    "comment": "kanji meaning is false (jisho)"
+  },
+  "red pepper": {
+    "elements": [
+      "stand up",
+      "tree"
+    ],
+    "kanji": "新 left part, 辛",
+    "subElements": [
+      "stand up",
+      "tree",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "red pepper"
+    ]
   },
   "roofB": {
     "elements": [
@@ -3091,15 +3435,6 @@ const elementsDict =
       "umbrella"
     ]
   },
-  "hook": {
-    "elements": [],
-    "kanji": "小 bottom part, 疋 end of top stroke",
-    "subElements": [],
-    "synonyms": [],
-    "wkNames": [
-      "hook"
-    ]
-  },
   "straightened hook": {
     "elements": [
       "fishhook"
@@ -3137,6 +3472,40 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "fix"
+    ]
+  },
+  "hook": {
+    "elements": [],
+    "kanji": "小 bottom part, 疋 end of top stroke",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "hook"
+    ]
+  },
+  "contend": {
+    "elements": [
+      "bound up",
+      "rake",
+      "hook"
+    ],
+    "kanji": "争",
+    "subElements": [
+      "bound up",
+      "rake",
+      "hook",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "broom",
+      "stick",
+      "coat hanger",
+      "drops",
+      "lying down"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "conflict"
     ]
   },
   "by means of": {
@@ -3438,9 +3807,19 @@ const elementsDict =
     ]
   },
   "bonsai": {
-    "elements": [],
+    "elements": [
+      "husband"
+    ],
     "kanji": "𡗗, 秦 or 寿 upper part",
-    "subElements": [],
+    "subElements": [
+      "husband",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood"
+    ],
     "synonyms": [],
     "wkNames": [
       "spring"
@@ -3455,6 +3834,13 @@ const elementsDict =
     "subElements": [
       "bonsai",
       "horns",
+      "husband",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
       "animal horns"
     ],
     "synonyms": [],
@@ -3462,6 +3848,29 @@ const elementsDict =
       "gladiator"
     ],
     "comment": "this is actually missing a horizontal stroke of bonsai, but can be easily misread as bonsai (also depending on font)"
+  },
+  "springtime": {
+    "elements": [
+      "bonsai",
+      "sun"
+    ],
+    "kanji": "春",
+    "subElements": [
+      "bonsai",
+      "sun",
+      "husband",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "spring"
+    ]
   },
   "scroll": {
     "elements": [
@@ -3474,6 +3883,13 @@ const elementsDict =
       "snake",
       "bonsai",
       "horns",
+      "husband",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
       "animal horns",
       "self"
     ],
@@ -3493,6 +3909,13 @@ const elementsDict =
       "sword",
       "bonsai",
       "horns",
+      "husband",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
       "animal horns",
       "dagger"
     ],
@@ -3531,11 +3954,17 @@ const elementsDict =
     "subElements": [
       "bonsai",
       "glue",
+      "dropB",
+      "husband",
       "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
       "hook",
       "drop",
       "measurement",
-      "needle",
       "drops"
     ],
     "synonyms": [],
@@ -3543,6 +3972,28 @@ const elementsDict =
       "lifespan"
     ],
     "comment": "bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable"
+  },
+  "christmas tree": {
+    "elements": [
+      "bushes",
+      "tree"
+    ],
+    "kanji": "耒",
+    "subElements": [
+      "bushes",
+      "tree",
+      "umbrella",
+      "grow up",
+      "stick",
+      "drop",
+      "king",
+      "drops",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "plow"
+    ]
   },
   "half": {
     "elements": [
@@ -4428,6 +4879,21 @@ const elementsDict =
     ],
     "comment": "scarf/garment is a bit ambiguous in RTK, can also be close to hairpin/𧘇 kick"
   },
+  "surface": {
+    "elements": [
+      "lordB",
+      "hairpin"
+    ],
+    "kanji": "表",
+    "subElements": [
+      "lordB",
+      "hairpin"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "express"
+    ]
+  },
   "trampoline": {
     "elements": [
       "eyeB",
@@ -4799,6 +5265,37 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "soldier"
+    ]
+  },
+  "new": {
+    "elements": [
+      "red pepper",
+      "axe"
+    ],
+    "kanji": "新",
+    "subElements": [
+      "red pepper",
+      "axe",
+      "stand up",
+      "tree",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "wood",
+      "cliff",
+      "street",
+      "nail",
+      "spike",
+      "ax"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "new"
     ]
   },
   "one-sided": {
@@ -6416,6 +6913,25 @@ const elementsDict =
       "angel"
     ],
     "comment": "WK: not a radical"
+  },
+  "resin": {
+    "elements": [
+      "ten",
+      "drop",
+      "human legs"
+    ],
+    "kanji": "朮, 術 middle part",
+    "subElements": [
+      "ten",
+      "drop",
+      "human legs",
+      "needle",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "angel"
+    ]
   },
   "bamboo": {
     "elements": [],
@@ -9059,6 +9575,26 @@ const elementsDict =
       "blackjack"
     ]
   },
+  "celery": {
+    "elements": [
+      "salad",
+      "salad"
+    ],
+    "kanji": "講 top right part",
+    "subElements": [
+      "salad",
+      "salad",
+      "flowers",
+      "floor",
+      "flower",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "celery"
+    ],
+    "comment": "or salad + t(l(stick, stick), floor). doesn't exist in WK, part of bigger elements like spring or lifeguard"
+  },
   "strung together": {
     "elements": [
       "salad",
@@ -9099,6 +9635,30 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "once upon a time"
+    ]
+  },
+  "grass skirt": {
+    "elements": [
+      "top hat",
+      "celery",
+      "hairpin"
+    ],
+    "kanji": "㐮",
+    "subElements": [
+      "top hat",
+      "celery",
+      "hairpin",
+      "drop",
+      "one",
+      "drops",
+      "salad",
+      "flowers",
+      "floor",
+      "flower"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "nurse"
     ]
   },
   "bushel basket": {
@@ -10918,6 +11478,46 @@ const elementsDict =
       "stamp"
     ]
   },
+  "cornucopia": {
+    "elements": [
+      "shovel",
+      "stick"
+    ],
+    "kanji": "丩",
+    "subElements": [
+      "shovel",
+      "stick",
+      "vine"
+    ],
+    "synonyms": [
+      "vine"
+    ],
+    "wkNames": [
+      "vines"
+    ]
+  },
+  "lowly": {
+    "elements": [
+      "drop",
+      "rice field",
+      "cornucopia"
+    ],
+    "kanji": "卑",
+    "subElements": [
+      "drop",
+      "rice field",
+      "cornucopia",
+      "drops",
+      "brains",
+      "shovel",
+      "stick",
+      "vine"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "lowly"
+    ]
+  },
   "chop-seal": {
     "elements": [
       "clothes hanger",
@@ -11131,5 +11731,89 @@ const elementsDict =
     "wkNames": [
       "doubt"
     ]
+  },
+  "earthworm": {
+    "elements": [
+      "dropB",
+      "mountain",
+      "fishhookB"
+    ],
+    "kanji": "屯",
+    "subElements": [
+      "dropB",
+      "mountain",
+      "fishhookB",
+      "drop",
+      "drops",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "barracks"
+    ]
+  },
+  "rice seedling": {
+    "elements": [
+      "soil",
+      "human legs"
+    ],
+    "kanji": "坴 top part",
+    "subElements": [
+      "soil",
+      "human legs",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rice seedling"
+    ]
+  },
+  "land": {
+    "elements": [
+      "rice seedling",
+      "soil"
+    ],
+    "kanji": "坴",
+    "subElements": [
+      "rice seedling",
+      "soil",
+      "human legs",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "womb"
+    ]
+  },
+  "acorn": {
+    "elements": [
+      "top hat",
+      "spoon",
+      "dropB",
+      "drop"
+    ],
+    "kanji": "亥",
+    "subElements": [
+      "top hat",
+      "spoon",
+      "dropB",
+      "drop",
+      "one",
+      "drops",
+      "sitting on the ground",
+      "sign of the hog"
+    ],
+    "synonyms": [
+      "sign of the hog"
+    ],
+    "wkNames": [
+      "slice"
+    ],
+    "comment": "the bottom part isn't further described in RTK, a bit vague/unique"
   }
 };
