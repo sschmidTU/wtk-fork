@@ -19,6 +19,7 @@ taskmaster; 攵, 牧 right part; winter // compared to walking legs, longer seco
 walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
 each; 各; each&kiss; t(walking legs, mouth)
 guest; 客; guest; t(house, each)
+path; 路; road; l(leg, each)
 relaxed; 攸; relaxed; l(person, stick, taskmaster)
 set free; 放; release; l(direction, taskmaster)
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
@@ -111,6 +112,7 @@ badge; 章; chapter; t(stand up, early)
 idea; 意; idea; t(stand up, sun, heart)
 towel; 巾; towel
 market; 市; city; t(top hat, towel) // can look like c(towel, one) depending on font, especially with chinese-like font
+marketB=market; 師 right part; marketB; t(ceiling, towel)
 buckle; 帯 top part; mountain&one // see apron apron (frame 415) in RTK1
 apron; 帯 bottom+middle part, 婦 bottom right part; forehead&towel; t(crown, towel)
 sovereign; 帝; sovereign; t(stand up, apron)
@@ -149,6 +151,7 @@ owl; 桜 top right part, 巣 top part; grass; drop3
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
 joint; 骨 upper part; joint // doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon.
 skeleton; 骨; bone; t(joint, moon)
+jawbone; 禍 right part; jawbone; t(joint, o(hood, mouth))
 sprout=shoot=wherefore; 由; reason; t(drop, rice field)
 bend; 曲; music; rice field, stick2 // basically one and a half rice fields (or 2 rice fields half overlapping) with 2 sticks
 cadet; 曹; official; t(c(bend, one), sun)
@@ -209,7 +212,9 @@ horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal le
 little=small; 小; small; o(animal legs, t(stick, hook))
 littleB; 光 top part; triceratops; little
 few; 少; few; t(little, dropB)
-portent; 兆; omen; c(human legs, drop4)&ice
+father; 父; father; t(animal legs, sheaf)
+mingle; 交; mix; t(top hat, father)
+portent=omen; 兆; omen; c(human legs, drop4)&ice
 too much; 余; surplus; t(umbrella, dry, little)
 ray; 光; sunlight; t(littleB, pi)
 pi; 光 bottom part; pi; t(ceiling, human legs)
@@ -282,7 +287,7 @@ guillotine; 決 right part; decide; t(c(key, stick), large) // maybe the subdivi
 page; 頁; page; t(ceiling, drop, shellfish); leafWK
 retainer=slave; 臣; servant
 loincloth=wise; 臤; wise; 臤
-gigantic; 巨; giant
+gigantic=giant; 巨; giant
 fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
@@ -398,6 +403,8 @@ give; 呉; give&catapult; t(mouth, chair, tool)
 oversee; 監; oversee; t(l(retainer, reclining, floor), dish)
 summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK
 husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length
+scissors; 峡 right part; scissors; c(husband, horns) // don't confuse with scissors kanji 鋏
+scissorsB=scissors; 鋏 right part, 頰 left part; scissors; scissors // variant of scissors
 not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
 vermillion; 朱; vermillion; c(not yet, dropB)
@@ -476,6 +483,7 @@ weak; 弱; weak; l(bowB, bowB)
 dollar; 沸 right part; dollar; c(bow, l(dropB, stick))&condolences
 maestro; 師 left part; drop&bear
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
+bureaucrat; 官; government; t(roof, maestro without baton)
 walk; 歩; walk; t(stop, few)
 mouth; 口; mouth
 spine; 呂; bath; t(mouth, drop, mouth)

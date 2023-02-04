@@ -327,6 +327,28 @@ const elementsDict =
       "guest"
     ]
   },
+  "path": {
+    "elements": [
+      "leg",
+      "each"
+    ],
+    "kanji": "路",
+    "subElements": [
+      "leg",
+      "each",
+      "mouth",
+      "mending",
+      "wooden leg",
+      "walking legs",
+      "mend",
+      "zoo",
+      "critters"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "road"
+    ]
+  },
   "relaxed": {
     "elements": [
       "person",
@@ -2002,6 +2024,25 @@ const elementsDict =
     ],
     "comment": "can look like c(towel, one) depending on font, especially with chinese-like font"
   },
+  "marketB": {
+    "elements": [
+      "ceiling",
+      "towel"
+    ],
+    "kanji": "師 right part",
+    "subElements": [
+      "ceiling",
+      "towel",
+      "one",
+      "market"
+    ],
+    "synonyms": [
+      "market"
+    ],
+    "wkNames": [
+      "marketB"
+    ]
+  },
   "buckle": {
     "elements": [],
     "kanji": "帯 top part",
@@ -2650,6 +2691,23 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "bone"
+    ]
+  },
+  "jawbone": {
+    "elements": [
+      "joint",
+      "hood",
+      "mouth"
+    ],
+    "kanji": "禍 right part",
+    "subElements": [
+      "joint",
+      "hood",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "jawbone"
     ]
   },
   "sprout": {
@@ -3760,6 +3818,41 @@ const elementsDict =
       "few"
     ]
   },
+  "father": {
+    "elements": [
+      "animal legs",
+      "sheaf"
+    ],
+    "kanji": "父",
+    "subElements": [
+      "animal legs",
+      "sheaf"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "father"
+    ]
+  },
+  "mingle": {
+    "elements": [
+      "top hat",
+      "father"
+    ],
+    "kanji": "交",
+    "subElements": [
+      "top hat",
+      "father",
+      "drop",
+      "one",
+      "animal legs",
+      "sheaf",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "mix"
+    ]
+  },
   "portent": {
     "elements": [
       "human legs",
@@ -3774,9 +3867,12 @@ const elementsDict =
       "drop2",
       "drop",
       "two",
-      "drops"
+      "drops",
+      "omen"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "omen"
+    ],
     "wkNames": [
       "omen"
     ]
@@ -5085,8 +5181,12 @@ const elementsDict =
   "gigantic": {
     "elements": [],
     "kanji": "巨",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "giant"
+    ],
+    "synonyms": [
+      "giant"
+    ],
     "wkNames": [
       "giant"
     ]
@@ -7345,6 +7445,55 @@ const elementsDict =
     ],
     "comment": "similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length"
   },
+  "scissors": {
+    "elements": [
+      "husband",
+      "horns"
+    ],
+    "kanji": "峡 right part",
+    "subElements": [
+      "husband",
+      "horns",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "scissors"
+    ],
+    "comment": "don't confuse with scissors kanji 鋏"
+  },
+  "scissorsB": {
+    "elements": [
+      "scissors"
+    ],
+    "kanji": "鋏 right part, 頰 left part",
+    "subElements": [
+      "scissors",
+      "husband",
+      "horns",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "animal horns",
+      "scissors"
+    ],
+    "synonyms": [
+      "scissors"
+    ],
+    "wkNames": [
+      "scissors"
+    ],
+    "comment": "variant of scissors"
+  },
   "not yet": {
     "elements": [
       "ten",
@@ -8659,6 +8808,26 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "bear"
+    ]
+  },
+  "bureaucrat": {
+    "elements": [
+      "roof",
+      "maestro without baton"
+    ],
+    "kanji": "官",
+    "subElements": [
+      "roof",
+      "maestro without baton",
+      "house",
+      "mouth2",
+      "mouth",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "government"
     ]
   },
   "walk": {
