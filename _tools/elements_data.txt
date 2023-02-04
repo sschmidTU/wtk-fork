@@ -212,7 +212,7 @@ few; 少; few; t(little, dropB)
 portent; 兆; omen; c(human legs, drop4)&ice
 too much; 余; surplus; t(umbrella, dry, little)
 ray; 光; sunlight; t(littleB, pi)
-pi; 光 bottom part; t(ceiling, human legs)
+pi; 光 bottom part; pi; t(ceiling, human legs)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 garment=clothes=scarf; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin) // scarf/garment is a bit ambiguous in RTK, can also be close to hairpin/𧘇 kick
 trampoline=round; 睘; trampoline; t(eyeB, ceiling, mouth, scarf)
@@ -306,7 +306,7 @@ ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK,
 turtle; 壮 left part; icicle
 robust; 壮; robust; l(turtle, samurai)
 two; 二; two
-twoB=two=ice; 冬 bottom part (二 skewed); twoB // RTK often calls this ice (凍 left part), which I disagree with, but should be findable for
+twoB=two=ice; 冬 bottom part, 二 skewed; twoB // RTK often calls this ice (凍 left part), which I disagree with, but should be findable for
 three; 三; three
 shape=three; 彡; hair
 six; 六; six; t(top hat, animal legs)
@@ -361,7 +361,9 @@ officer; 吏; officer; c(history, one)
 grow late; 更; again; t(ceiling, rice field, length) // structureVague: yes
 kebab; 串; kebab; c(t(mouth, mouth), stick)
 resemblance; 肖; resemblance; t(littleB, moon)
-beggar; 丂, 巧 right part; snare // similar to slingshot:  与 without the lower horizontal line (?)
+snare; 丂, 巧 right part; beggar // similar to slingshot. beggar in WK is usually rather slingshot, but sometimes it's also used for snare.
+slingshot; 与 without 一; beggar; t(drop, snare)
+bestow; 与; give; c(snare, one)
 mutually=mutual=broken broom; 互 middle part; mutual
 inter=inter-; 相; mutual; l(tree, eye)
 ri=computer=village; 里; village; t(rice field, soil) // often "computer" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK.
@@ -380,6 +382,10 @@ oneself=nose; 自; self; t(drop, eye)
 snake=self; 己; oneself // unfortunately the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK
 wrap; 包; wrap; t(bound up, snake) // structureVague: yes: not quite top-down, it's also entwined
 somebody; 身; somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
+old man; 老 top part; coffin; c(soil, dropB) // in RTK, the element is only the top part, minus the spoon, which can be replaced by other elements
+consider; 考; think; t(old man, slingshot)
+filial piety; 孝; teacher&filial piety; t(old man, child) // WK radical name is teacher, kanji name filial piety
+someone; 者; someone; t(old man, sun)
 cave; 广, 店 outer part; canopy; dropB
 yurt; 度 without 又; yurt; tl(cave, twenty) // only exists as element/radical in WK, but is quite common
 degrees=degree; 度; degree; tl(yurt, crotch)
@@ -464,6 +470,10 @@ exit; 出; exit; t(mountain, mountain)
 secrecy=secret; 密; secret; t(roof, invariably, mountain) // WK also calls this secrecy now (patched?), though it's silly to not also accept secret.
 teepee=wigwam; 癶, 発 top part; tent
 bow; 弓; bow
+bowB; 弱 left part or 溺 right part; bowB; c(bow, ice)
+condolences=condolence; 弔; condolence; c(bow, stick)
+weak; 弱; weak; l(bowB, bowB)
+dollar; 沸 right part; dollar; c(bow, l(dropB, stick))&condolences
 maestro; 師 left part; drop&bear
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
 walk; 歩; walk; t(stop, few)
@@ -541,3 +551,8 @@ rag; 旅 bottom right part; tofu // actually exists in RTK indirectly, descripti
 shaku=shakuhachi; 尺; shrimp; tl(flag, dropB)
 exhaust; 尽; exhaust; o(shaku, twoB)
 of=building blocks; 之; this; t(stick, fu, umbrellaB)
+halberd; 矛; spear; c(beforehand, dropB)
+beforehand; 予; beforehand; t(chop-sealB, c(street, fu)) // RTK: this is identical to halberd, except the last stroke is omitted
+task; 務; task; l(halberd, t(taskmaster, power))
+chop-seal; 令 bottom part, 卩; stamp; tr(clothes hanger, stick)
+chop-sealB; 矛 top part, 勇 top part; mama

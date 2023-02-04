@@ -3820,7 +3820,10 @@ const elementsDict =
       "animal legs",
       "stick",
       "hook",
-      "small"
+      "small",
+      "ceiling",
+      "human legs",
+      "one"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3828,12 +3831,19 @@ const elementsDict =
     ]
   },
   "pi": {
-    "elements": [],
+    "elements": [
+      "ceiling",
+      "human legs"
+    ],
     "kanji": "光 bottom part",
-    "subElements": [],
+    "subElements": [
+      "ceiling",
+      "human legs",
+      "one"
+    ],
     "synonyms": [],
     "wkNames": [
-      "t(ceiling, human legs)"
+      "pi"
     ]
   },
   "hairpin": {
@@ -5528,7 +5538,7 @@ const elementsDict =
   },
   "twoB": {
     "elements": [],
-    "kanji": "冬 bottom part (二 skewed)",
+    "kanji": "冬 bottom part, 二 skewed",
     "subElements": [
       "two",
       "ice"
@@ -5913,6 +5923,7 @@ const elementsDict =
       "needle",
       "floor",
       "flower",
+      "ceiling",
       "one"
     ],
     "synonyms": [],
@@ -6535,15 +6546,46 @@ const elementsDict =
       "resemblance"
     ]
   },
-  "beggar": {
+  "snare": {
     "elements": [],
     "kanji": "丂, 巧 right part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
+      "beggar"
+    ],
+    "comment": "similar to slingshot. beggar in WK is usually rather slingshot, but sometimes it's also used for snare."
+  },
+  "slingshot": {
+    "elements": [
+      "drop",
       "snare"
     ],
-    "comment": "similar to slingshot:  与 without the lower horizontal line (?)"
+    "kanji": "与 without 一",
+    "subElements": [
+      "drop",
+      "snare",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "beggar"
+    ]
+  },
+  "bestow": {
+    "elements": [
+      "snare",
+      "one"
+    ],
+    "kanji": "与",
+    "subElements": [
+      "snare",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "give"
+    ]
   },
   "mutually": {
     "elements": [],
@@ -6950,6 +6992,93 @@ const elementsDict =
       "slideWK"
     ],
     "comment": "in WK, the radical is called body, the kanji somebody."
+  },
+  "old man": {
+    "elements": [
+      "soil",
+      "dropB"
+    ],
+    "kanji": "老 top part",
+    "subElements": [
+      "soil",
+      "dropB",
+      "dirt",
+      "ground",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "coffin"
+    ],
+    "comment": "in RTK, the element is only the top part, minus the spoon, which can be replaced by other elements"
+  },
+  "consider": {
+    "elements": [
+      "old man",
+      "slingshot"
+    ],
+    "kanji": "考",
+    "subElements": [
+      "old man",
+      "slingshot",
+      "soil",
+      "dropB",
+      "dirt",
+      "ground",
+      "drop",
+      "drops",
+      "snare"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "think"
+    ]
+  },
+  "filial piety": {
+    "elements": [
+      "old man",
+      "child"
+    ],
+    "kanji": "孝",
+    "subElements": [
+      "old man",
+      "child",
+      "soil",
+      "dropB",
+      "dirt",
+      "ground",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "teacher",
+      "filial piety"
+    ],
+    "comment": "WK radical name is teacher, kanji name filial piety"
+  },
+  "someone": {
+    "elements": [
+      "old man",
+      "sun"
+    ],
+    "kanji": "者",
+    "subElements": [
+      "old man",
+      "sun",
+      "soil",
+      "dropB",
+      "dirt",
+      "ground",
+      "drop",
+      "drops",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "someone"
+    ]
   },
   "cave": {
     "elements": [
@@ -8429,6 +8558,85 @@ const elementsDict =
       "bow"
     ]
   },
+  "bowB": {
+    "elements": [
+      "bow",
+      "ice"
+    ],
+    "kanji": "弱 left part or 溺 right part",
+    "subElements": [
+      "bow",
+      "ice",
+      "drop2",
+      "drop",
+      "two",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bowB"
+    ]
+  },
+  "condolences": {
+    "elements": [
+      "bow",
+      "stick"
+    ],
+    "kanji": "弔",
+    "subElements": [
+      "bow",
+      "stick",
+      "condolence"
+    ],
+    "synonyms": [
+      "condolence"
+    ],
+    "wkNames": [
+      "condolence"
+    ]
+  },
+  "weak": {
+    "elements": [
+      "bowB",
+      "bowB"
+    ],
+    "kanji": "弱",
+    "subElements": [
+      "bowB",
+      "bowB",
+      "bow",
+      "ice",
+      "drop2",
+      "drop",
+      "two",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "weak"
+    ]
+  },
+  "dollar": {
+    "elements": [
+      "bow",
+      "dropB",
+      "stick"
+    ],
+    "kanji": "沸 right part",
+    "subElements": [
+      "bow",
+      "dropB",
+      "stick",
+      "condolences",
+      "drop",
+      "drops",
+      "condolence"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dollar"
+    ]
+  },
   "maestro": {
     "elements": [],
     "kanji": "師 left part",
@@ -9728,6 +9936,101 @@ const elementsDict =
     ],
     "wkNames": [
       "this"
+    ]
+  },
+  "halberd": {
+    "elements": [
+      "beforehand",
+      "dropB"
+    ],
+    "kanji": "矛",
+    "subElements": [
+      "beforehand",
+      "dropB",
+      "chop-sealB",
+      "street",
+      "fu",
+      "drop",
+      "drops",
+      "nail",
+      "spike"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "spear"
+    ]
+  },
+  "beforehand": {
+    "elements": [
+      "chop-sealB",
+      "street",
+      "fu"
+    ],
+    "kanji": "予",
+    "subElements": [
+      "chop-sealB",
+      "street",
+      "fu",
+      "nail",
+      "spike"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "beforehand"
+    ],
+    "comment": "RTK: this is identical to halberd, except the last stroke is omitted"
+  },
+  "task": {
+    "elements": [
+      "halberd",
+      "taskmaster",
+      "power"
+    ],
+    "kanji": "務",
+    "subElements": [
+      "halberd",
+      "taskmaster",
+      "power",
+      "beforehand",
+      "dropB",
+      "chop-sealB",
+      "street",
+      "fu",
+      "drop",
+      "drops",
+      "nail",
+      "spike",
+      "muscle",
+      "arnold"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "task"
+    ]
+  },
+  "chop-seal": {
+    "elements": [
+      "clothes hanger",
+      "stick"
+    ],
+    "kanji": "令 bottom part, 卩",
+    "subElements": [
+      "clothes hanger",
+      "stick",
+      "coat hanger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "stamp"
+    ]
+  },
+  "chop-sealB": {
+    "elements": [],
+    "kanji": "矛 top part, 勇 top part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "mama"
     ]
   }
 };
