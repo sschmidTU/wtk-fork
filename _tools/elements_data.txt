@@ -32,10 +32,13 @@ run; 走; run; t(soil, mending)
 determine; 定; determine; t(house, coat rack)
 perfect; 完; perfect; t(house, beginning)
 flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
+door; 戸; door; t(ceiling, flag)
 nun; 尼; nun; tl(flag, spoon)
 yield; 屈; yield; tl(flag, exit)
 reside; 居; alive; tl(flag, old)
 voice; 声; voice; t(samurai, o(flag, stick))
+re-=re; 戻; return; tl(door, large)
+employ; 雇; employ; tl(door, turkey) 
 thread=spiderman; 糸; thread
 wall; 至 top part; ground&private; t(ceiling, elbow) // WK doesn't have this as an extra radical, as it's almost always used as 至 (mole/climax) or right side of 転 (cloud/rising cloud). it only has trash/infant (育 top part).
 infant=toddler; 𠫓, 育 top part; trash; t(top hat, elbow) // WK doesn't differentiate between RTK wall and infant
@@ -146,6 +149,7 @@ bend; 曲; music; rice field, stick2 // basically one and a half rice fields (or
 cadet; 曹; official; t(c(bend, one), sun)
 beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
+fishhookB=fishhook; 乚; umbrella
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
 straightaway; 直; fix; t(ten, eye, straightened hook)
 by means of; 以; from; l(straightened hook, drop, person)
@@ -244,6 +248,11 @@ name; 名; name; t(evening, mouth)
 ballerina=sunglasses; 舛; dance; l(evening, cow) // RTK v4 calls this sunglasses, but in rtk-search data this is ambiguous, seems like "sunglasses with one lense missing" is a vertically separated element with a variant of evening on top, something else in the middle, and cow on the bottom. Almost all the occurences of 舛 in the data have "ballerina" though.
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
 beginning; 元; origin; t(two, human legs); piWK
+military officer; 尉; military officer; l(tl(flag, show), glue)
+prohibition=prohibit; 禁; prohibit; t(grove, show)
+religion; 宗; religion; t(roof, show)
+ritual; 祭; festival; t(l(c(evening, drop), crotch), show)&teepee
+guess; 察; guess; t(roof, ritual)
 paper punch; 探 top right part; pi; t(crown, human legs)
 altar; 礻, 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right
 cloak; 衤, 初 left part; spirit // almost same as altar, has an extra diagonal stroke on the right
@@ -275,6 +284,7 @@ ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK,
 turtle; 壮 left part; icicle
 robust; 壮; robust; l(turtle, samurai)
 two; 二; two
+twoB=two=ice; 冬 bottom part; twoB // RTK often calls this ice (凍 left part), which I disagree with, but should be findable for
 three; 三; three
 shape=three; 彡; hair
 six; 六; six; t(top hat, animal legs)
@@ -448,6 +458,8 @@ mandala; 曼; mandala; t(sun, eyeB, crotch) // not named in WK
 hundred; 百; hundred; t(ceiling, white)
 neck; 首; neck; t(horns, one, oneself)
 rice field=brains; 田; rice field
+armor=armour=roots; 甲; turtle shell; t(rice field, stick)
+speaketh; 申; say humbly; t(stick, armor)
 rice; 米; rice; c(tree, horns)
 astray; 迷; astray; lb(road, rice)
 soil=dirt=ground; 土; dirt
@@ -496,3 +508,5 @@ night; 夜; night; t(top hat, l(person, c(walking legs, drop)))
 shredder; 幣 top part; shredder; l(t(littleB, o(hood, little)), taskmaster)
 clear; 奐; clear; t(bound up, four, large)
 rag; 旅 bottom right part; tofu // actually exists in RTK indirectly, description of 旅
+shaku=shakuhachi; 尺; shrimp; tl(flag, dropB)
+exhaust; 尽; exhaust; o(shaku, twoB)

@@ -559,6 +559,25 @@ const elementsDict =
       "flag"
     ]
   },
+  "door": {
+    "elements": [
+      "ceiling",
+      "flag"
+    ],
+    "kanji": "戸",
+    "subElements": [
+      "ceiling",
+      "flag",
+      "one",
+      "mouth",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "door"
+    ]
+  },
   "nun": {
     "elements": [
       "flag",
@@ -639,6 +658,52 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "voice"
+    ]
+  },
+  "re-": {
+    "elements": [
+      "door",
+      "large"
+    ],
+    "kanji": "戻",
+    "subElements": [
+      "door",
+      "large",
+      "ceiling",
+      "flag",
+      "one",
+      "mouth",
+      "drop",
+      "drops",
+      "St. Bernard",
+      "re"
+    ],
+    "synonyms": [
+      "re"
+    ],
+    "wkNames": [
+      "return"
+    ]
+  },
+  "employ": {
+    "elements": [
+      "door",
+      "turkey"
+    ],
+    "kanji": "雇",
+    "subElements": [
+      "door",
+      "turkey",
+      "ceiling",
+      "flag",
+      "one",
+      "mouth",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "employ"
     ]
   },
   "thread": {
@@ -2621,6 +2686,19 @@ const elementsDict =
     ],
     "comment": "according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have."
   },
+  "fishhookB": {
+    "elements": [],
+    "kanji": "乚",
+    "subElements": [
+      "fishhook"
+    ],
+    "synonyms": [
+      "fishhook"
+    ],
+    "wkNames": [
+      "umbrella"
+    ]
+  },
   "straightened hook": {
     "elements": [
       "fishhook"
@@ -4357,6 +4435,130 @@ const elementsDict =
       "origin"
     ]
   },
+  "military officer": {
+    "elements": [
+      "flag",
+      "show",
+      "glue"
+    ],
+    "kanji": "尉",
+    "subElements": [
+      "flag",
+      "show",
+      "glue",
+      "mouth",
+      "drop",
+      "drops",
+      "two",
+      "small",
+      "altar",
+      "ten",
+      "hook",
+      "needle",
+      "measurement"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "military officer"
+    ]
+  },
+  "prohibition": {
+    "elements": [
+      "grove",
+      "show"
+    ],
+    "kanji": "禁",
+    "subElements": [
+      "grove",
+      "show",
+      "tree",
+      "two",
+      "small",
+      "altar",
+      "wood",
+      "prohibit"
+    ],
+    "synonyms": [
+      "prohibit"
+    ],
+    "wkNames": [
+      "prohibit"
+    ]
+  },
+  "religion": {
+    "elements": [
+      "roof",
+      "show"
+    ],
+    "kanji": "宗",
+    "subElements": [
+      "roof",
+      "show",
+      "house",
+      "two",
+      "small",
+      "altar",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "religion"
+    ]
+  },
+  "ritual": {
+    "elements": [
+      "evening",
+      "drop",
+      "crotch",
+      "show"
+    ],
+    "kanji": "祭",
+    "subElements": [
+      "evening",
+      "drop",
+      "crotch",
+      "show",
+      "teepee",
+      "drops",
+      "two",
+      "small",
+      "altar",
+      "wigwam"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "festival"
+    ]
+  },
+  "guess": {
+    "elements": [
+      "roof",
+      "ritual"
+    ],
+    "kanji": "察",
+    "subElements": [
+      "roof",
+      "ritual",
+      "house",
+      "evening",
+      "drop",
+      "crotch",
+      "show",
+      "teepee",
+      "drops",
+      "two",
+      "small",
+      "altar",
+      "wigwam",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "guess"
+    ]
+  },
   "paper punch": {
     "elements": [
       "crown",
@@ -4904,6 +5106,22 @@ const elementsDict =
     "wkNames": [
       "two"
     ]
+  },
+  "twoB": {
+    "elements": [],
+    "kanji": "冬 bottom part",
+    "subElements": [
+      "two",
+      "ice"
+    ],
+    "synonyms": [
+      "two",
+      "ice"
+    ],
+    "wkNames": [
+      "twoB"
+    ],
+    "comment": "RTK often calls this ice (凍 left part), which I disagree with, but should be findable for"
   },
   "three": {
     "elements": [],
@@ -8017,6 +8235,46 @@ const elementsDict =
       "rice field"
     ]
   },
+  "armor": {
+    "elements": [
+      "rice field",
+      "stick"
+    ],
+    "kanji": "甲",
+    "subElements": [
+      "rice field",
+      "stick",
+      "brains",
+      "armour",
+      "roots"
+    ],
+    "synonyms": [
+      "armour",
+      "roots"
+    ],
+    "wkNames": [
+      "turtle shell"
+    ]
+  },
+  "speaketh": {
+    "elements": [
+      "stick",
+      "armor"
+    ],
+    "kanji": "申",
+    "subElements": [
+      "stick",
+      "armor",
+      "rice field",
+      "brains",
+      "armour",
+      "roots"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "say humbly"
+    ]
+  },
   "rice": {
     "elements": [
       "tree",
@@ -8812,5 +9070,51 @@ const elementsDict =
       "tofu"
     ],
     "comment": "actually exists in RTK indirectly, description of 旅"
+  },
+  "shaku": {
+    "elements": [
+      "flag",
+      "dropB"
+    ],
+    "kanji": "尺",
+    "subElements": [
+      "flag",
+      "dropB",
+      "mouth",
+      "drop",
+      "drops",
+      "shakuhachi"
+    ],
+    "synonyms": [
+      "shakuhachi"
+    ],
+    "wkNames": [
+      "shrimp"
+    ]
+  },
+  "exhaust": {
+    "elements": [
+      "shaku",
+      "twoB"
+    ],
+    "kanji": "尽",
+    "subElements": [
+      "shaku",
+      "twoB",
+      "flag",
+      "dropB",
+      "mouth",
+      "drop",
+      "drops",
+      "shakuhachi",
+      "two",
+      "ice",
+      "drop2",
+      "drop"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "exhaust"
+    ]
   }
 };
