@@ -32,6 +32,9 @@ run; 走; run; t(soil, mending)
 determine; 定; determine; t(house, coat rack)
 perfect; 完; perfect; t(house, beginning)
 flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
+nun; 尼; nun; tl(flag, spoon)
+yield; 屈; yield; tl(flag, exit)
+reside; 居; alive; tl(flag, old)
 voice; 声; voice; t(samurai, o(flag, stick))
 thread=spiderman; 糸; thread
 wall; 至 top part; ground&private; t(ceiling, elbow) // WK doesn't have this as an extra radical, as it's almost always used as 至 (mole/climax) or right side of 転 (cloud/rising cloud). it only has trash/infant (育 top part).
@@ -85,6 +88,7 @@ bundle=Chaplin; 束; bundle; tree, mouth
 sickness; 疒, 痒 outer part; sick
 not=knot=piglet's tail; 勿; wing&not
 sow=pig; 豕; pig
+thing; 物; thing; l(cow, not)
 easy=piggy bank; 易; easy; t(sun, not) // element is called piggy bank in RTK, but honestly that's kinda silly if we can just use the kanji name "easy".
 screwdriver=utilize=utilise; 用; task; moon, stick 
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
@@ -121,6 +125,7 @@ sheep; 羊; sheep; t(horns, king, stick)
 beauty; 美; beauty; t(sheep, large) // the last part of the vertical stroke is interwoven with the large radical, but that seems like a minor detail. (structureVague: yes)
 spicy; 辛; spicy; t(stand, ten)
 happiness; 幸; happiness; t(ten, spicy) // interwoven. structureVague: yes
+roofB=roof; 屋; roof; tl(flag, climax) // unfortunately this has the same name as the roof (house) element/WK radical
 roof=house; 宀; roof // this is called house in RTK, but unfortunately the kanji 家 is also house, which RTK calls the "full character", and we can't/shouldn't have two elements with the same name, so we renamed this to roof (WK name).
 hole; 穴; hole; t(roof, eight)
 house; 家; house; t(roof, sow) // in RTK originally 宀 is house, but so is 家, which RTK calls the "full character". We can't/shouldn't have two elements with the same name, so we renamed the RTK house radical to roof (WK name).
@@ -227,6 +232,7 @@ reclining=lying down; 𠂉, 乞 top part; gun
 beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here
 double back=fold back; 复; black hole; t(reclining, sun, walking legs)
+restore; 復; restore; l(goingB, double back)
 lack; 欠; lack; t(c(reclining, drop), person)
 next; 次; next; l(ice, lack)
 evening; 夕; evening
@@ -286,6 +292,7 @@ char=barbecue; 焦; char; t(turkey, oven-fire) // barbecue is not in my RTK1 boo
 pegasus; 勧 left part, variant of 雚; pegasus; t(noon, turkey) // doesn't exist in WK (noon+turkey)
 flowers=flower; 艹, 若 top part; flowers
 two hands; 开; lantern; flowers
+two handsB=two hands; 廾; twenty; flowers // this specific version isn't named in RTK, seems to be called two hands, even though it's missing the top horizontal stroke
 put together; 并; put together; t(horns, two hands)
 folding screen; 屏; folding screen; tl(flag, put together)
 seedling; 苗; seedling; t(flowers, rice field)
@@ -485,3 +492,7 @@ love; 愛; love; t(vulture, crown, heart, walking legs)
 one; 一; ground
 ceiling=one; 一; ground // only when on top of another element. In any case, also called "one"
 floor=one; 一; ground // only when on the bottom of another element. In any case, also called "one"
+night; 夜; night; t(top hat, l(person, c(walking legs, drop)))
+shredder; 幣 top part; shredder; l(t(littleB, o(hood, little)), taskmaster)
+clear; 奐; clear; t(bound up, four, large)
+rag; 旅 bottom right part; tofu // actually exists in RTK indirectly, description of 旅

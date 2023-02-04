@@ -559,6 +559,67 @@ const elementsDict =
       "flag"
     ]
   },
+  "nun": {
+    "elements": [
+      "flag",
+      "spoon"
+    ],
+    "kanji": "尼",
+    "subElements": [
+      "flag",
+      "spoon",
+      "mouth",
+      "drop",
+      "drops",
+      "sitting on the ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "nun"
+    ]
+  },
+  "yield": {
+    "elements": [
+      "flag",
+      "exit"
+    ],
+    "kanji": "屈",
+    "subElements": [
+      "flag",
+      "exit",
+      "mouth",
+      "drop",
+      "drops",
+      "mountain"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "yield"
+    ]
+  },
+  "reside": {
+    "elements": [
+      "flag",
+      "old"
+    ],
+    "kanji": "居",
+    "subElements": [
+      "flag",
+      "old",
+      "mouth",
+      "drop",
+      "drops",
+      "ten",
+      "tombstone",
+      "gravestone",
+      "church",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "alive"
+    ]
+  },
   "voice": {
     "elements": [
       "samurai",
@@ -1476,6 +1537,23 @@ const elementsDict =
       "pig"
     ]
   },
+  "thing": {
+    "elements": [
+      "cow",
+      "not"
+    ],
+    "kanji": "物",
+    "subElements": [
+      "cow",
+      "not",
+      "knot",
+      "piglet's tail"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "thing"
+    ]
+  },
   "easy": {
     "elements": [
       "sun",
@@ -2170,6 +2248,35 @@ const elementsDict =
       "happiness"
     ],
     "comment": "interwoven. structureVague: yes"
+  },
+  "roofB": {
+    "elements": [
+      "flag",
+      "climax"
+    ],
+    "kanji": "屋",
+    "subElements": [
+      "flag",
+      "climax",
+      "mouth",
+      "drop",
+      "drops",
+      "wall",
+      "soil",
+      "ceiling",
+      "elbow",
+      "one",
+      "dirt",
+      "ground",
+      "roof"
+    ],
+    "synonyms": [
+      "roof"
+    ],
+    "wkNames": [
+      "roof"
+    ],
+    "comment": "unfortunately this has the same name as the roof (house) element/WK radical"
   },
   "roof": {
     "elements": [],
@@ -4038,6 +4145,27 @@ const elementsDict =
       "black hole"
     ]
   },
+  "restore": {
+    "elements": [
+      "goingB",
+      "double back"
+    ],
+    "kanji": "復",
+    "subElements": [
+      "goingB",
+      "double back",
+      "reclining",
+      "sun",
+      "walking legs",
+      "lying down",
+      "day",
+      "fold back"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "restore"
+    ]
+  },
   "lack": {
     "elements": [
       "reclining",
@@ -5072,6 +5200,24 @@ const elementsDict =
     "wkNames": [
       "lantern"
     ]
+  },
+  "two handsB": {
+    "elements": [
+      "flowers"
+    ],
+    "kanji": "廾",
+    "subElements": [
+      "flowers",
+      "flower",
+      "two hands"
+    ],
+    "synonyms": [
+      "two hands"
+    ],
+    "wkNames": [
+      "twenty"
+    ],
+    "comment": "this specific version isn't named in RTK, seems to be called two hands, even though it's missing the top horizontal stroke"
   },
   "put together": {
     "elements": [
@@ -8586,5 +8732,85 @@ const elementsDict =
       "ground"
     ],
     "comment": "only when on the bottom of another element. In any case, also called \"one\""
+  },
+  "night": {
+    "elements": [
+      "top hat",
+      "person",
+      "walking legs",
+      "drop"
+    ],
+    "kanji": "夜",
+    "subElements": [
+      "top hat",
+      "person",
+      "walking legs",
+      "drop",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "night"
+    ]
+  },
+  "shredder": {
+    "elements": [
+      "littleB",
+      "hood",
+      "little",
+      "taskmaster"
+    ],
+    "kanji": "幣 top part",
+    "subElements": [
+      "littleB",
+      "hood",
+      "little",
+      "taskmaster",
+      "animal legs",
+      "stick",
+      "hook",
+      "small"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "shredder"
+    ]
+  },
+  "clear": {
+    "elements": [
+      "bound up",
+      "four",
+      "large"
+    ],
+    "kanji": "奐",
+    "subElements": [
+      "bound up",
+      "four",
+      "large",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down",
+      "pent in",
+      "human legs",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "clear"
+    ]
+  },
+  "rag": {
+    "elements": [],
+    "kanji": "旅 bottom right part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "tofu"
+    ],
+    "comment": "actually exists in RTK indirectly, description of 旅"
   }
 };
