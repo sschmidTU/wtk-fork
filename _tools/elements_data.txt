@@ -5,7 +5,7 @@ above; 上; above; t(divining rod, floor)
 below; 下; below; t(ceiling, wand)
 eminent; 卓; table; t(wand, sun, ten)
 say=words=keitai; 言; say; t(ceiling4, mouth)
-white; 白; white; t(drop, sun)
+white=dove; 白; white; t(drop, sun)
 power=muscle=arnold; 力; power
 triceps=cooperate; 劦; cooperate; t(power, l(power, power))
 man=male; 男; man; t(rice field, power)
@@ -160,6 +160,9 @@ favor=favour; 恵; favor; t(ten, rice field, heart)
 box; 匚, 区 outer part; cage
 shovel; 凵; box // unfortunately, RTK shovel is WK box, and RTK box is WK cage
 twenty; 廿; twenty; c(shovel, one) // unfortunately in WK 廾 is also twenty
+sweet=wicker basket; 甘; sweet; c(twenty, one)&sun
+so-and-so; 某; certain; t(sweet, tree)
+ward; 区; district; o(box, sheaf)
 villain; 凶; villain; o(shovel, sheaf)
 sheik; 禽; rocket; t(umbrella, top hat, villain, c(hood, elbow))&meeting // not quite meeting: top hat instead of one
 swiss=switzerland=plus=red cross=d-pad; 亞, 亞 middle part, 惡 plus-shaped part between one and one; swiss; convex2, box4, two // doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements
@@ -195,6 +198,7 @@ bend; 曲; music; rice field, stick2 // basically one and a half rice fields (or
 cadet; 曹; official; t(c(bend, one), sun)
 beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
 drum=drums; 鼓 left part; drum; t(samurai, beans) // the top stroke of beans is merged into the samurai element here
+bountiful; 豊; plentiful; t(bend, beans)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 fishhookB=fishhook; 乚; umbrella
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
@@ -272,6 +276,9 @@ horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal le
 little=small; 小; small; o(animal legs, t(stick, hook))
 littleB; 光 top part; triceratops; little
 few; 少; few; t(little, dropB)
+fenceposts; 粛 bottom outer parts; fenceposts; l(dropB, stick) // basically the left stick with a hook + right stick
+red; 赤; red; t(soil, c(little, animal legs)) // structureVague: yes
+redB=red; 変 top part; red; t(top hat, c(little, animal legs)) // structureVague: yes
 father; 父; father; t(animal legs, sheaf)
 mingle; 交; mix; t(top hat, father)
 portent=omen; 兆; omen; c(human legs, drop4)&ice
@@ -357,6 +364,8 @@ loincloth=wise; 臤; wise; 臤
 gigantic=giant; 巨; giant
 fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
+mosaic; 巴; bed; c(sign of the snake, stick)
+color=colour; 色; color; t(bound up, mosaic)
 mailbox; 宛 bottom part; mailbox; l(evening, fingerprint)
 address; 宛; address; t(roof, mailbox)
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
@@ -374,6 +383,8 @@ inflammation; 炎; flame; t(fire, fire)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
 feathers; 羽; feather; clothes hanger2, drop2
+sparkler; 摂 bottom right part; explosion; t(horns, animal legs)
+music; 楽; comfort; t(o(sparkler, white), tree)
 do=so; 為; sake; tail feathers
 fish; 魚; fish; t(bound up, rice field, oven-fire)
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
@@ -383,6 +394,8 @@ two; 二; two
 twoB=two=ice; 冬 bottom part, 二 skewed; twoB // RTK often calls this ice (凍 left part), which I disagree with, but should be findable for
 three; 三; three
 shape=three; 彡; hair
+lad; 彦; lad; t(stand up, tl(cliff, shape)) // structureVague: yes, not named in WK
+visit; 参; participate; t(elbow, large, shape)
 six; 六; six; t(top hat, animal legs)
 seven=diced; 七; seven
 cut; 切; cut; l(seven, sword)
@@ -541,6 +554,7 @@ celery; 講 top right part; celery; c(salad, salad) // or salad + t(l(stick, sti
 strung together=together; 共; together; t(salad, animal legs)
 once upon a time; 昔; once upon a time; t(salad, sun)
 grass skirt; 㐮; nurse; t(top hat, celery, hairpin)
+yellow; 黄; yellow; t(salad, sprout, animal legs)
 bushel basket; 棋 right part; crab; c(strung together, one)&eye
 dish; 皿; plate
 blood; 血; blood; t(drop, dish)
@@ -555,6 +569,9 @@ mountain; 山; mountain
 exit; 出; exit; t(mountain, mountain)
 secrecy=secret; 密; secret; t(roof, invariably, mountain) // WK also calls this secrecy now (patched?), though it's silly to not also accept secret.
 teepee=wigwam; 癶, 発 top part; tent
+ascend; 登; climb; t(teepee, beans)
+discharge; 発; departure; t(teepee, two hands)
+pup tent; 尞; charcoal; t(c(large, horns), sun, little)
 bow; 弓; bow
 bowB; 弱 left part or 溺 right part; bowB; c(bow, ice)
 condolences=condolence; 弔; condolence; c(bow, stick)
@@ -610,6 +627,9 @@ boat; 舟; boat; t(drop, o(wind, t(drop, stick)))
 dispose; 処; deal with; lb(walking legs, wind)
 barge; 恐 top part; saw; l(craft, mediocre) // not named in my RTK copy, but in the pre-existing rtk-search data
 crotch; 又; stool
+sentence=plaid; 文; writing; t(drop, crotch)&top hat
+sentenceB=sentence=plaid; 対 left part; writing; t(top hat, sheaf) // the sheaf is not fully connected to the top hat here
+adjusted; 斉; simultaneous; t(sentence, moon) // structureVague: yes, elementsClose: moon
 pair; 双; pair; l(crotch, crotch)
 guy; 奴; dude; l(woman, crotch)
 to measure; 蒦; to measure; t(flowers, turkey, crotch) // rare on its own
@@ -646,6 +666,7 @@ tusk=waitress; 牙; fang; t(ceiling, c(hook, straightened hook, dropB)) // somet
 previously; 既; previously; l(silver, tusk)
 stamp; 卩; stamp; t(hood, stick)
 cornucopia=vine; 丩; vines; t(shovel, stick)
+stamps; 抑 without 扌; cat pirate; l(box, stamp)
 lowly; 卑; lowly; t(drop, rice field, cornucopia)
 chop-seal; 令 bottom part, 卩 with longer top stroke; stamp; tr(clothes hanger, stick)
 chop-sealB; 矛 top part, 勇 top part; mama
@@ -661,3 +682,4 @@ earthworm; 屯; barracks; t(dropB, mountain, fishhookB)
 rice seedling; 坴 top part; rice seedling; t(soil, human legs)
 land; 坴; womb; t(rice seedling, soil)
 acorn=sign of the hog; 亥; slice; t(top hat, spoon, dropB, drop) // the bottom part isn't further described in RTK, a bit vague/unique
+center; 央; center; t(towel, large)&hood // structureVague: yes

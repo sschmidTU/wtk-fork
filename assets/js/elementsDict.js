@@ -120,9 +120,12 @@ const elementsDict =
       "drop",
       "sun",
       "drops",
-      "day"
+      "day",
+      "dove"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "dove"
+    ],
     "wkNames": [
       "white"
     ]
@@ -1329,7 +1332,8 @@ const elementsDict =
       "drop",
       "sun",
       "drops",
-      "day"
+      "day",
+      "dove"
     ],
     "synonyms": [],
     "wkNames": [
@@ -2963,6 +2967,64 @@ const elementsDict =
     ],
     "comment": "unfortunately in WK 廾 is also twenty"
   },
+  "sweet": {
+    "elements": [
+      "twenty",
+      "one"
+    ],
+    "kanji": "甘",
+    "subElements": [
+      "twenty",
+      "one",
+      "sun",
+      "shovel",
+      "day",
+      "wicker basket"
+    ],
+    "synonyms": [
+      "wicker basket"
+    ],
+    "wkNames": [
+      "sweet"
+    ]
+  },
+  "so-and-so": {
+    "elements": [
+      "sweet",
+      "tree"
+    ],
+    "kanji": "某",
+    "subElements": [
+      "sweet",
+      "tree",
+      "twenty",
+      "one",
+      "sun",
+      "shovel",
+      "day",
+      "wicker basket",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "certain"
+    ]
+  },
+  "ward": {
+    "elements": [
+      "box",
+      "sheaf"
+    ],
+    "kanji": "区",
+    "subElements": [
+      "box",
+      "sheaf"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "district"
+    ]
+  },
   "villain": {
     "elements": [
       "shovel",
@@ -3621,6 +3683,32 @@ const elementsDict =
     ],
     "comment": "the top stroke of beans is merged into the samurai element here"
   },
+  "bountiful": {
+    "elements": [
+      "bend",
+      "beans"
+    ],
+    "kanji": "豊",
+    "subElements": [
+      "bend",
+      "beans",
+      "rice field",
+      "stick2",
+      "stick",
+      "brains",
+      "ceiling",
+      "mouth",
+      "horns",
+      "floor",
+      "one",
+      "animal horns",
+      "table"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "plentiful"
+    ]
+  },
   "fishhook": {
     "elements": [
       "hook",
@@ -4155,6 +4243,7 @@ const elementsDict =
       "sun",
       "drops",
       "day",
+      "dove",
       "water droplets",
       "water pistol"
     ],
@@ -4253,6 +4342,7 @@ const elementsDict =
       "sun",
       "drops",
       "day",
+      "dove",
       "water droplets",
       "water pistol"
     ],
@@ -5158,6 +5248,74 @@ const elementsDict =
     "wkNames": [
       "few"
     ]
+  },
+  "fenceposts": {
+    "elements": [
+      "dropB",
+      "stick"
+    ],
+    "kanji": "粛 bottom outer parts",
+    "subElements": [
+      "dropB",
+      "stick",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "fenceposts"
+    ],
+    "comment": "basically the left stick with a hook + right stick"
+  },
+  "red": {
+    "elements": [
+      "soil",
+      "little",
+      "animal legs"
+    ],
+    "kanji": "赤",
+    "subElements": [
+      "soil",
+      "little",
+      "animal legs",
+      "dirt",
+      "ground",
+      "stick",
+      "hook",
+      "small"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "red"
+    ],
+    "comment": "structureVague: yes"
+  },
+  "redB": {
+    "elements": [
+      "top hat",
+      "little",
+      "animal legs"
+    ],
+    "kanji": "変 top part",
+    "subElements": [
+      "top hat",
+      "little",
+      "animal legs",
+      "drop",
+      "one",
+      "stick",
+      "hook",
+      "small",
+      "drops",
+      "red"
+    ],
+    "synonyms": [
+      "red"
+    ],
+    "wkNames": [
+      "red"
+    ],
+    "comment": "structureVague: yes"
   },
   "father": {
     "elements": [
@@ -6694,6 +6852,57 @@ const elementsDict =
     ],
     "comment": "this is exactly WK snake, which can also be RTK fingerprint"
   },
+  "mosaic": {
+    "elements": [
+      "sign of the snake",
+      "stick"
+    ],
+    "kanji": "巴",
+    "subElements": [
+      "sign of the snake",
+      "stick",
+      "mouth",
+      "fishhook",
+      "hook",
+      "fishguts",
+      "mosaic with bit missing"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bed"
+    ]
+  },
+  "color": {
+    "elements": [
+      "bound up",
+      "mosaic"
+    ],
+    "kanji": "色",
+    "subElements": [
+      "bound up",
+      "mosaic",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "sign of the snake",
+      "stick",
+      "mouth",
+      "fishhook",
+      "hook",
+      "fishguts",
+      "mosaic with bit missing",
+      "coat hanger",
+      "drops",
+      "lying down",
+      "colour"
+    ],
+    "synonyms": [
+      "colour"
+    ],
+    "wkNames": [
+      "color"
+    ]
+  },
   "mailbox": {
     "elements": [
       "evening",
@@ -7039,6 +7248,48 @@ const elementsDict =
       "feather"
     ]
   },
+  "sparkler": {
+    "elements": [
+      "horns",
+      "animal legs"
+    ],
+    "kanji": "摂 bottom right part",
+    "subElements": [
+      "horns",
+      "animal legs",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "explosion"
+    ]
+  },
+  "music": {
+    "elements": [
+      "sparkler",
+      "white",
+      "tree"
+    ],
+    "kanji": "楽",
+    "subElements": [
+      "sparkler",
+      "white",
+      "tree",
+      "horns",
+      "animal legs",
+      "animal horns",
+      "drop",
+      "sun",
+      "drops",
+      "day",
+      "dove",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "comfort"
+    ]
+  },
   "do": {
     "elements": [
       "tail feathers"
@@ -7179,6 +7430,52 @@ const elementsDict =
     ],
     "wkNames": [
       "hair"
+    ]
+  },
+  "lad": {
+    "elements": [
+      "stand up",
+      "cliff",
+      "shape"
+    ],
+    "kanji": "彦",
+    "subElements": [
+      "stand up",
+      "cliff",
+      "shape",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "three"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "lad"
+    ],
+    "comment": "structureVague: yes, not named in WK"
+  },
+  "visit": {
+    "elements": [
+      "elbow",
+      "large",
+      "shape"
+    ],
+    "kanji": "参",
+    "subElements": [
+      "elbow",
+      "large",
+      "shape",
+      "St. Bernard",
+      "three"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "participate"
     ]
   },
   "six": {
@@ -10178,6 +10475,33 @@ const elementsDict =
       "nurse"
     ]
   },
+  "yellow": {
+    "elements": [
+      "salad",
+      "sprout",
+      "animal legs"
+    ],
+    "kanji": "黄",
+    "subElements": [
+      "salad",
+      "sprout",
+      "animal legs",
+      "flowers",
+      "floor",
+      "flower",
+      "one",
+      "drop",
+      "rice field",
+      "drops",
+      "brains",
+      "shoot",
+      "wherefore"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "yellow"
+    ]
+  },
   "bushel basket": {
     "elements": [
       "strung together",
@@ -10393,6 +10717,73 @@ const elementsDict =
     ],
     "wkNames": [
       "tent"
+    ]
+  },
+  "ascend": {
+    "elements": [
+      "teepee",
+      "beans"
+    ],
+    "kanji": "登",
+    "subElements": [
+      "teepee",
+      "beans",
+      "wigwam",
+      "ceiling",
+      "mouth",
+      "horns",
+      "floor",
+      "one",
+      "animal horns",
+      "table"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "climb"
+    ]
+  },
+  "discharge": {
+    "elements": [
+      "teepee",
+      "two hands"
+    ],
+    "kanji": "発",
+    "subElements": [
+      "teepee",
+      "two hands",
+      "wigwam",
+      "flowers",
+      "flower"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "departure"
+    ]
+  },
+  "pup tent": {
+    "elements": [
+      "large",
+      "horns",
+      "sun",
+      "little"
+    ],
+    "kanji": "尞",
+    "subElements": [
+      "large",
+      "horns",
+      "sun",
+      "little",
+      "St. Bernard",
+      "animal horns",
+      "day",
+      "animal legs",
+      "stick",
+      "hook",
+      "small"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "charcoal"
     ]
   },
   "bow": {
@@ -10886,7 +11277,8 @@ const elementsDict =
       "drop",
       "sun",
       "drops",
-      "day"
+      "day",
+      "dove"
     ],
     "synonyms": [],
     "wkNames": [
@@ -10934,6 +11326,7 @@ const elementsDict =
       "sun",
       "drops",
       "day",
+      "dove",
       "sow",
       "pig"
     ],
@@ -11332,6 +11725,76 @@ const elementsDict =
       "stool"
     ]
   },
+  "sentence": {
+    "elements": [
+      "drop",
+      "crotch"
+    ],
+    "kanji": "文",
+    "subElements": [
+      "drop",
+      "crotch",
+      "top hat",
+      "drops",
+      "one",
+      "plaid"
+    ],
+    "synonyms": [
+      "plaid"
+    ],
+    "wkNames": [
+      "writing"
+    ]
+  },
+  "sentenceB": {
+    "elements": [
+      "top hat",
+      "sheaf"
+    ],
+    "kanji": "対 left part",
+    "subElements": [
+      "top hat",
+      "sheaf",
+      "drop",
+      "one",
+      "drops",
+      "sentence",
+      "plaid"
+    ],
+    "synonyms": [
+      "sentence",
+      "plaid"
+    ],
+    "wkNames": [
+      "writing"
+    ],
+    "comment": "the sheaf is not fully connected to the top hat here"
+  },
+  "adjusted": {
+    "elements": [
+      "sentence",
+      "moon"
+    ],
+    "kanji": "斉",
+    "subElements": [
+      "sentence",
+      "moon",
+      "drop",
+      "crotch",
+      "top hat",
+      "drops",
+      "one",
+      "plaid",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "simultaneous"
+    ],
+    "comment": "structureVague: yes, elementsClose: moon"
+  },
   "pair": {
     "elements": [
       "crotch",
@@ -11539,7 +12002,8 @@ const elementsDict =
       "drop",
       "sun",
       "drops",
-      "day"
+      "day",
+      "dove"
     ],
     "synonyms": [],
     "wkNames": [
@@ -12013,6 +12477,23 @@ const elementsDict =
       "vines"
     ]
   },
+  "stamps": {
+    "elements": [
+      "box",
+      "stamp"
+    ],
+    "kanji": "抑 without 扌",
+    "subElements": [
+      "box",
+      "stamp",
+      "hood",
+      "stick"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "cat pirate"
+    ]
+  },
   "lowly": {
     "elements": [
       "drop",
@@ -12332,5 +12813,23 @@ const elementsDict =
       "slice"
     ],
     "comment": "the bottom part isn't further described in RTK, a bit vague/unique"
+  },
+  "center": {
+    "elements": [
+      "towel",
+      "large"
+    ],
+    "kanji": "央",
+    "subElements": [
+      "towel",
+      "large",
+      "hood",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "center"
+    ],
+    "comment": "structureVague: yes"
   }
 };
