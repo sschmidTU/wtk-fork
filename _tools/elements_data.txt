@@ -40,6 +40,7 @@ door; 戸; door; t(ceiling, flag)
 nun; 尼; nun; tl(flag, spoon)
 yield; 屈; yield; tl(flag, exit)
 reside; 居; alive; tl(flag, old)
+godown; 倉; warehouse; t(meeting, tl(flag, t(sun, mouth))) // structureVague: yes
 voice; 声; voice; t(samurai, o(flag, stick))
 re-=re; 戻; return; tl(door, large)
 employ; 雇; employ; tl(door, turkey) 
@@ -74,6 +75,10 @@ display; 呈; present; t(mouth, king)
 whole; 全; all; t(umbrella, king)
 courts; 廷; courts; lb(stretch, porter)
 cabbage; 謹 right part; boot; t(flowers, c(mouth, stick), grow up)
+scarecrow; 漢 right part; chinese; t(flowers, c(mouth, stick), husband) // bottom part different from cabbage
+silage; 垂 middle part; silage; c(rice field, stick) // RTK: vertical stroke will always combine with another element
+droop; 垂; dangle; t(dropB, silage, floor)
+ride; 乗; ride; c(wheat, silage) // structureVague: yes
 un-=jail cell=prison bars; 非; injustice; f(animal legs, shape, three)
 nine=baseball; 九; nine
 ninety; 枠 right part; ninety; t(nine, ten)
@@ -105,12 +110,16 @@ true; 真; reality; t(ten, eye, tool)
 upright; 貞; chastity; t(divining rod, shellfish)
 pierce; 貫; pierce; t(rice field, shellfish)
 old west; 要 top part, 価 right part; helicopter
+need; 要; need; t(old west, woman)
+ballot; 票; ballot; t(old west, altar)
+chestnut; 栗; chestnut; t(old west, tree)
 west; 西; west; t(ceiling, c(pent in, human legs))
 sign of the bird=whiskey bottle; 酉; alcohol; c(west, one)
 chieftain=molotov cocktail; 猶 right part, 酋; molotov cocktail; t(horns, sign of the bird)
-chestnut; 栗; chestnut; t(old west, tree)
 bundle=Chaplin; 束; bundle; tree, mouth
+trust; 頼; trust; l(bundle, page)
 sickness; 疒, 痒 outer part; sick
+rapidly; 疾; rapidly; tl(sickness, dart)
 not=knot=piglet's tail; 勿; wing&not
 notB; 而 bottom part; wingB&notB
 sow=pig; 豕; pig
@@ -129,6 +138,7 @@ storehouse; 蔵; storehouse; t(flowers, o(parade, retainer))
 float; 桟 right part; bar; c(fiesta, two) // apparently comes from 戔, which is also a variant for the right part
 warrior; 武; military; tr(arrowhead, stop)&one
 style; 式; ritual; tr(arrowhead, craft)
+fell; 伐; fell; l(personB, fiesta)
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 badge; 章; chapter; t(stand up, early)
@@ -169,7 +179,7 @@ house; 家; house; t(roof, sow) // in RTK originally 宀 is house, but so is 家
 crown; 冖, 冗 top part; forehead
 hood; 冂; head
 inside; 内; inside; c(hood, person)
-third class; 丙; third class; t(ceiling, inside)
+third class; 丙; dynamite; t(ceiling, inside)
 meat; 肉; meat; o(inside, person)
 same; 同; same; o(hood, creeper)
 tall; 高; tall; t(top hat, mouth, o(hood, mouth))
@@ -217,7 +227,8 @@ christmas tree; 耒; plow; c(bushes, tree)&umbrella
 half; 半; half; t(littleB, craft, stick) // or c(c(two, stick), horns)
 meadow; 原; original; o(cliff, spring)
 awl; 㑒; squid
-now; 今; now; t(umbrella, one, clothes hanger)
+now=clock; 今; now; t(umbrella, one, clothes hanger)
+wish; 念; thought; t(now, heart)
 head=page; 頁; geoduck; t(ground, oneself, animal legs); leafWK
 stinking; 臭; stinking; t(oneself, large)
 rule; 則; rule; l(shellfish, knife)
@@ -229,7 +240,10 @@ adhere; 付; attach; l(person, glue)
 substitute; 代; substitute; l(person, arrow)
 generation=generations; 世; world
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
+potato; 芋 bottom part; potato; t(dry, hook) // slight variation of dry with hook at the end
+too much; 余; surplus; t(umbrella, c(potato, animal legs))&little
 even; 平; flat; c(dry, horns)
+south; 南; south; t(ten, o(hood, t(horns, dry)))
 broom; ヨ, 雪 bottom part; wolverine // = rake/wolverine without stick through it (mostly)
 rake; 粛 top part; wolverine; c(broom, stick) // = broom with stick through it (vertical stroke)
 mop; 伊 right part; mop; c(broom, dropB)&rake
@@ -237,7 +251,9 @@ brush; 聿, 津 right part, 書 top part; brush; t(rake, c(dry, stick))&broom //
 write; 書; write; t(brush, sun)
 old boy=buddy=you; 君; buddy; t(mop, mouth)
 tickle; 浸 right part; tickle; t(broom, crown, crotch) // not named in WK
+concurrently; 兼; concurrently; t(horns, floor, rake, oven-fire) // structureVague: yes
 gates; 門; gates
+interval; 間; interval; o(gates, sun)
 cocoon; 幺, 幼 left part; poop; elbow
 two cocoons=cocoon2; 慈 middle part; two poops; l(cocoon, cocoon)
 how many; 幾; how many; tr(c(fiesta, two cocoons), person)
@@ -248,6 +264,8 @@ cactus; 聯 bottom right part; cactus
 car; 車; car; t(ten, rice field, ten)
 army; 軍; army; t(crown, car)
 east; 東; east; t(ten, rice field, person, stick)
+heavy; 重; heavy; t(thousand, car, soil) // structureVague: yes
+move; 動; move; l(heavy, power)
 human legs; 儿; legs
 animal legs; ハ, 只 bottom part; fins // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
@@ -257,7 +275,6 @@ few; 少; few; t(little, dropB)
 father; 父; father; t(animal legs, sheaf)
 mingle; 交; mix; t(top hat, father)
 portent=omen; 兆; omen; c(human legs, drop4)&ice
-too much; 余; surplus; t(umbrella, dry, little)
 ray; 光; sunlight; t(littleB, pi)
 pi; 光 bottom part; pi; t(ceiling, human legs)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
@@ -319,6 +336,7 @@ file; 列; row; l(bones, saber)
 death; 死; death; t(ceiling, l(evening, spoon))&bones
 name; 名; name; t(evening, mouth)
 ballerina=sunglasses; 舛; dance; l(evening, cow) // RTK v4 calls this sunglasses, but in rtk-search data this is ambiguous, seems like "sunglasses with one lense missing" is a vertically separated element with a variant of evening on top, something else in the middle, and cow on the bottom. Almost all the occurences of 舛 in the data have "ballerina" though.
+sunglasses with one lens missing; 韋 bottom part; sunglasses with one lens missing
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
 beginning; 元; origin; t(two, human legs); piWK
 military officer; 尉; military officer; l(tl(flag, show), glue)
@@ -331,6 +349,8 @@ altar; 礻, 礼 left part; spirit // almost same as cloak, doesn't have the diag
 cloak; 衤, 初 left part; spirit // almost same as altar, has an extra diagonal stroke on the right
 key; ユ; hook; t(straight fu, floor)
 guillotine; 決 right part; decide; t(c(key, stick), large) // maybe the subdivision here with key crossed by stick is unnecessary, but who knows.
+marquis; 侯; marquis; l(personB, t(key, dart))
+locket; 韋; korea; t(key, mouth, sunglasses with one lens missing)
 page; 頁; page; t(ceiling, drop, shellfish); leafWK
 retainer=slave; 臣; servant
 loincloth=wise; 臤; wise; 臤
@@ -369,6 +389,7 @@ cut; 切; cut; l(seven, sword)
 heavens; 天; heaven; t(ceiling, large)
 wheat=cereal=sapling; 禾, 和 left part; grain; t(drop, tree); slideWK
 dart; 矢; arrow; c(heavens, drop)
+know; 知; know; l(dart, mouth)
 autumn; 秋; autumn; l(wheat, fire)
 profit; 利; profit; l(wheat, saber)
 committee; 委; committee; t(wheat, woman)

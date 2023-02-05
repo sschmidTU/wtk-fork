@@ -719,6 +719,32 @@ const elementsDict =
       "alive"
     ]
   },
+  "godown": {
+    "elements": [
+      "meeting",
+      "flag",
+      "sun",
+      "mouth"
+    ],
+    "kanji": "倉",
+    "subElements": [
+      "meeting",
+      "flag",
+      "sun",
+      "mouth",
+      "umbrella",
+      "floor",
+      "drop",
+      "drops",
+      "day",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "warehouse"
+    ],
+    "comment": "structureVague: yes"
+  },
   "voice": {
     "elements": [
       "samurai",
@@ -1379,6 +1405,98 @@ const elementsDict =
       "boot"
     ]
   },
+  "scarecrow": {
+    "elements": [
+      "flowers",
+      "mouth",
+      "stick",
+      "husband"
+    ],
+    "kanji": "漢 right part",
+    "subElements": [
+      "flowers",
+      "mouth",
+      "stick",
+      "husband",
+      "flower",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "chinese"
+    ],
+    "comment": "bottom part different from cabbage"
+  },
+  "silage": {
+    "elements": [
+      "rice field",
+      "stick"
+    ],
+    "kanji": "垂 middle part",
+    "subElements": [
+      "rice field",
+      "stick",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "silage"
+    ],
+    "comment": "RTK: vertical stroke will always combine with another element"
+  },
+  "droop": {
+    "elements": [
+      "dropB",
+      "silage",
+      "floor"
+    ],
+    "kanji": "垂",
+    "subElements": [
+      "dropB",
+      "silage",
+      "floor",
+      "drop",
+      "rice field",
+      "stick",
+      "brains",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dangle"
+    ]
+  },
+  "ride": {
+    "elements": [
+      "wheat",
+      "silage"
+    ],
+    "kanji": "乗",
+    "subElements": [
+      "wheat",
+      "silage",
+      "drop",
+      "tree",
+      "cereal",
+      "sapling",
+      "rice field",
+      "stick",
+      "brains",
+      "drops",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ride"
+    ],
+    "comment": "structureVague: yes"
+  },
   "un-": {
     "elements": [
       "animal legs",
@@ -1914,6 +2032,52 @@ const elementsDict =
       "helicopter"
     ]
   },
+  "need": {
+    "elements": [
+      "old west",
+      "woman"
+    ],
+    "kanji": "要",
+    "subElements": [
+      "old west",
+      "woman"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "need"
+    ]
+  },
+  "ballot": {
+    "elements": [
+      "old west",
+      "altar"
+    ],
+    "kanji": "票",
+    "subElements": [
+      "old west",
+      "altar"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ballot"
+    ]
+  },
+  "chestnut": {
+    "elements": [
+      "old west",
+      "tree"
+    ],
+    "kanji": "栗",
+    "subElements": [
+      "old west",
+      "tree",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "chestnut"
+    ]
+  },
   "west": {
     "elements": [
       "ceiling",
@@ -1978,22 +2142,6 @@ const elementsDict =
       "molotov cocktail"
     ]
   },
-  "chestnut": {
-    "elements": [
-      "old west",
-      "tree"
-    ],
-    "kanji": "栗",
-    "subElements": [
-      "old west",
-      "tree",
-      "wood"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "chestnut"
-    ]
-  },
   "bundle": {
     "elements": [
       "tree",
@@ -2013,6 +2161,35 @@ const elementsDict =
       "bundle"
     ]
   },
+  "trust": {
+    "elements": [
+      "bundle",
+      "page"
+    ],
+    "kanji": "頼",
+    "subElements": [
+      "bundle",
+      "page",
+      "tree",
+      "mouth",
+      "wood",
+      "Chaplin",
+      "ceiling",
+      "drop",
+      "shellfish",
+      "one",
+      "drops",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "trust"
+    ]
+  },
   "sickness": {
     "elements": [],
     "kanji": "疒, 痒 outer part",
@@ -2020,6 +2197,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "sick"
+    ]
+  },
+  "rapidly": {
+    "elements": [
+      "sickness",
+      "dart"
+    ],
+    "kanji": "疾",
+    "subElements": [
+      "sickness",
+      "dart",
+      "heavens",
+      "drop",
+      "ceiling",
+      "large",
+      "drops",
+      "one",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rapidly"
     ]
   },
   "not": {
@@ -2349,6 +2548,25 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "ritual"
+    ]
+  },
+  "fell": {
+    "elements": [
+      "personB",
+      "fiesta"
+    ],
+    "kanji": "伐",
+    "subElements": [
+      "personB",
+      "fiesta",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "fell"
     ]
   },
   "dog tag": {
@@ -3113,7 +3331,7 @@ const elementsDict =
     ],
     "synonyms": [],
     "wkNames": [
-      "third class"
+      "dynamite"
     ]
   },
   "meat": {
@@ -4063,11 +4281,41 @@ const elementsDict =
       "umbrella",
       "one",
       "clothes hanger",
-      "coat hanger"
+      "coat hanger",
+      "clock"
+    ],
+    "synonyms": [
+      "clock"
+    ],
+    "wkNames": [
+      "now"
+    ]
+  },
+  "wish": {
+    "elements": [
+      "now",
+      "heart"
+    ],
+    "kanji": "念",
+    "subElements": [
+      "now",
+      "heart",
+      "umbrella",
+      "one",
+      "clothes hanger",
+      "coat hanger",
+      "clock",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
-      "now"
+      "thought"
     ]
   },
   "head": {
@@ -4286,6 +4534,54 @@ const elementsDict =
     ],
     "comment": "RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses \"dry\" for the next kanji."
   },
+  "potato": {
+    "elements": [
+      "dry",
+      "hook"
+    ],
+    "kanji": "芋 bottom part",
+    "subElements": [
+      "dry",
+      "hook",
+      "ceiling",
+      "ten",
+      "one",
+      "needle",
+      "clothesline"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "potato"
+    ],
+    "comment": "slight variation of dry with hook at the end"
+  },
+  "too much": {
+    "elements": [
+      "umbrella",
+      "potato",
+      "animal legs"
+    ],
+    "kanji": "余",
+    "subElements": [
+      "umbrella",
+      "potato",
+      "animal legs",
+      "little",
+      "dry",
+      "hook",
+      "ceiling",
+      "ten",
+      "one",
+      "needle",
+      "clothesline",
+      "stick",
+      "small"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "surplus"
+    ]
+  },
   "even": {
     "elements": [
       "dry",
@@ -4305,6 +4601,30 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "flat"
+    ]
+  },
+  "south": {
+    "elements": [
+      "ten",
+      "hood",
+      "horns",
+      "dry"
+    ],
+    "kanji": "南",
+    "subElements": [
+      "ten",
+      "hood",
+      "horns",
+      "dry",
+      "needle",
+      "animal horns",
+      "ceiling",
+      "one",
+      "clothesline"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "south"
     ]
   },
   "broom": {
@@ -4445,6 +4765,35 @@ const elementsDict =
     ],
     "comment": "not named in WK"
   },
+  "concurrently": {
+    "elements": [
+      "horns",
+      "floor",
+      "rake",
+      "oven-fire"
+    ],
+    "kanji": "兼",
+    "subElements": [
+      "horns",
+      "floor",
+      "rake",
+      "oven-fire",
+      "animal horns",
+      "one",
+      "broom",
+      "stick",
+      "drop4",
+      "drop",
+      "oven fire",
+      "barbecue",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "concurrently"
+    ],
+    "comment": "structureVague: yes"
+  },
   "gates": {
     "elements": [],
     "kanji": "門",
@@ -4452,6 +4801,22 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "gates"
+    ]
+  },
+  "interval": {
+    "elements": [
+      "gates",
+      "sun"
+    ],
+    "kanji": "間",
+    "subElements": [
+      "gates",
+      "sun",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "interval"
     ]
   },
   "cocoon": {
@@ -4647,6 +5012,62 @@ const elementsDict =
       "east"
     ]
   },
+  "heavy": {
+    "elements": [
+      "thousand",
+      "car",
+      "soil"
+    ],
+    "kanji": "重",
+    "subElements": [
+      "thousand",
+      "car",
+      "soil",
+      "drop",
+      "ten",
+      "drops",
+      "needle",
+      "one thousand",
+      "rice field",
+      "brains",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "heavy"
+    ],
+    "comment": "structureVague: yes"
+  },
+  "move": {
+    "elements": [
+      "heavy",
+      "power"
+    ],
+    "kanji": "動",
+    "subElements": [
+      "heavy",
+      "power",
+      "thousand",
+      "car",
+      "soil",
+      "drop",
+      "ten",
+      "drops",
+      "needle",
+      "one thousand",
+      "rice field",
+      "brains",
+      "dirt",
+      "ground",
+      "muscle",
+      "arnold"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "move"
+    ]
+  },
   "human legs": {
     "elements": [],
     "kanji": "儿",
@@ -4795,32 +5216,6 @@ const elementsDict =
     ],
     "wkNames": [
       "omen"
-    ]
-  },
-  "too much": {
-    "elements": [
-      "umbrella",
-      "dry",
-      "little"
-    ],
-    "kanji": "余",
-    "subElements": [
-      "umbrella",
-      "dry",
-      "little",
-      "ceiling",
-      "ten",
-      "one",
-      "needle",
-      "clothesline",
-      "animal legs",
-      "stick",
-      "hook",
-      "small"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "surplus"
     ]
   },
   "ray": {
@@ -5910,6 +6305,15 @@ const elementsDict =
     ],
     "comment": "RTK v4 calls this sunglasses, but in rtk-search data this is ambiguous, seems like \"sunglasses with one lense missing\" is a vertically separated element with a variant of evening on top, something else in the middle, and cow on the bottom. Almost all the occurences of 舛 in the data have \"ballerina\" though."
   },
+  "sunglasses with one lens missing": {
+    "elements": [],
+    "kanji": "韋 bottom part",
+    "subElements": [],
+    "synonyms": [],
+    "wkNames": [
+      "sunglasses with one lens missing"
+    ]
+  },
   "show": {
     "elements": [
       "two",
@@ -6143,6 +6547,54 @@ const elementsDict =
       "decide"
     ],
     "comment": "maybe the subdivision here with key crossed by stick is unnecessary, but who knows."
+  },
+  "marquis": {
+    "elements": [
+      "personB",
+      "key",
+      "dart"
+    ],
+    "kanji": "侯",
+    "subElements": [
+      "personB",
+      "key",
+      "dart",
+      "straight fu",
+      "floor",
+      "fuB",
+      "one",
+      "heavens",
+      "drop",
+      "ceiling",
+      "large",
+      "drops",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "marquis"
+    ]
+  },
+  "locket": {
+    "elements": [
+      "key",
+      "mouth",
+      "sunglasses with one lens missing"
+    ],
+    "kanji": "韋",
+    "subElements": [
+      "key",
+      "mouth",
+      "sunglasses with one lens missing",
+      "straight fu",
+      "floor",
+      "fuB",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "korea"
+    ]
   },
   "page": {
     "elements": [
@@ -6835,6 +7287,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "arrow"
+    ]
+  },
+  "know": {
+    "elements": [
+      "dart",
+      "mouth"
+    ],
+    "kanji": "知",
+    "subElements": [
+      "dart",
+      "mouth",
+      "heavens",
+      "drop",
+      "ceiling",
+      "large",
+      "one",
+      "St. Bernard",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "know"
     ]
   },
   "autumn": {
