@@ -1149,7 +1149,7 @@ const elementsDict =
       "life"
     ]
   },
-  "cornstak": {
+  "cornstalk": {
     "elements": [
       "soil",
       "stick"
@@ -1176,6 +1176,10 @@ const elementsDict =
       "bonsai",
       "cornstalk",
       "husband",
+      "soil",
+      "stick",
+      "dirt",
+      "ground",
       "ten",
       "large",
       "tree",
@@ -1636,6 +1640,46 @@ const elementsDict =
     "wkNames": [
       "wish"
     ]
+  },
+  "spirit": {
+    "elements": [
+      "energy",
+      "sheaf"
+    ],
+    "kanji": "気",
+    "subElements": [
+      "energy",
+      "sheaf",
+      "reclining",
+      "one",
+      "clothes hanger",
+      "lying down",
+      "coat hanger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "energy"
+    ]
+  },
+  "energy": {
+    "elements": [
+      "reclining",
+      "one",
+      "clothes hanger"
+    ],
+    "kanji": "汽 right part",
+    "subElements": [
+      "reclining",
+      "one",
+      "clothes hanger",
+      "lying down",
+      "coat hanger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "energy"
+    ],
+    "comment": "only WK has this element, not RTK"
   },
   "hand": {
     "elements": [],
@@ -3079,10 +3123,34 @@ const elementsDict =
     ]
   },
   "box": {
-    "elements": [],
+    "elements": [
+      "two",
+      "stick"
+    ],
     "kanji": "匚, 区 outer part",
-    "subElements": [],
+    "subElements": [
+      "two",
+      "stick"
+    ],
     "synonyms": [],
+    "wkNames": [
+      "cage"
+    ]
+  },
+  "boxB": {
+    "elements": [
+      "two",
+      "stick"
+    ],
+    "kanji": "兜 top right part",
+    "subElements": [
+      "two",
+      "stick",
+      "box"
+    ],
+    "synonyms": [
+      "box"
+    ],
     "wkNames": [
       "cage"
     ]
@@ -3164,7 +3232,9 @@ const elementsDict =
     "kanji": "区",
     "subElements": [
       "box",
-      "sheaf"
+      "sheaf",
+      "two",
+      "stick"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3228,6 +3298,7 @@ const elementsDict =
       "two",
       "convex",
       "box",
+      "stick",
       "switzerland",
       "plus",
       "red cross",
@@ -4121,6 +4192,23 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "dragon"
+    ]
+  },
+  "melon": {
+    "elements": [
+      "claw",
+      "elbow"
+    ],
+    "kanji": "瓜",
+    "subElements": [
+      "claw",
+      "elbow",
+      "drag",
+      "cliff"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "melon"
     ]
   },
   "complete": {
@@ -5123,6 +5211,26 @@ const elementsDict =
     ],
     "comment": "structureVague: yes"
   },
+  "wife": {
+    "elements": [
+      "ten",
+      "rake",
+      "woman"
+    ],
+    "kanji": "妻",
+    "subElements": [
+      "ten",
+      "rake",
+      "woman",
+      "needle",
+      "broom",
+      "stick"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "wife"
+    ]
+  },
   "gates": {
     "elements": [],
     "kanji": "門",
@@ -5965,7 +6073,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "cliff"
-    ]
+    ],
+    "comment": "mirrored: 𠃌 clothes hanger"
   },
   "drag": {
     "elements": [],
@@ -6492,6 +6601,23 @@ const elementsDict =
       "combB"
     ],
     "comment": "reverse staples/comb"
+  },
+  "grade": {
+    "elements": [
+      "staples",
+      "missile"
+    ],
+    "kanji": "段",
+    "subElements": [
+      "staples",
+      "missile",
+      "wind",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "steps"
+    ]
   },
   "comb": {
     "elements": [
@@ -7480,6 +7606,25 @@ const elementsDict =
       "funnel"
     ]
   },
+  "director": {
+    "elements": [
+      "clothes hanger",
+      "creeper"
+    ],
+    "kanji": "司",
+    "subElements": [
+      "clothes hanger",
+      "creeper",
+      "coat hanger",
+      "ceiling",
+      "mouth",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "director"
+    ]
+  },
   "big dipper": {
     "elements": [
       "stick",
@@ -7928,6 +8073,25 @@ const elementsDict =
     "wkNames": [
       "cut"
     ]
+  },
+  "barley": {
+    "elements": [
+      "grow up",
+      "walking legs"
+    ],
+    "kanji": "麦, 麺 left part",
+    "subElements": [
+      "grow up",
+      "walking legs",
+      "drop",
+      "king",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "wheat"
+    ],
+    "comment": "as an element, the last stroke is extended, as in 麺"
   },
   "heavens": {
     "elements": [
@@ -8836,6 +9000,33 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "valuable"
+    ]
+  },
+  "leather": {
+    "elements": [
+      "twenty",
+      "purse",
+      "ten"
+    ],
+    "kanji": "革",
+    "subElements": [
+      "twenty",
+      "purse",
+      "ten",
+      "flowers",
+      "shovel",
+      "one",
+      "in",
+      "floor",
+      "mouth",
+      "stick",
+      "inX",
+      "needle",
+      "flower"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "leather"
     ]
   },
   "gone": {
@@ -9850,6 +10041,28 @@ const elementsDict =
     ],
     "comment": "similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer"
   },
+  "come": {
+    "elements": [
+      "not yet",
+      "horns"
+    ],
+    "kanji": "来",
+    "subElements": [
+      "not yet",
+      "horns",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "come"
+    ]
+  },
   "vermillion": {
     "elements": [
       "not yet",
@@ -10773,13 +10986,15 @@ const elementsDict =
     "elements": [],
     "kanji": "尤",
     "subElements": [
-      "dog"
+      "dog",
+      "chihuahua with one human leg"
     ],
     "synonyms": [
-      "dog"
+      "dog",
+      "chihuahua with one human leg"
     ],
     "wkNames": [
-      "dog with one leg"
+      "pirate"
     ]
   },
   "eight": {
@@ -11894,6 +12109,35 @@ const elementsDict =
       "inn"
     ]
   },
+  "mask": {
+    "elements": [
+      "ceiling",
+      "drop",
+      "pent in",
+      "eye"
+    ],
+    "kanji": "面",
+    "subElements": [
+      "ceiling",
+      "drop",
+      "pent in",
+      "eye",
+      "hundred",
+      "oneself",
+      "one",
+      "drops",
+      "white",
+      "sun",
+      "day",
+      "dove",
+      "nose"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "face"
+    ],
+    "comment": "structureVague: yes"
+  },
   "rice field": {
     "elements": [],
     "kanji": "田",
@@ -12235,6 +12479,26 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "boat"
+    ]
+  },
+  "carrier": {
+    "elements": [
+      "boat",
+      "missile"
+    ],
+    "kanji": "般",
+    "subElements": [
+      "boat",
+      "missile",
+      "drop",
+      "wind",
+      "stick",
+      "drops",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "generally"
     ]
   },
   "dispose": {
@@ -13045,8 +13309,9 @@ const elementsDict =
     "subElements": [
       "box",
       "stamp",
-      "hood",
-      "stick"
+      "two",
+      "stick",
+      "hood"
     ],
     "synonyms": [],
     "wkNames": [

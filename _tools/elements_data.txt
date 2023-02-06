@@ -62,7 +62,7 @@ lord; 主; master; t(drop, king)
 grow up; 青 top part; life; t(drop, king)
 bushes; 峰 bottom right part; bushes; t(grow up, stick)
 bushesB=bushes; 邦 left part; bushes&life; t(grow up, dropB)
-cornstak; 俸 bottom right part; dry; t(soil, stick)
+cornstalk; 俸 bottom right part; dry; t(soil, stick)
 dedicate=observance; 奉; dedicate; t(bonsai, cornstalk)
 life=cell; 生; life; c(grow up, dropB)
 star; 星; star; t(sun, life)
@@ -87,6 +87,8 @@ ten=needle; 十; ten&cross
 thousand=one thousand; 千; thousand; t(drop, ten); slideWK
 sheaf; 爻 top or bottom part; treasure
 hope; 希; wish; t(sheaf, linen)
+spirit; 気; energy; tr(energy, sheaf)
+energy; 汽 right part; energy; t(reclining, one, clothes hanger) // only WK has this element, not RTK
 hand; 手; hand
 fur; 毛; fur
 from=fist; 乃; stairs
@@ -163,7 +165,8 @@ dropB; 少 bottom part; slide; drop
 heart; 心; heart; o(drop3, fishhook)
 invariably; 必; certain; c(heart, dropB)
 favor=favour; 恵; favor; t(ten, rice field, heart)
-box; 匚, 区 outer part; cage
+box; 匚, 区 outer part; cage; c(two, stick)
+boxB=box; 兜 top right part; cage; c(two, stick)
 shovel; 凵; box // unfortunately, RTK shovel is WK box, and RTK box is WK cage
 twenty; 廿; twenty; c(shovel, one) // unfortunately in WK 廾 is also twenty
 sweet=wicker basket; 甘; sweet; c(twenty, one)&sun
@@ -218,6 +221,7 @@ by means of; 以; from; l(straightened hook, drop, person)
 prefecture; 県; prefecture; t(lb(straightened hook, eye), little)
 eel; 俺 bottom right part; eel; t(rice field, fishhook) // fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke
 dragon; 竜; dragon; t(stand up, eel)
+melon; 瓜; melon; c(claw, elbow)&drag&hood
 complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 row=upside down in a row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
@@ -266,6 +270,7 @@ write; 書; write; t(brush, sun)
 old boy=buddy=you; 君; buddy; t(mop, mouth)
 tickle; 浸 right part; tickle; t(broom, crown, crotch) // not named in WK
 concurrently; 兼; concurrently; t(horns, floor, rake, oven-fire) // structureVague: yes
+wife; 妻; wife; t(ten, rake, woman)
 gates; 門; gates
 interval; 間; interval; o(gates, sun)
 cocoon; 幺, 幼 left part; poop; elbow
@@ -312,7 +317,7 @@ roadB; 辶; 迄 left part; scooter
 stretch; 廴; yoga
 build; 建; build; lb(stretch, brush)
 street=nail=spike; 丁; street
-cliff; 厂; cliff
+cliff; 厂; cliff // mirrored: 𠃌 clothes hanger
 drag=cliff; 后 top left part; drag
 shield; 盾; shield; tl(drag, t(ten, eye))&oneself
 fu; フ; fu // doesn't exist in RTK or WK, but useful sub-element
@@ -341,6 +346,7 @@ five; 五; five
 tile; 瓦; tile; c(five, drop)
 staples; 印 left part; comb
 staplesB; 臼 right part; combB // reverse staples/comb
+grade; 段; steps; l(staples, missile)
 comb; 而; rake; t(ceiling, drop, notB)
 demand; 需; demand; t(rain, comb)
 reclining=lying down; 𠂉, 乞 top part; gun
@@ -392,6 +398,7 @@ decameron; 旬; in season; tr(bound up, sun)
 angle; 角; angle; t(bound up, t(rice field, fenceposts)) // structureVague: yes
 again; 再; again; t(ceiling, sprout, fence posts); leafWK // structureVague: yes
 funnel; 冓; funnel; t(celery, again)
+director; 司; director; tr(clothes hanger, creeper)
 big dipper=measuring cup; 斗; ladle; c(c(stick, one), drop2)
 poem; 敬 left part; poem; t(flowers, phrase)
 awe; 敬; respect; l(poem, taskmaster)
@@ -416,6 +423,7 @@ visit; 参; participate; t(elbow, large, shape)
 six; 六; six; t(top hat, animal legs)
 seven=diced; 七; seven
 cut; 切; cut; l(seven, sword)
+barley; 麦, 麺 left part; wheat; t(grow up, walking legs) // as an element, the last stroke is extended, as in 麺
 heavens; 天; heaven; t(ceiling, large)
 wheat=cereal=sapling; 禾, 和 left part; grain; t(drop, tree); slideWK
 dart; 矢; arrow; c(heavens, drop)
@@ -464,6 +472,7 @@ in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes 
 insect; 虫; insect; t(in, l(floor, drop))
 purse; 貴 top part; purse; t(in, floor) // not named in WK
 precious; 貴; valuable; t(purse, shellfish)
+leather; 革; leather; t(twenty, purse, ten)&flowers
 gone; 去; past; t(soil, elbow)
 history; 史; history; t(in, length) // structureVague: yes
 officer; 吏; officer; c(history, one)
@@ -511,6 +520,7 @@ scissors; 峡 right part; scissors; c(husband, horns) // don't confuse with scis
 scissorsB=scissors; 鋏 right part, 頰 left part; scissors; scissors // variant of scissors
 not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
+come; 来; come; c(not yet, horns)
 vermillion; 朱; vermillion; c(not yet, dropB)
 lose; 失; fault; c(husband, dropB)
 approve; 賛; agree; t(l(husband, husband), shellfish)
@@ -564,7 +574,7 @@ sitting in meditation; 坐; sitting in meditation; c(soil, assembly line)
 large=St. Bernard; 大; big
 plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
-dog with one leg=dog; 尤; dog with one leg
+dog with one leg=dog=chihuahua with one human leg; 尤; pirate
 eight; 八; eight // similar to ハ animal legs
 eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
 public; 公; public; t(eight, elbow)
@@ -626,6 +636,7 @@ mandala; 曼; mandala; t(sun, eyeB, crotch) // not named in WK
 hundred; 百; hundred; t(ceiling, white)
 neck; 首; neck; t(horns, one, oneself)
 inn; 宿; inn; t(roof, l(person, hundred))
+mask; 面; face; t(ceiling, drop, o(pent in, eye))&hundred, oneself // structureVague: yes
 rice field=brains; 田; rice field
 armor=armour=roots; 甲; turtle shell; t(rice field, stick)
 speaketh=monkey; 申; say humbly; t(stick, armor)
@@ -647,6 +658,7 @@ windB; 風; wind; o(wind, insect) // this is stupidly ambiguous in RTK, as 几 i
 mediocre; 凡; mediocre; o(wind, drop)
 whirlwind=high spirits; 亢; whirlwind
 boat; 舟; boat; t(drop, o(wind, t(drop, stick)))
+carrier; 般; generally; l(boat, missile)
 dispose; 処; deal with; lb(walking legs, wind)
 barge; 恐 top part; saw; l(craft, mediocre) // not named in my RTK copy, but in the pre-existing rtk-search data
 crotch; 又; stool
