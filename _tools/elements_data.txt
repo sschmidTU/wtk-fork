@@ -704,7 +704,7 @@ cornucopia=vine; 丩; vines; t(shovel, stick)
 stamps; 抑 without 扌; cat pirate; l(box, stamp)
 lowly; 卑; lowly; t(drop, rice field, cornucopia)
 chop-seal; 令 bottom part, 卩 with longer top stroke; stamp; tr(clothes hanger, stick)
-chop-sealB; 矛 top part, 勇 top part; mama
+chop-sealB; マ, 矛 top part, 勇 top part; mama
 orders=order; 令; orders; t(meeting, chop-seal)
 courage; 勇; courage; t(chop-sealB, man)
 instead; 却; contrary; l(gone, stamp)

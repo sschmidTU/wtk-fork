@@ -13358,7 +13358,7 @@ const elementsDict =
   },
   "chop-sealB": {
     "elements": [],
-    "kanji": "矛 top part, 勇 top part",
+    "kanji": "マ, 矛 top part, 勇 top part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
