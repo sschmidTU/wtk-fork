@@ -13172,8 +13172,10 @@ const elementsDict =
       "chop-sealB",
       "street",
       "fu",
+      "drop",
       "nail",
-      "spike"
+      "spike",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
@@ -13357,9 +13359,16 @@ const elementsDict =
     ]
   },
   "chop-sealB": {
-    "elements": [],
+    "elements": [
+      "fu",
+      "drop"
+    ],
     "kanji": "マ, 矛 top part, 勇 top part",
-    "subElements": [],
+    "subElements": [
+      "fu",
+      "drop",
+      "drops"
+    ],
     "synonyms": [],
     "wkNames": [
       "mama"
@@ -13398,6 +13407,9 @@ const elementsDict =
     "subElements": [
       "chop-sealB",
       "man",
+      "fu",
+      "drop",
+      "drops",
       "rice field",
       "power",
       "brains",
@@ -13545,6 +13557,7 @@ const elementsDict =
       "one",
       "St. Bernard",
       "drops",
+      "fu",
       "critters",
       "mending",
       "mend"
