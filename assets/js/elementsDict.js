@@ -2502,6 +2502,21 @@ const elementsDict =
     ],
     "comment": "main name is screwdriver in RTK, but probably most people will forget that after they're familiar with the kanji keyword utilize"
   },
+  "utilizeB": {
+    "elements": [],
+    "kanji": "猟 bottom right part",
+    "subElements": [
+      "utilise",
+      "screwdriver"
+    ],
+    "synonyms": [
+      "utilise",
+      "screwdriver"
+    ],
+    "wkNames": [
+      "task"
+    ]
+  },
   "arrowhead": {
     "elements": [],
     "kanji": "代 right part",
@@ -3742,6 +3757,28 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "grass"
+    ]
+  },
+  "simple": {
+    "elements": [
+      "owl",
+      "rice field",
+      "ten"
+    ],
+    "kanji": "単",
+    "subElements": [
+      "owl",
+      "rice field",
+      "ten",
+      "drop3",
+      "drop",
+      "drops",
+      "brains",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "simple"
     ]
   },
   "schoolhouse": {
@@ -6660,6 +6697,22 @@ const elementsDict =
       "demand"
     ]
   },
+  "long": {
+    "elements": [
+      "staples",
+      "hairpin"
+    ],
+    "kanji": "長",
+    "subElements": [
+      "staples",
+      "hairpin"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "long"
+    ],
+    "comment": "staples has straight strokes here, rather like ヨ broom reversed"
+  },
   "reclining": {
     "elements": [],
     "kanji": "𠂉, 乞 top part",
@@ -7777,6 +7830,36 @@ const elementsDict =
     ],
     "comment": "Note that this radical in RTK explicitly includes the フ shape around the \"oven-fire\"-like short strokes. don't confuse with oven-fire (RTK) radical."
   },
+  "bird": {
+    "elements": [
+      "white",
+      "slingshot",
+      "tail feathers"
+    ],
+    "kanji": "鳥",
+    "subElements": [
+      "white",
+      "slingshot",
+      "tail feathers",
+      "drop",
+      "sun",
+      "drops",
+      "day",
+      "dove",
+      "snare",
+      "clothes hanger",
+      "oven-fire",
+      "coat hanger",
+      "drop4",
+      "drop",
+      "oven fire",
+      "barbecue"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bird"
+    ]
+  },
   "feathers": {
     "elements": [
       "clothes hanger2",
@@ -8056,6 +8139,26 @@ const elementsDict =
     "wkNames": [
       "seven"
     ]
+  },
+  "lock of hair": {
+    "elements": [
+      "dropB",
+      "seven"
+    ],
+    "kanji": "乇",
+    "subElements": [
+      "dropB",
+      "seven",
+      "drop",
+      "drops",
+      "diced"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "slide",
+      "seven"
+    ],
+    "comment": "RTK says this is derived from 毛 fur"
   },
   "cut": {
     "elements": [
@@ -8342,9 +8445,12 @@ const elementsDict =
     "subElements": [
       "noon",
       "turkey",
-      "sign of the horse"
+      "sign of the horse",
+      "turkey house"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "turkey house"
+    ],
     "wkNames": [
       "pegasus"
     ],
@@ -8591,9 +8697,12 @@ const elementsDict =
     ]
   },
   "waterC": {
-    "elements": [],
+    "elements": [
+      "sprinkler"
+    ],
     "kanji": "泰 bottom part",
     "subElements": [
+      "sprinkler",
       "waterB",
       "water",
       "grains of rice"
@@ -11157,6 +11266,7 @@ const elementsDict =
       "flower",
       "one",
       "together",
+      "sprinkler",
       "waterB",
       "water",
       "grains of rice",
@@ -11970,6 +12080,25 @@ const elementsDict =
       "most"
     ]
   },
+  "daring": {
+    "elements": [
+      "street",
+      "ear",
+      "taskmaster"
+    ],
+    "kanji": "敢",
+    "subElements": [
+      "street",
+      "ear",
+      "taskmaster",
+      "nail",
+      "spike"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "daring"
+    ]
+  },
   "shelf": {
     "elements": [
       "eye",
@@ -12209,6 +12338,27 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "rice"
+    ]
+  },
+  "animal tracks": {
+    "elements": [
+      "dropB",
+      "rice"
+    ],
+    "kanji": "釆",
+    "subElements": [
+      "dropB",
+      "rice",
+      "drop",
+      "drops",
+      "tree",
+      "horns",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "sickle"
     ]
   },
   "astray": {
@@ -13092,6 +13242,35 @@ const elementsDict =
     "wkNames": [
       "shrimp"
     ]
+  },
+  "turn": {
+    "elements": [
+      "animal tracks",
+      "rice field"
+    ],
+    "kanji": "番",
+    "subElements": [
+      "animal tracks",
+      "rice field",
+      "dropB",
+      "rice",
+      "drop",
+      "drops",
+      "tree",
+      "horns",
+      "wood",
+      "animal horns",
+      "brains",
+      "dice"
+    ],
+    "synonyms": [
+      "dice"
+    ],
+    "wkNames": [
+      "number",
+      "number in a series"
+    ],
+    "comment": "WK kanji name is \"number in a series\", but I completely forgot the \"in a series\" part."
   },
   "exhaust": {
     "elements": [

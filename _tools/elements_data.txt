@@ -134,6 +134,7 @@ regiment; 隊; squad; l(pinnacle, wart hog)
 thing; 物; thing; l(cow, not)
 easy=piggy bank; 易; easy; t(sun, not) // element is called piggy bank in RTK, but honestly that's kinda silly if we can just use the kanji name "easy".
 utilize=utilise=screwdriver; 用; task; moon, stick // main name is screwdriver in RTK, but probably most people will forget that after they're familiar with the kanji keyword utilize
+utilizeB=utilise=screwdriver; 猟 bottom right part; task
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
 fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
 request; 求; request; c(arrow, rice)&water // structureVague: yes
@@ -199,6 +200,7 @@ tall; 高; tall; t(top hat, mouth, o(hood, mouth))
 both; 両; both; t(ceiling, stick, o(hood, mountain))
 circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hood instead of hood (subelement/variant I guess)
 owl; 桜 top right part, 巣 top part; grass; drop3
+simple; 単; simple; t(owl, rice field, ten)
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
 joint; 骨 upper part; joint // doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon.
 skeleton; 骨; bone; t(joint, moon)
@@ -349,6 +351,7 @@ staplesB; 臼 right part; combB // reverse staples/comb
 grade; 段; steps; l(staples, missile)
 comb; 而; rake; t(ceiling, drop, notB)
 demand; 需; demand; t(rain, comb)
+long; 長; long; t(staples, hairpin) // staples has straight strokes here, rather like ヨ broom reversed
 reclining=lying down; 𠂉, 乞 top part; gun
 beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here
@@ -406,6 +409,7 @@ fire; 火; fire; f(person, drop, drop) // fire flanked by drop, drop
 inflammation; 炎; flame; t(fire, fire)
 oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathers, which has a kind of フ shape around it.
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
+bird; 鳥; bird; t(white, tr(slingshot, tail feathers))
 feathers; 羽; feather; clothes hanger2, drop2
 sparkler; 摂 bottom right part; explosion; t(horns, animal legs)
 music; 楽; comfort; t(o(sparkler, white), tree)
@@ -422,6 +426,7 @@ lad; 彦; lad; t(stand up, tl(cliff, shape)) // structureVague: yes, not named i
 visit; 参; participate; t(elbow, large, shape)
 six; 六; six; t(top hat, animal legs)
 seven=diced; 七; seven
+lock of hair; 乇; slide&seven; t(dropB, seven) // RTK says this is derived from 毛 fur
 cut; 切; cut; l(seven, sword)
 barley; 麦, 麺 left part; wheat; t(grow up, walking legs) // as an element, the last stroke is extended, as in 麺
 heavens; 天; heaven; t(ceiling, large)
@@ -436,7 +441,7 @@ resin; 朮, 術 middle part; angel; c(ten, drop, human legs)
 bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened when used as an element.
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 char=barbecue; 焦; char; t(turkey, oven-fire) // barbecue is not in my RTK1 book, but in the rtk-search data
-pegasus; 勧 left part, variant of 雚; pegasus; t(noon, turkey) // doesn't exist in WK (noon+turkey)
+pegasus=turkey house; 勧 left part, variant of 雚; pegasus; t(noon, turkey) // doesn't exist in WK (noon+turkey)
 flowers=flower; 艹, 若 top part; flowers
 two hands; 开; lantern; flowers
 two handsB=two hands; 廾; twenty; flowers // this specific version isn't named in RTK, seems to be called two hands, even though it's missing the top horizontal stroke
@@ -450,7 +455,7 @@ punish; 刑; punish; l(two hands, saber)
 negative=negation; 不; not; t(ceiling, c(person, stick))
 water=water droplets=water pistol; 氵; tsunami
 waterB=water; 水; water
-waterC=waterB=water=grains of rice; 泰 bottom part; water // this is close to 氷 ice, but missing the フ
+waterC=waterB=water=grains of rice; 泰 bottom part; water; sprinkler // this is close to 氷 ice, but missing the フ
 eternity; 永; eternity; t(drop, waterB)
 grains of rice; 米, 氺, 録 bottom right part; water // multiple shapes in RTK, but mainly 氺, which is water in WK.
 north; 北; north
@@ -629,6 +634,7 @@ eyeB=eye; 罒; net // also eye in RTK (ambiguouos), but net in WK. We handle thi
 ear; 耳; ear
 take; 取; take; l(ear, crotch)
 utmost; 最; most; t(sun, take)
+daring; 敢; daring; l(t(street, ear), taskmaster)
 shelf; 且, 助 left part; top hat; c(eye, one) // this is not (always) perfectly RTK(eye)+RTK(one), but close enough. bottom stroke is slightly longer than for 'eye'
 prosperous; 昌; prosperous; t(sun, sun)
 risk; 冒; dare; t(sun, eye)
@@ -641,6 +647,7 @@ rice field=brains; 田; rice field
 armor=armour=roots; 甲; turtle shell; t(rice field, stick)
 speaketh=monkey; 申; say humbly; t(stick, armor)
 rice; 米; rice; c(tree, horns)
+animal tracks; 釆; sickle; t(dropB, rice)
 astray; 迷; astray; lb(road, rice)
 soil=dirt=ground; 土; dirt
 samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal strong is longer than the lower one here.
@@ -692,6 +699,7 @@ shredder; 幣 top part; shredder; l(t(littleB, o(hood, little)), taskmaster)
 clear; 奐; clear; t(bound up, four, large)
 rag; 旅 bottom right part; tofu // actually exists in RTK indirectly, description of 旅
 shaku=shakuhachi; 尺; shrimp; tl(flag, dropB)
+turn=dice; 番; number&number in a series; t(animal tracks, rice field) // WK kanji name is "number in a series", but I completely forgot the "in a series" part.
 exhaust; 尽; exhaust; o(shaku, twoB)
 of=building blocks; 之; this; t(stick, fu, umbrellaB)
 halberd; 矛; spear; c(beforehand, dropB)
