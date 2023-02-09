@@ -603,6 +603,7 @@ state; 州; state; o(stream, drop3)
 flood=stream; 巛, 災 top part; flood // would be nice if this was only flood, not stream. dual in rtk-search
 claw; 爪; claw // similar to vulture, but longer bottom strokes
 vulture; 妥 top part; cleat // similar to claw, but smaller bottom strokes
+migrating ducks; 爰; football; t(vulture, friend)
 mountain; 山; mountain
 exit; 出; exit; t(mountain, mountain)
 secrecy=secret; 密; secret; t(roof, invariably, mountain) // WK also calls this secrecy now (patched?), though it's silly to not also accept secret.

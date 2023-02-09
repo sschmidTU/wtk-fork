@@ -11533,6 +11533,24 @@ const elementsDict =
     ],
     "comment": "similar to claw, but smaller bottom strokes"
   },
+  "migrating ducks": {
+    "elements": [
+      "vulture",
+      "friend"
+    ],
+    "kanji": "爰",
+    "subElements": [
+      "vulture",
+      "friend",
+      "by one's side",
+      "crotch",
+      "by one’s side"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "football"
+    ]
+  },
   "mountain": {
     "elements": [],
     "kanji": "山",
