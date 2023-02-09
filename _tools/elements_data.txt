@@ -295,6 +295,7 @@ little=small; 小; small; o(animal legs, t(stick, hook))
 littleB; 光 top part; triceratops; little
 few; 少; few; t(little, dropB)
 fenceposts; 粛 bottom outer parts; fenceposts; l(dropB, stick) // basically the left stick with a hook + right stick
+fencepostsB=fenceposts; 円 bottom part; fencepostsB; l(stick, hook) // similar to fenceposts, but (almost) mirrored
 red; 赤; red; t(soil, c(little, animal legs)) // structureVague: yes
 redB=red; 変 top part; red; t(top hat, c(little, animal legs)) // structureVague: yes
 father; 父; father; t(animal legs, sheaf)
@@ -399,7 +400,7 @@ ladle; 勺; ladle; o(bound up, drop) // doesn't exist in WK, which also has 斗 
 phrase; 句; poem; o(bound up, mouth)
 decameron; 旬; in season; tr(bound up, sun)
 angle; 角; angle; t(bound up, t(rice field, fenceposts)) // structureVague: yes
-again; 再; again; t(ceiling, sprout, fence posts); leafWK // structureVague: yes
+again; 再; again; t(ceiling, sprout, fence postsB); leafWK // structureVague: yes
 funnel; 冓; funnel; t(celery, again)
 director; 司; director; tr(clothes hanger, creeper)
 big dipper=measuring cup; 斗; ladle; c(c(stick, one), drop2)

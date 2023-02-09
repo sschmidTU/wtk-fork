@@ -5676,6 +5676,25 @@ const elementsDict =
     ],
     "comment": "basically the left stick with a hook + right stick"
   },
+  "fencepostsB": {
+    "elements": [
+      "stick",
+      "hook"
+    ],
+    "kanji": "円 bottom part",
+    "subElements": [
+      "stick",
+      "hook",
+      "fenceposts"
+    ],
+    "synonyms": [
+      "fenceposts"
+    ],
+    "wkNames": [
+      "fencepostsB"
+    ],
+    "comment": "similar to fenceposts, but (almost) mirrored"
+  },
   "red": {
     "elements": [
       "soil",
@@ -7608,14 +7627,14 @@ const elementsDict =
     "elements": [
       "ceiling",
       "sprout",
-      "fence posts"
+      "fence postsB"
     ],
     "elementsWK": "leafWK",
     "kanji": "再",
     "subElements": [
       "ceiling",
       "sprout",
-      "fence posts",
+      "fence postsB",
       "one",
       "drop",
       "rice field",
@@ -7642,7 +7661,7 @@ const elementsDict =
       "salad",
       "ceiling",
       "sprout",
-      "fence posts",
+      "fence postsB",
       "one",
       "drop",
       "rice field",
