@@ -215,7 +215,7 @@ fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // ac
 fishhookB=fishhook; 乚; umbrella
 straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more specific name for fishhook when it's straight
 straightaway; 直; fix; t(ten, eye, straightened hook)
-hook; 小 bottom part, 疋 end of top stroke; hook
+hook; 亅, 小 bottom part, 疋 end of top stroke; hook
 contend; 争; conflict; t(bound up, rake, hook)
 family name; 氏; clan; tl(drag, arrow, fishhook) // structureVague: yes
 people; 民; people&peoples; tl(flag, family name) // structureVague: yes
@@ -352,7 +352,7 @@ staplesB; 臼 right part; combB // reverse staples/comb
 grade; 段; steps; l(staples, missile)
 comb; 而; rake; t(ceiling, drop, notB)
 demand; 需; demand; t(rain, comb)
-long; 長; long; t(staples, hairpin) // staples has straight strokes here, rather like ヨ broom reversed
+long; 長; long; t(staples, hairpin) // staples has straight strokes here, rather like ヨ broom reversed. Also, RTK gives the primitive for this the name hair. But come on.
 reclining=lying down; 𠂉, 乞 top part; gun
 beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here

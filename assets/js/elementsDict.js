@@ -4056,7 +4056,7 @@ const elementsDict =
   },
   "hook": {
     "elements": [],
-    "kanji": "小 bottom part, 疋 end of top stroke",
+    "kanji": "亅, 小 bottom part, 疋 end of top stroke",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -6730,7 +6730,7 @@ const elementsDict =
     "wkNames": [
       "long"
     ],
-    "comment": "staples has straight strokes here, rather like ヨ broom reversed"
+    "comment": "staples has straight strokes here, rather like ヨ broom reversed. Also, RTK gives the primitive for this the name hair. But come on."
   },
   "reclining": {
     "elements": [],
