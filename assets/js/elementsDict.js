@@ -206,9 +206,16 @@ const elementsDict =
     ]
   },
   "noon": {
-    "elements": [],
+    "elements": [
+      "reclining",
+      "ten"
+    ],
     "kanji": "午",
     "subElements": [
+      "reclining",
+      "ten",
+      "lying down",
+      "needle",
       "sign of the horse"
     ],
     "synonyms": [
@@ -216,7 +223,8 @@ const elementsDict =
     ],
     "wkNames": [
       "noon"
-    ]
+    ],
+    "comment": "RTK also calls this horse, but there's another horse element (and kanji)."
   },
   "cow": {
     "elements": [],
@@ -4296,6 +4304,29 @@ const elementsDict =
     ],
     "comment": "line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed."
   },
+  "void": {
+    "elements": [
+      "tiger",
+      "row"
+    ],
+    "kanji": "虚",
+    "subElements": [
+      "tiger",
+      "row",
+      "divining rod",
+      "cliff",
+      "seven",
+      "upside down in a row",
+      "wand",
+      "magic wand",
+      "augury",
+      "diced"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "void"
+    ]
+  },
   "virtuous": {
     "elements": [
       "sheep",
@@ -6192,6 +6223,27 @@ const elementsDict =
     ],
     "comment": "doesn't exist in RTK or WK, but useful sub-element"
   },
+  "tiger": {
+    "elements": [
+      "divining rod",
+      "cliff",
+      "seven"
+    ],
+    "kanji": "虍, 虎 outer part",
+    "subElements": [
+      "divining rod",
+      "cliff",
+      "seven",
+      "wand",
+      "magic wand",
+      "augury",
+      "diced"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tiger"
+    ]
+  },
   "axe": {
     "elements": [
       "cliff",
@@ -6724,9 +6776,12 @@ const elementsDict =
     "kanji": "長",
     "subElements": [
       "staples",
-      "hairpin"
+      "hairpin",
+      "mane"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "mane"
+    ],
     "wkNames": [
       "long"
     ],
@@ -7571,7 +7626,7 @@ const elementsDict =
     ],
     "synonyms": [],
     "wkNames": [
-      "poem"
+      "paragraph"
     ]
   },
   "decameron": {
@@ -8464,6 +8519,10 @@ const elementsDict =
     "subElements": [
       "noon",
       "turkey",
+      "reclining",
+      "ten",
+      "lying down",
+      "needle",
       "sign of the horse",
       "turkey house"
     ],
@@ -8474,6 +8533,34 @@ const elementsDict =
       "pegasus"
     ],
     "comment": "doesn't exist in WK (noon+turkey)"
+  },
+  "horse": {
+    "elements": [
+      "turkey",
+      "clothes hanger",
+      "tail feathers"
+    ],
+    "kanji": "馬",
+    "subElements": [
+      "turkey",
+      "clothes hanger",
+      "tail feathers",
+      "coat hanger",
+      "oven-fire",
+      "drop4",
+      "drop",
+      "drops",
+      "oven fire",
+      "barbecue",
+      "team of horses"
+    ],
+    "synonyms": [
+      "team of horses"
+    ],
+    "wkNames": [
+      "horse"
+    ],
+    "comment": "structureVague: yes"
   },
   "flowers": {
     "elements": [],
@@ -9084,6 +9171,60 @@ const elementsDict =
       "insect"
     ]
   },
+  "belong": {
+    "elements": [
+      "flag",
+      "insect",
+      "hood"
+    ],
+    "kanji": "属",
+    "subElements": [
+      "flag",
+      "insect",
+      "hood",
+      "mouth",
+      "drop",
+      "drops",
+      "in",
+      "floor",
+      "stick",
+      "inX",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "belong"
+    ]
+  },
+  "talking cricket": {
+    "elements": [
+      "rice field",
+      "hood",
+      "stick",
+      "elbow"
+    ],
+    "kanji": "禺",
+    "subElements": [
+      "rice field",
+      "hood",
+      "stick",
+      "elbow",
+      "insect",
+      "brains",
+      "in",
+      "floor",
+      "drop",
+      "mouth",
+      "inX",
+      "one",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "splinter"
+    ],
+    "comment": "insect isn't complete here, but it's related."
+  },
   "purse": {
     "elements": [
       "in",
@@ -9644,6 +9785,32 @@ const elementsDict =
       "excuse"
     ],
     "comment": "original primitive called \"village stocks\" in RTK, though excuse seems better as that's also the kanji keyword"
+  },
+  "elephant": {
+    "elements": [
+      "bound up",
+      "mouth",
+      "stick",
+      "sow"
+    ],
+    "kanji": "象",
+    "subElements": [
+      "bound up",
+      "mouth",
+      "stick",
+      "sow",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "elephant"
+    ]
   },
   "oneself": {
     "elements": [
@@ -10485,6 +10652,25 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "rib"
+    ]
+  },
+  "stomach": {
+    "elements": [
+      "rice field",
+      "moon"
+    ],
+    "kanji": "胃",
+    "subElements": [
+      "rice field",
+      "moon",
+      "brains",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "stomach"
     ]
   },
   "child": {
@@ -11570,6 +11756,24 @@ const elementsDict =
       "football"
     ]
   },
+  "skunk": {
+    "elements": [
+      "vulture",
+      "pack of wild dogs"
+    ],
+    "kanji": "豸",
+    "subElements": [
+      "vulture",
+      "pack of wild dogs",
+      "badger"
+    ],
+    "synonyms": [
+      "badger"
+    ],
+    "wkNames": [
+      "badger"
+    ]
+  },
   "mountain": {
     "elements": [],
     "kanji": "山",
@@ -11626,6 +11830,98 @@ const elementsDict =
       "secret"
     ],
     "comment": "WK also calls this secrecy now (patched?), though it's silly to not also accept secret."
+  },
+  "mountain goat": {
+    "elements": [
+      "horns",
+      "ceiling",
+      "mountain",
+      "dropB"
+    ],
+    "kanji": "屰",
+    "subElements": [
+      "horns",
+      "ceiling",
+      "mountain",
+      "dropB",
+      "animal horns",
+      "one",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "barracks"
+    ],
+    "comment": "WK doesn't distinguish between 屯 (earthworm) and 屰"
+  },
+  "mount": {
+    "elements": [
+      "hood",
+      "mountain goat"
+    ],
+    "kanji": "岡",
+    "subElements": [
+      "hood",
+      "mountain goat",
+      "horns",
+      "ceiling",
+      "mountain",
+      "dropB",
+      "animal horns",
+      "one",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "mount"
+    ],
+    "comment": "mountain goat is incomplete here, missing dropB (bottom curve). structureVague: yes"
+  },
+  "tin can": {
+    "elements": [
+      "noon",
+      "mountain"
+    ],
+    "kanji": "缶",
+    "subElements": [
+      "noon",
+      "mountain",
+      "reclining",
+      "ten",
+      "lying down",
+      "needle",
+      "sign of the horse"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tin can"
+    ],
+    "comment": "top-down/crossing/melting"
+  },
+  "condor": {
+    "elements": [
+      "cleat",
+      "dry",
+      "mountain"
+    ],
+    "kanji": "瑶 right part, 䍃",
+    "subElements": [
+      "cleat",
+      "dry",
+      "mountain",
+      "ceiling",
+      "ten",
+      "one",
+      "needle",
+      "clothesline"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "condor"
+    ],
+    "comment": "top-down/crossing/melting"
   },
   "teepee": {
     "elements": [],

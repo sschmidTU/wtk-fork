@@ -10,7 +10,7 @@ power=muscle=arnold; 力; power
 triceps=cooperate; 劦; cooperate; t(power, l(power, power))
 man=male; 男; man; t(rice field, power)
 add; 加; add; l(power, mouth)
-noon=sign of the horse; 午; noon
+noon=sign of the horse; 午; noon; t(reclining, ten) // RTK also calls this horse, but there's another horse element (and kanji).
 cow; 牛; cow
 cowB=cow; 降 bottom right part; cowB
 revelation; 告; announce; t(cow, mouth)
@@ -227,6 +227,7 @@ melon; 瓜; melon; c(claw, elbow)&drag&hood
 complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
 row=upside down in a row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
+void; 虚; void; tl(tiger, row)
 virtuous; 善; morally good; t(sheep, row, mouth)
 profession; 業; business; t(upside down in a row, sheep, tree) // structureVague: yes
 meeting; 合 top part; hat&ground; t(umbrella, floor) // WK "meet" radical is 会
@@ -325,6 +326,7 @@ drag=cliff; 后 top left part; drag
 shield; 盾; shield; tl(drag, t(ten, eye))&oneself
 fu; フ; fu // doesn't exist in RTK or WK, but useful sub-element
 straight fu=fuB; 片 bottom right part; straight fu // doesn't exist in RTK or WK, but useful sub-element
+tiger; 虍, 虎 outer part; tiger; t(divining rod, tl(cliff, seven))
 axe=ax; 斤; axe; tl(cliff, street) // RTK has ax as the main name, but I can't be bothered to spell it in Old English ;)
 reject; 斥; reject; c(axe, dropB)
 hill; 丘; hill; t(axe, floor)
@@ -352,7 +354,7 @@ staplesB; 臼 right part; combB // reverse staples/comb
 grade; 段; steps; l(staples, missile)
 comb; 而; rake; t(ceiling, drop, notB)
 demand; 需; demand; t(rain, comb)
-long; 長; long; t(staples, hairpin) // staples has straight strokes here, rather like ヨ broom reversed. Also, RTK gives the primitive for this the name hair. But come on.
+long=mane; 長; long; t(staples, hairpin) // staples has straight strokes here, rather like ヨ broom reversed. Also, RTK gives the primitive for this the name hair. But come on.
 reclining=lying down; 𠂉, 乞 top part; gun
 beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here
@@ -397,7 +399,7 @@ bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)&rec
 long time; 久; long time; c(bound up, dropB)
 aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop) // doesn't exist in WK, which also has 斗 ladle unfortunately
-phrase; 句; poem; o(bound up, mouth)
+phrase; 句; paragraph; o(bound up, mouth)
 decameron; 旬; in season; tr(bound up, sun)
 angle; 角; angle; t(bound up, t(rice field, fenceposts)) // structureVague: yes
 again; 再; again; t(ceiling, sprout, fence postsB); leafWK // structureVague: yes
@@ -443,6 +445,7 @@ bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened w
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 char=barbecue; 焦; char; t(turkey, oven-fire) // barbecue is not in my RTK1 book, but in the rtk-search data
 pegasus=turkey house; 勧 left part, variant of 雚; pegasus; t(noon, turkey) // doesn't exist in WK (noon+turkey)
+horse=team of horses; 馬; horse; t(turkey, tr(clothes hanger, tail feathers)) // structureVague: yes
 flowers=flower; 艹, 若 top part; flowers
 two hands; 开; lantern; flowers
 two handsB=two hands; 廾; twenty; flowers // this specific version isn't named in RTK, seems to be called two hands, even though it's missing the top horizontal stroke
@@ -476,6 +479,8 @@ pack of wild dogs; 狂 left part; animal
 sort of thing; 然; nature; t(l(evening, dog), oven-fire)
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
+belong; 属; belong; tl(flag, c(insect, hood))
+talking cricket; 禺; splinter; t(rice field, o(c(hood, stick), elbow))&insect // insect isn't complete here, but it's related.
 purse; 貴 top part; purse; t(in, floor) // not named in WK
 precious; 貴; valuable; t(purse, shellfish)
 leather; 革; leather; t(twenty, purse, ten)&flowers
@@ -502,6 +507,7 @@ nightbreak; 旦; dawn; t(sun, floor)
 span; 亘; dawn; t(ceiling, nightbreak)
 quantity; 量; amount; t(nightbreak, ri)
 excuse=village stocks=rabbit; 免; excuse; t(bound up, c(mouth, stick), human legs) // original primitive called "village stocks" in RTK, though excuse seems better as that's also the kanji keyword
+elephant; 象; elephant; t(bound up, c(mouth, stick), sow)
 oneself=nose; 自; self; t(drop, eye)
 snake=self; 己; oneself // unfortunately the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK
 wrap; 包; wrap; t(bound up, snake) // structureVague: yes: not quite top-down, it's also entwined
@@ -544,6 +550,7 @@ moon=month=flesh=part of the body; 月; moon
 companion; 朋; companion; l(moon, moon) // kanji/radical not on WK
 bright; 明; bright; l(sun, moon)
 rib; 肋; rib; l(moon, power)
+stomach; 胃; stomach; t(rice field, moon)
 child; 子; child
 fingers=finger; 扌, 招 left part; fingers
 ego; 我; ego; l(fingers, fiesta) // kanji name in WK is I, but radical name is ego. I is also ambiguous. structureVague: yes
@@ -605,9 +612,14 @@ flood=stream; 巛, 災 top part; flood // would be nice if this was only flood, 
 claw; 爪; claw // similar to vulture, but longer bottom strokes
 vulture; 妥 top part; cleat // similar to claw, but smaller bottom strokes
 migrating ducks; 爰; football; t(vulture, friend)
+skunk=badger; 豸; badger; t(vulture, pack of wild dogs)
 mountain; 山; mountain
 exit; 出; exit; t(mountain, mountain)
 secrecy=secret; 密; secret; t(roof, invariably, mountain) // WK also calls this secrecy now (patched?), though it's silly to not also accept secret.
+mountain goat; 屰; barracks; t(horns, ceiling, mountain, dropB) // WK doesn't distinguish between 屯 (earthworm) and 屰
+mount; 岡; mount; o(hood, mountain goat) // mountain goat is incomplete here, missing dropB (bottom curve). structureVague: yes
+tin can; 缶; tin can; t(noon, mountain) // top-down/crossing/melting
+condor; 瑶 right part, 䍃; condor; t(cleat, dry, mountain) // top-down/crossing/melting
 teepee=wigwam; 癶, 発 top part; tent
 ascend; 登; climb; t(teepee, beans)
 discharge; 発; departure; t(teepee, two hands)
