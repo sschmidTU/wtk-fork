@@ -248,6 +248,28 @@ const elementsDict =
       "cowB"
     ]
   },
+  "sign of the cow": {
+    "elements": [
+      "sun",
+      "three"
+    ],
+    "kanji": "丑",
+    "subElements": [
+      "sun",
+      "three",
+      "celery",
+      "day",
+      "salad",
+      "flowers",
+      "floor",
+      "flower",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "sign of the cow"
+    ]
+  },
   "revelation": {
     "elements": [
       "cow",
@@ -1689,6 +1711,33 @@ const elementsDict =
     ],
     "comment": "only WK has this element, not RTK"
   },
+  "let it be": {
+    "elements": [
+      "dry",
+      "eight",
+      "hood",
+      "sheaf4"
+    ],
+    "kanji": "爾",
+    "subElements": [
+      "dry",
+      "eight",
+      "hood",
+      "sheaf4",
+      "sheaf",
+      "ceiling",
+      "ten",
+      "clothesline",
+      "belt",
+      "one",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "let it be"
+    ],
+    "comment": "structureVague: yes. note that this doesn't contain \"even\" (平), differend direction of drops = horns"
+  },
   "hand": {
     "elements": [],
     "kanji": "手",
@@ -2218,6 +2267,37 @@ const elementsDict =
     ],
     "wkNames": [
       "molotov cocktail"
+    ]
+  },
+  "revered": {
+    "elements": [
+      "chieftain",
+      "glue"
+    ],
+    "kanji": "尊",
+    "subElements": [
+      "chieftain",
+      "glue",
+      "horns",
+      "sign of the bird",
+      "animal horns",
+      "west",
+      "one",
+      "ceiling",
+      "pent in",
+      "human legs",
+      "whiskey bottle",
+      "molotov cocktail",
+      "ten",
+      "hook",
+      "drop",
+      "measurement",
+      "needle",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "revered"
     ]
   },
   "bundle": {
@@ -3299,6 +3379,7 @@ const elementsDict =
       "one",
       "shovel",
       "sheaf",
+      "belt",
       "floor",
       "drops"
     ],
@@ -3617,8 +3698,12 @@ const elementsDict =
   "hood": {
     "elements": [],
     "kanji": "冂",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "belt"
+    ],
+    "synonyms": [
+      "belt"
+    ],
     "wkNames": [
       "head"
     ]
@@ -3631,7 +3716,8 @@ const elementsDict =
     "kanji": "内",
     "subElements": [
       "hood",
-      "person"
+      "person",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3649,7 +3735,8 @@ const elementsDict =
       "inside",
       "one",
       "hood",
-      "person"
+      "person",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3665,7 +3752,8 @@ const elementsDict =
     "subElements": [
       "inside",
       "person",
-      "hood"
+      "hood",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3681,6 +3769,7 @@ const elementsDict =
     "subElements": [
       "hood",
       "creeper",
+      "belt",
       "ceiling",
       "mouth",
       "one"
@@ -3705,6 +3794,7 @@ const elementsDict =
       "mouth",
       "drop",
       "one",
+      "belt",
       "drops"
     ],
     "synonyms": [],
@@ -3725,7 +3815,8 @@ const elementsDict =
       "stick",
       "hood",
       "mountain",
-      "one"
+      "one",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3743,6 +3834,7 @@ const elementsDict =
       "hood",
       "soil",
       "mouth",
+      "belt",
       "dirt",
       "ground"
     ],
@@ -3845,7 +3937,8 @@ const elementsDict =
     "subElements": [
       "joint",
       "hood",
-      "mouth"
+      "mouth",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3912,6 +4005,35 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "official"
+    ]
+  },
+  "sign of the tiger": {
+    "elements": [
+      "roof",
+      "ceiling",
+      "sprout",
+      "animal legs"
+    ],
+    "kanji": "寅",
+    "subElements": [
+      "roof",
+      "ceiling",
+      "sprout",
+      "animal legs",
+      "house",
+      "one",
+      "drop",
+      "rice field",
+      "drops",
+      "brains",
+      "shoot",
+      "wherefore",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "sign of the tiger"
     ]
   },
   "beans": {
@@ -5102,6 +5224,7 @@ const elementsDict =
       "horns",
       "dry",
       "needle",
+      "belt",
       "animal horns",
       "ceiling",
       "one",
@@ -5121,6 +5244,28 @@ const elementsDict =
       "wolverine"
     ],
     "comment": "= rake/wolverine without stick through it (mostly)"
+  },
+  "broomB": {
+    "elements": [
+      "box",
+      "one"
+    ],
+    "kanji": "虐 bottom right part",
+    "subElements": [
+      "box",
+      "one",
+      "two",
+      "stick",
+      "broom",
+      "reverse broom"
+    ],
+    "synonyms": [
+      "broom",
+      "reverse broom"
+    ],
+    "wkNames": [
+      "wolverine"
+    ]
   },
   "rake": {
     "elements": [
@@ -5617,6 +5762,28 @@ const elementsDict =
     ],
     "comment": "don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards."
   },
+  "ghost": {
+    "elements": [
+      "drop",
+      "rice field",
+      "human legs",
+      "elbow"
+    ],
+    "kanji": "鬼",
+    "subElements": [
+      "drop",
+      "rice field",
+      "human legs",
+      "elbow",
+      "drops",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "demon"
+    ],
+    "comment": "structureVague: yes"
+  },
   "horns": {
     "elements": [],
     "kanji": "丷, 并 top part",
@@ -5948,6 +6115,47 @@ const elementsDict =
       "trampoline"
     ]
   },
+  "sign of the dragon": {
+    "elements": [
+      "cliff",
+      "ceiling",
+      "hairpin"
+    ],
+    "kanji": "辰",
+    "subElements": [
+      "cliff",
+      "ceiling",
+      "hairpin",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "sign of the dragon"
+    ]
+  },
+  "agriculture": {
+    "elements": [
+      "bend",
+      "sign of the dragon"
+    ],
+    "kanji": "農",
+    "subElements": [
+      "bend",
+      "sign of the dragon",
+      "rice field",
+      "stick2",
+      "stick",
+      "brains",
+      "cliff",
+      "ceiling",
+      "hairpin",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "farming"
+    ]
+  },
   "gold": {
     "elements": [
       "umbrella",
@@ -6243,6 +6451,51 @@ const elementsDict =
     "wkNames": [
       "tiger"
     ]
+  },
+  "deer": {
+    "elements": [
+      "cave",
+      "old west"
+    ],
+    "kanji": "鹿 outer part",
+    "subElements": [
+      "cave",
+      "old west",
+      "dropB",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "deer"
+    ],
+    "comment": "as a primitive element, RTK excludes the \"compare\" element from the deer kanji."
+  },
+  "deerB": {
+    "elements": [
+      "deer",
+      "compare"
+    ],
+    "kanji": "鹿",
+    "subElements": [
+      "deer",
+      "compare",
+      "cave",
+      "old west",
+      "dropB",
+      "drop",
+      "drops",
+      "spoon",
+      "sitting on the ground",
+      "deer"
+    ],
+    "synonyms": [
+      "deer"
+    ],
+    "wkNames": [
+      "deer"
+    ],
+    "comment": "deer kanji"
   },
   "axe": {
     "elements": [
@@ -8310,6 +8563,27 @@ const elementsDict =
       "grain"
     ]
   },
+  "golden calf": {
+    "elements": [
+      "horns",
+      "heavens"
+    ],
+    "kanji": "关",
+    "subElements": [
+      "horns",
+      "heavens",
+      "animal horns",
+      "ceiling",
+      "large",
+      "one",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ram"
+    ],
+    "comment": "not on WK. male sheep is called ram (-> horns)."
+  },
   "dart": {
     "elements": [
       "heavens",
@@ -8438,6 +8712,7 @@ const elementsDict =
       "sapling",
       "hood",
       "creeper",
+      "belt",
       "ceiling",
       "one"
     ],
@@ -9189,7 +9464,8 @@ const elementsDict =
       "floor",
       "stick",
       "inX",
-      "one"
+      "one",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -9211,6 +9487,7 @@ const elementsDict =
       "elbow",
       "insect",
       "brains",
+      "belt",
       "in",
       "floor",
       "drop",
@@ -9566,7 +9843,8 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
-      "vase"
+      "vase",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -9593,6 +9871,7 @@ const elementsDict =
       "animal horns",
       "drops",
       "vase",
+      "belt",
       "ten",
       "mouth",
       "tombstone",
@@ -9932,6 +10211,29 @@ const elementsDict =
       "think"
     ]
   },
+  "think": {
+    "elements": [
+      "rice field",
+      "heart"
+    ],
+    "kanji": "思",
+    "subElements": [
+      "rice field",
+      "heart",
+      "brains",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "think"
+    ]
+  },
   "filial piety": {
     "elements": [
       "old man",
@@ -10173,6 +10475,26 @@ const elementsDict =
     ],
     "wkNames": [
       "china"
+    ]
+  },
+  "hemp": {
+    "elements": [
+      "cave",
+      "grove"
+    ],
+    "kanji": "麻",
+    "subElements": [
+      "cave",
+      "grove",
+      "dropB",
+      "drop",
+      "drops",
+      "tree",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "hemp"
     ]
   },
   "give": {
@@ -11864,6 +12186,7 @@ const elementsDict =
     "subElements": [
       "hood",
       "mountain goat",
+      "belt",
       "horns",
       "ceiling",
       "mountain",
@@ -12310,6 +12633,7 @@ const elementsDict =
       "ceiling",
       "mouth",
       "one",
+      "belt",
       "nail",
       "spike"
     ],
@@ -12949,6 +13273,7 @@ const elementsDict =
       "drop",
       "wind",
       "drop",
+      "one",
       "stick"
     ],
     "kanji": "舟",
@@ -12956,12 +13281,34 @@ const elementsDict =
       "drop",
       "wind",
       "drop",
+      "one",
       "stick",
       "drops"
     ],
     "synonyms": [],
     "wkNames": [
       "boat"
+    ]
+  },
+  "cinnabar": {
+    "elements": [
+      "wind",
+      "drop",
+      "one"
+    ],
+    "kanji": "丹",
+    "subElements": [
+      "wind",
+      "drop",
+      "one",
+      "drops",
+      "rust-colored"
+    ],
+    "synonyms": [
+      "rust-colored"
+    ],
+    "wkNames": [
+      "rust colored"
     ]
   },
   "carrier": {
@@ -12975,6 +13322,7 @@ const elementsDict =
       "missile",
       "drop",
       "wind",
+      "one",
       "stick",
       "drops",
       "crotch"
@@ -13349,6 +13697,29 @@ const elementsDict =
       "change"
     ]
   },
+  "ability": {
+    "elements": [
+      "elbow",
+      "moon",
+      "spoon",
+      "spoon"
+    ],
+    "kanji": "能",
+    "subElements": [
+      "elbow",
+      "moon",
+      "spoon",
+      "spoon",
+      "month",
+      "flesh",
+      "part of the body",
+      "sitting on the ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ability"
+    ]
+  },
   "rose of sharon": {
     "elements": [
       "vulture",
@@ -13512,7 +13883,8 @@ const elementsDict =
       "animal legs",
       "stick",
       "hook",
-      "small"
+      "small",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -13789,7 +14161,8 @@ const elementsDict =
     "kanji": "卩",
     "subElements": [
       "hood",
-      "stick"
+      "stick",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -13825,7 +14198,8 @@ const elementsDict =
       "stamp",
       "two",
       "stick",
-      "hood"
+      "hood",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -13948,7 +14322,8 @@ const elementsDict =
       "dirt",
       "ground",
       "hood",
-      "stick"
+      "stick",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -13973,7 +14348,8 @@ const elementsDict =
       "stop",
       "one",
       "footprint",
-      "hood"
+      "hood",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
@@ -13982,15 +14358,13 @@ const elementsDict =
   },
   "receipt": {
     "elements": [
-      "dropB",
+      "cliff",
       "elbow"
     ],
-    "kanji": "留",
+    "kanji": "留 top left part",
     "subElements": [
-      "dropB",
-      "elbow",
-      "drop",
-      "drops"
+      "cliff",
+      "elbow"
     ],
     "synonyms": [],
     "wkNames": [
@@ -14011,11 +14385,12 @@ const elementsDict =
       "drop",
       "stamp",
       "drop",
-      "dropB",
+      "cliff",
       "elbow",
       "drops",
       "hood",
       "stick",
+      "belt",
       "eggs"
     ],
     "synonyms": [
@@ -14024,6 +14399,36 @@ const elementsDict =
     "wkNames": [
       "egg"
     ]
+  },
+  "sign of the hare": {
+    "elements": [
+      "receipt",
+      "dropB",
+      "stamp"
+    ],
+    "kanji": "卯",
+    "subElements": [
+      "receipt",
+      "dropB",
+      "stamp",
+      "cliff",
+      "elbow",
+      "drop",
+      "drops",
+      "hood",
+      "stick",
+      "belt",
+      "blown eggs",
+      "egg"
+    ],
+    "synonyms": [
+      "blown eggs",
+      "egg"
+    ],
+    "wkNames": [
+      "blown eggs"
+    ],
+    "comment": "structureVague: yes"
   },
   "detain": {
     "elements": [
@@ -14036,10 +14441,8 @@ const elementsDict =
       "receipt",
       "sword",
       "rice field",
-      "dropB",
+      "cliff",
       "elbow",
-      "drop",
-      "drops",
       "dagger",
       "brains"
     ],
@@ -14173,7 +14576,8 @@ const elementsDict =
       "towel",
       "large",
       "hood",
-      "St. Bernard"
+      "St. Bernard",
+      "belt"
     ],
     "synonyms": [],
     "wkNames": [
