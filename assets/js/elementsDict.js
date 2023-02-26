@@ -5013,9 +5013,22 @@ const elementsDict =
     ]
   },
   "temple": {
-    "elements": [],
+    "elements": [
+      "soil",
+      "glue"
+    ],
     "kanji": "寺",
     "subElements": [
+      "soil",
+      "glue",
+      "dirt",
+      "ground",
+      "ten",
+      "hook",
+      "drop",
+      "needle",
+      "drops",
+      "measurement",
       "Buddhist temple"
     ],
     "synonyms": [

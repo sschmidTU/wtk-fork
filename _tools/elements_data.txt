@@ -258,7 +258,7 @@ head=page; 頁; geoduck; t(ground, oneself, animal legs); leafWK
 stinking; 臭; stinking; t(oneself, large)
 rule; 則; rule; l(shellfish, knife)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
-temple=Buddhist temple; 寺; temple
+temple=Buddhist temple; 寺; temple; t(soil, glue)
 specialty; 専; specialty; t(ten, rice field, glue)
 acupuncturist; 縛 right part; acupuncturist; c(specialty, drop)
 adhere; 付; attach; l(person, glue)
