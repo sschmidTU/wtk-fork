@@ -1264,7 +1264,7 @@ class WTKSearch {
       "yen": "yen,circle", //1952
       "lifeguard": "funnel",
       "think": "think", //p391
-      "energy": "reclining one fishhook", //energy doesn't exist in RTK
+      "energy": "energy,reclining one fishhook", //energy doesn't exist in RTK
       //"energy treasure": "spirit", //2030, hard to match. there's also vapor for RTK
       "clan": "family name", //1970
       "clan ground": "calling card",
