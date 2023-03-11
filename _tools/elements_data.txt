@@ -190,6 +190,7 @@ ketchup=false; 辟; hot pepper; l(tl(flag, mouth), spicy) // kanji meaning is fa
 red pepper; 新 left part, 辛; red pepper; t(stand up, tree)
 roofB=roof; 屋; roof; tl(flag, climax) // unfortunately this has the same name as the roof (house) element/WK radical
 roof=house; 宀; roof // this is called house in RTK, but unfortunately the kanji 家 is also house, which RTK calls the "full character", and we can't/shouldn't have two elements with the same name, so we renamed this to roof (WK name).
+relax; 安; relax; t(roof, woman)
 hole; 穴; hole; t(roof, eight)
 empty=sky; 空; sky; t(hole, craft)
 house; 家; house; t(roof, sow) // in RTK originally 宀 is house, but so is 家, which RTK calls the "full character". We can't/shouldn't have two elements with the same name, so we renamed the RTK house radical to roof (WK name).
@@ -205,6 +206,7 @@ circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hoo
 owl; 桜 top right part, 巣 top part; grass; drop3
 simple; 単; simple; t(owl, rice field, ten)
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
+memorize; 覚; memorize; t(schoolhouse, see)
 joint; 骨 upper part; joint // doesn't exist in WK. In RTK, this is only used as a description, so you might say it's not an element. But it sometimes appears alone, without moon.
 skeleton; 骨; bone; t(joint, moon)
 jawbone; 禍 right part; jawbone; t(joint, o(hood, mouth))
@@ -214,6 +216,7 @@ cadet; 曹; official; t(c(bend, one), sun)
 sign of the tiger; 寅; sign of the tiger; t(roof, ceiling, sprout, animal legs)
 beans=table; 豆; beans; t(ceiling, mouth, horns, floor)
 drum=drums; 鼓 left part; drum; t(samurai, beans) // the top stroke of beans is merged into the samurai element here
+rejoice; 喜; rejoice; t(drum, mouth)
 bountiful; 豊; plentiful; t(bend, beans)
 fishhook=fishguts; 乙, 乱 right part, 直 bottom part; nose; hook, stick // according to RTK, this can change shape according to where it's positioned. A bit too ambiguous in my opinion, so we'll keep straightened hook (WK: lion) as an extra element. Hook is the tiny curve/change of direction at the end of a stroke, which straightened hook doesn't have.
 fishhookB=fishhook; 乚; umbrella
@@ -255,6 +258,7 @@ awl; 㑒; squid
 now=clock; 今; now; t(umbrella, one, clothes hanger)
 wish; 念; thought; t(now, heart)
 head=page; 頁; geoduck; t(ceiling, drop, shellfish)&oneself; leafWK
+melancholy; 憂; grief; t(head, crown, heart, walking legs)&summer
 stinking; 臭; stinking; t(oneself, large)
 rule; 則; rule; l(shellfish, knife)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
@@ -323,6 +327,7 @@ eat=food; 食; eat; t(umbrella, good)
 son; 郎; guy; l(good, city walls)
 butcher; 前 bottom part; butcher // butcher doesn't exist in WK, added here.
 meeting of butchers; 兪; death star // there is a subtle variation: either moon knife or moon flood. seems to depend on font as well (like 喩・喻), so might be ok to take this as the same element.
+in front=front; 前; front; t(horns, one, butcher)
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
 road; ⻌, 退 left part; scooter
 roadB; 辶; 迄 left part; scooter
@@ -344,6 +349,7 @@ fold; 折; fold; l(fingers, axe)
 chop off; 斬; slice; l(car, axe)
 soldier; 兵; soldier; t(axe, floor, animal legs)
 new; 新; new; l(red pepper, axe)
+ashes; 灰; ashes; tl(cliff, fire)
 one-sided=onesided=one sided; 片; one sided; t(l(stick, stick), tl(cliff, c(one, stick)))
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 right; 右; right; tl(by one's side, mouth)
@@ -370,7 +376,7 @@ beg; 乞; beg; t(reclining, fishhook); noseWK // WK: kanji/radical doesn't exist
 saw; 乍; key; t(reclining, staples) // reclining/gun and staples/comb are overlapping here
 double back=fold back; 复; black hole; t(reclining, sun, walking legs)
 restore; 復; restore; l(goingB, double back)
-lack; 欠; lack; t(c(reclining, drop), person)
+lack=yawn; 欠; lack; t(c(reclining, drop), person)
 next; 次; next; l(ice, lack)
 evening; 夕; evening
 many; 多; many; t(evening, evening)
@@ -382,6 +388,7 @@ ballerina=sunglasses; 舛; dance; l(evening, cow) // RTK v4 calls this sunglasse
 sunglasses with one lens missing; 韋 bottom part; sunglasses with one lens missing
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
 beginning; 元; origin; t(two, human legs); piWK
+nara; 奈; nara; t(large, show)
 military officer; 尉; military officer; l(tl(flag, show), glue)
 prohibition=prohibit; 禁; prohibit; t(grove, show)
 religion; 宗; religion; t(roof, show)
@@ -410,6 +417,7 @@ aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop) // doesn't exist in WK, which also has 斗 ladle unfortunately
 phrase; 句; paragraph; o(bound up, mouth)
 decameron; 旬; in season; tr(bound up, sun)
+separate; 別; separate; l(t(mouth, bound up), saber)
 angle; 角; angle; t(bound up, t(rice field, fenceposts)) // structureVague: yes
 again; 再; again; t(ceiling, sprout, fence postsB); leafWK // structureVague: yes
 funnel; 冓; funnel; t(celery, again)
@@ -423,6 +431,7 @@ oven-fire=oven fire=barbecue; 灬; boil; drop4 // don't confuse with tail feathe
 tail feathers; 鳥 bottom part; boil; tr(clothes hanger, oven-fire) // Note that this radical in RTK explicitly includes the フ shape around the "oven-fire"-like short strokes. don't confuse with oven-fire (RTK) radical.
 bird; 鳥; bird; t(white, tr(slingshot, tail feathers))
 feathers; 羽; feather; clothes hanger2, drop2
+learn; 習; learn; t(feathers, white)
 sparkler; 摂 bottom right part; explosion; t(horns, animal legs)
 music; 楽; comfort; t(o(sparkler, white), tree)
 do=so; 為; sake; tail feathers
@@ -499,7 +508,7 @@ history; 史; history; t(in, length) // structureVague: yes
 officer; 吏; officer; c(history, one)
 grow late; 更; again; t(ceiling, rice field, length) // structureVague: yes
 kebab; 串; kebab; c(t(mouth, mouth), stick)
-resemblance; 肖; resemblance; t(littleB, moon)
+resemblance=spark=candle; 肖; resemblance; t(littleB, moon)
 snare; 丂, 巧 right part; beggar // similar to slingshot. beggar in WK is usually rather slingshot, but sometimes it's also used for snare.
 slingshot; 与 without 一; beggar; t(drop, snare)
 bestow; 与; give; c(snare, one)
@@ -522,7 +531,7 @@ oneself=nose; 自; self; t(drop, eye)
 snake=self; 己; oneself // unfortunately the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK
 wrap; 包; wrap; t(bound up, snake) // structureVague: yes: not quite top-down, it's also entwined
 somebody; 身; somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
-old man; 老 top part; coffin; c(soil, dropB) // in RTK, the element is only the top part, minus the spoon, which can be replaced by other elements
+old man; 老 top part; coffin; c(soil, dropB) // in RTK, the element (specifically the primitive) is only the top part, minus the spoon, which can be replaced by other elements
 consider; 考; think; t(old man, slingshot)
 think; 思; think; t(rice field, heart)
 filial piety; 孝; teacher&filial piety; t(old man, child) // WK radical name is teacher, kanji name filial piety
@@ -538,7 +547,7 @@ wide; 広; wide; tl(cave, elbow)
 china=T'ang; 唐; china; tl(cave, t(rake, mouth))
 hemp; 麻; hemp; tl(cave, grove)
 give; 呉; give&catapult; t(mouth, chair, tool)
-summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK
+summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK // head/page element not complete here, missing animal legs
 husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length
 scissors; 峡 right part; scissors; c(husband, horns) // don't confuse with scissors kanji 鋏
 scissorsB=scissors; 鋏 right part, 頰 left part; scissors; scissors // variant of scissors
@@ -575,6 +584,7 @@ times=-times; 回; times; o(pent in, mouth)
 quandary; 困; distressed; o(pent in, tree)
 harden; 固; hard; o(pent in, old)
 cause; 因; cause; o(pent in, large)
+country; 国; country; o(pent in, jewel)
 receive; 享; receive; t(top hat, mouth, child)
 pavilion; 亭; restaurant; t(top hat, mouth, crown, street)
 capital; 京; capital; t(top hat, mouth, little)
@@ -606,7 +616,9 @@ public; 公; public; t(eight, elbow)
 salad; 龷, 昔 top part; blackjack; t(flowers, floor)
 celery; 講 top right part; celery; c(salad, salad) // or salad + t(l(stick, stick), floor). doesn't exist in WK, part of bigger elements like spring or lifeguard
 strung together=together; 共; together; t(salad, animal legs)
+mr=mister; 殿; milord; l(tl(flag, strung together), missile)
 once upon a time; 昔; once upon a time; t(salad, sun)
+scatter; 散; scatter; l(t(salad, moon), taskmaster)
 uncommon; 異; differ; t(rice field, strung together)
 outburst; 暴; violence; t(sun, strung together, waterC)
 well; 井; well; t(salad, fenceposts)
@@ -641,6 +653,7 @@ bowB; 弱 left part or 溺 right part; bowB; c(bow, ice)
 condolences=condolence; 弔; condolence; c(bow, stick)
 weak; 弱; weak; l(bowB, bowB)
 dollar; 沸 right part; dollar; c(bow, l(dropB, stick))&condolences
+younger brother; 弟; younger brother; t(horns, dollar) // structureVague: yes
 maestro; 師 left part; drop&bear
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
 bureaucrat; 官; government; t(roof, maestro without baton)

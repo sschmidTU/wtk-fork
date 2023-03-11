@@ -2331,17 +2331,7 @@ const elementsDict =
       "tree",
       "mouth",
       "wood",
-      "Chaplin",
-      "ceiling",
-      "drop",
-      "shellfish",
-      "one",
-      "drops",
-      "eye",
-      "animal legs",
-      "shell",
-      "clam",
-      "oyster"
+      "Chaplin"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3623,6 +3613,24 @@ const elementsDict =
     ],
     "comment": "this is called house in RTK, but unfortunately the kanji 家 is also house, which RTK calls the \"full character\", and we can't/shouldn't have two elements with the same name, so we renamed this to roof (WK name)."
   },
+  "relax": {
+    "elements": [
+      "roof",
+      "woman"
+    ],
+    "kanji": "安",
+    "subElements": [
+      "roof",
+      "woman",
+      "house",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "relax"
+    ]
+  },
   "hole": {
     "elements": [
       "roof",
@@ -3899,6 +3907,28 @@ const elementsDict =
       "viking"
     ]
   },
+  "memorize": {
+    "elements": [
+      "schoolhouse",
+      "see"
+    ],
+    "kanji": "覚",
+    "subElements": [
+      "schoolhouse",
+      "see",
+      "owl",
+      "crown",
+      "drop3",
+      "drop",
+      "drops",
+      "eye",
+      "human legs"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "memorize"
+    ]
+  },
   "joint": {
     "elements": [],
     "kanji": "骨 upper part",
@@ -4086,6 +4116,31 @@ const elementsDict =
       "drum"
     ],
     "comment": "the top stroke of beans is merged into the samurai element here"
+  },
+  "rejoice": {
+    "elements": [
+      "drum",
+      "mouth"
+    ],
+    "kanji": "喜",
+    "subElements": [
+      "drum",
+      "mouth",
+      "samurai",
+      "beans",
+      "gentleman",
+      "ceiling",
+      "horns",
+      "floor",
+      "one",
+      "animal horns",
+      "table",
+      "drums"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rejoice"
+    ]
   },
   "bountiful": {
     "elements": [
@@ -4953,6 +5008,45 @@ const elementsDict =
     ],
     "wkNames": [
       "geoduck"
+    ]
+  },
+  "melancholy": {
+    "elements": [
+      "head",
+      "crown",
+      "heart",
+      "walking legs"
+    ],
+    "kanji": "憂",
+    "subElements": [
+      "head",
+      "crown",
+      "heart",
+      "walking legs",
+      "summer",
+      "ceiling",
+      "drop",
+      "shellfish",
+      "oneself",
+      "one",
+      "drops",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster",
+      "nose",
+      "page",
+      "drop3",
+      "drop",
+      "fishhook",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "grief"
     ]
   },
   "stinking": {
@@ -6293,6 +6387,27 @@ const elementsDict =
     ],
     "comment": "there is a subtle variation: either moon knife or moon flood. seems to depend on font as well (like 喩・喻), so might be ok to take this as the same element."
   },
+  "in front": {
+    "elements": [
+      "horns",
+      "one",
+      "butcher"
+    ],
+    "kanji": "前",
+    "subElements": [
+      "horns",
+      "one",
+      "butcher",
+      "animal horns",
+      "front"
+    ],
+    "synonyms": [
+      "front"
+    ],
+    "wkNames": [
+      "front"
+    ]
+  },
   "four": {
     "elements": [
       "pent in",
@@ -6676,6 +6791,24 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "new"
+    ]
+  },
+  "ashes": {
+    "elements": [
+      "cliff",
+      "fire"
+    ],
+    "kanji": "灰",
+    "subElements": [
+      "cliff",
+      "fire",
+      "person",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "ashes"
     ]
   },
   "one-sided": {
@@ -7164,9 +7297,12 @@ const elementsDict =
       "drop",
       "person",
       "lying down",
-      "drops"
+      "drops",
+      "yawn"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "yawn"
+    ],
     "wkNames": [
       "lack"
     ]
@@ -7186,7 +7322,8 @@ const elementsDict =
       "reclining",
       "person",
       "lying down",
-      "drops"
+      "drops",
+      "yawn"
     ],
     "synonyms": [],
     "wkNames": [
@@ -7350,6 +7487,25 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "origin"
+    ]
+  },
+  "nara": {
+    "elements": [
+      "large",
+      "show"
+    ],
+    "kanji": "奈",
+    "subElements": [
+      "large",
+      "show",
+      "St. Bernard",
+      "two",
+      "small",
+      "altar"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "nara"
     ]
   },
   "military officer": {
@@ -7897,6 +8053,32 @@ const elementsDict =
       "in season"
     ]
   },
+  "separate": {
+    "elements": [
+      "mouth",
+      "bound up",
+      "saber"
+    ],
+    "kanji": "別",
+    "subElements": [
+      "mouth",
+      "bound up",
+      "saber",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down",
+      "sabre",
+      "sword",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "separate"
+    ]
+  },
   "angle": {
     "elements": [
       "bound up",
@@ -8197,6 +8379,30 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "feather"
+    ]
+  },
+  "learn": {
+    "elements": [
+      "feathers",
+      "white"
+    ],
+    "kanji": "習",
+    "subElements": [
+      "feathers",
+      "white",
+      "clothes hanger2",
+      "clothes hanger",
+      "drop2",
+      "drop",
+      "coat hanger",
+      "drops",
+      "sun",
+      "day",
+      "dove"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "learn"
     ]
   },
   "sparkler": {
@@ -9680,9 +9886,14 @@ const elementsDict =
       "small",
       "month",
       "flesh",
-      "part of the body"
+      "part of the body",
+      "spark",
+      "candle"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "spark",
+      "candle"
+    ],
     "wkNames": [
       "resemblance"
     ]
@@ -10180,7 +10391,7 @@ const elementsDict =
     "wkNames": [
       "coffin"
     ],
-    "comment": "in RTK, the element is only the top part, minus the spoon, which can be replaced by other elements"
+    "comment": "in RTK, the element (specifically the primitive) is only the top part, minus the spoon, which can be replaced by other elements"
   },
   "consider": {
     "elements": [
@@ -10537,7 +10748,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "summer"
-    ]
+    ],
+    "comment": "head/page element not complete here, missing animal legs"
   },
   "husband": {
     "elements": [
@@ -11192,6 +11404,26 @@ const elementsDict =
       "cause"
     ]
   },
+  "country": {
+    "elements": [
+      "pent in",
+      "jewel"
+    ],
+    "kanji": "国",
+    "subElements": [
+      "pent in",
+      "jewel",
+      "king",
+      "drop",
+      "drops",
+      "ball",
+      "earring"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "country"
+    ]
+  },
   "receive": {
     "elements": [
       "top hat",
@@ -11724,6 +11956,38 @@ const elementsDict =
       "together"
     ]
   },
+  "mr": {
+    "elements": [
+      "flag",
+      "strung together",
+      "missile"
+    ],
+    "kanji": "殿",
+    "subElements": [
+      "flag",
+      "strung together",
+      "missile",
+      "mouth",
+      "drop",
+      "drops",
+      "salad",
+      "animal legs",
+      "flowers",
+      "floor",
+      "flower",
+      "one",
+      "together",
+      "wind",
+      "crotch",
+      "mister"
+    ],
+    "synonyms": [
+      "mister"
+    ],
+    "wkNames": [
+      "milord"
+    ]
+  },
   "once upon a time": {
     "elements": [
       "salad",
@@ -11742,6 +12006,30 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "once upon a time"
+    ]
+  },
+  "scatter": {
+    "elements": [
+      "salad",
+      "moon",
+      "taskmaster"
+    ],
+    "kanji": "散",
+    "subElements": [
+      "salad",
+      "moon",
+      "taskmaster",
+      "flowers",
+      "floor",
+      "flower",
+      "one",
+      "month",
+      "flesh",
+      "part of the body"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "scatter"
     ]
   },
   "uncommon": {
@@ -12406,6 +12694,30 @@ const elementsDict =
     "wkNames": [
       "dollar"
     ]
+  },
+  "younger brother": {
+    "elements": [
+      "horns",
+      "dollar"
+    ],
+    "kanji": "弟",
+    "subElements": [
+      "horns",
+      "dollar",
+      "animal horns",
+      "bow",
+      "dropB",
+      "stick",
+      "condolences",
+      "drop",
+      "drops",
+      "condolence"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "younger brother"
+    ],
+    "comment": "structureVague: yes"
   },
   "maestro": {
     "elements": [],
