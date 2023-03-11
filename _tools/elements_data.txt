@@ -140,7 +140,7 @@ rapidly; 疾; rapidly; tl(sickness, dart)
 not=knot=piglet's tail; 勿; wing&not
 double knot; 葱 middle part; double not; c(not, drop) // doesn't exist on WK. only used in 1 kanji.
 instantaneously; 忽; instantaneously; t(not, heart)
-notB; 而 bottom part; wingB&notB
+notB=not=knot; 而 bottom part; wingB&notB
 sow=pig; 豕; pig
 warthog; 隊 right part; warthog; t(horns, sow)
 regiment; 隊; squad; l(pinnacle, wart hog)
@@ -149,7 +149,7 @@ overpowering; 豪; luxurious; t(top hat, mouth, crown, sow)
 easy=piggy bank; 易; easy; t(sun, not) // element is called piggy bank in RTK, but honestly that's kinda silly if we can just use the kanji name "easy".
 hot water; 湯; hot water; l(water, easy)
 utilize=utilise=screwdriver; 用; task; moon, stick // main name is screwdriver in RTK, but probably most people will forget that after they're familiar with the kanji keyword utilize
-utilizeB=utilise=screwdriver; 猟 bottom right part; task
+utilizeB=utilize=utilise=screwdriver; 猟 bottom right part; task
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
 fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
 request; 求; request; c(arrow, rice)&water // structureVague: yes
@@ -177,7 +177,7 @@ sash; 帯; belt; t(buckle, apron)
 rain; 雨; rain; t(ceiling, o(towel, drop4))
 snow; 雪; snow; t(rain, broom)
 drop=drops; 丶, 白 top part; drop
-dropB; 少 bottom part; slide; drop
+dropB=drop; 少 bottom part; slide
 heart; 心; heart; o(drop3, fishhook)
 invariably; 必; certain; c(heart, dropB)
 favor=favour; 恵; favor; t(ten, rice field, heart)
@@ -279,7 +279,7 @@ melancholy; 憂; grief; t(head, crown, heart, walking legs)&summer
 stinking; 臭; stinking; t(oneself, large)
 rule; 則; rule; l(shellfish, knife)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
-temple=Buddhist temple; 寺; temple; t(soil, glue)
+temple=buddhist temple; 寺; temple; t(soil, glue)
 time; 時; time; l(sun, temple)
 specialty; 専; specialty; t(ten, rice field, glue)
 acupuncturist; 縛 right part; acupuncturist; c(specialty, drop)
@@ -322,7 +322,7 @@ animal legs; ハ, 只 bottom part; fins // don't confuse with RTK(animal legs), 
 ghost; 鬼; demon; t(drop, rice field, l(human legs, elbow)) // structureVague: yes
 horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal legs), which go outwards (at the bottom), instead of inwards.
 little=small; 小; small; o(animal legs, t(stick, hook))
-littleB; 光 top part; triceratops; little
+littleB=little=small; 光 top part; triceratops
 few; 少; few; t(little, dropB)
 fenceposts; 粛 bottom outer parts; fenceposts; l(dropB, stick) // basically the left stick with a hook + right stick
 fencepostsB=fenceposts; 円 bottom part; fencepostsB; l(stick, hook) // similar to fenceposts, but (almost) mirrored
@@ -383,12 +383,12 @@ what; 何; what; l(person, can)
 strange; 奇; odd; t(large, can)
 going; 行; go&loiter; ; loiterWK // boulevard is only when there's something in the middle/inner of the go element
 boulevard; 行; go&loiter; going, goingB, one, street; loiterWK // used when there's something in the middle/inner.
-goingB; 彳; loiter
+goingB=going; 彳; loiter
 indications=indication; 徴; indication; l(goingB, t(mountain, king), taskmaster)
 five; 五; five
 tile; 瓦; tile; c(five, drop)
 staples; 印 left part; comb
-staplesB; 臼 right part; combB // reverse staples/comb
+staplesB=staples; 臼 right part; combB // reverse staples/comb
 grade; 段; steps; l(staples, missile)
 comb; 而; rake; t(ceiling, drop, notB)
 demand; 需; demand; t(rain, comb)
@@ -633,7 +633,7 @@ cleverness; 敏; alert; l(every, taskmaster)
 dumbfounded; 呆; shock; t(mouth, tree)
 protect; 保; preserve; l(person, dumbfounded)
 person; 人; person // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
-personB; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
+personB=person; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
 sitting in meditation; 坐; sitting in meditation; c(soil, assembly line)
 large=St. Bernard; 大; big
@@ -641,7 +641,7 @@ plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
 dog with one leg=dog=chihuahua with one human leg; 尤; pirate
 eight; 八; eight // similar to ハ animal legs
-eightB; 曾 top part; eight; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
+eightB=eight; 曾 top part; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
 public; 公; public; t(eight, elbow)
 salad; 龷, 昔 top part; blackjack; t(flowers, floor)
 celery; 講 top right part; celery; c(salad, salad) // or salad + t(l(stick, stick), floor). doesn't exist in WK, part of bigger elements like spring or lifeguard
@@ -789,7 +789,7 @@ stamps; 抑 without 扌; cat pirate; l(box, stamp)
 node=joint=season; 節; season; t(bamboo, l(silver, stamp))
 lowly; 卑; lowly; t(drop, rice field, cornucopia)
 chop-seal; 令 bottom part, 卩 with longer top stroke; stamp; tr(clothes hanger, stick)
-chop-sealB; マ, 矛 top part, 勇 top part; mama; c(fu, drop)
+chop-sealB=chop-seal; マ, 矛 top part, 勇 top part; mama; c(fu, drop)
 traffic; 通; pass through; lb(road, t(chop-sealB, utilize))
 orders=order; 令; orders; t(meeting, chop-seal)
 courage; 勇; courage; t(chop-sealB, man)

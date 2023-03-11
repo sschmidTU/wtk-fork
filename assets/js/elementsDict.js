@@ -565,9 +565,11 @@ const elementsDict =
       "goingB",
       "horns",
       "mending",
+      "going",
       "animal horns",
       "mend",
       "zoo",
+      "",
       "critters"
     ],
     "synonyms": [],
@@ -2679,8 +2681,14 @@ const elementsDict =
   "notB": {
     "elements": [],
     "kanji": "而 bottom part",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "not",
+      "knot"
+    ],
+    "synonyms": [
+      "not",
+      "knot"
+    ],
     "wkNames": [
       "wingB",
       "notB"
@@ -2844,10 +2852,12 @@ const elementsDict =
     "elements": [],
     "kanji": "猟 bottom right part",
     "subElements": [
+      "utilize",
       "utilise",
       "screwdriver"
     ],
     "synonyms": [
+      "utilize",
       "utilise",
       "screwdriver"
     ],
@@ -3059,6 +3069,7 @@ const elementsDict =
     "subElements": [
       "personB",
       "fiesta",
+      "person",
       "arrowhead",
       "drop",
       "arrow",
@@ -3391,15 +3402,14 @@ const elementsDict =
     ]
   },
   "dropB": {
-    "elements": [
-      "drop"
-    ],
+    "elements": [],
     "kanji": "少 bottom part",
     "subElements": [
-      "drop",
-      "drops"
+      "drop"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "drop"
+    ],
     "wkNames": [
       "slide"
     ]
@@ -5267,11 +5277,11 @@ const elementsDict =
       "craft",
       "stick",
       "little",
+      "small",
       "ceiling",
       "floor",
       "animal legs",
       "hook",
-      "small",
       "one"
     ],
     "synonyms": [],
@@ -5509,10 +5519,10 @@ const elementsDict =
       "needle",
       "drops",
       "measurement",
-      "Buddhist temple"
+      "buddhist temple"
     ],
     "synonyms": [
-      "Buddhist temple"
+      "buddhist temple"
     ],
     "wkNames": [
       "temple"
@@ -5538,7 +5548,7 @@ const elementsDict =
       "needle",
       "drops",
       "measurement",
-      "Buddhist temple"
+      "buddhist temple"
     ],
     "synonyms": [],
     "wkNames": [
@@ -5842,8 +5852,8 @@ const elementsDict =
       "dropB",
       "rake",
       "drop",
-      "drops",
-      "stick"
+      "stick",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
@@ -5912,8 +5922,8 @@ const elementsDict =
       "dropB",
       "rake",
       "drop",
-      "drops",
       "stick",
+      "drops",
       "buddy",
       "you"
     ],
@@ -6367,18 +6377,16 @@ const elementsDict =
     ]
   },
   "littleB": {
-    "elements": [
-      "little"
-    ],
+    "elements": [],
     "kanji": "光 top part",
     "subElements": [
       "little",
-      "animal legs",
-      "stick",
-      "hook",
       "small"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "little",
+      "small"
+    ],
     "wkNames": [
       "triceratops"
     ]
@@ -6560,12 +6568,12 @@ const elementsDict =
       "littleB",
       "pi",
       "little",
-      "animal legs",
-      "stick",
-      "hook",
       "small",
       "ceiling",
       "human legs",
+      "animal legs",
+      "stick",
+      "hook",
       "one"
     ],
     "synonyms": [],
@@ -7540,8 +7548,12 @@ const elementsDict =
   "goingB": {
     "elements": [],
     "kanji": "彳",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "going"
+    ],
+    "synonyms": [
+      "going"
+    ],
     "wkNames": [
       "loiter"
     ]
@@ -7559,6 +7571,8 @@ const elementsDict =
       "mountain",
       "king",
       "taskmaster",
+      "going",
+      "",
       "indication"
     ],
     "synonyms": [
@@ -7605,8 +7619,12 @@ const elementsDict =
   "staplesB": {
     "elements": [],
     "kanji": "臼 right part",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "staples"
+    ],
+    "synonyms": [
+      "staples"
+    ],
     "wkNames": [
       "combB"
     ],
@@ -7641,7 +7659,10 @@ const elementsDict =
       "drop",
       "notB",
       "one",
-      "drops"
+      "drops",
+      "not",
+      "knot",
+      "piglet's tail"
     ],
     "synonyms": [],
     "wkNames": [
@@ -7663,7 +7684,10 @@ const elementsDict =
       "drop",
       "one",
       "drops",
-      "notB"
+      "notB",
+      "not",
+      "knot",
+      "piglet's tail"
     ],
     "synonyms": [],
     "wkNames": [
@@ -7771,12 +7795,14 @@ const elementsDict =
     "subElements": [
       "goingB",
       "double back",
+      "going",
       "reclining",
       "sun",
       "walking legs",
       "lying down",
       "day",
-      "fold back"
+      "fold back",
+      ""
     ],
     "synonyms": [],
     "wkNames": [
@@ -8245,6 +8271,7 @@ const elementsDict =
       "personB",
       "key",
       "dart",
+      "person",
       "straight fu",
       "floor",
       "fuB",
@@ -9245,8 +9272,8 @@ const elementsDict =
       "dropB",
       "seven",
       "drop",
-      "drops",
-      "diced"
+      "diced",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
@@ -10471,13 +10498,13 @@ const elementsDict =
       "littleB",
       "moon",
       "little",
-      "animal legs",
-      "stick",
-      "hook",
       "small",
       "month",
       "flesh",
       "part of the body",
+      "animal legs",
+      "stick",
+      "hook",
       "spark",
       "candle"
     ],
@@ -12439,8 +12466,12 @@ const elementsDict =
   "personB": {
     "elements": [],
     "kanji": "亻",
-    "subElements": [],
-    "synonyms": [],
+    "subElements": [
+      "person"
+    ],
+    "synonyms": [
+      "person"
+    ],
     "wkNames": [
       "leader"
     ],
@@ -12553,14 +12584,14 @@ const elementsDict =
     "comment": "similar to ハ animal legs"
   },
   "eightB": {
-    "elements": [
-      "eight"
-    ],
+    "elements": [],
     "kanji": "曾 top part",
     "subElements": [
       "eight"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "eight"
+    ],
     "wkNames": [
       "eight"
     ],
@@ -13371,8 +13402,8 @@ const elementsDict =
       "stick",
       "condolences",
       "drop",
-      "drops",
       "condolence",
+      "drops",
       "dollar sign"
     ],
     "synonyms": [
@@ -13397,8 +13428,8 @@ const elementsDict =
       "stick",
       "condolences",
       "drop",
-      "drops",
       "condolence",
+      "drops",
       "dollar sign"
     ],
     "synonyms": [],
@@ -14088,11 +14119,11 @@ const elementsDict =
       "dropB",
       "rice",
       "drop",
-      "drops",
       "tree",
       "horns",
       "wood",
-      "animal horns"
+      "animal horns",
+      "drops"
     ],
     "synonyms": [],
     "wkNames": [
@@ -14988,11 +15019,11 @@ const elementsDict =
       "hood",
       "little",
       "taskmaster",
+      "small",
+      "belt",
       "animal legs",
       "stick",
-      "hook",
-      "small",
-      "belt"
+      "hook"
     ],
     "synonyms": [],
     "wkNames": [
@@ -15068,11 +15099,11 @@ const elementsDict =
       "dropB",
       "rice",
       "drop",
-      "drops",
       "tree",
       "horns",
       "wood",
       "animal horns",
+      "drops",
       "brains",
       "dice"
     ],
@@ -15144,9 +15175,13 @@ const elementsDict =
       "street",
       "fu",
       "drop",
-      "drops",
+      "chop-seal",
       "nail",
-      "spike"
+      "spike",
+      "drops",
+      "clothes hanger",
+      "stick",
+      "coat hanger"
     ],
     "synonyms": [],
     "wkNames": [
@@ -15165,9 +15200,13 @@ const elementsDict =
       "street",
       "fu",
       "drop",
+      "chop-seal",
       "nail",
       "spike",
-      "drops"
+      "drops",
+      "clothes hanger",
+      "stick",
+      "coat hanger"
     ],
     "synonyms": [],
     "wkNames": [
@@ -15192,9 +15231,13 @@ const elementsDict =
       "street",
       "fu",
       "drop",
-      "drops",
+      "chop-seal",
       "nail",
       "spike",
+      "drops",
+      "clothes hanger",
+      "stick",
+      "coat hanger",
       "muscle",
       "arnold"
     ],
@@ -15389,9 +15432,12 @@ const elementsDict =
     "subElements": [
       "fu",
       "drop",
-      "drops"
+      "drops",
+      "chop-seal"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "chop-seal"
+    ],
     "wkNames": [
       "mama"
     ]
@@ -15410,13 +15456,16 @@ const elementsDict =
       "fu",
       "drop",
       "drops",
+      "chop-seal",
       "moon",
       "stick",
       "month",
       "flesh",
       "part of the body",
       "utilise",
-      "screwdriver"
+      "screwdriver",
+      "clothes hanger",
+      "coat hanger"
     ],
     "synonyms": [],
     "wkNames": [
@@ -15459,12 +15508,16 @@ const elementsDict =
       "fu",
       "drop",
       "drops",
+      "chop-seal",
       "rice field",
       "power",
       "brains",
       "muscle",
       "arnold",
-      "male"
+      "male",
+      "clothes hanger",
+      "stick",
+      "coat hanger"
     ],
     "synonyms": [],
     "wkNames": [
@@ -15528,6 +15581,7 @@ const elementsDict =
     "subElements": [
       "goingB",
       "wholesale",
+      "going",
       "reclining",
       "stick",
       "correct",
@@ -15538,7 +15592,8 @@ const elementsDict =
       "one",
       "footprint",
       "hood",
-      "belt"
+      "belt",
+      ""
     ],
     "synonyms": [],
     "wkNames": [
@@ -15603,10 +15658,10 @@ const elementsDict =
       "cliff",
       "elbow",
       "drop",
-      "drops",
       "hood",
       "stick",
       "belt",
+      "drops",
       "blown eggs",
       "eggs",
       "egg"
@@ -15664,9 +15719,13 @@ const elementsDict =
       "St. Bernard",
       "drops",
       "fu",
+      "chop-seal",
       "critters",
       "mending",
-      "mend"
+      "mend",
+      "clothes hanger",
+      "stick",
+      "coat hanger"
     ],
     "synonyms": [],
     "wkNames": [
@@ -15685,8 +15744,8 @@ const elementsDict =
       "mountain",
       "fishhookB",
       "drop",
-      "drops",
       "fishhook",
+      "drops",
       "hook",
       "stick",
       "fishguts"
