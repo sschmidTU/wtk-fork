@@ -135,6 +135,7 @@ sickness; 疒, 痒 outer part; sick
 rapidly; 疾; rapidly; tl(sickness, dart)
 not=knot=piglet's tail; 勿; wing&not
 double knot; 葱 middle part; double not; c(not, drop) // doesn't exist on WK. only used in 1 kanji.
+instantaneously; 忽; instantaneously; t(not, heart)
 notB; 而 bottom part; wingB&notB
 sow=pig; 豕; pig
 warthog; 隊 right part; warthog; t(horns, sow)
@@ -259,6 +260,7 @@ springtime; 春; spring; t(bonsai, sun)
 scroll; 巻; scroll; t(quarter, snake)
 ticket; 券; ticket; t(quarter, sword)
 play music; 奏; play music; t(bonsai, heavens)
+manchu dynasty; 秦; qin dynasty; t(bonsai, wheat)
 spring; 泉; spring; t(white, water)
 longevity; 寿; lifespan; t(bonsai, glue)&dropB // bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable
 christmas tree; 耒; plow; c(bushes, tree)&umbrella
@@ -277,6 +279,7 @@ time; 時; time; l(sun, temple)
 specialty; 専; specialty; t(ten, rice field, glue)
 acupuncturist; 縛 right part; acupuncturist; c(specialty, drop)
 adhere; 付; attach; l(person, glue)
+municipality=borough; 府; government; tl(cave, adhere) // RTK1 calls this municipality, RTK3 borough
 substitute; 代; substitute; l(person, arrow)
 generation=generations; 世; world
 dry=clothesline; 干; dry; t(ceiling, ten) // RTK gives clothesline as the primitive element name, but that's a bit long, and in the book it immediately uses "dry" for the next kanji.
@@ -403,14 +406,15 @@ sunglasses with one lens missing; 韋 bottom part; sunglasses with one lens miss
 show=altar; 示; jackhammer; t(two, small) // altar is same naming in RTK as 礼 left part, confusing. supposedly, this is just morphed in these cases.
 beginning; 元; origin; t(two, human legs); piWK
 nara; 奈; nara; t(large, show)
-military officer; 尉; military officer; l(tl(flag, show), glue)
+military officer=lieutenant; 尉; military officer; l(tl(flag, show), glue) // RTK1 calls this military officer, RTK3 lieutenant
 prohibition=prohibit; 禁; prohibit; t(grove, show)
 religion; 宗; religion; t(roof, show)
 ritual; 祭; festival; t(l(c(evening, drop), crotch), show)&teepee
 guess; 察; guess; t(roof, ritual)
 paper punch; 探 top right part; pi; t(crown, human legs)
-altar; 礻, 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right
+altar; 礻, 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right. Note that RTK also calls 示 (show) altar sometimes.
 cloak; 衤, 初 left part; spirit // almost same as altar, has an extra diagonal stroke on the right
+gods=god; 神; god; l(altar, speaketh)
 key; ユ; hook; t(straight fu, floor)
 guillotine; 決 right part; decide; t(c(key, stick), large) // maybe the subdivision here with key crossed by stick is unnecessary, but who knows.
 marquis; 侯; marquis; l(personB, t(key, dart))
@@ -418,6 +422,7 @@ locket; 韋; korea; t(key, mouth, sunglasses with one lens missing)
 retainer=slave; 臣; servant
 loincloth=wise; 臤; wise; 臤
 gigantic=giant; 巨; giant
+strict; 堅; solid; t(loincloth, soil)
 fingerprint; 犯 right part; snake
 sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 mosaic; 巴; bed; c(sign of the snake, stick)
@@ -431,6 +436,7 @@ aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop) // doesn't exist in WK, which also has 斗 ladle unfortunately
 phrase; 句; paragraph; o(bound up, mouth)
 decameron; 旬; in season; tr(bound up, sun)
+dangerous; 危; dangerous; t(bound up, tl(cliff, fingerprint))
 separate; 別; separate; l(t(mouth, bound up), saber)
 angle; 角; angle; t(bound up, t(rice field, fenceposts)) // structureVague: yes
 again; 再; again; t(ceiling, sprout, fence postsB); leafWK // structureVague: yes
@@ -551,6 +557,7 @@ consider; 考; think; t(old man, slingshot)
 think; 思; think; t(rice field, heart)
 filial piety; 孝; teacher&filial piety; t(old man, child) // WK radical name is teacher, kanji name filial piety
 someone; 者; someone; t(old man, sun)
+various; 諸; various; l(say, someone)
 signature; 署; government office; t(eyeB, someone)
 cave; 广, 店 outer part; canopy; dropB
 yurt; 度 without 又; yurt; tl(cave, twenty) // only exists as element/radical in WK, but is quite common
@@ -612,6 +619,7 @@ forest; 森; forest; t(tree, grove)
 book; 本; book; c(tree, one)
 woman; 女; woman
 concubine; 妾; concubine; t(stand up, woman)
+likeness; 如; likeness; l(woman, mouth)
 fruit; 果; fruit; t(rice field, tree)
 mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
 every; 毎; every; t(reclining, rice field)
@@ -674,6 +682,7 @@ maestro; 師 left part; drop&bear
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
 bureaucrat; 官; government; t(roof, maestro without baton)
 expert; 師; teacher; l(maestro, marketB)
+chase; 追; follow; lb(road, maestro)
 walk; 歩; walk; t(stop, few)
 repeatedly; 頻; frequent; l(walk, head)
 mouth; 口; mouth
@@ -707,6 +716,7 @@ speaketh=monkey; 申; say humbly; t(stick, armor)
 rice; 米; rice; c(tree, horns)
 animal tracks; 釆; sickle; t(dropB, rice)
 astray; 迷; astray; lb(road, rice)
+number; 数; number; l(t(rice, woman), taskmaster)
 soil=dirt=ground; 土; dirt
 samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal strong is longer than the lower one here.
 square jewel=squared jewel; 圭; square jewel; t(soil, soil)
@@ -719,7 +729,7 @@ olden times=old days; 旧; former; l(stick, sun)
 pinnacle; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 city walls; 阝; building // RTK: pinnacle when on the left, city walls when on the right
 wind; 几, 冗 bottom part; table
-windB; 風; wind; o(wind, insect) // this is stupidly ambiguous in RTK, as 几 is also wind
+windB=wind; 風; wind; o(wind, insect) // this is stupidly ambiguous in RTK, as 几 is also wind
 mediocre; 凡; mediocre; o(wind, drop)
 whirlwind=high spirits; 亢; whirlwind
 boat; 舟; boat; t(drop, o(wind, t(drop, one, stick)))
@@ -770,6 +780,7 @@ previously; 既; previously; l(silver, tusk)
 stamp; 卩; stamp; t(hood, stick)
 cornucopia=vine; 丩; vines; t(shovel, stick)
 stamps; 抑 without 扌; cat pirate; l(box, stamp)
+node=joint=season; 節; season; t(bamboo, l(silver, stamp))
 lowly; 卑; lowly; t(drop, rice field, cornucopia)
 chop-seal; 令 bottom part, 卩 with longer top stroke; stamp; tr(clothes hanger, stick)
 chop-sealB; マ, 矛 top part, 勇 top part; mama; c(fu, drop)
@@ -779,7 +790,7 @@ instead; 却; contrary; l(gone, stamp)
 wholesale; 卸; wholesale; l(t(reclining, stick, correct), stamp)
 receipt; 留 top left part; receipt&private; c(cliff, elbow)
 egg=eggs; 卵; egg; l(c(receipt, drop), c(stamp, drop))
-sign of the hare=blown eggs=egg; 卯; blown eggs; l(t(receipt, dropB), stamp) // structureVague: yes
+sign of the hare=blown eggs=eggs=egg; 卯; blown eggs; l(t(receipt, dropB), stamp) // structureVague: yes
 detain; 留; detain; t(l(receipt, sword), rice field)
 doubt; 疑; doubt; l(t(spoon, dart), t(chop-sealB, zoo))
 earthworm; 屯; barracks; t(dropB, mountain, fishhookB)

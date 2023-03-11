@@ -2573,6 +2573,30 @@ const elementsDict =
     ],
     "comment": "doesn't exist on WK. only used in 1 kanji."
   },
+  "instantaneously": {
+    "elements": [
+      "not",
+      "heart"
+    ],
+    "kanji": "忽",
+    "subElements": [
+      "not",
+      "heart",
+      "knot",
+      "piglet's tail",
+      "drop3",
+      "drop",
+      "fishhook",
+      "drops",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "instantaneously"
+    ]
+  },
   "notB": {
     "elements": [],
     "kanji": "而 bottom part",
@@ -5024,6 +5048,32 @@ const elementsDict =
       "play music"
     ]
   },
+  "manchu dynasty": {
+    "elements": [
+      "bonsai",
+      "wheat"
+    ],
+    "kanji": "秦",
+    "subElements": [
+      "bonsai",
+      "wheat",
+      "husband",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "drop",
+      "cereal",
+      "sapling",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "qin dynasty"
+    ]
+  },
   "spring": {
     "elements": [
       "white",
@@ -5452,6 +5502,34 @@ const elementsDict =
     "wkNames": [
       "attach"
     ]
+  },
+  "municipality": {
+    "elements": [
+      "cave",
+      "adhere"
+    ],
+    "kanji": "府",
+    "subElements": [
+      "cave",
+      "adhere",
+      "dropB",
+      "person",
+      "glue",
+      "ten",
+      "hook",
+      "drop",
+      "needle",
+      "drops",
+      "measurement",
+      "borough"
+    ],
+    "synonyms": [
+      "borough"
+    ],
+    "wkNames": [
+      "government"
+    ],
+    "comment": "RTK1 calls this municipality, RTK3 borough"
   },
   "substitute": {
     "elements": [
@@ -7839,12 +7917,16 @@ const elementsDict =
       "ten",
       "hook",
       "needle",
-      "measurement"
+      "measurement",
+      "lieutenant"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "lieutenant"
+    ],
     "wkNames": [
       "military officer"
-    ]
+    ],
+    "comment": "RTK1 calls this military officer, RTK3 lieutenant"
   },
   "prohibition": {
     "elements": [
@@ -7966,7 +8048,7 @@ const elementsDict =
     "wkNames": [
       "spirit"
     ],
-    "comment": "almost same as cloak, doesn't have the diagonal stroke on the right"
+    "comment": "almost same as cloak, doesn't have the diagonal stroke on the right. Note that RTK also calls 示 (show) altar sometimes."
   },
   "cloak": {
     "elements": [],
@@ -7977,6 +8059,31 @@ const elementsDict =
       "spirit"
     ],
     "comment": "almost same as altar, has an extra diagonal stroke on the right"
+  },
+  "gods": {
+    "elements": [
+      "altar",
+      "speaketh"
+    ],
+    "kanji": "神",
+    "subElements": [
+      "altar",
+      "speaketh",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains",
+      "god"
+    ],
+    "synonyms": [
+      "god"
+    ],
+    "wkNames": [
+      "god"
+    ]
   },
   "key": {
     "elements": [
@@ -8106,6 +8213,25 @@ const elementsDict =
     ],
     "wkNames": [
       "giant"
+    ]
+  },
+  "strict": {
+    "elements": [
+      "loincloth",
+      "soil"
+    ],
+    "kanji": "堅",
+    "subElements": [
+      "loincloth",
+      "soil",
+      "臤",
+      "wise",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "solid"
     ]
   },
   "fingerprint": {
@@ -8362,6 +8488,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "in season"
+    ]
+  },
+  "dangerous": {
+    "elements": [
+      "bound up",
+      "cliff",
+      "fingerprint"
+    ],
+    "kanji": "危",
+    "subElements": [
+      "bound up",
+      "cliff",
+      "fingerprint",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dangerous"
     ]
   },
   "separate": {
@@ -10816,6 +10965,36 @@ const elementsDict =
       "someone"
     ]
   },
+  "various": {
+    "elements": [
+      "say",
+      "someone"
+    ],
+    "kanji": "諸",
+    "subElements": [
+      "say",
+      "someone",
+      "ceiling4",
+      "ceiling",
+      "mouth",
+      "one",
+      "words",
+      "keitai",
+      "old man",
+      "sun",
+      "soil",
+      "dropB",
+      "dirt",
+      "ground",
+      "drop",
+      "drops",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "various"
+    ]
+  },
   "signature": {
     "elements": [
       "eyeB",
@@ -11989,6 +12168,21 @@ const elementsDict =
       "concubine"
     ]
   },
+  "likeness": {
+    "elements": [
+      "woman",
+      "mouth"
+    ],
+    "kanji": "如",
+    "subElements": [
+      "woman",
+      "mouth"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "likeness"
+    ]
+  },
   "fruit": {
     "elements": [
       "rice field",
@@ -13147,6 +13341,21 @@ const elementsDict =
       "teacher"
     ]
   },
+  "chase": {
+    "elements": [
+      "road",
+      "maestro"
+    ],
+    "kanji": "追",
+    "subElements": [
+      "road",
+      "maestro"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "follow"
+    ]
+  },
   "walk": {
     "elements": [
       "stop",
@@ -13777,6 +13986,27 @@ const elementsDict =
       "astray"
     ]
   },
+  "number": {
+    "elements": [
+      "rice",
+      "woman",
+      "taskmaster"
+    ],
+    "kanji": "数",
+    "subElements": [
+      "rice",
+      "woman",
+      "taskmaster",
+      "tree",
+      "horns",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "number"
+    ]
+  },
   "soil": {
     "elements": [],
     "kanji": "土",
@@ -13971,9 +14201,12 @@ const elementsDict =
       "stick",
       "inX",
       "one",
-      "drops"
+      "drops",
+      "wind"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "wind"
+    ],
     "wkNames": [
       "wind"
     ],
@@ -14946,6 +15179,34 @@ const elementsDict =
       "cat pirate"
     ]
   },
+  "node": {
+    "elements": [
+      "bamboo",
+      "silver",
+      "stamp"
+    ],
+    "kanji": "節",
+    "subElements": [
+      "bamboo",
+      "silver",
+      "stamp",
+      "sun",
+      "hairpin",
+      "day",
+      "hood",
+      "stick",
+      "belt",
+      "joint",
+      "season"
+    ],
+    "synonyms": [
+      "joint",
+      "season"
+    ],
+    "wkNames": [
+      "season"
+    ]
+  },
   "lowly": {
     "elements": [
       "drop",
@@ -15159,10 +15420,12 @@ const elementsDict =
       "stick",
       "belt",
       "blown eggs",
+      "eggs",
       "egg"
     ],
     "synonyms": [
       "blown eggs",
+      "eggs",
       "egg"
     ],
     "wkNames": [
