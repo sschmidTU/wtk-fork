@@ -1046,6 +1046,30 @@ const elementsDict =
       "arrival"
     ]
   },
+  "shade": {
+    "elements": [
+      "pinnacle",
+      "now",
+      "wall"
+    ],
+    "kanji": "陰",
+    "subElements": [
+      "pinnacle",
+      "now",
+      "wall",
+      "umbrella",
+      "one",
+      "clothes hanger",
+      "clock",
+      "ceiling",
+      "elbow",
+      "coat hanger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "shade"
+    ]
+  },
   "king": {
     "elements": [],
     "kanji": "王",
@@ -1177,6 +1201,29 @@ const elementsDict =
     "wkNames": [
       "bushes",
       "life"
+    ]
+  },
+  "tryst": {
+    "elements": [
+      "roadB",
+      "walking legs",
+      "bushes"
+    ],
+    "kanji": "逢",
+    "subElements": [
+      "roadB",
+      "walking legs",
+      "bushes",
+      "scooter",
+      "grow up",
+      "stick",
+      "drop",
+      "king",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rendezvous"
     ]
   },
   "cornstalk": {
@@ -1492,6 +1539,32 @@ const elementsDict =
     ],
     "comment": "bottom part different from cabbage"
   },
+  "difficult": {
+    "elements": [
+      "scarecrow",
+      "turkey"
+    ],
+    "kanji": "難",
+    "subElements": [
+      "scarecrow",
+      "turkey",
+      "flowers",
+      "mouth",
+      "stick",
+      "husband",
+      "flower",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "difficult"
+    ]
+  },
   "silage": {
     "elements": [
       "rice field",
@@ -1669,6 +1742,24 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "wish"
+    ]
+  },
+  "reap": {
+    "elements": [
+      "sheaf",
+      "saber"
+    ],
+    "kanji": "刈",
+    "subElements": [
+      "sheaf",
+      "saber",
+      "sabre",
+      "sword",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "prune"
     ]
   },
   "spirit": {
@@ -1989,7 +2080,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "round"
-    ]
+    ],
+    "comment": "don't confuse with 円 circle"
   },
   "wealth": {
     "elements": [
@@ -2462,6 +2554,25 @@ const elementsDict =
       "not"
     ]
   },
+  "double knot": {
+    "elements": [
+      "not",
+      "drop"
+    ],
+    "kanji": "葱 middle part",
+    "subElements": [
+      "not",
+      "drop",
+      "knot",
+      "piglet's tail",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "double not"
+    ],
+    "comment": "doesn't exist on WK. only used in 1 kanji."
+  },
   "notB": {
     "elements": [],
     "kanji": "而 bottom part",
@@ -2534,6 +2645,29 @@ const elementsDict =
       "thing"
     ]
   },
+  "overpowering": {
+    "elements": [
+      "top hat",
+      "mouth",
+      "crown",
+      "sow"
+    ],
+    "kanji": "豪",
+    "subElements": [
+      "top hat",
+      "mouth",
+      "crown",
+      "sow",
+      "drop",
+      "one",
+      "pig",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "luxurious"
+    ]
+  },
   "easy": {
     "elements": [
       "sun",
@@ -2555,6 +2689,29 @@ const elementsDict =
       "easy"
     ],
     "comment": "element is called piggy bank in RTK, but honestly that's kinda silly if we can just use the kanji name \"easy\"."
+  },
+  "hot water": {
+    "elements": [
+      "water",
+      "easy"
+    ],
+    "kanji": "湯",
+    "subElements": [
+      "water",
+      "easy",
+      "water droplets",
+      "water pistol",
+      "sun",
+      "not",
+      "day",
+      "knot",
+      "piglet's tail",
+      "piggy bank"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "hot water"
+    ]
   },
   "utilize": {
     "elements": [
@@ -3716,6 +3873,28 @@ const elementsDict =
       "head"
     ]
   },
+  "circle": {
+    "elements": [
+      "hood",
+      "top hat"
+    ],
+    "kanji": "円",
+    "subElements": [
+      "hood",
+      "top hat",
+      "belt",
+      "drop",
+      "one",
+      "drops",
+      "yen"
+    ],
+    "synonyms": [
+      "yen"
+    ],
+    "wkNames": [
+      "yen"
+    ]
+  },
   "inside": {
     "elements": [
       "hood",
@@ -4433,6 +4612,25 @@ const elementsDict =
       "melon"
     ]
   },
+  "orphan": {
+    "elements": [
+      "child",
+      "melon"
+    ],
+    "kanji": "孤",
+    "subElements": [
+      "child",
+      "melon",
+      "claw",
+      "elbow",
+      "drag",
+      "cliff"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "orphan"
+    ]
+  },
   "complete": {
     "elements": [
       ""
@@ -4802,6 +5000,30 @@ const elementsDict =
       "ticket"
     ]
   },
+  "play music": {
+    "elements": [
+      "bonsai",
+      "heavens"
+    ],
+    "kanji": "奏",
+    "subElements": [
+      "bonsai",
+      "heavens",
+      "husband",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "ceiling",
+      "one"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "play music"
+    ]
+  },
   "spring": {
     "elements": [
       "white",
@@ -5135,6 +5357,33 @@ const elementsDict =
     ],
     "wkNames": [
       "temple"
+    ]
+  },
+  "time": {
+    "elements": [
+      "sun",
+      "temple"
+    ],
+    "kanji": "時",
+    "subElements": [
+      "sun",
+      "temple",
+      "day",
+      "soil",
+      "glue",
+      "dirt",
+      "ground",
+      "ten",
+      "hook",
+      "drop",
+      "needle",
+      "drops",
+      "measurement",
+      "Buddhist temple"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "time"
     ]
   },
   "specialty": {
@@ -6268,6 +6517,43 @@ const elementsDict =
       "farming"
     ]
   },
+  "apprehensive": {
+    "elements": [
+      "rice field",
+      "hairpin"
+    ],
+    "kanji": "畏",
+    "subElements": [
+      "rice field",
+      "hairpin",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "apprehensive"
+    ]
+  },
+  "decline": {
+    "elements": [
+      "top hat",
+      "sun",
+      "hairpin"
+    ],
+    "kanji": "衰",
+    "subElements": [
+      "top hat",
+      "sun",
+      "hairpin",
+      "drop",
+      "one",
+      "day",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "decline"
+    ]
+  },
   "gold": {
     "elements": [
       "umbrella",
@@ -6315,12 +6601,16 @@ const elementsDict =
       "drops",
       "sun",
       "hairpin",
-      "day"
+      "day",
+      "halo"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "halo"
+    ],
     "wkNames": [
       "good"
-    ]
+    ],
+    "comment": "RTK: good as kanji, halo as a primitive"
   },
   "eat": {
     "elements": [
@@ -6337,6 +6627,7 @@ const elementsDict =
       "sun",
       "hairpin",
       "day",
+      "halo",
       "food"
     ],
     "synonyms": [
@@ -6360,7 +6651,8 @@ const elementsDict =
       "drops",
       "sun",
       "hairpin",
-      "day"
+      "day",
+      "halo"
     ],
     "synonyms": [],
     "wkNames": [
@@ -6477,6 +6769,25 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "build"
+    ]
+  },
+  "take along": {
+    "elements": [
+      "road",
+      "car"
+    ],
+    "kanji": "連",
+    "subElements": [
+      "road",
+      "car",
+      "ten",
+      "rice field",
+      "needle",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "take along"
     ]
   },
   "street": {
@@ -8871,6 +9182,28 @@ const elementsDict =
       "profit"
     ]
   },
+  "pheasant": {
+    "elements": [
+      "dart",
+      "turkey"
+    ],
+    "kanji": "雉",
+    "subElements": [
+      "dart",
+      "turkey",
+      "heavens",
+      "drop",
+      "ceiling",
+      "large",
+      "one",
+      "St. Bernard",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "pheasant"
+    ]
+  },
   "committee": {
     "elements": [
       "wheat",
@@ -10481,6 +10814,31 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "someone"
+    ]
+  },
+  "signature": {
+    "elements": [
+      "eyeB",
+      "someone"
+    ],
+    "kanji": "署",
+    "subElements": [
+      "eyeB",
+      "someone",
+      "eye",
+      "old man",
+      "sun",
+      "soil",
+      "dropB",
+      "dirt",
+      "ground",
+      "drop",
+      "drops",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "government office"
     ]
   },
   "cave": {
@@ -12688,9 +13046,12 @@ const elementsDict =
       "condolences",
       "drop",
       "drops",
-      "condolence"
+      "condolence",
+      "dollar sign"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "dollar sign"
+    ],
     "wkNames": [
       "dollar"
     ]
@@ -12711,7 +13072,8 @@ const elementsDict =
       "condolences",
       "drop",
       "drops",
-      "condolence"
+      "condolence",
+      "dollar sign"
     ],
     "synonyms": [],
     "wkNames": [
@@ -12763,6 +13125,28 @@ const elementsDict =
       "government"
     ]
   },
+  "expert": {
+    "elements": [
+      "maestro",
+      "marketB"
+    ],
+    "kanji": "師",
+    "subElements": [
+      "maestro",
+      "marketB",
+      "ceiling",
+      "towel",
+      "one",
+      "market",
+      "top hat",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "teacher"
+    ]
+  },
   "walk": {
     "elements": [
       "stop",
@@ -12785,6 +13169,42 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "walk"
+    ]
+  },
+  "repeatedly": {
+    "elements": [
+      "walk",
+      "head"
+    ],
+    "kanji": "頻",
+    "subElements": [
+      "walk",
+      "head",
+      "stop",
+      "few",
+      "footprint",
+      "little",
+      "dropB",
+      "animal legs",
+      "stick",
+      "hook",
+      "small",
+      "drop",
+      "drops",
+      "ceiling",
+      "shellfish",
+      "oneself",
+      "one",
+      "eye",
+      "shell",
+      "clam",
+      "oyster",
+      "nose",
+      "page"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "frequent"
     ]
   },
   "mouth": {
@@ -13059,6 +13479,21 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "daring"
+    ]
+  },
+  "exclamation": {
+    "elements": [
+      "ear",
+      "city walls"
+    ],
+    "kanji": "耶",
+    "subElements": [
+      "ear",
+      "city walls"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "exclamation"
     ]
   },
   "shelf": {

@@ -1018,6 +1018,7 @@ class WTKSearch {
       "horse chestnut": "horsechestnut",
       "long for": "longfor",
       "give up": "giveup",
+      "government office": "governmentoffice"
     }
   }
 
@@ -1469,6 +1470,7 @@ class WTKSearch {
       "horsechestnut": "horse chestnut",
       "longfor": "long for",
       "giveup": "give up",
+      "governmentoffice": "signature"
     }
   }
 
