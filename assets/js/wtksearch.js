@@ -1367,7 +1367,7 @@ class WTKSearch {
       "spikes": "row,upside down in a row",
       "pope": "ten&eye",
       "ground": "one,floor,ceiling",
-      "creeper": "one&mouth,mouth&floor",
+      "creeper": "creeper", //mouth&floor, one&mouth (creeper was added as an element by WTK-Search, even if RTK doesn't name it)
       "measurement": "glue",
       "measure": "glue", // custom shorthand
       "commander": "leader",
@@ -1384,7 +1384,7 @@ class WTKSearch {
       "return": "re-", // enables searching for 涙 with "return" in WK mode
       "common": "commonplace",
       "first": "first time",
-      "distinction": "discrimination", // 差
+      "distinction": "distinction,discrimination", // 差
       "front": "in front",
       // "all": "all,whole", // all exists in RTK
       // "ashes": "ashes", // same in RTK

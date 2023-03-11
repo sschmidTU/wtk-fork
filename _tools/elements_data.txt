@@ -39,8 +39,10 @@ tooth; 歯; tooth; t(stop, o(shovel, rice))
 flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
 door; 戸; door; t(ceiling, flag)
 nun; 尼; nun; tl(flag, spoon)
+fan; 扇; folding fan; tl(door, feathers)
 yield; 屈; yield; tl(flag, exit)
 reside; 居; alive; tl(flag, old)
+tail; 尾; tail; tl(flag, fur)
 godown; 倉; warehouse; t(meeting, tl(flag, t(sun, mouth))) // structureVague: yes
 voice; 声; voice; t(samurai, o(flag, stick))
 re-=re; 戻; return; tl(door, large)
@@ -58,7 +60,8 @@ arrival; 到; arrival; l(climax, saber)
 shade; 陰; shade; l(pinnacle, t(now, wall))
 king; 王; king // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
 porter=king; 壬; king
-jewel=ball=earring; 玉; jewel; o(king, drop) // my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel.
+kingB=king; 瑛 left part; king // my version of RTK1 calls this jewel, e.g. in 理, 環境 and 琴, but that's the same name as 玉 jewel. In WTKSearch, 王 is always king and 玉 is always jewel. Interestingly, 班 has both.
+jewel=ball=earring; 玉; jewel; o(king, drop) 
 responsibility; 任; duty; l(person, porter)
 lord; 主; master; t(drop, king)
 grow up; 青 top part; life; t(drop, king)
@@ -84,6 +87,7 @@ difficult; 難; difficult; l(scarecrow, turkey)
 silage; 垂 middle part; silage; c(rice field, stick) // RTK: vertical stroke will always combine with another element
 droop; 垂; dangle; t(dropB, silage, floor)
 ride; 乗; ride; c(wheat, silage) // structureVague: yes
+splendor; 華; showy; t(flowers, silage, ten)
 un-=jail cell=prison bars; 非; injustice; f(animal legs, shape, three)
 nine=baseball; 九; nine
 ninety; 枠 right part; ninety; t(nine, ten)
@@ -192,6 +196,7 @@ convex; 凸; convex
 concave; 凸; concave
 sheep; 羊; sheep; t(horns, king, stick)
 beauty; 美; beauty; t(sheep, large) // the last part of the vertical stroke is interwoven with the large radical, but that seems like a minor detail. (structureVague: yes)
+distinction=discrimination; 差; distinction&discriminate; t(sheep, left) // RTK1 calls this distinction, RTK3 mostly as well, once discrimination (probably mistake)
 spicy; 辛; spicy; t(stand, ten)
 happiness; 幸; happiness; t(ten, spicy) // interwoven. structureVague: yes
 ketchup=false; 辟; hot pepper; l(tl(flag, mouth), spicy) // kanji meaning is false (jisho)
@@ -574,6 +579,7 @@ summer; 夏; summer; t(ceiling, oneself, walking legs); leafWK // head/page elem
 husband; 夫; husband; t(ten, large), tree // similar to RTK(not yet) and RTK(extremity), but the horizontal strokes have equal length
 scissors; 峡 right part; scissors; c(husband, horns) // don't confuse with scissors kanji 鋏
 scissorsB=scissors; 鋏 right part, 頰 left part; scissors; scissors // variant of scissors
+standard; 規; standard; l(husband, see)
 not yet; 未; not yet; t(ten, large), tree // similar to RTK(husband) and RTK(extremity), but the upper horizontal stroke is shorter
 extremity; 末; end; t(ten, large), tree // similar to RTK(husband) and RTK(not yet), but the upper horizontal stroke is longer
 come; 来; come; c(not yet, horns)
@@ -719,7 +725,7 @@ astray; 迷; astray; lb(road, rice)
 number; 数; number; l(t(rice, woman), taskmaster)
 soil=dirt=ground; 土; dirt
 samurai=gentleman; 士; samurai // similar to dirt, but the upper horizontal strong is longer than the lower one here.
-square jewel=squared jewel; 圭; square jewel; t(soil, soil)
+square jewel=squared jewel=ivy; 圭; square jewel; t(soil, soil) // RTK3 calls this ivy
 intention; 志; intention; t(samurai, heart)
 good luck; 吉; good luck; t(samurai, mouth)
 sell; 売; sell; t(samurai, crown, human legs)
@@ -784,10 +790,12 @@ node=joint=season; 節; season; t(bamboo, l(silver, stamp))
 lowly; 卑; lowly; t(drop, rice field, cornucopia)
 chop-seal; 令 bottom part, 卩 with longer top stroke; stamp; tr(clothes hanger, stick)
 chop-sealB; マ, 矛 top part, 勇 top part; mama; c(fu, drop)
+traffic; 通; pass through; lb(road, t(chop-sealB, utilize))
 orders=order; 令; orders; t(meeting, chop-seal)
 courage; 勇; courage; t(chop-sealB, man)
 instead; 却; contrary; l(gone, stamp)
 wholesale; 卸; wholesale; l(t(reclining, stick, correct), stamp)
+honorable; 御; honorable; l(goingB, wholesale)
 receipt; 留 top left part; receipt&private; c(cliff, elbow)
 egg=eggs; 卵; egg; l(c(receipt, drop), c(stamp, drop))
 sign of the hare=blown eggs=eggs=egg; 卯; blown eggs; l(t(receipt, dropB), stamp) // structureVague: yes
@@ -798,3 +806,4 @@ rice seedling; 坴 top part; rice seedling; t(soil, human legs)
 land; 坴; womb; t(rice seedling, soil)
 acorn=sign of the hog; 亥; slice; t(top hat, spoon, dropB, drop) // the bottom part isn't further described in RTK, a bit vague/unique
 center; 央; center; t(towel, large)&hood // structureVague: yes
+england; 英; england; t(flowers, center)

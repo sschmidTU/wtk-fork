@@ -710,6 +710,32 @@ const elementsDict =
       "nun"
     ]
   },
+  "fan": {
+    "elements": [
+      "door",
+      "feathers"
+    ],
+    "kanji": "扇",
+    "subElements": [
+      "door",
+      "feathers",
+      "ceiling",
+      "flag",
+      "one",
+      "mouth",
+      "drop",
+      "drops",
+      "clothes hanger2",
+      "clothes hanger",
+      "drop2",
+      "drop",
+      "coat hanger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "folding fan"
+    ]
+  },
   "yield": {
     "elements": [
       "flag",
@@ -750,6 +776,24 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "alive"
+    ]
+  },
+  "tail": {
+    "elements": [
+      "flag",
+      "fur"
+    ],
+    "kanji": "尾",
+    "subElements": [
+      "flag",
+      "fur",
+      "mouth",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tail"
     ]
   },
   "godown": {
@@ -1093,6 +1137,20 @@ const elementsDict =
       "king"
     ]
   },
+  "kingB": {
+    "elements": [],
+    "kanji": "瑛 left part",
+    "subElements": [
+      "king"
+    ],
+    "synonyms": [
+      "king"
+    ],
+    "wkNames": [
+      "king"
+    ],
+    "comment": "my version of RTK1 calls this jewel, e.g. in 理, 環境 and 琴, but that's the same name as 玉 jewel. In WTKSearch, 王 is always king and 玉 is always jewel. Interestingly, 班 has both."
+  },
   "jewel": {
     "elements": [
       "king",
@@ -1112,8 +1170,7 @@ const elementsDict =
     ],
     "wkNames": [
       "jewel"
-    ],
-    "comment": "my version of RTK1 has errors where sometimes 王 is called jewel, e.g. in 理, 環境 and 琴. In WTKSearch, 王 is always king and 玉 is always jewel."
+    ]
   },
   "responsibility": {
     "elements": [
@@ -1629,6 +1686,28 @@ const elementsDict =
       "ride"
     ],
     "comment": "structureVague: yes"
+  },
+  "splendor": {
+    "elements": [
+      "flowers",
+      "silage",
+      "ten"
+    ],
+    "kanji": "華",
+    "subElements": [
+      "flowers",
+      "silage",
+      "ten",
+      "flower",
+      "rice field",
+      "stick",
+      "brains",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "showy"
+    ]
   },
   "un-": {
     "elements": [
@@ -3666,6 +3745,36 @@ const elementsDict =
       "beauty"
     ],
     "comment": "the last part of the vertical stroke is interwoven with the large radical, but that seems like a minor detail. (structureVague: yes)"
+  },
+  "distinction": {
+    "elements": [
+      "sheep",
+      "left"
+    ],
+    "kanji": "差",
+    "subElements": [
+      "sheep",
+      "left",
+      "horns",
+      "king",
+      "stick",
+      "animal horns",
+      "by one's side",
+      "craft",
+      "by one’s side",
+      "ceiling",
+      "floor",
+      "one",
+      "discrimination"
+    ],
+    "synonyms": [
+      "discrimination"
+    ],
+    "wkNames": [
+      "distinction",
+      "discriminate"
+    ],
+    "comment": "RTK1 calls this distinction, RTK3 mostly as well, once discrimination (probably mistake)"
   },
   "spicy": {
     "elements": [
@@ -11358,6 +11467,29 @@ const elementsDict =
     ],
     "comment": "variant of scissors"
   },
+  "standard": {
+    "elements": [
+      "husband",
+      "see"
+    ],
+    "kanji": "規",
+    "subElements": [
+      "husband",
+      "see",
+      "ten",
+      "large",
+      "tree",
+      "needle",
+      "St. Bernard",
+      "wood",
+      "eye",
+      "human legs"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "standard"
+    ]
+  },
   "not yet": {
     "elements": [
       "ten",
@@ -14047,14 +14179,17 @@ const elementsDict =
       "soil",
       "dirt",
       "ground",
-      "squared jewel"
+      "squared jewel",
+      "ivy"
     ],
     "synonyms": [
-      "squared jewel"
+      "squared jewel",
+      "ivy"
     ],
     "wkNames": [
       "square jewel"
-    ]
+    ],
+    "comment": "RTK3 calls this ivy"
   },
   "intention": {
     "elements": [
@@ -15261,6 +15396,33 @@ const elementsDict =
       "mama"
     ]
   },
+  "traffic": {
+    "elements": [
+      "road",
+      "chop-sealB",
+      "utilize"
+    ],
+    "kanji": "通",
+    "subElements": [
+      "road",
+      "chop-sealB",
+      "utilize",
+      "fu",
+      "drop",
+      "drops",
+      "moon",
+      "stick",
+      "month",
+      "flesh",
+      "part of the body",
+      "utilise",
+      "screwdriver"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "pass through"
+    ]
+  },
   "orders": {
     "elements": [
       "meeting",
@@ -15355,6 +15517,32 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "wholesale"
+    ]
+  },
+  "honorable": {
+    "elements": [
+      "goingB",
+      "wholesale"
+    ],
+    "kanji": "御",
+    "subElements": [
+      "goingB",
+      "wholesale",
+      "reclining",
+      "stick",
+      "correct",
+      "stamp",
+      "lying down",
+      "ceiling",
+      "stop",
+      "one",
+      "footprint",
+      "hood",
+      "belt"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "honorable"
     ]
   },
   "receipt": {
@@ -15587,5 +15775,26 @@ const elementsDict =
       "center"
     ],
     "comment": "structureVague: yes"
+  },
+  "england": {
+    "elements": [
+      "flowers",
+      "center"
+    ],
+    "kanji": "英",
+    "subElements": [
+      "flowers",
+      "center",
+      "flower",
+      "towel",
+      "large",
+      "hood",
+      "St. Bernard",
+      "belt"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "england"
+    ]
   }
 };
