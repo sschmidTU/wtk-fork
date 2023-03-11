@@ -1271,7 +1271,7 @@ const elementsDict =
       "roadB",
       "walking legs",
       "bushes",
-      "scooter",
+      "road",
       "grow up",
       "stick",
       "drop",
@@ -6913,16 +6913,16 @@ const elementsDict =
     ]
   },
   "roadB": {
-    "elements": [
-      "scooter"
-    ],
-    "kanji": "辶",
+    "elements": [],
+    "kanji": "辶, 迄 left part",
     "subElements": [
-      "scooter"
+      "road"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "road"
+    ],
     "wkNames": [
-      "迄 left part"
+      "scooter"
     ]
   },
   "stretch": {

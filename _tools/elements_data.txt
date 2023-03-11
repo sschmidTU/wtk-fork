@@ -351,7 +351,7 @@ meeting of butchers; 兪; death star // there is a subtle variation: either moon
 in front=front; 前; front; t(horns, one, butcher)
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
 road; ⻌, 退 left part; scooter
-roadB; 辶; 迄 left part; scooter
+roadB=road; 辶, 迄 left part; scooter
 stretch; 廴; yoga
 build; 建; build; lb(stretch, brush)
 take along; 連; take along; lb(road, car)
