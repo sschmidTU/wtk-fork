@@ -254,7 +254,7 @@ meadow; 原; original; o(cliff, spring)
 awl; 㑒; squid
 now=clock; 今; now; t(umbrella, one, clothes hanger)
 wish; 念; thought; t(now, heart)
-head=page; 頁; geoduck; t(ground, oneself, animal legs); leafWK
+head=page; 頁; geoduck; t(ceiling, drop, shellfish)&oneself; leafWK
 stinking; 臭; stinking; t(oneself, large)
 rule; 則; rule; l(shellfish, knife)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
@@ -394,7 +394,6 @@ key; ユ; hook; t(straight fu, floor)
 guillotine; 決 right part; decide; t(c(key, stick), large) // maybe the subdivision here with key crossed by stick is unnecessary, but who knows.
 marquis; 侯; marquis; l(personB, t(key, dart))
 locket; 韋; korea; t(key, mouth, sunglasses with one lens missing)
-page; 頁; page; t(ceiling, drop, shellfish); leafWK
 retainer=slave; 臣; servant
 loincloth=wise; 臤; wise; 臤
 gigantic=giant; 巨; giant

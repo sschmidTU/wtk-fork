@@ -4927,20 +4927,25 @@ const elementsDict =
   },
   "head": {
     "elements": [
-      "ground",
-      "oneself",
-      "animal legs"
+      "ceiling",
+      "drop",
+      "shellfish"
     ],
     "elementsWK": "leafWK",
     "kanji": "頁",
     "subElements": [
-      "ground",
-      "oneself",
-      "animal legs",
+      "ceiling",
       "drop",
-      "eye",
-      "nose",
+      "shellfish",
+      "oneself",
+      "one",
       "drops",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster",
+      "nose",
       "page"
     ],
     "synonyms": [
@@ -7592,31 +7597,6 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "korea"
-    ]
-  },
-  "page": {
-    "elements": [
-      "ceiling",
-      "drop",
-      "shellfish"
-    ],
-    "elementsWK": "leafWK",
-    "kanji": "頁",
-    "subElements": [
-      "ceiling",
-      "drop",
-      "shellfish",
-      "one",
-      "drops",
-      "eye",
-      "animal legs",
-      "shell",
-      "clam",
-      "oyster"
-    ],
-    "synonyms": [],
-    "wkNames": [
-      "page"
     ]
   },
   "retainer": {
