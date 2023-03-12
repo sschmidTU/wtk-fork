@@ -160,7 +160,7 @@ utilize=utilise=screwdriver; 用; task; moon, stick // main name is screwdriver 
 utilizeB=utilize=utilise=screwdriver; 猟 bottom right part; task
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
 fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
-thanksgiving=harvest festival; 栽 without 木; thanksgiving; c(fiesta, soil)
+thanksgiving=harvest festival; 𢦏, 栽 without 木; thanksgiving; c(fiesta, soil)
 request; 求; request; c(arrow, rice)&water // structureVague: yes
 length=tucked under the arm; 丈; height
 parade; 茂 bottom part; parade; l(cliff, fiesta)
@@ -225,7 +225,9 @@ meat; 肉; meat; o(inside, person)
 same; 同; same; o(hood, creeper)
 tall; 高; tall; t(top hat, mouth, o(hood, mouth))
 both; 両; both; t(ceiling, stick, o(hood, mountain))
-circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hood instead of hood (subelement/variant I guess)
+lidded crock; 袁 top+middle part; dirtmouth; t(soil, mouth) // not named in WK
+circumference; 周; circumference; o(hood, lidded crock) // RTK says glass hood instead of hood (subelement/variant I guess)
+park; 園; park; o(pent in, t(lidded crock, hairpin)) // this exact version of mouth+scarf/hairpin/kick seems to be only used in this and 薗 (park alternate/variant) structureVague: yes
 core; 奥; interior; t(drop, o(hood, rice), large)
 thorn; 刺; thorn; l(c(tree, hood), saber)
 hades=underworld; 冥; underworld; t(crown, sun, six)
@@ -256,6 +258,7 @@ by means of; 以; from; l(straightened hook, drop, person)
 prefecture; 県; prefecture; t(lb(straightened hook, eye), little)
 eel; 俺 bottom right part; eel; t(rice field, fishhook) // fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke
 dragon; 竜; dragon; t(stand up, eel)
+old dragon; 龍; old dragon; l(t(stand up, moon), t(slingshot, staples)) // this is the old form of 竜 dragon. structureVague: yes
 melon; 瓜; melon; c(claw, elbow)&drag&hood
 orphan; 孤; orphan; l(child, melon)
 complete; 了; finish; ; barbWK
@@ -270,6 +273,7 @@ fit; 合; suit; t(meeting, mouth)
 valley; 谷; valley; t(eight, umbrella, mouth)
 contain; 容; form; t(roof, valley)
 gully; 㕣; gully; t(eight, mouth)
+longing; 欲; want; l(valley, lack)
 adzuki beans=azuki beans; 荅; azuki beans; t(flowers, fit)
 bonsai; 𡗗, 秦 or 寿 upper part; spring; husband
 quarter; 龹; gladiator; c(bonsai, horns) // this is actually missing a horizontal stroke of bonsai, but can be easily misread as bonsai (also depending on font)
@@ -280,6 +284,7 @@ play music; 奏; play music; t(bonsai, heavens)
 manchu dynasty; 秦; qin dynasty; t(bonsai, wheat)
 spring; 泉; spring; t(white, water)
 longevity; 寿; lifespan; t(bonsai, glue)&dropB // bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable
+longevity old; 壽; lifespan old; t(samurai, crown, craft, ceiling, inch)
 christmas tree; 耒; plow; c(bushes, tree)&umbrella
 half; 半; half; t(littleB, craft, stick) // or c(c(two, stick), horns)
 meadow; 原; original; o(cliff, spring)
@@ -291,6 +296,7 @@ melancholy; 憂; grief; t(head, crown, heart, walking legs)&summer
 stinking; 臭; stinking; t(oneself, large)
 rule; 則; rule; l(shellfish, knife)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
+inch; 吋; inch; l(mouth, glue)
 temple=buddhist temple; 寺; temple; t(soil, glue)
 time; 時; time; l(sun, temple)
 specialty; 専; specialty; t(ten, rice field, glue)
@@ -379,7 +385,7 @@ straight fu=fuB; 片 bottom right part; straight fu // doesn't exist in RTK or W
 tiger; 虍, 虎 outer part; tiger; t(divining rod, tl(cliff, seven))
 deer; 鹿 outer part; deer; c(cave, old west) // as a primitive element, RTK excludes the "compare" element from the deer kanji.
 deerB=deer; 鹿; deer; tl(deer, compare) // deer kanji
-axe=ax; 斤; axe; tl(cliff, street) // RTK has ax as the main name, but I can't be bothered to spell it in Old English ;)
+axe=ax; 斤; axe; tl(dragging, street) // RTK has ax as the main name, but I can't be bothered to spell it in Old English ;)
 reject; 斥; reject; c(axe, dropB)
 hill; 丘; hill; t(axe, floor)
 fold; 折; fold; l(fingers, axe)
@@ -387,8 +393,10 @@ chop off; 斬; slice; l(car, axe)
 soldier; 兵; soldier; t(axe, floor, animal legs)
 new; 新; new; l(red pepper, axe)
 substance; 質; quality; t(l(axe, axe), shellfish)
+products; 産; give birth; t(stand up, tl(cliff, life)) // structureVague: yes
 ashes; 灰; ashes; tl(cliff, fire)
 one-sided=onesided=one sided; 片; one sided; t(l(stick, stick), tl(cliff, c(one, stick)))
+one-sidedB=one-sided=onesided=one sided; 淵 right part; one sided
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
 right; 右; right; tl(by one's side, mouth)
 left; 左; left; tl(by one's side, craft)
@@ -544,6 +552,7 @@ mist; 𠦝, 龺, 朝 left part; morning; t(ten, sun, ten)
 morning; 朝; morning; l(mist, moon)
 pack of wild dogs; 狂 left part; animal
 sort of thing; 然; nature; t(l(evening, dog), oven-fire)
+prison; 獄; prison; l(pack of wild dogs, say, dog)
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
 belong; 属; belong; tl(flag, c(insect, hood))
@@ -590,6 +599,7 @@ filial piety; 孝; teacher&filial piety; t(old man, child) // WK radical name is
 someone; 者; someone; t(old man, sun)
 various; 諸; various; l(say, someone)
 signature; 署; government office; t(eyeB, someone)
+renowned; 著; author; t(flowers, someone)
 cave; 广, 店 outer part; canopy; dropB
 yurt; 度 without 又; yurt; tl(cave, twenty) // only exists as element/radical in WK, but is quite common
 degrees=degree; 度; degree; tl(yurt, crotch)
@@ -644,7 +654,7 @@ receive; 享; receive; t(top hat, mouth, child)
 pavilion; 亭; restaurant; t(top hat, mouth, crown, street)
 capital; 京; capital; t(top hat, mouth, little)
 scenery; 景; scene; t(sun, capital)
-cottage; 舎; cottage; t(umbrella, soil, mouth)
+cottage; 舎; cottage; t(umbrella, lidded crock)
 tree=wood; 木; tree
 grove; 林; forest; l(tree, tree) // honestly this should also be grove in WK. forest in WK is both 林 and 森
 forest; 森; forest; t(tree, grove)

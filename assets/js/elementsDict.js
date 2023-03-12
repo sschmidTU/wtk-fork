@@ -3098,7 +3098,7 @@ const elementsDict =
       "fiesta",
       "soil"
     ],
-    "kanji": "栽 without 木",
+    "kanji": "𢦏, 栽 without 木",
     "subElements": [
       "fiesta",
       "soil",
@@ -4376,18 +4376,36 @@ const elementsDict =
       "both"
     ]
   },
+  "lidded crock": {
+    "elements": [
+      "soil",
+      "mouth"
+    ],
+    "kanji": "袁 top+middle part",
+    "subElements": [
+      "soil",
+      "mouth",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dirtmouth"
+    ],
+    "comment": "not named in WK"
+  },
   "circumference": {
     "elements": [
       "hood",
-      "soil",
-      "mouth"
+      "lidded crock"
     ],
     "kanji": "周",
     "subElements": [
       "hood",
+      "lidded crock",
+      "belt",
       "soil",
       "mouth",
-      "belt",
       "dirt",
       "ground"
     ],
@@ -4396,6 +4414,28 @@ const elementsDict =
       "circumference"
     ],
     "comment": "RTK says glass hood instead of hood (subelement/variant I guess)"
+  },
+  "park": {
+    "elements": [
+      "pent in",
+      "lidded crock",
+      "hairpin"
+    ],
+    "kanji": "園",
+    "subElements": [
+      "pent in",
+      "lidded crock",
+      "hairpin",
+      "soil",
+      "mouth",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "park"
+    ],
+    "comment": "this exact version of mouth+scarf/hairpin/kick seems to be only used in this and 薗 (park alternate/variant) structureVague: yes"
   },
   "core": {
     "elements": [
@@ -5049,6 +5089,38 @@ const elementsDict =
       "dragon"
     ]
   },
+  "old dragon": {
+    "elements": [
+      "stand up",
+      "moon",
+      "slingshot",
+      "staples"
+    ],
+    "kanji": "龍",
+    "subElements": [
+      "stand up",
+      "moon",
+      "slingshot",
+      "staples",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "month",
+      "flesh",
+      "part of the body",
+      "snare"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "old dragon"
+    ],
+    "comment": "this is the old form of 竜 dragon. structureVague: yes"
+  },
   "melon": {
     "elements": [
       "claw",
@@ -5328,6 +5400,30 @@ const elementsDict =
       "gully"
     ]
   },
+  "longing": {
+    "elements": [
+      "valley",
+      "lack"
+    ],
+    "kanji": "欲",
+    "subElements": [
+      "valley",
+      "lack",
+      "eight",
+      "umbrella",
+      "mouth",
+      "reclining",
+      "drop",
+      "person",
+      "yawn",
+      "lying down",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "want"
+    ]
+  },
   "adzuki beans": {
     "elements": [
       "flowers",
@@ -5569,6 +5665,39 @@ const elementsDict =
       "lifespan"
     ],
     "comment": "bonsai (spring) is only half-complete here (missing stroke in right half), but recognizable"
+  },
+  "longevity old": {
+    "elements": [
+      "samurai",
+      "crown",
+      "craft",
+      "ceiling",
+      "inch"
+    ],
+    "kanji": "壽",
+    "subElements": [
+      "samurai",
+      "crown",
+      "craft",
+      "ceiling",
+      "inch",
+      "gentleman",
+      "stick",
+      "floor",
+      "one",
+      "mouth",
+      "glue",
+      "ten",
+      "hook",
+      "drop",
+      "measurement",
+      "needle",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "lifespan old"
+    ]
   },
   "christmas tree": {
     "elements": [
@@ -5842,6 +5971,27 @@ const elementsDict =
     ],
     "wkNames": [
       "measurement"
+    ]
+  },
+  "inch": {
+    "elements": [
+      "mouth",
+      "glue"
+    ],
+    "kanji": "吋",
+    "subElements": [
+      "mouth",
+      "glue",
+      "ten",
+      "hook",
+      "drop",
+      "needle",
+      "drops",
+      "measurement"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "inch"
     ]
   },
   "temple": {
@@ -7584,15 +7734,26 @@ const elementsDict =
   },
   "axe": {
     "elements": [
-      "cliff",
+      "dragging",
       "street"
     ],
     "kanji": "斤",
     "subElements": [
-      "cliff",
+      "dragging",
       "street",
+      "drag",
+      "cliff",
       "nail",
       "spike",
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains",
       "ax"
     ],
     "synonyms": [
@@ -7612,10 +7773,21 @@ const elementsDict =
     "subElements": [
       "axe",
       "dropB",
-      "cliff",
+      "dragging",
       "street",
+      "drag",
+      "cliff",
       "nail",
       "spike",
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains",
       "ax",
       "drop",
       "drops"
@@ -7634,10 +7806,21 @@ const elementsDict =
     "subElements": [
       "axe",
       "floor",
-      "cliff",
+      "dragging",
       "street",
+      "drag",
+      "cliff",
       "nail",
       "spike",
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains",
       "ax",
       "one"
     ],
@@ -7656,10 +7839,21 @@ const elementsDict =
       "fingers",
       "axe",
       "finger",
-      "cliff",
+      "dragging",
       "street",
+      "drag",
+      "cliff",
       "nail",
       "spike",
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains",
       "ax"
     ],
     "synonyms": [],
@@ -7680,10 +7874,19 @@ const elementsDict =
       "rice field",
       "needle",
       "brains",
-      "cliff",
+      "dragging",
       "street",
+      "drag",
+      "cliff",
       "nail",
       "spike",
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "armour",
+      "roots",
       "ax"
     ],
     "synonyms": [],
@@ -7702,10 +7905,21 @@ const elementsDict =
       "axe",
       "floor",
       "animal legs",
-      "cliff",
+      "dragging",
       "street",
+      "drag",
+      "cliff",
       "nail",
       "spike",
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains",
       "ax",
       "one"
     ],
@@ -7734,10 +7948,21 @@ const elementsDict =
       "drops",
       "vase",
       "wood",
-      "cliff",
+      "dragging",
       "street",
+      "drag",
+      "cliff",
       "nail",
       "spike",
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains",
       "ax"
     ],
     "synonyms": [],
@@ -7756,10 +7981,21 @@ const elementsDict =
       "axe",
       "axe",
       "shellfish",
-      "cliff",
+      "dragging",
       "street",
+      "drag",
+      "cliff",
       "nail",
       "spike",
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains",
       "ax",
       "eye",
       "animal legs",
@@ -7771,6 +8007,36 @@ const elementsDict =
     "wkNames": [
       "quality"
     ]
+  },
+  "products": {
+    "elements": [
+      "stand up",
+      "cliff",
+      "life"
+    ],
+    "kanji": "産",
+    "subElements": [
+      "stand up",
+      "cliff",
+      "life",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "vase",
+      "grow up",
+      "dropB",
+      "king",
+      "cell"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "give birth"
+    ],
+    "comment": "structureVague: yes"
   },
   "ashes": {
     "elements": [
@@ -7809,6 +8075,23 @@ const elementsDict =
       "one sided"
     ],
     "synonyms": [
+      "onesided",
+      "one sided"
+    ],
+    "wkNames": [
+      "one sided"
+    ]
+  },
+  "one-sidedB": {
+    "elements": [],
+    "kanji": "淵 right part",
+    "subElements": [
+      "one-sided",
+      "onesided",
+      "one sided"
+    ],
+    "synonyms": [
+      "one-sided",
       "onesided",
       "one sided"
     ],
@@ -10853,6 +11136,33 @@ const elementsDict =
       "nature"
     ]
   },
+  "prison": {
+    "elements": [
+      "pack of wild dogs",
+      "say",
+      "dog"
+    ],
+    "kanji": "獄",
+    "subElements": [
+      "pack of wild dogs",
+      "say",
+      "dog",
+      "ceiling4",
+      "ceiling",
+      "mouth",
+      "one",
+      "words",
+      "keitai",
+      "large",
+      "drop",
+      "St. Bernard",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "prison"
+    ]
+  },
   "in": {
     "elements": [
       "mouth",
@@ -11891,6 +12201,31 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "government office"
+    ]
+  },
+  "renowned": {
+    "elements": [
+      "flowers",
+      "someone"
+    ],
+    "kanji": "著",
+    "subElements": [
+      "flowers",
+      "someone",
+      "flower",
+      "old man",
+      "sun",
+      "soil",
+      "dropB",
+      "dirt",
+      "ground",
+      "drop",
+      "drops",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "author"
     ]
   },
   "cave": {
@@ -12959,12 +13294,12 @@ const elementsDict =
   "cottage": {
     "elements": [
       "umbrella",
-      "soil",
-      "mouth"
+      "lidded crock"
     ],
     "kanji": "舎",
     "subElements": [
       "umbrella",
+      "lidded crock",
       "soil",
       "mouth",
       "dirt",
