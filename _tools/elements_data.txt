@@ -29,6 +29,7 @@ set free; 放; release; l(direction, taskmaster)
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
 mending=mend=zoo; 定 bottom part, 疋, 足 bottom part; coat rack // only difference to zoo: missing hook at end of top stroke
 zoo=critters=mending=mend; 疋; coat rack // added hook on top stroke compared to mending, almost indistinguishable. coat rack in WK is both zoo and mending
+just so; 是; absolutely; t(sun, mending)
 stop=footprint; 止; stop
 correct; 正; correct; t(ceiling, stop)
 this here; 此; this here; l(stop, spoon) // rtk3 element (2043). not an element on WK (though it appears quite frequently in rarer kanji)
@@ -65,7 +66,7 @@ porter=king; 壬; king
 kingB=king; 瑛 left part; king // my version of RTK1 calls this jewel, e.g. in 理, 環境 and 琴, but that's the same name as 玉 jewel. In WTKSearch, 王 is always king and 玉 is always jewel. Interestingly, 班 has both.
 jewel=ball=earring; 玉; jewel; o(king, drop) 
 responsibility; 任; duty; l(person, porter)
-lord; 主; master; t(drop, king)
+lord=candlestick; 主; master; t(drop, king)
 grow up; 青 top part; life; t(drop, king)
 bushes; 峰 bottom right part; bushes; t(grow up, stick)
 bushesB=bushes; 邦 left part; bushes&life; t(grow up, dropB)
@@ -155,6 +156,7 @@ utilize=utilise=screwdriver; 用; task; moon, stick // main name is screwdriver 
 utilizeB=utilize=utilise=screwdriver; 猟 bottom right part; task
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
 fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
+thanksgiving=harvest festival; 栽 without 木; thanksgiving; c(fiesta, soil)
 request; 求; request; c(arrow, rice)&water // structureVague: yes
 length=tucked under the arm; 丈; height
 parade; 茂 bottom part; parade; l(cliff, fiesta)
@@ -329,6 +331,7 @@ horns=animal horns; 丷, 并 top part; horns // don't confuse with RTK(animal le
 little=small; 小; small; o(animal legs, t(stick, hook))
 littleB=little=small; 光 top part; triceratops
 few; 少; few; t(little, dropB)
+grains of sand; 沙; sand; l(water, few)
 fenceposts; 粛 bottom outer parts; fenceposts; l(dropB, stick) // basically the left stick with a hook + right stick
 fencepostsB=fenceposts; 円 bottom part; fencepostsB; l(stick, hook) // similar to fenceposts, but (almost) mirrored
 solemn; 粛; solemn; t(rake, o(fenceposts, rice))
@@ -377,6 +380,7 @@ fold; 折; fold; l(fingers, axe)
 chop off; 斬; slice; l(car, axe)
 soldier; 兵; soldier; t(axe, floor, animal legs)
 new; 新; new; l(red pepper, axe)
+substance; 質; quality; t(l(axe, axe), shellfish)
 ashes; 灰; ashes; tl(cliff, fire)
 one-sided=onesided=one sided; 片; one sided; t(l(stick, stick), tl(cliff, c(one, stick)))
 stone=rock; 石, 砂 left part; stone; t(ceiling, drop, mouth); leafWK, slideWK // cliff (~丆) +mouth in RTK. RTK: This is the one and only time that the second stroke in cliff will reach over to the middle of the horizontal stroke
@@ -479,6 +483,7 @@ visit; 参; participate; t(elbow, large, shape)
 six; 六; six; t(top hat, animal legs)
 seven=diced; 七; seven
 lock of hair; 乇; slide&seven; t(dropB, seven) // RTK says this is derived from 毛 fur
+home; 宅; house; t(roof, lock of hair)
 cut; 切; cut; l(seven, sword)
 barley; 麦, 麺 left part; wheat; t(grow up, walking legs) // as an element, the last stroke is extended, as in 麺
 heavens; 天; heaven; t(ceiling, large)
@@ -718,6 +723,7 @@ utmost; 最; most; t(sun, take)
 daring; 敢; daring; l(t(street, ear), taskmaster)
 exclamation; 耶; exclamation; l(ear, city walls)
 shelf; 且, 助 left part; top hat; c(eye, one) // this is not (always) perfectly RTK(eye)+RTK(one), but close enough. bottom stroke is slightly longer than for 'eye'
+best regards; 宜; best regards; t(roof, shelf)
 prosperous; 昌; prosperous; t(sun, sun)
 risk; 冒; dare; t(sun, eye)
 mandala; 曼; mandala; t(sun, eyeB, crotch) // not named in WK

@@ -528,6 +528,25 @@ const elementsDict =
     ],
     "comment": "added hook on top stroke compared to mending, almost indistinguishable. coat rack in WK is both zoo and mending"
   },
+  "just so": {
+    "elements": [
+      "sun",
+      "mending"
+    ],
+    "kanji": "是",
+    "subElements": [
+      "sun",
+      "mending",
+      "day",
+      "mend",
+      "zoo",
+      "critters"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "absolutely"
+    ]
+  },
   "stop": {
     "elements": [],
     "kanji": "止",
@@ -1238,9 +1257,12 @@ const elementsDict =
     "subElements": [
       "drop",
       "king",
-      "drops"
+      "drops",
+      "candlestick"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "candlestick"
+    ],
     "wkNames": [
       "master"
     ]
@@ -2981,6 +3003,30 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "drunkard"
+    ]
+  },
+  "thanksgiving": {
+    "elements": [
+      "fiesta",
+      "soil"
+    ],
+    "kanji": "栽 without 木",
+    "subElements": [
+      "fiesta",
+      "soil",
+      "arrowhead",
+      "drop",
+      "arrow",
+      "drops",
+      "dirt",
+      "ground",
+      "harvest festival"
+    ],
+    "synonyms": [
+      "harvest festival"
+    ],
+    "wkNames": [
+      "thanksgiving"
     ]
   },
   "request": {
@@ -6556,6 +6602,31 @@ const elementsDict =
       "few"
     ]
   },
+  "grains of sand": {
+    "elements": [
+      "water",
+      "few"
+    ],
+    "kanji": "沙",
+    "subElements": [
+      "water",
+      "few",
+      "water droplets",
+      "water pistol",
+      "little",
+      "dropB",
+      "animal legs",
+      "stick",
+      "hook",
+      "small",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "sand"
+    ]
+  },
   "fenceposts": {
     "elements": [
       "dropB",
@@ -7477,6 +7548,33 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "new"
+    ]
+  },
+  "substance": {
+    "elements": [
+      "axe",
+      "axe",
+      "shellfish"
+    ],
+    "kanji": "質",
+    "subElements": [
+      "axe",
+      "axe",
+      "shellfish",
+      "cliff",
+      "street",
+      "nail",
+      "spike",
+      "ax",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "quality"
     ]
   },
   "ashes": {
@@ -9464,6 +9562,29 @@ const elementsDict =
       "seven"
     ],
     "comment": "RTK says this is derived from 毛 fur"
+  },
+  "home": {
+    "elements": [
+      "roof",
+      "lock of hair"
+    ],
+    "kanji": "宅",
+    "subElements": [
+      "roof",
+      "lock of hair",
+      "house",
+      "dropB",
+      "seven",
+      "drop",
+      "diced",
+      "drops",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "house"
+    ]
   },
   "cut": {
     "elements": [
@@ -14143,6 +14264,26 @@ const elementsDict =
       "top hat"
     ],
     "comment": "this is not (always) perfectly RTK(eye)+RTK(one), but close enough. bottom stroke is slightly longer than for 'eye'"
+  },
+  "best regards": {
+    "elements": [
+      "roof",
+      "shelf"
+    ],
+    "kanji": "宜",
+    "subElements": [
+      "roof",
+      "shelf",
+      "house",
+      "eye",
+      "one",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "best regards"
+    ]
   },
   "prosperous": {
     "elements": [
