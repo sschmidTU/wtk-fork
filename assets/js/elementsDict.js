@@ -1987,6 +1987,30 @@ const elementsDict =
     ],
     "comment": "structureVague: yes. note that this doesn't contain \"even\" (平), differend direction of drops = horns"
   },
+  "rocksalt": {
+    "elements": [
+      "divining rod",
+      "pent in",
+      "sheaf",
+      "drop4"
+    ],
+    "kanji": "鹵",
+    "subElements": [
+      "divining rod",
+      "pent in",
+      "sheaf",
+      "drop4",
+      "drop",
+      "wand",
+      "magic wand",
+      "augury",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "rocksalt"
+    ]
+  },
   "hand": {
     "elements": [],
     "kanji": "手",
@@ -11209,6 +11233,33 @@ const elementsDict =
       "village"
     ],
     "comment": "often \"computer\" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK."
+  },
+  "black": {
+    "elements": [
+      "ri",
+      "oven-fire"
+    ],
+    "kanji": "黒",
+    "subElements": [
+      "ri",
+      "oven-fire",
+      "rice field",
+      "soil",
+      "brains",
+      "dirt",
+      "ground",
+      "computer",
+      "village",
+      "drop4",
+      "drop",
+      "drops",
+      "oven fire",
+      "barbecue"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "black"
+    ]
   },
   "juvenile": {
     "elements": [

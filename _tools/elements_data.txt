@@ -103,6 +103,7 @@ reap; 刈; prune; l(sheaf, saber)
 spirit; 気; energy; tr(energy, sheaf)
 energy; 汽 right part; energy; t(reclining, one, clothes hanger) // only WK has this element, not RTK
 let it be; 爾; let it be; t(c(dry, eight), o(hood, sheaf4)) // structureVague: yes. note that this doesn't contain "even" (平), differend direction of drops = horns
+rocksalt; 鹵; rocksalt; t(divining rod, o(pent in, c(sheaf, drop4)))
 hand; 手; hand
 fur; 毛; fur
 from=fist; 乃; stairs
@@ -562,6 +563,7 @@ bestow; 与; give; c(snare, one)
 mutually=mutual=broken broom; 互 middle part; mutual
 inter=inter-; 相; mutual; l(tree, eye)
 ri=computer=village; 里; village; t(rice field, soil) // often "computer" in early rtk-search data, but ri seems to be the main (not very good) keyword in RTK.
+black; 黒; black; t(ri, oven-fire)
 juvenile; 童; juvenile; t(stand up, ri)
 make a deal; 商; merchandise; t(stand up, o(hood, t(human legs, mouth))) // similar to antique, but different "under the hood"
 antique; 啇; mohawk; t(stand up, o(hood, old)) // similar to make a deal, but different "under the hood"
