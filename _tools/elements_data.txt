@@ -227,6 +227,7 @@ tall; 高; tall; t(top hat, mouth, o(hood, mouth))
 both; 両; both; t(ceiling, stick, o(hood, mountain))
 circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hood instead of hood (subelement/variant I guess)
 core; 奥; interior; t(drop, o(hood, rice), large)
+thorn; 刺; thorn; l(c(tree, hood), saber)
 hades=underworld; 冥; underworld; t(crown, sun, six)
 owl; 桜 top right part, 巣 top part; grass; drop3
 simple; 単; simple; t(owl, rice field, ten)
@@ -503,6 +504,7 @@ profit; 利; profit; l(wheat, saber)
 pheasant; 雉; pheasant; l(dart, turkey)
 committee; 委; committee; t(wheat, woman)
 angel; 橋 right part; angel; t(wheat, mouth, same) // WK: not a radical
+incense; 香; fragrance; t(wheat, sun)
 unravel; 解; untie; l(angle, t(sword, cow))
 resin; 朮, 術 middle part; angel; c(ten, drop, human legs)
 bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened when used as an element.
@@ -577,7 +579,8 @@ quantity; 量; amount; t(nightbreak, ri)
 excuse=village stocks=rabbit; 免; excuse; t(bound up, c(mouth, stick), human legs) // original primitive called "village stocks" in RTK, though excuse seems better as that's also the kanji keyword
 elephant; 象; elephant; t(bound up, c(mouth, stick), sow)
 oneself=nose; 自; self; t(drop, eye)
-snake=self; 己; oneself // unfortunately the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK
+snake=self; 己; oneself // unfortuntely the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK
+nose; 鼻; nose; t(oneself, rice field, two hands)
 wrap; 包; wrap; t(bound up, snake) // structureVague: yes: not quite top-down, it's also entwined
 somebody; 身; somebody&slideWK; t(c(oneself, drop), hook) // in WK, the radical is called body, the kanji somebody.
 old man; 老 top part; coffin; c(soil, dropB) // in RTK, the element (specifically the primitive) is only the top part, minus the spoon, which can be replaced by other elements
@@ -830,6 +833,7 @@ sign of the hare=blown eggs=eggs=egg; 卯; blown eggs; l(t(receipt, dropB), stam
 detain; 留; detain; t(l(receipt, sword), rice field)
 doubt; 疑; doubt; l(t(spoon, dart), t(chop-sealB, zoo))
 earthworm; 屯; barracks; t(dropB, mountain, fishhookB)
+immediate; 頓; immediate; l(earthworm, head)
 rice seedling; 坴 top part; rice seedling; t(soil, human legs)
 land; 坴; womb; t(rice seedling, soil)
 acorn=sign of the hog; 亥; slice; t(top hat, spoon, dropB, drop) // the bottom part isn't further described in RTK, a bit vague/unique

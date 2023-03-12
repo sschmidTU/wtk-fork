@@ -4423,6 +4423,28 @@ const elementsDict =
       "interior"
     ]
   },
+  "thorn": {
+    "elements": [
+      "tree",
+      "hood",
+      "saber"
+    ],
+    "kanji": "刺",
+    "subElements": [
+      "tree",
+      "hood",
+      "saber",
+      "wood",
+      "belt",
+      "sabre",
+      "sword",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "thorn"
+    ]
+  },
   "hades": {
     "elements": [
       "crown",
@@ -5697,6 +5719,11 @@ const elementsDict =
       "clam",
       "oyster",
       "nose",
+      "rice field",
+      "two hands",
+      "brains",
+      "flowers",
+      "flower",
       "page"
     ],
     "synonyms": [
@@ -5732,6 +5759,11 @@ const elementsDict =
       "clam",
       "oyster",
       "nose",
+      "rice field",
+      "two hands",
+      "brains",
+      "flowers",
+      "flower",
       "page",
       "drop3",
       "drop",
@@ -5758,7 +5790,12 @@ const elementsDict =
       "eye",
       "nose",
       "St. Bernard",
-      "drops"
+      "drops",
+      "rice field",
+      "two hands",
+      "brains",
+      "flowers",
+      "flower"
     ],
     "synonyms": [],
     "wkNames": [
@@ -7433,9 +7470,12 @@ const elementsDict =
       "monkey",
       "drops",
       "rice field",
+      "two hands",
       "armour",
       "roots",
-      "brains"
+      "brains",
+      "flowers",
+      "flower"
     ],
     "synonyms": [],
     "wkNames": [
@@ -10044,6 +10084,28 @@ const elementsDict =
     ],
     "comment": "WK: not a radical"
   },
+  "incense": {
+    "elements": [
+      "wheat",
+      "sun"
+    ],
+    "kanji": "香",
+    "subElements": [
+      "wheat",
+      "sun",
+      "drop",
+      "tree",
+      "drops",
+      "wood",
+      "cereal",
+      "sapling",
+      "day"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "fragrance"
+    ]
+  },
   "unravel": {
     "elements": [
       "angle",
@@ -11590,7 +11652,31 @@ const elementsDict =
     "wkNames": [
       "oneself"
     ],
-    "comment": "unfortunately the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK"
+    "comment": "unfortuntely the kanji 己 is self in RTK, but oneself in WK, vice versa 自 oneself in RTK, self in WK"
+  },
+  "nose": {
+    "elements": [
+      "oneself",
+      "rice field",
+      "two hands"
+    ],
+    "kanji": "鼻",
+    "subElements": [
+      "oneself",
+      "rice field",
+      "two hands",
+      "drop",
+      "eye",
+      "drops",
+      "nose",
+      "brains",
+      "flowers",
+      "flower"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "nose"
+    ]
   },
   "wrap": {
     "elements": [
@@ -11628,7 +11714,12 @@ const elementsDict =
       "hook",
       "eye",
       "drops",
-      "nose"
+      "nose",
+      "rice field",
+      "two hands",
+      "brains",
+      "flowers",
+      "flower"
     ],
     "synonyms": [],
     "wkNames": [
@@ -12062,7 +12153,12 @@ const elementsDict =
       "drop",
       "eye",
       "drops",
-      "nose"
+      "nose",
+      "rice field",
+      "two hands",
+      "brains",
+      "flowers",
+      "flower"
     ],
     "synonyms": [],
     "wkNames": [
@@ -14263,6 +14359,11 @@ const elementsDict =
       "clam",
       "oyster",
       "nose",
+      "rice field",
+      "two hands",
+      "brains",
+      "flowers",
+      "flower",
       "page"
     ],
     "synonyms": [],
@@ -14702,7 +14803,12 @@ const elementsDict =
       "drop",
       "eye",
       "drops",
-      "nose"
+      "nose",
+      "rice field",
+      "two hands",
+      "brains",
+      "flowers",
+      "flower"
     ],
     "synonyms": [],
     "wkNames": [
@@ -14758,7 +14864,12 @@ const elementsDict =
       "sun",
       "day",
       "dove",
-      "nose"
+      "nose",
+      "rice field",
+      "two hands",
+      "brains",
+      "flowers",
+      "flower"
     ],
     "synonyms": [],
     "wkNames": [
@@ -16506,6 +16617,46 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "barracks"
+    ]
+  },
+  "immediate": {
+    "elements": [
+      "earthworm",
+      "head"
+    ],
+    "kanji": "頓",
+    "subElements": [
+      "earthworm",
+      "head",
+      "dropB",
+      "mountain",
+      "fishhookB",
+      "drop",
+      "fishhook",
+      "drops",
+      "hook",
+      "stick",
+      "fishguts",
+      "ceiling",
+      "shellfish",
+      "oneself",
+      "one",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster",
+      "nose",
+      "rice field",
+      "two hands",
+      "brains",
+      "flowers",
+      "flower",
+      "page"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "immediate"
     ]
   },
   "rice seedling": {
