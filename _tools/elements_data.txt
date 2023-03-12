@@ -6,6 +6,7 @@ below; 下; below; t(ceiling, wand)
 eminent; 卓; table; t(wand, sun, ten)
 say=words=keitai; 言; say; t(ceiling4, mouth)
 white=dove; 白; white; t(drop, sun)
+overnight; 泊; overnight; l(water, white)
 power=muscle=arnold; 力; power
 triceps=cooperate; 劦; cooperate; t(power, l(power, power))
 man=male; 男; man; t(rice field, power)
@@ -50,6 +51,7 @@ employ; 雇; employ; tl(door, turkey)
 thread=spiderman; 糸; thread
 lineage; 系; lineage; t(dropB, thread)
 grandchild; 孫; grandchild; l(child, lineage)
+accumulate; 累; accumulate; t(rice field, thread)
 wall; 至 top part; ground&private; t(ceiling, elbow) // WK doesn't have this as an extra radical, as it's almost always used as 至 (mole/climax) or right side of 転 (cloud/rising cloud). it only has trash/infant (育 top part).
 infant=toddler; 𠫓, 育 top part; trash; t(top hat, elbow) // WK doesn't differentiate between RTK wall and infant
 bring up; 育; nurture; t(infant, moon)
@@ -103,6 +105,7 @@ hand; 手; hand
 fur; 毛; fur
 from=fist; 乃; stairs
 reach out; 及; reach; c(from, dropB)
+reach outB; 笈 bottom part; reach; c(reach out, crotch)
 excel; 秀; excel; t(wheat, from)
 sword=dagger; 刀; sword
 saber=sabre=sword; 刂; knife // variant of 刀 sword
@@ -122,7 +125,7 @@ tool; 具 bottom part; ground&fins; t(ceiling, animal legs) // this is 具 minus
 true; 真; reality; t(ten, eye, tool)
 upright; 貞; chastity; t(divining rod, shellfish)
 pierce; 貫; pierce; t(rice field, shellfish)
-old west; 要 top part, 価 right part; helicopter
+old west; 要 top part, 価 right part; helicopter; t(ceiling, c(eyeB, l(stick, stick)))
 need; 要; need; t(old west, woman)
 ballot; 票; ballot; t(old west, altar)
 chestnut; 栗; chestnut; t(old west, tree)
@@ -182,7 +185,7 @@ heart; 心; heart; o(drop3, fishhook)
 invariably; 必; certain; c(heart, dropB)
 favor=favour; 恵; favor; t(ten, rice field, heart)
 box; 匚, 区 outer part; cage; c(two, stick)
-boxB=box; 兜 top right part; cage; c(two, stick)
+boxB=box; 兜 top right part; cage; c(two, stick) // reverse box
 shovel; 凵; box // unfortunately, RTK shovel is WK box, and RTK box is WK cage
 twenty; 廿; twenty; c(shovel, one) // unfortunately in WK 廾 is also twenty
 sweet=wicker basket; 甘; sweet; c(twenty, one)&sun
@@ -217,6 +220,7 @@ same; 同; same; o(hood, creeper)
 tall; 高; tall; t(top hat, mouth, o(hood, mouth))
 both; 両; both; t(ceiling, stick, o(hood, mountain))
 circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hood instead of hood (subelement/variant I guess)
+core; 奥; interior; t(drop, o(hood, rice), large)
 owl; 桜 top right part, 巣 top part; grass; drop3
 simple; 単; simple; t(owl, rice field, ten)
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
@@ -301,6 +305,7 @@ write; 書; write; t(brush, sun)
 old boy=buddy=you; 君; buddy; t(mop, mouth)
 tickle; 浸 right part; tickle; t(broom, crown, crotch) // not named in WK
 concurrently; 兼; concurrently; t(horns, floor, rake, oven-fire) // structureVague: yes
+bargain; 廉; bargain; tl(cave, concurrently)
 wife; 妻; wife; t(ten, rake, woman)
 gates; 門; gates
 interval; 間; interval; o(gates, sun)
@@ -326,6 +331,7 @@ littleB=little=small; 光 top part; triceratops
 few; 少; few; t(little, dropB)
 fenceposts; 粛 bottom outer parts; fenceposts; l(dropB, stick) // basically the left stick with a hook + right stick
 fencepostsB=fenceposts; 円 bottom part; fencepostsB; l(stick, hook) // similar to fenceposts, but (almost) mirrored
+solemn; 粛; solemn; t(rake, o(fenceposts, rice))
 red; 赤; red; t(soil, c(little, animal legs)) // structureVague: yes
 redB=red; 変 top part; red; t(top hat, c(little, animal legs)) // structureVague: yes
 father; 父; father; t(animal legs, sheaf)
@@ -436,7 +442,7 @@ mailbox; 宛 bottom part; mailbox; l(evening, fingerprint)
 address; 宛; address; t(roof, mailbox)
 clothes hanger=coat hanger; 𠃌, 幻 right part; cape
 bound up; 勹, 句 outer part, 負 top part; prison; c(clothes hanger, drop)&reclining
-long time; 久; long time; c(bound up, dropB)
+long time=mummy; 久; long time; c(bound up, dropB)
 aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop) // doesn't exist in WK, which also has 斗 ladle unfortunately
 phrase; 句; paragraph; o(bound up, mouth)
@@ -485,6 +491,7 @@ profit; 利; profit; l(wheat, saber)
 pheasant; 雉; pheasant; l(dart, turkey)
 committee; 委; committee; t(wheat, woman)
 angel; 橋 right part; angel; t(wheat, mouth, same) // WK: not a radical
+unravel; 解; untie; l(angle, t(sword, cow))
 resin; 朮, 術 middle part; angel; c(ten, drop, human legs)
 bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened when used as an element.
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
@@ -506,7 +513,8 @@ water=water droplets=water pistol; 氵; tsunami
 waterB=water; 水; water
 waterC=waterB=water=grains of rice; 泰 bottom part; water; sprinkler // this is close to 氷 ice, but missing the フ
 eternity; 永; eternity; t(drop, waterB)
-grains of rice; 米, 氺, 録 bottom right part; water // multiple shapes in RTK, but mainly 氺, which is water in WK.
+grains of rice; 氺, 米, 録 bottom right part; water // multiple shapes in RTK, but mainly 氺, which is water in WK.
+sane=ease; 康; ease; tl(cave, t(rake, waterC))
 north; 北; north
 deceased=perish; 亡; death; t(top hat, straightened hook)
 laid waste=wreath; 荒; wild; t(flowers, deceased, stream)
@@ -637,6 +645,7 @@ personB=person; 亻; leader // person is more ambiguous in RTK than in WK for a 
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
 sitting in meditation; 坐; sitting in meditation; c(soil, assembly line)
 large=St. Bernard; 大; big
+largeB=large=St. Bernard; 大, 纂 middle part; big // seems to only occur in 纂
 plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
 dog with one leg=dog=chihuahua with one human leg; 尤; pirate

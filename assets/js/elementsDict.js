@@ -130,6 +130,28 @@ const elementsDict =
       "white"
     ]
   },
+  "overnight": {
+    "elements": [
+      "water",
+      "white"
+    ],
+    "kanji": "泊",
+    "subElements": [
+      "water",
+      "white",
+      "water droplets",
+      "water pistol",
+      "drop",
+      "sun",
+      "drops",
+      "day",
+      "dove"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "overnight"
+    ]
+  },
   "power": {
     "elements": [],
     "kanji": "力",
@@ -940,6 +962,23 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "grandchild"
+    ]
+  },
+  "accumulate": {
+    "elements": [
+      "rice field",
+      "thread"
+    ],
+    "kanji": "累",
+    "subElements": [
+      "rice field",
+      "thread",
+      "brains",
+      "spiderman"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "accumulate"
     ]
   },
   "wall": {
@@ -1959,6 +1998,26 @@ const elementsDict =
       "reach"
     ]
   },
+  "reach outB": {
+    "elements": [
+      "reach out",
+      "crotch"
+    ],
+    "kanji": "笈 bottom part",
+    "subElements": [
+      "reach out",
+      "crotch",
+      "from",
+      "dropB",
+      "fist",
+      "drop",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "reach"
+    ]
+  },
   "excel": {
     "elements": [
       "wheat",
@@ -2324,9 +2383,21 @@ const elementsDict =
     ]
   },
   "old west": {
-    "elements": [],
+    "elements": [
+      "ceiling",
+      "eyeB",
+      "stick",
+      "stick"
+    ],
     "kanji": "要 top part, 価 right part",
-    "subElements": [],
+    "subElements": [
+      "ceiling",
+      "eyeB",
+      "stick",
+      "stick",
+      "one",
+      "eye"
+    ],
     "synonyms": [],
     "wkNames": [
       "helicopter"
@@ -2340,7 +2411,12 @@ const elementsDict =
     "kanji": "要",
     "subElements": [
       "old west",
-      "woman"
+      "woman",
+      "ceiling",
+      "eyeB",
+      "stick",
+      "one",
+      "eye"
     ],
     "synonyms": [],
     "wkNames": [
@@ -2355,7 +2431,12 @@ const elementsDict =
     "kanji": "票",
     "subElements": [
       "old west",
-      "altar"
+      "altar",
+      "ceiling",
+      "eyeB",
+      "stick",
+      "one",
+      "eye"
     ],
     "synonyms": [],
     "wkNames": [
@@ -2371,6 +2452,11 @@ const elementsDict =
     "subElements": [
       "old west",
       "tree",
+      "ceiling",
+      "eyeB",
+      "stick",
+      "one",
+      "eye",
       "wood"
     ],
     "synonyms": [],
@@ -3516,7 +3602,8 @@ const elementsDict =
     ],
     "wkNames": [
       "cage"
-    ]
+    ],
+    "comment": "reverse box"
   },
   "shovel": {
     "elements": [],
@@ -3692,7 +3779,9 @@ const elementsDict =
       "stick",
       "stick",
       "ceiling",
-      "one"
+      "eyeB",
+      "one",
+      "eye"
     ],
     "synonyms": [],
     "wkNames": [
@@ -4173,6 +4262,32 @@ const elementsDict =
       "circumference"
     ],
     "comment": "RTK says glass hood instead of hood (subelement/variant I guess)"
+  },
+  "core": {
+    "elements": [
+      "drop",
+      "hood",
+      "rice",
+      "large"
+    ],
+    "kanji": "奥",
+    "subElements": [
+      "drop",
+      "hood",
+      "rice",
+      "large",
+      "drops",
+      "belt",
+      "tree",
+      "horns",
+      "St. Bernard",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "interior"
+    ]
   },
   "owl": {
     "elements": [
@@ -5982,6 +6097,35 @@ const elementsDict =
     ],
     "comment": "structureVague: yes"
   },
+  "bargain": {
+    "elements": [
+      "cave",
+      "concurrently"
+    ],
+    "kanji": "廉",
+    "subElements": [
+      "cave",
+      "concurrently",
+      "dropB",
+      "horns",
+      "floor",
+      "rake",
+      "oven-fire",
+      "animal horns",
+      "one",
+      "broom",
+      "stick",
+      "drop4",
+      "drop",
+      "oven fire",
+      "barbecue",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "bargain"
+    ]
+  },
   "wife": {
     "elements": [
       "ten",
@@ -6448,6 +6592,32 @@ const elementsDict =
       "fencepostsB"
     ],
     "comment": "similar to fenceposts, but (almost) mirrored"
+  },
+  "solemn": {
+    "elements": [
+      "rake",
+      "fenceposts",
+      "rice"
+    ],
+    "kanji": "粛",
+    "subElements": [
+      "rake",
+      "fenceposts",
+      "rice",
+      "broom",
+      "stick",
+      "dropB",
+      "drop",
+      "drops",
+      "tree",
+      "horns",
+      "wood",
+      "animal horns"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "solemn"
+    ]
   },
   "red": {
     "elements": [
@@ -7101,6 +7271,11 @@ const elementsDict =
       "cave",
       "old west",
       "dropB",
+      "ceiling",
+      "eyeB",
+      "stick",
+      "one",
+      "eye",
       "drop",
       "drops"
     ],
@@ -7122,6 +7297,11 @@ const elementsDict =
       "cave",
       "old west",
       "dropB",
+      "ceiling",
+      "eyeB",
+      "stick",
+      "one",
+      "eye",
       "drop",
       "drops",
       "spoon",
@@ -8533,9 +8713,12 @@ const elementsDict =
       "reclining",
       "coat hanger",
       "drops",
-      "lying down"
+      "lying down",
+      "mummy"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "mummy"
+    ],
     "wkNames": [
       "long time"
     ]
@@ -9539,6 +9722,36 @@ const elementsDict =
     ],
     "comment": "WK: not a radical"
   },
+  "unravel": {
+    "elements": [
+      "angle",
+      "sword",
+      "cow"
+    ],
+    "kanji": "解",
+    "subElements": [
+      "angle",
+      "sword",
+      "cow",
+      "bound up",
+      "rice field",
+      "fenceposts",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down",
+      "brains",
+      "dropB",
+      "stick",
+      "dagger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "untie"
+    ]
+  },
   "resin": {
     "elements": [
       "ten",
@@ -9936,13 +10149,44 @@ const elementsDict =
   },
   "grains of rice": {
     "elements": [],
-    "kanji": "米, 氺, 録 bottom right part",
+    "kanji": "氺, 米, 録 bottom right part",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
       "water"
     ],
     "comment": "multiple shapes in RTK, but mainly 氺, which is water in WK."
+  },
+  "sane": {
+    "elements": [
+      "cave",
+      "rake",
+      "waterC"
+    ],
+    "kanji": "康",
+    "subElements": [
+      "cave",
+      "rake",
+      "waterC",
+      "dropB",
+      "broom",
+      "stick",
+      "sprinkler",
+      "waterB",
+      "water",
+      "grains of rice",
+      "drop",
+      "water droplets",
+      "water pistol",
+      "drops",
+      "ease"
+    ],
+    "synonyms": [
+      "ease"
+    ],
+    "wkNames": [
+      "ease"
+    ]
   },
   "north": {
     "elements": [],
@@ -12523,6 +12767,22 @@ const elementsDict =
     "wkNames": [
       "big"
     ]
+  },
+  "largeB": {
+    "elements": [],
+    "kanji": "大, 纂 middle part",
+    "subElements": [
+      "large",
+      "St. Bernard"
+    ],
+    "synonyms": [
+      "large",
+      "St. Bernard"
+    ],
+    "wkNames": [
+      "big"
+    ],
+    "comment": "seems to only occur in 纂"
   },
   "plump": {
     "elements": [
