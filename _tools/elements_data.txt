@@ -399,6 +399,8 @@ five; 五; five
 tile; 瓦; tile; c(five, drop)
 staples; 印 left part; comb
 staplesB=staples; 臼 right part; combB // reverse staples/comb
+hobby; 叚; hobby; l(t(mouth, staples), t(boxB, crotch)) // rare kanji that occurs in a few other kanji. only indirectly (imprecisely) used as an element in RTK.
+spare time; 暇; spare time; l(sun, hobby)
 grade; 段; steps; l(staples, missile)
 comb; 而; rake; t(ceiling, drop, notB)
 demand; 需; demand; t(rain, comb)
@@ -509,7 +511,7 @@ two handsB=two hands; 廾; twenty; flowers // this specific version isn't named 
 put together; 并; put together; t(horns, two hands)
 folding screen; 屏; folding screen; tl(flag, put together)
 lofty; 尭; gambler; t(ten, salad, human legs)&flowers, pi
-seedling; 苗; seedling; t(flowers, rice field)
+seedling=seedlings; 苗; seedling; t(flowers, rice field)
 decorate; 賁; decorate; t(cross, flowers, shellfish) // not a RTK or WK kanji, but the kanji exists.
 graveyard; 莫; greenhouse; t(flowers, sun, large)
 punish; 刑; punish; l(two hands, saber)
@@ -541,11 +543,13 @@ belong; 属; belong; tl(flag, c(insect, hood))
 talking cricket; 禺; splinter; t(rice field, o(c(hood, stick), elbow))&insect // insect isn't complete here, but it's related.
 purse; 貴 top part; purse; t(in, floor) // not named in WK
 precious; 貴; valuable; t(purse, shellfish)
+dispatch; 遣; dispatch; lb(road, precious)
 leather; 革; leather; t(twenty, purse, ten)&flowers
 gone; 去; past; t(soil, elbow)
 history; 史; history; t(in, length) // structureVague: yes
 officer; 吏; officer; c(history, one)
 grow late; 更; again; t(ceiling, rice field, length) // structureVague: yes
+convenience; 便; convenience; l(personB, grow late)
 kebab; 串; kebab; c(t(mouth, mouth), stick)
 resemblance=spark=candle; 肖; resemblance; t(littleB, moon)
 snare; 丂, 巧 right part; beggar // similar to slingshot. beggar in WK is usually rather slingshot, but sometimes it's also used for snare.
@@ -724,6 +728,7 @@ daring; 敢; daring; l(t(street, ear), taskmaster)
 exclamation; 耶; exclamation; l(ear, city walls)
 shelf; 且, 助 left part; top hat; c(eye, one) // this is not (always) perfectly RTK(eye)+RTK(one), but close enough. bottom stroke is slightly longer than for 'eye'
 best regards; 宜; best regards; t(roof, shelf)
+help; 助; help; l(shelf, power)
 prosperous; 昌; prosperous; t(sun, sun)
 risk; 冒; dare; t(sun, eye)
 mandala; 曼; mandala; t(sun, eyeB, crotch) // not named in WK

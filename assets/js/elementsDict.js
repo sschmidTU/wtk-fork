@@ -7908,6 +7908,52 @@ const elementsDict =
     ],
     "comment": "reverse staples/comb"
   },
+  "hobby": {
+    "elements": [
+      "mouth",
+      "staples",
+      "boxB",
+      "crotch"
+    ],
+    "kanji": "叚",
+    "subElements": [
+      "mouth",
+      "staples",
+      "boxB",
+      "crotch",
+      "two",
+      "stick",
+      "box"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "hobby"
+    ],
+    "comment": "rare kanji that occurs in a few other kanji. only indirectly (imprecisely) used as an element in RTK."
+  },
+  "spare time": {
+    "elements": [
+      "sun",
+      "hobby"
+    ],
+    "kanji": "暇",
+    "subElements": [
+      "sun",
+      "hobby",
+      "day",
+      "mouth",
+      "staples",
+      "boxB",
+      "crotch",
+      "two",
+      "stick",
+      "box"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "spare time"
+    ]
+  },
   "grade": {
     "elements": [
       "staples",
@@ -10108,9 +10154,12 @@ const elementsDict =
       "flowers",
       "rice field",
       "flower",
-      "brains"
+      "brains",
+      "seedlings"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "seedlings"
+    ],
     "wkNames": [
       "seedling"
     ]
@@ -10730,6 +10779,34 @@ const elementsDict =
       "valuable"
     ]
   },
+  "dispatch": {
+    "elements": [
+      "road",
+      "precious"
+    ],
+    "kanji": "遣",
+    "subElements": [
+      "road",
+      "precious",
+      "purse",
+      "shellfish",
+      "in",
+      "floor",
+      "mouth",
+      "stick",
+      "inX",
+      "one",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "dispatch"
+    ]
+  },
   "leather": {
     "elements": [
       "twenty",
@@ -10835,6 +10912,28 @@ const elementsDict =
       "again"
     ],
     "comment": "structureVague: yes"
+  },
+  "convenience": {
+    "elements": [
+      "personB",
+      "grow late"
+    ],
+    "kanji": "便",
+    "subElements": [
+      "personB",
+      "grow late",
+      "person",
+      "ceiling",
+      "rice field",
+      "length",
+      "one",
+      "brains",
+      "tucked under the arm"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "convenience"
+    ]
   },
   "kebab": {
     "elements": [
@@ -14283,6 +14382,25 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "best regards"
+    ]
+  },
+  "help": {
+    "elements": [
+      "shelf",
+      "power"
+    ],
+    "kanji": "助",
+    "subElements": [
+      "shelf",
+      "power",
+      "eye",
+      "one",
+      "muscle",
+      "arnold"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "help"
     ]
   },
   "prosperous": {
