@@ -97,6 +97,7 @@ ninety; 枠 right part; ninety; t(nine, ten)
 ten=needle; 十; ten&cross
 thousand=one thousand; 千; thousand; t(drop, ten); slideWK
 sheaf; 爻 top or bottom part; treasure
+two sheaves; 爻; two treasures; t(sheaf, sheaf) // structureVague: yes
 hope; 希; wish; t(sheaf, linen)
 reap; 刈; prune; l(sheaf, saber)
 spirit; 気; energy; tr(energy, sheaf)
@@ -126,6 +127,7 @@ tool; 具 bottom part; ground&fins; t(ceiling, animal legs) // this is 具 minus
 true; 真; reality; t(ten, eye, tool)
 upright; 貞; chastity; t(divining rod, shellfish)
 pierce; 貫; pierce; t(rice field, shellfish)
+suckling infant; 嬰; suckling infant; t(l(shellfish, shellfish), woman)
 old west; 要 top part, 価 right part; helicopter; t(ceiling, c(eyeB, l(stick, stick)))
 need; 要; need; t(old west, woman)
 ballot; 票; ballot; t(old west, altar)
@@ -139,6 +141,7 @@ trust; 頼; trust; l(bundle, page)
 nothing=nothingness; 無; nothing; t(reclining, tome, oven-fire) // structureVague: yes
 tome; 冊; bookshelf; c(scrapbook, one) // compared to scrapbook, this has a longer middle horizontal stroke (sticks out left and right)
 scrapbook=tome; 輪 bottom right part; bookshelf; t(dish, l(stick, stick, stick, hook)) // compared to scrapbook, this has a shorter middle horizontal stroke (doesn't stick out left and right)
+library; 扁; library; tl(door, tome) // not named in RTK, but in WK. used often enough to warrant its own name. It's also a kanji. structureVague: yes - 戸 door is more cursive here
 sickness; 疒, 痒 outer part; sick
 rapidly; 疾; rapidly; tl(sickness, dart)
 not=knot=piglet's tail; 勿; wing&not
@@ -223,6 +226,7 @@ tall; 高; tall; t(top hat, mouth, o(hood, mouth))
 both; 両; both; t(ceiling, stick, o(hood, mountain))
 circumference; 周; circumference; o(hood, t(soil, mouth)) // RTK says glass hood instead of hood (subelement/variant I guess)
 core; 奥; interior; t(drop, o(hood, rice), large)
+hades=underworld; 冥; underworld; t(crown, sun, six)
 owl; 桜 top right part, 巣 top part; grass; drop3
 simple; 単; simple; t(owl, rice field, ten)
 schoolhouse; 学覚栄 upper part; viking; t(owl, crown)
@@ -366,7 +370,7 @@ build; 建; build; lb(stretch, brush)
 take along; 連; take along; lb(road, car)
 street=nail=spike; 丁; street
 cliff; 厂; cliff // mirrored: 𠃌 clothes hanger
-drag=cliff; 后 top left part; drag
+dragging=drag=cliff; 后 top left part; dragging // cursive version of 厂 cliff. Note that RTK often just calls this drag, but that's a conflict with 曳 drag, which also doesn't have another name, so we'll call this dragging internally.
 shield; 盾; shield; tl(drag, t(ten, eye))&oneself
 fu; フ; fu // doesn't exist in RTK or WK, but useful sub-element
 straight fu=fuB; 片 bottom right part; straight fu // doesn't exist in RTK or WK, but useful sub-element
@@ -658,6 +662,7 @@ largeB=large=St. Bernard; 大, 纂 middle part; big // seems to only occur in �
 plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
 dog with one leg=dog=chihuahua with one human leg; 尤; pirate
+concerning; 就; concerning; l(capital, dog with one leg)
 eight; 八; eight // similar to ハ animal legs
 eightB=eight; 曾 top part; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
 public; 公; public; t(eight, elbow)
@@ -739,6 +744,7 @@ mask; 面; face; t(ceiling, drop, o(pent in, eye))&hundred, oneself // structure
 rice field=brains; 田; rice field
 armor=armour=roots; 甲; turtle shell; t(rice field, stick)
 speaketh=monkey; 申; say humbly; t(stick, armor)
+drag; 曳; drag; c(speaketh, sheaf) // structureVague: yes - the vertical stroke of speaketh already starts to become curved right below rice field, and 爻 sheaf is also slightly different. Note that 后 dragging is also often called drag in RTK, but that would be a name conflict, so we call it dragging.
 rice; 米; rice; c(tree, horns)
 animal tracks; 釆; sickle; t(dropB, rice)
 astray; 迷; astray; lb(road, rice)

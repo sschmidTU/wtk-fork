@@ -1868,6 +1868,22 @@ const elementsDict =
       "treasure"
     ]
   },
+  "two sheaves": {
+    "elements": [
+      "sheaf",
+      "sheaf"
+    ],
+    "kanji": "爻",
+    "subElements": [
+      "sheaf",
+      "sheaf"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "two treasures"
+    ],
+    "comment": "structureVague: yes"
+  },
   "hope": {
     "elements": [
       "sheaf",
@@ -2404,6 +2420,28 @@ const elementsDict =
       "pierce"
     ]
   },
+  "suckling infant": {
+    "elements": [
+      "shellfish",
+      "shellfish",
+      "woman"
+    ],
+    "kanji": "嬰",
+    "subElements": [
+      "shellfish",
+      "shellfish",
+      "woman",
+      "eye",
+      "animal legs",
+      "shell",
+      "clam",
+      "oyster"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "suckling infant"
+    ]
+  },
   "old west": {
     "elements": [
       "ceiling",
@@ -2695,6 +2733,32 @@ const elementsDict =
       "bookshelf"
     ],
     "comment": "compared to scrapbook, this has a shorter middle horizontal stroke (doesn't stick out left and right)"
+  },
+  "library": {
+    "elements": [
+      "door",
+      "tome"
+    ],
+    "kanji": "扁",
+    "subElements": [
+      "door",
+      "tome",
+      "ceiling",
+      "flag",
+      "one",
+      "mouth",
+      "drop",
+      "drops",
+      "scrapbook",
+      "dish",
+      "stick",
+      "hook"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "library"
+    ],
+    "comment": "not named in RTK, but in WK. used often enough to warrant its own name. It's also a kanji. structureVague: yes - 戸 door is more cursive here"
   },
   "sickness": {
     "elements": [],
@@ -4335,6 +4399,32 @@ const elementsDict =
       "interior"
     ]
   },
+  "hades": {
+    "elements": [
+      "crown",
+      "sun",
+      "six"
+    ],
+    "kanji": "冥",
+    "subElements": [
+      "crown",
+      "sun",
+      "six",
+      "day",
+      "top hat",
+      "animal legs",
+      "drop",
+      "one",
+      "drops",
+      "underworld"
+    ],
+    "synonyms": [
+      "underworld"
+    ],
+    "wkNames": [
+      "underworld"
+    ]
+  },
   "owl": {
     "elements": [
       "drop3"
@@ -4767,10 +4857,17 @@ const elementsDict =
       "drag",
       "arrow",
       "fishhook",
-      "cliff",
+      "speaketh",
+      "sheaf",
       "hook",
       "stick",
-      "fishguts"
+      "fishguts",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains"
     ],
     "synonyms": [],
     "wkNames": [
@@ -4793,10 +4890,17 @@ const elementsDict =
       "drag",
       "arrow",
       "fishhook",
-      "cliff",
+      "speaketh",
+      "sheaf",
       "hook",
       "stick",
-      "fishguts"
+      "fishguts",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains"
     ],
     "synonyms": [],
     "wkNames": [
@@ -4909,7 +5013,15 @@ const elementsDict =
       "claw",
       "elbow",
       "drag",
-      "cliff"
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains"
     ],
     "synonyms": [],
     "wkNames": [
@@ -4928,7 +5040,15 @@ const elementsDict =
       "claw",
       "elbow",
       "drag",
-      "cliff"
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains"
     ],
     "synonyms": [],
     "wkNames": [
@@ -7251,18 +7371,21 @@ const elementsDict =
     ],
     "comment": "mirrored: 𠃌 clothes hanger"
   },
-  "drag": {
+  "dragging": {
     "elements": [],
     "kanji": "后 top left part",
     "subElements": [
+      "drag",
       "cliff"
     ],
     "synonyms": [
+      "drag",
       "cliff"
     ],
     "wkNames": [
-      "drag"
-    ]
+      "dragging"
+    ],
+    "comment": "cursive version of 厂 cliff. Note that RTK often just calls this drag, but that's a conflict with 曳 drag, which also doesn't have another name, so we'll call this dragging internally."
   },
   "shield": {
     "elements": [
@@ -7276,11 +7399,19 @@ const elementsDict =
       "ten",
       "eye",
       "oneself",
-      "cliff",
+      "speaketh",
+      "sheaf",
       "needle",
       "drop",
       "nose",
-      "drops"
+      "stick",
+      "armor",
+      "monkey",
+      "drops",
+      "rice field",
+      "armour",
+      "roots",
+      "brains"
     ],
     "synonyms": [],
     "wkNames": [
@@ -13053,6 +13184,35 @@ const elementsDict =
       "pirate"
     ]
   },
+  "concerning": {
+    "elements": [
+      "capital",
+      "dog with one leg"
+    ],
+    "kanji": "就",
+    "subElements": [
+      "capital",
+      "dog with one leg",
+      "top hat",
+      "mouth",
+      "little",
+      "drop",
+      "one",
+      "drops",
+      "animal legs",
+      "stick",
+      "hook",
+      "small",
+      "dog",
+      "chihuahua with one human leg",
+      "large",
+      "St. Bernard"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "concerning"
+    ]
+  },
   "eight": {
     "elements": [],
     "kanji": "八",
@@ -14610,6 +14770,29 @@ const elementsDict =
     "wkNames": [
       "say humbly"
     ]
+  },
+  "drag": {
+    "elements": [
+      "speaketh",
+      "sheaf"
+    ],
+    "kanji": "曳",
+    "subElements": [
+      "speaketh",
+      "sheaf",
+      "stick",
+      "armor",
+      "rice field",
+      "brains",
+      "armour",
+      "roots",
+      "monkey"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "drag"
+    ],
+    "comment": "structureVague: yes - the vertical stroke of speaketh already starts to become curved right below rice field, and 爻 sheaf is also slightly different. Note that 后 dragging is also often called drag in RTK, but that would be a name conflict, so we call it dragging."
   },
   "rice": {
     "elements": [
