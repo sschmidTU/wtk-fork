@@ -268,7 +268,8 @@ const elementsDict =
     ],
     "wkNames": [
       "cowB"
-    ]
+    ],
+    "comment": "TODO sunglasses?"
   },
   "sign of the cow": {
     "elements": [

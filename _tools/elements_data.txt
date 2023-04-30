@@ -13,7 +13,7 @@ man=male; 男; man; t(rice field, power)
 add; 加; add; l(power, mouth)
 noon=sign of the horse; 午; noon; t(reclining, ten) // RTK also calls this horse, but there's another horse element (and kanji).
 cow; 牛; cow
-cowB=cow; 降 bottom right part; cowB
+cowB=cow; 降 bottom right part; cowB // TODO sunglasses?
 sign of the cow; 丑; sign of the cow; c(sun, three)&celery
 revelation; 告; announce; t(cow, mouth)
 before; 先; before; t(cow, human legs)&dropB, soil // the bottom part of the stroke is missing for cow but RTK says it's still cow. WK says slide+soil+legs
@@ -692,7 +692,7 @@ outburst; 暴; violence; t(sun, strung together, waterC)
 well; 井; well; t(salad, fenceposts)
 grass skirt; 㐮; nurse; t(top hat, celery, hairpin)
 yellow; 黄; yellow; t(salad, sprout, animal legs)
-bushel basket; 棋 right part; crab; c(strung together, one)&eye
+bushel basket; 棋 right part; crab; c(strung together, one)&eye&shellfish
 tremendously; 甚; crab trap&very; t(bushel basket, lb(straightened hook, human legs))&four // structureVague: yes
 dish; 皿; plate
 blood; 血; blood; t(drop, dish)
