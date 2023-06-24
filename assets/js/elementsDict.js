@@ -5935,17 +5935,20 @@ const elementsDict =
   "rule": {
     "elements": [
       "shellfish",
-      "knife"
+      "saber"
     ],
     "kanji": "則",
     "subElements": [
       "shellfish",
-      "knife",
+      "saber",
       "eye",
       "animal legs",
       "shell",
       "clam",
-      "oyster"
+      "oyster",
+      "sabre",
+      "sword",
+      "dagger"
     ],
     "synonyms": [],
     "wkNames": [

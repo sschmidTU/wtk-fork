@@ -294,7 +294,7 @@ wish; 念; thought; t(now, heart)
 head=page; 頁; geoduck; t(ceiling, drop, shellfish)&oneself; leafWK
 melancholy; 憂; grief; t(head, crown, heart, walking legs)&summer
 stinking; 臭; stinking; t(oneself, large)
-rule; 則; rule; l(shellfish, knife)
+rule; 則; rule; l(shellfish, saber)
 glue=measurement; 寸; measurement; tr(t(ten, hook), drop)
 inch; 吋; inch; l(mouth, glue)
 temple=buddhist temple; 寺; temple; t(soil, glue)
