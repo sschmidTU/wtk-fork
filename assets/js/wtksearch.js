@@ -1018,6 +1018,7 @@ class WTKSearch {
       "horse chestnut": "horsechestnut",
       "long for": "longfor",
       "give up": "giveup",
+      "deal with": "dealwith",
       "government office": "governmentoffice"
     }
   }
@@ -1470,6 +1471,7 @@ class WTKSearch {
       "horsechestnut": "horse chestnut",
       "longfor": "long for",
       "giveup": "give up",
+      "dealwith": "deal with,dispose",
       "governmentoffice": "signature"
     }
   }
@@ -1556,6 +1558,7 @@ class WTKSearch {
       "water": 1,
       "charcoal": 1,
       "long": 1,
+      "dealwith": 1,
       "village": 1
     }
   }
