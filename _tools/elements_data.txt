@@ -18,6 +18,8 @@ sign of the cow; 丑; sign of the cow; c(sun, three)&celery
 revelation; 告; announce; t(cow, mouth)
 before; 先; before; t(cow, human legs)&dropB, soil // the bottom part of the stroke is missing for cow but RTK says it's still cow. WK says slide+soil+legs
 direction=compass; 方; direction
+boy; 坊; monk; l(soil, direction)
+boyB=boy; 傲 middle part; monk; t(soil, direction)
 taskmaster; 攵, 牧 right part; winter // compared to walking legs, longer second stroke, "over the edge" to the top right
 walking legs; 夂, 各 top part; winter // top horizontal stroke doesn't go "over the edge"
 winter; 冬; winter; t(walking legs, twoB)
@@ -208,6 +210,7 @@ beauty; 美; beauty; t(sheep, large) // the last part of the vertical stroke is 
 distinction=discrimination; 差; distinction&discriminate; t(sheep, left) // RTK1 calls this distinction, RTK3 mostly as well, once discrimination (probably mistake)
 spicy; 辛; spicy; t(stand, ten)
 happiness; 幸; happiness; t(ten, spicy) // interwoven. structureVague: yes
+tenacious; 執; tenacious; l(happiness, round)
 ketchup=false; 辟; hot pepper; l(tl(flag, mouth), spicy) // kanji meaning is false (jisho)
 red pepper; 新 left part, 辛; red pepper; t(stand up, tree)
 roofB=roof; 屋; roof; tl(flag, climax) // unfortunately this has the same name as the roof (house) element/WK radical
@@ -416,7 +419,7 @@ staplesB=staples; 臼 right part; combB // reverse staples/comb
 hobby; 叚; hobby; l(t(mouth, staples), t(boxB, crotch)) // rare kanji that occurs in a few other kanji. only indirectly (imprecisely) used as an element in RTK.
 spare time; 暇; spare time; l(sun, hobby)
 grade; 段; steps; l(staples, missile)
-comb; 而; rake; t(ceiling, drop, notB)
+comb=and then; 而; rake; t(ceiling, drop, notB)
 demand; 需; demand; t(rain, comb)
 long=mane; 長; long; t(staples, hairpin) // staples has straight strokes here, rather like ヨ broom reversed. Also, RTK gives the primitive for this the name hair. But come on.
 reclining=lying down; 𠂉, 乞 top part; gun
@@ -450,12 +453,12 @@ key; ユ; hook; t(straight fu, floor)
 guillotine; 決 right part; decide; t(c(key, stick), large) // maybe the subdivision here with key crossed by stick is unnecessary, but who knows.
 marquis; 侯; marquis; l(personB, t(key, dart))
 locket; 韋; korea; t(key, mouth, sunglasses with one lens missing)
-retainer=slave; 臣; servant
+retainer=slave=servant; 臣; servant
 loincloth=wise; 臤; wise; 臤
 gigantic=giant; 巨; giant
 strict; 堅; solid; t(loincloth, soil)
 fingerprint; 犯 right part; snake
-sign of the snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
+sign of the snake=snake=mosaic with bit missing; 巳; snake; t(mouth, fishhook) // this is exactly WK snake, which can also be RTK fingerprint
 mosaic; 巴; bed; c(sign of the snake, stick)
 color=colour; 色; color; t(bound up, mosaic)
 mailbox; 宛 bottom part; mailbox; l(evening, fingerprint)
@@ -520,6 +523,7 @@ turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, thou
 char=barbecue; 焦; char; t(turkey, oven-fire) // barbecue is not in my RTK1 book, but in the rtk-search data
 pegasus=turkey house; 勧 left part, variant of 雚; pegasus; t(noon, turkey) // doesn't exist in WK (noon+turkey)
 horse=team of horses; 馬; horse; t(turkey, tr(clothes hanger, tail feathers)) // structureVague: yes
+flying turkey; 曜 right part; flying turkey; t(l(broom, broom), turkey) // not a RTK or WK element, but occurs quite often. Either turkey flying on broom (like a witch), or sometimes the brooms can apparently be also feathers (at least RTK3 v4 gives that for 耀, seems to depend on font)
 flowers=flower; 艹, 若 top part; flowers
 two hands; 开; lantern; flowers
 two handsB=two hands; 廾; twenty; flowers // this specific version isn't named in RTK, seems to be called two hands, even though it's missing the top horizontal stroke
@@ -692,7 +696,7 @@ outburst; 暴; violence; t(sun, strung together, waterC)
 well; 井; well; t(salad, fenceposts)
 grass skirt; 㐮; nurse; t(top hat, celery, hairpin)
 yellow; 黄; yellow; t(salad, sprout, animal legs)
-bushel basket; 棋 right part; crab; c(strung together, one)&eye&shellfish
+bushel basket; 其; crab; c(strung together, one)&eye&shellfish
 tremendously; 甚; crab trap&very; t(bushel basket, lb(straightened hook, human legs))&four // structureVague: yes
 dish; 皿; plate
 blood; 血; blood; t(drop, dish)
@@ -819,8 +823,9 @@ shaku=shakuhachi; 尺; shrimp; tl(flag, dropB)
 turn=dice; 番; number&number in a series; t(animal tracks, rice field) // WK kanji name is "number in a series", but I completely forgot the "in a series" part.
 exhaust; 尽; exhaust; o(shaku, twoB)
 of=building blocks; 之; this; t(stick, fu, umbrellaB)
-halberd; 矛; spear; c(beforehand, dropB)
 beforehand; 予; beforehand; t(chop-sealB, c(street, fu)) // RTK: this is identical to halberd, except the last stroke is omitted
+halberd; 矛; spear; c(beforehand, dropB)
+tender; 柔; gentle; t(halberd, tree)
 task; 務; task; l(halberd, t(taskmaster, power))
 tusk=waitress; 牙; fang; t(ceiling, c(hook, straightened hook, dropB)) // something like 戈 fiesta is in there, but not quite
 previously; 既; previously; l(silver, tusk)
@@ -849,3 +854,4 @@ land; 坴; womb; t(rice seedling, soil)
 acorn=sign of the hog; 亥; slice; t(top hat, spoon, dropB, drop) // the bottom part isn't further described in RTK, a bit vague/unique
 center; 央; center; t(towel, large)&hood // structureVague: yes
 england; 英; england; t(flowers, center)
+repeater=noma; 々; repeater; t(bound up, drop)

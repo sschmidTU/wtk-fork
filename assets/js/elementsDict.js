@@ -343,6 +343,45 @@ const elementsDict =
       "direction"
     ]
   },
+  "boy": {
+    "elements": [
+      "soil",
+      "direction"
+    ],
+    "kanji": "坊",
+    "subElements": [
+      "soil",
+      "direction",
+      "dirt",
+      "ground",
+      "compass"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "monk"
+    ]
+  },
+  "boyB": {
+    "elements": [
+      "soil",
+      "direction"
+    ],
+    "kanji": "傲 middle part",
+    "subElements": [
+      "soil",
+      "direction",
+      "dirt",
+      "ground",
+      "compass",
+      "boy"
+    ],
+    "synonyms": [
+      "boy"
+    ],
+    "wkNames": [
+      "monk"
+    ]
+  },
   "taskmaster": {
     "elements": [],
     "kanji": "攵, 牧 right part",
@@ -3216,7 +3255,8 @@ const elementsDict =
       "drop",
       "arrow",
       "drops",
-      "slave"
+      "slave",
+      "servant"
     ],
     "synonyms": [],
     "wkNames": [
@@ -4043,6 +4083,29 @@ const elementsDict =
       "happiness"
     ],
     "comment": "interwoven. structureVague: yes"
+  },
+  "tenacious": {
+    "elements": [
+      "happiness",
+      "round"
+    ],
+    "kanji": "執",
+    "subElements": [
+      "happiness",
+      "round",
+      "ten",
+      "spicy",
+      "needle",
+      "stand",
+      "nine",
+      "drop",
+      "baseball",
+      "drops"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "tenacious"
+    ]
   },
   "ketchup": {
     "elements": [
@@ -8468,9 +8531,12 @@ const elementsDict =
       "drops",
       "not",
       "knot",
-      "piglet's tail"
+      "piglet's tail",
+      "and then"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "and then"
+    ],
     "wkNames": [
       "rake"
     ]
@@ -8493,7 +8559,8 @@ const elementsDict =
       "notB",
       "not",
       "knot",
-      "piglet's tail"
+      "piglet's tail",
+      "and then"
     ],
     "synonyms": [],
     "wkNames": [
@@ -9119,10 +9186,12 @@ const elementsDict =
     "elements": [],
     "kanji": "臣",
     "subElements": [
-      "slave"
+      "slave",
+      "servant"
     ],
     "synonyms": [
-      "slave"
+      "slave",
+      "servant"
     ],
     "wkNames": [
       "servant"
@@ -9197,9 +9266,11 @@ const elementsDict =
       "hook",
       "stick",
       "fishguts",
+      "snake",
       "mosaic with bit missing"
     ],
     "synonyms": [
+      "snake",
       "mosaic with bit missing"
     ],
     "wkNames": [
@@ -9220,7 +9291,9 @@ const elementsDict =
       "fishhook",
       "hook",
       "fishguts",
-      "mosaic with bit missing"
+      "snake",
+      "mosaic with bit missing",
+      "self"
     ],
     "synonyms": [],
     "wkNames": [
@@ -9245,7 +9318,9 @@ const elementsDict =
       "fishhook",
       "hook",
       "fishguts",
+      "snake",
       "mosaic with bit missing",
+      "self",
       "coat hanger",
       "drops",
       "lying down",
@@ -10537,6 +10612,24 @@ const elementsDict =
       "horse"
     ],
     "comment": "structureVague: yes"
+  },
+  "flying turkey": {
+    "elements": [
+      "broom",
+      "broom",
+      "turkey"
+    ],
+    "kanji": "曜 right part",
+    "subElements": [
+      "broom",
+      "broom",
+      "turkey"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "flying turkey"
+    ],
+    "comment": "not a RTK or WK element, but occurs quite often. Either turkey flying on broom (like a witch), or sometimes the brooms can apparently be also feathers (at least RTK3 v4 gives that for 耀, seems to depend on font)"
   },
   "flowers": {
     "elements": [],
@@ -14006,7 +14099,7 @@ const elementsDict =
       "strung together",
       "one"
     ],
-    "kanji": "棋 right part",
+    "kanji": "其",
     "subElements": [
       "strung together",
       "one",
@@ -14096,6 +14189,7 @@ const elementsDict =
       "floor",
       "dish",
       "slave",
+      "servant",
       "lying down",
       "one"
     ],
@@ -16365,6 +16459,32 @@ const elementsDict =
       "this"
     ]
   },
+  "beforehand": {
+    "elements": [
+      "chop-sealB",
+      "street",
+      "fu"
+    ],
+    "kanji": "予",
+    "subElements": [
+      "chop-sealB",
+      "street",
+      "fu",
+      "drop",
+      "chop-seal",
+      "nail",
+      "spike",
+      "drops",
+      "clothes hanger",
+      "stick",
+      "coat hanger"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "beforehand"
+    ],
+    "comment": "RTK: this is identical to halberd, except the last stroke is omitted"
+  },
   "halberd": {
     "elements": [
       "beforehand",
@@ -16391,14 +16511,17 @@ const elementsDict =
       "spear"
     ]
   },
-  "beforehand": {
+  "tender": {
     "elements": [
-      "chop-sealB",
-      "street",
-      "fu"
+      "halberd",
+      "tree"
     ],
-    "kanji": "予",
+    "kanji": "柔",
     "subElements": [
+      "halberd",
+      "tree",
+      "beforehand",
+      "dropB",
       "chop-sealB",
       "street",
       "fu",
@@ -16409,13 +16532,13 @@ const elementsDict =
       "drops",
       "clothes hanger",
       "stick",
-      "coat hanger"
+      "coat hanger",
+      "wood"
     ],
     "synonyms": [],
     "wkNames": [
-      "beforehand"
-    ],
-    "comment": "RTK: this is identical to halberd, except the last stroke is omitted"
+      "gentle"
+    ]
   },
   "task": {
     "elements": [
@@ -17097,6 +17220,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "england"
+    ]
+  },
+  "repeater": {
+    "elements": [
+      "bound up",
+      "drop"
+    ],
+    "kanji": "々",
+    "subElements": [
+      "bound up",
+      "drop",
+      "clothes hanger",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down",
+      "noma"
+    ],
+    "synonyms": [
+      "noma"
+    ],
+    "wkNames": [
+      "repeater"
     ]
   }
 };
