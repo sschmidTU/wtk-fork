@@ -1135,7 +1135,7 @@ class WTKSearch {
       //"black hole": "double back",
       "clown": "muzzle", //p178
       "death": "deceased", //p180
-      //"monk": "boy"
+      "monk": "boy",
       "guard": "devil", //p183
       "mask": "formerly",
       "king": "king,porter,grow up,jewel,bushes,celery", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
