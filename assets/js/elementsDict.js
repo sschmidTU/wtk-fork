@@ -5266,7 +5266,7 @@ const elementsDict =
       "horns",
       "ground"
     ],
-    "comment": "line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed."
+    "comment": "line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed. Upside down in a row is when below, and 3 top stokes are removed. Though RTK isn't very clear here."
   },
   "row": {
     "elements": [],
@@ -5283,7 +5283,7 @@ const elementsDict =
       "horns",
       "ground"
     ],
-    "comment": "line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed."
+    "comment": "line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed. Row is the top placement, and the complete form, no strokes removed."
   },
   "void": {
     "elements": [
@@ -7117,7 +7117,7 @@ const elementsDict =
       "little",
       "animal legs"
     ],
-    "kanji": "変 top part",
+    "kanji": "亦, 変 top part",
     "subElements": [
       "top hat",
       "little",
@@ -7549,6 +7549,27 @@ const elementsDict =
       "four"
     ],
     "comment": "actually mouth legs on WK but that's included in the RTK elements"
+  },
+  "fourmouth": {
+    "elements": [
+      "hood",
+      "human legs",
+      "mouth"
+    ],
+    "kanji": "裔 bottom part",
+    "subElements": [
+      "hood",
+      "human legs",
+      "mouth",
+      "four",
+      "belt",
+      "pent in"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "fourmouth"
+    ],
+    "comment": "四 four is incomplete on the bottom"
   },
   "road": {
     "elements": [],
@@ -8736,6 +8757,19 @@ const elementsDict =
       "evening"
     ]
   },
+  "eveningB": {
+    "elements": [],
+    "kanji": "然 top left part",
+    "subElements": [
+      "evening"
+    ],
+    "synonyms": [
+      "evening"
+    ],
+    "wkNames": [
+      "eveningB"
+    ]
+  },
   "many": {
     "elements": [
       "evening",
@@ -8982,18 +9016,19 @@ const elementsDict =
   },
   "ritual": {
     "elements": [
-      "evening",
+      "eveningB",
       "drop",
       "crotch",
       "show"
     ],
     "kanji": "祭",
     "subElements": [
-      "evening",
+      "eveningB",
       "drop",
       "crotch",
       "show",
       "teepee",
+      "evening",
       "drops",
       "two",
       "small",
@@ -9015,11 +9050,12 @@ const elementsDict =
       "roof",
       "ritual",
       "house",
-      "evening",
+      "eveningB",
       "drop",
       "crotch",
       "show",
       "teepee",
+      "evening",
       "drops",
       "two",
       "small",
@@ -9929,11 +9965,16 @@ const elementsDict =
   },
   "do": {
     "elements": [
+      "dropB",
+      "mouth",
       "tail feathers"
     ],
     "kanji": "為",
     "subElements": [
+      "dropB",
+      "mouth",
       "tail feathers",
+      "drop",
       "clothes hanger",
       "oven-fire",
       "coat hanger",
@@ -11210,15 +11251,16 @@ const elementsDict =
   },
   "sort of thing": {
     "elements": [
-      "evening",
+      "eveningB",
       "dog",
       "oven-fire"
     ],
     "kanji": "然",
     "subElements": [
-      "evening",
+      "eveningB",
       "dog",
       "oven-fire",
+      "evening",
       "large",
       "drop",
       "drop4",

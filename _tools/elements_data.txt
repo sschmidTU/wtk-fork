@@ -265,8 +265,8 @@ old dragon; 龍; old dragon; l(t(stand up, moon), t(slingshot, staples)) // this
 melon; 瓜; melon; c(claw, elbow)&drag&hood
 orphan; 孤; orphan; l(child, melon)
 complete; 了; finish; ; barbWK
-upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
-row=upside down in a row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed.
+upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed. Upside down in a row is when below, and 3 top stokes are removed. Though RTK isn't very clear here.
+row=upside down in a row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed. Row is the top placement, and the complete form, no strokes removed.
 void; 虚; void; tl(tiger, row)
 virtuous; 善; morally good; t(sheep, row, mouth)
 profession; 業; business; t(upside down in a row, sheep, tree) // structureVague: yes
@@ -351,7 +351,7 @@ fenceposts; 粛 bottom outer parts; fenceposts; l(dropB, stick) // basically the
 fencepostsB=fenceposts; 円 bottom part; fencepostsB; l(stick, hook) // similar to fenceposts, but (almost) mirrored
 solemn; 粛; solemn; t(rake, o(fenceposts, rice))
 red; 赤; red; t(soil, c(little, animal legs)) // structureVague: yes
-redB=red; 変 top part; red; t(top hat, c(little, animal legs)) // structureVague: yes
+redB=red; 亦, 変 top part; red; t(top hat, c(little, animal legs)) // structureVague: yes
 father; 父; father; t(animal legs, sheaf)
 mingle; 交; mix; t(top hat, father)
 portent=omen; 兆; omen; c(human legs, drop4)&ice
@@ -374,6 +374,7 @@ butcher; 前 bottom part; butcher // butcher doesn't exist in WK, added here.
 meeting of butchers; 兪; death star // there is a subtle variation: either moon knife or moon flood. seems to depend on font as well (like 喩・喻), so might be ok to take this as the same element.
 in front=front; 前; front; t(horns, one, butcher)
 four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's included in the RTK elements
+fourmouth; 裔 bottom part; fourmouth; o(hood, t(human legs, mouth))&four // 四 four is incomplete on the bottom
 road; ⻌, 退 left part; scooter
 roadB=road; 辶, 迄 left part; scooter
 stretch; 廴; yoga
@@ -430,6 +431,7 @@ restore; 復; restore; l(goingB, double back)
 lack=yawn; 欠; lack; t(c(reclining, drop), person)
 next; 次; next; l(ice, lack)
 evening; 夕; evening
+eveningB=evening; 然 top left part; eveningB
 many; 多; many; t(evening, evening)
 bones; 歹, 残 left part; yakuza; t(ceiling, evening)
 file; 列; row; l(bones, saber)
@@ -443,7 +445,7 @@ nara; 奈; nara; t(large, show)
 military officer=lieutenant; 尉; military officer; l(tl(flag, show), glue) // RTK1 calls this military officer, RTK3 lieutenant
 prohibition=prohibit; 禁; prohibit; t(grove, show)
 religion; 宗; religion; t(roof, show)
-ritual; 祭; festival; t(l(c(evening, drop), crotch), show)&teepee
+ritual; 祭; festival; t(l(c(eveningB, drop), crotch), show)&teepee
 guess; 察; guess; t(roof, ritual)
 paper punch; 探 top right part; pi; t(crown, human legs)
 altar; 礻, 礼 left part; spirit // almost same as cloak, doesn't have the diagonal stroke on the right. Note that RTK also calls 示 (show) altar sometimes.
@@ -488,7 +490,7 @@ feathers; 羽; feather; clothes hanger2, drop2
 learn; 習; learn; t(feathers, white)
 sparkler; 摂 bottom right part; explosion; t(horns, animal legs)
 music; 楽; comfort; t(o(sparkler, white), tree)
-do=so; 為; sake; tail feathers
+do=so; 為; sake; dropB, mouth, tail feathers
 fish; 魚; fish; t(bound up, rice field, oven-fire)
 ice; 凍 left part, 冬 bottom part; ice; drop2, two // ice is ambiguous in RTK, see 凍 and 冬.
 turtle; 壮 left part; icicle
@@ -555,7 +557,7 @@ early=sunflower; 早; early; t(sun, ten)
 mist; 𠦝, 龺, 朝 left part; morning; t(ten, sun, ten)
 morning; 朝; morning; l(mist, moon)
 pack of wild dogs; 狂 left part; animal
-sort of thing; 然; nature; t(l(evening, dog), oven-fire)
+sort of thing; 然; nature; t(l(eveningB, dog), oven-fire)
 prison; 獄; prison; l(pack of wild dogs, say, dog)
 in=inX; 中; middle; c(mouth, stick) // inX is just a synonym for in that makes it easier for the search engine
 insect; 虫; insect; t(in, l(floor, drop))
