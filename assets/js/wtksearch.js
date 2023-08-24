@@ -1472,6 +1472,7 @@ class WTKSearch {
       "longfor": "long for",
       "giveup": "give up",
       "dealwith": "deal with,dispose",
+      "sleep": "sleep, lie down",
       "governmentoffice": "signature"
     }
   }
