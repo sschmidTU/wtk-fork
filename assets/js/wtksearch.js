@@ -1436,7 +1436,7 @@ class WTKSearch {
       "water": "water,grains of rice",
       "leader": "person",
       //"flag": "flag",
-      "gambler": "strawman",
+      "gambler": "lofty,straw man",
       "dropbear": "maestro",
       "hole": "hole", // RTK doesn't differentiate between WK's pi and hole (added stick on top) 
       // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.

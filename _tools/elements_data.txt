@@ -531,7 +531,7 @@ two hands; 开; lantern; flowers
 two handsB=two hands; 廾; twenty; flowers // this specific version isn't named in RTK, seems to be called two hands, even though it's missing the top horizontal stroke
 put together; 并; put together; t(horns, two hands)
 folding screen; 屏; folding screen; tl(flag, put together)
-lofty; 尭; gambler; t(ten, salad, human legs)&flowers, pi
+lofty=straw man; 尭; gambler; t(ten, salad, human legs)&flowers, pi // the original RTK primitive for this is called straw man
 seedling=seedlings; 苗; seedling; t(flowers, rice field)
 decorate; 賁; decorate; t(cross, flowers, shellfish) // not a RTK or WK kanji, but the kanji exists.
 graveyard; 莫; greenhouse; t(flowers, sun, large)

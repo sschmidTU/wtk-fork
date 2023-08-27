@@ -10775,12 +10775,16 @@ const elementsDict =
       "floor",
       "flower",
       "ceiling",
-      "one"
+      "one",
+      "straw man"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "straw man"
+    ],
     "wkNames": [
       "gambler"
-    ]
+    ],
+    "comment": "the original RTK primitive for this is called straw man"
   },
   "seedling": {
     "elements": [
