@@ -7325,7 +7325,7 @@ const elementsDict =
     ],
     "synonyms": [],
     "wkNames": [
-      "sign of the dragon"
+      "landslide"
     ]
   },
   "agriculture": {

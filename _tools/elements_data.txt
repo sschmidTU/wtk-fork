@@ -361,7 +361,7 @@ hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, 
 garment=clothes=scarf; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin) // scarf/garment is a bit ambiguous in RTK, can also be close to hairpin/𧘇 kick
 surface; 表; express; t(lordB, hairpin)
 trampoline=round; 睘; trampoline; t(eyeB, ceiling, mouth, scarf)
-sign of the dragon; 辰; sign of the dragon; tl(cliff, t(ceiling, hairpin))
+sign of the dragon; 辰; landslide; tl(cliff, t(ceiling, hairpin))
 agriculture; 農; farming; t(bend, sign of the dragon)
 apprehensive; 畏; apprehensive; t(rice field, hairpin)
 decline; 衰; decline; t(top hat, sun, hairpin)
