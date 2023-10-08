@@ -16723,9 +16723,12 @@ const elementsDict =
       "two",
       "stick",
       "hood",
-      "belt"
+      "belt",
+      "stamp album"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "stamp album"
+    ],
     "wkNames": [
       "cat pirate"
     ]

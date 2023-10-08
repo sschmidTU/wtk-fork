@@ -833,7 +833,7 @@ tusk=waitress; 牙; fang; t(ceiling, c(hook, straightened hook, dropB)) // somet
 previously; 既; previously; l(silver, tusk)
 stamp; 卩; stamp; t(hood, stick)
 cornucopia=vine; 丩; vines; t(shovel, stick)
-stamps; 抑 without 扌; cat pirate; l(box, stamp)
+stamps=stamp album; 抑 without 扌; cat pirate; l(box, stamp)
 node=joint=season; 節; season; t(bamboo, l(silver, stamp))
 lowly; 卑; lowly; t(drop, rice field, cornucopia)
 chop-seal; 令 bottom part, 卩 with longer top stroke; stamp; tr(clothes hanger, stick)
