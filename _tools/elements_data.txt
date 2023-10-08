@@ -633,7 +633,7 @@ benefit; 益; benefit; t(horns, one, animal legs, dish)
 state of mind; 忄; soul; l(drop, stick, drop)
 elder brother; 兄; older brother; t(mouth, human legs)
 devil; 兑; guard; t(horns, elder brother)
-formerly; 曽; formerly; t(horns, rice field, sun)
+formerly; 曽; formerly&former; t(horns, rice field, sun)
 // "primitives" (mostly): (in the sense that there usually isn't a significant subdivision of them) (otherwise, grouped by similarity)
 umbrella; 𠆢, 全 top part; hat
 umbrellaB=umbrella; 之 bottom part; hatB

@@ -12981,7 +12981,8 @@ const elementsDict =
     ],
     "synonyms": [],
     "wkNames": [
-      "formerly"
+      "formerly",
+      "former"
     ]
   },
   "umbrella": {
