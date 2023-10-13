@@ -4456,7 +4456,7 @@ const elementsDict =
     "wkNames": [
       "dirtmouth"
     ],
-    "comment": "not named in WK"
+    "comment": "not named in WK. note that the full 袁 is zombie in WK"
   },
   "circumference": {
     "elements": [
@@ -7307,8 +7307,10 @@ const elementsDict =
       "round"
     ],
     "wkNames": [
-      "trampoline"
-    ]
+      "trampoline",
+      "zombie"
+    ],
+    "comment": "WK 袁 = zombie"
   },
   "sign of the dragon": {
     "elements": [

@@ -1359,7 +1359,7 @@ class WTKSearch {
       "mantis": "gnats&drop&insect&belt",
       "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
       "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
-      "zombie": "earthenware jar&scarf", // or lidded crock&scarf
+      "zombie": "zombie,trampoline,earthenware jar&scarf", // or lidded crock&scarf
       "library": "flag&scrapbook",
       // --------------------------------------------
       "elf": "daring",

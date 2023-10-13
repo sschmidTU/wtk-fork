@@ -228,7 +228,7 @@ meat; 肉; meat; o(inside, person)
 same; 同; same; o(hood, creeper)
 tall; 高; tall; t(top hat, mouth, o(hood, mouth))
 both; 両; both; t(ceiling, stick, o(hood, mountain))
-lidded crock; 袁 top+middle part; dirtmouth; t(soil, mouth) // not named in WK
+lidded crock; 袁 top+middle part; dirtmouth; t(soil, mouth) // not named in WK. note that the full 袁 is zombie in WK
 circumference; 周; circumference; o(hood, lidded crock) // RTK says glass hood instead of hood (subelement/variant I guess)
 park; 園; park; o(pent in, t(lidded crock, hairpin)) // this exact version of mouth+scarf/hairpin/kick seems to be only used in this and 薗 (park alternate/variant) structureVague: yes
 core; 奥; interior; t(drop, o(hood, rice), large)
@@ -360,7 +360,7 @@ pi; 光 bottom part; pi; t(ceiling, human legs)
 hairpin; 畏長 bottom part; ground&kick // note that scarf (RTK) has an extra, very small vertical stroke on top. kick: 𧘇
 garment=clothes=scarf; 衣, 哀 top plus bottom part; clothes; t(top hat, hairpin) // scarf/garment is a bit ambiguous in RTK, can also be close to hairpin/𧘇 kick
 surface; 表; express; t(lordB, hairpin)
-trampoline=round; 睘; trampoline; t(eyeB, ceiling, mouth, scarf)
+trampoline=round; 睘; trampoline&zombie; t(eyeB, ceiling, mouth, scarf) // WK 袁 = zombie
 sign of the dragon; 辰; landslide; tl(cliff, t(ceiling, hairpin))
 agriculture; 農; farming; t(bend, sign of the dragon)
 apprehensive; 畏; apprehensive; t(rice field, hairpin)
