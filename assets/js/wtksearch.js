@@ -1473,7 +1473,9 @@ class WTKSearch {
       "giveup": "give up",
       "dealwith": "deal with,dispose",
       "sleep": "sleep, lie down",
-      "governmentoffice": "signature"
+      "governmentoffice": "signature",
+      // --- convenience replacements, false friends (close misses) ---
+      "replace": "replace,substitute", // 替 is replace and 代 substitute, but my memory said 代 replace (which could be a common error)
     }
   }
 
