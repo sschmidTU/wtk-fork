@@ -15,11 +15,14 @@ function processFile(fileString) {
     const rows = fileString.split("\n");
     // skip first row
     for (let i=1; i < rows.length; i++) {
-        if (rows[i].trim().startsWith("//")) {
+        const row = rows[i];
+        if (row.trim().startsWith("//")) {
             continue;
         }
-        const commentSplit = rows[i].split("//");
-        if (commentSplit.length > 2) {
+        const commentSplit = row.split("//");
+        const numberOfLinks = row.split("https://").length - 1;
+        let numberOfCommentsTags = commentSplit.length - numberOfLinks; // ignore https:// links in comments
+        if (numberOfCommentsTags > 2) {
             console.log(`warning: row ${i+1} has more than one occurence of //`);
         }
         const decommented = commentSplit[0];

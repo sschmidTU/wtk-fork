@@ -171,7 +171,7 @@ storehouse; 蔵; storehouse; t(flowers, o(parade, retainer))
 float; 桟 right part; bar; c(fiesta, two) // apparently comes from 戔, which is also a variant for the right part
 warrior; 武; military; tr(arrowhead, stop)&one
 style; 式; ritual; tr(arrowhead, craft)
-fell; 伐; fell; l(personB, fiesta)
+fell; 伐; fell; l(personB, fiesta)&substitute // could also be seen with 代 substitute as c(substitute, drop)
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 bay; 浦; bay; l(water, dog tag)
 stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.

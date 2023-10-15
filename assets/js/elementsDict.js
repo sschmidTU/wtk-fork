@@ -3330,6 +3330,7 @@ const elementsDict =
     "subElements": [
       "personB",
       "fiesta",
+      "substitute",
       "person",
       "arrowhead",
       "drop",
@@ -3339,7 +3340,8 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "fell"
-    ]
+    ],
+    "comment": "could also be seen with 代 substitute as c(substitute, drop)"
   },
   "dog tag": {
     "elements": [
