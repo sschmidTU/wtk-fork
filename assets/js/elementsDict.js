@@ -7604,7 +7604,27 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "yoga"
-    ]
+    ],
+    "comment": "WK stretch is 張 (RTK lengthen)"
+  },
+  "lengthen": {
+    "elements": [
+      "bow",
+      "long"
+    ],
+    "kanji": "張",
+    "subElements": [
+      "bow",
+      "long",
+      "staples",
+      "hairpin",
+      "mane"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "stretch"
+    ],
+    "comment": "RTK stretch is 廴 (WK yoga)"
   },
   "build": {
     "elements": [

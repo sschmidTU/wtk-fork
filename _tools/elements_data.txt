@@ -377,7 +377,8 @@ four; 四; four; o(pent in, human legs) // actually mouth legs on WK but that's 
 fourmouth; 裔 bottom part; fourmouth; o(hood, t(human legs, mouth))&four // 四 four is incomplete on the bottom
 road; ⻌, 退 left part; scooter
 roadB=road; 辶, 迄 left part; scooter
-stretch; 廴; yoga
+stretch; 廴; yoga // WK stretch is 張 (RTK lengthen)
+lengthen; 張; stretch; l(bow, long) // RTK stretch is 廴 (WK yoga)
 build; 建; build; lb(stretch, brush)
 take along; 連; take along; lb(road, car)
 street=nail=spike; 丁; street
