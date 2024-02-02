@@ -1019,7 +1019,8 @@ class WTKSearch {
       "long for": "longfor",
       "give up": "giveup",
       "deal with": "dealwith",
-      "government office": "governmentoffice"
+      "government office": "governmentoffice",
+      "say humbly": "sayhumbly",
     }
   }
 
@@ -1477,6 +1478,7 @@ class WTKSearch {
       "stretch": "stretch,lengthen", // 張 stretch radical is lengthen in RTK, but there's also 伸 stretch (expand in RTK, though it doesn't seem to be used in other kanji)
       // --- convenience replacements, false friends (close misses) ---
       "replace": "replace,substitute", // 替 is replace and 代 substitute, but my memory said 代 replace (which could be a common error)
+      "sayhumbly": "say humbly,speaketh",
     }
   }
 
