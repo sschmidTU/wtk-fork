@@ -524,7 +524,7 @@ resin; 朮, 術 middle part; angel; c(ten, drop, human legs)
 bamboo; 竹, 笑 top part; bamboo // the vertical strokes are always shortened when used as an element.
 turkey; 隹, 唯 right part; turkey // TODO maybe this could be subdivided, though it's tricky. bamboo mouth2?
 char=barbecue; 焦; char; t(turkey, oven-fire) // barbecue is not in my RTK1 book, but in the rtk-search data
-pegasus=turkey house; 勧 left part, variant of 雚; pegasus; t(noon, turkey) // doesn't exist in WK (noon+turkey)
+pegasus=turkey house; 勧 left part, variant of 雚; pegasus; t(noon, turkey)&dart // doesn't exist in WK (noon+turkey)
 horse=team of horses; 馬; horse; t(turkey, tr(clothes hanger, tail feathers)) // structureVague: yes
 flying turkey; 曜 right part; flying turkey; t(l(broom, broom), turkey) // not a RTK or WK element, but occurs quite often. Either turkey flying on broom (like a witch), or sometimes the brooms can apparently be also feathers (at least RTK3 v4 gives that for 耀, seems to depend on font)
 flowers=flower; 艹, 若 top part; flowers

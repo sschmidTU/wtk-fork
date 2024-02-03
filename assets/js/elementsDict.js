@@ -10635,11 +10635,19 @@ const elementsDict =
     "subElements": [
       "noon",
       "turkey",
+      "dart",
       "reclining",
       "ten",
       "lying down",
       "needle",
       "sign of the horse",
+      "heavens",
+      "drop",
+      "ceiling",
+      "large",
+      "one",
+      "St. Bernard",
+      "drops",
       "turkey house"
     ],
     "synonyms": [
