@@ -2,7 +2,7 @@ title: Multi-Radical Kanji Search (WTK-Search)
 author: sschmidTU
 url: https://sschmidtu.github.io/mr-kanji-search-wtk/
 description: "Search Kanji using WK radicals or RTK names. Type 'arrow mouth' to find 知, for example."
-version: "1.9.5.13"
+version: "1.9.5.14"
 permalink: /:title/
 
 exclude:

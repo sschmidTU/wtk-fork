@@ -458,7 +458,7 @@ class WTKSearch {
           elString += elementCharacter + el;
         }
       }
-      elementsDisplayString = ` elements: ${elString}`;
+      elementsDisplayString = ` elements: <span lang="ja">${elString}</span>`;
     }
     const expandAll = this.checked("expandAllResultsCheckbox");
     const collapsedString = expandAll ? '' : ' collapsed';
