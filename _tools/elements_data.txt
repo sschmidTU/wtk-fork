@@ -670,7 +670,7 @@ woman; 女; woman
 concubine; 妾; concubine; t(stand up, woman)
 likeness; 如; likeness; l(woman, mouth)
 fruit; 果; fruit; t(rice field, tree)
-mama=mother=breasts; 母; mother; t(o(sun, drop2), drop)
+mama=mother=breasts; 母, 毋; mother&window; t(o(sun, drop2), drop) // WK changed the radical name from mother to 毋 window, probably late 2023 or early 2024 (checked Feb 7 2024)
 every; 毎; every; t(reclining, rice field)
 cleverness; 敏; alert; l(every, taskmaster)
 dumbfounded; 呆; shock; t(mouth, tree)

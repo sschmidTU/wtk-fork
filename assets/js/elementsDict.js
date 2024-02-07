@@ -13618,7 +13618,7 @@ const elementsDict =
       "drop2",
       "drop"
     ],
-    "kanji": "母",
+    "kanji": "母, 毋",
     "subElements": [
       "sun",
       "drop2",
@@ -13633,8 +13633,10 @@ const elementsDict =
       "breasts"
     ],
     "wkNames": [
-      "mother"
-    ]
+      "mother",
+      "window"
+    ],
+    "comment": "WK changed the radical name from mother to 毋 window, probably late 2023 or early 2024 (checked Feb 7 2024)"
   },
   "every": {
     "elements": [
