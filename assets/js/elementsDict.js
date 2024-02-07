@@ -13633,10 +13633,9 @@ const elementsDict =
       "breasts"
     ],
     "wkNames": [
-      "mother",
-      "window"
+      "mother"
     ],
-    "comment": "WK changed the radical name from mother to 毋 window, probably late 2023 or early 2024 (checked Feb 7 2024)"
+    "comment": "WK changed the radical name from mother to 毋 window, probably late 2023 or early 2024 (checked Feb 7 2024) - TODO make WK names mother=window, then don't show twice in elementsInfo"
   },
   "every": {
     "elements": [
