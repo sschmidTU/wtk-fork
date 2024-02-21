@@ -174,7 +174,7 @@ style; 式; ritual; tr(arrowhead, craft)
 fell; 伐; fell; l(personB, fiesta)&substitute // could also be seen with 代 substitute as c(substitute, drop)
 dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
 bay; 浦; bay; l(water, dog tag)
-stand up=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
+stand up=stand=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 badge; 章; chapter; t(stand up, early)
 idea; 意; idea; t(stand up, sun, heart)
 universal; 普; normal; t(l(stand up, stand up), sun)
@@ -208,7 +208,7 @@ concave; 凸; concave
 sheep; 羊; sheep; t(horns, king, stick)
 beauty; 美; beauty; t(sheep, large) // the last part of the vertical stroke is interwoven with the large radical, but that seems like a minor detail. (structureVague: yes)
 distinction=discrimination; 差; distinction&discriminate; t(sheep, left) // RTK1 calls this distinction, RTK3 mostly as well, once discrimination (probably mistake)
-spicy; 辛; spicy; t(stand, ten)
+spicy; 辛; spicy; t(stand up, ten)
 happiness; 幸; happiness; t(ten, spicy) // interwoven. structureVague: yes
 tenacious; 執; tenacious; l(happiness, round)
 ketchup=false; 辟; hot pepper; l(tl(flag, mouth), spicy) // kanji meaning is false (jisho)

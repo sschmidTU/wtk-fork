@@ -3398,9 +3398,11 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase"
     ],
     "synonyms": [
+      "stand",
       "vase"
     ],
     "wkNames": [
@@ -3424,6 +3426,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "sun",
       "ten",
@@ -3454,6 +3457,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "day",
       "drop3",
@@ -3486,6 +3490,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "day"
     ],
@@ -3584,6 +3589,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "crown",
       "towel"
@@ -4054,13 +4060,22 @@ const elementsDict =
   },
   "spicy": {
     "elements": [
-      "stand",
+      "stand up",
       "ten"
     ],
     "kanji": "辛",
     "subElements": [
-      "stand",
+      "stand up",
       "ten",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "stand",
+      "vase",
       "needle"
     ],
     "synonyms": [],
@@ -4078,7 +4093,16 @@ const elementsDict =
       "ten",
       "spicy",
       "needle",
-      "stand"
+      "stand up",
+      "top hat",
+      "horns",
+      "floor",
+      "drop",
+      "one",
+      "animal horns",
+      "drops",
+      "stand",
+      "vase"
     ],
     "synonyms": [],
     "wkNames": [
@@ -4098,11 +4122,18 @@ const elementsDict =
       "ten",
       "spicy",
       "needle",
-      "stand",
-      "nine",
+      "stand up",
+      "top hat",
+      "horns",
+      "floor",
       "drop",
-      "baseball",
-      "drops"
+      "one",
+      "animal horns",
+      "drops",
+      "stand",
+      "vase",
+      "nine",
+      "baseball"
     ],
     "synonyms": [],
     "wkNames": [
@@ -4122,8 +4153,15 @@ const elementsDict =
       "spicy",
       "drop",
       "drops",
-      "stand",
+      "stand up",
       "ten",
+      "top hat",
+      "horns",
+      "floor",
+      "one",
+      "animal horns",
+      "stand",
+      "vase",
       "needle",
       "false"
     ],
@@ -4151,6 +4189,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "wood"
     ],
@@ -5142,6 +5181,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "rice field",
       "fishhook",
@@ -5175,6 +5215,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "month",
       "flesh",
@@ -8058,6 +8099,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "wood",
       "dragging",
@@ -8138,6 +8180,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "grow up",
       "dropB",
@@ -10152,6 +10195,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "three"
     ],
@@ -11824,6 +11868,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "rice field",
       "soil",
@@ -11858,6 +11903,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "belt"
     ],
@@ -11885,6 +11931,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "belt",
       "ten",
@@ -11916,6 +11963,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase"
     ],
     "synonyms": [],
@@ -11939,6 +11987,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase",
       "day"
     ],
@@ -13573,6 +13622,7 @@ const elementsDict =
       "one",
       "animal horns",
       "drops",
+      "stand",
       "vase"
     ],
     "synonyms": [],
