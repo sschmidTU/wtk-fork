@@ -26,13 +26,20 @@ async function init() {
 function checkDirForDuplicates(dirname, files, kanjiMap) {
     let duplicateCount = 0;
     for (const file of files) {
-        const fileString = FS.readFileSync(`${dirname}/${file}`);
-        const match = fileString.toString().match(/^kanji: ./m); // /m: multiline mode, needed for ^ = beginning of line
-        if (!match?.length) {
+        const fileString = FS.readFileSync(`${dirname}/${file}`).toString();
+
+        // also check that elementsTree exists
+        const matchTree = fileString.match(/^elementsTree/m);
+        if (!matchTree?.length) {
+            console.log(".md lacking elementsTree: " + file);
+        }
+
+        const matchKanji = fileString.match(/^kanji: ./m); // /m: multiline mode, needed for ^ = beginning of line
+        if (!matchKanji?.length) {
             console.log(".md lacking kanji: " + file);
             continue;
         }
-        const kanjiMatch = match[0];
+        const kanjiMatch = matchKanji[0];
         const kanji = kanjiMatch[kanjiMatch.length - 1];
         //console.log("kanji: " + kanji);
         if (kanjiMap[kanji]) {
