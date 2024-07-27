@@ -1156,6 +1156,7 @@ class WTKSearch {
       "certain": "invariably,so-and-so", //p214. so-and-so: 1896
       "lantern": "two hands", //p219
       "stairs": "from", //p221. from is also sometimes called "fist" apparently, but there's also the fist element.
+      "from": "from,by means of", // 以 from in WK, by means of RTK. but there's also 乃 from (kanji meaning)
       "escalator": "reach out",
       "height": "length",
       "again": "grow late", //p223, or could also be 再      
