@@ -1024,6 +1024,7 @@ class WTKSearch {
     }
   }
 
+  /** structure of members: "wk name": "rtkname1,rtkname2" or "rtkname1&rtkname2,rtkname3", or similar */
   get_wk_to_rtk_replacements() {
     return {
       "cross": "ten,needle",
