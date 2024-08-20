@@ -9,7 +9,7 @@ class WTKSearch {
   logLevel                 = 0; // silent by default
   rtkMode                  = false; // save isRtkMode() for a while so it doesn't have to be called every time
   strictMode               = false;
-  addElementsInfo          = false;
+  addElementsInfo          = true;
   // HTML things
   result                   = null; // save document.getElementById('search-results')
   entries                  = null; // save document.getElementById('search-results.entries')
@@ -416,11 +416,15 @@ class WTKSearch {
     const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh-Hans">'+page.kanji+'</span>'+cnFlagString+')' : '';
 
     let elementsDisplayString = '';
+    let elStringOrig;
+    let isSingleElementWithSameName = false;
+    let singleElementElKey = null;
     if (this.addElementsInfo && page.elT) {
-      let elStringOrig = removeStructure(page.elT);
+      elStringOrig = removeStructure(page.elT);
       const elTranslations = {};
       const elTSplit = elStringOrig.split(",").map(a => a.trim());
       let elString = '';
+      isSingleElementWithSameName = elStringOrig === page.kw;
       for (const el of elTSplit) {
         let elKey = el;
         const numberChar = el.charAt(el.length - 1);
@@ -428,6 +432,7 @@ class WTKSearch {
         if (!isNaN(occurences)) {
           elKey = elKey.replace(numberChar, '');
         }
+        singleElementElKey = elKey;
         if (!this.isRtkMode() && elementsDict[elKey]?.wkNames) {
           elTranslations[el] = elementsDict[elKey].wkNames.map(wkName => {
             if (!isNaN(occurences)) {
@@ -471,7 +476,41 @@ class WTKSearch {
     let elementsInfoHtml = '';
     if (this.addElementsInfo && page.elT) {
       elementsInfoHtml = '<span class="elementsInfo collapsible'+collapsedString+'" id="elementsInfo'+page.id+
-        '">'+elementsDisplayString+'</span>';
+        '" lang="ja">'+elementsDisplayString;
+        if (isSingleElementWithSameName) {
+          // add sub elements info
+          //   TODO this whole method should be refactored into submethods and restructured so that this is easier
+          //   and so that individual HTML elements are created instead of one big HTML string
+          const elements = elementsDict[elStringOrig];
+          if (elements?.elements.length > 0 && singleElementElKey) {
+            const singleElementInfo = elementsDict[singleElementElKey];
+            elementsInfoHtml += `: `;
+  
+            for (let i=0; i<elements.elements.length; i++) {
+              const subelement = elements.elements[i];
+              if (subelement === "") {
+                continue;
+              }
+              let subElementWithoutNumber = subelement;
+              if (i>0) {
+                elementsInfoHtml += ', ';
+              }
+              // remove number
+              const numberChar = subelement.charAt(subelement.length - 1);
+              const occurences = Number.parseInt(numberChar, 10);
+              if (!isNaN(occurences)) {
+                subElementWithoutNumber = subelement.replace(numberChar, '');
+              }
+              const elementDictInfo = elementsDict[subElementWithoutNumber];
+              if (elementDictInfo) {
+                elementsInfoHtml += this.elementSingleCharacterDisplay(subElementWithoutNumber) + ' ';
+                elementsInfoHtml += elementDictInfo.wkNames[0];
+              }
+            }
+            // elementsInfoHtml += ')';
+          }
+        }
+        elementsInfoHtml += '</span>';
     }
 
     const entry =
@@ -494,7 +533,9 @@ class WTKSearch {
       '</article>'+
       '</div>'
     ;
-    return this.toDom(entry);
+    const entryDom = this.toDom(entry);
+
+    return entryDom;
   }
 
   elementDisplayString(elementName, wkName) {
