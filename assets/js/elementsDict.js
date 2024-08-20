@@ -681,15 +681,18 @@ const elementsDict =
   "determine": {
     "elements": [
       "house",
-      "coat rack"
+      "mending"
     ],
     "kanji": "定",
     "subElements": [
       "house",
-      "coat rack",
+      "mending",
       "roof",
       "sow",
-      "pig"
+      "mend",
+      "zoo",
+      "pig",
+      "critters"
     ],
     "synonyms": [],
     "wkNames": [

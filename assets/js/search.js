@@ -1,11 +1,16 @@
 // docs (kanji data) is now loaded from docs.js in index.html
 
+// let sameElementKanjis = [];
 for (const doc of docs) {
   if (wk_kanji[doc.kanji]) {
     // add keywordWK (kwWK) info from wk_kanji data (wk_kanji_short_min.js)
     doc.kwWK = wk_kanji[doc.kanji].meanings[0].meaning; // see wk_kanji_short_min.js
   }
   if (doc.elT) {
+    // if (doc.elT === doc.kw) {
+    //   // console.log("element same as keywod: " + doc.kanji);
+    //   sameElementKanjis.push(doc.kanji);
+    // }
     // create doc.el (elements) from doc.elT (elementsTree)
     doc.elP = removeStructure(doc.elT);
     // TODO move this to a script that changes the .md files, instead of having visitors do this every time
@@ -112,6 +117,7 @@ for (const doc of docs) {
     }
   } // end if doc.elT
 }
+// console.log(`all same element kanjis: ${sameElementKanjis}`);
 // TODO put all the keywordWK directly into the data so we don't have to do this every time.
 //   though this just takes 1ms. Also it would increase the size of search.js by quite a bit.
 

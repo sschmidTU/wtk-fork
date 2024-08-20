@@ -417,9 +417,12 @@ class WTKSearch {
 
     let elementsDisplayString = '';
     let elStringOrig;
-    let isSingleElementWithSameName = elStringOrig === page.kanji;
+    let isSingleElementWithSameName = false;
+    let singleElementElKey = null;
     if (this.addElementsInfo && page.elT) {
       elStringOrig = removeStructure(page.elT);
+      isSingleElementWithSameName = elStringOrig === page.kw;
+      // console.log(`${elStringOrig} isSameName: ${isSingleElementWithSameName}`);
       const elTranslations = {};
       const elTSplit = elStringOrig.split(",").map(a => a.trim());
       let elString = '';
@@ -430,6 +433,7 @@ class WTKSearch {
         if (!isNaN(occurences)) {
           elKey = elKey.replace(numberChar, '');
         }
+        singleElementElKey = elKey;
         if (!this.isRtkMode() && elementsDict[elKey]?.wkNames) {
           elTranslations[el] = elementsDict[elKey].wkNames.map(wkName => {
             if (!isNaN(occurences)) {
@@ -473,7 +477,41 @@ class WTKSearch {
     let elementsInfoHtml = '';
     if (this.addElementsInfo && page.elT) {
       elementsInfoHtml = '<span class="elementsInfo collapsible'+collapsedString+'" id="elementsInfo'+page.id+
-        '">'+elementsDisplayString+'</span>';
+        '" lang="ja">'+elementsDisplayString;
+      if (isSingleElementWithSameName) {
+        // add sub elements info
+        //   TODO this whole method should be refactored into submethods and restructured so that this is easier
+        //   and so that individual HTML elements are created instead of one big HTML string
+        const elements = elementsDict[elStringOrig];
+        if (elements?.elements.length > 0 && singleElementElKey) {
+          const singleElementInfo = elementsDict[singleElementElKey];
+          elementsInfoHtml += `: `;
+
+          for (let i=0; i<elements.elements.length; i++) {
+            const subelement = elements.elements[i];
+            if (subelement === "") {
+              continue;
+            }
+            let subElementWithoutNumber = subelement;
+            if (i>0) {
+              elementsInfoHtml += ', ';
+            }
+            // remove number
+            const numberChar = subelement.charAt(subelement.length - 1);
+            const occurences = Number.parseInt(numberChar, 10);
+            if (!isNaN(occurences)) {
+              subElementWithoutNumber = subelement.replace(numberChar, '');
+            }
+            const elementDictInfo = elementsDict[subElementWithoutNumber];
+            if (elementDictInfo) {
+              elementsInfoHtml += this.elementSingleCharacterDisplay(subElementWithoutNumber) + ' ';
+              elementsInfoHtml += elementDictInfo.wkNames[0];
+            }
+          }
+          // elementsInfoHtml += ')';
+        }
+      }
+      elementsInfoHtml += '</span>';
     }
 
     const entry =
