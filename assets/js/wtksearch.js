@@ -421,10 +421,10 @@ class WTKSearch {
     let singleElementElKey = null;
     if (this.addElementsInfo && page.elT) {
       elStringOrig = removeStructure(page.elT);
+      isSingleElementWithSameName = elStringOrig === page.kw;
       const elTranslations = {};
       const elTSplit = elStringOrig.split(",").map(a => a.trim());
       let elString = '';
-      isSingleElementWithSameName = elStringOrig === page.kw;
       for (const el of elTSplit) {
         let elKey = el;
         const numberChar = el.charAt(el.length - 1);
@@ -533,9 +533,7 @@ class WTKSearch {
       '</article>'+
       '</div>'
     ;
-    const entryDom = this.toDom(entry);
-
-    return entryDom;
+    return this.toDom(entry);
   }
 
   elementDisplayString(elementName, wkName) {
