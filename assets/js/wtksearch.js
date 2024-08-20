@@ -9,7 +9,7 @@ class WTKSearch {
   logLevel                 = 0; // silent by default
   rtkMode                  = false; // save isRtkMode() for a while so it doesn't have to be called every time
   strictMode               = false;
-  addElementsInfo          = false;
+  addElementsInfo          = true;
   // HTML things
   result                   = null; // save document.getElementById('search-results')
   entries                  = null; // save document.getElementById('search-results.entries')
@@ -416,8 +416,10 @@ class WTKSearch {
     const cnVariantString = showChineseVariant ? ' '+'(<span lang="zh-Hans">'+page.kanji+'</span>'+cnFlagString+')' : '';
 
     let elementsDisplayString = '';
+    let elStringOrig;
+    let isSingleElementWithSameName = elStringOrig === page.kanji;
     if (this.addElementsInfo && page.elT) {
-      let elStringOrig = removeStructure(page.elT);
+      elStringOrig = removeStructure(page.elT);
       const elTranslations = {};
       const elTSplit = elStringOrig.split(",").map(a => a.trim());
       let elString = '';
@@ -458,7 +460,7 @@ class WTKSearch {
           elString += elementCharacter + el;
         }
       }
-      elementsDisplayString = ` elements: ${elString}`;
+      elementsDisplayString = ` elements: <span lang="ja">${elString}</span>`;
     }
     const expandAll = this.checked("expandAllResultsCheckbox");
     const collapsedString = expandAll ? '' : ' collapsed';
