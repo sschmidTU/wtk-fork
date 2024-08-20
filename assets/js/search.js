@@ -11,6 +11,17 @@ for (const doc of docs) {
     //   // console.log("element same as keywod: " + doc.kanji);
     //   sameElementKanjis.push(doc.kanji);
     // }
+    // remove/separate comments from elementsTree field
+    const elTCommentSplit = doc.elT.split("//");
+    const elementsTreeWithoutComment = elTCommentSplit[0].trim();
+    let elTComment = "";
+    if (elTCommentSplit.length > 2) {
+      console.log("warning: elementsTree has more than one comment split (//)");
+    } else if (elTCommentSplit.length === 2) {
+      elTComment = elTCommentSplit[1].trim();
+    }
+    doc.elT = elementsTreeWithoutComment;
+    doc.elTComment = elTComment;
     // create doc.el (elements) from doc.elT (elementsTree)
     doc.elP = removeStructure(doc.elT);
     // TODO move this to a script that changes the .md files, instead of having visitors do this every time
@@ -133,8 +144,10 @@ for(var index in docs) {
   idx.add(docs[index]);
 }
 
+// TODO duplicated code with elementsDataToJson.js
 function removeStructure(elementsTreeString) {
   return elementsTreeString.replaceAll(/[trlb][trlb]\(/g, "")
       .replaceAll("l(", "").replaceAll("t(","").replaceAll("o(","").replaceAll("c(","")
+      .replaceAll("f(", "") // flanked: e.g. 火 = f(fire, drop, drop) = fire flanked by drop, drop
       .replaceAll(")","");
 }
