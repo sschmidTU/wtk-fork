@@ -447,7 +447,7 @@ class WTKSearch {
             if (elString.length > 0) {
               elString += ', ';
             }
-            let elementCharacter = this.elementSingleCharacterDisplay(elKey, wkName);
+            let elementCharacter = this.elementDisplayString(elKey, wkName);
             if (elementCharacter.length > 0) {
               elementCharacter += ' ';
             }
@@ -457,7 +457,7 @@ class WTKSearch {
           if (elString.length > 0) {
             elString += ', ';
           }
-          let elementCharacter = this.elementSingleCharacterDisplay(elKey);
+          let elementCharacter = this.elementDisplayString(elKey);
           if (elementCharacter.length > 0) {
             elementCharacter += ' ';
           }
@@ -478,40 +478,40 @@ class WTKSearch {
     if (this.addElementsInfo && page.elT) {
       elementsInfoHtml = '<span class="elementsInfo collapsible'+collapsedString+'" id="elementsInfo'+page.id+
         '" lang="ja">'+elementsDisplayString;
-      if (isSingleElementWithSameName) {
-        // add sub elements info
-        //   TODO this whole method should be refactored into submethods and restructured so that this is easier
-        //   and so that individual HTML elements are created instead of one big HTML string
-        const elements = elementsDict[elStringOrig];
-        if (elements?.elements.length > 0 && singleElementElKey) {
-          const singleElementInfo = elementsDict[singleElementElKey];
-          elementsInfoHtml += `: `;
-
-          for (let i=0; i<elements.elements.length; i++) {
-            const subelement = elements.elements[i];
-            if (subelement === "") {
-              continue;
+        if (isSingleElementWithSameName) {
+          // add sub elements info
+          //   TODO this whole method should be refactored into submethods and restructured so that this is easier
+          //   and so that individual HTML elements are created instead of one big HTML string
+          const elements = elementsDict[elStringOrig];
+          if (elements?.elements.length > 0 && singleElementElKey) {
+            const singleElementInfo = elementsDict[singleElementElKey];
+            elementsInfoHtml += `: `;
+  
+            for (let i=0; i<elements.elements.length; i++) {
+              const subelement = elements.elements[i];
+              if (subelement === "") {
+                continue;
+              }
+              let subElementWithoutNumber = subelement;
+              if (i>0) {
+                elementsInfoHtml += ', ';
+              }
+              // remove number
+              const numberChar = subelement.charAt(subelement.length - 1);
+              const occurences = Number.parseInt(numberChar, 10);
+              if (!isNaN(occurences)) {
+                subElementWithoutNumber = subelement.replace(numberChar, '');
+              }
+              const elementDictInfo = elementsDict[subElementWithoutNumber];
+              if (elementDictInfo) {
+                elementsInfoHtml += this.elementDisplayString(subElementWithoutNumber) + ' ';
+                elementsInfoHtml += elementDictInfo.wkNames[0];
+              }
             }
-            let subElementWithoutNumber = subelement;
-            if (i>0) {
-              elementsInfoHtml += ', ';
-            }
-            // remove number
-            const numberChar = subelement.charAt(subelement.length - 1);
-            const occurences = Number.parseInt(numberChar, 10);
-            if (!isNaN(occurences)) {
-              subElementWithoutNumber = subelement.replace(numberChar, '');
-            }
-            const elementDictInfo = elementsDict[subElementWithoutNumber];
-            if (elementDictInfo) {
-              elementsInfoHtml += this.elementSingleCharacterDisplay(subElementWithoutNumber) + ' ';
-              elementsInfoHtml += elementDictInfo.wkNames[0];
-            }
+            // elementsInfoHtml += ')';
           }
-          // elementsInfoHtml += ')';
         }
-      }
-      elementsInfoHtml += '</span>';
+        elementsInfoHtml += '</span>';
     }
 
     const entry =
@@ -537,7 +537,7 @@ class WTKSearch {
     return this.toDom(entry);
   }
 
-  elementSingleCharacterDisplay(elementName, wkName) {
+  elementDisplayString(elementName, wkName) {
     if (wkName === "slideWK") {
       return "ノ";
     }
@@ -556,7 +556,21 @@ class WTKSearch {
     if (/^.,/.test(description)) {
       return description[0];
     }
-    return ''; // no perfectly matching single character representation of the element found
+    const italicizePartString = (inputString) => {
+      const partString = inputString.substring(1);
+      const matches = /.+ part/.exec(partString); // "left part", "bottom right part", etc
+      if (matches) {
+        return `${inputString[0]}<span class="elementInfoPartDescription">${matches[0]}</span>`;
+      }
+      return inputString;
+    }
+    const commaIndex = description.indexOf(",");
+    if (commaIndex > 0) {
+      const firstPart = description.substring(0, commaIndex); // only use first part of description
+      return italicizePartString(firstPart);
+    }
+    // no perfectly matching single character representation of the element found
+    return italicizePartString(description);
   }
 
   toggleCollapsible(collapsibleButton, pageId, newCollapsedValue = undefined) {
@@ -1044,9 +1058,13 @@ class WTKSearch {
       "horse chestnut": "horsechestnut",
       "long for": "longfor",
       "give up": "giveup",
+      "deal with": "dealwith",
+      "government office": "governmentoffice",
+      "say humbly": "sayhumbly",
     }
   }
 
+  /** structure of members: "wk name": "rtkname1,rtkname2" or "rtkname1&rtkname2,rtkname3", or similar */
   get_wk_to_rtk_replacements() {
     return {
       "cross": "ten,needle",
@@ -1078,7 +1096,7 @@ class WTKSearch {
       "chastity": "upright",
       "member": "employee",
       "origin": "beginning",
-      "geoduck": "page",
+      "geoduck": "head", // or page
       "paragraph": "phrase", //p41
       "season": "decameron", //p41
       "pool": "ladle", //p42
@@ -1159,7 +1177,7 @@ class WTKSearch {
       //"black hole": "double back",
       "clown": "muzzle", //p178
       "death": "deceased", //p180
-      //"monk": "boy"
+      "monk": "boy",
       "guard": "devil", //p183
       "mask": "formerly",
       "king": "king,porter,grow up,jewel,bushes,celery", // or porter, p185. bushes: p380 rtk3v4 (after kanji 1561)
@@ -1179,6 +1197,7 @@ class WTKSearch {
       "certain": "invariably,so-and-so", //p214. so-and-so: 1896
       "lantern": "two hands", //p219
       "stairs": "from", //p221. from is also sometimes called "fist" apparently, but there's also the fist element.
+      "from": "from,by means of", // 以 from in WK, by means of RTK. but there's also 乃 from (kanji meaning)
       "escalator": "reach out",
       "height": "length",
       "again": "grow late", //p223, or could also be 再      
@@ -1290,7 +1309,7 @@ class WTKSearch {
       "yen": "yen,circle", //1952
       "lifeguard": "funnel",
       "think": "think", //p391
-      "energy": "reclining one fishhook", //energy doesn't exist in RTK
+      "energy": "energy,reclining one fishhook", //energy doesn't exist in RTK
       //"energy treasure": "spirit", //2030, hard to match. there's also vapor for RTK
       "clan": "family name", //1970
       "clan ground": "calling card",
@@ -1363,7 +1382,7 @@ class WTKSearch {
       "house": "houseWK,house", // the wk radical house is the kanji 家, which doesn't have a unique name in rtk (house is just the top part in rtk)
       "form": "contain",
       "crabtrap": "tremendously",
-      "wild": "wreath", // or "laid waste", same thing basically
+      "wild": "laid waste", // or "wreath", same thing basically, though wreath is not in my RTK copy and missing in one kanji's data which has laid waste
       "lifestock": "livestock", // "lifestock" is just a typo ("livestock" is correct), but why not catch it.
       "gentle": "gentle,tender", // gentle in WK is tender in RTK. tender in RTK is (also) gentle in WK. RTK's tender is also an element.
       // ---------------------------------- ^^ -------- //
@@ -1383,7 +1402,7 @@ class WTKSearch {
       "mantis": "gnats&drop&insect&belt",
       "goodluck": "samurai&mouth", // or good luck (kanji in RTK, not primitive)
       "poem": "flowers&phrase,poem", // the WK radical poem is flowers&phrase, but there's also the poem kanji that should be findable under poem
-      "zombie": "earthenware jar&scarf", // or lidded crock&scarf
+      "zombie": "zombie,trampoline,earthenware jar&scarf", // or lidded crock&scarf
       "library": "flag&scrapbook",
       // --------------------------------------------
       "elf": "daring",
@@ -1392,7 +1411,7 @@ class WTKSearch {
       "spikes": "row,upside down in a row",
       "pope": "ten&eye",
       "ground": "one,floor,ceiling",
-      "creeper": "one&mouth,mouth&floor",
+      "creeper": "creeper", //mouth&floor, one&mouth (creeper was added as an element by WTK-Search, even if RTK doesn't name it)
       "measurement": "glue",
       "measure": "glue", // custom shorthand
       "commander": "leader",
@@ -1409,7 +1428,7 @@ class WTKSearch {
       "return": "re-", // enables searching for 涙 with "return" in WK mode
       "common": "commonplace",
       "first": "first time",
-      "distinction": "discrimination", // 差
+      "distinction": "distinction,discrimination", // 差
       "front": "in front",
       // "all": "all,whole", // all exists in RTK
       // "ashes": "ashes", // same in RTK
@@ -1440,7 +1459,7 @@ class WTKSearch {
       "animal": "pack of wild dogs", // some koohii users write just 'pack of dogs', which also works with lunr btw
       "slide dirt": "cow",
       "hat ground": "meeting",
-      "deathstar": "meeting&moon&saber", // or meeting of butchers. or meeting moon flood, but unnecessary for now. or convoy
+      "deathstar": "meeting of butchers", // or meeting&moon&saber. or meeting moon flood, but unnecessary for now. or convoy
       // or meeting moon flood for 喩 metaphor, but nothing else for now, and 喻 metaphor has saber too
       "dirt mouth": "lidded crock",
       //"brush": "brush",
@@ -1460,7 +1479,7 @@ class WTKSearch {
       "water": "water,grains of rice",
       "leader": "person",
       //"flag": "flag",
-      "gambler": "strawman",
+      "gambler": "lofty,straw man",
       "dropbear": "maestro",
       "hole": "hole", // RTK doesn't differentiate between WK's pi and hole (added stick on top) 
       // hole, house, miss world or paper punch seem to be mostly the same, but inconsistent in rtk-search.
@@ -1468,6 +1487,7 @@ class WTKSearch {
       "limit": "silver",
       "good": "good,halo", // good = 良, halo = left part of 朗, on the left of a kanji, missing one stroke on the bottom
       "helicopter": "old west",
+      "official": "cadet", // 曹. only as kanji in WK. helicopter+sun, kinda
       "charcoal": "pup tent",
       "long": "mane&hairpin", // also long, see get_wk_radicals_that_are_also_kanji_names()
       "splinter": "talking cricket",
@@ -1494,6 +1514,14 @@ class WTKSearch {
       "horsechestnut": "horse chestnut",
       "longfor": "long for",
       "giveup": "give up",
+      "dealwith": "deal with,dispose",
+      "sleep": "sleep, lie down",
+      "governmentoffice": "signature",
+      "stretch": "stretch,lengthen", // 張 stretch radical is lengthen in RTK, but there's also 伸 stretch (expand in RTK, though it doesn't seem to be used in other kanji)
+      "sayhumbly": "say humbly,speaketh",
+      // --- convenience replacements, false friends (close misses) ---
+      "replace": "replace,substitute", // 替 is replace and 代 substitute, but my memory said 代 replace (which could be a common error)
+      "amount": "amount,quantity", // 量 quantity in WK, RTK. I once entered amount instead
     }
   }
 
@@ -1579,6 +1607,7 @@ class WTKSearch {
       "water": 1,
       "charcoal": 1,
       "long": 1,
+      "dealwith": 1,
       "village": 1
     }
   }
