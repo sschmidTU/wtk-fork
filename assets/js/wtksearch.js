@@ -707,6 +707,24 @@ class WTKSearch {
     }
     if (updateHTMLElements) {
       this.show(this.result);
+      // expand collapsible buttons for sub elements (copied code from other search function - refactor?)
+      if (this.addElementsInfo) {
+        let expandResultsLimit = Number(document.getElementById("expandResultsLimitInput")?.value);
+        let expandAll = this.checked("expandAllResultsCheckbox");
+        if (expandResultsLimit === undefined && expandAll === undefined ) { // temp solution for missing ui option
+          expandAll = true;
+        }
+        for (let i = 0; i < searchResultsList.length; i++) {
+          if (!expandAll && (i+1) > expandResultsLimit) {
+            break;
+          }
+          const result = searchResultsList[i];
+          const expandButton = document.getElementById('expandButton'+result.id);
+          if (expandButton) {
+            this.toggleCollapsible(expandButton, result.id, false);
+          }
+        }
+      }
     }
     let returnValue = {
       length: searchResultsList.length,
