@@ -37,7 +37,7 @@ correct; 正; correct; t(ceiling, stop)
 this here; 此; this here; l(stop, spoon) // rtk3 element (2043). not an element on WK (though it appears quite frequently in rarer kanji)
 accompany; 従; obey; l(goingB, t(horns, mending))
 run; 走; run; t(soil, mending)
-determine; 定; determine; t(house, coat rack)
+determine; 定; determine; t(house, mending)
 perfect; 完; perfect; t(house, beginning)
 tooth; 歯; tooth; t(stop, o(shovel, rice))
 flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
