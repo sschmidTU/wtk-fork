@@ -503,7 +503,7 @@ class WTKSearch {
               }
               const elementDictInfo = elementsDict[subElementWithoutNumber];
               if (elementDictInfo) {
-                elementsInfoHtml += this.elementSingleCharacterDisplay(subElementWithoutNumber) + ' ';
+                elementsInfoHtml += this.elementDisplayString(subElementWithoutNumber) + ' ';
                 elementsInfoHtml += elementDictInfo.wkNames[0];
               }
             }
