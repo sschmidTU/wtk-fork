@@ -1100,6 +1100,7 @@ class WTKSearch {
       "self": "self,oneself,nose", // "oneself" in RTK is also "nose". two self radicals in WK. the self that is 'snake' in RTK can also be 'self' there, but no difference for now
       "middle": "inX",
       "up": "above",
+      "climb": "ascend",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
       "toe": "divining rod,magic wand",
