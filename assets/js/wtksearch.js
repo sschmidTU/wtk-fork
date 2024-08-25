@@ -1020,7 +1020,7 @@ class WTKSearch {
 
   is_short_wk_keyword(query) {
     const small_wk_keywords = [
-      'i', 'he', 'pi', 'go', 'do', 'no'
+      'i', 'he', 'pi', 'go', 'do', 'no', 'in', 'up' // up = above in WK, might be misremembered
     ];
     return small_wk_keywords.includes(query);
   }
@@ -1099,6 +1099,7 @@ class WTKSearch {
       "former": "olden times", //p27
       "self": "self,oneself,nose", // "oneself" in RTK is also "nose". two self radicals in WK. the self that is 'snake' in RTK can also be 'self' there, but no difference for now
       "middle": "inX",
+      "up": "above",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
       "toe": "divining rod,magic wand",
