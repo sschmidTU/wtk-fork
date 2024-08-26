@@ -1078,6 +1078,7 @@ class WTKSearch {
       "deal with": "dealwith",
       "government office": "governmentoffice",
       "say humbly": "sayhumbly",
+      "wild goose": "wildgoose",
     }
   }
 
@@ -1541,6 +1542,7 @@ class WTKSearch {
       // --- convenience replacements, false friends (close misses) ---
       "replace": "replace,substitute", // 替 is replace and 代 substitute, but my memory said 代 replace (which could be a common error)
       "amount": "amount,quantity", // 量 quantity in WK, RTK. I once entered amount instead
+      "wildgoose": "wild goose",
     }
   }
 

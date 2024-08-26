@@ -438,7 +438,7 @@ next; 次; next; l(ice, lack)
 evening; 夕; evening
 eveningB=evening; 然 top left part; eveningB
 many; 多; many; t(evening, evening)
-bones; 歹, 残 left part; yakuza; t(ceiling, evening)
+bones=bone; 歹, 残 left part; yakuza; t(ceiling, evening)
 file; 列; row; l(bones, saber)
 death; 死; death; t(ceiling, l(evening, spoon))&bones
 name; 名; name; t(evening, mouth)

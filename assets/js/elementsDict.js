@@ -8971,9 +8971,12 @@ const elementsDict =
     "subElements": [
       "ceiling",
       "evening",
-      "one"
+      "one",
+      "bone"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bone"
+    ],
     "wkNames": [
       "yakuza"
     ]
@@ -8990,6 +8993,7 @@ const elementsDict =
       "ceiling",
       "evening",
       "one",
+      "bone",
       "sabre",
       "sword",
       "dagger"
@@ -9012,7 +9016,8 @@ const elementsDict =
       "spoon",
       "bones",
       "one",
-      "sitting on the ground"
+      "sitting on the ground",
+      "bone"
     ],
     "synonyms": [],
     "wkNames": [
