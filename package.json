@@ -10,6 +10,7 @@
     "elements": "node _tools/elementsDataToJson.js",
     "newkanji": "node _tools/createNewKanjiPage.mjs",
     "duplicates": "node _tools/checkKanjiDuplicates.mjs",
+    "kanjifields": "node _tools/checkUniqueMdFields.mjs",
     "test": "node _tools/checkKanjiDuplicates.mjs"
   },
   "repository": {

@@ -29,7 +29,7 @@ function checkDirForDuplicates(dirname, files, kanjiMap) {
         const fileString = FS.readFileSync(`${dirname}/${file}`).toString();
 
         // also check that elementsTree exists
-        const matchTree = fileString.match(/^elementsTree/m);
+        const matchTree = fileString.match(/^elementsTree/m); // /m: multiline mode, needed for ^ = beginning of line
         if (!matchTree?.length) {
             console.log(".md lacking elementsTree: " + file);
         }
