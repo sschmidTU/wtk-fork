@@ -137,7 +137,7 @@ ballot; 票; ballot; t(old west, altar)
 chestnut; 栗; chestnut; t(old west, tree)
 west; 西; west; t(ceiling, c(pent in, human legs))
 sign of the bird=whiskey bottle; 酉; alcohol; c(west, one)
-chieftain=molotov cocktail; 猶 right part, 酋; molotov cocktail; t(horns, sign of the bird)
+chieftain=molotov cocktail; 猶 right part, 酋; molotov cocktail&alcohol; t(horns, sign of the bird)
 revered; 尊; revered; t(chieftain, glue)
 bundle=Chaplin; 束; bundle; tree, mouth
 trust; 頼; trust; l(bundle, page)

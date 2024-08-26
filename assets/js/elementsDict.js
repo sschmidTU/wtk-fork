@@ -2652,7 +2652,8 @@ const elementsDict =
       "molotov cocktail"
     ],
     "wkNames": [
-      "molotov cocktail"
+      "molotov cocktail",
+      "alcohol"
     ]
   },
   "revered": {
