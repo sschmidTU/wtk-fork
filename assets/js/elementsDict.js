@@ -3357,10 +3357,12 @@ const elementsDict =
       "arrowhead",
       "screwdriver",
       "arrow",
-      "dogtag"
+      "dogtag",
+      "offspring"
     ],
     "synonyms": [
-      "dogtag"
+      "dogtag",
+      "offspring"
     ],
     "wkNames": [
       "wedding"
@@ -3380,7 +3382,8 @@ const elementsDict =
       "arrowhead",
       "screwdriver",
       "arrow",
-      "dogtag"
+      "dogtag",
+      "offspring"
     ],
     "synonyms": [],
     "wkNames": [
@@ -5168,6 +5171,28 @@ const elementsDict =
       "eel"
     ],
     "comment": "fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke"
+  },
+  "encompassing": {
+    "elements": [
+      "large",
+      "eel"
+    ],
+    "kanji": "奄",
+    "subElements": [
+      "large",
+      "eel",
+      "St. Bernard",
+      "rice field",
+      "fishhook",
+      "brains",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "encompassing"
+    ]
   },
   "dragon": {
     "elements": [
@@ -9617,6 +9642,35 @@ const elementsDict =
       "in season"
     ]
   },
+  "hay": {
+    "elements": [
+      "bound up",
+      "mountain",
+      "dropB",
+      "bound up",
+      "mountain",
+      "dropB"
+    ],
+    "kanji": "芻",
+    "subElements": [
+      "bound up",
+      "mountain",
+      "dropB",
+      "bound up",
+      "mountain",
+      "dropB",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "hay"
+    ]
+  },
   "dangerous": {
     "elements": [
       "bound up",
@@ -13883,9 +13937,18 @@ const elementsDict =
     ]
   },
   "dog with one leg": {
-    "elements": [],
+    "elements": [
+      "drop",
+      "top hat",
+      "human legs"
+    ],
     "kanji": "尤",
     "subElements": [
+      "drop",
+      "top hat",
+      "human legs",
+      "drops",
+      "one",
       "dog",
       "chihuahua with one human leg"
     ],
@@ -13916,6 +13979,7 @@ const elementsDict =
       "stick",
       "hook",
       "small",
+      "human legs",
       "dog",
       "chihuahua with one human leg",
       "large",
@@ -15947,6 +16011,22 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "stool"
+    ]
+  },
+  "stitching": {
+    "elements": [
+      "crotch2",
+      "crotch2"
+    ],
+    "kanji": "綴 right part",
+    "subElements": [
+      "crotch2",
+      "crotch2",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "stitching"
     ]
   },
   "sentence": {

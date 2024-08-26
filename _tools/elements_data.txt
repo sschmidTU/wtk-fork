@@ -172,7 +172,7 @@ float; 桟 right part; bar; c(fiesta, two) // apparently comes from 戔, which i
 warrior; 武; military; tr(arrowhead, stop)&one
 style; 式; ritual; tr(arrowhead, craft)
 fell; 伐; fell; l(personB, fiesta)&substitute // could also be seen with 代 substitute as c(substitute, drop)
-dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
+dog tag=dogtag=offspring; 甫; wedding; t(arrowhead, screwdriver)
 bay; 浦; bay; l(water, dog tag)
 stand up=stand=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 badge; 章; chapter; t(stand up, early)
@@ -260,6 +260,7 @@ people; 民; people&peoples; tl(flag, family name) // structureVague: yes
 by means of; 以; from; l(straightened hook, drop, person)
 prefecture; 県; prefecture; t(lb(straightened hook, eye), little)
 eel; 俺 bottom right part; eel; t(rice field, fishhook) // fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke
+encompassing; 奄; encompassing; t(large, eel)
 dragon; 竜; dragon; t(stand up, eel)
 old dragon; 龍; old dragon; l(t(stand up, moon), t(slingshot, staples)) // this is the old form of 竜 dragon. structureVague: yes
 melon; 瓜; melon; c(claw, elbow)&drag&hood
@@ -473,6 +474,7 @@ aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop) // doesn't exist in WK, which also has 斗 ladle unfortunately
 phrase; 句; paragraph; o(bound up, mouth)
 decameron; 旬; in season; tr(bound up, sun)
+hay; 芻; hay; t(tr(bound up, mountain, dropB), tr(bound up, mountain, dropB))
 dangerous; 危; dangerous; t(bound up, tl(cliff, fingerprint))
 separate; 別; separate; l(t(mouth, bound up), saber)
 angle; 角; angle; t(bound up, t(rice field, fenceposts)) // structureVague: yes
@@ -683,7 +685,7 @@ large=St. Bernard; 大; big
 largeB=large=St. Bernard; 大, 纂 middle part; big // seems to only occur in 纂
 plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
-dog with one leg=dog=chihuahua with one human leg; 尤; pirate
+dog with one leg=dog=chihuahua with one human leg; 尤; pirate; t(drop, top hat, human legs)
 concerning; 就; concerning; l(capital, dog with one leg)
 eight; 八; eight // similar to ハ animal legs
 eightB=eight; 曾 top part; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
@@ -792,6 +794,7 @@ carrier; 般; generally; l(boat, missile)
 dispose; 処; deal with; lb(walking legs, wind)
 barge; 恐 top part; saw; l(craft, mediocre) // not named in my RTK copy, but in the pre-existing rtk-search data
 crotch; 又; stool
+stitching; 綴 right part; stitching; t(crotch2, crotch2)
 sentence=plaid; 文; writing; t(drop, crotch)&top hat
 sentenceB=sentence=plaid; 対 left part; writing; t(top hat, sheaf) // the sheaf is not fully connected to the top hat here
 adjusted; 斉; simultaneous; t(sentence, moon) // structureVague: yes, elementsClose: moon
