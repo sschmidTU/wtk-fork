@@ -40,7 +40,7 @@ accompany; 従; obey; l(goingB, t(horns, mending))
 run; 走; run; t(soil, mending)
 determine; 定; determine; t(house, mending)
 perfect; 完; perfect; t(house, beginning)
-tooth; 歯; tooth; t(stop, o(shovel, rice))
+tooth=teeth; 歯; tooth; t(stop, o(shovel, rice))
 flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
 door; 戸; door; t(ceiling, flag)
 nun; 尼; nun; tl(flag, spoon)
@@ -93,7 +93,7 @@ difficult; 難; difficult; l(scarecrow, turkey)
 silage; 垂 middle part; silage; c(rice field, stick) // RTK: vertical stroke will always combine with another element
 droop; 垂; dangle; t(dropB, silage, floor)
 ride; 乗; ride; c(wheat, silage) // structureVague: yes
-splendor; 華; showy; t(flowers, silage, ten)
+splendor=splendid; 華; showy; t(flowers, silage, ten)
 un-=jail cell=prison bars; 非; injustice; f(animal legs, shape, three)
 nine=baseball; 九; nine
 ninety; 枠 right part; ninety; t(nine, ten)
@@ -258,7 +258,7 @@ straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more
 straightaway; 直; fix; t(ten, eye, straightened hook)
 hook; 亅, 小 bottom part, 疋 end of top stroke; hook
 contend; 争; conflict; t(bound up, rake, hook)
-family name; 氏; clan; tl(drag, arrow, fishhook) // structureVague: yes
+family name; 氏; clan; tl(dragging, arrow, fishhook) // structureVague: yes
 people; 民; people&peoples; tl(flag, family name) // structureVague: yes
 by means of; 以; from; l(straightened hook, drop, person)
 prefecture; 県; prefecture; t(lb(straightened hook, eye), little)
@@ -266,7 +266,7 @@ eel; 俺 bottom right part; eel; t(rice field, fishhook) // fishhook a bit vague
 encompassing; 奄; encompassing; t(large, eel)
 dragon; 竜; dragon; t(stand up, eel)
 old dragon; 龍; old dragon; l(t(stand up, moon), t(slingshot, staples)) // this is the old form of 竜 dragon. structureVague: yes
-melon; 瓜; melon; c(claw, elbow)&drag&hood
+melon; 瓜; melon; c(claw, elbow)&dragging&hood
 orphan; 孤; orphan; l(child, melon)
 complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed. Upside down in a row is when below, and 3 top stokes are removed. Though RTK isn't very clear here.
@@ -388,7 +388,8 @@ take along; 連; take along; lb(road, car)
 street=nail=spike; 丁; street
 cliff; 厂; cliff // mirrored: 𠃌 clothes hanger
 dragging=drag=cliff; 后 top left part; dragging // cursive version of 厂 cliff. Note that RTK often just calls this drag, but that's a conflict with 曳 drag, which also doesn't have another name, so we'll call this dragging internally.
-shield; 盾; shield; tl(drag, t(ten, eye))&oneself
+empress; 后; empress; tl(dragging, creeper)
+shield; 盾; shield; tl(dragging, t(ten, eye))&oneself
 fu; フ; fu // doesn't exist in RTK or WK, but useful sub-element
 straight fu=fuB; 片 bottom right part; straight fu // doesn't exist in RTK or WK, but useful sub-element
 tiger; 虍, 虎 outer part; tiger; t(divining rod, tl(cliff, seven))
@@ -597,6 +598,7 @@ chair; 呉 middle part; chair; t(straightened hook, stick) // doesn't exist in W
 nightbreak; 旦; dawn; t(sun, floor)
 span; 亘; dawn; t(ceiling, nightbreak)
 quantity; 量; amount; t(nightbreak, ri)
+proclaim; 宣; proclaim; t(roof, span)
 excuse=village stocks=rabbit; 免; excuse; t(bound up, c(mouth, stick), human legs) // original primitive called "village stocks" in RTK, though excuse seems better as that's also the kanji keyword
 elephant; 象; elephant; t(bound up, c(mouth, stick), sow)
 oneself=nose; 自; self; t(drop, eye)
@@ -740,6 +742,7 @@ maestro without baton; 㠯, 官 bottom part; bear; mouth2
 bureaucrat; 官; government; t(roof, maestro without baton)
 expert; 師; teacher; l(maestro, marketB)
 chase; 追; follow; lb(road, maestro)
+large hill=large city; 阜; mound; t(maestro, ten)
 walk; 歩; walk; t(stop, few)
 repeatedly; 頻; frequent; l(walk, head)
 mouth; 口; mouth
@@ -866,3 +869,4 @@ acorn=sign of the hog; 亥; slice; t(top hat, spoon, dropB, drop) // the bottom 
 center; 央; center; t(towel, large)&hood // structureVague: yes
 england; 英; england; t(flowers, center)
 repeater=noma; 々; repeater; t(bound up, drop)
+wild goose; 雁; wild goose; tl(cliff, l(personB, turkey))

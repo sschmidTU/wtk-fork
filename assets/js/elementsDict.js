@@ -755,9 +755,12 @@ const elementsDict =
       "tree",
       "horns",
       "wood",
-      "animal horns"
+      "animal horns",
+      "teeth"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "teeth"
+    ],
     "wkNames": [
       "tooth"
     ]
@@ -1829,9 +1832,12 @@ const elementsDict =
       "rice field",
       "stick",
       "brains",
-      "needle"
+      "needle",
+      "splendid"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "splendid"
+    ],
     "wkNames": [
       "showy"
     ]
@@ -5126,20 +5132,22 @@ const elementsDict =
   },
   "family name": {
     "elements": [
-      "drag",
+      "dragging",
       "arrow",
       "fishhook"
     ],
     "kanji": "氏",
     "subElements": [
-      "drag",
+      "dragging",
       "arrow",
       "fishhook",
-      "speaketh",
-      "sheaf",
+      "drag",
+      "cliff",
       "hook",
       "stick",
       "fishguts",
+      "speaketh",
+      "sheaf",
       "armor",
       "monkey",
       "rice field",
@@ -5165,14 +5173,16 @@ const elementsDict =
       "mouth",
       "drop",
       "drops",
-      "drag",
+      "dragging",
       "arrow",
       "fishhook",
-      "speaketh",
-      "sheaf",
+      "drag",
+      "cliff",
       "hook",
       "stick",
       "fishguts",
+      "speaketh",
+      "sheaf",
       "armor",
       "monkey",
       "rice field",
@@ -5346,7 +5356,9 @@ const elementsDict =
     "subElements": [
       "claw",
       "elbow",
+      "dragging",
       "drag",
+      "cliff",
       "speaketh",
       "sheaf",
       "stick",
@@ -5373,7 +5385,9 @@ const elementsDict =
       "melon",
       "claw",
       "elbow",
+      "dragging",
       "drag",
+      "cliff",
       "speaketh",
       "sheaf",
       "stick",
@@ -7861,33 +7875,64 @@ const elementsDict =
     ],
     "comment": "cursive version of 厂 cliff. Note that RTK often just calls this drag, but that's a conflict with 曳 drag, which also doesn't have another name, so we'll call this dragging internally."
   },
+  "empress": {
+    "elements": [
+      "dragging",
+      "creeper"
+    ],
+    "kanji": "后",
+    "subElements": [
+      "dragging",
+      "creeper",
+      "drag",
+      "cliff",
+      "ceiling",
+      "mouth",
+      "speaketh",
+      "sheaf",
+      "one",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "empress"
+    ]
+  },
   "shield": {
     "elements": [
-      "drag",
+      "dragging",
       "ten",
       "eye"
     ],
     "kanji": "盾",
     "subElements": [
-      "drag",
+      "dragging",
       "ten",
       "eye",
       "oneself",
-      "speaketh",
-      "sheaf",
+      "drag",
+      "cliff",
       "needle",
       "drop",
       "nose",
-      "stick",
-      "armor",
-      "monkey",
+      "speaketh",
+      "sheaf",
       "drops",
       "rice field",
       "two hands",
-      "armour",
-      "roots",
+      "stick",
+      "armor",
+      "monkey",
       "brains",
       "flowers",
+      "armour",
+      "roots",
       "flower"
     ],
     "synonyms": [],
@@ -12251,6 +12296,30 @@ const elementsDict =
       "amount"
     ]
   },
+  "proclaim": {
+    "elements": [
+      "roof",
+      "span"
+    ],
+    "kanji": "宣",
+    "subElements": [
+      "roof",
+      "span",
+      "house",
+      "ceiling",
+      "nightbreak",
+      "one",
+      "sun",
+      "floor",
+      "day",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "proclaim"
+    ]
+  },
   "excuse": {
     "elements": [
       "bound up",
@@ -15055,6 +15124,25 @@ const elementsDict =
       "follow"
     ]
   },
+  "large hill": {
+    "elements": [
+      "maestro",
+      "ten"
+    ],
+    "kanji": "阜",
+    "subElements": [
+      "maestro",
+      "ten",
+      "needle",
+      "large city"
+    ],
+    "synonyms": [
+      "large city"
+    ],
+    "wkNames": [
+      "mound"
+    ]
+  },
   "walk": {
     "elements": [
       "stop",
@@ -17599,6 +17687,24 @@ const elementsDict =
     ],
     "wkNames": [
       "repeater"
+    ]
+  },
+  "wild goose": {
+    "elements": [
+      "cliff",
+      "personB",
+      "turkey"
+    ],
+    "kanji": "雁",
+    "subElements": [
+      "cliff",
+      "personB",
+      "turkey",
+      "person"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "wild goose"
     ]
   }
 };
