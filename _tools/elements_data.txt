@@ -28,6 +28,7 @@ guest; 客; guest; t(house, each)
 path; 路; road; l(leg, each)
 relaxed; 攸; relaxed; l(person, stick, taskmaster)
 set free; 放; release; l(direction, taskmaster)
+happenstance; 故; circumstance; l(old, taskmaster)
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
 mending=mend=zoo; 定 bottom part, 疋, 足 bottom part; coat rack // only difference to zoo: missing hook at end of top stroke
 zoo=critters=mending=mend; 疋; coat rack // added hook on top stroke compared to mending, almost indistinguishable. coat rack in WK is both zoo and mending
@@ -121,11 +122,12 @@ seduce; 召; call; t(sword, mouth)
 ten thousand; 万; ten thousand; t(ceiling, bound up)
 tongue; 舌; tongue; t(thousand, mouth)
 measuring box; 升; grid; l(thousand, ten); slideWK
-round; 丸; round; c(nine, drop) // don't confuse with 円 circle
+round=fat man; 丸; round; c(nine, drop) // don't confuse with 円 circle
 wealth; 畐, 福 right part; scarecrow; t(creeper, rice field)
 employee; 員; member; t(mouth, shellfish)
 shellfish=shell=clam=oyster; 貝; shellfish; t(eye, animal legs)
 see; 見; see; t(eye, human legs)
+toolB=tool; 具; tool; t(eye, tool)
 tool; 具 bottom part; ground&fins; t(ceiling, animal legs) // this is 具 minus the eye. doesn't exist in WK (ground + fins). TODO maybe t(ground, fins) for WK?
 true; 真; reality; t(ten, eye, tool)
 upright; 貞; chastity; t(divining rod, shellfish)
@@ -160,6 +162,7 @@ easy=piggy bank; 易; easy; t(sun, not) // element is called piggy bank in RTK, 
 hot water; 湯; hot water; l(water, easy)
 utilize=utilise=screwdriver; 用; task; moon, stick // main name is screwdriver in RTK, but probably most people will forget that after they're familiar with the kanji keyword utilize
 utilizeB=utilize=utilise=screwdriver; 猟 bottom right part; task
+common=commonplace=comfortable; 庸; common; tl(cave, t(rake, utilize)) 
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
 fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
 thanksgiving=harvest festival; 𢦏, 栽 without 木; thanksgiving; c(fiesta, soil)
@@ -510,7 +513,7 @@ lock of hair; 乇; slide&seven; t(dropB, seven) // RTK says this is derived from
 home; 宅; house; t(roof, lock of hair)
 cut; 切; cut; l(seven, sword)
 barley; 麦, 麺 left part; wheat; t(grow up, walking legs) // as an element, the last stroke is extended, as in 麺
-heavens; 天; heaven; t(ceiling, large)
+heavens=heaven; 天; heaven; t(ceiling, large)
 wheat=cereal=sapling; 禾, 和 left part; grain; t(drop, tree); slideWK
 golden calf; 关; ram; t(horns, heavens) // not on WK. male sheep is called ram (-> horns).
 dart; 矢; arrow; c(heavens, drop)
@@ -681,6 +684,7 @@ person; 人; person // person is more ambiguous in RTK than in WK for a change: 
 personB=person; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
 sitting in meditation; 坐; sitting in meditation; c(soil, assembly line)
+graduate; 卒; graduate; t(top hat, assembly line, ten)
 large=St. Bernard; 大; big
 largeB=large=St. Bernard; 大, 纂 middle part; big // seems to only occur in 纂
 plump; 太; fat; o(large, drop)
@@ -856,6 +860,7 @@ doubt; 疑; doubt; l(t(spoon, dart), t(chop-sealB, zoo))
 earthworm; 屯; barracks; t(dropB, mountain, fishhookB)
 immediate; 頓; immediate; l(earthworm, head)
 rice seedling; 坴 top part; rice seedling; t(soil, human legs)
+frostbite; 夌; frostbite; t(rice seedling, walking legs) // RTK has no name for this unfortunately. frostbite is WK name.
 land; 坴; womb; t(rice seedling, soil)
 acorn=sign of the hog; 亥; slice; t(top hat, spoon, dropB, drop) // the bottom part isn't further described in RTK, a bit vague/unique
 center; 央; center; t(towel, large)&hood // structureVague: yes

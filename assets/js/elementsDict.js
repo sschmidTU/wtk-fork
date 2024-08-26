@@ -513,6 +513,27 @@ const elementsDict =
       "release"
     ]
   },
+  "happenstance": {
+    "elements": [
+      "old",
+      "taskmaster"
+    ],
+    "kanji": "故",
+    "subElements": [
+      "old",
+      "taskmaster",
+      "ten",
+      "mouth",
+      "tombstone",
+      "gravestone",
+      "church",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "circumstance"
+    ]
+  },
   "leg": {
     "elements": [
       "mouth",
@@ -2320,9 +2341,12 @@ const elementsDict =
       "nine",
       "drop",
       "baseball",
-      "drops"
+      "drops",
+      "fat man"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "fat man"
+    ],
     "wkNames": [
       "round"
     ],
@@ -2402,6 +2426,27 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "see"
+    ]
+  },
+  "toolB": {
+    "elements": [
+      "eye",
+      "tool"
+    ],
+    "kanji": "具",
+    "subElements": [
+      "eye",
+      "tool",
+      "ceiling",
+      "animal legs",
+      "one",
+      "tool"
+    ],
+    "synonyms": [
+      "tool"
+    ],
+    "wkNames": [
+      "tool"
     ]
   },
   "tool": {
@@ -2850,6 +2895,7 @@ const elementsDict =
       "drop",
       "ceiling",
       "large",
+      "heaven",
       "drops",
       "one",
       "St. Bernard"
@@ -3103,6 +3149,39 @@ const elementsDict =
     ],
     "wkNames": [
       "task"
+    ]
+  },
+  "common": {
+    "elements": [
+      "cave",
+      "rake",
+      "utilize"
+    ],
+    "kanji": "庸",
+    "subElements": [
+      "cave",
+      "rake",
+      "utilize",
+      "dropB",
+      "broom",
+      "stick",
+      "moon",
+      "month",
+      "flesh",
+      "part of the body",
+      "utilise",
+      "screwdriver",
+      "drop",
+      "drops",
+      "commonplace",
+      "comfortable"
+    ],
+    "synonyms": [
+      "commonplace",
+      "comfortable"
+    ],
+    "wkNames": [
+      "common"
     ]
   },
   "arrowhead": {
@@ -4140,7 +4219,8 @@ const elementsDict =
       "stand",
       "vase",
       "nine",
-      "baseball"
+      "baseball",
+      "fat man"
     ],
     "synonyms": [],
     "wkNames": [
@@ -5719,6 +5799,7 @@ const elementsDict =
       "St. Bernard",
       "wood",
       "ceiling",
+      "heaven",
       "one"
     ],
     "synonyms": [],
@@ -9285,6 +9366,7 @@ const elementsDict =
       "drop",
       "ceiling",
       "large",
+      "heaven",
       "drops",
       "St. Bernard"
     ],
@@ -10402,9 +10484,12 @@ const elementsDict =
       "ceiling",
       "large",
       "one",
-      "St. Bernard"
+      "St. Bernard",
+      "heaven"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "heaven"
+    ],
     "wkNames": [
       "heaven"
     ]
@@ -10445,7 +10530,8 @@ const elementsDict =
       "ceiling",
       "large",
       "one",
-      "St. Bernard"
+      "St. Bernard",
+      "heaven"
     ],
     "synonyms": [],
     "wkNames": [
@@ -10466,6 +10552,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops"
     ],
     "synonyms": [],
@@ -10488,6 +10575,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops"
     ],
     "synonyms": [],
@@ -10556,6 +10644,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops"
     ],
     "synonyms": [],
@@ -10749,6 +10838,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops",
       "turkey house"
     ],
@@ -13871,6 +13961,29 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "sitting in meditation"
+    ]
+  },
+  "graduate": {
+    "elements": [
+      "top hat",
+      "assembly line",
+      "ten"
+    ],
+    "kanji": "卒",
+    "subElements": [
+      "top hat",
+      "assembly line",
+      "ten",
+      "drop",
+      "one",
+      "drops",
+      "person2",
+      "person",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "graduate"
     ]
   },
   "large": {
@@ -17260,6 +17373,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops",
       "fu",
       "chop-seal",
@@ -17354,6 +17468,26 @@ const elementsDict =
     "wkNames": [
       "rice seedling"
     ]
+  },
+  "frostbite": {
+    "elements": [
+      "rice seedling",
+      "walking legs"
+    ],
+    "kanji": "夌",
+    "subElements": [
+      "rice seedling",
+      "walking legs",
+      "soil",
+      "human legs",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "frostbite"
+    ],
+    "comment": "RTK has no name for this unfortunately. frostbite is WK name."
   },
   "land": {
     "elements": [
