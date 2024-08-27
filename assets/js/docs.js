@@ -4788,7 +4788,7 @@ var docs = [{
     "kanji": "采",
     "kw": "grab",
     "el": "grab, claw, vulture, tree, wood",
-    "elT": "t(vulture, tree)"
+    "elT": "grab"
 }, {
     "id": "733",
     "kanji": "採",
@@ -19034,4 +19034,10 @@ var docs = [{
     "kanji": "撼",
     "kw": "move",
     "elT": "l(fingers, emotion)"
+}, {
+    "id": "3148",
+    "kanji": "奧",
+    "kw": "heart",
+    "elT": "t(o(t(drop, hood), grab), large)",
+    "var": "奥"
 }, ];
