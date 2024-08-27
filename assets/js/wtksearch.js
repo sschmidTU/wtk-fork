@@ -313,8 +313,12 @@ class WTKSearch {
             }
             this.addCopyFunctionToEntry(page);
             this.addCopyFunctionToTextKanji(page);
+            let expandButton;
             if (this.addElementsInfo && page.elT) {
-              this.addCollapsibleFunctionToEntry(page);
+              expandButton = this.addCollapsibleFunctionToEntry(page);
+              if (prepend) {
+                this.toggleCollapsible(expandButton, page.id, false);
+              }
             }
             entriesAdded++;
           }
@@ -595,6 +599,7 @@ class WTKSearch {
     expandButton.onclick = function() {
       self.toggleCollapsible(expandButton, page.id);
     }
+    return expandButton;
   }
 
   addCopyFunctionToEntry(page) {
