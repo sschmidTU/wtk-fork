@@ -28,6 +28,7 @@ guest; 客; guest; t(house, each)
 path; 路; road; l(leg, each)
 relaxed; 攸; relaxed; l(person, stick, taskmaster)
 set free; 放; release; l(direction, taskmaster)
+happenstance; 故; circumstance; l(old, taskmaster)
 leg=wooden leg; 足, 踪 left part; leg; t(mouth, mending)
 mending=mend=zoo; 定 bottom part, 疋, 足 bottom part; coat rack // only difference to zoo: missing hook at end of top stroke
 zoo=critters=mending=mend; 疋; coat rack // added hook on top stroke compared to mending, almost indistinguishable. coat rack in WK is both zoo and mending
@@ -37,9 +38,9 @@ correct; 正; correct; t(ceiling, stop)
 this here; 此; this here; l(stop, spoon) // rtk3 element (2043). not an element on WK (though it appears quite frequently in rarer kanji)
 accompany; 従; obey; l(goingB, t(horns, mending))
 run; 走; run; t(soil, mending)
-determine; 定; determine; t(house, coat rack)
+determine; 定; determine; t(house, mending)
 perfect; 完; perfect; t(house, beginning)
-tooth; 歯; tooth; t(stop, o(shovel, rice))
+tooth=teeth; 歯; tooth; t(stop, o(shovel, rice))
 flag; 尸, 戸 bottom part; flag; t(mouth, drop); slideWK
 door; 戸; door; t(ceiling, flag)
 nun; 尼; nun; tl(flag, spoon)
@@ -92,7 +93,7 @@ difficult; 難; difficult; l(scarecrow, turkey)
 silage; 垂 middle part; silage; c(rice field, stick) // RTK: vertical stroke will always combine with another element
 droop; 垂; dangle; t(dropB, silage, floor)
 ride; 乗; ride; c(wheat, silage) // structureVague: yes
-splendor; 華; showy; t(flowers, silage, ten)
+splendor=splendid; 華; showy; t(flowers, silage, ten)
 un-=jail cell=prison bars; 非; injustice; f(animal legs, shape, three)
 nine=baseball; 九; nine
 ninety; 枠 right part; ninety; t(nine, ten)
@@ -121,11 +122,12 @@ seduce; 召; call; t(sword, mouth)
 ten thousand; 万; ten thousand; t(ceiling, bound up)
 tongue; 舌; tongue; t(thousand, mouth)
 measuring box; 升; grid; l(thousand, ten); slideWK
-round; 丸; round; c(nine, drop) // don't confuse with 円 circle
+round=fat man; 丸; round; c(nine, drop) // don't confuse with 円 circle
 wealth; 畐, 福 right part; scarecrow; t(creeper, rice field)
 employee; 員; member; t(mouth, shellfish)
 shellfish=shell=clam=oyster; 貝; shellfish; t(eye, animal legs)
 see; 見; see; t(eye, human legs)
+toolB=tool; 具; tool; t(eye, tool)
 tool; 具 bottom part; ground&fins; t(ceiling, animal legs) // this is 具 minus the eye. doesn't exist in WK (ground + fins). TODO maybe t(ground, fins) for WK?
 true; 真; reality; t(ten, eye, tool)
 upright; 貞; chastity; t(divining rod, shellfish)
@@ -137,7 +139,7 @@ ballot; 票; ballot; t(old west, altar)
 chestnut; 栗; chestnut; t(old west, tree)
 west; 西; west; t(ceiling, c(pent in, human legs))
 sign of the bird=whiskey bottle; 酉; alcohol; c(west, one)
-chieftain=molotov cocktail; 猶 right part, 酋; molotov cocktail; t(horns, sign of the bird)
+chieftain=molotov cocktail; 猶 right part, 酋; molotov cocktail&alcohol; t(horns, sign of the bird)
 revered; 尊; revered; t(chieftain, glue)
 bundle=Chaplin; 束; bundle; tree, mouth
 trust; 頼; trust; l(bundle, page)
@@ -160,6 +162,7 @@ easy=piggy bank; 易; easy; t(sun, not) // element is called piggy bank in RTK, 
 hot water; 湯; hot water; l(water, easy)
 utilize=utilise=screwdriver; 用; task; moon, stick // main name is screwdriver in RTK, but probably most people will forget that after they're familiar with the kanji keyword utilize
 utilizeB=utilize=utilise=screwdriver; 猟 bottom right part; task
+common=commonplace=comfortable; 庸; common; tl(cave, t(rake, utilize)) 
 arrowhead=arrow; 代 right part; ceremony // RTK mainly calls this arrow, but that's confusing with the kanji/word 矢, which in RTK is "dart", not "arrow", to "avoid" confusion.
 fiesta; 戈, 伐 right part; drunkard; c(arrowhead, drop); slideWK
 thanksgiving=harvest festival; 𢦏, 栽 without 木; thanksgiving; c(fiesta, soil)
@@ -172,7 +175,7 @@ float; 桟 right part; bar; c(fiesta, two) // apparently comes from 戔, which i
 warrior; 武; military; tr(arrowhead, stop)&one
 style; 式; ritual; tr(arrowhead, craft)
 fell; 伐; fell; l(personB, fiesta)&substitute // could also be seen with 代 substitute as c(substitute, drop)
-dog tag=dogtag; 甫; wedding; t(arrowhead, screwdriver)
+dog tag=dogtag=offspring; 甫; wedding; t(arrowhead, screwdriver)
 bay; 浦; bay; l(water, dog tag)
 stand up=stand=vase; 立; stand; t(top hat, horns, floor) // RTK says "Used as a primitive, it can also mean vase". But stand up seems more central/well known.
 badge; 章; chapter; t(stand up, early)
@@ -204,7 +207,7 @@ sheik; 禽; rocket; t(umbrella, top hat, villain, c(hood, elbow))&meeting // not
 swiss=switzerland=plus=red cross=d-pad; 亞, 亞 middle part, 惡 plus-shaped part between one and one; swiss; convex2, box4, two // doesn't exist in RTK/WK (added in WTK-Search), hard to describe in RTK elements
 asia; 亜; asia; t(old west, t(l(stick, stick), ceiling))
 convex; 凸; convex
-concave; 凸; concave
+concave; 凹; concave
 sheep; 羊; sheep; t(horns, king, stick)
 beauty; 美; beauty; t(sheep, large) // the last part of the vertical stroke is interwoven with the large radical, but that seems like a minor detail. (structureVague: yes)
 distinction=discrimination; 差; distinction&discriminate; t(sheep, left) // RTK1 calls this distinction, RTK3 mostly as well, once discrimination (probably mistake)
@@ -255,14 +258,15 @@ straightened hook; 直 bottom part, 断 left part; lion; fishhook // RTK: a more
 straightaway; 直; fix; t(ten, eye, straightened hook)
 hook; 亅, 小 bottom part, 疋 end of top stroke; hook
 contend; 争; conflict; t(bound up, rake, hook)
-family name; 氏; clan; tl(drag, arrow, fishhook) // structureVague: yes
+family name; 氏; clan; tl(dragging, arrow, fishhook) // structureVague: yes
 people; 民; people&peoples; tl(flag, family name) // structureVague: yes
 by means of; 以; from; l(straightened hook, drop, person)
 prefecture; 県; prefecture; t(lb(straightened hook, eye), little)
 eel; 俺 bottom right part; eel; t(rice field, fishhook) // fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke
+encompassing; 奄; encompassing; t(large, eel)
 dragon; 竜; dragon; t(stand up, eel)
 old dragon; 龍; old dragon; l(t(stand up, moon), t(slingshot, staples)) // this is the old form of 竜 dragon. structureVague: yes
-melon; 瓜; melon; c(claw, elbow)&drag&hood
+melon; 瓜; melon; c(claw, elbow)&dragging&hood
 orphan; 孤; orphan; l(child, melon)
 complete; 了; finish; ; barbWK
 upside down in a row=row; 並; line up&spikes&horns&ground // line up is the direct equivalent in WK, but only a kanji, not a radical. Also, RTK makes a distinction between row and upside down in a row depending on where it's placed. Upside down in a row is when below, and 3 top stokes are removed. Though RTK isn't very clear here.
@@ -384,7 +388,8 @@ take along; 連; take along; lb(road, car)
 street=nail=spike; 丁; street
 cliff; 厂; cliff // mirrored: 𠃌 clothes hanger
 dragging=drag=cliff; 后 top left part; dragging // cursive version of 厂 cliff. Note that RTK often just calls this drag, but that's a conflict with 曳 drag, which also doesn't have another name, so we'll call this dragging internally.
-shield; 盾; shield; tl(drag, t(ten, eye))&oneself
+empress; 后; empress; tl(dragging, creeper)
+shield; 盾; shield; tl(dragging, t(ten, eye))&oneself
 fu; フ; fu // doesn't exist in RTK or WK, but useful sub-element
 straight fu=fuB; 片 bottom right part; straight fu // doesn't exist in RTK or WK, but useful sub-element
 tiger; 虍, 虎 outer part; tiger; t(divining rod, tl(cliff, seven))
@@ -434,7 +439,7 @@ next; 次; next; l(ice, lack)
 evening; 夕; evening
 eveningB=evening; 然 top left part; eveningB
 many; 多; many; t(evening, evening)
-bones; 歹, 残 left part; yakuza; t(ceiling, evening)
+bones=bone; 歹, 残 left part; yakuza; t(ceiling, evening)
 file; 列; row; l(bones, saber)
 death; 死; death; t(ceiling, l(evening, spoon))&bones
 name; 名; name; t(evening, mouth)
@@ -473,6 +478,7 @@ aroma; 匂; scent; tr(bound up, spoon)
 ladle; 勺; ladle; o(bound up, drop) // doesn't exist in WK, which also has 斗 ladle unfortunately
 phrase; 句; paragraph; o(bound up, mouth)
 decameron; 旬; in season; tr(bound up, sun)
+hay; 芻; hay; t(tr(bound up, mountain, dropB), tr(bound up, mountain, dropB))
 dangerous; 危; dangerous; t(bound up, tl(cliff, fingerprint))
 separate; 別; separate; l(t(mouth, bound up), saber)
 angle; 角; angle; t(bound up, t(rice field, fenceposts)) // structureVague: yes
@@ -508,7 +514,7 @@ lock of hair; 乇; slide&seven; t(dropB, seven) // RTK says this is derived from
 home; 宅; house; t(roof, lock of hair)
 cut; 切; cut; l(seven, sword)
 barley; 麦, 麺 left part; wheat; t(grow up, walking legs) // as an element, the last stroke is extended, as in 麺
-heavens; 天; heaven; t(ceiling, large)
+heavens=heaven; 天; heaven; t(ceiling, large)
 wheat=cereal=sapling; 禾, 和 left part; grain; t(drop, tree); slideWK
 golden calf; 关; ram; t(horns, heavens) // not on WK. male sheep is called ram (-> horns).
 dart; 矢; arrow; c(heavens, drop)
@@ -592,6 +598,7 @@ chair; 呉 middle part; chair; t(straightened hook, stick) // doesn't exist in W
 nightbreak; 旦; dawn; t(sun, floor)
 span; 亘; dawn; t(ceiling, nightbreak)
 quantity; 量; amount; t(nightbreak, ri)
+proclaim; 宣; proclaim; t(roof, span)
 excuse=village stocks=rabbit; 免; excuse; t(bound up, c(mouth, stick), human legs) // original primitive called "village stocks" in RTK, though excuse seems better as that's also the kanji keyword
 elephant; 象; elephant; t(bound up, c(mouth, stick), sow)
 oneself=nose; 自; self; t(drop, eye)
@@ -679,11 +686,12 @@ person; 人; person // person is more ambiguous in RTK than in WK for a change: 
 personB=person; 亻; leader // person is more ambiguous in RTK than in WK for a change: 人 in WK is person, 亻 is leader, in RTK both is person.
 assembly line; 卒 middle part; assembly line; person2 // not named in WK
 sitting in meditation; 坐; sitting in meditation; c(soil, assembly line)
+graduate; 卒; graduate; t(top hat, assembly line, ten)
 large=St. Bernard; 大; big
 largeB=large=St. Bernard; 大, 纂 middle part; big // seems to only occur in 纂
 plump; 太; fat; o(large, drop)
 dog; 犬; dog; c(large, drop)
-dog with one leg=dog=chihuahua with one human leg; 尤; pirate
+dog with one leg=dog=chihuahua with one human leg; 尤; pirate; t(drop, top hat, human legs)
 concerning; 就; concerning; l(capital, dog with one leg)
 eight; 八; eight // similar to ハ animal legs
 eightB=eight; 曾 top part; eight // there is some more horizontal distance between the stroke here. this was previously called eight2, but numbers in element names are reserved for number of occurences.
@@ -729,11 +737,12 @@ condolences=condolence; 弔; condolence; c(bow, stick)
 weak; 弱; weak; l(bowB, bowB)
 dollar=dollar sign; 沸 right part; dollar; c(bow, l(dropB, stick))&condolences
 younger brother; 弟; younger brother; t(horns, dollar) // structureVague: yes
-maestro; 師 left part; drop&bear
+maestro; 師 left part; bear drop; t(maestro without baton, bear)
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
 bureaucrat; 官; government; t(roof, maestro without baton)
 expert; 師; teacher; l(maestro, marketB)
 chase; 追; follow; lb(road, maestro)
+large hill=large city; 阜; mound; t(maestro, ten)
 walk; 歩; walk; t(stop, few)
 repeatedly; 頻; frequent; l(walk, head)
 mouth; 口; mouth
@@ -792,6 +801,7 @@ carrier; 般; generally; l(boat, missile)
 dispose; 処; deal with; lb(walking legs, wind)
 barge; 恐 top part; saw; l(craft, mediocre) // not named in my RTK copy, but in the pre-existing rtk-search data
 crotch; 又; stool
+stitching; 綴 right part; stitching; t(crotch2, crotch2)
 sentence=plaid; 文; writing; t(drop, crotch)&top hat
 sentenceB=sentence=plaid; 対 left part; writing; t(top hat, sheaf) // the sheaf is not fully connected to the top hat here
 adjusted; 斉; simultaneous; t(sentence, moon) // structureVague: yes, elementsClose: moon
@@ -853,8 +863,10 @@ doubt; 疑; doubt; l(t(spoon, dart), t(chop-sealB, zoo))
 earthworm; 屯; barracks; t(dropB, mountain, fishhookB)
 immediate; 頓; immediate; l(earthworm, head)
 rice seedling; 坴 top part; rice seedling; t(soil, human legs)
+frostbite; 夌; frostbite; t(rice seedling, walking legs) // RTK has no name for this unfortunately. frostbite is WK name.
 land; 坴; womb; t(rice seedling, soil)
 acorn=sign of the hog; 亥; slice; t(top hat, spoon, dropB, drop) // the bottom part isn't further described in RTK, a bit vague/unique
 center; 央; center; t(towel, large)&hood // structureVague: yes
 england; 英; england; t(flowers, center)
 repeater=noma; 々; repeater; t(bound up, drop)
+wild goose; 雁; wild goose; tl(cliff, l(personB, turkey))

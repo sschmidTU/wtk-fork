@@ -470,13 +470,13 @@ var docs = [{
     "kanji": "具",
     "kw": "tool",
     "el": "tool, eye, one, animal legs, eight",
-    "elT": "t(eye, tool)"
+    "elT": "toolB"
 }, {
     "id": "75",
     "kanji": "真",
     "kw": "true",
     "el": "true, ten, needle, eye, tool, one, animal legs, eight",
-    "elT": "t(ten, eye, tool)"
+    "elT": "t(ten, toolB)"
 }, {
     "id": "76",
     "kanji": "工",
@@ -1206,7 +1206,7 @@ var docs = [{
     "kanji": "宣",
     "kw": "proclaim",
     "el": "proclaim, house, span, ceiling, nightbreak, sun, day, one, floor, one",
-    "elT": "t(roof, span)"
+    "elT": "proclaim"
 }, {
     "id": "189",
     "kanji": "宵",
@@ -2142,7 +2142,7 @@ var docs = [{
     "kanji": "故",
     "kw": "happenstance",
     "el": "happenstance, old, tombstone, gravestone, church, ten, needle, mouth, taskmaster",
-    "elT": "l(old, taskmaster)"
+    "elT": "happenstance"
 }, {
     "id": "334",
     "kanji": "敬",
@@ -6673,7 +6673,7 @@ var docs = [{
     "kanji": "卒",
     "kw": "graduate",
     "el": "graduate, top hat, assembly line, person2, person, ten, needle",
-    "elT": "t(top hat, assembly line, ten)"
+    "elT": "graduate"
 }, {
     "id": "1026",
     "kanji": "傘",
@@ -7667,7 +7667,7 @@ var docs = [{
     "kanji": "庸",
     "kw": "comfortable",
     "el": "commonplace, comfortable, cave, rake, screwdriver, utilise, utilize, moon, month, flesh, part of the body, stick",
-    "elT": "tl(cave, t(rake, utilize))"
+    "elT": "common"
 }, {
     "id": "1183",
     "kanji": "備",
@@ -8234,7 +8234,7 @@ var docs = [{
     "kanji": "阜",
     "kw": "large hill",
     "el": "large hill, maestro, ten, needle",
-    "elT": "t(maestro, ten)"
+    "elT": "large hill"
 }, {
     "id": "1269",
     "kanji": "師",
@@ -9895,7 +9895,7 @@ var docs = [{
     "kanji": "陵",
     "kw": "mausoleum",
     "el": "mausoleum, pinnacle, parthenon, acropolis, Mao, soil, dirt, ground, human legs, walking legs",
-    "elT": "l(pinnacle, t(rice seedling, walking legs))"
+    "elT": "l(pinnacle, frostbite)"
 }, {
     "id": "1519",
     "kanji": "亥",
@@ -12112,7 +12112,7 @@ var docs = [{
     "kanji": "后",
     "kw": "empress",
     "el": "empress, drag, one, ceiling, mouth",
-    "elT": "tl(dragging, creeper)"
+    "elT": "empress"
 }, {
     "id": "1862",
     "kanji": "幻",
@@ -12337,21 +12337,17 @@ var docs = [{
     "el": "shoes, leather, flowers, car, mouth, ten, needle, change, person, spoon, sitting on the ground",
     "elT": "l(leather, change)"
 }, {
-    "id": "2043",
-    "kanji": "此",
-    "kw": "this here",
-    "el": "stop, footprint, spoon"
-}, {
     "id": "1895",
     "kanji": "覇",
     "kw": "hegemony",
     "el": "hegemony, old west, leather, flowers, car, mouth, ten, needle, moon, month, flesh, part of the body",
     "elT": "t(old west, l(leather, moon))"
 }, {
-    "id": "2044",
-    "kanji": "柴",
-    "kw": "brushwood",
-    "el": "stop, footprint, spoon, tree, this here"
+    "id": "2043",
+    "kanji": "此",
+    "kw": "this here",
+    "el": "stop, footprint, spoon",
+    "elT": "this here"
 }, {
     "id": "1896",
     "kanji": "声",
@@ -12359,10 +12355,11 @@ var docs = [{
     "el": "voice, samurai, flag, stick",
     "elT": "voice"
 }, {
-    "id": "2045",
-    "kanji": "砦",
-    "kw": "fort",
-    "el": "this here, stop, footprint, spoon, stone"
+    "id": "2044",
+    "kanji": "柴",
+    "kw": "brushwood",
+    "el": "stop, footprint, spoon, tree, this here",
+    "elT": "t(this here, tree)"
 }, {
     "id": "2583",
     "kanji": "眉",
@@ -12370,10 +12367,11 @@ var docs = [{
     "el": "eyebrow, flag, stick, eye",
     "elT": "tl(c(flag, stick), eye)"
 }, {
-    "id": "2046",
-    "kanji": "些",
-    "kw": "whit",
-    "el": "this here, stop, spoon, two"
+    "id": "2045",
+    "kanji": "砦",
+    "kw": "fort",
+    "el": "this here, stop, footprint, spoon, stone",
+    "elT": "t(this here, stone)"
 }, {
     "id": "1897",
     "kanji": "呉",
@@ -12381,10 +12379,11 @@ var docs = [{
     "el": "give, mouth, chair, fishhook, straightened hook, tool, animal legs",
     "elT": "give"
 }, {
-    "id": "2047",
-    "kanji": "髭",
-    "kw": "beard",
-    "el": "mane, hairpin, shape, this here, stop, footprint, spoon"
+    "id": "2046",
+    "kanji": "些",
+    "kw": "whit",
+    "el": "this here, stop, spoon, two",
+    "elT": "t(this here, two)"
 }, {
     "id": "1898",
     "kanji": "娯",
@@ -12392,17 +12391,17 @@ var docs = [{
     "el": "recreation, woman, give, mouth, chair, fishhook, straightened hook, tool, animal legs",
     "elT": "l(woman, give)"
 }, {
+    "id": "2047",
+    "kanji": "髭",
+    "kw": "beard",
+    "el": "long, mane, hairpin, shape, this here, stop, footprint, spoon",
+    "elT": "t(l(long, shape), this here)"
+}, {
     "id": "1899",
     "kanji": "誤",
     "kw": "mistake",
     "el": "mistake, say, words, keitai, mouth, give, chair, fishhook, straightened hook, tool, animal legs, mouth2",
     "elT": "l(say, give)"
-}, {
-    "id": "2049",
-    "kanji": "禽",
-    "kw": "fowl",
-    "el": "umbrella, sheik, top hat, villain, sheaf, belt, elbow",
-    "elT": "sheik"
 }, {
     "id": "1900",
     "kanji": "蒸",
@@ -12410,10 +12409,11 @@ var docs = [{
     "el": "steam, flowers, helping hand, complete, water, one, floor, oven-fire, drop4, barbecue",
     "elT": "t(flowers, c(waterB, complete), ceiling, oven-fire) // water is slightly different here"
 }, {
-    "id": "2050",
-    "kanji": "檎",
-    "kw": "apple",
-    "el": "tree, fowl, umbrella, sheik, top hat, villain, sheaf, belt, elbow"
+    "id": "2049",
+    "kanji": "禽",
+    "kw": "fowl",
+    "el": "umbrella, sheik, top hat, villain, sheaf, belt, elbow",
+    "elT": "sheik"
 }, {
     "id": "1901",
     "kanji": "承",
@@ -12421,10 +12421,11 @@ var docs = [{
     "el": "acquiesce, water, complete, three",
     "elT": "t(chop-sealB, l(fu, grow up, c(dropB, drop)), hook)"
 }, {
-    "id": "2051",
-    "kanji": "憐",
-    "kw": "sympathize with",
-    "el": "state of mind, rice, dance, ballerina, sunglasses, cow, shoeshine"
+    "id": "2050",
+    "kanji": "檎",
+    "kw": "apple",
+    "el": "tree, fowl, umbrella, sheik, top hat, villain, sheaf, belt, elbow",
+    "elT": "l(tree, sheik)"
 }, {
     "id": "1902",
     "kanji": "函",
@@ -12432,10 +12433,11 @@ var docs = [{
     "el": "bin, snare, sparkler, shovel",
     "elT": "t(ceiling, drop, o(shovel, waterC))"
 }, {
-    "id": "2052",
-    "kanji": "燐",
-    "kw": "phosphorus",
-    "el": "fire, rice, dance, ballerina, shoeshine"
+    "id": "2051",
+    "kanji": "憐",
+    "kw": "sympathize with",
+    "el": "state of mind, rice, dance, ballerina, sunglasses, cow, shoeshine",
+    "elT": "l(state of mind, t(rice, ballerina))"
 }, {
     "id": "1903",
     "kanji": "極",
@@ -12443,10 +12445,11 @@ var docs = [{
     "el": "poles, decay, tree, wood, snare, mouth, crotch, one, floor",
     "elT": "l(tree, t(ceiling, drop, l(mouth, clothes hanger, crotch), floor))"
 }, {
-    "id": "2053",
-    "kanji": "麟",
-    "kw": "camelopard",
-    "el": "deer, cave, old west, compare, rice, dance, ballerina"
+    "id": "2052",
+    "kanji": "燐",
+    "kw": "phosphorus",
+    "el": "fire, rice, dance, ballerina, shoeshine",
+    "elT": "l(fire, t(rice, ballerina))"
 }, {
     "id": "1904",
     "kanji": "牙",
@@ -12454,10 +12457,11 @@ var docs = [{
     "el": "tusk",
     "elT": "tusk"
 }, {
-    "id": "2054",
-    "kanji": "鱗",
-    "kw": "scaled",
-    "el": "fish, shoeshine, rice, dance, ballerina"
+    "id": "2053",
+    "kanji": "麟",
+    "kw": "camelopard",
+    "el": "deer, cave, old west, compare, rice, dance, ballerina",
+    "elT": "l(deer, t(rice, ballerina))"
 }, {
     "id": "1905",
     "kanji": "芽",
@@ -12465,11 +12469,11 @@ var docs = [{
     "el": "bud, flowers, tusk",
     "elT": "t(flowers, tusk)"
 }, {
-    "id": "2055",
-    "kanji": "奄",
-    "kw": "encompassing",
-    "el": "large, eel, rice field, fishhook, speaketh, monkey, inX",
-    "elWK": "umbrellaWK"
+    "id": "2054",
+    "kanji": "鱗",
+    "kw": "scaled",
+    "el": "fish, shoeshine, rice, dance, ballerina",
+    "elT": "l(fish, t(rice, ballerina))"
 }, {
     "id": "1906",
     "kanji": "邪",
@@ -12477,10 +12481,11 @@ var docs = [{
     "el": "wicked, tusk, city walls",
     "elT": "l(tusk, city walls)"
 }, {
-    "id": "2056",
-    "kanji": "庵",
-    "kw": "hermitage",
-    "el": "cave, dachshund, large, eel, rice field, speaketh, inX, fishhook",
+    "id": "2055",
+    "kanji": "奄",
+    "kw": "encompassing",
+    "el": "large, eel, rice field, fishhook, speaketh, monkey, inX",
+    "elT": "encompassing",
     "elWK": "umbrellaWK"
 }, {
     "id": "1907",
@@ -12489,10 +12494,11 @@ var docs = [{
     "el": "gracious, tusk, turkey",
     "elT": "l(tusk, turkey)"
 }, {
-    "id": "2057",
-    "kanji": "掩",
-    "kw": "shrouded",
-    "el": "fingers, dachshund, large, eel, speaketh, rice field, inX, fishhook",
+    "id": "2056",
+    "kanji": "庵",
+    "kw": "hermitage",
+    "el": "cave, dachshund, large, eel, rice field, speaketh, inX, fishhook",
+    "elT": "tl(cave, encompassing)",
     "elWK": "umbrellaWK"
 }, {
     "id": "1908",
@@ -12501,17 +12507,18 @@ var docs = [{
     "el": "explanation, animal tracks, drop, rice, shaku-hachi, flag, stick",
     "elT": "l(animal tracks, shaku)"
 }, {
+    "id": "2057",
+    "kanji": "掩",
+    "kw": "shrouded",
+    "el": "fingers, dachshund, large, eel, speaketh, rice field, inX, fishhook",
+    "elT": "l(fingers, encompassing)",
+    "elWK": "umbrellaWK"
+}, {
     "id": "1909",
     "kanji": "番",
     "kw": "turn",
     "el": "turn, dice, animal tracks, drop, rice, rice field, brains",
     "elT": "turn"
-}, {
-    "id": "2059",
-    "kanji": "悛",
-    "kw": "make amends",
-    "el": "state of mind, streetwalker, Ministry of silly walks, John Cleese, license, elbow, human legs, walking legs",
-    "elWK": "soulWK, spiderWK"
 }, {
     "id": "1910",
     "kanji": "審",
@@ -12519,10 +12526,12 @@ var docs = [{
     "el": "hearing, house, dice, animal tracks, drop, rice, rice field, brains",
     "elT": "t(roof, turn)"
 }, {
-    "id": "2060",
-    "kanji": "駿",
-    "kw": "steed",
-    "el": "team of horses, horse, streetwalker, elbow, human legs, walking legs"
+    "id": "2059",
+    "kanji": "悛",
+    "kw": "make amends",
+    "el": "state of mind, streetwalker, Ministry of silly walks, John Cleese, license, elbow, human legs, walking legs",
+    "elT": "l(state of mind, streetwalker)",
+    "elWK": "soulWK, spiderWK"
 }, {
     "id": "1911",
     "kanji": "翻",
@@ -12530,10 +12539,11 @@ var docs = [{
     "el": "flip, dice, animal tracks, drop, rice, rice field, brains, feathers, wings",
     "elT": "l(turn, feathers)"
 }, {
-    "id": "2061",
-    "kanji": "峻",
-    "kw": "steep",
-    "el": "mountain, streetwalker, elbow, human legs, walking legs"
+    "id": "2060",
+    "kanji": "駿",
+    "kw": "steed",
+    "el": "team of horses, horse, streetwalker, elbow, human legs, walking legs",
+    "elT": "l(horse, streetwalker)"
 }, {
     "id": "1912",
     "kanji": "藩",
@@ -12541,10 +12551,11 @@ var docs = [{
     "el": "clan, flowers, water, water droplets, water pistol, dice, animal tracks, drop, rice, rice field, brains",
     "elT": "t(flowers, l(water, turn))"
 }, {
-    "id": "2062",
-    "kanji": "竣",
-    "kw": "complete a job",
-    "el": "stand, streetwalker, elbow, human legs, walking legs"
+    "id": "2061",
+    "kanji": "峻",
+    "kw": "steep",
+    "el": "mountain, streetwalker, elbow, human legs, walking legs",
+    "elT": "l(mountain, streetwalker)"
 }, {
     "id": "1913",
     "kanji": "毛",
@@ -12552,17 +12563,17 @@ var docs = [{
     "el": "fur",
     "elT": "fur"
 }, {
+    "id": "2062",
+    "kanji": "竣",
+    "kw": "complete a job",
+    "el": "stand, streetwalker, elbow, human legs, walking legs",
+    "elT": "l(stand up, streetwalker)"
+}, {
     "id": "1914",
     "kanji": "耗",
     "kw": "decrease",
     "el": "decrease, christmas tree, fur",
     "elT": "l(christmas tree, fur)"
-}, {
-    "id": "2064",
-    "kanji": "舅",
-    "kw": "father-in-law",
-    "el": "mortar, man, male, rice field, power",
-    "elWK": "sunWK, combWK, wolverineWK"
 }, {
     "id": "1915",
     "kanji": "尾",
@@ -12570,11 +12581,12 @@ var docs = [{
     "el": "tail, flag, fur",
     "elT": "tail"
 }, {
-    "id": "2065",
-    "kanji": "鼠",
-    "kw": "mouse",
-    "el": "mortar, plow, straightened hook2, straightened hook, drop2, drop4, drop, drops, hook, fishhook",
-    "elWK": "sunWK, wolverineWK, lionWK"
+    "id": "2064",
+    "kanji": "舅",
+    "kw": "father-in-law",
+    "el": "mortar, man, male, rice field, power",
+    "elT": "t(mortar, man)",
+    "elWK": "sunWK, combWK, wolverineWK"
 }, {
     "id": "1916",
     "kanji": "宅",
@@ -12582,11 +12594,12 @@ var docs = [{
     "el": "home, house, lock of hair, seven",
     "elT": "home"
 }, {
-    "id": "2066",
-    "kanji": "鑿",
-    "kw": "bore",
-    "el": "row, owl, upside down in a row, mortar, missile, metal, gold, wind, crotch, cornstalk",
-    "elWK": "sunWK"
+    "id": "2065",
+    "kanji": "鼠",
+    "kw": "mouse",
+    "el": "mortar, plow, straightened hook2, straightened hook, drop2, drop4, drop, drops, hook, fishhook",
+    "elT": "t(mortar, l(straightened hook, drop4, straightened hook, fishhook))",
+    "elWK": "sunWK, wolverineWK, lionWK"
 }, {
     "id": "1917",
     "kanji": "託",
@@ -12594,17 +12607,18 @@ var docs = [{
     "el": "consign, say, words, keitai, mouth, lock of hair, seven",
     "elT": "l(say, lock of hair)"
 }, {
+    "id": "2066",
+    "kanji": "鑿",
+    "kw": "bore",
+    "el": "row, owl, upside down in a row, mortar, missile, metal, gold, wind, crotch, cornstalk",
+    "elT": "t(l(t(oven-fire, stand up, mortar), missile), gold)",
+    "elWK": "sunWK"
+}, {
     "id": "1918",
     "kanji": "為",
     "kw": "do",
     "el": "do, so, strange building, tail feathers",
     "elT": "do"
-}, {
-    "id": "2068",
-    "kanji": "艘",
-    "kw": "small craft",
-    "el": "boat, mortar, crotch, stick",
-    "elWK": "sunWK"
 }, {
     "id": "1919",
     "kanji": "偽",
@@ -12612,10 +12626,12 @@ var docs = [{
     "el": "falsehood, person, do, so, strange building, tail feathers",
     "elT": "l(personB, do)"
 }, {
-    "id": "2069",
-    "kanji": "犀",
-    "kw": "rhinoceros",
-    "el": "flag, I Ching, two, cow"
+    "id": "2068",
+    "kanji": "艘",
+    "kw": "small craft",
+    "el": "boat, mortar, crotch, stick",
+    "elT": "l(boat, c(t(mortar, sentence), stick))",
+    "elWK": "sunWK"
 }, {
     "id": "2569",
     "kanji": "畏",
@@ -12623,10 +12639,11 @@ var docs = [{
     "el": "apprehensive, rice field, brains, hairpin, safety-pin",
     "elT": "apprehensive"
 }, {
-    "id": "2070",
-    "kanji": "皐",
-    "kw": "lunar month",
-    "el": "white, sun, I Ching, two, ten"
+    "id": "2069",
+    "kanji": "犀",
+    "kw": "rhinoceros",
+    "el": "flag, I Ching, two, cow",
+    "elT": "tl(flag, t(l(two, stick, two), cow))"
 }, {
     "id": "1920",
     "kanji": "長",
@@ -12634,16 +12651,17 @@ var docs = [{
     "el": "long, hair, hairpin, safety-pin",
     "elT": "long"
 }, {
+    "id": "2070",
+    "kanji": "皐",
+    "kw": "lunar month",
+    "el": "white, sun, I Ching, two, ten",
+    "elT": "t(white, l(two, stick, two), ten)"
+}, {
     "id": "1921",
     "kanji": "張",
     "kw": "lengthen",
     "el": "lengthen, bow, long",
     "elT": "l(bow, long)"
-}, {
-    "id": "2072",
-    "kanji": "畷",
-    "kw": "rice-field footpath",
-    "el": "rice field, stitching, crotch, crotch4"
 }, {
     "id": "1922",
     "kanji": "帳",
@@ -12651,10 +12669,11 @@ var docs = [{
     "el": "notebook, towel, long",
     "elT": "l(towel, long)"
 }, {
-    "id": "2073",
-    "kanji": "綴",
-    "kw": "mend",
-    "el": "spike, thread, stitching, crotch, crotch4"
+    "id": "2072",
+    "kanji": "畷",
+    "kw": "rice-field footpath",
+    "el": "rice field, stitching, crotch, crotch4",
+    "elT": "l(rice field, stitching)"
 }, {
     "id": "1923",
     "kanji": "脹",
@@ -12662,11 +12681,11 @@ var docs = [{
     "el": "dilate, moon, month, flesh, part of the body, long",
     "elT": "l(moon, long)"
 }, {
-    "id": "2074",
-    "kanji": "爾",
-    "kw": "let it be",
-    "el": "spike, eight, one, hood, belt, stitching, crotch, sheaf, sheaf4, four sheaves",
-    "elT": "let it be"
+    "id": "2073",
+    "kanji": "綴",
+    "kw": "mend",
+    "el": "spike, thread, stitching, crotch, crotch4",
+    "elT": "l(thread, stitching)"
 }, {
     "id": "1924",
     "kanji": "髪",
@@ -12674,16 +12693,17 @@ var docs = [{
     "el": "hair of the head, hairstyle, hair, shape, friend",
     "elT": "t(l(long, shape), friend)"
 }, {
+    "id": "2074",
+    "kanji": "爾",
+    "kw": "let it be",
+    "el": "spike, eight, one, hood, belt, stitching, crotch, sheaf, sheaf4, four sheaves",
+    "elT": "let it be"
+}, {
     "id": "1925",
     "kanji": "展",
     "kw": "unfold",
     "el": "unfold, flag, salad, hairpin, safety-pin",
     "elT": "tl(flag, t(salad, hairpin))"
-}, {
-    "id": "2076",
-    "kanji": "鎧",
-    "kw": "suit of armor",
-    "el": "metal, gold, hill of beans, mountain, one, beans"
 }, {
     "id": "1926",
     "kanji": "喪",
@@ -12691,16 +12711,23 @@ var docs = [{
     "el": "miss, top hat, soil, dirt, ground, mouth, hairpin, safety-pin, mouth2",
     "elT": "t(ten, l(mouth, stick, mouth), hairpin)"
 }, {
-    "id": "2077",
-    "kanji": "凱",
-    "kw": "triumph",
-    "el": "hill of beans, mountain, one, beans, wind"
+    "id": "2076",
+    "kanji": "鎧",
+    "kw": "suit of armor",
+    "el": "metal, gold, hill of beans, mountain, one, beans",
+    "elT": "l(gold, t(mountain, beans))"
 }, {
     "id": "1927",
     "kanji": "巣",
     "kw": "nest",
     "el": "nest, owl, one, animal legs, fruit, rice field, brains, tree, wood",
     "elT": "t(owl, fruit)"
+}, {
+    "id": "2077",
+    "kanji": "凱",
+    "kw": "triumph",
+    "el": "hill of beans, mountain, one, beans, wind",
+    "elT": "l(t(mountain, beans), wind)"
 }, {
     "id": "1928",
     "kanji": "単",
@@ -12714,22 +12741,18 @@ var docs = [{
     "el": "war, simple, owl, one, animal legs, rice field, brains, ten, needle, fiesta",
     "elT": "l(simple, fiesta)"
 }, {
-    "id": "2080",
-    "kanji": "呑",
-    "kw": "quaff",
-    "el": "sapling, mouth",
-    "elWK": "heavenWK"
-}, {
     "id": "1930",
     "kanji": "禅",
     "kw": "Zen",
     "el": "zen, altar, simple, owl, one, animal legs, rice field, brains, ten, needle",
     "elT": "l(altar, simple)"
 }, {
-    "id": "2081",
-    "kanji": "韮",
-    "kw": "leek",
-    "el": "flowers, green onion, un-, floor"
+    "id": "2080",
+    "kanji": "呑",
+    "kw": "quaff",
+    "el": "sapling, mouth",
+    "elT": "t(heavens, mouth)",
+    "elWK": "heavenWK"
 }, {
     "id": "1931",
     "kanji": "弾",
@@ -12737,10 +12760,11 @@ var docs = [{
     "el": "bullet, bow, simple, owl, one, animal legs, rice field, brains, ten, needle",
     "elT": "l(bow, simple)"
 }, {
-    "id": "2082",
-    "kanji": "籤",
-    "kw": "lottery",
-    "el": "bamboo, assembly line, person2, person, green onion, un-, floor, fiesta"
+    "id": "2081",
+    "kanji": "韮",
+    "kw": "leek",
+    "el": "flowers, green onion, un-, floor",
+    "elT": "t(flowers, un-, floor)"
 }, {
     "id": "1932",
     "kanji": "桜",
@@ -12748,10 +12772,11 @@ var docs = [{
     "el": "cherry tree, tree, wood, owl, one, animal legs, woman",
     "elT": "l(tree, t(owl, woman))"
 }, {
-    "id": "2083",
-    "kanji": "懺",
-    "kw": "penitential",
-    "el": "state of mind, assembly line, person2, person, green onion, un-, floor, fiesta"
+    "id": "2082",
+    "kanji": "籤",
+    "kw": "lottery",
+    "el": "bamboo, assembly line, person2, person, green onion, un-, floor, fiesta",
+    "elT": "t(bamboo2, assembly line, tr(fiesta, un-))"
 }, {
     "id": "1933",
     "kanji": "獣",
@@ -12759,11 +12784,11 @@ var docs = [{
     "el": "animal, owl, rice field, brains, one, animal legs, mouth, chihuahua, dog, large, drop",
     "elT": "l(t(owl, rice field, creeper), dog)"
 }, {
-    "id": "2084",
-    "kanji": "芻",
-    "kw": "hay",
-    "el": "hay, bound up2, bound up, mountain2, mountain",
-    "elWK": "slideWK, slideWK2"
+    "id": "2083",
+    "kanji": "懺",
+    "kw": "penitential",
+    "el": "state of mind, assembly line, person2, person, green onion, un-, floor, fiesta",
+    "elT": "l(state of mind, t(assembly line, tr(fiesta, un-)))"
 }, {
     "id": "1934",
     "kanji": "脳",
@@ -12771,10 +12796,11 @@ var docs = [{
     "el": "brain, moon, month, flesh, part of the body, owl, one, animal legs, villain, sheaf, shovel",
     "elT": "l(moon, t(owl, villain))"
 }, {
-    "id": "2085",
-    "kanji": "雛",
-    "kw": "chick",
-    "el": "hay, bound up2, bound up, mountain2, mountain, turkey",
+    "id": "2084",
+    "kanji": "芻",
+    "kw": "hay",
+    "el": "hay, bound up2, bound up, mountain2, mountain",
+    "elT": "hay",
     "elWK": "slideWK, slideWK2"
 }, {
     "id": "1935",
@@ -12783,11 +12809,12 @@ var docs = [{
     "el": "trouble, Freud, state of mind, owl, one, animal legs, villain, sheaf, shovel",
     "elT": "l(state of mind, t(owl, villain))"
 }, {
-    "id": "2086",
-    "kanji": "趨",
-    "kw": "scurry",
-    "el": "run, hay, bound up2, bound up, mountain2, mountain",
-    "elWK": "slideWK"
+    "id": "2085",
+    "kanji": "雛",
+    "kw": "chick",
+    "el": "hay, bound up2, bound up, mountain2, mountain, turkey",
+    "elT": "l(hay, turkey)",
+    "elWK": "slideWK, slideWK2"
 }, {
     "id": "1936",
     "kanji": "厳",
@@ -12795,11 +12822,12 @@ var docs = [{
     "el": "stern, owl, one, animal legs, cliff, daring, spike, ear, taskmaster",
     "elT": "tl(t(owl, cliff), daring)"
 }, {
-    "id": "2087",
-    "kanji": "尤",
-    "kw": "understandably",
-    "el": "chihuahua with one human leg, crown, leg, drop, sink",
-    "elWK": "pirateWK"
+    "id": "2086",
+    "kanji": "趨",
+    "kw": "scurry",
+    "el": "run, hay, bound up2, bound up, mountain2, mountain",
+    "elT": "lb(run, hay)",
+    "elWK": "slideWK"
 }, {
     "id": "1937",
     "kanji": "鎖",
@@ -12807,17 +12835,18 @@ var docs = [{
     "el": "chain, metal, gold, small, shellfish, shell, clam, oyster, eye, animal legs, eight",
     "elT": "l(gold, t(littleB, shellfish))"
 }, {
+    "id": "2087",
+    "kanji": "尤",
+    "kw": "understandably",
+    "el": "chihuahua with one human leg, crown, leg, drop, sink",
+    "elT": "dog with one leg",
+    "elWK": "pirateWK"
+}, {
     "id": "1938",
     "kanji": "挙",
     "kw": "raise",
     "el": "raise, owl, one, animal legs, tool, hand",
     "elT": "t(owl, tool, hand)"
-}, {
-    "id": "2089",
-    "kanji": "厖",
-    "kw": "immense",
-    "el": "cliff, chihuahua with one human leg, crown, leg, shape",
-    "elWK": "pirateWK"
 }, {
     "id": "1939",
     "kanji": "誉",
@@ -12825,17 +12854,18 @@ var docs = [{
     "el": "reputation, owl, one, animal legs, tool, say, words, keitai, mouth",
     "elT": "t(owl, tool, say)"
 }, {
+    "id": "2089",
+    "kanji": "厖",
+    "kw": "immense",
+    "el": "cliff, chihuahua with one human leg, crown, leg, shape",
+    "elT": "tl(cliff, lb(dog with one leg, shape))",
+    "elWK": "pirateWK"
+}, {
     "id": "1940",
     "kanji": "猟",
     "kw": "game hunting",
     "el": "game hunting, pack of wild dogs, anemometer, owl, one, animal legs, wind, cornstalk",
     "elT": "l(pack of wild dogs, t(owl, utilizeB))"
-}, {
-    "id": "2091",
-    "kanji": "或",
-    "kw": "a certain",
-    "el": "a, a certain, mouth, floor, one, fiesta",
-    "elT": "a certain"
 }, {
     "id": "1941",
     "kanji": "鳥",
@@ -12843,17 +12873,17 @@ var docs = [{
     "el": "bird, white, dove, sun, one, tail feathers",
     "elT": "bird"
 }, {
+    "id": "2091",
+    "kanji": "或",
+    "kw": "a certain",
+    "el": "a, a certain, mouth, floor, one, fiesta",
+    "elT": "a certain"
+}, {
     "id": "1942",
     "kanji": "鳴",
     "kw": "chirp",
     "el": "chirp, mouth, bird",
     "elT": "l(mouth, bird)"
-}, {
-    "id": "2093",
-    "kanji": "兎",
-    "kw": "rabbit",
-    "el": "drop, mouth, stick, human legs",
-    "elWK": "leafWK"
 }, {
     "id": "1943",
     "kanji": "鶴",
@@ -12861,11 +12891,12 @@ var docs = [{
     "el": "crane, turkey house, bird",
     "elT": "l(pegasus, bird)"
 }, {
-    "id": "2094",
-    "kanji": "也",
-    "kw": "est",
-    "el": "scorpion, fishhook, stick",
-    "elWK": "alligatorWK"
+    "id": "2093",
+    "kanji": "兎",
+    "kw": "rabbit",
+    "el": "drop, mouth, stick, human legs",
+    "elT": "t(dropB, in, l(human legs, drop))",
+    "elWK": "leafWK"
 }, {
     "id": "1944",
     "kanji": "烏",
@@ -12873,11 +12904,12 @@ var docs = [{
     "el": "crow, drop, mouth, one, tail feathers",
     "elT": "t(drop, mouth, tr(slingshot, tail feathers))"
 }, {
-    "id": "2095",
-    "kanji": "尭",
-    "kw": "lofty",
-    "el": "strawman, ten, salad, human legs",
-    "elT": "lofty"
+    "id": "2094",
+    "kanji": "也",
+    "kw": "est",
+    "el": "scorpion, fishhook, stick",
+    "elT": "scorpion",
+    "elWK": "alligatorWK"
 }, {
     "id": "1945",
     "kanji": "蔦",
@@ -12885,10 +12917,11 @@ var docs = [{
     "el": "vine, flowers, bird",
     "elT": "t(flowers, bird)"
 }, {
-    "id": "2096",
-    "kanji": "巴",
-    "kw": "comma-design",
-    "el": "mosaic, stick"
+    "id": "2095",
+    "kanji": "尭",
+    "kw": "lofty",
+    "el": "strawman, ten, salad, human legs",
+    "elT": "lofty"
 }, {
     "id": "1946",
     "kanji": "鳩",
@@ -12896,11 +12929,11 @@ var docs = [{
     "el": "pigeon, nine, baseball, bird",
     "elT": "l(nine, bird)"
 }, {
-    "id": "2097",
-    "kanji": "甫",
-    "kw": "offspring",
-    "el": "offspring, dog tag, dogtag, arrowhead, screwdriver, utilize, utilise",
-    "elWK": "weddingWK"
+    "id": "2096",
+    "kanji": "巴",
+    "kw": "comma-design",
+    "el": "mosaic, stick",
+    "elT": "mosaic"
 }, {
     "id": "1947",
     "kanji": "鶏",
@@ -12908,11 +12941,13 @@ var docs = [{
     "el": "chicken, claw, vulture, husband, bird",
     "elT": "l(t(vulture, husband), bird)"
 }, {
-    "id": "2098",
-    "kanji": "疋",
-    "kw": "critters",
-    "el": "zoo",
-    "elWK": "coat rackWK"
+    "id": "2097",
+    "kanji": "甫",
+    "kw": "offspring",
+    "kwWK": "wedding",
+    "el": "offspring, dog tag, dogtag, arrowhead, screwdriver, utilize, utilise",
+    "elT": "dog tag",
+    "elWK": "weddingWK"
 }, {
     "id": "1948",
     "kanji": "島",
@@ -12920,10 +12955,12 @@ var docs = [{
     "el": "island, bird, mountain",
     "elT": "tr(bird, mountain)"
 }, {
-    "id": "2099",
-    "kanji": "菫",
-    "kw": "violet",
-    "el": "cabbage, flowers, one, inX, mouth, stick, king"
+    "id": "2098",
+    "kanji": "疋",
+    "kw": "critters",
+    "el": "zoo",
+    "elT": "zoo",
+    "elWK": "coat rackWK"
 }, {
     "id": "1949",
     "kanji": "暖",
@@ -12931,11 +12968,11 @@ var docs = [{
     "el": "warmth, sun, day, migrating ducks, claw, vulture, one, friend",
     "elT": "l(sun, migrating ducks)"
 }, {
-    "id": "2100",
-    "kanji": "曼",
-    "kw": "mandala",
-    "el": "mandala, sun, day, net, eye, crotch",
-    "elWK": "sunWK, netWK, stoolWK"
+    "id": "2099",
+    "kanji": "菫",
+    "kw": "violet",
+    "el": "salad, flowers, one, inX, mouth, stick, king",
+    "elT": "t(salad, in, king)"
 }, {
     "id": "1950",
     "kanji": "媛",
@@ -12943,17 +12980,18 @@ var docs = [{
     "el": "beautiful woman, woman, migrating ducks, claw, vulture, one, friend",
     "elT": "l(woman, migrating ducks)"
 }, {
+    "id": "2100",
+    "kanji": "曼",
+    "kw": "mandala",
+    "el": "mandala, sun, day, net, eye, crotch",
+    "elT": "t(sun, eyeB, crotch)",
+    "elWK": "sunWK, netWK, stoolWK"
+}, {
     "id": "1951",
     "kanji": "援",
     "kw": "abet",
     "el": "abet, finger, fingers, migrating ducks, claw, vulture, one, friend",
     "elT": "l(fingers, migrating ducks)"
-}, {
-    "id": "2102",
-    "kanji": "云",
-    "kw": "quote",
-    "el": "rising cloud",
-    "elWK": "cloudWK"
 }, {
     "id": "1952",
     "kanji": "緩",
@@ -12961,11 +12999,12 @@ var docs = [{
     "el": "slacken, thread, spiderman, migrating ducks, claw, vulture, one, friend",
     "elT": "l(thread, migrating ducks)"
 }, {
-    "id": "2103",
-    "kanji": "卜",
-    "kw": "augury",
-    "el": "magic wand, divining rod",
-    "elWK": "toeWK"
+    "id": "2102",
+    "kanji": "云",
+    "kw": "quote",
+    "el": "rising cloud",
+    "elT": "cloud",
+    "elWK": "cloudWK"
 }, {
     "id": "1953",
     "kanji": "属",
@@ -12973,11 +13012,12 @@ var docs = [{
     "el": "belong, flag, gnats, drop, insect, belt",
     "elT": "belong"
 }, {
-    "id": "2104",
-    "kanji": "喬",
-    "kw": "heaven-high",
-    "el": "angel, heavens, sapling, hood, mouth",
-    "elWK": "leafWK"
+    "id": "2103",
+    "kanji": "卜",
+    "kw": "augury",
+    "el": "magic wand, divining rod",
+    "elT": "wand",
+    "elWK": "toeWK"
 }, {
     "id": "1954",
     "kanji": "嘱",
@@ -12985,11 +13025,12 @@ var docs = [{
     "el": "entrust, mouth, belong, flag, gnats, drop, insect, belt",
     "elT": "l(mouth, belong)"
 }, {
-    "id": "2105",
-    "kanji": "莫",
-    "kw": "shalt",
-    "el": "flowers, sun, day, large",
-    "elWK": "greenhouseWK"
+    "id": "2104",
+    "kanji": "喬",
+    "kw": "heaven-high",
+    "el": "angel, heavens, sapling, hood, mouth",
+    "elT": "angel",
+    "elWK": "leafWK"
 }, {
     "id": "1955",
     "kanji": "偶",
@@ -12997,11 +13038,12 @@ var docs = [{
     "el": "accidentally, person, talking cricket, brains, insect, belt",
     "elT": "l(personB, talking cricket)"
 }, {
-    "id": "2106",
-    "kanji": "倭",
-    "kw": "Yamato",
-    "el": "person, committee, wheat, woman",
-    "elT": "l(personB, committee)"
+    "id": "2105",
+    "kanji": "莫",
+    "kw": "shalt",
+    "el": "flowers, sun, day, large",
+    "elT": "graveyard",
+    "elWK": "greenhouseWK"
 }, {
     "id": "1956",
     "kanji": "遇",
@@ -13009,11 +13051,11 @@ var docs = [{
     "el": "interview, talking cricket, brains, insect, belt, road",
     "elT": "lb(road, talking cricket)"
 }, {
-    "id": "2107",
-    "kanji": "侠",
-    "kw": "chivalry",
-    "el": "person, scissors, husband, animal horns, horns",
-    "elWK": "husbandWK, hornsWK"
+    "id": "2106",
+    "kanji": "倭",
+    "kw": "Yamato",
+    "el": "person, committee, wheat, woman",
+    "elT": "l(personB, committee)"
 }, {
     "id": "1957",
     "kanji": "愚",
@@ -13021,10 +13063,12 @@ var docs = [{
     "el": "foolish, talking cricket, brains, insect, belt, heart",
     "elT": "t(talking cricket, heart)"
 }, {
-    "id": "2108",
-    "kanji": "倦",
-    "kw": "fed up",
-    "el": "person, scroll, quarter, snake, self"
+    "id": "2107",
+    "kanji": "侠",
+    "kw": "chivalry",
+    "el": "person, scissors, husband, animal horns, horns",
+    "elT": "l(personB, scissors)",
+    "elWK": "husbandWK, hornsWK"
 }, {
     "id": "1958",
     "kanji": "隅",
@@ -13032,10 +13076,12 @@ var docs = [{
     "el": "corner, pinnacle, parthenon, acropolis, talking cricket, brains, insect, belt",
     "elT": "l(pinnacle, talking cricket)"
 }, {
-    "id": "2109",
-    "kanji": "佼",
-    "kw": "comely",
-    "el": "person, mingle, top hat, father"
+    "id": "2108",
+    "kanji": "倦",
+    "kw": "fed up",
+    "el": "person, scroll, quarter, snake, self",
+    "elPx": "littleB, bound up",
+    "elT": "l(personB, scroll)"
 }, {
     "id": "1959",
     "kanji": "逆",
@@ -13043,10 +13089,11 @@ var docs = [{
     "el": "inverted, mountain goat, horns, mountain, road",
     "elT": "lb(road, mountain goat)"
 }, {
-    "id": "2110",
-    "kanji": "俄",
-    "kw": "abrupt",
-    "el": "person, ego, hand, finger, fingers, fiesta, arrow, drop"
+    "id": "2109",
+    "kanji": "佼",
+    "kw": "comely",
+    "el": "person, mingle, top hat, father",
+    "elT": "l(personB, mingle)"
 }, {
     "id": "1960",
     "kanji": "塑",
@@ -13054,10 +13101,11 @@ var docs = [{
     "el": "model, first day of the month, mountain goat, horns, mountain, moon, month, flesh, part of the body, soil, dirt, ground",
     "elT": "t(l(mountain goat, moon), soil)"
 }, {
-    "id": "2111",
-    "kanji": "佃",
-    "kw": "work a field",
-    "el": "person, rice field, field"
+    "id": "2110",
+    "kanji": "俄",
+    "kw": "abrupt",
+    "el": "person, ego, hand, finger, fingers, fiesta, arrow, drop",
+    "elT": "l(personB, ego)"
 }, {
     "id": "2847",
     "kanji": "遡",
@@ -13065,10 +13113,11 @@ var docs = [{
     "el": "go upstream, first day of the month, mountain goat, horns, mountain, moon, month, flesh, part of the body, road",
     "elT": "lb(road, l(mountain goat, moon))"
 }, {
-    "id": "2112",
-    "kanji": "伶",
-    "kw": "minstrel",
-    "el": "person, orders"
+    "id": "2111",
+    "kanji": "佃",
+    "kw": "work a field",
+    "el": "person, rice field, field",
+    "elT": "l(personB, rice field)"
 }, {
     "id": "1961",
     "kanji": "岡",
@@ -13076,10 +13125,11 @@ var docs = [{
     "el": "mount, glass canopy, hood, mountain goat, horns, mountain",
     "elT": "mount"
 }, {
-    "id": "2113",
-    "kanji": "仔",
-    "kw": "animal offspring",
-    "el": "person, child"
+    "id": "2112",
+    "kanji": "伶",
+    "kw": "minstrel",
+    "el": "person, orders",
+    "elT": "l(personB, orders)"
 }, {
     "id": "1962",
     "kanji": "鋼",
@@ -13087,10 +13137,11 @@ var docs = [{
     "el": "steel, metal, gold, mount",
     "elT": "l(gold, mount)"
 }, {
-    "id": "2114",
-    "kanji": "仇",
-    "kw": "foe",
-    "el": "person, nine"
+    "id": "2113",
+    "kanji": "仔",
+    "kw": "animal offspring",
+    "el": "person, child",
+    "elT": "l(personB, child)"
 }, {
     "id": "1963",
     "kanji": "綱",
@@ -13098,10 +13149,11 @@ var docs = [{
     "el": "hawser, thread, spiderman, mount",
     "elT": "l(thread, mount)"
 }, {
-    "id": "2115",
-    "kanji": "伽",
-    "kw": "look after",
-    "el": "person, add, power, mouth"
+    "id": "2114",
+    "kanji": "仇",
+    "kw": "foe",
+    "el": "person, nine",
+    "elT": "l(personB, nine)"
 }, {
     "id": "1964",
     "kanji": "剛",
@@ -13109,16 +13161,17 @@ var docs = [{
     "el": "sturdy, mount, sword, sabre, saber",
     "elT": "l(mount, saber)"
 }, {
+    "id": "2115",
+    "kanji": "伽",
+    "kw": "look after",
+    "el": "person, add, power, mouth",
+    "elT": "l(personB, add)"
+}, {
     "id": "1965",
     "kanji": "缶",
     "kw": "tin can",
     "el": "tin can, reclining, lying down, noon, sign of the horse, shovel, mountain",
     "elT": "tin can"
-}, {
-    "id": "2117",
-    "kanji": "僻",
-    "kw": "biased",
-    "el": "person, ketchup, spicy, flag, mouth2, mouth"
 }, {
     "id": "1966",
     "kanji": "陶",
@@ -13126,10 +13179,11 @@ var docs = [{
     "el": "pottery, pinnacle, parthenon, acropolis, bound up, tin can, noon, sign of the horse, shovel",
     "elT": "l(pinnacle, tr(bound up, tin can))"
 }, {
-    "id": "2118",
-    "kanji": "儲",
-    "kw": "make a profit",
-    "el": "person, various, say, words, puppet, someone"
+    "id": "2117",
+    "kanji": "僻",
+    "kw": "biased",
+    "el": "person, ketchup, spicy, flag, mouth2, mouth",
+    "elT": "l(personB, ketchup)"
 }, {
     "id": "1967",
     "kanji": "揺",
@@ -13137,10 +13191,11 @@ var docs = [{
     "el": "swing, finger, fingers, condor, claw, vulture, king, mountain",
     "elT": "l(fingers, condor)"
 }, {
-    "id": "2119",
-    "kanji": "倖",
-    "kw": "bliss",
-    "el": "person, happiness"
+    "id": "2118",
+    "kanji": "儲",
+    "kw": "make a profit",
+    "el": "person, various, say, words, puppet, someone",
+    "elT": "l(personB, various)"
 }, {
     "id": "1968",
     "kanji": "謡",
@@ -13148,16 +13203,23 @@ var docs = [{
     "el": "noh chanting, say, words, keitai, mouth, condor, claw, vulture, king, mountain",
     "elT": "l(say, condor)"
 }, {
-    "id": "2120",
-    "kanji": "僑",
-    "kw": "emigrant",
-    "el": "person, angel, wheat, hood, mouth2, mouth"
+    "id": "2119",
+    "kanji": "倖",
+    "kw": "bliss",
+    "el": "person, happiness",
+    "elT": "l(personB, happiness)"
 }, {
     "id": "3030",
     "kanji": "鬱",
     "kw": "gloom",
     "el": "psychopath, gloom",
     "elT": "t(l(tree, tin can, tree), crown, l(t(o(shovel, c(sheaf, drop4)), spoon), shape))"
+}, {
+    "id": "2120",
+    "kanji": "僑",
+    "kw": "emigrant",
+    "el": "person, angel, wheat, hood, mouth2, mouth",
+    "elT": "l(personB, angel)"
 }, {
     "id": "1969",
     "kanji": "就",
@@ -13171,21 +13233,17 @@ var docs = [{
     "el": "kick, wooden leg, leg, mouth, stop, footprint, concerning, capital, tall, top hat, mouth, small, little, understandably, chihuahua with one human leg, mouth2",
     "elT": "l(leg, capital, dog with one leg)"
 }, {
-    "id": "2123",
-    "kanji": "侃",
-    "kw": "integrity",
-    "el": "person, mouth, flood"
-}, {
     "id": "1970",
     "kanji": "懇",
     "kw": "sociable",
     "el": "sociable, skunk, silver, heart",
     "elT": "t(l(skunk, silver), heart)"
 }, {
-    "id": "2124",
-    "kanji": "倶",
-    "kw": "mate",
-    "el": "person, tool, eye, one, animal legs, eight"
+    "id": "2123",
+    "kanji": "侃",
+    "kw": "integrity",
+    "el": "person, mouth, flood",
+    "elT": "l(personB, t(mouth, stream))"
 }, {
     "id": "1971",
     "kanji": "墾",
@@ -13193,10 +13251,11 @@ var docs = [{
     "el": "groundbreaking, skunk, silver, soil, dirt, ground",
     "elT": "t(l(skunk, silver), soil)"
 }, {
-    "id": "2125",
-    "kanji": "侭",
-    "kw": "as is",
-    "el": "person, exhaust, shaku-hachi, flag, stick, ice"
+    "id": "2124",
+    "kanji": "倶",
+    "kw": "mate",
+    "el": "person, tool, eye, one, animal legs, eight",
+    "elT": "l(personB, toolB)"
 }, {
     "id": "2733",
     "kanji": "貌",
@@ -13205,10 +13264,11 @@ var docs = [{
     "elPx": "see",
     "elT": "l(skunk, t(white, human legs)) // see (見) is missing a stroke here, or it's converted to a drop"
 }, {
-    "id": "2126",
-    "kanji": "佑",
-    "kw": "adjutant",
-    "el": "person, right"
+    "id": "2125",
+    "kanji": "侭",
+    "kw": "as is",
+    "el": "person, exhaust, shaku-hachi, flag, stick, ice",
+    "elT": "l(personB, exhaust)"
 }, {
     "id": "1972",
     "kanji": "免",
@@ -13216,10 +13276,11 @@ var docs = [{
     "el": "excuse, village stocks, rabbit, bound up, human legs",
     "elT": "excuse"
 }, {
-    "id": "2127",
-    "kanji": "俣",
-    "kw": "fork in a road",
-    "el": "person, mouth, heavens"
+    "id": "2126",
+    "kanji": "佑",
+    "kw": "adjutant",
+    "el": "person, right",
+    "elT": "l(personB, right)"
 }, {
     "id": "1973",
     "kanji": "逸",
@@ -13227,10 +13288,11 @@ var docs = [{
     "el": "deviate, elude, excuse, village stocks, rabbit, bound up, human legs, road",
     "elT": "lb(road, excuse)"
 }, {
-    "id": "2128",
-    "kanji": "傭",
-    "kw": "hire",
-    "el": "person, commonplace, common, cave, brush, broom, utilize"
+    "id": "2127",
+    "kanji": "俣",
+    "kw": "fork in a road",
+    "el": "person, mouth, heavens",
+    "elT": "l(personB, t(mouth, heavens))"
 }, {
     "id": "1974",
     "kanji": "晩",
@@ -13238,10 +13300,11 @@ var docs = [{
     "el": "nightfall, sun, day, excuse, village stocks, rabbit, bound up, human legs",
     "elT": "l(sun, excuse)"
 }, {
-    "id": "2129",
-    "kanji": "偲",
-    "kw": "memorial",
-    "el": "person, think, rice field, heart, drop3"
+    "id": "2128",
+    "kanji": "傭",
+    "kw": "hire",
+    "el": "person, commonplace, common, cave, brush, broom, utilize",
+    "elT": "l(personB, common)"
 }, {
     "id": "1975",
     "kanji": "勉",
@@ -13249,10 +13312,11 @@ var docs = [{
     "el": "exertion, excuse, village stocks, rabbit, bound up, human legs, power, muscle, arnold",
     "elT": "lb(excuse, power)"
 }, {
-    "id": "2130",
-    "kanji": "脩",
-    "kw": "dried meat",
-    "el": "person, walking stick, stick, taskmaster, meat, moon"
+    "id": "2129",
+    "kanji": "偲",
+    "kw": "memorial",
+    "el": "person, think, rice field, heart, drop3",
+    "elT": "l(personB, think)"
 }, {
     "id": "1976",
     "kanji": "象",
@@ -13260,10 +13324,11 @@ var docs = [{
     "el": "elephant, colour, color, bound up, sow, pig",
     "elT": "elephant"
 }, {
-    "id": "2131",
-    "kanji": "倅",
-    "kw": "my son",
-    "el": "person, graduate, top hat, assembly line, ten"
+    "id": "2130",
+    "kanji": "脩",
+    "kw": "dried meat",
+    "el": "person, walking stick, stick, taskmaster, meat, moon",
+    "elT": "l(personB, stick, t(taskmaster, moon))"
 }, {
     "id": "1977",
     "kanji": "像",
@@ -13271,10 +13336,11 @@ var docs = [{
     "el": "statue, person, elephant, colour, color, bound up, sow, pig",
     "elT": "l(personB, elephant)"
 }, {
-    "id": "2132",
-    "kanji": "做",
-    "kw": "make do",
-    "el": "person, happenstance, old, taskmaster"
+    "id": "2131",
+    "kanji": "倅",
+    "kw": "my son",
+    "el": "person, graduate, top hat, assembly line, ten",
+    "elT": "l(personB, graduate)"
 }, {
     "id": "1978",
     "kanji": "馬",
@@ -13282,17 +13348,17 @@ var docs = [{
     "el": "horse, team of horses",
     "elT": "horse"
 }, {
+    "id": "2132",
+    "kanji": "做",
+    "kw": "make do",
+    "el": "person, happenstance, old, taskmaster",
+    "elT": "l(personB, happenstance)"
+}, {
     "id": "1979",
     "kanji": "駒",
     "kw": "pony",
     "el": "pony, team of horses, phrase, bound up, mouth",
     "elT": "l(horse, phrase)"
-}, {
-    "id": "2134",
-    "kanji": "冴",
-    "kw": "sharp",
-    "kwWK": "be clear",
-    "el": "ice, tusk"
 }, {
     "id": "1980",
     "kanji": "験",
@@ -13300,10 +13366,12 @@ var docs = [{
     "el": "verification, team of horses, awl, fit, meeting, umbrella, mouth, person",
     "elT": "l(horse, awl)"
 }, {
-    "id": "2135",
-    "kanji": "凋",
-    "kw": "wilt",
-    "el": "ice, circumference"
+    "id": "2134",
+    "kanji": "冴",
+    "kw": "sharp",
+    "kwWK": "be clear",
+    "el": "ice, tusk",
+    "elT": "l(ice, tusk)"
 }, {
     "id": "1981",
     "kanji": "騎",
@@ -13311,10 +13379,11 @@ var docs = [{
     "el": "equestrian, team of horses, strange, large, St. Bernard, street, nail, spike, mouth",
     "elT": "l(horse, strange)"
 }, {
-    "id": "2136",
-    "kanji": "凌",
-    "kw": "pull through",
-    "el": "dirt, walking legs, ice"
+    "id": "2135",
+    "kanji": "凋",
+    "kw": "wilt",
+    "el": "ice, circumference",
+    "elT": "l(ice, circumference)"
 }, {
     "id": "1982",
     "kanji": "駐",
@@ -13322,16 +13391,17 @@ var docs = [{
     "el": "stop-over, parking, team of horses, candlestick, lord, drop, king, jewel, ball",
     "elT": "l(horse, lord)"
 }, {
+    "id": "2136",
+    "kanji": "凌",
+    "kw": "pull through",
+    "el": "dirt, walking legs, ice",
+    "elT": "l(ice, frostbite)"
+}, {
     "id": "1983",
     "kanji": "駆",
     "kw": "drive",
     "el": "drive, team of horses, ward, box, sheaf",
     "elT": "l(horse, ward)"
-}, {
-    "id": "2138",
-    "kanji": "凛",
-    "kw": "stately",
-    "el": "ice, -times, times, altar"
 }, {
     "id": "1984",
     "kanji": "駅",
@@ -13339,10 +13409,11 @@ var docs = [{
     "el": "station, team of horses, shaku-hachi, flag, stick",
     "elT": "l(horse, shaku)"
 }, {
-    "id": "2139",
-    "kanji": "凧",
-    "kw": "kite",
-    "el": "wind, towel"
+    "id": "2138",
+    "kanji": "凛",
+    "kw": "stately",
+    "el": "ice, -times, times, altar",
+    "elT": "l(ice, t(top hat, times, show))"
 }, {
     "id": "1985",
     "kanji": "騒",
@@ -13350,10 +13421,11 @@ var docs = [{
     "el": "boisterous, team of horses, crotch, insect",
     "elT": "l(horse, t(crotch, insect))"
 }, {
-    "id": "2140",
-    "kanji": "凪",
-    "kw": "lull",
-    "el": "wind, stop"
+    "id": "2139",
+    "kanji": "凧",
+    "kw": "kite",
+    "el": "wind, towel",
+    "elT": "o(wind, towel)"
 }, {
     "id": "1986",
     "kanji": "駄",
@@ -13361,10 +13433,11 @@ var docs = [{
     "el": "burdensome, team of horses, plump, large, St. Bernard, drop",
     "elT": "l(horse, plump)"
 }, {
-    "id": "2141",
-    "kanji": "夙",
-    "kw": "earlybird",
-    "el": "wind, bone"
+    "id": "2140",
+    "kanji": "凪",
+    "kw": "lull",
+    "el": "wind, stop",
+    "elT": "o(wind, stop)"
 }, {
     "id": "1987",
     "kanji": "驚",
@@ -13372,10 +13445,11 @@ var docs = [{
     "el": "wonder, awe, flowers, phrase, bound up, mouth, taskmaster, team of horses",
     "elT": "t(awe, horse)"
 }, {
-    "id": "2142",
-    "kanji": "鳳",
-    "kw": "phoenix",
-    "el": "wind, ceiling, bird"
+    "id": "2141",
+    "kanji": "夙",
+    "kw": "earlybird",
+    "el": "wind, bone",
+    "elT": "o(wind, bones)"
 }, {
     "id": "1988",
     "kanji": "篤",
@@ -13383,16 +13457,23 @@ var docs = [{
     "el": "fervent, bamboo, team of horses",
     "elT": "t(bamboo, horse)"
 }, {
-    "id": "2143",
-    "kanji": "劉",
-    "kw": "slaughter",
-    "el": "receipt, sword, metal, gold, sabre, saber"
+    "id": "2142",
+    "kanji": "鳳",
+    "kw": "phoenix",
+    "el": "wind, ceiling, bird",
+    "elT": "o(wind, t(ceiling, bird))"
 }, {
     "id": "2699",
     "kanji": "罵",
     "kw": "insult",
     "el": "insult, eye, cross-eyed, net, team of horses",
     "elT": "t(eyeB, horse)"
+}, {
+    "id": "2143",
+    "kanji": "劉",
+    "kw": "slaughter",
+    "el": "receipt, sword, metal, gold, sabre, saber",
+    "elT": "l(t(l(receipt, sword), gold), saber)"
 }, {
     "id": "1989",
     "kanji": "騰",
@@ -13406,16 +13487,17 @@ var docs = [{
     "el": "tiger, magic wand, wand, augury, divining rod, cliff, hook, diced, seven, human legs",
     "elT": "tl(tiger, human legs)"
 }, {
-    "id": "2146",
-    "kanji": "剃",
-    "kw": "shave",
-    "el": "younger brother, horns, dollar, bow, stick, saber"
-}, {
     "id": "1991",
     "kanji": "虜",
     "kw": "captive",
     "el": "captive, tiger, man, male, rice field, brains, power, muscle, arnold",
     "elT": "tl(tiger, man)"
+}, {
+    "id": "2146",
+    "kanji": "剃",
+    "kw": "shave",
+    "el": "younger brother, horns, dollar, bow, stick, saber",
+    "elT": "l(younger brother, saber)"
 }, {
     "id": "1992",
     "kanji": "膚",
@@ -13429,21 +13511,17 @@ var docs = [{
     "el": "void, tiger, row",
     "elT": "void"
 }, {
-    "id": "2149",
-    "kanji": "厭",
-    "kw": "despondent",
-    "el": "cliff, wagging tongue, tongue wagging, mouth, sun"
-}, {
     "id": "1994",
     "kanji": "戯",
     "kw": "frolic",
     "el": "frolic, void, tiger, row, fiesta",
     "elT": "l(void, fiesta)"
 }, {
-    "id": "2150",
-    "kanji": "雁",
-    "kw": "wild goose",
-    "el": "cliff, person, turkey"
+    "id": "2149",
+    "kanji": "厭",
+    "kw": "despondent",
+    "el": "cliff, wagging tongue, tongue wagging, mouth, sun",
+    "elT": "tl(cliff, l(t(sun, moon), dog))"
 }, {
     "id": "1995",
     "kanji": "虞",
@@ -13451,10 +13529,11 @@ var docs = [{
     "el": "uneasiness, tiger, give, mouth, chair, fishhook, straightened hook, tool",
     "elT": "tl(tiger, give)"
 }, {
-    "id": "2151",
-    "kanji": "贋",
-    "kw": "counterfeit",
-    "el": "wild goose, cliff, person, turkey, money"
+    "id": "2150",
+    "kanji": "雁",
+    "kw": "wild goose",
+    "el": "cliff, person, turkey",
+    "elT": "wild goose"
 }, {
     "id": "1996",
     "kanji": "慮",
@@ -13462,10 +13541,12 @@ var docs = [{
     "el": "prudence, tiger, think, rice field, brains, heart",
     "elT": "tl(tiger, think)"
 }, {
-    "id": "2152",
-    "kanji": "厨",
-    "kw": "kitchen",
-    "el": "cliff, beans, table, ceiling, mouth, glue"
+    "id": "2151",
+    "kanji": "贋",
+    "kw": "counterfeit",
+    "el": "wild goose, cliff, person, turkey, money",
+    "elPx": "wild goose",
+    "elT": "tl(cliff, t(l(personB, turkey), shellfish))"
 }, {
     "id": "1997",
     "kanji": "劇",
@@ -13473,10 +13554,11 @@ var docs = [{
     "el": "drama, tiger, sow, pig, sword, sabre, saber",
     "elT": "l(tl(tiger, sow), saber)"
 }, {
-    "id": "2153",
-    "kanji": "仄",
-    "kw": "insinuate",
-    "el": "cliff, person"
+    "id": "2152",
+    "kanji": "厨",
+    "kw": "kitchen",
+    "el": "cliff, beans, table, ceiling, mouth, glue",
+    "elT": "tl(cliff, l(beans, glue))"
 }, {
     "id": "1998",
     "kanji": "虐",
@@ -13484,10 +13566,11 @@ var docs = [{
     "el": "tyrannize, tiger, one, box",
     "elT": "tl(tiger, broomB)"
 }, {
-    "id": "2154",
-    "kanji": "哨",
-    "kw": "scout",
-    "el": "mouth, candle, resemblance, little, small, moon"
+    "id": "2153",
+    "kanji": "仄",
+    "kw": "insinuate",
+    "el": "cliff, person",
+    "elT": "tl(cliff, person)"
 }, {
     "id": "1999",
     "kanji": "鹿",
@@ -13495,16 +13578,17 @@ var docs = [{
     "el": "deer, cave, antlers, compare, spoon, sitting on the ground, spoon2, sitting on the ground2",
     "elT": "deerB"
 }, {
+    "id": "2154",
+    "kanji": "哨",
+    "kw": "scout",
+    "el": "mouth, candle, resemblance, little, small, moon",
+    "elT": "l(mouth, t(littleB, moon))"
+}, {
     "id": "2839",
     "kanji": "麓",
     "kw": "foot of a mountain",
     "el": "foot of a mountain, foothills, grove, tree2, tree, wood2, wood, deer, cave, antlers, compare, spoon, sitting on the ground, spoon2, sitting on the ground2",
     "elT": "t(grove, deerB)"
-}, {
-    "id": "2156",
-    "kanji": "咎",
-    "kw": "reprehend",
-    "el": "walking legs, person, mouth"
 }, {
     "id": "2000",
     "kanji": "薦",
@@ -13512,10 +13596,11 @@ var docs = [{
     "el": "recommend, flowers, deer, cave, antlers, slingshot, catapult, tail feathers",
     "elT": "t(flowers, tl(deer, tr(slingshot, tail feathers)))"
 }, {
-    "id": "2157",
-    "kanji": "囁",
-    "kw": "whisper",
-    "el": "mouth, three ears, ear3, ear"
+    "id": "2156",
+    "kanji": "咎",
+    "kw": "reprehend",
+    "el": "walking legs, person, mouth",
+    "elT": "t(lb(walking legs, person), mouth)"
 }, {
     "id": "2001",
     "kanji": "慶",
@@ -13524,10 +13609,11 @@ var docs = [{
     "elT": "tl(deer, t(crown, heart, crotch))",
     "elWK": "barbWK"
 }, {
-    "id": "2158",
-    "kanji": "喋",
-    "kw": "chatter",
-    "el": "mouth, generation, tree"
+    "id": "2157",
+    "kanji": "囁",
+    "kw": "whisper",
+    "el": "mouth, three ears, ear3, ear",
+    "elT": "l(mouth, t(ear, ear2))"
 }, {
     "id": "2002",
     "kanji": "麗",
@@ -13535,16 +13621,17 @@ var docs = [{
     "el": "lovely, one, ceiling, mediocre, deer, cave, antlers, compare, ceiling2, mediocre2, compare2",
     "elT": "t(l(mediocre, mediocre), deerB)"
 }, {
+    "id": "2158",
+    "kanji": "喋",
+    "kw": "chatter",
+    "el": "mouth, generation, tree",
+    "elT": "l(mouth, generation)"
+}, {
     "id": "2003",
     "kanji": "熊",
     "kw": "bear",
     "el": "bear, ability, elbow, moon, month, flesh, part of the body, spoon, sitting on the ground, oven-fire, drop4, barbecue, spoon2, sitting on the ground2",
     "elT": "t(ability, oven-fire)"
-}, {
-    "id": "2160",
-    "kanji": "嘩",
-    "kw": "quarrel",
-    "el": "mouth, splendor, splendid, flowers, silage, ten"
 }, {
     "id": "2004",
     "kanji": "能",
@@ -13552,10 +13639,11 @@ var docs = [{
     "el": "ability, elbow, moon, month, flesh, part of the body, spoon, sitting on the ground, spoon2, sitting on the ground2",
     "elT": "ability"
 }, {
-    "id": "2161",
-    "kanji": "噂",
-    "kw": "gossip",
-    "el": "mouth, revered, horns, alcohol, glue"
+    "id": "2160",
+    "kanji": "嘩",
+    "kw": "quarrel",
+    "el": "mouth, splendor, splendid, flowers, silage, ten",
+    "elT": "l(mouth, splendor)"
 }, {
     "id": "2005",
     "kanji": "態",
@@ -13563,10 +13651,11 @@ var docs = [{
     "el": "attitude, ability, elbow, moon, month, flesh, part of the body, spoon, sitting on the ground, heart, spoon2, sitting on the ground2",
     "elT": "t(ability, heart)"
 }, {
-    "id": "2162",
-    "kanji": "咳",
-    "kw": "cough",
-    "el": "mouth, acorn, top hat, sign of the hog"
+    "id": "2161",
+    "kanji": "噂",
+    "kw": "gossip",
+    "el": "mouth, revered, horns, alcohol, glue",
+    "elT": "l(mouth, revered)"
 }, {
     "id": "2006",
     "kanji": "寅",
@@ -13574,10 +13663,11 @@ var docs = [{
     "el": "sign of the tiger, house, caterpillar, one, ceiling, sprout, shoot, animal legs, eight",
     "elT": "sign of the tiger"
 }, {
-    "id": "2163",
-    "kanji": "喧",
-    "kw": "clamor",
-    "el": "mouth, proclaim, house, ceiling, nightbreak"
+    "id": "2162",
+    "kanji": "咳",
+    "kw": "cough",
+    "el": "mouth, acorn, top hat, sign of the hog",
+    "elT": "l(mouth, acorn)"
 }, {
     "id": "2007",
     "kanji": "演",
@@ -13585,6 +13675,12 @@ var docs = [{
     "el": "performance, water, water droplets, water pistol, sign of the tiger, house, caterpillar, one, ceiling, sprout, shoot, animal legs, eight",
     "elT": "l(water, sign of the tiger)",
     "elWK": "leafWK"
+}, {
+    "id": "2163",
+    "kanji": "喧",
+    "kw": "clamor",
+    "el": "mouth, proclaim, house, ceiling, nightbreak",
+    "elT": "l(mouth, proclaim)"
 }, {
     "id": "2008",
     "kanji": "辰",
@@ -13598,21 +13694,17 @@ var docs = [{
     "el": "embarrass, sign of the dragon, cliff, two, hairpin, safety-pin, glue",
     "elT": "t(sign of the dragon, glue)"
 }, {
-    "id": "2166",
-    "kanji": "叩",
-    "kw": "bash",
-    "el": "mouth, stamp"
-}, {
     "id": "2010",
     "kanji": "震",
     "kw": "quake",
     "el": "quake, rain, weather, sign of the dragon, cliff, two, hairpin, safety-pin",
     "elT": "t(rain, sign of the dragon)"
 }, {
-    "id": "2167",
-    "kanji": "嘘",
-    "kw": "fib",
-    "el": "mouth, void, tiger, row"
+    "id": "2166",
+    "kanji": "叩",
+    "kw": "bash",
+    "el": "mouth, stamp",
+    "elT": "l(mouth, stamp)"
 }, {
     "id": "2011",
     "kanji": "振",
@@ -13620,10 +13712,11 @@ var docs = [{
     "el": "shake, finger, fingers, sign of the dragon, cliff, two, hairpin, safety-pin",
     "elT": "l(fingers, sign of the dragon)"
 }, {
-    "id": "2168",
-    "kanji": "啄",
-    "kw": "peck at",
-    "el": "mouth, sow"
+    "id": "2167",
+    "kanji": "嘘",
+    "kw": "fib",
+    "el": "mouth, void, tiger, row",
+    "elT": "l(mouth, void)"
 }, {
     "id": "2012",
     "kanji": "娠",
@@ -13631,17 +13724,17 @@ var docs = [{
     "el": "with child, woman, sign of the dragon, cliff, two, hairpin, safety-pin",
     "elT": "l(woman, sign of the dragon)"
 }, {
+    "id": "2168",
+    "kanji": "啄",
+    "kw": "peck at",
+    "el": "mouth, sow",
+    "elT": "l(mouth, sow)"
+}, {
     "id": "2013",
     "kanji": "唇",
     "kw": "lips",
     "el": "lips, sign of the dragon, cliff, two, hairpin, safety-pin, mouth",
     "elT": "t(sign of the dragon, mouth)"
-}, {
-    "id": "2170",
-    "kanji": "吠",
-    "kw": "barking",
-    "el": "mouth, chihuahua",
-    "elT": "l(mouth, dog)"
 }, {
     "id": "2014",
     "kanji": "農",
@@ -13649,10 +13742,11 @@ var docs = [{
     "el": "agriculture, bend, sign of the dragon, cliff, two, hairpin, safety-pin",
     "elT": "agriculture"
 }, {
-    "id": "2171",
-    "kanji": "吊",
-    "kw": "dangle",
-    "el": "mouth, towel"
+    "id": "2170",
+    "kanji": "吠",
+    "kw": "barking",
+    "el": "mouth, chihuahua",
+    "elT": "l(mouth, dog)"
 }, {
     "id": "2015",
     "kanji": "濃",
@@ -13660,10 +13754,11 @@ var docs = [{
     "el": "concentrated, water, water droplets, water pistol, agriculture, bend, sign of the dragon, cliff, two, hairpin, safety-pin",
     "elT": "l(water, agriculture)"
 }, {
-    "id": "2172",
-    "kanji": "噛",
-    "kw": "chew",
-    "el": "mouth, teeth"
+    "id": "2171",
+    "kanji": "吊",
+    "kw": "dangle",
+    "el": "mouth, towel",
+    "elT": "t(mouth, towel)"
 }, {
     "id": "2016",
     "kanji": "送",
@@ -13671,11 +13766,11 @@ var docs = [{
     "el": "escort, send off, golden calf, horns, heavens, road",
     "elT": "lb(road, golden calf)"
 }, {
-    "id": "2173",
-    "kanji": "叶",
-    "kw": "within my ability",
-    "kwWK": "grant",
-    "el": "mouth, ten, needle"
+    "id": "2172",
+    "kanji": "噛",
+    "kw": "chew",
+    "el": "mouth, teeth",
+    "elT": "l(mouth, tooth)"
 }, {
     "id": "2017",
     "kanji": "関",
@@ -13683,11 +13778,12 @@ var docs = [{
     "el": "connection, gates, golden calf, horns, heavens",
     "elT": "o(gates, golden calf)"
 }, {
-    "id": "2174",
-    "kanji": "吻",
-    "kw": "sides of the mouth",
-    "el": "sides of the mouth, mouth, knot",
-    "elP": "mouth, knot"
+    "id": "2173",
+    "kanji": "叶",
+    "kw": "within my ability",
+    "kwWK": "grant",
+    "el": "mouth, ten, needle",
+    "elT": "l(mouth, ten)"
 }, {
     "id": "2018",
     "kanji": "咲",
@@ -13695,10 +13791,12 @@ var docs = [{
     "el": "blossom, mouth, golden calf, horns, heavens",
     "elT": "l(mouth, golden calf)"
 }, {
-    "id": "2175",
-    "kanji": "吃",
-    "kw": "stammer",
-    "el": "mouth, beg, reclining, lying down, fishhook, fish guts"
+    "id": "2174",
+    "kanji": "吻",
+    "kw": "sides of the mouth",
+    "el": "sides of the mouth, mouth, knot",
+    "elP": "mouth, knot",
+    "elT": "l(mouth, not)"
 }, {
     "id": "2019",
     "kanji": "鬼",
@@ -13706,10 +13804,11 @@ var docs = [{
     "el": "ghost, oni, drop, brains, rice field, human legs, elbow",
     "elT": "ghost"
 }, {
-    "id": "2176",
-    "kanji": "噺",
-    "kw": "spin a tale",
-    "el": "mouth, new, red pepper, axe"
+    "id": "2175",
+    "kanji": "吃",
+    "kw": "stammer",
+    "el": "mouth, beg, reclining, lying down, fishhook, fish guts",
+    "elT": "l(mouth, beg)"
 }, {
     "id": "2020",
     "kanji": "醜",
@@ -13717,16 +13816,24 @@ var docs = [{
     "el": "ugly, whiskey bottle, ghost, oni, drop, brains, rice field, human legs, elbow",
     "elT": "l(sign of the bird, ghost)"
 }, {
-    "id": "2177",
-    "kanji": "噌",
-    "kw": "miso",
-    "el": "mouth, increase, horns, rice field, sun"
+    "id": "2176",
+    "kanji": "噺",
+    "kw": "spin a tale",
+    "el": "mouth, new, red pepper, axe",
+    "elT": "l(mouth, new)"
 }, {
     "id": "2021",
     "kanji": "魂",
     "kw": "soul",
     "el": "soul, rising cloud, two, elbow, wall, ghost, oni, drop, brains, rice field, human legs, elbow, elbow2",
     "elT": "l(cloud, ghost)"
+}, {
+    "id": "2177",
+    "kanji": "噌",
+    "kw": "miso",
+    "el": "mouth, increase, horns, rice field, sun",
+    "elPx": "eightB",
+    "elT": "l(mouth, formerly)"
 }, {
     "id": "2022",
     "kanji": "魔",
@@ -13740,22 +13847,17 @@ var docs = [{
     "el": "fascination, ghost, oni, drop, brains, rice field, human legs, elbow, not yet, one, tree, wood",
     "elT": "l(ghost, not yet)"
 }, {
-    "id": "2180",
-    "kanji": "邑",
-    "kw": "city walls",
-    "el": "mouth, mosaic"
-}, {
     "id": "2024",
     "kanji": "塊",
     "kw": "clod",
     "el": "clod, soil, dirt, ground, ghost, oni, drop, brains, rice field, human legs, elbow",
     "elT": "l(soil, ghost)"
 }, {
-    "id": "2181",
-    "kanji": "呆",
-    "kw": "dumbfounded",
-    "el": "mouth, tree",
-    "elT": "t(mouth, tree)"
+    "id": "2180",
+    "kanji": "邑",
+    "kw": "city walls",
+    "el": "mouth, mosaic",
+    "elT": "t(mouth, mosaic)"
 }, {
     "id": "2025",
     "kanji": "襲",
@@ -13763,10 +13865,11 @@ var docs = [{
     "el": "attack, old dragon, vase, stand up, moon, month, flesh, part of the body, slingshot, catapult, snake, self, three, cloth, clothes, clothing, garment, dragon*",
     "elT": "t(l(t(stand up, moon), t(slingshot, broomB, fishhook)), garment)"
 }, {
-    "id": "2182",
-    "kanji": "喰",
-    "kw": "ingest",
-    "el": "mouth, eat"
+    "id": "2181",
+    "kanji": "呆",
+    "kw": "dumbfounded",
+    "el": "mouth, tree",
+    "elT": "t(mouth, tree)"
 }, {
     "id": "2026",
     "kanji": "嚇",
@@ -13774,10 +13877,11 @@ var docs = [{
     "el": "menacing, upbraid, mouth, incandescent, red, red2",
     "elT": "l(mouth, red, red)"
 }, {
-    "id": "2183",
-    "kanji": "埴",
-    "kw": "clay",
-    "el": "soil, dirt, straightaway, needle, eye, straightened hook"
+    "id": "2182",
+    "kanji": "喰",
+    "kw": "ingest",
+    "el": "mouth, eat",
+    "elT": "l(mouth, eat)"
 }, {
     "id": "2027",
     "kanji": "朕",
@@ -13785,10 +13889,11 @@ var docs = [{
     "el": "majestic plural, moon, month, flesh, part of the body, golden calf, horns, heavens",
     "elT": "l(moon, golden calf)"
 }, {
-    "id": "2184",
-    "kanji": "坤",
-    "kw": "authochthonous",
-    "el": "soil, dirt, monkey, rice field, stick"
+    "id": "2183",
+    "kanji": "埴",
+    "kw": "clay",
+    "el": "soil, dirt, straightaway, needle, eye, straightened hook",
+    "elT": "l(soil, straightaway)"
 }, {
     "id": "2028",
     "kanji": "雰",
@@ -13796,16 +13901,17 @@ var docs = [{
     "el": "atmosphere, rain, weather, part",
     "elT": "t(rain, part)"
 }, {
+    "id": "2184",
+    "kanji": "坤",
+    "kw": "authochthonous",
+    "el": "soil, dirt, monkey, rice field, stick",
+    "elT": "l(soil, speaketh)"
+}, {
     "id": "2029",
     "kanji": "箇",
     "kw": "item",
     "el": "item, bamboo, harden, pent in, old, tombstone, gravestone, church, ten, needle, mouth",
     "elT": "t(bamboo, harden)"
-}, {
-    "id": "2186",
-    "kanji": "壕",
-    "kw": "dugout",
-    "el": "soil, dirt, overpowering, top hat, mouth, crown, sow"
 }, {
     "id": "2030",
     "kanji": "錬",
@@ -13813,10 +13919,11 @@ var docs = [{
     "el": "tempering, metal, gold, east, tree, wood, sun, day, rice field",
     "elT": "l(gold, east)"
 }, {
-    "id": "2187",
-    "kanji": "垢",
-    "kw": "blemish",
-    "el": "soil, dirt, empress, cliff, ceiling, mouth"
+    "id": "2186",
+    "kanji": "壕",
+    "kw": "dugout",
+    "el": "soil, dirt, overpowering, top hat, mouth, crown, sow",
+    "elT": "l(soil, overpowering)"
 }, {
     "id": "2031",
     "kanji": "遵",
@@ -13824,10 +13931,11 @@ var docs = [{
     "el": "abide by, revered, Mother Teresa, chieftain, Molotov cocktail, animal horns, horns, whiskey bottle, glue, road",
     "elT": "lb(road, revered)"
 }, {
-    "id": "2188",
-    "kanji": "坦",
-    "kw": "flat",
-    "el": "soil, dirt, nightbreak, sun, day, floor"
+    "id": "2187",
+    "kanji": "垢",
+    "kw": "blemish",
+    "el": "soil, dirt, empress, cliff, ceiling, mouth",
+    "elT": "l(soil, empress)"
 }, {
     "id": "2032",
     "kanji": "罷",
@@ -13835,10 +13943,11 @@ var docs = [{
     "el": "quit, eye, cross-eyed, net, ability, elbow, moon, month, flesh, part of the body, spoon, sitting on the ground, spoon2, sitting on the ground2",
     "elT": "t(eyeB, ability)"
 }, {
-    "id": "2189",
-    "kanji": "埠",
-    "kw": "wharf",
-    "el": "soil, dirt, large city, maestro, needle"
+    "id": "2188",
+    "kanji": "坦",
+    "kw": "flat",
+    "el": "soil, dirt, nightbreak, sun, day, floor",
+    "elT": "l(soil, nightbreak)"
 }, {
     "id": "2033",
     "kanji": "屯",
@@ -13846,16 +13955,17 @@ var docs = [{
     "el": "barracks, earthworm, drop, shovel, fishhook",
     "elT": "earthworm"
 }, {
+    "id": "2189",
+    "kanji": "埠",
+    "kw": "wharf",
+    "el": "soil, dirt, large city, maestro, needle",
+    "elT": "l(soil, large hill)"
+}, {
     "id": "2034",
     "kanji": "且",
     "kw": "moreover",
     "el": "moreover, shelf, my bookshelves",
     "elT": "shelf"
-}, {
-    "id": "2191",
-    "kanji": "堰",
-    "kw": "dam",
-    "el": "soil, dirt, box, sun, day, woman"
 }, {
     "id": "2035",
     "kanji": "藻",
@@ -13863,10 +13973,11 @@ var docs = [{
     "el": "seaweed, flowers, water, water droplets, water pistol, furniture, wooden goods, goods, mouth, tree, wood, mouth3",
     "elT": "t(flowers, l(water, furniture))"
 }, {
-    "id": "2192",
-    "kanji": "堵",
-    "kw": "railing",
-    "el": "soil, dirt, puppet, someone"
+    "id": "2191",
+    "kanji": "堰",
+    "kw": "dam",
+    "el": "soil, dirt, box, sun, day, woman",
+    "elT": "l(soil, tl(box, t(sun, woman)))"
 }, {
     "id": "2036",
     "kanji": "隷",
@@ -13874,11 +13985,11 @@ var docs = [{
     "el": "slave, samurai, altar, show, two, small, sieve, rake, grains of rice",
     "elT": "l(t(samurai, altar), t(rake, waterC))"
 }, {
-    "id": "2193",
-    "kanji": "嬰",
-    "kw": "suckling infant",
-    "el": "suckling infant, suckling babe, shellfish, shell, two shells, shell2, shellfish2, woman",
-    "elT": "suckling infant"
+    "id": "2192",
+    "kanji": "堵",
+    "kw": "railing",
+    "el": "soil, dirt, puppet, someone",
+    "elT": "l(soil, someone)"
 }, {
     "id": "2037",
     "kanji": "癒",
@@ -13886,16 +13997,23 @@ var docs = [{
     "el": "healing, sickness, hospital, in the nick of time, meeting of butchers, butchers, meeting, umbrella, moon, month, flesh, part of the body, sword, sabre, saber, heart",
     "elT": "tl(sickness, t(meeting of butchers, heart))"
 }, {
-    "id": "2194",
-    "kanji": "姦",
-    "kw": "violate",
-    "el": "three women, woman3, woman"
+    "id": "2193",
+    "kanji": "嬰",
+    "kw": "suckling infant",
+    "el": "suckling infant, suckling babe, shellfish, shell, two shells, shell2, shellfish2, woman",
+    "elT": "suckling infant"
 }, {
     "id": "2075",
     "kanji": "璽",
     "kw": "imperial seal",
     "el": "imperial seal, let it be, noren, one, ceiling, eight, towel, stitching, crotch, sheaf, patchwork quilt, jewel, earring, drop",
     "elT": "t(let it be, jewel)"
+}, {
+    "id": "2194",
+    "kanji": "姦",
+    "kw": "violate",
+    "el": "three women, woman3, woman",
+    "elT": "t(woman, woman2)"
 }, {
     "id": "2039",
     "kanji": "潟",
@@ -13904,21 +14022,17 @@ var docs = [{
     "elPx": "tail feathers",
     "elT": "l(water, t(mortar, tr(bound up, oven-fire)))"
 }, {
-    "id": "2196",
-    "kanji": "婢",
-    "kw": "handmaiden",
-    "el": "woman, lowly, drop, rice field, needle, hook"
-}, {
     "id": "2038",
     "kanji": "丹",
     "kw": "cinnabar",
     "el": "rust colored, cinnabar, ship´s funnel",
     "elT": "cinnabar"
 }, {
-    "id": "2197",
-    "kanji": "婉",
-    "kw": "well finished",
-    "el": "woman, address, house, mailbox, evening, fingerprint"
+    "id": "2196",
+    "kanji": "婢",
+    "kw": "handmaiden",
+    "el": "woman, lowly, drop, rice field, needle, hook",
+    "elT": "l(woman, lowly)"
 }, {
     "id": "2040",
     "kanji": "丑",
@@ -13926,10 +14040,11 @@ var docs = [{
     "el": "sign of the cow, dagger, two",
     "elT": "sign of the cow"
 }, {
-    "id": "2198",
-    "kanji": "娼",
-    "kw": "harlot",
-    "el": "woman, prosperous, sun2, sun"
+    "id": "2197",
+    "kanji": "婉",
+    "kw": "well finished",
+    "el": "woman, address, house, mailbox, evening, fingerprint",
+    "elT": "l(woman, address)"
 }, {
     "id": "3029",
     "kanji": "羞",
@@ -13937,10 +14052,11 @@ var docs = [{
     "el": "sheep, horns, king, stick, celery, five, salad, flowers",
     "elT": "t(sheep, l(dropB, sign of the cow))"
 }, {
-    "id": "2199",
-    "kanji": "妓",
-    "kw": "courtesan",
-    "el": "woman, branch"
+    "id": "2198",
+    "kanji": "娼",
+    "kw": "harlot",
+    "el": "woman, prosperous, sun2, sun",
+    "elT": "l(woman, prosperous)"
 }, {
     "id": "2041",
     "kanji": "卯",
@@ -13948,16 +14064,23 @@ var docs = [{
     "el": "sign of the hare, blown eggs, egg, receipt, stamp",
     "elT": "sign of the hare"
 }, {
-    "id": "2200",
-    "kanji": "娃",
-    "kw": "fair",
-    "el": "woman, ivy, soil, dirt, ground, soil2, dirt2, ground2"
+    "id": "2199",
+    "kanji": "妓",
+    "kw": "courtesan",
+    "el": "woman, branch",
+    "elT": "l(woman, branch)"
 }, {
     "id": "2042",
     "kanji": "巳",
     "kw": "sign of the snake",
     "el": "sign of the snake, mosaic, mosaic with bit missing",
     "elT": "sign of the snake"
+}, {
+    "id": "2200",
+    "kanji": "娃",
+    "kw": "fair",
+    "el": "woman, ivy, soil, dirt, ground, soil2, dirt2, ground2",
+    "elT": "l(woman, square jewel)"
 }, {
     "id": "2201",
     "kanji": "姪",
@@ -14089,7 +14212,7 @@ var docs = [{
     "kanji": "崚",
     "kw": "rugged mountains",
     "el": "mountain, rice seedlings, walking legs",
-    "elT": "l(mountain, t(rice seedling, walking legs))"
+    "elT": "l(mountain, frostbite)"
 }, {
     "id": "2226",
     "kanji": "峨",
@@ -14742,7 +14865,7 @@ var docs = [{
     "kanji": "藝",
     "kw": "technique [old]",
     "el": "flowers, rice-seedlings, human legs, soil2, soil, dirt2, dirt, fat man, round, circle, musashimaru, nine, baseball, rising cloud, two, elbow, wall",
-    "elT": "t(flowers, l(t(rice seedling, soil), round), cloud)"
+    "elT": "t(flowers, l(land, round), cloud)"
 }, {
     "id": "2353",
     "kanji": "薙",
@@ -16071,7 +16194,7 @@ var docs = [{
     "kanji": "稜",
     "kw": "imperial authority",
     "el": "wheat, rice seedlings, soil, dirt, ground, human legs, walking legs",
-    "elT": "l(wheat, t(rice seedling, walking legs))"
+    "elT": "l(wheat, frostbite)"
 }, {
     "id": "2611",
     "kanji": "稀",
@@ -16397,7 +16520,7 @@ var docs = [{
     "kanji": "綾",
     "kw": "damask",
     "el": "thread, spiderman, rice seedlings, soil, dirt, ground, human legs, soil2, dirt2, ground2, walking legs",
-    "elT": "l(thread, t(rice seedling, walking legs))"
+    "elT": "l(thread, frostbite)"
 }, {
     "id": "2669",
     "kanji": "絃",

@@ -513,6 +513,27 @@ const elementsDict =
       "release"
     ]
   },
+  "happenstance": {
+    "elements": [
+      "old",
+      "taskmaster"
+    ],
+    "kanji": "故",
+    "subElements": [
+      "old",
+      "taskmaster",
+      "ten",
+      "mouth",
+      "tombstone",
+      "gravestone",
+      "church",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "circumstance"
+    ]
+  },
   "leg": {
     "elements": [
       "mouth",
@@ -734,9 +755,12 @@ const elementsDict =
       "tree",
       "horns",
       "wood",
-      "animal horns"
+      "animal horns",
+      "teeth"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "teeth"
+    ],
     "wkNames": [
       "tooth"
     ]
@@ -1808,9 +1832,12 @@ const elementsDict =
       "rice field",
       "stick",
       "brains",
-      "needle"
+      "needle",
+      "splendid"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "splendid"
+    ],
     "wkNames": [
       "showy"
     ]
@@ -2320,9 +2347,12 @@ const elementsDict =
       "nine",
       "drop",
       "baseball",
-      "drops"
+      "drops",
+      "fat man"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "fat man"
+    ],
     "wkNames": [
       "round"
     ],
@@ -2402,6 +2432,27 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "see"
+    ]
+  },
+  "toolB": {
+    "elements": [
+      "eye",
+      "tool"
+    ],
+    "kanji": "具",
+    "subElements": [
+      "eye",
+      "tool",
+      "ceiling",
+      "animal legs",
+      "one",
+      "tool"
+    ],
+    "synonyms": [
+      "tool"
+    ],
+    "wkNames": [
+      "tool"
     ]
   },
   "tool": {
@@ -2652,7 +2703,8 @@ const elementsDict =
       "molotov cocktail"
     ],
     "wkNames": [
-      "molotov cocktail"
+      "molotov cocktail",
+      "alcohol"
     ]
   },
   "revered": {
@@ -2849,6 +2901,7 @@ const elementsDict =
       "drop",
       "ceiling",
       "large",
+      "heaven",
       "drops",
       "one",
       "St. Bernard"
@@ -3104,6 +3157,39 @@ const elementsDict =
       "task"
     ]
   },
+  "common": {
+    "elements": [
+      "cave",
+      "rake",
+      "utilize"
+    ],
+    "kanji": "庸",
+    "subElements": [
+      "cave",
+      "rake",
+      "utilize",
+      "dropB",
+      "broom",
+      "stick",
+      "moon",
+      "month",
+      "flesh",
+      "part of the body",
+      "utilise",
+      "screwdriver",
+      "drop",
+      "drops",
+      "commonplace",
+      "comfortable"
+    ],
+    "synonyms": [
+      "commonplace",
+      "comfortable"
+    ],
+    "wkNames": [
+      "common"
+    ]
+  },
   "arrowhead": {
     "elements": [],
     "kanji": "代 right part",
@@ -3356,10 +3442,12 @@ const elementsDict =
       "arrowhead",
       "screwdriver",
       "arrow",
-      "dogtag"
+      "dogtag",
+      "offspring"
     ],
     "synonyms": [
-      "dogtag"
+      "dogtag",
+      "offspring"
     ],
     "wkNames": [
       "wedding"
@@ -3379,7 +3467,8 @@ const elementsDict =
       "arrowhead",
       "screwdriver",
       "arrow",
-      "dogtag"
+      "dogtag",
+      "offspring"
     ],
     "synonyms": [],
     "wkNames": [
@@ -3985,7 +4074,7 @@ const elementsDict =
   },
   "concave": {
     "elements": [],
-    "kanji": "凸",
+    "kanji": "凹",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
@@ -4136,7 +4225,8 @@ const elementsDict =
       "stand",
       "vase",
       "nine",
-      "baseball"
+      "baseball",
+      "fat man"
     ],
     "synonyms": [],
     "wkNames": [
@@ -5042,20 +5132,22 @@ const elementsDict =
   },
   "family name": {
     "elements": [
-      "drag",
+      "dragging",
       "arrow",
       "fishhook"
     ],
     "kanji": "氏",
     "subElements": [
-      "drag",
+      "dragging",
       "arrow",
       "fishhook",
-      "speaketh",
-      "sheaf",
+      "drag",
+      "cliff",
       "hook",
       "stick",
       "fishguts",
+      "speaketh",
+      "sheaf",
       "armor",
       "monkey",
       "rice field",
@@ -5081,14 +5173,16 @@ const elementsDict =
       "mouth",
       "drop",
       "drops",
-      "drag",
+      "dragging",
       "arrow",
       "fishhook",
-      "speaketh",
-      "sheaf",
+      "drag",
+      "cliff",
       "hook",
       "stick",
       "fishguts",
+      "speaketh",
+      "sheaf",
       "armor",
       "monkey",
       "rice field",
@@ -5168,6 +5262,28 @@ const elementsDict =
     ],
     "comment": "fishhook a bit vague/different here: shorter vertical stroke, longer horizontal stroke"
   },
+  "encompassing": {
+    "elements": [
+      "large",
+      "eel"
+    ],
+    "kanji": "奄",
+    "subElements": [
+      "large",
+      "eel",
+      "St. Bernard",
+      "rice field",
+      "fishhook",
+      "brains",
+      "hook",
+      "stick",
+      "fishguts"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "encompassing"
+    ]
+  },
   "dragon": {
     "elements": [
       "stand up",
@@ -5240,7 +5356,9 @@ const elementsDict =
     "subElements": [
       "claw",
       "elbow",
+      "dragging",
       "drag",
+      "cliff",
       "speaketh",
       "sheaf",
       "stick",
@@ -5267,7 +5385,9 @@ const elementsDict =
       "melon",
       "claw",
       "elbow",
+      "dragging",
       "drag",
+      "cliff",
       "speaketh",
       "sheaf",
       "stick",
@@ -5693,6 +5813,7 @@ const elementsDict =
       "St. Bernard",
       "wood",
       "ceiling",
+      "heaven",
       "one"
     ],
     "synonyms": [],
@@ -7754,33 +7875,64 @@ const elementsDict =
     ],
     "comment": "cursive version of 厂 cliff. Note that RTK often just calls this drag, but that's a conflict with 曳 drag, which also doesn't have another name, so we'll call this dragging internally."
   },
+  "empress": {
+    "elements": [
+      "dragging",
+      "creeper"
+    ],
+    "kanji": "后",
+    "subElements": [
+      "dragging",
+      "creeper",
+      "drag",
+      "cliff",
+      "ceiling",
+      "mouth",
+      "speaketh",
+      "sheaf",
+      "one",
+      "stick",
+      "armor",
+      "monkey",
+      "rice field",
+      "armour",
+      "roots",
+      "brains"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "empress"
+    ]
+  },
   "shield": {
     "elements": [
-      "drag",
+      "dragging",
       "ten",
       "eye"
     ],
     "kanji": "盾",
     "subElements": [
-      "drag",
+      "dragging",
       "ten",
       "eye",
       "oneself",
-      "speaketh",
-      "sheaf",
+      "drag",
+      "cliff",
       "needle",
       "drop",
       "nose",
-      "stick",
-      "armor",
-      "monkey",
+      "speaketh",
+      "sheaf",
       "drops",
       "rice field",
       "two hands",
-      "armour",
-      "roots",
+      "stick",
+      "armor",
+      "monkey",
       "brains",
       "flowers",
+      "armour",
+      "roots",
       "flower"
     ],
     "synonyms": [],
@@ -8864,9 +9016,12 @@ const elementsDict =
     "subElements": [
       "ceiling",
       "evening",
-      "one"
+      "one",
+      "bone"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bone"
+    ],
     "wkNames": [
       "yakuza"
     ]
@@ -8883,6 +9038,7 @@ const elementsDict =
       "ceiling",
       "evening",
       "one",
+      "bone",
       "sabre",
       "sword",
       "dagger"
@@ -8905,7 +9061,8 @@ const elementsDict =
       "spoon",
       "bones",
       "one",
-      "sitting on the ground"
+      "sitting on the ground",
+      "bone"
     ],
     "synonyms": [],
     "wkNames": [
@@ -9259,6 +9416,7 @@ const elementsDict =
       "drop",
       "ceiling",
       "large",
+      "heaven",
       "drops",
       "St. Bernard"
     ],
@@ -9614,6 +9772,35 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "in season"
+    ]
+  },
+  "hay": {
+    "elements": [
+      "bound up",
+      "mountain",
+      "dropB",
+      "bound up",
+      "mountain",
+      "dropB"
+    ],
+    "kanji": "芻",
+    "subElements": [
+      "bound up",
+      "mountain",
+      "dropB",
+      "bound up",
+      "mountain",
+      "dropB",
+      "clothes hanger",
+      "drop",
+      "reclining",
+      "coat hanger",
+      "drops",
+      "lying down"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "hay"
     ]
   },
   "dangerous": {
@@ -10347,9 +10534,12 @@ const elementsDict =
       "ceiling",
       "large",
       "one",
-      "St. Bernard"
+      "St. Bernard",
+      "heaven"
     ],
-    "synonyms": [],
+    "synonyms": [
+      "heaven"
+    ],
     "wkNames": [
       "heaven"
     ]
@@ -10390,7 +10580,8 @@ const elementsDict =
       "ceiling",
       "large",
       "one",
-      "St. Bernard"
+      "St. Bernard",
+      "heaven"
     ],
     "synonyms": [],
     "wkNames": [
@@ -10411,6 +10602,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops"
     ],
     "synonyms": [],
@@ -10433,6 +10625,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops"
     ],
     "synonyms": [],
@@ -10501,6 +10694,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops"
     ],
     "synonyms": [],
@@ -10694,6 +10888,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops",
       "turkey house"
     ],
@@ -12099,6 +12294,30 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "amount"
+    ]
+  },
+  "proclaim": {
+    "elements": [
+      "roof",
+      "span"
+    ],
+    "kanji": "宣",
+    "subElements": [
+      "roof",
+      "span",
+      "house",
+      "ceiling",
+      "nightbreak",
+      "one",
+      "sun",
+      "floor",
+      "day",
+      "sow",
+      "pig"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "proclaim"
     ]
   },
   "excuse": {
@@ -13818,6 +14037,29 @@ const elementsDict =
       "sitting in meditation"
     ]
   },
+  "graduate": {
+    "elements": [
+      "top hat",
+      "assembly line",
+      "ten"
+    ],
+    "kanji": "卒",
+    "subElements": [
+      "top hat",
+      "assembly line",
+      "ten",
+      "drop",
+      "one",
+      "drops",
+      "person2",
+      "person",
+      "needle"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "graduate"
+    ]
+  },
   "large": {
     "elements": [],
     "kanji": "大",
@@ -13882,9 +14124,18 @@ const elementsDict =
     ]
   },
   "dog with one leg": {
-    "elements": [],
+    "elements": [
+      "drop",
+      "top hat",
+      "human legs"
+    ],
     "kanji": "尤",
     "subElements": [
+      "drop",
+      "top hat",
+      "human legs",
+      "drops",
+      "one",
       "dog",
       "chihuahua with one human leg"
     ],
@@ -13915,6 +14166,7 @@ const elementsDict =
       "stick",
       "hook",
       "small",
+      "human legs",
       "dog",
       "chihuahua with one human leg",
       "large",
@@ -14792,13 +15044,20 @@ const elementsDict =
     "comment": "structureVague: yes"
   },
   "maestro": {
-    "elements": [],
+    "elements": [
+      "maestro without baton",
+      "bear"
+    ],
     "kanji": "師 left part",
-    "subElements": [],
+    "subElements": [
+      "maestro without baton",
+      "bear",
+      "mouth2",
+      "mouth"
+    ],
     "synonyms": [],
     "wkNames": [
-      "drop",
-      "bear"
+      "bear drop"
     ]
   },
   "maestro without baton": {
@@ -14844,6 +15103,10 @@ const elementsDict =
     "subElements": [
       "maestro",
       "marketB",
+      "maestro without baton",
+      "bear",
+      "mouth2",
+      "mouth",
       "ceiling",
       "towel",
       "one",
@@ -14865,11 +15128,38 @@ const elementsDict =
     "kanji": "追",
     "subElements": [
       "road",
-      "maestro"
+      "maestro",
+      "maestro without baton",
+      "bear",
+      "mouth2",
+      "mouth"
     ],
     "synonyms": [],
     "wkNames": [
       "follow"
+    ]
+  },
+  "large hill": {
+    "elements": [
+      "maestro",
+      "ten"
+    ],
+    "kanji": "阜",
+    "subElements": [
+      "maestro",
+      "ten",
+      "maestro without baton",
+      "bear",
+      "mouth2",
+      "mouth",
+      "needle",
+      "large city"
+    ],
+    "synonyms": [
+      "large city"
+    ],
+    "wkNames": [
+      "mound"
     ]
   },
   "walk": {
@@ -15946,6 +16236,22 @@ const elementsDict =
     "synonyms": [],
     "wkNames": [
       "stool"
+    ]
+  },
+  "stitching": {
+    "elements": [
+      "crotch2",
+      "crotch2"
+    ],
+    "kanji": "綴 right part",
+    "subElements": [
+      "crotch2",
+      "crotch2",
+      "crotch"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "stitching"
     ]
   },
   "sentence": {
@@ -17179,6 +17485,7 @@ const elementsDict =
       "large",
       "one",
       "St. Bernard",
+      "heaven",
       "drops",
       "fu",
       "chop-seal",
@@ -17273,6 +17580,26 @@ const elementsDict =
     "wkNames": [
       "rice seedling"
     ]
+  },
+  "frostbite": {
+    "elements": [
+      "rice seedling",
+      "walking legs"
+    ],
+    "kanji": "夌",
+    "subElements": [
+      "rice seedling",
+      "walking legs",
+      "soil",
+      "human legs",
+      "dirt",
+      "ground"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "frostbite"
+    ],
+    "comment": "RTK has no name for this unfortunately. frostbite is WK name."
   },
   "land": {
     "elements": [
@@ -17379,6 +17706,24 @@ const elementsDict =
     ],
     "wkNames": [
       "repeater"
+    ]
+  },
+  "wild goose": {
+    "elements": [
+      "cliff",
+      "personB",
+      "turkey"
+    ],
+    "kanji": "雁",
+    "subElements": [
+      "cliff",
+      "personB",
+      "turkey",
+      "person"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "wild goose"
     ]
   }
 };

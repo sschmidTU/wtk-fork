@@ -1,161 +1,206 @@
-*, *:before, *:after {
+*,*:before,*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box
+}
 
 body {
-  font-family: Verdana, Georgia, "Times New Roman", serif;
+  font-family: Verdana,Georgia,"Times New Roman",serif;
   font-size: 15px;
   color: #262626;
   background: #eee;
-  line-height: 1.5; }
+  line-height: 1.5
+}
 
 .main {
   margin-top: 0em;
   max-width: 1000px;
-  min-width: 400px;
+  min-width: 300px;
   background: #fafafa;
-  padding: 1em 1em; }
-  @media screen and (min-width: 800px) {
-    .main {
-      width: 100%;
+  padding: 1em 1em
+}
+
+@media screen and (min-width: 800px) {
+  .main {
+      width:100%;
       margin: 0em auto 2em;
-      padding: 0em 4em; } }
+      padding: 0em 4em
+  }
+}
 
 #foot {
-  text-align: center;
   margin-top: 1em;
-  max-width: 1000px; }
-  @media screen and (min-width: 800px) {
-    #foot {
-      width: 88.8%;
-      margin: 1em auto 2em; } }
+  max-width: 1000px;
+  min-width: 300px;
+  text-align: center
+}
 
-#foot p, #foot a {
-  color: #cecece;
+@media screen and (min-width: 800px) {
+  #foot {
+      width:100%;
+      margin: 1em auto 2em
+  }
+}
+
+#foot p,#foot a {
+  color: #cecece
 }
 
 #foot a:hover {
-  color: #595959;
+  color: #595959
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Verdana, Georgia, "Times New Roman", serif;
+h1,h2,h3,h4,h5,h6 {
+  font-family: Verdana,Georgia,"Times New Roman",serif;
   font-weight: normal;
   color: #007ade;
   text-align: center;
-  margin-top: 0; }
+  margin-top: 0
+}
 
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 0em; }
-  * + h1 {
-    margin-top: 0.0em; } /* doesn't do anything? */
+  font-size: 2.0em;
+  margin-bottom: 0em
+}
 
-h1 > a:visited {
-  color: #007ade; }
+*+h1 {
+  margin-top: 0.0em
+}
+
+.mainTitleH1 {
+  font-size: 1.8em
+}
+
+h1>a:visited {
+  color: #007ade
+}
 
 h2 {
   font-size: 1.5em;
-  margin-bottom: 0.5em; }
-  * + h2 {
-    margin-top: 2em; }
+  margin-bottom: 0.5em
+}
+
+*+h2 {
+  margin-top: 2em
+}
 
 h3 {
   font-size: 1.2em;
-  margin-bottom: 0.7em; }
-  * + h3 {
-    margin-top: 0.6em; }
+  margin-bottom: 0.7em
+}
+
+*+h3 {
+  margin-top: 0.6em
+}
 
 h4 {
   font-size: 0.8em;
-  margin-bottom: 0.0em;
+  margin-bottom: 0.0em
 }
-  * + h4 {
-    margin-top: 0.0em;
-  }
 
-.h4link, .btnWK {
+*+h4 {
+  margin-top: 0.0em
+}
+
+.h4link,.btnWK {
   font-family: Verdana, Georgia, "Times New Roman", serif;
   font-weight: normal;
   color: #024277;
   text-align: center;
   margin-top: 0;
-  text-decoration: none;
+  text-decoration: none
 }
 
-.h4link:hover, .btnWK:hover {
-  color: rgb(6, 108, 190);
+.h4link:hover,.btnWK:hover {
+  color: #066cbe
 }
 
 .btnWKNonWKKanji {
-  color: rgb(220, 234, 245);
+  color: #dceaf5
+}
+
+.btnWKNonWKKanji:hover {
+  color: #d8281e
 }
 
 .btnResultKanjiWK {
-  text-transform: lowercase;
+  text-transform: lowercase
 }
 
 .optionsBottom {
   text-align: left;
   font-size: 1.0em;
-  color:#cecece;
+  color: #cecece;
   position: relative;
-  left: 28%;
+  left: 28%
 }
 
-input[type=number]{
-  width: 6ch /* size */
+input[type=number] {
+  width: 6ch
 }
 
 .elementsInfo {
-  text-align: left;
+  text-align: left
+}
+
+.elementInfoPartDescription {
+  font-size: 60%;
+  font-style: italic
 }
 
 .collapsible {
-  display: block;
+  display: block
 }
 
 .collapsible.collapsed {
-  display: none;
+  display: none
 }
 
 .collapsibleButton {
   cursor: pointer
 }
 
-
 p {
   line-height: 2em;
   margin-top: 0;
-  margin-bottom: 1em; }
+  margin-bottom: 1em
+}
 
 li {
   line-height: 1.5em;
   margin-top: 0;
-  margin-bottom: 1em; }
+  margin-bottom: 1em
+}
 
 a:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji):not(.a-blue) {
   color: #9b3732;
-  text-decoration: none; }
+  text-decoration: none
+}
 
 a:visited:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji):not(.a-blue) {
-  color: #262626; }
+  color: #262626
+}
 
-a:hover:not(.h4link):not(.btnWK) {
-  color: #d8281e; }
+a:hover:not(.h4link):not(.btnWK):not(.btnWKNonWKKanji):not(.a-blue) {
+  color: #e2e2e2
+}
 
 a:focus {
   color: #000000;
-  outline: thin dotted; }
+  outline: thin dotted
+}
 
-a:hover,
-a:active {
-  outline: 0; }
+a:hover,a:active {
+  outline: 0
+}
 
 .a-blue {
   color: #308cbc;
-  text-decoration: none;
+  text-decoration: none
+}
+
+.a-blue:hover {
+  color: #014f79
 }
 
 .btn {
@@ -168,144 +213,110 @@ a:active {
   background-color: #222222;
   border-color: #222222;
   border-style: solid !important;
-  border-width: 2px !important; }
+  border-width: 2px !important
+}
 
 .btn.title {
-  font-weight: 700; }
+  font-weight: 700
+}
 
 .btn:visited {
-  color: #ffffff; }
+  color: #ffffff
+}
 
-.btn:hover,
-.btn.disable,
-.btn.disable:visited,
-.btn.disable:hover {
+.btn:hover,.btn.disable,.btn.disable:visited,.btn.disable:hover {
   color: #222222;
-  background-color: #ffffff; }
-
-.btn-green {
-  color: #ffffff;
-  background-color: #5cb85c;
-  border-color: #5cb85c; }
-
-.btn-green:visited {
-  color: #ffffff; }
-
-.btn-green:hover,
-.btn-green.disable,
-.btn-green.disable:visited,
-.btn-green.disable:hover {
-  color: #5cb85c;
-  background-color: #ffffff; }
-
-.btn-orange {
-  color: #ffffff;
-  background-color: #dd8338;
-  border-color: #dd8338; }
-
-.btn-orange:visited {
-  color: #ffffff; }
-
-.btn-orange:hover,
-.btn-orange.disable,
-.btn-orange.disable:visited,
-.btn-orange.disable:hover {
-  color: #dd8338;
-  background-color: #ffffff; }
-
-.btn-red {
-  color: #ffffff;
-  background-color: #c64537;
-  border-color: #c64537; }
-
-.btn-red:visited {
-  color: #ffffff; }
-
-.btn-red:hover,
-.btn-red.disable,
-.btn-red.disable:visited,
-.btn-red.disable:hover {
-  color: #c64537;
-  background-color: #ffffff; }
+  background-color: #ffffff
+}
 
 .btn-blue {
   color: #ffffff;
   background-color: #308cbc;
-  border-color: #308cbc; }
+  border-color: #308cbc
+}
 
 .btn-blue:visited {
-  color: #ffffff; }
+  color: #ffffff
+}
 
-.btn-blue:hover,
-.btn-blue.disable,
-.btn-blue.disable:visited,
-.btn-blue.disable:hover {
+.btn-blue:hover,.btn-blue.disable,.btn-blue.disable:visited,.btn-blue.disable:hover {
   color: #308cbc;
-  background-color: #ffffff; }
+  background-color: #ffffff
+}
 
 .btnClip {
   border-radius: 4px;
   outline: none !important;
-  box-shadow: none !important;
+  box-shadow: none !important
 }
 
 .btnClipLastSelected {
-  /* border: 4px solid #00FF00;*/
-  border: 2px solid blue;
+  border: 2px solid blue
 }
 
-/* search box italic placeholder text. All 4 following styles are necessary. */
 ::-webkit-input-placeholder {
-  font-style: italic;
+  font-style: italic
 }
+
 :-moz-placeholder {
-  font-style: italic;  
+  font-style: italic
 }
+
 ::-moz-placeholder {
-  font-style: italic;  
+  font-style: italic
 }
-:-ms-input-placeholder {  
-  font-style: italic; 
+
+:-ms-input-placeholder {
+  font-style: italic
 }
 
 .pagination {
   margin: 1em auto 0em;
-  text-align: center; }
+  text-align: center
+}
 
 .pagination ul {
   display: inline;
   margin-right: 10px;
-  margin-left: 10px; }
+  margin-left: 10px
+}
 
 .pagination li {
   padding-right: 4px;
-  padding-left: 4px; }
+  padding-left: 4px
+}
 
 .pagination .current-page {
-  font-weight: 700; }
+  font-weight: 700
+}
 
 .inline-list {
   padding-left: 0;
   margin-left: 0;
-  list-style: none; }
+  list-style: none
+}
 
 .inline-list li {
   display: inline;
-  list-style-type: none; }
+  list-style-type: none
+}
 
 small {
   font-size: 75%;
-  color: #bababa; }
+  color: #bababa
+}
 
 hr {
   margin-top: 1.0em;
   margin-bottom: 1.0em;
   border: 0;
-  border-top: 1px solid #bababa; }
+  border-top: 1px solid #bababa
+}
 
 article {
   list-style: none;
-  margin-top: 0px; }
+  margin-top: 0px
+}
 
 .stroke {
   float: left;
@@ -313,76 +324,55 @@ article {
   overflow-x: auto;
   overflow-y: hidden;
   margin-top: 3em;
-  margin-bottom: 3em; }
+  margin-bottom: 3em
+}
 
 blockquote {
   padding-left: 20px;
   font-style: italic;
-  border-left: 5px solid #e2e2e2; }
-
-table {
-  margin: 0em auto 1.7em;
-  /*align: center;*/ /* this should be text-align: center if anything, but actually looks worse on the few kanji pages that use tables*/
+  border-left: 5px solid #e2e2e2
 }
 
-th, td {
-  padding: 0.3em; }
+table {
+  margin: 0em auto 1.7em
+}
+
+th,td {
+  padding: 0.3em
+}
 
 .footnotes {
   border-top: 1px solid #bababa;
   font-size: 0.7em;
-  margin-top: 3em; }
+  margin-top: 3em
+}
 
 .left-arrow {
-  float: left; }
+  float: left
+}
 
 .right-arrow {
-  float: right; }
+  float: right
+}
 
-/* Search box in index */
 #search-box {
   margin: 0em;
-  text-align: center; }
+  text-align: center
+}
 
 #search-query {
-  height: 2rem; }
+  height: 2rem
+}
 
 #search-button {
-  height: 2rem; }
+  height: 2rem
+}
 
 #search-results {
-  margin: 1em; }
+  margin: 1em
+}
 
-/* Code highlight */
-h1 code,
-h2 code,
-h3 code,
-p code,
-pre code,
-li code,
-td code {
-  color: #A52A2A;
-  font-size: 1.1em;
-  font-weight: bold;
-  font-family: Courier, "Courier New", "Sans Serif"; }
-
-pre {
-  border-radius: 2px;
-  margin-bottom: 1.5em;
-  position: relative;
-  padding: 0.7em;
-  overflow-x: auto;
-  overflow-y: auto;
-  background: #EFE9C3; }
-
-pre code:not(.language-r) {
-  color: #000000;
-  font-weight: unset; }
-
-.hll {
-  background-color: #ffffcc; }
-
-.c1 {
-  color: #408080;
-  font-style: italic;
-  font-weight: unset; }
+#kanjiViewer {
+  height: 290px;
+  text-align: center
+}

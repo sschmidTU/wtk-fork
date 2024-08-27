@@ -206,6 +206,7 @@ class WTKSearch {
     let searchResults = {
       length: 0,
       list: [],
+      entriesExpanded: 0
     };
     // search for each rtkQuery
     for (let i=0; i<rtkQueries.length; i++) {
@@ -312,8 +313,12 @@ class WTKSearch {
             }
             this.addCopyFunctionToEntry(page);
             this.addCopyFunctionToTextKanji(page);
+            let expandButton;
             if (this.addElementsInfo && page.elT) {
-              this.addCollapsibleFunctionToEntry(page);
+              expandButton = this.addCollapsibleFunctionToEntry(page);
+              if (prepend) {
+                this.toggleCollapsible(expandButton, page.id, false);
+              }
             }
             entriesAdded++;
           }
@@ -330,13 +335,14 @@ class WTKSearch {
         expandAll = true;
       }
       for (let i = 0; i < searchResults.length; i++) {
-        if (!expandAll && (i+1) > expandResultsLimit) {
+        if (!expandAll && searchResults.entriesExpanded >= expandResultsLimit) {
           break;
         }
         const result = searchResults.list[i];
         const expandButton = document.getElementById('expandButton'+result.id);
         if (expandButton) {
           this.toggleCollapsible(expandButton, result.id, false);
+          searchResults.entriesExpanded++;
         }
       }
     }
@@ -422,7 +428,6 @@ class WTKSearch {
     if (this.addElementsInfo && page.elT) {
       elStringOrig = removeStructure(page.elT);
       isSingleElementWithSameName = elStringOrig === page.kw;
-      // console.log(`${elStringOrig} isSameName: ${isSingleElementWithSameName}`);
       const elTranslations = {};
       const elTSplit = elStringOrig.split(",").map(a => a.trim());
       let elString = '';
@@ -594,6 +599,7 @@ class WTKSearch {
     expandButton.onclick = function() {
       self.toggleCollapsible(expandButton, page.id);
     }
+    return expandButton;
   }
 
   addCopyFunctionToEntry(page) {
@@ -1021,7 +1027,7 @@ class WTKSearch {
 
   is_short_wk_keyword(query) {
     const small_wk_keywords = [
-      'i', 'he', 'pi', 'go', 'do', 'no'
+      'i', 'he', 'pi', 'go', 'do', 'no', 'in', 'up' // up = above in WK, might be misremembered
     ];
     return small_wk_keywords.includes(query);
   }
@@ -1079,6 +1085,7 @@ class WTKSearch {
       "deal with": "dealwith",
       "government office": "governmentoffice",
       "say humbly": "sayhumbly",
+      "wild goose": "wildgoose",
     }
   }
 
@@ -1100,6 +1107,8 @@ class WTKSearch {
       "former": "olden times", //p27
       "self": "self,oneself,nose", // "oneself" in RTK is also "nose". two self radicals in WK. the self that is 'snake' in RTK can also be 'self' there, but no difference for now
       "middle": "inX",
+      "up": "above",
+      "climb": "ascend",
       "grid": "measuring box", // p29, WK: slide+twenty
       "circle": "round",
       "toe": "divining rod,magic wand",
@@ -1540,6 +1549,7 @@ class WTKSearch {
       // --- convenience replacements, false friends (close misses) ---
       "replace": "replace,substitute", // 替 is replace and 代 substitute, but my memory said 代 replace (which could be a common error)
       "amount": "amount,quantity", // 量 quantity in WK, RTK. I once entered amount instead
+      "wildgoose": "wild goose",
     }
   }
 
