@@ -206,6 +206,7 @@ class WTKSearch {
     let searchResults = {
       length: 0,
       list: [],
+      entriesExpanded: 0
     };
     // search for each rtkQuery
     for (let i=0; i<rtkQueries.length; i++) {
@@ -330,13 +331,14 @@ class WTKSearch {
         expandAll = true;
       }
       for (let i = 0; i < searchResults.length; i++) {
-        if (!expandAll && (i+1) > expandResultsLimit) {
+        if (!expandAll && searchResults.entriesExpanded >= expandResultsLimit) {
           break;
         }
         const result = searchResults.list[i];
         const expandButton = document.getElementById('expandButton'+result.id);
         if (expandButton) {
           this.toggleCollapsible(expandButton, result.id, false);
+          searchResults.entriesExpanded++;
         }
       }
     }
