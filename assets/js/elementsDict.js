@@ -14661,6 +14661,22 @@ const elementsDict =
     ],
     "comment": "similar to claw, but smaller bottom strokes"
   },
+  "grab": {
+    "elements": [
+      "vulture",
+      "tree"
+    ],
+    "kanji": "采",
+    "subElements": [
+      "vulture",
+      "tree",
+      "wood"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "grab"
+    ]
+  },
   "migrating ducks": {
     "elements": [
       "vulture",

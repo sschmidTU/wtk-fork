@@ -718,6 +718,7 @@ state; 州; state; o(stream, drop3)
 flood=stream; 巛, 災 top part; flood // would be nice if this was only flood, not stream. dual in rtk-search
 claw; 爪; claw // similar to vulture, but longer bottom strokes
 vulture; 妥 top part; cleat // similar to claw, but smaller bottom strokes
+grab; 采; grab; t(vulture, tree)
 migrating ducks; 爰; football; t(vulture, friend)
 skunk=badger; 豸; badger; t(vulture, pack of wild dogs)
 mountain; 山; mountain
