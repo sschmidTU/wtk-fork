@@ -4074,7 +4074,7 @@ const elementsDict =
   },
   "concave": {
     "elements": [],
-    "kanji": "凸",
+    "kanji": "凹",
     "subElements": [],
     "synonyms": [],
     "wkNames": [
