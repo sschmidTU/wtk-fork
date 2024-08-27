@@ -737,7 +737,7 @@ condolences=condolence; 弔; condolence; c(bow, stick)
 weak; 弱; weak; l(bowB, bowB)
 dollar=dollar sign; 沸 right part; dollar; c(bow, l(dropB, stick))&condolences
 younger brother; 弟; younger brother; t(horns, dollar) // structureVague: yes
-maestro; 師 left part; drop&bear
+maestro; 師 left part; bear drop; t(maestro without baton, bear)
 maestro without baton; 㠯, 官 bottom part; bear; mouth2
 bureaucrat; 官; government; t(roof, maestro without baton)
 expert; 師; teacher; l(maestro, marketB)

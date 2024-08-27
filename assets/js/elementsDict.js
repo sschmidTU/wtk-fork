@@ -15044,13 +15044,20 @@ const elementsDict =
     "comment": "structureVague: yes"
   },
   "maestro": {
-    "elements": [],
+    "elements": [
+      "maestro without baton",
+      "bear"
+    ],
     "kanji": "師 left part",
-    "subElements": [],
+    "subElements": [
+      "maestro without baton",
+      "bear",
+      "mouth2",
+      "mouth"
+    ],
     "synonyms": [],
     "wkNames": [
-      "drop",
-      "bear"
+      "bear drop"
     ]
   },
   "maestro without baton": {
@@ -15096,6 +15103,10 @@ const elementsDict =
     "subElements": [
       "maestro",
       "marketB",
+      "maestro without baton",
+      "bear",
+      "mouth2",
+      "mouth",
       "ceiling",
       "towel",
       "one",
@@ -15117,7 +15128,11 @@ const elementsDict =
     "kanji": "追",
     "subElements": [
       "road",
-      "maestro"
+      "maestro",
+      "maestro without baton",
+      "bear",
+      "mouth2",
+      "mouth"
     ],
     "synonyms": [],
     "wkNames": [
@@ -15133,6 +15148,10 @@ const elementsDict =
     "subElements": [
       "maestro",
       "ten",
+      "maestro without baton",
+      "bear",
+      "mouth2",
+      "mouth",
       "needle",
       "large city"
     ],
