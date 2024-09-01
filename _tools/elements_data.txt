@@ -614,7 +614,7 @@ someone; 者; someone; t(old man, sun)
 various; 諸; various; l(say, someone)
 signature; 署; government office; t(eyeB, someone)
 renowned; 著; author; t(flowers, someone)
-cave; 广, 店 outer part; canopy; dropB
+cave; 广, 店 outer part; canopy; dropB&cliff
 yurt; 度 without 又; yurt; tl(cave, twenty) // only exists as element/radical in WK, but is quite common
 degrees=degree; 度; degree; tl(yurt, crotch)
 commoner; 庶; all; tl(yurt, oven-fire)
