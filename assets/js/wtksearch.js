@@ -1550,6 +1550,7 @@ class WTKSearch {
       "replace": "replace,substitute", // 替 is replace and 代 substitute, but my memory said 代 replace (which could be a common error)
       "amount": "amount,quantity", // 量 quantity in WK, RTK. I once entered amount instead
       "wildgoose": "wild goose",
+      "possible": "can", // 苛
     }
   }
 
