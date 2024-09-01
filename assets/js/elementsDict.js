@@ -9936,7 +9936,7 @@ const elementsDict =
     ],
     "synonyms": [],
     "wkNames": [
-      "funnel"
+      "lifeguard"
     ]
   },
   "director": {

@@ -483,7 +483,7 @@ dangerous; 危; dangerous; t(bound up, tl(cliff, fingerprint))
 separate; 別; separate; l(t(mouth, bound up), saber)
 angle; 角; angle; t(bound up, t(rice field, fenceposts)) // structureVague: yes
 again; 再; again; t(ceiling, sprout, fence postsB); leafWK // structureVague: yes
-funnel; 冓; funnel; t(celery, again)
+funnel; 冓; lifeguard; t(celery, again)
 director; 司; director; tr(clothes hanger, creeper)
 big dipper=measuring cup; 斗; ladle; c(c(stick, one), drop2)
 poem; 敬 left part; poem; t(flowers, phrase)
