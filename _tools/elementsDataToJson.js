@@ -1,5 +1,5 @@
 //nodejs script, call 'node thisScript.js'
-// outputs json for elementsDict.js
+// outputs json for elementsDict.js, created from elements_data.txt
 const fs = require('fs');
 let mainDir = __filename.replace(/_tools[\\|\/]elementsDataToJson.js/, "");
 fs.readFile(mainDir + "_tools/elements_data.txt", "utf8" , (err, data) => {
