@@ -427,7 +427,8 @@ class WTKSearch {
     let singleElementElKey = null;
     if (this.addElementsInfo && page.elT) {
       elStringOrig = removeStructure(page.elT);
-      isSingleElementWithSameName = elStringOrig === page.kw.toLowerCase();
+      isSingleElementWithSameName = elStringOrig === page.kw.toLowerCase() ||
+        elementsDict[elStringOrig]?.kanji === page.kanji;
       const elTranslations = {};
       const elTSplit = elStringOrig.split(",").map(a => a.trim());
       let elString = '';
