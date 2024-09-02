@@ -1544,6 +1544,7 @@ class WTKSearch {
       "dealwith": "deal with,dispose",
       "sleep": "sleep, lie down",
       "governmentoffice": "signature",
+      "government": "municipality",
       "stretch": "stretch,lengthen", // 張 stretch radical is lengthen in RTK, but there's also 伸 stretch (expand in RTK, though it doesn't seem to be used in other kanji)
       "sayhumbly": "say humbly,speaketh",
       // --- convenience replacements, false friends (close misses) ---
