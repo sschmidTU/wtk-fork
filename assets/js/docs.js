@@ -19056,4 +19056,304 @@ var docs = [{
     "kanji": "廣",
     "kw": "broad",
     "elT": "tl(yurt, t(ceiling, sprout, animal legs))"
+}, {
+    "id": "3151",
+    "kanji": "劦",
+    "kw": "undefined",
+    "elT": "triceps"
+}, {
+    "id": "3152",
+    "kanji": "攸",
+    "kw": "at ease",
+    "elT": "relaxed"
+}, {
+    "id": "3153",
+    "kanji": "尸",
+    "kw": "flag radical (no. 44) / corpse",
+    "elT": "flag"
+}, {
+    "id": "3154",
+    "kanji": "壬",
+    "kw": "9th calendar sign",
+    "elT": "porter"
+}, {
+    "id": "3155",
+    "kanji": "爻",
+    "kw": "double X radical (no. 89)",
+    "elT": "sheaf"
+}, {
+    "id": "3156",
+    "kanji": "扁",
+    "kw": "level",
+    "elT": "library"
+}, {
+    "id": "3157",
+    "kanji": "豕",
+    "kw": "pig radical (no. 152)",
+    "elT": "sow"
+}, {
+    "id": "3158",
+    "kanji": "戈",
+    "kw": "tasselled spear radical (no. 62)",
+    "elT": "fiesta"
+}, {
+    "id": "3159",
+    "kanji": "戔",
+    "kw": "damage",
+    "elT": "t(fiesta, fiesta)"
+}, {
+    "id": "3160",
+    "kanji": "辟",
+    "kw": "crime",
+    "elT": "ketchup"
+}, {
+    "id": "3161",
+    "kanji": "袁",
+    "kw": "long kimono",
+    "elT": "lidded crock"
+}, {
+    "id": "3162",
+    "kanji": "㕣",
+    "kw": "a marsh at the foot of the hills",
+    "elT": "gully"
+}, {
+    "id": "3163",
+    "kanji": "荅",
+    "kw": "adzuki beans",
+    "elT": "adzuki beans"
+}, {
+    "id": "3164",
+    "kanji": "耒",
+    "kw": "plough radical (no. 127)",
+    "elT": "christmas tree"
+}, {
+    "id": "3165",
+    "kanji": "聿",
+    "kw": "brush radical (no. 129)",
+    "elT": "brush"
+}, {
+    "id": "3166",
+    "kanji": "幺",
+    "kw": "short thread radical (no. 52)",
+    "elT": "cocoon"
+}, {
+    "id": "3167",
+    "kanji": "睘",
+    "kw": "round",
+    "elT": "trampoline"
+}, {
+    "id": "3168",
+    "kanji": "兪",
+    "kw": "affirmative response",
+    "elT": "meeting of butchers"
+}, {
+    "id": "3169",
+    "kanji": "辶",
+    "kw": "road radical variant (no. 162)",
+    "elT": "roadB"
+}, {
+    "id": "3170",
+    "kanji": "廴",
+    "kw": "long stride or stretching radical (no. 54)",
+    "elT": "stretch"
+}, {
+    "id": "3171",
+    "kanji": "厂",
+    "kw": "trailing cliff radical (no. 27)",
+    "elT": "cliff"
+}, {
+    "id": "3172",
+    "kanji": "虍",
+    "kw": "tiger (radical 141)",
+    "elT": "tiger"
+}, {
+    "id": "3173",
+    "kanji": "彳",
+    "kw": "going man radical (no. 60)",
+    "elT": "goingB"
+}, {
+    "id": "3174",
+    "kanji": "叚",
+    "kw": "false",
+    "elT": "hobby"
+}, {
+    "id": "3175",
+    "kanji": "复",
+    "kw": "repeat",
+    "elT": "double back"
+}, {
+    "id": "3176",
+    "kanji": "歹",
+    "kw": "death radical (n. 78)",
+    "elT": "bones"
+}, {
+    "id": "3177",
+    "kanji": "舛",
+    "kw": "dancing radical (no. 136)",
+    "elT": "ballerina"
+}, {
+    "id": "3178",
+    "kanji": "韋",
+    "kw": "tanned leather radical (no. 178)",
+    "elT": "locket"
+}, {
+    "id": "3179",
+    "kanji": "礻",
+    "kw": "showing radical (no. 113)",
+    "elT": "altar"
+}, {
+    "id": "3180",
+    "kanji": "衤",
+    "kw": "clothing radical (no. 145)",
+    "elT": "cloak"
+}, {
+    "id": "3181",
+    "kanji": "臤",
+    "kw": "wise",
+    "elT": "loincloth"
+}, {
+    "id": "3182",
+    "kanji": "勹",
+    "kw": "wrapping radical (no. 20)",
+    "elT": "bound up"
+}, {
+    "id": "3183",
+    "kanji": "冓",
+    "kw": "inner palace",
+    "elT": "funnel"
+}, {
+    "id": "3184",
+    "kanji": "灬",
+    "kw": "fire radical (no. 86)",
+    "elT": "oven-fire"
+}, {
+    "id": "3185",
+    "kanji": "彡",
+    "kw": "short hair or fur radical (no. 59)",
+    "elT": "shape"
+}, {
+    "id": "3186",
+    "kanji": "乇",
+    "kw": "to depend on",
+    "elT": "lock of hair"
+}, {
+    "id": "3187",
+    "kanji": "禾",
+    "kw": "two-branch tree radical (no. 115)",
+    "elT": "wheat"
+}, {
+    "id": "3188",
+    "kanji": "关",
+    "kw": "close",
+    "elT": "golden calf"
+}, {
+    "id": "3189",
+    "kanji": "朮",
+    "kw": "a type of herb",
+    "elT": "resin"
+}, {
+    "id": "3190",
+    "kanji": "隹",
+    "kw": "old bird radical (no. 172)",
+    "elT": "turkey"
+}, {
+    "id": "3191",
+    "kanji": "雚",
+    "kw": "heron",
+    "elT": "heron"
+}, {
+    "id": "3192",
+    "kanji": "艹",
+    "kw": "grass radical (no. 140)",
+    "elT": "flowers"
+}, {
+    "id": "3193",
+    "kanji": "开",
+    "kw": "begin",
+    "elT": "two hands"
+}, {
+    "id": "3194",
+    "kanji": "氵",
+    "kw": "water radical (no. 85)",
+    "elT": "water"
+}, {
+    "id": "3195",
+    "kanji": "氺",
+    "kw": "water radical variant (no. 85)",
+    "elT": "grains of rice"
+}, {
+    "id": "3196",
+    "kanji": "殳",
+    "kw": "pike / windy-again radical (no. 79)",
+    "elT": "missile"
+}, {
+    "id": "3197",
+    "kanji": "禺",
+    "kw": "long-tailed monkey",
+    "elT": "talking cricket"
+}, {
+    "id": "3198",
+    "kanji": "丂",
+    "kw": "obstruction of breath (qi) as it seeks release, variant of other characters",
+    "elT": "snare"
+}, {
+    "id": "3199",
+    "kanji": "啇",
+    "kw": "the base",
+    "elT": "antique"
+}, {
+    "id": "3200",
+    "kanji": "咅",
+    "kw": "to spit out",
+    "elT": "muzzle"
+}, {
+    "id": "3201",
+    "kanji": "广",
+    "kw": "dotted cliff radical (no. 53)",
+    "elT": "cave"
+}, {
+    "id": "3202",
+    "kanji": "忄",
+    "kw": "heart, standing heart radical variant (no. 61)",
+    "elT": "state of mind"
+}, {
+    "id": "3203",
+    "kanji": "扌",
+    "kw": "hand radical (no. 64)",
+    "elT": "fingers"
+}, {
+    "id": "3204",
+    "kanji": "亠",
+    "kw": "kettle lid radical (no. 8)",
+    "elT": "top hat"
+}, {
+    "id": "3205",
+    "kanji": "囗",
+    "kw": "box or enclosure radical (no. 31)",
+    "elT": "pent in"
+}, {
+    "id": "3206",
+    "kanji": "毋",
+    "kw": "do not, mother radical (no. 80)",
+    "elT": "mama"
+}, {
+    "id": "3207",
+    "kanji": "圣",
+    "kw": "holy",
+    "elT": "spool"
+}, {
+    "id": "3208",
+    "kanji": "几",
+    "kw": "table",
+    "elT": "wind"
+}, {
+    "id": "3209",
+    "kanji": "亢",
+    "kw": "high spirits",
+    "elT": "whirlwind"
+}, {
+    "id": "3210",
+    "kanji": "爰",
+    "kw": "lead on to",
+    "elT": "migrating ducks"
 }, ];

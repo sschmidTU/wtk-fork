@@ -10905,6 +10905,27 @@ const elementsDict =
     ],
     "comment": "doesn't exist in WK (noon+turkey)"
   },
+  "heron": {
+    "elements": [
+      "flowers",
+      "mouth",
+      "mouth",
+      "turkey"
+    ],
+    "kanji": "雚",
+    "subElements": [
+      "flowers",
+      "mouth",
+      "mouth",
+      "turkey",
+      "flower"
+    ],
+    "synonyms": [],
+    "wkNames": [
+      "heron"
+    ],
+    "comment": "not in RTK"
+  },
   "horse": {
     "elements": [
       "turkey",
