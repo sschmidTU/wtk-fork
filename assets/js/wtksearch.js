@@ -427,7 +427,7 @@ class WTKSearch {
     let singleElementElKey = null;
     if (this.addElementsInfo && page.elT) {
       elStringOrig = removeStructure(page.elT);
-      isSingleElementWithSameName = elStringOrig === page.kw;
+      isSingleElementWithSameName = elStringOrig === page.kw.toLowerCase();
       const elTranslations = {};
       const elTSplit = elStringOrig.split(",").map(a => a.trim());
       let elString = '';
@@ -510,7 +510,11 @@ class WTKSearch {
               const elementDictInfo = elementsDict[subElementWithoutNumber];
               if (elementDictInfo) {
                 elementsInfoHtml += this.elementDisplayString(subElementWithoutNumber) + ' ';
-                elementsInfoHtml += elementDictInfo.wkNames[0];
+                if (this.rtkMode) {
+                  elementsInfoHtml += subElementWithoutNumber
+                } else {
+                  elementsInfoHtml += elementDictInfo.wkNames[0];
+                }
               }
             }
             // elementsInfoHtml += ')';
@@ -563,7 +567,10 @@ class WTKSearch {
     }
     const italicizePartString = (inputString) => {
       const partString = inputString.substring(1);
-      const matches = /.+ part/.exec(partString); // "left part", "bottom right part", etc
+      let matches = /.+ part/.exec(partString); // "left part", "bottom right part", etc
+      if (!matches) {
+        matches = / without .*/.exec(partString); // "度 without 又 yurt"
+      }
       if (matches) {
         return `${inputString[0]}<span class="elementInfoPartDescription">${matches[0]}</span>`;
       }
@@ -1359,7 +1366,7 @@ class WTKSearch {
       "landslide": "sign of the dragon", //2164
       "horns heaven": "golden calf",
       "demon": "ghost", //2175
-      "rust": "cinnabar",
+      "rust": "cinnabar,rust", // 丹 rust colored, 錆 rust kanji (not on WK)
       "rust colored": "cinnabar",
       "root": "silver",
       "umbrella": "fishhook,umbrellaWK",
@@ -1544,12 +1551,14 @@ class WTKSearch {
       "dealwith": "deal with,dispose",
       "sleep": "sleep, lie down",
       "governmentoffice": "signature",
+      "government": "municipality",
       "stretch": "stretch,lengthen", // 張 stretch radical is lengthen in RTK, but there's also 伸 stretch (expand in RTK, though it doesn't seem to be used in other kanji)
       "sayhumbly": "say humbly,speaketh",
       // --- convenience replacements, false friends (close misses) ---
       "replace": "replace,substitute", // 替 is replace and 代 substitute, but my memory said 代 replace (which could be a common error)
       "amount": "amount,quantity", // 量 quantity in WK, RTK. I once entered amount instead
       "wildgoose": "wild goose",
+      "possible": "can", // 苛
     }
   }
 

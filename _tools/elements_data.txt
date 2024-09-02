@@ -483,7 +483,7 @@ dangerous; 危; dangerous; t(bound up, tl(cliff, fingerprint))
 separate; 別; separate; l(t(mouth, bound up), saber)
 angle; 角; angle; t(bound up, t(rice field, fenceposts)) // structureVague: yes
 again; 再; again; t(ceiling, sprout, fence postsB); leafWK // structureVague: yes
-funnel; 冓; funnel; t(celery, again)
+funnel; 冓; lifeguard; t(celery, again)
 director; 司; director; tr(clothes hanger, creeper)
 big dipper=measuring cup; 斗; ladle; c(c(stick, one), drop2)
 poem; 敬 left part; poem; t(flowers, phrase)
@@ -614,7 +614,7 @@ someone; 者; someone; t(old man, sun)
 various; 諸; various; l(say, someone)
 signature; 署; government office; t(eyeB, someone)
 renowned; 著; author; t(flowers, someone)
-cave; 广, 店 outer part; canopy; dropB
+cave; 广, 店 outer part; canopy; dropB&cliff
 yurt; 度 without 又; yurt; tl(cave, twenty) // only exists as element/radical in WK, but is quite common
 degrees=degree; 度; degree; tl(yurt, crotch)
 commoner; 庶; all; tl(yurt, oven-fire)
@@ -718,6 +718,7 @@ state; 州; state; o(stream, drop3)
 flood=stream; 巛, 災 top part; flood // would be nice if this was only flood, not stream. dual in rtk-search
 claw; 爪; claw // similar to vulture, but longer bottom strokes
 vulture; 妥 top part; cleat // similar to claw, but smaller bottom strokes
+grab; 采; grab; t(vulture, tree)
 migrating ducks; 爰; football; t(vulture, friend)
 skunk=badger; 豸; badger; t(vulture, pack of wild dogs)
 mountain; 山; mountain

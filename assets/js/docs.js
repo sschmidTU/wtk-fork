@@ -1,4 +1,9 @@
 var docs = [{
+    "id": "0",
+    "kanji": "俯",
+    "kw": "bend down",
+    "elT": "l(personB, municipality)"
+}, {
     "id": "1",
     "kanji": "一",
     "kw": "one",
@@ -232,7 +237,7 @@ var docs = [{
     "kanji": "中",
     "kw": "in",
     "el": "in, inx, stick, mouth",
-    "elT": "o(mouth, stick)"
+    "elT": "in"
 }, {
     "id": "40",
     "kanji": "千",
@@ -19040,4 +19045,15 @@ var docs = [{
     "kw": "heart",
     "elT": "t(o(t(drop, hood), grab), large)",
     "var": "奥"
+}, {
+    "id": "3149",
+    "kanji": "壺",
+    "kw": "jar",
+    "elT": "t(samurai, crown, swiss, floor)",
+    "var": "壷"
+}, {
+    "id": "3150",
+    "kanji": "廣",
+    "kw": "broad",
+    "elT": "tl(yurt, t(ceiling, sprout, animal legs))"
 }, ];
