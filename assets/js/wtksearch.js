@@ -510,7 +510,11 @@ class WTKSearch {
               const elementDictInfo = elementsDict[subElementWithoutNumber];
               if (elementDictInfo) {
                 elementsInfoHtml += this.elementDisplayString(subElementWithoutNumber) + ' ';
-                elementsInfoHtml += elementDictInfo.wkNames[0];
+                if (this.rtkMode) {
+                  elementsInfoHtml += subElementWithoutNumber
+                } else {
+                  elementsInfoHtml += elementDictInfo.wkNames[0];
+                }
               }
             }
             // elementsInfoHtml += ')';
