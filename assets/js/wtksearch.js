@@ -1359,7 +1359,7 @@ class WTKSearch {
       "landslide": "sign of the dragon", //2164
       "horns heaven": "golden calf",
       "demon": "ghost", //2175
-      "rust": "cinnabar",
+      "rust": "cinnabar,rust", // 丹 rust colored, 錆 rust kanji (not on WK)
       "rust colored": "cinnabar",
       "root": "silver",
       "umbrella": "fishhook,umbrellaWK",
