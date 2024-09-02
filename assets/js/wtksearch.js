@@ -567,7 +567,10 @@ class WTKSearch {
     }
     const italicizePartString = (inputString) => {
       const partString = inputString.substring(1);
-      const matches = /.+ part/.exec(partString); // "left part", "bottom right part", etc
+      let matches = /.+ part/.exec(partString); // "left part", "bottom right part", etc
+      if (!matches) {
+        matches = / without .*/.exec(partString); // "度 without 又 yurt"
+      }
       if (matches) {
         return `${inputString[0]}<span class="elementInfoPartDescription">${matches[0]}</span>`;
       }
