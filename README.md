@@ -6,6 +6,8 @@ WTK-Search is a web-based Kanji search engine for Wanikani radicals or RTK names
 
 ## Examples
 
+<img width="641" alt="image" src="https://github.com/user-attachments/assets/1996883b-d94b-4464-8e1f-13297f755a6c">
+
 ![image](https://user-images.githubusercontent.com/33069673/99188399-04723480-275c-11eb-89fe-1e953056957a.png)
 
 ---
