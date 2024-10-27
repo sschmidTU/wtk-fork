@@ -13321,6 +13321,7 @@ const elementsDict =
     ],
     "synonyms": [],
     "wkNames": [
+      "mask",
       "formerly",
       "former"
     ]
