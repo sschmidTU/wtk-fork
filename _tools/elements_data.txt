@@ -821,7 +821,7 @@ spoon=sitting on the ground; 匕; spoon
 compare; 比; compare; l(spoon, spoon)
 all; 皆; all; t(compare, white)
 delicious; 旨; point; t(spoon, sun)
-change; 化; change; l(person, spoon)
+change; 化; change; l(personB, spoon)
 ability; 能; ability; l(t(elbow, moon), t(spoon, spoon))
 rose of sharon=althea; 舜; rose of sharon; t(vulture, crown, ballerina)
 leader; 将; commander; l(turtle, t(vulture, glue))

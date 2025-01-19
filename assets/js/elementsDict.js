@@ -16612,13 +16612,14 @@ const elementsDict =
   },
   "change": {
     "elements": [
-      "person",
+      "personB",
       "spoon"
     ],
     "kanji": "化",
     "subElements": [
-      "person",
+      "personB",
       "spoon",
+      "person",
       "sitting on the ground"
     ],
     "synonyms": [],
