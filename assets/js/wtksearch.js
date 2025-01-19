@@ -686,7 +686,7 @@ class WTKSearch {
             missingKanjiList += kanji;
             if (updateHTMLElements) {
               this.entries.appendChild(this.toDom(
-                '<h3><i> The kanji </i>' + kanji + '<i> is not yet in our dataset.</i></h3>'
+                '<span lang="ja"><h3><i> The kanji </i>' + kanji + '<i> is not yet in our dataset.</i></h3></span>'
               ));
             }
             //console.log(`${kanji} (aozora #${aozoraNumbers[kanji]} not in dataset`);
